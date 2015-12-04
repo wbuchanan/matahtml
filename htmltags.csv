@@ -1,0 +1,119 @@
+Tag,Description,hasattr,hasglobal,hasevent,hasother,root,stem
+<!--...-->,Defines a comment,0,0,0,0,http://www.w3schools.com/tags/tag_,comment.asp
+<!DOCTYPE>Œæ,Defines the document type,0,0,0,0,http://www.w3schools.com/tags/tag_,
+<a>,Defines a hyperlink,1,1,1,1,http://www.w3schools.com/tags/tag_,a.asp
+<abbr>,Defines an abbreviation or an acronym,1,1,1,0,http://www.w3schools.com/tags/tag_,abbr.asp
+<acronym>,Not supported in HTML5. Use <abbr> instead.Defines an acronym,0,0,0,0,http://www.w3schools.com/tags/tag_,acronym.asp
+<address>,Defines contact information for the author/owner of a document,1,1,1,0,http://www.w3schools.com/tags/tag_,address.asp
+<applet>,Not supported in HTML5. Use <embed> or <object> instead.Defines an embedded applet,0,0,0,0,http://www.w3schools.com/tags/tag_,applet.asp
+<area>,Defines an area inside an image-map,1,1,1,1,http://www.w3schools.com/tags/tag_,area.asp
+<article>,Defines an article,1,1,1,0,http://www.w3schools.com/tags/tag_,article.asp
+<aside>,Defines content aside from the page content,1,1,1,0,http://www.w3schools.com/tags/tag_,aside.asp
+<audio>,Defines sound content,1,1,1,1,http://www.w3schools.com/tags/tag_,audio.asp
+<b>,Defines bold text,1,1,1,0,http://www.w3schools.com/tags/tag_,b.asp
+<base>,Specifies the base URL/target for all relative URLs in a document,1,1,1,1,http://www.w3schools.com/tags/tag_,base.asp
+<basefont>,"Not supported in HTML5. Use CSS instead.Specifies a default color, size, and font for all text in a document",0,0,0,0,http://www.w3schools.com/tags/tag_,basefont.asp
+<bdi>,"Isolates a part of text that might be formatted in a different direction from other text outside it",1,1,1,0,http://www.w3schools.com/tags/tag_,bdi.asp
+<bdo>,Overrides the current text direction,1,1,1,1,http://www.w3schools.com/tags/tag_,bdo.asp
+<big>,Not supported in HTML5. Use CSS instead.Defines big text,0,0,0,0,http://www.w3schools.com/tags/tag_,big.asp
+<blockquote>,Defines a section that is quoted from another source,1,1,1,1,http://www.w3schools.com/tags/tag_,blockquote.asp
+<body>,Defines the document's body,1,1,1,1,http://www.w3schools.com/tags/tag_,body.asp
+<br>,Defines a single line break,1,1,1,0,http://www.w3schools.com/tags/tag_,br.asp
+<button>,Defines a clickable button,1,1,1,1,http://www.w3schools.com/tags/tag_,button.asp
+<canvas>,"Used to draw graphics, on the fly, via scripting (usually JavaScript)",1,1,1,1,http://www.w3schools.com/tags/tag_,canvas.asp
+<caption>,Defines a table caption,1,1,1,1,http://www.w3schools.com/tags/tag_,caption.asp
+<center>,Not supported in HTML5. Use CSS instead.Defines centered text,0,0,0,0,http://www.w3schools.com/tags/tag_,center.asp
+<cite>,Defines the title of a work,1,1,1,0,http://www.w3schools.com/tags/tag_,cite.asp
+<code>,Defines a piece of computer code,1,1,1,1,http://www.w3schools.com/tags/tag_,code.asp
+<col>,Specifies column properties for each column within a <colgroup> elementŒæ,1,1,1,1,http://www.w3schools.com/tags/tag_,col.asp
+<colgroup>,Specifies a group of one or more columns in a table for formatting,1,1,1,1,http://www.w3schools.com/tags/tag_,colgroup.asp
+<datalist>,Specifies a list of pre-defined options for input controls,1,1,1,0,http://www.w3schools.com/tags/tag_,datalist.asp
+<dd>,Defines a description/value of a term in a description list,1,1,1,0,http://www.w3schools.com/tags/tag_,dd.asp
+<del>,Defines text that has been deleted from a document,1,1,1,1,http://www.w3schools.com/tags/tag_,del.asp
+<details>,Defines additional details that the user can view or hide,1,1,1,1,http://www.w3schools.com/tags/tag_,details.asp
+<dfn>,Represents the defining instance of a term,1,1,1,0,http://www.w3schools.com/tags/tag_,dfn.asp
+<dialog>,Defines a dialog box or window,1,1,1,1,http://www.w3schools.com/tags/tag_,dialog.asp
+<dir>,Not supported in HTML5. Use <ul> instead.Defines a directory list,0,0,0,0,http://www.w3schools.com/tags/tag_,dir.asp
+<div>,Defines a section in a document,1,1,1,1,http://www.w3schools.com/tags/tag_,div.asp
+<dl>,Defines a description list,1,1,1,0,http://www.w3schools.com/tags/tag_,dl.asp
+<dt>,Defines a term/name in a description list,1,1,1,0,http://www.w3schools.com/tags/tag_,dt.asp
+<em>,Defines emphasized textŒæ,1,1,1,0,http://www.w3schools.com/tags/tag_,em.asp
+<embed>,Defines a container for an external (non-HTML) application,1,1,1,1,http://www.w3schools.com/tags/tag_,embed.asp
+<fieldset>,Groups related elements in a form,1,1,1,1,http://www.w3schools.com/tags/tag_,fieldset.asp
+<figcaption>,Defines a caption for a <figure> element,1,1,1,0,http://www.w3schools.com/tags/tag_,figcaption.asp
+<figure>,Specifies self-contained content,1,1,1,0,http://www.w3schools.com/tags/tag_,figure.asp
+<font>,"Not supported in HTML5. Use CSS instead.Defines font, color, and size for text",0,0,0,0,http://www.w3schools.com/tags/tag_,font.asp
+<footer>,Defines a footer for a document or section,1,1,1,0,http://www.w3schools.com/tags/tag_,footer.asp
+<form>,Defines an HTML form for user input,1,1,1,1,http://www.w3schools.com/tags/tag_,form.asp
+<frame>,Not supported in HTML5.Defines a window (a frame) in a frameset,0,0,0,0,http://www.w3schools.com/tags/tag_,frame.asp
+<frameset>,Not supported in HTML5.Defines a set of frames,0,0,0,0,http://www.w3schools.com/tags/tag_,frameset.asp
+<h1> to <h6>,Defines HTML headings,1,1,1,0,http://www.w3schools.com/tags/tag_,h1.asp to h6.asp
+<head>,Defines information about the document,1,1,0,0,http://www.w3schools.com/tags/tag_,head.asp
+<header>,Defines a header for a document or section,1,1,1,0,http://www.w3schools.com/tags/tag_,header.asp
+<hr>,Defines a thematic change in the content,1,1,1,1,http://www.w3schools.com/tags/tag_,hr.asp
+<html>,Defines the root of an HTML document,1,1,0,1,http://www.w3schools.com/tags/tag_,html.asp
+<i>,Defines a part of text in an alternate voice or mood,1,1,1,0,http://www.w3schools.com/tags/tag_,i.asp
+<iframe>,Defines an inline frame,1,1,1,1,http://www.w3schools.com/tags/tag_,iframe.asp
+<img>,Defines an image,1,1,1,1,http://www.w3schools.com/tags/tag_,img.asp
+<input>,Defines an input control,1,1,1,1,http://www.w3schools.com/tags/tag_,input.asp
+<ins>,Defines a text that has been inserted into a document,1,1,1,1,http://www.w3schools.com/tags/tag_,ins.asp
+<kbd>,Defines keyboard input,1,1,1,0,http://www.w3schools.com/tags/tag_,kbd.asp
+<keygen>,Defines a key-pair generator field (for forms),1,1,1,0,http://www.w3schools.com/tags/tag_,keygen.asp
+<label>,Defines a labelŒæfor an <input> element,1,1,1,1,http://www.w3schools.com/tags/tag_,label.asp
+<legend>,Defines a caption for a <fieldset> element,1,1,1,1,http://www.w3schools.com/tags/tag_,legend.asp
+<li>,Defines a list item,1,1,1,1,http://www.w3schools.com/tags/tag_,li.asp
+<link>,"Defines the relationship between a document and an external resource (most used to link to style sheets)",1,1,1,1,http://www.w3schools.com/tags/tag_,link.asp
+<main>,Specifies the main content of a document,1,1,1,0,http://www.w3schools.com/tags/tag_,main.asp
+<map>,Defines a client-side image-map,1,1,1,1,http://www.w3schools.com/tags/tag_,map.asp
+<mark>,Defines marked/highlighted text,1,1,1,0,http://www.w3schools.com/tags/tag_,mark.asp
+<menu>,Defines a list/menu of commands,1,1,1,1,http://www.w3schools.com/tags/tag_,menu.asp
+<menuitem>,Defines a command/menu item that the user can invoke from a popup menu,1,1,1,1,http://www.w3schools.com/tags/tag_,menuitem.asp
+<meta>,Defines metadata about an HTML document,1,1,0,1,http://www.w3schools.com/tags/tag_,meta.asp
+<meter>,Defines a scalar measurement within a known range (a gauge),1,1,1,1,http://www.w3schools.com/tags/tag_,meter.asp
+<nav>,Defines navigation links,1,1,1,0,http://www.w3schools.com/tags/tag_,nav.asp
+<noframes>,Not supported in HTML5.Defines an alternate content for users that do not support frames,0,0,0,0,http://www.w3schools.com/tags/tag_,noframes.asp
+<noscript>,"Defines an alternate content for users that do not support client-side scripts",1,1,0,0,http://www.w3schools.com/tags/tag_,noscript.asp
+<object>,Defines an embedded object,1,1,1,1,http://www.w3schools.com/tags/tag_,object.asp
+<ol>,Defines an ordered list,1,1,1,1,http://www.w3schools.com/tags/tag_,ol.asp
+<optgroup>,Defines a group of related options in a drop-down list,1,1,1,1,http://www.w3schools.com/tags/tag_,optgroup.asp
+<option>,Defines an option in a drop-down list,1,1,1,1,http://www.w3schools.com/tags/tag_,option.asp
+<output>,Defines the result of a calculation,1,1,1,1,http://www.w3schools.com/tags/tag_,output.asp
+<p>,Defines a paragraph,1,1,1,1,http://www.w3schools.com/tags/tag_,p.asp
+<param>,Defines a parameter for an object,1,1,1,1,http://www.w3schools.com/tags/tag_,param.asp
+<pre>,Defines preformatted text,1,1,1,1,http://www.w3schools.com/tags/tag_,pre.asp
+<progress>,Represents the progress of a task,1,1,1,1,http://www.w3schools.com/tags/tag_,progress.asp
+<q>,Defines a short quotation,1,1,1,1,http://www.w3schools.com/tags/tag_,q.asp
+<rp>,Defines what to show in browsers that do not support ruby annotations,1,1,1,0,http://www.w3schools.com/tags/tag_,rp.asp
+<rt>,"Defines an explanation/pronunciation of characters (for East Asian typography)",1,1,1,0,http://www.w3schools.com/tags/tag_,rt.asp
+<ruby>,Defines a ruby annotation (for East Asian typography),1,1,1,0,http://www.w3schools.com/tags/tag_,ruby.asp
+<s>,Defines text that is no longer correct,1,1,1,0,http://www.w3schools.com/tags/tag_,s.asp
+<samp>,Defines sample output from a computer program,1,1,1,0,http://www.w3schools.com/tags/tag_,samp.asp
+<script>,Defines a client-side script,1,1,0,1,http://www.w3schools.com/tags/tag_,script.asp
+<section>,Defines a section in a document,1,1,1,0,http://www.w3schools.com/tags/tag_,section.asp
+<select>,Defines a drop-down list,1,1,1,1,http://www.w3schools.com/tags/tag_,select.asp
+<small>,Defines smaller text,1,1,1,0,http://www.w3schools.com/tags/tag_,small.asp
+<source>,Defines multiple media resources for media elements (<video> and <audio>),1,1,1,1,http://www.w3schools.com/tags/tag_,source.asp
+<span>,Defines a section in a document,1,1,1,0,http://www.w3schools.com/tags/tag_,span.asp
+<strike>,Not supported in HTML5. Use <del> or <s> instead.Defines strikethrough text,0,0,0,0,http://www.w3schools.com/tags/tag_,strike.asp
+<strong>,Defines important text,1,1,1,0,http://www.w3schools.com/tags/tag_,strong.asp
+<style>,Defines style information for a document,1,1,1,1,http://www.w3schools.com/tags/tag_,style.asp
+<sub>,Defines subscripted text,1,1,1,0,http://www.w3schools.com/tags/tag_,sub.asp
+<summary>,Defines a visible heading for a <details> element,1,1,1,0,http://www.w3schools.com/tags/tag_,summary.asp
+<sup>,Defines superscripted text,1,1,1,0,http://www.w3schools.com/tags/tag_,sup.asp
+<table>,Defines a table,1,1,1,1,http://www.w3schools.com/tags/tag_,table.asp
+<tbody>,Groups the body content in a table,1,1,1,1,http://www.w3schools.com/tags/tag_,tbody.asp
+<td>,Defines a cell in a table,1,1,1,1,http://www.w3schools.com/tags/tag_,td.asp
+<textarea>,Defines a multiline input control (text area),1,1,1,1,http://www.w3schools.com/tags/tag_,textarea.asp
+<tfoot>,Groups the footer content in a table,1,1,1,1,http://www.w3schools.com/tags/tag_,tfoot.asp
+<th>,Defines a header cell in a table,1,1,1,1,http://www.w3schools.com/tags/tag_,th.asp
+<thead>,Groups the header content in a table,1,1,1,1,http://www.w3schools.com/tags/tag_,thead.asp
+<time>,Defines a date/time,1,1,1,1,http://www.w3schools.com/tags/tag_,time.asp
+<title>,Defines a title for the document,0,0,0,0,http://www.w3schools.com/tags/tag_,title.asp
+<tr>,Defines a row in a table,1,1,1,1,http://www.w3schools.com/tags/tag_,tr.asp
+<track>,Defines text tracks for media elements (<video> and <audio>),1,1,1,1,http://www.w3schools.com/tags/tag_,track.asp
+<tt>,Not supported in HTML5. Use CSS instead.Defines teletype text,0,0,0,0,http://www.w3schools.com/tags/tag_,tt.asp
+<u>,Defines text that should be stylistically different from normal text,1,1,1,0,http://www.w3schools.com/tags/tag_,u.asp
+<ul>,Defines an unordered list,1,1,1,1,http://www.w3schools.com/tags/tag_,ul.asp
+<var>,Defines a variable,1,1,1,0,http://www.w3schools.com/tags/tag_,var.asp
+<video>,Defines a video or movie,1,1,1,1,http://www.w3schools.com/tags/tag_,video.asp
+<wbr>,Defines a possible line-break,1,1,1,0,http://www.w3schools.com/tags/tag_,wbr.asp
