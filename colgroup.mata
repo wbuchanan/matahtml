@@ -7,846 +7,2193 @@ mata:
 // Definition of HTML Tag colgroup Mata Class
 // Specifies a group of one or more columns in a table for formatting// Information retrieved from http://www.w3schools.com/tags/tag_colgroup.asp
 class colgroup { 
- // Define private member variables
- private: 
 
- // Static/final variables 
- static                  string                  scalar                  opens, opene, close, classargs
+    // Define private member variables
+    private: 
 
- // String scalar attributes  string                                                  scalar                  `"accesskey"', `"align"', `"char"', `"charoff"', `"class"', `"contenteditable"', `"contextmenu"', `"data-*"', `"dir"', `"draggable"', `"dropzone"', `"hidden"', `"id"', `"lang"', `"onabort"', `"onafterprint"', `"onbeforeprint"', `"onbeforeunload"', `"onblur"', `"oncanplay"', `"oncanplaythrough"', `"onchange"', `"onclick"', `"oncontextmenu"', `"oncopy"', `"oncuechange"', `"oncut"', `"ondblclick"', `"ondrag"', `"ondragend"', `"ondragenter"', `"ondragleave"', `"ondragover"', `"ondragstart"', `"ondrop"', `"ondurationchange"', `"onemptied"', `"onended"', `"onerror"', `"onfocus"', `"onhashchange"', `"oninput"', `"oninvalid"', `"onkeydown"', `"onkeypress"', `"onkeyup"', `"onload"', `"onloadeddata"', `"onloadedmetadata"', `"onloadstart"', `"onmessage"', `"onmousedown"', `"onmousemove"', `"onmouseout"', `"onmouseover"', `"onmouseup"', `"onmousewheel"', `"onoffline"', `"ononline"', `"onpagehide"', `"onpageshow"', `"onpaste"', `"onpause"', `"onplay"', `"onplaying"', `"onpopstate"', `"onprogress"', `"onratechange"', `"onreset"', `"onresize"', `"onscroll"', `"onsearch"', `"onseeked"', `"onseeking"', `"onselect"', `"onshow"', `"onstalled"', `"onstorage"', `"onsubmit"', `"onsuspend"', `"ontimeupdate"', `"ontoggle"', `"onunload"', `"onvolumechange"', `"onwaiting"', `"onwheel"', `"span"', `"spellcheck"', `"style"', `"tabindex"', `"title"', `"translate"', `"valign"', `"width"'
+    // Static/final variables 
+    static                       string                  scalar                  opens, opene, close, classargs
 
- // Define public members/methods 
- public: 
+    // String scalar attributes 
+    string                                                       scalar                  accesskey, align, char, charoff, contenteditable, contextmenu, data, draggable, dropzone, hidden, htmlclass, htmldir, htmltranslate, id, lang, onabort, onafterprint, onbeforeprint, onbeforeunload, onblur, oncanplay, oncanplaythrough, onchange, onclick, oncontextmenu, oncopy, oncuechange, oncut, ondblclick, ondrag, ondragend, ondragenter, ondragleave, ondragover, ondragstart, ondrop, ondurationchange, onemptied, onended, onerror, onfocus, onhashchange, oninput, oninvalid, onkeydown, onkeypress, onkeyup, onload, onloadeddata, onloadedmetadata, onloadstart, onmessage, onmousedown, onmousemove, onmouseout, onmouseover, onmouseup, onmousewheel, onoffline, ononline, onpagehide, onpageshow, onpaste, onpause, onplay, onplaying, onpopstate, onprogress, onratechange, onreset, onresize, onscroll, onsearch, onseeked, onseeking, onselect, onshow, onstalled, onstorage, onsubmit, onsuspend, ontimeupdate, ontoggle, onunload, onvolumechange, onwaiting, onwheel, span, spellcheck, style, tabindex, title, valign, width
 
- // Setter methods  void                    new(), setClassArgs()
+    // Define public members/methods 
+    public: 
 
- // Getter methods  string                  scalar                  getOpens(), getOpene(), getClose(), print(), getClassargs()
+    // Setter methods 
+    void                 new(), setClassArgs(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set()
+
+    // Getter methods 
+    string                       scalar                  getOpens(), getOpene(), getClose(), print(), getClassargs(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get()
 
 } // End of class declaration
 
 // Class constructor method declaration 
 void colgroup::new() { 
 
- // Defines the start of the opening tag for the class 
- this.opens = "<colgroup" 
+    // Defines the start of the opening tag for the class 
+    this.opens = "<colgroup" 
 
- // Defines the end of the opening tag for the class 
- this.opene = ">" 
+    // Defines the end of the opening tag for the class 
+    this.opene = ">" 
 
- // Defines the closing tag for the class 
- this.close = "</colgroup>" 
+    // Defines the closing tag for the class 
+    this.close = "</colgroup>" 
 
 } // End of class constructor method definition
 
 // Setter method for class arguments (appear between HTML tags) 
 void colgroup::setClassArgs(| string scalar classarguments) { 
 
- // Defines arguments that appear between HTML tags 
- this.classargs = classarguments" 
+    // Defines arguments that appear between HTML tags 
+    this.classargs = classarguments 
 
 } // End of setter method for class arguments
+
+// Specifies a shortcut key to activate/focus an element 
+void colgroup::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class colgroup
+
+// Not supported in HTML5.Aligns the content in a column group 
+void colgroup::set(| string scalar left, string scalar right, string scalar center, string scalar justify, string scalar char) { 
+
+    // Declare member variables based on arguments 
+    string scalar locleft, "locright", "loccenter", "locjustify", "locchar" 
+
+    // Initialize the local variable 1
+    locleft = `" = ""' + left + `"""' 
+
+    // Initialize the local variable 2
+    locright = `" = ""' + right + `"""' 
+
+    // Initialize the local variable 3
+    loccenter = `" = ""' + center + `"""' 
+
+    // Initialize the local variable 4
+    locjustify = `" = ""' + justify + `"""' 
+
+    // Initialize the local variable 5
+    locchar = `" = ""' + char + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locleft + "locright" + "loccenter" + "locjustify" + "locchar"
+
+} // End of Method  declaration for class colgroup
+
+// Not supported in HTML5.Aligns the content in a column group to a character 
+void colgroup::set(| string scalar character) { 
+
+    // Declare member variables based on arguments 
+    string scalar loccharacter 
+
+    // Initialize the local variable 1
+    loccharacter = `" = ""' + character + `"""' 
+
+    // Set the attribute  for this class 
+    this. = loccharacter
+
+} // End of Method  declaration for class colgroup
+
+// Not supported in HTML5.Sets the number of characters the content will be aligned from the character specified by the char attribute 
+void colgroup::set(| string scalar number) { 
+
+    // Declare member variables based on arguments 
+    string scalar locnumber 
+
+    // Initialize the local variable 1
+    locnumber = `" = ""' + number + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locnumber
+
+} // End of Method  declaration for class colgroup
+
+// Specifies whether the content of an element is editable or not 
+void colgroup::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class colgroup
+
+// Specifies a context menu for an element. The context menu appears when a user right-clicks on the element 
+void colgroup::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class colgroup
+
+// Used to store custom data private to the page or application 
+void colgroup::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class colgroup
+
+// Specifies whether an element is draggable or not 
+void colgroup::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class colgroup
+
+// Specifies whether the dragged data is copied, moved, or linked, when dropped 
+void colgroup::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class colgroup
+
+// Specifies that an element is not yet, or is no longer, relevant 
+void colgroup::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class colgroup
+
+// Specifies one or more classnames for an element (refers to a class in a style sheet) 
+void colgroup::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class colgroup
+
+// Specifies the text direction for the content in an element 
+void colgroup::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class colgroup
+
+// Specifies whether the content of an element should be translated or not 
+void colgroup::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class colgroup
+
+// Specifies a unique id for an element 
+void colgroup::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class colgroup
+
+// Specifies the language of the element's content 
+void colgroup::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run on abort 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run after the document is printed 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run before the document is printed 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run when the document is about to be unloaded 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Fires the moment that the element loses focus 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run when a file is ready to start playing (when it has buffered enough to begin) 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run when a file can be played all the way to the end without pausing for buffering 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Fires the moment when the value of the element is changed 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Fires on a mouse click on the element 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run when a context menu is triggered 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Fires when the user copies the content of an element 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run when the cue changes in a <track> element 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Fires when the user cuts the content of an element 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Fires on a mouse double-click on the element 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run when an element is dragged 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run at the end of a drag operation 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run when an element has been dragged to a valid drop target 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run when an element leaves a valid drop target 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run when an element is being dragged over a valid drop target 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run at the start of a drag operation 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run when dragged element is being dropped 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run when the length of the media changes 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run when something bad happens and the file is suddenly unavailable (like unexpectedly disconnects) 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run when the media has reach the end (a useful event for messages like "thanks for listening") 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Fires when an error occurs while loading an external file Script to be run when an error occur Script to be run when an error occurs when the file is being loaded 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Fires the moment when the element gets focus 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run when there has been changes to the anchor part of the a URL 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run when an element gets user input 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run when an element is invalid 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Fires when a user is pressing a key 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Fires when a user presses a key 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Fires when a user releases a key 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Fires after the page is finished loading 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run when media data is loaded 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run when meta data (like dimensions and duration) are loaded 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run just as the file begins to load before anything is actually loaded 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run when the message is triggered 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Fires when a mouse button is pressed down on an element 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Fires when the mouse pointer is moving while it is over an element 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Fires when the mouse pointer moves out of an element 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Fires when the mouse pointer moves over an element 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Fires when a mouse button is released over an element 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Deprecated. Use the onwheel attribute instead 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run when the browser starts to work offline 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run when the browser starts to work online 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run when a user navigates away from a page 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run when a user navigates to a page 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Fires when the user pastes some content in an element 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run when the media is paused either by the user or programmatically 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run when the media is ready to start playing 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run when the media actually has started playing 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run when the window's history changes 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run when the browser is in the process of getting the media data 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run each time the playback rate changes (like when a user switches to a slow motion or fast forward mode) 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Fires when the Reset button in a form is clicked 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Fires when the browser window is resized 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run when an element's scrollbar is being scrolled 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Fires when the user writes something in a search field (for <input="search">) 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run when the seeking attribute is set to false indicating that seeking has ended 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run when the seeking attribute is set to true indicating that seeking is active 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Fires after some text has been selected in an element 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Fires when a <menu> element is shown as a context menu 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run when the browser is unable to fetch the media data for whatever reason 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run when a Web Storage area is updated 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Fires when a form is submitted 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run when fetching the media data is stopped before it is completely loaded for whatever reason 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run when the playing position has changed (like when the user fast forwards to a different point in the media) 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Fires when the user opens or closes the <details> element 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Fires once a page has unloaded (or the browser window has been closed) 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run each time the volume is changed which (includes setting the volume to "mute") 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Script to be run when the media has paused but is expected to resume (like when the media pauses to buffer more data) 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Fires when the mouse wheel rolls up or down over an element 
+void colgroup::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class colgroup
+
+// Specifies the number of columns a column group should span 
+void colgroup::set(| string scalar number) { 
+
+    // Declare member variables based on arguments 
+    string scalar locnumber 
+
+    // Initialize the local variable 1
+    locnumber = `" = ""' + number + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locnumber
+
+} // End of Method  declaration for class colgroup
+
+// Specifies whether the element is to have its spelling and grammar checked or not 
+void colgroup::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class colgroup
+
+// Specifies an inline CSS style for an element 
+void colgroup::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class colgroup
+
+// Specifies the tabbing order of an element 
+void colgroup::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class colgroup
+
+// Specifies extra information about an element 
+void colgroup::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class colgroup
+
+// Not supported in HTML5.Vertical aligns the content in a column group 
+void colgroup::set(| string scalar top, string scalar middle, string scalar bottom, string scalar baseline) { 
+
+    // Declare member variables based on arguments 
+    string scalar loctop, "locmiddle", "locbottom", "locbaseline" 
+
+    // Initialize the local variable 1
+    loctop = `" = ""' + top + `"""' 
+
+    // Initialize the local variable 2
+    locmiddle = `" = ""' + middle + `"""' 
+
+    // Initialize the local variable 3
+    locbottom = `" = ""' + bottom + `"""' 
+
+    // Initialize the local variable 4
+    locbaseline = `" = ""' + baseline + `"""' 
+
+    // Set the attribute  for this class 
+    this. = loctop + "locmiddle" + "locbottom" + "locbaseline"
+
+} // End of Method  declaration for class colgroup
+
+// Not supported in HTML5.Specifies the width of a column group 
+void colgroup::set(| string scalar pixels, string scalar %, string scalar relative_length) { 
+
+    // Declare member variables based on arguments 
+    string scalar locpixels, "loc%", "locrelative_length" 
+
+    // Initialize the local variable 1
+    locpixels = `" = ""' + pixels + `"""' 
+
+    // Initialize the local variable 2
+    loc% = `" = ""' + % + `"""' 
+
+    // Initialize the local variable 3
+    locrelative_length = `" = ""' + relative_length + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locpixels + "loc%" + "locrelative_length"
+
+} // End of Method  declaration for class colgroup
 
 // Getter method for opening bracket 
 string scalar colgroup::getOpens() { 
 
- // Returns the opening bracket/tag w/o > character to allow attributes 
- return(this.opens + " ") 
+    // Returns the opening bracket/tag w/o > character to allow attributes 
+    return(this.opens + " ") 
 
 } // End of getter method for opens member of class colgroup
 
 // Getter method for opening bracket closing character
 string scalar colgroup::getOpene() { 
 
- // Returns the closing character for the opening bracket 
- return(this.opene + " ") 
+    // Returns the closing character for the opening bracket 
+    return(this.opene + " ") 
 
 } // End of getter method for opene member of class colgroup
 
 // Getter method for closing bracket 
 string scalar colgroup::getClose() { 
 
- // Returns the closing bracket/tag
- return(this.close + " ") 
+    // Returns the closing bracket/tag
+    return(this.close + " ") 
 
 } // End of getter method for close member of class colgroup
 
 // Getter method for class arguments 
 string scalar colgroup::getClassArgs() { 
 
- // Returns the class arguments that appear between the HTML tags 
- return(this.classargs) 
+    // Returns the class arguments that appear between the HTML tags 
+    return(this.classargs) 
 
 } // End of getter method for class arguments member of class colgroup
 
-// Getter method for accesskey member variable 
-string scalar colgroup::getAccesskey() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the accesskey variable 
- return(this.accesskey + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for accesskey member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for align member variable 
-string scalar colgroup::getAlign() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the align variable 
- return(this.align + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for align member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for char member variable 
-string scalar colgroup::getChar() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the char variable 
- return(this.char + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for char member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for charoff member variable 
-string scalar colgroup::getCharoff() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the charoff variable 
- return(this.charoff + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for charoff member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for class member variable 
-string scalar colgroup::getClass() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the class variable 
- return(this.class + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for class member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for contenteditable member variable 
-string scalar colgroup::getContenteditable() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the contenteditable variable 
- return(this.contenteditable + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for contenteditable member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for contextmenu member variable 
-string scalar colgroup::getContextmenu() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the contextmenu variable 
- return(this.contextmenu + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for contextmenu member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for data-* member variable 
-string scalar colgroup::getData-*() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the data-* variable 
- return(this.data-* + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for data-* member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for dir member variable 
-string scalar colgroup::getDir() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the dir variable 
- return(this.dir + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for dir member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for draggable member variable 
-string scalar colgroup::getDraggable() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the draggable variable 
- return(this.draggable + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for draggable member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for dropzone member variable 
-string scalar colgroup::getDropzone() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the dropzone variable 
- return(this.dropzone + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for dropzone member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for hidden member variable 
-string scalar colgroup::getHidden() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the hidden variable 
- return(this.hidden + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for hidden member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for id member variable 
-string scalar colgroup::getId() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the id variable 
- return(this.id + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for id member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for lang member variable 
-string scalar colgroup::getLang() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the lang variable 
- return(this.lang + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for lang member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onabort member variable 
-string scalar colgroup::getOnabort() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onabort variable 
- return(this.onabort + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onabort member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onafterprint member variable 
-string scalar colgroup::getOnafterprint() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onafterprint variable 
- return(this.onafterprint + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onafterprint member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onbeforeprint member variable 
-string scalar colgroup::getOnbeforeprint() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onbeforeprint variable 
- return(this.onbeforeprint + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onbeforeprint member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onbeforeunload member variable 
-string scalar colgroup::getOnbeforeunload() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onbeforeunload variable 
- return(this.onbeforeunload + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onbeforeunload member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onblur member variable 
-string scalar colgroup::getOnblur() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onblur variable 
- return(this.onblur + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onblur member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for oncanplay member variable 
-string scalar colgroup::getOncanplay() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the oncanplay variable 
- return(this.oncanplay + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oncanplay member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for oncanplaythrough member variable 
-string scalar colgroup::getOncanplaythrough() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the oncanplaythrough variable 
- return(this.oncanplaythrough + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oncanplaythrough member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onchange member variable 
-string scalar colgroup::getOnchange() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onchange variable 
- return(this.onchange + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onchange member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onclick member variable 
-string scalar colgroup::getOnclick() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onclick variable 
- return(this.onclick + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onclick member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for oncontextmenu member variable 
-string scalar colgroup::getOncontextmenu() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the oncontextmenu variable 
- return(this.oncontextmenu + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oncontextmenu member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for oncopy member variable 
-string scalar colgroup::getOncopy() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the oncopy variable 
- return(this.oncopy + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oncopy member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for oncuechange member variable 
-string scalar colgroup::getOncuechange() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the oncuechange variable 
- return(this.oncuechange + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oncuechange member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for oncut member variable 
-string scalar colgroup::getOncut() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the oncut variable 
- return(this.oncut + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oncut member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for ondblclick member variable 
-string scalar colgroup::getOndblclick() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the ondblclick variable 
- return(this.ondblclick + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondblclick member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for ondrag member variable 
-string scalar colgroup::getOndrag() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the ondrag variable 
- return(this.ondrag + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondrag member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for ondragend member variable 
-string scalar colgroup::getOndragend() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the ondragend variable 
- return(this.ondragend + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondragend member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for ondragenter member variable 
-string scalar colgroup::getOndragenter() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the ondragenter variable 
- return(this.ondragenter + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondragenter member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for ondragleave member variable 
-string scalar colgroup::getOndragleave() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the ondragleave variable 
- return(this.ondragleave + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondragleave member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for ondragover member variable 
-string scalar colgroup::getOndragover() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the ondragover variable 
- return(this.ondragover + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondragover member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for ondragstart member variable 
-string scalar colgroup::getOndragstart() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the ondragstart variable 
- return(this.ondragstart + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondragstart member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for ondrop member variable 
-string scalar colgroup::getOndrop() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the ondrop variable 
- return(this.ondrop + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondrop member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for ondurationchange member variable 
-string scalar colgroup::getOndurationchange() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the ondurationchange variable 
- return(this.ondurationchange + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondurationchange member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onemptied member variable 
-string scalar colgroup::getOnemptied() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onemptied variable 
- return(this.onemptied + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onemptied member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onended member variable 
-string scalar colgroup::getOnended() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onended variable 
- return(this.onended + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onended member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onerror member variable 
-string scalar colgroup::getOnerror() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onerror variable 
- return(this.onerror + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onerror member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onfocus member variable 
-string scalar colgroup::getOnfocus() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onfocus variable 
- return(this.onfocus + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onfocus member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onhashchange member variable 
-string scalar colgroup::getOnhashchange() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onhashchange variable 
- return(this.onhashchange + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onhashchange member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for oninput member variable 
-string scalar colgroup::getOninput() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the oninput variable 
- return(this.oninput + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oninput member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for oninvalid member variable 
-string scalar colgroup::getOninvalid() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the oninvalid variable 
- return(this.oninvalid + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oninvalid member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onkeydown member variable 
-string scalar colgroup::getOnkeydown() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onkeydown variable 
- return(this.onkeydown + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onkeydown member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onkeypress member variable 
-string scalar colgroup::getOnkeypress() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onkeypress variable 
- return(this.onkeypress + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onkeypress member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onkeyup member variable 
-string scalar colgroup::getOnkeyup() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onkeyup variable 
- return(this.onkeyup + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onkeyup member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onload member variable 
-string scalar colgroup::getOnload() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onload variable 
- return(this.onload + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onload member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onloadeddata member variable 
-string scalar colgroup::getOnloadeddata() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onloadeddata variable 
- return(this.onloadeddata + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onloadeddata member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onloadedmetadata member variable 
-string scalar colgroup::getOnloadedmetadata() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onloadedmetadata variable 
- return(this.onloadedmetadata + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onloadedmetadata member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onloadstart member variable 
-string scalar colgroup::getOnloadstart() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onloadstart variable 
- return(this.onloadstart + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onloadstart member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onmessage member variable 
-string scalar colgroup::getOnmessage() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onmessage variable 
- return(this.onmessage + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmessage member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onmousedown member variable 
-string scalar colgroup::getOnmousedown() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onmousedown variable 
- return(this.onmousedown + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmousedown member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onmousemove member variable 
-string scalar colgroup::getOnmousemove() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onmousemove variable 
- return(this.onmousemove + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmousemove member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onmouseout member variable 
-string scalar colgroup::getOnmouseout() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onmouseout variable 
- return(this.onmouseout + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmouseout member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onmouseover member variable 
-string scalar colgroup::getOnmouseover() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onmouseover variable 
- return(this.onmouseover + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmouseover member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onmouseup member variable 
-string scalar colgroup::getOnmouseup() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onmouseup variable 
- return(this.onmouseup + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmouseup member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onmousewheel member variable 
-string scalar colgroup::getOnmousewheel() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onmousewheel variable 
- return(this.onmousewheel + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmousewheel member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onoffline member variable 
-string scalar colgroup::getOnoffline() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onoffline variable 
- return(this.onoffline + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onoffline member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for ononline member variable 
-string scalar colgroup::getOnonline() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the ononline variable 
- return(this.ononline + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ononline member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onpagehide member variable 
-string scalar colgroup::getOnpagehide() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onpagehide variable 
- return(this.onpagehide + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onpagehide member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onpageshow member variable 
-string scalar colgroup::getOnpageshow() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onpageshow variable 
- return(this.onpageshow + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onpageshow member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onpaste member variable 
-string scalar colgroup::getOnpaste() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onpaste variable 
- return(this.onpaste + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onpaste member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onpause member variable 
-string scalar colgroup::getOnpause() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onpause variable 
- return(this.onpause + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onpause member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onplay member variable 
-string scalar colgroup::getOnplay() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onplay variable 
- return(this.onplay + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onplay member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onplaying member variable 
-string scalar colgroup::getOnplaying() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onplaying variable 
- return(this.onplaying + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onplaying member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onpopstate member variable 
-string scalar colgroup::getOnpopstate() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onpopstate variable 
- return(this.onpopstate + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onpopstate member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onprogress member variable 
-string scalar colgroup::getOnprogress() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onprogress variable 
- return(this.onprogress + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onprogress member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onratechange member variable 
-string scalar colgroup::getOnratechange() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onratechange variable 
- return(this.onratechange + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onratechange member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onreset member variable 
-string scalar colgroup::getOnreset() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onreset variable 
- return(this.onreset + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onreset member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onresize member variable 
-string scalar colgroup::getOnresize() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onresize variable 
- return(this.onresize + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onresize member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onscroll member variable 
-string scalar colgroup::getOnscroll() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onscroll variable 
- return(this.onscroll + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onscroll member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onsearch member variable 
-string scalar colgroup::getOnsearch() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onsearch variable 
- return(this.onsearch + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onsearch member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onseeked member variable 
-string scalar colgroup::getOnseeked() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onseeked variable 
- return(this.onseeked + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onseeked member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onseeking member variable 
-string scalar colgroup::getOnseeking() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onseeking variable 
- return(this.onseeking + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onseeking member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onselect member variable 
-string scalar colgroup::getOnselect() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onselect variable 
- return(this.onselect + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onselect member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onshow member variable 
-string scalar colgroup::getOnshow() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onshow variable 
- return(this.onshow + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onshow member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onstalled member variable 
-string scalar colgroup::getOnstalled() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onstalled variable 
- return(this.onstalled + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onstalled member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onstorage member variable 
-string scalar colgroup::getOnstorage() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onstorage variable 
- return(this.onstorage + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onstorage member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onsubmit member variable 
-string scalar colgroup::getOnsubmit() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onsubmit variable 
- return(this.onsubmit + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onsubmit member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onsuspend member variable 
-string scalar colgroup::getOnsuspend() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onsuspend variable 
- return(this.onsuspend + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onsuspend member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for ontimeupdate member variable 
-string scalar colgroup::getOntimeupdate() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the ontimeupdate variable 
- return(this.ontimeupdate + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ontimeupdate member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for ontoggle member variable 
-string scalar colgroup::getOntoggle() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the ontoggle variable 
- return(this.ontoggle + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ontoggle member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onunload member variable 
-string scalar colgroup::getOnunload() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onunload variable 
- return(this.onunload + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onunload member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onvolumechange member variable 
-string scalar colgroup::getOnvolumechange() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onvolumechange variable 
- return(this.onvolumechange + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onvolumechange member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onwaiting member variable 
-string scalar colgroup::getOnwaiting() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onwaiting variable 
- return(this.onwaiting + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onwaiting member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for onwheel member variable 
-string scalar colgroup::getOnwheel() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the onwheel variable 
- return(this.onwheel + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onwheel member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for span member variable 
-string scalar colgroup::getSpan() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the span variable 
- return(this.span + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for span member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for spellcheck member variable 
-string scalar colgroup::getSpellcheck() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the spellcheck variable 
- return(this.spellcheck + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for spellcheck member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for style member variable 
-string scalar colgroup::getStyle() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the style variable 
- return(this.style + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for style member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for tabindex member variable 
-string scalar colgroup::getTabindex() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the tabindex variable 
- return(this.tabindex + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for tabindex member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for title member variable 
-string scalar colgroup::getTitle() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the title variable 
- return(this.title + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for title member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for translate member variable 
-string scalar colgroup::getTranslate() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the translate variable 
- return(this.translate + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for translate member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for valign member variable 
-string scalar colgroup::getValign() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the valign variable 
- return(this.valign + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for valign member of class colgroup
+} // End of getter method for  member of class colgroup
 
-// Getter method for width member variable 
-string scalar colgroup::getWidth() { 
+// Getter method for  member variable 
+string scalar colgroup::get() { 
 
- // Returns the width variable 
- return(this.width + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for width member of class colgroup
+} // End of getter method for  member of class colgroup
 
 // Get the HTML tag w/attributes and arguments 
 string scalar colgroup::print() { 
 
- // Create local variables to piece together return string 
- string scalar open, args, close 
+    // Create local variables to piece together return string 
+    string scalar open, args, close 
 
- // Create opening string 
- open = getOpens() +  + getOpene()
+    // Create opening string 
+    open = getOpens() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + getOpene()
 
- // Get class arguments 
- args = getClassArgs() 
+    // Get class arguments 
+    args = getClassArgs() 
 
- // Get closing tag 
- close = getClose() 
+    // Get closing tag 
+    close = getClose() 
 
- // Return the complete HTML string 
- return(open + args + close) 
+    // Return the complete HTML string 
+    return(open + args + close) 
 
 } // End of print method for class colgroup 
 

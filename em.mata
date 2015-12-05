@@ -7,798 +7,2034 @@ mata:
 // Definition of HTML Tag em Mata Class
 // Defines emphasized text// Information retrieved from http://www.w3schools.com/tags/tag_em.asp
 class em { 
- // Define private member variables
- private: 
 
- // Static/final variables 
- static                  string                  scalar                  opens, opene, close, classargs
+    // Define private member variables
+    private: 
 
- // String scalar attributes  string                                                  scalar                  `"accesskey"', `"class"', `"contenteditable"', `"contextmenu"', `"data-*"', `"dir"', `"draggable"', `"dropzone"', `"hidden"', `"id"', `"lang"', `"onabort"', `"onafterprint"', `"onbeforeprint"', `"onbeforeunload"', `"onblur"', `"oncanplay"', `"oncanplaythrough"', `"onchange"', `"onclick"', `"oncontextmenu"', `"oncopy"', `"oncuechange"', `"oncut"', `"ondblclick"', `"ondrag"', `"ondragend"', `"ondragenter"', `"ondragleave"', `"ondragover"', `"ondragstart"', `"ondrop"', `"ondurationchange"', `"onemptied"', `"onended"', `"onerror"', `"onfocus"', `"onhashchange"', `"oninput"', `"oninvalid"', `"onkeydown"', `"onkeypress"', `"onkeyup"', `"onload"', `"onloadeddata"', `"onloadedmetadata"', `"onloadstart"', `"onmessage"', `"onmousedown"', `"onmousemove"', `"onmouseout"', `"onmouseover"', `"onmouseup"', `"onmousewheel"', `"onoffline"', `"ononline"', `"onpagehide"', `"onpageshow"', `"onpaste"', `"onpause"', `"onplay"', `"onplaying"', `"onpopstate"', `"onprogress"', `"onratechange"', `"onreset"', `"onresize"', `"onscroll"', `"onsearch"', `"onseeked"', `"onseeking"', `"onselect"', `"onshow"', `"onstalled"', `"onstorage"', `"onsubmit"', `"onsuspend"', `"ontimeupdate"', `"ontoggle"', `"onunload"', `"onvolumechange"', `"onwaiting"', `"onwheel"', `"spellcheck"', `"style"', `"tabindex"', `"title"', `"translate"'
+    // Static/final variables 
+    static                       string                  scalar                  opens, opene, close, classargs
 
- // Define public members/methods 
- public: 
+    // String scalar attributes 
+    string                                                       scalar                  accesskey, contenteditable, contextmenu, data, draggable, dropzone, hidden, htmlclass, htmldir, htmltranslate, id, lang, onabort, onafterprint, onbeforeprint, onbeforeunload, onblur, oncanplay, oncanplaythrough, onchange, onclick, oncontextmenu, oncopy, oncuechange, oncut, ondblclick, ondrag, ondragend, ondragenter, ondragleave, ondragover, ondragstart, ondrop, ondurationchange, onemptied, onended, onerror, onfocus, onhashchange, oninput, oninvalid, onkeydown, onkeypress, onkeyup, onload, onloadeddata, onloadedmetadata, onloadstart, onmessage, onmousedown, onmousemove, onmouseout, onmouseover, onmouseup, onmousewheel, onoffline, ononline, onpagehide, onpageshow, onpaste, onpause, onplay, onplaying, onpopstate, onprogress, onratechange, onreset, onresize, onscroll, onsearch, onseeked, onseeking, onselect, onshow, onstalled, onstorage, onsubmit, onsuspend, ontimeupdate, ontoggle, onunload, onvolumechange, onwaiting, onwheel, spellcheck, style, tabindex, title
 
- // Setter methods  void                    new(), setClassArgs()
+    // Define public members/methods 
+    public: 
 
- // Getter methods  string                  scalar                  getOpens(), getOpene(), getClose(), print(), getClassargs()
+    // Setter methods 
+    void                 new(), setClassArgs(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set()
+
+    // Getter methods 
+    string                       scalar                  getOpens(), getOpene(), getClose(), print(), getClassargs(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get()
 
 } // End of class declaration
 
 // Class constructor method declaration 
 void em::new() { 
 
- // Defines the start of the opening tag for the class 
- this.opens = "<em" 
+    // Defines the start of the opening tag for the class 
+    this.opens = "<em" 
 
- // Defines the end of the opening tag for the class 
- this.opene = ">" 
+    // Defines the end of the opening tag for the class 
+    this.opene = ">" 
 
- // Defines the closing tag for the class 
- this.close = "</em>" 
+    // Defines the closing tag for the class 
+    this.close = "</em>" 
 
 } // End of class constructor method definition
 
 // Setter method for class arguments (appear between HTML tags) 
 void em::setClassArgs(| string scalar classarguments) { 
 
- // Defines arguments that appear between HTML tags 
- this.classargs = classarguments" 
+    // Defines arguments that appear between HTML tags 
+    this.classargs = classarguments 
 
 } // End of setter method for class arguments
+
+// Specifies a shortcut key to activate/focus an element 
+void em::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class em
+
+// Specifies whether the content of an element is editable or not 
+void em::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class em
+
+// Specifies a context menu for an element. The context menu appears when a user right-clicks on the element 
+void em::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class em
+
+// Used to store custom data private to the page or application 
+void em::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class em
+
+// Specifies whether an element is draggable or not 
+void em::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class em
+
+// Specifies whether the dragged data is copied, moved, or linked, when dropped 
+void em::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class em
+
+// Specifies that an element is not yet, or is no longer, relevant 
+void em::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class em
+
+// Specifies one or more classnames for an element (refers to a class in a style sheet) 
+void em::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class em
+
+// Specifies the text direction for the content in an element 
+void em::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class em
+
+// Specifies whether the content of an element should be translated or not 
+void em::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class em
+
+// Specifies a unique id for an element 
+void em::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class em
+
+// Specifies the language of the element's content 
+void em::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class em
+
+// Script to be run on abort 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run after the document is printed 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run before the document is printed 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run when the document is about to be unloaded 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Fires the moment that the element loses focus 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run when a file is ready to start playing (when it has buffered enough to begin) 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run when a file can be played all the way to the end without pausing for buffering 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Fires the moment when the value of the element is changed 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Fires on a mouse click on the element 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run when a context menu is triggered 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Fires when the user copies the content of an element 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run when the cue changes in a <track> element 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Fires when the user cuts the content of an element 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Fires on a mouse double-click on the element 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run when an element is dragged 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run at the end of a drag operation 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run when an element has been dragged to a valid drop target 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run when an element leaves a valid drop target 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run when an element is being dragged over a valid drop target 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run at the start of a drag operation 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run when dragged element is being dropped 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run when the length of the media changes 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run when something bad happens and the file is suddenly unavailable (like unexpectedly disconnects) 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run when the media has reach the end (a useful event for messages like "thanks for listening") 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Fires when an error occurs while loading an external file Script to be run when an error occur Script to be run when an error occurs when the file is being loaded 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Fires the moment when the element gets focus 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run when there has been changes to the anchor part of the a URL 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run when an element gets user input 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run when an element is invalid 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Fires when a user is pressing a key 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Fires when a user presses a key 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Fires when a user releases a key 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Fires after the page is finished loading 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run when media data is loaded 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run when meta data (like dimensions and duration) are loaded 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run just as the file begins to load before anything is actually loaded 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run when the message is triggered 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Fires when a mouse button is pressed down on an element 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Fires when the mouse pointer is moving while it is over an element 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Fires when the mouse pointer moves out of an element 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Fires when the mouse pointer moves over an element 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Fires when a mouse button is released over an element 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Deprecated. Use the onwheel attribute instead 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run when the browser starts to work offline 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run when the browser starts to work online 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run when a user navigates away from a page 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run when a user navigates to a page 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Fires when the user pastes some content in an element 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run when the media is paused either by the user or programmatically 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run when the media is ready to start playing 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run when the media actually has started playing 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run when the window's history changes 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run when the browser is in the process of getting the media data 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run each time the playback rate changes (like when a user switches to a slow motion or fast forward mode) 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Fires when the Reset button in a form is clicked 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Fires when the browser window is resized 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run when an element's scrollbar is being scrolled 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Fires when the user writes something in a search field (for <input="search">) 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run when the seeking attribute is set to false indicating that seeking has ended 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run when the seeking attribute is set to true indicating that seeking is active 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Fires after some text has been selected in an element 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Fires when a <menu> element is shown as a context menu 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run when the browser is unable to fetch the media data for whatever reason 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run when a Web Storage area is updated 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Fires when a form is submitted 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run when fetching the media data is stopped before it is completely loaded for whatever reason 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run when the playing position has changed (like when the user fast forwards to a different point in the media) 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Fires when the user opens or closes the <details> element 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Fires once a page has unloaded (or the browser window has been closed) 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run each time the volume is changed which (includes setting the volume to "mute") 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Script to be run when the media has paused but is expected to resume (like when the media pauses to buffer more data) 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Fires when the mouse wheel rolls up or down over an element 
+void em::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class em
+
+// Specifies whether the element is to have its spelling and grammar checked or not 
+void em::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class em
+
+// Specifies an inline CSS style for an element 
+void em::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class em
+
+// Specifies the tabbing order of an element 
+void em::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class em
+
+// Specifies extra information about an element 
+void em::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class em
 
 // Getter method for opening bracket 
 string scalar em::getOpens() { 
 
- // Returns the opening bracket/tag w/o > character to allow attributes 
- return(this.opens + " ") 
+    // Returns the opening bracket/tag w/o > character to allow attributes 
+    return(this.opens + " ") 
 
 } // End of getter method for opens member of class em
 
 // Getter method for opening bracket closing character
 string scalar em::getOpene() { 
 
- // Returns the closing character for the opening bracket 
- return(this.opene + " ") 
+    // Returns the closing character for the opening bracket 
+    return(this.opene + " ") 
 
 } // End of getter method for opene member of class em
 
 // Getter method for closing bracket 
 string scalar em::getClose() { 
 
- // Returns the closing bracket/tag
- return(this.close + " ") 
+    // Returns the closing bracket/tag
+    return(this.close + " ") 
 
 } // End of getter method for close member of class em
 
 // Getter method for class arguments 
 string scalar em::getClassArgs() { 
 
- // Returns the class arguments that appear between the HTML tags 
- return(this.classargs) 
+    // Returns the class arguments that appear between the HTML tags 
+    return(this.classargs) 
 
 } // End of getter method for class arguments member of class em
 
-// Getter method for accesskey member variable 
-string scalar em::getAccesskey() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the accesskey variable 
- return(this.accesskey + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for accesskey member of class em
+} // End of getter method for  member of class em
 
-// Getter method for class member variable 
-string scalar em::getClass() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the class variable 
- return(this.class + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for class member of class em
+} // End of getter method for  member of class em
 
-// Getter method for contenteditable member variable 
-string scalar em::getContenteditable() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the contenteditable variable 
- return(this.contenteditable + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for contenteditable member of class em
+} // End of getter method for  member of class em
 
-// Getter method for contextmenu member variable 
-string scalar em::getContextmenu() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the contextmenu variable 
- return(this.contextmenu + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for contextmenu member of class em
+} // End of getter method for  member of class em
 
-// Getter method for data-* member variable 
-string scalar em::getData-*() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the data-* variable 
- return(this.data-* + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for data-* member of class em
+} // End of getter method for  member of class em
 
-// Getter method for dir member variable 
-string scalar em::getDir() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the dir variable 
- return(this.dir + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for dir member of class em
+} // End of getter method for  member of class em
 
-// Getter method for draggable member variable 
-string scalar em::getDraggable() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the draggable variable 
- return(this.draggable + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for draggable member of class em
+} // End of getter method for  member of class em
 
-// Getter method for dropzone member variable 
-string scalar em::getDropzone() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the dropzone variable 
- return(this.dropzone + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for dropzone member of class em
+} // End of getter method for  member of class em
 
-// Getter method for hidden member variable 
-string scalar em::getHidden() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the hidden variable 
- return(this.hidden + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for hidden member of class em
+} // End of getter method for  member of class em
 
-// Getter method for id member variable 
-string scalar em::getId() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the id variable 
- return(this.id + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for id member of class em
+} // End of getter method for  member of class em
 
-// Getter method for lang member variable 
-string scalar em::getLang() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the lang variable 
- return(this.lang + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for lang member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onabort member variable 
-string scalar em::getOnabort() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onabort variable 
- return(this.onabort + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onabort member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onafterprint member variable 
-string scalar em::getOnafterprint() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onafterprint variable 
- return(this.onafterprint + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onafterprint member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onbeforeprint member variable 
-string scalar em::getOnbeforeprint() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onbeforeprint variable 
- return(this.onbeforeprint + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onbeforeprint member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onbeforeunload member variable 
-string scalar em::getOnbeforeunload() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onbeforeunload variable 
- return(this.onbeforeunload + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onbeforeunload member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onblur member variable 
-string scalar em::getOnblur() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onblur variable 
- return(this.onblur + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onblur member of class em
+} // End of getter method for  member of class em
 
-// Getter method for oncanplay member variable 
-string scalar em::getOncanplay() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the oncanplay variable 
- return(this.oncanplay + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oncanplay member of class em
+} // End of getter method for  member of class em
 
-// Getter method for oncanplaythrough member variable 
-string scalar em::getOncanplaythrough() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the oncanplaythrough variable 
- return(this.oncanplaythrough + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oncanplaythrough member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onchange member variable 
-string scalar em::getOnchange() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onchange variable 
- return(this.onchange + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onchange member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onclick member variable 
-string scalar em::getOnclick() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onclick variable 
- return(this.onclick + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onclick member of class em
+} // End of getter method for  member of class em
 
-// Getter method for oncontextmenu member variable 
-string scalar em::getOncontextmenu() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the oncontextmenu variable 
- return(this.oncontextmenu + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oncontextmenu member of class em
+} // End of getter method for  member of class em
 
-// Getter method for oncopy member variable 
-string scalar em::getOncopy() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the oncopy variable 
- return(this.oncopy + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oncopy member of class em
+} // End of getter method for  member of class em
 
-// Getter method for oncuechange member variable 
-string scalar em::getOncuechange() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the oncuechange variable 
- return(this.oncuechange + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oncuechange member of class em
+} // End of getter method for  member of class em
 
-// Getter method for oncut member variable 
-string scalar em::getOncut() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the oncut variable 
- return(this.oncut + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oncut member of class em
+} // End of getter method for  member of class em
 
-// Getter method for ondblclick member variable 
-string scalar em::getOndblclick() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the ondblclick variable 
- return(this.ondblclick + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondblclick member of class em
+} // End of getter method for  member of class em
 
-// Getter method for ondrag member variable 
-string scalar em::getOndrag() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the ondrag variable 
- return(this.ondrag + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondrag member of class em
+} // End of getter method for  member of class em
 
-// Getter method for ondragend member variable 
-string scalar em::getOndragend() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the ondragend variable 
- return(this.ondragend + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondragend member of class em
+} // End of getter method for  member of class em
 
-// Getter method for ondragenter member variable 
-string scalar em::getOndragenter() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the ondragenter variable 
- return(this.ondragenter + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondragenter member of class em
+} // End of getter method for  member of class em
 
-// Getter method for ondragleave member variable 
-string scalar em::getOndragleave() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the ondragleave variable 
- return(this.ondragleave + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondragleave member of class em
+} // End of getter method for  member of class em
 
-// Getter method for ondragover member variable 
-string scalar em::getOndragover() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the ondragover variable 
- return(this.ondragover + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondragover member of class em
+} // End of getter method for  member of class em
 
-// Getter method for ondragstart member variable 
-string scalar em::getOndragstart() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the ondragstart variable 
- return(this.ondragstart + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondragstart member of class em
+} // End of getter method for  member of class em
 
-// Getter method for ondrop member variable 
-string scalar em::getOndrop() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the ondrop variable 
- return(this.ondrop + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondrop member of class em
+} // End of getter method for  member of class em
 
-// Getter method for ondurationchange member variable 
-string scalar em::getOndurationchange() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the ondurationchange variable 
- return(this.ondurationchange + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondurationchange member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onemptied member variable 
-string scalar em::getOnemptied() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onemptied variable 
- return(this.onemptied + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onemptied member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onended member variable 
-string scalar em::getOnended() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onended variable 
- return(this.onended + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onended member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onerror member variable 
-string scalar em::getOnerror() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onerror variable 
- return(this.onerror + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onerror member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onfocus member variable 
-string scalar em::getOnfocus() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onfocus variable 
- return(this.onfocus + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onfocus member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onhashchange member variable 
-string scalar em::getOnhashchange() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onhashchange variable 
- return(this.onhashchange + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onhashchange member of class em
+} // End of getter method for  member of class em
 
-// Getter method for oninput member variable 
-string scalar em::getOninput() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the oninput variable 
- return(this.oninput + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oninput member of class em
+} // End of getter method for  member of class em
 
-// Getter method for oninvalid member variable 
-string scalar em::getOninvalid() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the oninvalid variable 
- return(this.oninvalid + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oninvalid member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onkeydown member variable 
-string scalar em::getOnkeydown() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onkeydown variable 
- return(this.onkeydown + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onkeydown member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onkeypress member variable 
-string scalar em::getOnkeypress() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onkeypress variable 
- return(this.onkeypress + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onkeypress member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onkeyup member variable 
-string scalar em::getOnkeyup() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onkeyup variable 
- return(this.onkeyup + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onkeyup member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onload member variable 
-string scalar em::getOnload() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onload variable 
- return(this.onload + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onload member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onloadeddata member variable 
-string scalar em::getOnloadeddata() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onloadeddata variable 
- return(this.onloadeddata + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onloadeddata member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onloadedmetadata member variable 
-string scalar em::getOnloadedmetadata() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onloadedmetadata variable 
- return(this.onloadedmetadata + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onloadedmetadata member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onloadstart member variable 
-string scalar em::getOnloadstart() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onloadstart variable 
- return(this.onloadstart + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onloadstart member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onmessage member variable 
-string scalar em::getOnmessage() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onmessage variable 
- return(this.onmessage + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmessage member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onmousedown member variable 
-string scalar em::getOnmousedown() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onmousedown variable 
- return(this.onmousedown + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmousedown member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onmousemove member variable 
-string scalar em::getOnmousemove() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onmousemove variable 
- return(this.onmousemove + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmousemove member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onmouseout member variable 
-string scalar em::getOnmouseout() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onmouseout variable 
- return(this.onmouseout + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmouseout member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onmouseover member variable 
-string scalar em::getOnmouseover() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onmouseover variable 
- return(this.onmouseover + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmouseover member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onmouseup member variable 
-string scalar em::getOnmouseup() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onmouseup variable 
- return(this.onmouseup + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmouseup member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onmousewheel member variable 
-string scalar em::getOnmousewheel() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onmousewheel variable 
- return(this.onmousewheel + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmousewheel member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onoffline member variable 
-string scalar em::getOnoffline() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onoffline variable 
- return(this.onoffline + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onoffline member of class em
+} // End of getter method for  member of class em
 
-// Getter method for ononline member variable 
-string scalar em::getOnonline() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the ononline variable 
- return(this.ononline + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ononline member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onpagehide member variable 
-string scalar em::getOnpagehide() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onpagehide variable 
- return(this.onpagehide + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onpagehide member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onpageshow member variable 
-string scalar em::getOnpageshow() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onpageshow variable 
- return(this.onpageshow + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onpageshow member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onpaste member variable 
-string scalar em::getOnpaste() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onpaste variable 
- return(this.onpaste + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onpaste member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onpause member variable 
-string scalar em::getOnpause() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onpause variable 
- return(this.onpause + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onpause member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onplay member variable 
-string scalar em::getOnplay() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onplay variable 
- return(this.onplay + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onplay member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onplaying member variable 
-string scalar em::getOnplaying() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onplaying variable 
- return(this.onplaying + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onplaying member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onpopstate member variable 
-string scalar em::getOnpopstate() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onpopstate variable 
- return(this.onpopstate + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onpopstate member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onprogress member variable 
-string scalar em::getOnprogress() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onprogress variable 
- return(this.onprogress + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onprogress member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onratechange member variable 
-string scalar em::getOnratechange() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onratechange variable 
- return(this.onratechange + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onratechange member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onreset member variable 
-string scalar em::getOnreset() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onreset variable 
- return(this.onreset + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onreset member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onresize member variable 
-string scalar em::getOnresize() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onresize variable 
- return(this.onresize + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onresize member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onscroll member variable 
-string scalar em::getOnscroll() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onscroll variable 
- return(this.onscroll + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onscroll member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onsearch member variable 
-string scalar em::getOnsearch() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onsearch variable 
- return(this.onsearch + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onsearch member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onseeked member variable 
-string scalar em::getOnseeked() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onseeked variable 
- return(this.onseeked + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onseeked member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onseeking member variable 
-string scalar em::getOnseeking() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onseeking variable 
- return(this.onseeking + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onseeking member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onselect member variable 
-string scalar em::getOnselect() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onselect variable 
- return(this.onselect + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onselect member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onshow member variable 
-string scalar em::getOnshow() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onshow variable 
- return(this.onshow + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onshow member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onstalled member variable 
-string scalar em::getOnstalled() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onstalled variable 
- return(this.onstalled + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onstalled member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onstorage member variable 
-string scalar em::getOnstorage() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onstorage variable 
- return(this.onstorage + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onstorage member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onsubmit member variable 
-string scalar em::getOnsubmit() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onsubmit variable 
- return(this.onsubmit + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onsubmit member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onsuspend member variable 
-string scalar em::getOnsuspend() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onsuspend variable 
- return(this.onsuspend + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onsuspend member of class em
+} // End of getter method for  member of class em
 
-// Getter method for ontimeupdate member variable 
-string scalar em::getOntimeupdate() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the ontimeupdate variable 
- return(this.ontimeupdate + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ontimeupdate member of class em
+} // End of getter method for  member of class em
 
-// Getter method for ontoggle member variable 
-string scalar em::getOntoggle() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the ontoggle variable 
- return(this.ontoggle + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ontoggle member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onunload member variable 
-string scalar em::getOnunload() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onunload variable 
- return(this.onunload + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onunload member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onvolumechange member variable 
-string scalar em::getOnvolumechange() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onvolumechange variable 
- return(this.onvolumechange + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onvolumechange member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onwaiting member variable 
-string scalar em::getOnwaiting() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onwaiting variable 
- return(this.onwaiting + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onwaiting member of class em
+} // End of getter method for  member of class em
 
-// Getter method for onwheel member variable 
-string scalar em::getOnwheel() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the onwheel variable 
- return(this.onwheel + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onwheel member of class em
+} // End of getter method for  member of class em
 
-// Getter method for spellcheck member variable 
-string scalar em::getSpellcheck() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the spellcheck variable 
- return(this.spellcheck + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for spellcheck member of class em
+} // End of getter method for  member of class em
 
-// Getter method for style member variable 
-string scalar em::getStyle() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the style variable 
- return(this.style + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for style member of class em
+} // End of getter method for  member of class em
 
-// Getter method for tabindex member variable 
-string scalar em::getTabindex() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the tabindex variable 
- return(this.tabindex + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for tabindex member of class em
+} // End of getter method for  member of class em
 
-// Getter method for title member variable 
-string scalar em::getTitle() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the title variable 
- return(this.title + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for title member of class em
+} // End of getter method for  member of class em
 
-// Getter method for translate member variable 
-string scalar em::getTranslate() { 
+// Getter method for  member variable 
+string scalar em::get() { 
 
- // Returns the translate variable 
- return(this.translate + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for translate member of class em
+} // End of getter method for  member of class em
 
 // Get the HTML tag w/attributes and arguments 
 string scalar em::print() { 
 
- // Create local variables to piece together return string 
- string scalar open, args, close 
+    // Create local variables to piece together return string 
+    string scalar open, args, close 
 
- // Create opening string 
- open = getOpens() +  + getOpene()
+    // Create opening string 
+    open = getOpens() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + getOpene()
 
- // Get class arguments 
- args = getClassArgs() 
+    // Get class arguments 
+    args = getClassArgs() 
 
- // Get closing tag 
- close = getClose() 
+    // Get closing tag 
+    close = getClose() 
 
- // Return the complete HTML string 
- return(open + args + close) 
+    // Return the complete HTML string 
+    return(open + args + close) 
 
 } // End of print method for class em 
 

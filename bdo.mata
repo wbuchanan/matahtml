@@ -7,798 +7,2037 @@ mata:
 // Definition of HTML Tag bdo Mata Class
 // Overrides the current text direction// Information retrieved from http://www.w3schools.com/tags/tag_bdo.asp
 class bdo { 
- // Define private member variables
- private: 
 
- // Static/final variables 
- static                  string                  scalar                  opens, opene, close, classargs
+    // Define private member variables
+    private: 
 
- // String scalar attributes  string                                                  scalar                  `"accesskey"', `"class"', `"contenteditable"', `"contextmenu"', `"data-*"', `"dir"', `"draggable"', `"dropzone"', `"hidden"', `"id"', `"lang"', `"onabort"', `"onafterprint"', `"onbeforeprint"', `"onbeforeunload"', `"onblur"', `"oncanplay"', `"oncanplaythrough"', `"onchange"', `"onclick"', `"oncontextmenu"', `"oncopy"', `"oncuechange"', `"oncut"', `"ondblclick"', `"ondrag"', `"ondragend"', `"ondragenter"', `"ondragleave"', `"ondragover"', `"ondragstart"', `"ondrop"', `"ondurationchange"', `"onemptied"', `"onended"', `"onerror"', `"onfocus"', `"onhashchange"', `"oninput"', `"oninvalid"', `"onkeydown"', `"onkeypress"', `"onkeyup"', `"onload"', `"onloadeddata"', `"onloadedmetadata"', `"onloadstart"', `"onmessage"', `"onmousedown"', `"onmousemove"', `"onmouseout"', `"onmouseover"', `"onmouseup"', `"onmousewheel"', `"onoffline"', `"ononline"', `"onpagehide"', `"onpageshow"', `"onpaste"', `"onpause"', `"onplay"', `"onplaying"', `"onpopstate"', `"onprogress"', `"onratechange"', `"onreset"', `"onresize"', `"onscroll"', `"onsearch"', `"onseeked"', `"onseeking"', `"onselect"', `"onshow"', `"onstalled"', `"onstorage"', `"onsubmit"', `"onsuspend"', `"ontimeupdate"', `"ontoggle"', `"onunload"', `"onvolumechange"', `"onwaiting"', `"onwheel"', `"spellcheck"', `"style"', `"tabindex"', `"title"', `"translate"'
+    // Static/final variables 
+    static                       string                  scalar                  opens, opene, close, classargs
 
- // Define public members/methods 
- public: 
+    // String scalar attributes 
+    string                                                       scalar                  accesskey, contenteditable, contextmenu, data, draggable, dropzone, hidden, htmlclass, htmldir, htmltranslate, id, lang, onabort, onafterprint, onbeforeprint, onbeforeunload, onblur, oncanplay, oncanplaythrough, onchange, onclick, oncontextmenu, oncopy, oncuechange, oncut, ondblclick, ondrag, ondragend, ondragenter, ondragleave, ondragover, ondragstart, ondrop, ondurationchange, onemptied, onended, onerror, onfocus, onhashchange, oninput, oninvalid, onkeydown, onkeypress, onkeyup, onload, onloadeddata, onloadedmetadata, onloadstart, onmessage, onmousedown, onmousemove, onmouseout, onmouseover, onmouseup, onmousewheel, onoffline, ononline, onpagehide, onpageshow, onpaste, onpause, onplay, onplaying, onpopstate, onprogress, onratechange, onreset, onresize, onscroll, onsearch, onseeked, onseeking, onselect, onshow, onstalled, onstorage, onsubmit, onsuspend, ontimeupdate, ontoggle, onunload, onvolumechange, onwaiting, onwheel, spellcheck, style, tabindex, title
 
- // Setter methods  void                    new(), setClassArgs()
+    // Define public members/methods 
+    public: 
 
- // Getter methods  string                  scalar                  getOpens(), getOpene(), getClose(), print(), getClassargs()
+    // Setter methods 
+    void                 new(), setClassArgs(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set()
+
+    // Getter methods 
+    string                       scalar                  getOpens(), getOpene(), getClose(), print(), getClassargs(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get()
 
 } // End of class declaration
 
 // Class constructor method declaration 
 void bdo::new() { 
 
- // Defines the start of the opening tag for the class 
- this.opens = "<bdo" 
+    // Defines the start of the opening tag for the class 
+    this.opens = "<bdo" 
 
- // Defines the end of the opening tag for the class 
- this.opene = ">" 
+    // Defines the end of the opening tag for the class 
+    this.opene = ">" 
 
- // Defines the closing tag for the class 
- this.close = "</bdo>" 
+    // Defines the closing tag for the class 
+    this.close = "</bdo>" 
 
 } // End of class constructor method definition
 
 // Setter method for class arguments (appear between HTML tags) 
 void bdo::setClassArgs(| string scalar classarguments) { 
 
- // Defines arguments that appear between HTML tags 
- this.classargs = classarguments" 
+    // Defines arguments that appear between HTML tags 
+    this.classargs = classarguments 
 
 } // End of setter method for class arguments
+
+// Specifies a shortcut key to activate/focus an element 
+void bdo::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class bdo
+
+// Specifies whether the content of an element is editable or not 
+void bdo::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class bdo
+
+// Specifies a context menu for an element. The context menu appears when a user right-clicks on the element 
+void bdo::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class bdo
+
+// Used to store custom data private to the page or application 
+void bdo::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class bdo
+
+// Specifies whether an element is draggable or not 
+void bdo::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class bdo
+
+// Specifies whether the dragged data is copied, moved, or linked, when dropped 
+void bdo::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class bdo
+
+// Specifies that an element is not yet, or is no longer, relevant 
+void bdo::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class bdo
+
+// Specifies one or more classnames for an element (refers to a class in a style sheet) 
+void bdo::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class bdo
+
+// Required. Specifies the text direction of the text inside the <bdo> element Specifies the text direction for the content in an element 
+void bdo::set(| string scalar ltr, string scalar rtl) { 
+
+    // Declare member variables based on arguments 
+    string scalar locltr, "locrtl" 
+
+    // Initialize the local variable 1
+    locltr = `" = ""' + ltr + `"""' 
+
+    // Initialize the local variable 2
+    locrtl = `" = ""' + rtl + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locltr + "locrtl"
+
+} // End of Method  declaration for class bdo
+
+// Specifies whether the content of an element should be translated or not 
+void bdo::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class bdo
+
+// Specifies a unique id for an element 
+void bdo::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class bdo
+
+// Specifies the language of the element's content 
+void bdo::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class bdo
+
+// Script to be run on abort 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run after the document is printed 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run before the document is printed 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run when the document is about to be unloaded 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Fires the moment that the element loses focus 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run when a file is ready to start playing (when it has buffered enough to begin) 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run when a file can be played all the way to the end without pausing for buffering 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Fires the moment when the value of the element is changed 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Fires on a mouse click on the element 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run when a context menu is triggered 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Fires when the user copies the content of an element 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run when the cue changes in a <track> element 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Fires when the user cuts the content of an element 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Fires on a mouse double-click on the element 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run when an element is dragged 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run at the end of a drag operation 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run when an element has been dragged to a valid drop target 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run when an element leaves a valid drop target 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run when an element is being dragged over a valid drop target 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run at the start of a drag operation 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run when dragged element is being dropped 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run when the length of the media changes 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run when something bad happens and the file is suddenly unavailable (like unexpectedly disconnects) 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run when the media has reach the end (a useful event for messages like "thanks for listening") 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Fires when an error occurs while loading an external file Script to be run when an error occur Script to be run when an error occurs when the file is being loaded 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Fires the moment when the element gets focus 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run when there has been changes to the anchor part of the a URL 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run when an element gets user input 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run when an element is invalid 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Fires when a user is pressing a key 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Fires when a user presses a key 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Fires when a user releases a key 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Fires after the page is finished loading 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run when media data is loaded 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run when meta data (like dimensions and duration) are loaded 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run just as the file begins to load before anything is actually loaded 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run when the message is triggered 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Fires when a mouse button is pressed down on an element 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Fires when the mouse pointer is moving while it is over an element 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Fires when the mouse pointer moves out of an element 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Fires when the mouse pointer moves over an element 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Fires when a mouse button is released over an element 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Deprecated. Use the onwheel attribute instead 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run when the browser starts to work offline 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run when the browser starts to work online 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run when a user navigates away from a page 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run when a user navigates to a page 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Fires when the user pastes some content in an element 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run when the media is paused either by the user or programmatically 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run when the media is ready to start playing 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run when the media actually has started playing 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run when the window's history changes 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run when the browser is in the process of getting the media data 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run each time the playback rate changes (like when a user switches to a slow motion or fast forward mode) 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Fires when the Reset button in a form is clicked 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Fires when the browser window is resized 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run when an element's scrollbar is being scrolled 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Fires when the user writes something in a search field (for <input="search">) 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run when the seeking attribute is set to false indicating that seeking has ended 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run when the seeking attribute is set to true indicating that seeking is active 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Fires after some text has been selected in an element 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Fires when a <menu> element is shown as a context menu 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run when the browser is unable to fetch the media data for whatever reason 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run when a Web Storage area is updated 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Fires when a form is submitted 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run when fetching the media data is stopped before it is completely loaded for whatever reason 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run when the playing position has changed (like when the user fast forwards to a different point in the media) 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Fires when the user opens or closes the <details> element 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Fires once a page has unloaded (or the browser window has been closed) 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run each time the volume is changed which (includes setting the volume to "mute") 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Script to be run when the media has paused but is expected to resume (like when the media pauses to buffer more data) 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Fires when the mouse wheel rolls up or down over an element 
+void bdo::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class bdo
+
+// Specifies whether the element is to have its spelling and grammar checked or not 
+void bdo::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class bdo
+
+// Specifies an inline CSS style for an element 
+void bdo::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class bdo
+
+// Specifies the tabbing order of an element 
+void bdo::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class bdo
+
+// Specifies extra information about an element 
+void bdo::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class bdo
 
 // Getter method for opening bracket 
 string scalar bdo::getOpens() { 
 
- // Returns the opening bracket/tag w/o > character to allow attributes 
- return(this.opens + " ") 
+    // Returns the opening bracket/tag w/o > character to allow attributes 
+    return(this.opens + " ") 
 
 } // End of getter method for opens member of class bdo
 
 // Getter method for opening bracket closing character
 string scalar bdo::getOpene() { 
 
- // Returns the closing character for the opening bracket 
- return(this.opene + " ") 
+    // Returns the closing character for the opening bracket 
+    return(this.opene + " ") 
 
 } // End of getter method for opene member of class bdo
 
 // Getter method for closing bracket 
 string scalar bdo::getClose() { 
 
- // Returns the closing bracket/tag
- return(this.close + " ") 
+    // Returns the closing bracket/tag
+    return(this.close + " ") 
 
 } // End of getter method for close member of class bdo
 
 // Getter method for class arguments 
 string scalar bdo::getClassArgs() { 
 
- // Returns the class arguments that appear between the HTML tags 
- return(this.classargs) 
+    // Returns the class arguments that appear between the HTML tags 
+    return(this.classargs) 
 
 } // End of getter method for class arguments member of class bdo
 
-// Getter method for accesskey member variable 
-string scalar bdo::getAccesskey() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the accesskey variable 
- return(this.accesskey + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for accesskey member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for class member variable 
-string scalar bdo::getClass() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the class variable 
- return(this.class + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for class member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for contenteditable member variable 
-string scalar bdo::getContenteditable() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the contenteditable variable 
- return(this.contenteditable + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for contenteditable member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for contextmenu member variable 
-string scalar bdo::getContextmenu() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the contextmenu variable 
- return(this.contextmenu + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for contextmenu member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for data-* member variable 
-string scalar bdo::getData-*() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the data-* variable 
- return(this.data-* + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for data-* member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for dir member variable 
-string scalar bdo::getDir() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the dir variable 
- return(this.dir + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for dir member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for draggable member variable 
-string scalar bdo::getDraggable() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the draggable variable 
- return(this.draggable + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for draggable member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for dropzone member variable 
-string scalar bdo::getDropzone() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the dropzone variable 
- return(this.dropzone + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for dropzone member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for hidden member variable 
-string scalar bdo::getHidden() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the hidden variable 
- return(this.hidden + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for hidden member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for id member variable 
-string scalar bdo::getId() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the id variable 
- return(this.id + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for id member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for lang member variable 
-string scalar bdo::getLang() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the lang variable 
- return(this.lang + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for lang member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onabort member variable 
-string scalar bdo::getOnabort() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onabort variable 
- return(this.onabort + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onabort member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onafterprint member variable 
-string scalar bdo::getOnafterprint() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onafterprint variable 
- return(this.onafterprint + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onafterprint member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onbeforeprint member variable 
-string scalar bdo::getOnbeforeprint() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onbeforeprint variable 
- return(this.onbeforeprint + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onbeforeprint member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onbeforeunload member variable 
-string scalar bdo::getOnbeforeunload() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onbeforeunload variable 
- return(this.onbeforeunload + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onbeforeunload member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onblur member variable 
-string scalar bdo::getOnblur() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onblur variable 
- return(this.onblur + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onblur member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for oncanplay member variable 
-string scalar bdo::getOncanplay() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the oncanplay variable 
- return(this.oncanplay + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oncanplay member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for oncanplaythrough member variable 
-string scalar bdo::getOncanplaythrough() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the oncanplaythrough variable 
- return(this.oncanplaythrough + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oncanplaythrough member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onchange member variable 
-string scalar bdo::getOnchange() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onchange variable 
- return(this.onchange + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onchange member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onclick member variable 
-string scalar bdo::getOnclick() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onclick variable 
- return(this.onclick + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onclick member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for oncontextmenu member variable 
-string scalar bdo::getOncontextmenu() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the oncontextmenu variable 
- return(this.oncontextmenu + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oncontextmenu member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for oncopy member variable 
-string scalar bdo::getOncopy() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the oncopy variable 
- return(this.oncopy + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oncopy member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for oncuechange member variable 
-string scalar bdo::getOncuechange() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the oncuechange variable 
- return(this.oncuechange + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oncuechange member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for oncut member variable 
-string scalar bdo::getOncut() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the oncut variable 
- return(this.oncut + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oncut member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for ondblclick member variable 
-string scalar bdo::getOndblclick() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the ondblclick variable 
- return(this.ondblclick + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondblclick member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for ondrag member variable 
-string scalar bdo::getOndrag() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the ondrag variable 
- return(this.ondrag + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondrag member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for ondragend member variable 
-string scalar bdo::getOndragend() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the ondragend variable 
- return(this.ondragend + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondragend member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for ondragenter member variable 
-string scalar bdo::getOndragenter() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the ondragenter variable 
- return(this.ondragenter + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondragenter member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for ondragleave member variable 
-string scalar bdo::getOndragleave() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the ondragleave variable 
- return(this.ondragleave + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondragleave member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for ondragover member variable 
-string scalar bdo::getOndragover() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the ondragover variable 
- return(this.ondragover + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondragover member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for ondragstart member variable 
-string scalar bdo::getOndragstart() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the ondragstart variable 
- return(this.ondragstart + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondragstart member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for ondrop member variable 
-string scalar bdo::getOndrop() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the ondrop variable 
- return(this.ondrop + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondrop member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for ondurationchange member variable 
-string scalar bdo::getOndurationchange() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the ondurationchange variable 
- return(this.ondurationchange + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondurationchange member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onemptied member variable 
-string scalar bdo::getOnemptied() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onemptied variable 
- return(this.onemptied + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onemptied member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onended member variable 
-string scalar bdo::getOnended() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onended variable 
- return(this.onended + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onended member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onerror member variable 
-string scalar bdo::getOnerror() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onerror variable 
- return(this.onerror + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onerror member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onfocus member variable 
-string scalar bdo::getOnfocus() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onfocus variable 
- return(this.onfocus + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onfocus member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onhashchange member variable 
-string scalar bdo::getOnhashchange() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onhashchange variable 
- return(this.onhashchange + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onhashchange member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for oninput member variable 
-string scalar bdo::getOninput() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the oninput variable 
- return(this.oninput + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oninput member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for oninvalid member variable 
-string scalar bdo::getOninvalid() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the oninvalid variable 
- return(this.oninvalid + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oninvalid member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onkeydown member variable 
-string scalar bdo::getOnkeydown() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onkeydown variable 
- return(this.onkeydown + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onkeydown member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onkeypress member variable 
-string scalar bdo::getOnkeypress() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onkeypress variable 
- return(this.onkeypress + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onkeypress member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onkeyup member variable 
-string scalar bdo::getOnkeyup() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onkeyup variable 
- return(this.onkeyup + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onkeyup member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onload member variable 
-string scalar bdo::getOnload() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onload variable 
- return(this.onload + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onload member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onloadeddata member variable 
-string scalar bdo::getOnloadeddata() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onloadeddata variable 
- return(this.onloadeddata + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onloadeddata member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onloadedmetadata member variable 
-string scalar bdo::getOnloadedmetadata() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onloadedmetadata variable 
- return(this.onloadedmetadata + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onloadedmetadata member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onloadstart member variable 
-string scalar bdo::getOnloadstart() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onloadstart variable 
- return(this.onloadstart + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onloadstart member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onmessage member variable 
-string scalar bdo::getOnmessage() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onmessage variable 
- return(this.onmessage + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmessage member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onmousedown member variable 
-string scalar bdo::getOnmousedown() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onmousedown variable 
- return(this.onmousedown + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmousedown member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onmousemove member variable 
-string scalar bdo::getOnmousemove() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onmousemove variable 
- return(this.onmousemove + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmousemove member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onmouseout member variable 
-string scalar bdo::getOnmouseout() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onmouseout variable 
- return(this.onmouseout + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmouseout member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onmouseover member variable 
-string scalar bdo::getOnmouseover() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onmouseover variable 
- return(this.onmouseover + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmouseover member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onmouseup member variable 
-string scalar bdo::getOnmouseup() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onmouseup variable 
- return(this.onmouseup + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmouseup member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onmousewheel member variable 
-string scalar bdo::getOnmousewheel() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onmousewheel variable 
- return(this.onmousewheel + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmousewheel member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onoffline member variable 
-string scalar bdo::getOnoffline() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onoffline variable 
- return(this.onoffline + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onoffline member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for ononline member variable 
-string scalar bdo::getOnonline() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the ononline variable 
- return(this.ononline + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ononline member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onpagehide member variable 
-string scalar bdo::getOnpagehide() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onpagehide variable 
- return(this.onpagehide + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onpagehide member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onpageshow member variable 
-string scalar bdo::getOnpageshow() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onpageshow variable 
- return(this.onpageshow + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onpageshow member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onpaste member variable 
-string scalar bdo::getOnpaste() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onpaste variable 
- return(this.onpaste + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onpaste member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onpause member variable 
-string scalar bdo::getOnpause() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onpause variable 
- return(this.onpause + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onpause member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onplay member variable 
-string scalar bdo::getOnplay() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onplay variable 
- return(this.onplay + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onplay member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onplaying member variable 
-string scalar bdo::getOnplaying() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onplaying variable 
- return(this.onplaying + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onplaying member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onpopstate member variable 
-string scalar bdo::getOnpopstate() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onpopstate variable 
- return(this.onpopstate + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onpopstate member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onprogress member variable 
-string scalar bdo::getOnprogress() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onprogress variable 
- return(this.onprogress + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onprogress member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onratechange member variable 
-string scalar bdo::getOnratechange() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onratechange variable 
- return(this.onratechange + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onratechange member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onreset member variable 
-string scalar bdo::getOnreset() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onreset variable 
- return(this.onreset + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onreset member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onresize member variable 
-string scalar bdo::getOnresize() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onresize variable 
- return(this.onresize + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onresize member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onscroll member variable 
-string scalar bdo::getOnscroll() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onscroll variable 
- return(this.onscroll + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onscroll member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onsearch member variable 
-string scalar bdo::getOnsearch() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onsearch variable 
- return(this.onsearch + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onsearch member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onseeked member variable 
-string scalar bdo::getOnseeked() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onseeked variable 
- return(this.onseeked + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onseeked member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onseeking member variable 
-string scalar bdo::getOnseeking() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onseeking variable 
- return(this.onseeking + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onseeking member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onselect member variable 
-string scalar bdo::getOnselect() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onselect variable 
- return(this.onselect + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onselect member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onshow member variable 
-string scalar bdo::getOnshow() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onshow variable 
- return(this.onshow + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onshow member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onstalled member variable 
-string scalar bdo::getOnstalled() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onstalled variable 
- return(this.onstalled + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onstalled member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onstorage member variable 
-string scalar bdo::getOnstorage() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onstorage variable 
- return(this.onstorage + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onstorage member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onsubmit member variable 
-string scalar bdo::getOnsubmit() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onsubmit variable 
- return(this.onsubmit + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onsubmit member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onsuspend member variable 
-string scalar bdo::getOnsuspend() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onsuspend variable 
- return(this.onsuspend + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onsuspend member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for ontimeupdate member variable 
-string scalar bdo::getOntimeupdate() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the ontimeupdate variable 
- return(this.ontimeupdate + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ontimeupdate member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for ontoggle member variable 
-string scalar bdo::getOntoggle() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the ontoggle variable 
- return(this.ontoggle + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ontoggle member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onunload member variable 
-string scalar bdo::getOnunload() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onunload variable 
- return(this.onunload + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onunload member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onvolumechange member variable 
-string scalar bdo::getOnvolumechange() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onvolumechange variable 
- return(this.onvolumechange + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onvolumechange member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onwaiting member variable 
-string scalar bdo::getOnwaiting() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onwaiting variable 
- return(this.onwaiting + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onwaiting member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for onwheel member variable 
-string scalar bdo::getOnwheel() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the onwheel variable 
- return(this.onwheel + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onwheel member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for spellcheck member variable 
-string scalar bdo::getSpellcheck() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the spellcheck variable 
- return(this.spellcheck + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for spellcheck member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for style member variable 
-string scalar bdo::getStyle() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the style variable 
- return(this.style + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for style member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for tabindex member variable 
-string scalar bdo::getTabindex() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the tabindex variable 
- return(this.tabindex + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for tabindex member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for title member variable 
-string scalar bdo::getTitle() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the title variable 
- return(this.title + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for title member of class bdo
+} // End of getter method for  member of class bdo
 
-// Getter method for translate member variable 
-string scalar bdo::getTranslate() { 
+// Getter method for  member variable 
+string scalar bdo::get() { 
 
- // Returns the translate variable 
- return(this.translate + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for translate member of class bdo
+} // End of getter method for  member of class bdo
 
 // Get the HTML tag w/attributes and arguments 
 string scalar bdo::print() { 
 
- // Create local variables to piece together return string 
- string scalar open, args, close 
+    // Create local variables to piece together return string 
+    string scalar open, args, close 
 
- // Create opening string 
- open = getOpens() +  + getOpene()
+    // Create opening string 
+    open = getOpens() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + getOpene()
 
- // Get class arguments 
- args = getClassArgs() 
+    // Get class arguments 
+    args = getClassArgs() 
 
- // Get closing tag 
- close = getClose() 
+    // Get closing tag 
+    close = getClose() 
 
- // Return the complete HTML string 
- return(open + args + close) 
+    // Return the complete HTML string 
+    return(open + args + close) 
 
 } // End of print method for class bdo 
 

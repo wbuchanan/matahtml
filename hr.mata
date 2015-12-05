@@ -7,830 +7,2131 @@ mata:
 // Definition of HTML Tag hr Mata Class
 // Defines a thematic change in the content// Information retrieved from http://www.w3schools.com/tags/tag_hr.asp
 class hr { 
- // Define private member variables
- private: 
 
- // Static/final variables 
- static                  string                  scalar                  opens, opene, close, classargs
+    // Define private member variables
+    private: 
 
- // String scalar attributes  string                                                  scalar                  `"accesskey"', `"align"', `"class"', `"contenteditable"', `"contextmenu"', `"data-*"', `"dir"', `"draggable"', `"dropzone"', `"hidden"', `"id"', `"lang"', `"noshade"', `"onabort"', `"onafterprint"', `"onbeforeprint"', `"onbeforeunload"', `"onblur"', `"oncanplay"', `"oncanplaythrough"', `"onchange"', `"onclick"', `"oncontextmenu"', `"oncopy"', `"oncuechange"', `"oncut"', `"ondblclick"', `"ondrag"', `"ondragend"', `"ondragenter"', `"ondragleave"', `"ondragover"', `"ondragstart"', `"ondrop"', `"ondurationchange"', `"onemptied"', `"onended"', `"onerror"', `"onfocus"', `"onhashchange"', `"oninput"', `"oninvalid"', `"onkeydown"', `"onkeypress"', `"onkeyup"', `"onload"', `"onloadeddata"', `"onloadedmetadata"', `"onloadstart"', `"onmessage"', `"onmousedown"', `"onmousemove"', `"onmouseout"', `"onmouseover"', `"onmouseup"', `"onmousewheel"', `"onoffline"', `"ononline"', `"onpagehide"', `"onpageshow"', `"onpaste"', `"onpause"', `"onplay"', `"onplaying"', `"onpopstate"', `"onprogress"', `"onratechange"', `"onreset"', `"onresize"', `"onscroll"', `"onsearch"', `"onseeked"', `"onseeking"', `"onselect"', `"onshow"', `"onstalled"', `"onstorage"', `"onsubmit"', `"onsuspend"', `"ontimeupdate"', `"ontoggle"', `"onunload"', `"onvolumechange"', `"onwaiting"', `"onwheel"', `"size"', `"spellcheck"', `"style"', `"tabindex"', `"title"', `"translate"', `"width"'
+    // Static/final variables 
+    static                       string                  scalar                  opens, opene, close, classargs
 
- // Define public members/methods 
- public: 
+    // String scalar attributes 
+    string                                                       scalar                  accesskey, align, contenteditable, contextmenu, data, draggable, dropzone, hidden, htmlclass, htmldir, htmltranslate, id, lang, noshade, onabort, onafterprint, onbeforeprint, onbeforeunload, onblur, oncanplay, oncanplaythrough, onchange, onclick, oncontextmenu, oncopy, oncuechange, oncut, ondblclick, ondrag, ondragend, ondragenter, ondragleave, ondragover, ondragstart, ondrop, ondurationchange, onemptied, onended, onerror, onfocus, onhashchange, oninput, oninvalid, onkeydown, onkeypress, onkeyup, onload, onloadeddata, onloadedmetadata, onloadstart, onmessage, onmousedown, onmousemove, onmouseout, onmouseover, onmouseup, onmousewheel, onoffline, ononline, onpagehide, onpageshow, onpaste, onpause, onplay, onplaying, onpopstate, onprogress, onratechange, onreset, onresize, onscroll, onsearch, onseeked, onseeking, onselect, onshow, onstalled, onstorage, onsubmit, onsuspend, ontimeupdate, ontoggle, onunload, onvolumechange, onwaiting, onwheel, size, spellcheck, style, tabindex, title, width
 
- // Setter methods  void                    new(), setClassArgs()
+    // Define public members/methods 
+    public: 
 
- // Getter methods  string                  scalar                  getOpens(), getOpene(), getClose(), print(), getClassargs()
+    // Setter methods 
+    void                 new(), setClassArgs(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set()
+
+    // Getter methods 
+    string                       scalar                  getOpens(), getOpene(), getClose(), print(), getClassargs(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get()
 
 } // End of class declaration
 
 // Class constructor method declaration 
 void hr::new() { 
 
- // Defines the start of the opening tag for the class 
- this.opens = "<hr" 
+    // Defines the start of the opening tag for the class 
+    this.opens = "<hr" 
 
- // Defines the end of the opening tag for the class 
- this.opene = ">" 
+    // Defines the end of the opening tag for the class 
+    this.opene = ">" 
 
- // Defines the closing tag for the class 
- this.close = "</hr>" 
+    // Defines the closing tag for the class 
+    this.close = "</hr>" 
 
 } // End of class constructor method definition
 
 // Setter method for class arguments (appear between HTML tags) 
 void hr::setClassArgs(| string scalar classarguments) { 
 
- // Defines arguments that appear between HTML tags 
- this.classargs = classarguments" 
+    // Defines arguments that appear between HTML tags 
+    this.classargs = classarguments 
 
 } // End of setter method for class arguments
+
+// Specifies a shortcut key to activate/focus an element 
+void hr::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class hr
+
+// Not supported in HTML5. Specifies the alignment of a <hr> element 
+void hr::set(| string scalar left, string scalar center, string scalar right) { 
+
+    // Declare member variables based on arguments 
+    string scalar locleft, "loccenter", "locright" 
+
+    // Initialize the local variable 1
+    locleft = `" = ""' + left + `"""' 
+
+    // Initialize the local variable 2
+    loccenter = `" = ""' + center + `"""' 
+
+    // Initialize the local variable 3
+    locright = `" = ""' + right + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locleft + "loccenter" + "locright"
+
+} // End of Method  declaration for class hr
+
+// Specifies whether the content of an element is editable or not 
+void hr::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class hr
+
+// Specifies a context menu for an element. The context menu appears when a user right-clicks on the element 
+void hr::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class hr
+
+// Used to store custom data private to the page or application 
+void hr::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class hr
+
+// Specifies whether an element is draggable or not 
+void hr::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class hr
+
+// Specifies whether the dragged data is copied, moved, or linked, when dropped 
+void hr::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class hr
+
+// Specifies that an element is not yet, or is no longer, relevant 
+void hr::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class hr
+
+// Specifies one or more classnames for an element (refers to a class in a style sheet) 
+void hr::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class hr
+
+// Specifies the text direction for the content in an element 
+void hr::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class hr
+
+// Specifies whether the content of an element should be translated or not 
+void hr::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class hr
+
+// Specifies a unique id for an element 
+void hr::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class hr
+
+// Specifies the language of the element's content 
+void hr::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class hr
+
+// Not supported in HTML5. Specifies that a <hr> element should render in one solid color (noshaded), instead of a shaded color 
+void hr::set(| string scalar noshade) { 
+
+    // Declare member variables based on arguments 
+    string scalar locnoshade 
+
+    // Initialize the local variable 1
+    locnoshade = `" = ""' + noshade + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locnoshade
+
+} // End of Method  declaration for class hr
+
+// Script to be run on abort 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run after the document is printed 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run before the document is printed 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run when the document is about to be unloaded 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Fires the moment that the element loses focus 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run when a file is ready to start playing (when it has buffered enough to begin) 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run when a file can be played all the way to the end without pausing for buffering 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Fires the moment when the value of the element is changed 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Fires on a mouse click on the element 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run when a context menu is triggered 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Fires when the user copies the content of an element 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run when the cue changes in a <track> element 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Fires when the user cuts the content of an element 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Fires on a mouse double-click on the element 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run when an element is dragged 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run at the end of a drag operation 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run when an element has been dragged to a valid drop target 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run when an element leaves a valid drop target 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run when an element is being dragged over a valid drop target 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run at the start of a drag operation 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run when dragged element is being dropped 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run when the length of the media changes 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run when something bad happens and the file is suddenly unavailable (like unexpectedly disconnects) 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run when the media has reach the end (a useful event for messages like "thanks for listening") 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Fires when an error occurs while loading an external file Script to be run when an error occur Script to be run when an error occurs when the file is being loaded 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Fires the moment when the element gets focus 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run when there has been changes to the anchor part of the a URL 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run when an element gets user input 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run when an element is invalid 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Fires when a user is pressing a key 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Fires when a user presses a key 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Fires when a user releases a key 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Fires after the page is finished loading 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run when media data is loaded 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run when meta data (like dimensions and duration) are loaded 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run just as the file begins to load before anything is actually loaded 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run when the message is triggered 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Fires when a mouse button is pressed down on an element 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Fires when the mouse pointer is moving while it is over an element 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Fires when the mouse pointer moves out of an element 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Fires when the mouse pointer moves over an element 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Fires when a mouse button is released over an element 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Deprecated. Use the onwheel attribute instead 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run when the browser starts to work offline 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run when the browser starts to work online 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run when a user navigates away from a page 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run when a user navigates to a page 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Fires when the user pastes some content in an element 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run when the media is paused either by the user or programmatically 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run when the media is ready to start playing 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run when the media actually has started playing 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run when the window's history changes 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run when the browser is in the process of getting the media data 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run each time the playback rate changes (like when a user switches to a slow motion or fast forward mode) 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Fires when the Reset button in a form is clicked 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Fires when the browser window is resized 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run when an element's scrollbar is being scrolled 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Fires when the user writes something in a search field (for <input="search">) 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run when the seeking attribute is set to false indicating that seeking has ended 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run when the seeking attribute is set to true indicating that seeking is active 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Fires after some text has been selected in an element 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Fires when a <menu> element is shown as a context menu 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run when the browser is unable to fetch the media data for whatever reason 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run when a Web Storage area is updated 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Fires when a form is submitted 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run when fetching the media data is stopped before it is completely loaded for whatever reason 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run when the playing position has changed (like when the user fast forwards to a different point in the media) 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Fires when the user opens or closes the <details> element 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Fires once a page has unloaded (or the browser window has been closed) 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run each time the volume is changed which (includes setting the volume to "mute") 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Script to be run when the media has paused but is expected to resume (like when the media pauses to buffer more data) 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Fires when the mouse wheel rolls up or down over an element 
+void hr::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class hr
+
+// Not supported in HTML5. Specifies the height of a <hr> element 
+void hr::set(| string scalar pixels) { 
+
+    // Declare member variables based on arguments 
+    string scalar locpixels 
+
+    // Initialize the local variable 1
+    locpixels = `" = ""' + pixels + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locpixels
+
+} // End of Method  declaration for class hr
+
+// Specifies whether the element is to have its spelling and grammar checked or not 
+void hr::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class hr
+
+// Specifies an inline CSS style for an element 
+void hr::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class hr
+
+// Specifies the tabbing order of an element 
+void hr::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class hr
+
+// Specifies extra information about an element 
+void hr::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class hr
+
+// Not supported in HTML5. Specifies the width of a <hr> element 
+void hr::set(| string scalar pixels, string scalar %) { 
+
+    // Declare member variables based on arguments 
+    string scalar locpixels, "loc%" 
+
+    // Initialize the local variable 1
+    locpixels = `" = ""' + pixels + `"""' 
+
+    // Initialize the local variable 2
+    loc% = `" = ""' + % + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locpixels + "loc%"
+
+} // End of Method  declaration for class hr
 
 // Getter method for opening bracket 
 string scalar hr::getOpens() { 
 
- // Returns the opening bracket/tag w/o > character to allow attributes 
- return(this.opens + " ") 
+    // Returns the opening bracket/tag w/o > character to allow attributes 
+    return(this.opens + " ") 
 
 } // End of getter method for opens member of class hr
 
 // Getter method for opening bracket closing character
 string scalar hr::getOpene() { 
 
- // Returns the closing character for the opening bracket 
- return(this.opene + " ") 
+    // Returns the closing character for the opening bracket 
+    return(this.opene + " ") 
 
 } // End of getter method for opene member of class hr
 
 // Getter method for closing bracket 
 string scalar hr::getClose() { 
 
- // Returns the closing bracket/tag
- return(this.close + " ") 
+    // Returns the closing bracket/tag
+    return(this.close + " ") 
 
 } // End of getter method for close member of class hr
 
 // Getter method for class arguments 
 string scalar hr::getClassArgs() { 
 
- // Returns the class arguments that appear between the HTML tags 
- return(this.classargs) 
+    // Returns the class arguments that appear between the HTML tags 
+    return(this.classargs) 
 
 } // End of getter method for class arguments member of class hr
 
-// Getter method for accesskey member variable 
-string scalar hr::getAccesskey() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the accesskey variable 
- return(this.accesskey + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for accesskey member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for align member variable 
-string scalar hr::getAlign() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the align variable 
- return(this.align + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for align member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for class member variable 
-string scalar hr::getClass() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the class variable 
- return(this.class + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for class member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for contenteditable member variable 
-string scalar hr::getContenteditable() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the contenteditable variable 
- return(this.contenteditable + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for contenteditable member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for contextmenu member variable 
-string scalar hr::getContextmenu() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the contextmenu variable 
- return(this.contextmenu + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for contextmenu member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for data-* member variable 
-string scalar hr::getData-*() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the data-* variable 
- return(this.data-* + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for data-* member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for dir member variable 
-string scalar hr::getDir() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the dir variable 
- return(this.dir + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for dir member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for draggable member variable 
-string scalar hr::getDraggable() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the draggable variable 
- return(this.draggable + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for draggable member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for dropzone member variable 
-string scalar hr::getDropzone() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the dropzone variable 
- return(this.dropzone + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for dropzone member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for hidden member variable 
-string scalar hr::getHidden() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the hidden variable 
- return(this.hidden + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for hidden member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for id member variable 
-string scalar hr::getId() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the id variable 
- return(this.id + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for id member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for lang member variable 
-string scalar hr::getLang() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the lang variable 
- return(this.lang + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for lang member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for noshade member variable 
-string scalar hr::getNoshade() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the noshade variable 
- return(this.noshade + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for noshade member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onabort member variable 
-string scalar hr::getOnabort() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onabort variable 
- return(this.onabort + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onabort member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onafterprint member variable 
-string scalar hr::getOnafterprint() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onafterprint variable 
- return(this.onafterprint + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onafterprint member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onbeforeprint member variable 
-string scalar hr::getOnbeforeprint() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onbeforeprint variable 
- return(this.onbeforeprint + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onbeforeprint member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onbeforeunload member variable 
-string scalar hr::getOnbeforeunload() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onbeforeunload variable 
- return(this.onbeforeunload + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onbeforeunload member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onblur member variable 
-string scalar hr::getOnblur() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onblur variable 
- return(this.onblur + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onblur member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for oncanplay member variable 
-string scalar hr::getOncanplay() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the oncanplay variable 
- return(this.oncanplay + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oncanplay member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for oncanplaythrough member variable 
-string scalar hr::getOncanplaythrough() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the oncanplaythrough variable 
- return(this.oncanplaythrough + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oncanplaythrough member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onchange member variable 
-string scalar hr::getOnchange() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onchange variable 
- return(this.onchange + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onchange member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onclick member variable 
-string scalar hr::getOnclick() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onclick variable 
- return(this.onclick + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onclick member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for oncontextmenu member variable 
-string scalar hr::getOncontextmenu() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the oncontextmenu variable 
- return(this.oncontextmenu + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oncontextmenu member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for oncopy member variable 
-string scalar hr::getOncopy() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the oncopy variable 
- return(this.oncopy + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oncopy member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for oncuechange member variable 
-string scalar hr::getOncuechange() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the oncuechange variable 
- return(this.oncuechange + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oncuechange member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for oncut member variable 
-string scalar hr::getOncut() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the oncut variable 
- return(this.oncut + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oncut member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for ondblclick member variable 
-string scalar hr::getOndblclick() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the ondblclick variable 
- return(this.ondblclick + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondblclick member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for ondrag member variable 
-string scalar hr::getOndrag() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the ondrag variable 
- return(this.ondrag + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondrag member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for ondragend member variable 
-string scalar hr::getOndragend() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the ondragend variable 
- return(this.ondragend + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondragend member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for ondragenter member variable 
-string scalar hr::getOndragenter() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the ondragenter variable 
- return(this.ondragenter + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondragenter member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for ondragleave member variable 
-string scalar hr::getOndragleave() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the ondragleave variable 
- return(this.ondragleave + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondragleave member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for ondragover member variable 
-string scalar hr::getOndragover() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the ondragover variable 
- return(this.ondragover + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondragover member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for ondragstart member variable 
-string scalar hr::getOndragstart() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the ondragstart variable 
- return(this.ondragstart + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondragstart member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for ondrop member variable 
-string scalar hr::getOndrop() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the ondrop variable 
- return(this.ondrop + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondrop member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for ondurationchange member variable 
-string scalar hr::getOndurationchange() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the ondurationchange variable 
- return(this.ondurationchange + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondurationchange member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onemptied member variable 
-string scalar hr::getOnemptied() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onemptied variable 
- return(this.onemptied + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onemptied member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onended member variable 
-string scalar hr::getOnended() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onended variable 
- return(this.onended + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onended member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onerror member variable 
-string scalar hr::getOnerror() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onerror variable 
- return(this.onerror + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onerror member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onfocus member variable 
-string scalar hr::getOnfocus() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onfocus variable 
- return(this.onfocus + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onfocus member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onhashchange member variable 
-string scalar hr::getOnhashchange() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onhashchange variable 
- return(this.onhashchange + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onhashchange member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for oninput member variable 
-string scalar hr::getOninput() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the oninput variable 
- return(this.oninput + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oninput member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for oninvalid member variable 
-string scalar hr::getOninvalid() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the oninvalid variable 
- return(this.oninvalid + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oninvalid member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onkeydown member variable 
-string scalar hr::getOnkeydown() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onkeydown variable 
- return(this.onkeydown + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onkeydown member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onkeypress member variable 
-string scalar hr::getOnkeypress() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onkeypress variable 
- return(this.onkeypress + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onkeypress member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onkeyup member variable 
-string scalar hr::getOnkeyup() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onkeyup variable 
- return(this.onkeyup + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onkeyup member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onload member variable 
-string scalar hr::getOnload() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onload variable 
- return(this.onload + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onload member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onloadeddata member variable 
-string scalar hr::getOnloadeddata() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onloadeddata variable 
- return(this.onloadeddata + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onloadeddata member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onloadedmetadata member variable 
-string scalar hr::getOnloadedmetadata() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onloadedmetadata variable 
- return(this.onloadedmetadata + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onloadedmetadata member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onloadstart member variable 
-string scalar hr::getOnloadstart() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onloadstart variable 
- return(this.onloadstart + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onloadstart member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onmessage member variable 
-string scalar hr::getOnmessage() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onmessage variable 
- return(this.onmessage + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmessage member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onmousedown member variable 
-string scalar hr::getOnmousedown() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onmousedown variable 
- return(this.onmousedown + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmousedown member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onmousemove member variable 
-string scalar hr::getOnmousemove() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onmousemove variable 
- return(this.onmousemove + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmousemove member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onmouseout member variable 
-string scalar hr::getOnmouseout() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onmouseout variable 
- return(this.onmouseout + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmouseout member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onmouseover member variable 
-string scalar hr::getOnmouseover() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onmouseover variable 
- return(this.onmouseover + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmouseover member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onmouseup member variable 
-string scalar hr::getOnmouseup() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onmouseup variable 
- return(this.onmouseup + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmouseup member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onmousewheel member variable 
-string scalar hr::getOnmousewheel() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onmousewheel variable 
- return(this.onmousewheel + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmousewheel member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onoffline member variable 
-string scalar hr::getOnoffline() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onoffline variable 
- return(this.onoffline + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onoffline member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for ononline member variable 
-string scalar hr::getOnonline() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the ononline variable 
- return(this.ononline + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ononline member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onpagehide member variable 
-string scalar hr::getOnpagehide() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onpagehide variable 
- return(this.onpagehide + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onpagehide member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onpageshow member variable 
-string scalar hr::getOnpageshow() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onpageshow variable 
- return(this.onpageshow + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onpageshow member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onpaste member variable 
-string scalar hr::getOnpaste() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onpaste variable 
- return(this.onpaste + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onpaste member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onpause member variable 
-string scalar hr::getOnpause() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onpause variable 
- return(this.onpause + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onpause member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onplay member variable 
-string scalar hr::getOnplay() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onplay variable 
- return(this.onplay + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onplay member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onplaying member variable 
-string scalar hr::getOnplaying() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onplaying variable 
- return(this.onplaying + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onplaying member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onpopstate member variable 
-string scalar hr::getOnpopstate() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onpopstate variable 
- return(this.onpopstate + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onpopstate member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onprogress member variable 
-string scalar hr::getOnprogress() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onprogress variable 
- return(this.onprogress + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onprogress member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onratechange member variable 
-string scalar hr::getOnratechange() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onratechange variable 
- return(this.onratechange + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onratechange member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onreset member variable 
-string scalar hr::getOnreset() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onreset variable 
- return(this.onreset + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onreset member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onresize member variable 
-string scalar hr::getOnresize() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onresize variable 
- return(this.onresize + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onresize member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onscroll member variable 
-string scalar hr::getOnscroll() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onscroll variable 
- return(this.onscroll + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onscroll member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onsearch member variable 
-string scalar hr::getOnsearch() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onsearch variable 
- return(this.onsearch + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onsearch member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onseeked member variable 
-string scalar hr::getOnseeked() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onseeked variable 
- return(this.onseeked + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onseeked member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onseeking member variable 
-string scalar hr::getOnseeking() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onseeking variable 
- return(this.onseeking + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onseeking member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onselect member variable 
-string scalar hr::getOnselect() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onselect variable 
- return(this.onselect + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onselect member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onshow member variable 
-string scalar hr::getOnshow() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onshow variable 
- return(this.onshow + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onshow member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onstalled member variable 
-string scalar hr::getOnstalled() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onstalled variable 
- return(this.onstalled + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onstalled member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onstorage member variable 
-string scalar hr::getOnstorage() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onstorage variable 
- return(this.onstorage + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onstorage member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onsubmit member variable 
-string scalar hr::getOnsubmit() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onsubmit variable 
- return(this.onsubmit + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onsubmit member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onsuspend member variable 
-string scalar hr::getOnsuspend() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onsuspend variable 
- return(this.onsuspend + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onsuspend member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for ontimeupdate member variable 
-string scalar hr::getOntimeupdate() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the ontimeupdate variable 
- return(this.ontimeupdate + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ontimeupdate member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for ontoggle member variable 
-string scalar hr::getOntoggle() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the ontoggle variable 
- return(this.ontoggle + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ontoggle member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onunload member variable 
-string scalar hr::getOnunload() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onunload variable 
- return(this.onunload + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onunload member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onvolumechange member variable 
-string scalar hr::getOnvolumechange() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onvolumechange variable 
- return(this.onvolumechange + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onvolumechange member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onwaiting member variable 
-string scalar hr::getOnwaiting() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onwaiting variable 
- return(this.onwaiting + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onwaiting member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for onwheel member variable 
-string scalar hr::getOnwheel() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the onwheel variable 
- return(this.onwheel + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onwheel member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for size member variable 
-string scalar hr::getSize() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the size variable 
- return(this.size + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for size member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for spellcheck member variable 
-string scalar hr::getSpellcheck() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the spellcheck variable 
- return(this.spellcheck + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for spellcheck member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for style member variable 
-string scalar hr::getStyle() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the style variable 
- return(this.style + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for style member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for tabindex member variable 
-string scalar hr::getTabindex() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the tabindex variable 
- return(this.tabindex + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for tabindex member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for title member variable 
-string scalar hr::getTitle() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the title variable 
- return(this.title + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for title member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for translate member variable 
-string scalar hr::getTranslate() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the translate variable 
- return(this.translate + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for translate member of class hr
+} // End of getter method for  member of class hr
 
-// Getter method for width member variable 
-string scalar hr::getWidth() { 
+// Getter method for  member variable 
+string scalar hr::get() { 
 
- // Returns the width variable 
- return(this.width + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for width member of class hr
+} // End of getter method for  member of class hr
 
 // Get the HTML tag w/attributes and arguments 
 string scalar hr::print() { 
 
- // Create local variables to piece together return string 
- string scalar open, args, close 
+    // Create local variables to piece together return string 
+    string scalar open, args, close 
 
- // Create opening string 
- open = getOpens() +  + getOpene()
+    // Create opening string 
+    open = getOpens() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + getOpene()
 
- // Get class arguments 
- args = getClassArgs() 
+    // Get class arguments 
+    args = getClassArgs() 
 
- // Get closing tag 
- close = getClose() 
+    // Get closing tag 
+    close = getClose() 
 
- // Return the complete HTML string 
- return(open + args + close) 
+    // Return the complete HTML string 
+    return(open + args + close) 
 
 } // End of print method for class hr 
 

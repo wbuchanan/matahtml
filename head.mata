@@ -7,222 +7,450 @@ mata:
 // Definition of HTML Tag head Mata Class
 // Defines information about the document// Information retrieved from http://www.w3schools.com/tags/tag_head.asp
 class head { 
- // Define private member variables
- private: 
 
- // Static/final variables 
- static                  string                  scalar                  opens, opene, close, classargs
+    // Define private member variables
+    private: 
 
- // String scalar attributes  string                                                  scalar                  `"accesskey"', `"class"', `"contenteditable"', `"contextmenu"', `"data-*"', `"dir"', `"draggable"', `"dropzone"', `"hidden"', `"id"', `"lang"', `"spellcheck"', `"style"', `"tabindex"', `"title"', `"translate"'
+    // Static/final variables 
+    static                       string                  scalar                  opens, opene, close, classargs
 
- // Define public members/methods 
- public: 
+    // String scalar attributes 
+    string                                                       scalar                  accesskey, contenteditable, contextmenu, data, draggable, dropzone, hidden, htmlclass, htmldir, htmltranslate, id, lang, spellcheck, style, tabindex, title
 
- // Setter methods  void                    new(), setClassArgs()
+    // Define public members/methods 
+    public: 
 
- // Getter methods  string                  scalar                  getOpens(), getOpene(), getClose(), print(), getClassargs()
+    // Setter methods 
+    void                 new(), setClassArgs(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set()
+
+    // Getter methods 
+    string                       scalar                  getOpens(), getOpene(), getClose(), print(), getClassargs(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get()
 
 } // End of class declaration
 
 // Class constructor method declaration 
 void head::new() { 
 
- // Defines the start of the opening tag for the class 
- this.opens = "<head" 
+    // Defines the start of the opening tag for the class 
+    this.opens = "<head" 
 
- // Defines the end of the opening tag for the class 
- this.opene = ">" 
+    // Defines the end of the opening tag for the class 
+    this.opene = ">" 
 
- // Defines the closing tag for the class 
- this.close = "</head>" 
+    // Defines the closing tag for the class 
+    this.close = "</head>" 
 
 } // End of class constructor method definition
 
 // Setter method for class arguments (appear between HTML tags) 
 void head::setClassArgs(| string scalar classarguments) { 
 
- // Defines arguments that appear between HTML tags 
- this.classargs = classarguments" 
+    // Defines arguments that appear between HTML tags 
+    this.classargs = classarguments 
 
 } // End of setter method for class arguments
+
+// Specifies a shortcut key to activate/focus an element 
+void head::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class head
+
+// Specifies whether the content of an element is editable or not 
+void head::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class head
+
+// Specifies a context menu for an element. The context menu appears when a user right-clicks on the element 
+void head::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class head
+
+// Used to store custom data private to the page or application 
+void head::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class head
+
+// Specifies whether an element is draggable or not 
+void head::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class head
+
+// Specifies whether the dragged data is copied, moved, or linked, when dropped 
+void head::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class head
+
+// Specifies that an element is not yet, or is no longer, relevant 
+void head::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class head
+
+// Specifies one or more classnames for an element (refers to a class in a style sheet) 
+void head::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class head
+
+// Specifies the text direction for the content in an element 
+void head::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class head
+
+// Specifies whether the content of an element should be translated or not 
+void head::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class head
+
+// Specifies a unique id for an element 
+void head::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class head
+
+// Specifies the language of the element's content 
+void head::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class head
+
+// Specifies whether the element is to have its spelling and grammar checked or not 
+void head::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class head
+
+// Specifies an inline CSS style for an element 
+void head::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class head
+
+// Specifies the tabbing order of an element 
+void head::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class head
+
+// Specifies extra information about an element 
+void head::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class head
 
 // Getter method for opening bracket 
 string scalar head::getOpens() { 
 
- // Returns the opening bracket/tag w/o > character to allow attributes 
- return(this.opens + " ") 
+    // Returns the opening bracket/tag w/o > character to allow attributes 
+    return(this.opens + " ") 
 
 } // End of getter method for opens member of class head
 
 // Getter method for opening bracket closing character
 string scalar head::getOpene() { 
 
- // Returns the closing character for the opening bracket 
- return(this.opene + " ") 
+    // Returns the closing character for the opening bracket 
+    return(this.opene + " ") 
 
 } // End of getter method for opene member of class head
 
 // Getter method for closing bracket 
 string scalar head::getClose() { 
 
- // Returns the closing bracket/tag
- return(this.close + " ") 
+    // Returns the closing bracket/tag
+    return(this.close + " ") 
 
 } // End of getter method for close member of class head
 
 // Getter method for class arguments 
 string scalar head::getClassArgs() { 
 
- // Returns the class arguments that appear between the HTML tags 
- return(this.classargs) 
+    // Returns the class arguments that appear between the HTML tags 
+    return(this.classargs) 
 
 } // End of getter method for class arguments member of class head
 
-// Getter method for accesskey member variable 
-string scalar head::getAccesskey() { 
+// Getter method for  member variable 
+string scalar head::get() { 
 
- // Returns the accesskey variable 
- return(this.accesskey + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for accesskey member of class head
+} // End of getter method for  member of class head
 
-// Getter method for class member variable 
-string scalar head::getClass() { 
+// Getter method for  member variable 
+string scalar head::get() { 
 
- // Returns the class variable 
- return(this.class + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for class member of class head
+} // End of getter method for  member of class head
 
-// Getter method for contenteditable member variable 
-string scalar head::getContenteditable() { 
+// Getter method for  member variable 
+string scalar head::get() { 
 
- // Returns the contenteditable variable 
- return(this.contenteditable + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for contenteditable member of class head
+} // End of getter method for  member of class head
 
-// Getter method for contextmenu member variable 
-string scalar head::getContextmenu() { 
+// Getter method for  member variable 
+string scalar head::get() { 
 
- // Returns the contextmenu variable 
- return(this.contextmenu + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for contextmenu member of class head
+} // End of getter method for  member of class head
 
-// Getter method for data-* member variable 
-string scalar head::getData-*() { 
+// Getter method for  member variable 
+string scalar head::get() { 
 
- // Returns the data-* variable 
- return(this.data-* + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for data-* member of class head
+} // End of getter method for  member of class head
 
-// Getter method for dir member variable 
-string scalar head::getDir() { 
+// Getter method for  member variable 
+string scalar head::get() { 
 
- // Returns the dir variable 
- return(this.dir + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for dir member of class head
+} // End of getter method for  member of class head
 
-// Getter method for draggable member variable 
-string scalar head::getDraggable() { 
+// Getter method for  member variable 
+string scalar head::get() { 
 
- // Returns the draggable variable 
- return(this.draggable + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for draggable member of class head
+} // End of getter method for  member of class head
 
-// Getter method for dropzone member variable 
-string scalar head::getDropzone() { 
+// Getter method for  member variable 
+string scalar head::get() { 
 
- // Returns the dropzone variable 
- return(this.dropzone + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for dropzone member of class head
+} // End of getter method for  member of class head
 
-// Getter method for hidden member variable 
-string scalar head::getHidden() { 
+// Getter method for  member variable 
+string scalar head::get() { 
 
- // Returns the hidden variable 
- return(this.hidden + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for hidden member of class head
+} // End of getter method for  member of class head
 
-// Getter method for id member variable 
-string scalar head::getId() { 
+// Getter method for  member variable 
+string scalar head::get() { 
 
- // Returns the id variable 
- return(this.id + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for id member of class head
+} // End of getter method for  member of class head
 
-// Getter method for lang member variable 
-string scalar head::getLang() { 
+// Getter method for  member variable 
+string scalar head::get() { 
 
- // Returns the lang variable 
- return(this.lang + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for lang member of class head
+} // End of getter method for  member of class head
 
-// Getter method for spellcheck member variable 
-string scalar head::getSpellcheck() { 
+// Getter method for  member variable 
+string scalar head::get() { 
 
- // Returns the spellcheck variable 
- return(this.spellcheck + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for spellcheck member of class head
+} // End of getter method for  member of class head
 
-// Getter method for style member variable 
-string scalar head::getStyle() { 
+// Getter method for  member variable 
+string scalar head::get() { 
 
- // Returns the style variable 
- return(this.style + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for style member of class head
+} // End of getter method for  member of class head
 
-// Getter method for tabindex member variable 
-string scalar head::getTabindex() { 
+// Getter method for  member variable 
+string scalar head::get() { 
 
- // Returns the tabindex variable 
- return(this.tabindex + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for tabindex member of class head
+} // End of getter method for  member of class head
 
-// Getter method for title member variable 
-string scalar head::getTitle() { 
+// Getter method for  member variable 
+string scalar head::get() { 
 
- // Returns the title variable 
- return(this.title + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for title member of class head
+} // End of getter method for  member of class head
 
-// Getter method for translate member variable 
-string scalar head::getTranslate() { 
+// Getter method for  member variable 
+string scalar head::get() { 
 
- // Returns the translate variable 
- return(this.translate + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for translate member of class head
+} // End of getter method for  member of class head
 
 // Get the HTML tag w/attributes and arguments 
 string scalar head::print() { 
 
- // Create local variables to piece together return string 
- string scalar open, args, close 
+    // Create local variables to piece together return string 
+    string scalar open, args, close 
 
- // Create opening string 
- open = getOpens() +  + getOpene()
+    // Create opening string 
+    open = getOpens() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + getOpene()
 
- // Get class arguments 
- args = getClassArgs() 
+    // Get class arguments 
+    args = getClassArgs() 
 
- // Get closing tag 
- close = getClose() 
+    // Get closing tag 
+    close = getClose() 
 
- // Return the complete HTML string 
- return(open + args + close) 
+    // Return the complete HTML string 
+    return(open + args + close) 
 
 } // End of print method for class head 
 

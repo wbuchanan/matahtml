@@ -7,886 +7,2333 @@ mata:
 // Definition of HTML Tag area Mata Class
 // Defines an area inside an image-map// Information retrieved from http://www.w3schools.com/tags/tag_area.asp
 class area { 
- // Define private member variables
- private: 
 
- // Static/final variables 
- static                  string                  scalar                  opens, opene, close, classargs
+    // Define private member variables
+    private: 
 
- // String scalar attributes  string                                                  scalar                  `"accesskey"', `"alt"', `"class"', `"contenteditable"', `"contextmenu"', `"coords"', `"data-*"', `"dir"', `"download"', `"draggable"', `"dropzone"', `"hidden"', `"href"', `"hreflang"', `"id"', `"lang"', `"media"', `"nohref"', `"onabort"', `"onafterprint"', `"onbeforeprint"', `"onbeforeunload"', `"onblur"', `"oncanplay"', `"oncanplaythrough"', `"onchange"', `"onclick"', `"oncontextmenu"', `"oncopy"', `"oncuechange"', `"oncut"', `"ondblclick"', `"ondrag"', `"ondragend"', `"ondragenter"', `"ondragleave"', `"ondragover"', `"ondragstart"', `"ondrop"', `"ondurationchange"', `"onemptied"', `"onended"', `"onerror"', `"onfocus"', `"onhashchange"', `"oninput"', `"oninvalid"', `"onkeydown"', `"onkeypress"', `"onkeyup"', `"onload"', `"onloadeddata"', `"onloadedmetadata"', `"onloadstart"', `"onmessage"', `"onmousedown"', `"onmousemove"', `"onmouseout"', `"onmouseover"', `"onmouseup"', `"onmousewheel"', `"onoffline"', `"ononline"', `"onpagehide"', `"onpageshow"', `"onpaste"', `"onpause"', `"onplay"', `"onplaying"', `"onpopstate"', `"onprogress"', `"onratechange"', `"onreset"', `"onresize"', `"onscroll"', `"onsearch"', `"onseeked"', `"onseeking"', `"onselect"', `"onshow"', `"onstalled"', `"onstorage"', `"onsubmit"', `"onsuspend"', `"ontimeupdate"', `"ontoggle"', `"onunload"', `"onvolumechange"', `"onwaiting"', `"onwheel"', `"rel"', `"shape"', `"spellcheck"', `"style"', `"tabindex"', `"target"', `"title"', `"translate"', `"type"'
+    // Static/final variables 
+    static                       string                  scalar                  opens, opene, close, classargs
 
- // Define public members/methods 
- public: 
+    // String scalar attributes 
+    string                                                       scalar                  accesskey, alt, contenteditable, contextmenu, coords, data, download, draggable, dropzone, hidden, href, hreflang, htmlclass, htmldir, htmltranslate, htmltype, id, lang, media, nohref, onabort, onafterprint, onbeforeprint, onbeforeunload, onblur, oncanplay, oncanplaythrough, onchange, onclick, oncontextmenu, oncopy, oncuechange, oncut, ondblclick, ondrag, ondragend, ondragenter, ondragleave, ondragover, ondragstart, ondrop, ondurationchange, onemptied, onended, onerror, onfocus, onhashchange, oninput, oninvalid, onkeydown, onkeypress, onkeyup, onload, onloadeddata, onloadedmetadata, onloadstart, onmessage, onmousedown, onmousemove, onmouseout, onmouseover, onmouseup, onmousewheel, onoffline, ononline, onpagehide, onpageshow, onpaste, onpause, onplay, onplaying, onpopstate, onprogress, onratechange, onreset, onresize, onscroll, onsearch, onseeked, onseeking, onselect, onshow, onstalled, onstorage, onsubmit, onsuspend, ontimeupdate, ontoggle, onunload, onvolumechange, onwaiting, onwheel, rel, shape, spellcheck, style, tabindex, target, title
 
- // Setter methods  void                    new(), setClassArgs()
+    // Define public members/methods 
+    public: 
 
- // Getter methods  string                  scalar                  getOpens(), getOpene(), getClose(), print(), getClassargs()
+    // Setter methods 
+    void                 new(), setClassArgs(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set()
+
+    // Getter methods 
+    string                       scalar                  getOpens(), getOpene(), getClose(), print(), getClassargs(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get()
 
 } // End of class declaration
 
 // Class constructor method declaration 
 void area::new() { 
 
- // Defines the start of the opening tag for the class 
- this.opens = "<area" 
+    // Defines the start of the opening tag for the class 
+    this.opens = "<area" 
 
- // Defines the end of the opening tag for the class 
- this.opene = ">" 
+    // Defines the end of the opening tag for the class 
+    this.opene = ">" 
 
- // Defines the closing tag for the class 
- this.close = "</area>" 
+    // Defines the closing tag for the class 
+    this.close = "</area>" 
 
 } // End of class constructor method definition
 
 // Setter method for class arguments (appear between HTML tags) 
 void area::setClassArgs(| string scalar classarguments) { 
 
- // Defines arguments that appear between HTML tags 
- this.classargs = classarguments" 
+    // Defines arguments that appear between HTML tags 
+    this.classargs = classarguments 
 
 } // End of setter method for class arguments
+
+// Specifies a shortcut key to activate/focus an element 
+void area::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class area
+
+// Specifies an alternate text for the area. Required if the href attribute is present 
+void area::set(| string scalar text) { 
+
+    // Declare member variables based on arguments 
+    string scalar loctext 
+
+    // Initialize the local variable 1
+    loctext = `" = ""' + text + `"""' 
+
+    // Set the attribute  for this class 
+    this. = loctext
+
+} // End of Method  declaration for class area
+
+// Specifies whether the content of an element is editable or not 
+void area::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class area
+
+// Specifies a context menu for an element. The context menu appears when a user right-clicks on the element 
+void area::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class area
+
+// Specifies the coordinates of the area 
+void area::set(| string scalar coordinates) { 
+
+    // Declare member variables based on arguments 
+    string scalar loccoordinates 
+
+    // Initialize the local variable 1
+    loccoordinates = `" = ""' + coordinates + `"""' 
+
+    // Set the attribute  for this class 
+    this. = loccoordinates
+
+} // End of Method  declaration for class area
+
+// Used to store custom data private to the page or application 
+void area::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class area
+
+// Specifies that the target will be downloaded when a user clicks on the hyperlink 
+void area::set(| string scalar filename) { 
+
+    // Declare member variables based on arguments 
+    string scalar locfilename 
+
+    // Initialize the local variable 1
+    locfilename = `" = ""' + filename + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locfilename
+
+} // End of Method  declaration for class area
+
+// Specifies whether an element is draggable or not 
+void area::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class area
+
+// Specifies whether the dragged data is copied, moved, or linked, when dropped 
+void area::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class area
+
+// Specifies that an element is not yet, or is no longer, relevant 
+void area::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class area
+
+// Specifies the hyperlink target for the area 
+void area::set(| string scalar URL) { 
+
+    // Declare member variables based on arguments 
+    string scalar locURL 
+
+    // Initialize the local variable 1
+    locURL = `" = ""' + URL + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locURL
+
+} // End of Method  declaration for class area
+
+// Specifies the language of the target URL 
+void area::set(| string scalar language_code) { 
+
+    // Declare member variables based on arguments 
+    string scalar loclanguage_code 
+
+    // Initialize the local variable 1
+    loclanguage_code = `" = ""' + language_code + `"""' 
+
+    // Set the attribute  for this class 
+    this. = loclanguage_code
+
+} // End of Method  declaration for class area
+
+// Specifies one or more classnames for an element (refers to a class in a style sheet) 
+void area::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class area
+
+// Specifies the text direction for the content in an element 
+void area::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class area
+
+// Specifies whether the content of an element should be translated or not 
+void area::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class area
+
+// Specifies the media type of the target URL 
+void area::set(| string scalar media_type) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmedia_type 
+
+    // Initialize the local variable 1
+    locmedia_type = `" = ""' + media_type + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmedia_type
+
+} // End of Method  declaration for class area
+
+// Specifies a unique id for an element 
+void area::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class area
+
+// Specifies the language of the element's content 
+void area::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class area
+
+// Specifies what media/device the target URL is optimized for 
+void area::set(| string scalar media, string scalar query) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmedia, "locquery" 
+
+    // Initialize the local variable 1
+    locmedia = `" = ""' + media + `"""' 
+
+    // Initialize the local variable 2
+    locquery = `" = ""' + query + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmedia + "locquery"
+
+} // End of Method  declaration for class area
+
+// Not supported in HTML5.Specifies that an area has no associated link 
+void area::set(| string scalar value) { 
+
+    // Declare member variables based on arguments 
+    string scalar locvalue 
+
+    // Initialize the local variable 1
+    locvalue = `" = ""' + value + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locvalue
+
+} // End of Method  declaration for class area
+
+// Script to be run on abort 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run after the document is printed 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run before the document is printed 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run when the document is about to be unloaded 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Fires the moment that the element loses focus 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run when a file is ready to start playing (when it has buffered enough to begin) 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run when a file can be played all the way to the end without pausing for buffering 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Fires the moment when the value of the element is changed 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Fires on a mouse click on the element 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run when a context menu is triggered 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Fires when the user copies the content of an element 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run when the cue changes in a <track> element 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Fires when the user cuts the content of an element 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Fires on a mouse double-click on the element 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run when an element is dragged 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run at the end of a drag operation 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run when an element has been dragged to a valid drop target 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run when an element leaves a valid drop target 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run when an element is being dragged over a valid drop target 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run at the start of a drag operation 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run when dragged element is being dropped 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run when the length of the media changes 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run when something bad happens and the file is suddenly unavailable (like unexpectedly disconnects) 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run when the media has reach the end (a useful event for messages like "thanks for listening") 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Fires when an error occurs while loading an external file Script to be run when an error occur Script to be run when an error occurs when the file is being loaded 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Fires the moment when the element gets focus 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run when there has been changes to the anchor part of the a URL 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run when an element gets user input 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run when an element is invalid 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Fires when a user is pressing a key 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Fires when a user presses a key 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Fires when a user releases a key 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Fires after the page is finished loading 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run when media data is loaded 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run when meta data (like dimensions and duration) are loaded 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run just as the file begins to load before anything is actually loaded 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run when the message is triggered 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Fires when a mouse button is pressed down on an element 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Fires when the mouse pointer is moving while it is over an element 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Fires when the mouse pointer moves out of an element 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Fires when the mouse pointer moves over an element 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Fires when a mouse button is released over an element 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Deprecated. Use the onwheel attribute instead 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run when the browser starts to work offline 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run when the browser starts to work online 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run when a user navigates away from a page 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run when a user navigates to a page 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Fires when the user pastes some content in an element 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run when the media is paused either by the user or programmatically 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run when the media is ready to start playing 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run when the media actually has started playing 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run when the window's history changes 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run when the browser is in the process of getting the media data 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run each time the playback rate changes (like when a user switches to a slow motion or fast forward mode) 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Fires when the Reset button in a form is clicked 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Fires when the browser window is resized 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run when an element's scrollbar is being scrolled 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Fires when the user writes something in a search field (for <input="search">) 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run when the seeking attribute is set to false indicating that seeking has ended 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run when the seeking attribute is set to true indicating that seeking is active 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Fires after some text has been selected in an element 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Fires when a <menu> element is shown as a context menu 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run when the browser is unable to fetch the media data for whatever reason 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run when a Web Storage area is updated 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Fires when a form is submitted 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run when fetching the media data is stopped before it is completely loaded for whatever reason 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run when the playing position has changed (like when the user fast forwards to a different point in the media) 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Fires when the user opens or closes the <details> element 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Fires once a page has unloaded (or the browser window has been closed) 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run each time the volume is changed which (includes setting the volume to "mute") 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Script to be run when the media has paused but is expected to resume (like when the media pauses to buffer more data) 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Fires when the mouse wheel rolls up or down over an element 
+void area::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class area
+
+// Specifies the relationship between the current document and the target URL 
+void area::set(| string scalar alternate, string scalar author, string scalar bookmark, string scalar help, string scalar license, string scalar next, string scalar nofollow, string scalar noreferrer, string scalar prefetch, string scalar prev, string scalar search, string scalar tag) { 
+
+    // Declare member variables based on arguments 
+    string scalar localternate, "locauthor", "locbookmark", "lochelp", "loclicense", "locnext", "locnofollow", "locnoreferrer", "locprefetch", "locprev", "locsearch", "loctag" 
+
+    // Initialize the local variable 1
+    localternate = `" = ""' + alternate + `"""' 
+
+    // Initialize the local variable 2
+    locauthor = `" = ""' + author + `"""' 
+
+    // Initialize the local variable 3
+    locbookmark = `" = ""' + bookmark + `"""' 
+
+    // Initialize the local variable 4
+    lochelp = `" = ""' + help + `"""' 
+
+    // Initialize the local variable 5
+    loclicense = `" = ""' + license + `"""' 
+
+    // Initialize the local variable 6
+    locnext = `" = ""' + next + `"""' 
+
+    // Initialize the local variable 7
+    locnofollow = `" = ""' + nofollow + `"""' 
+
+    // Initialize the local variable 8
+    locnoreferrer = `" = ""' + noreferrer + `"""' 
+
+    // Initialize the local variable 9
+    locprefetch = `" = ""' + prefetch + `"""' 
+
+    // Initialize the local variable 10
+    locprev = `" = ""' + prev + `"""' 
+
+    // Initialize the local variable 11
+    locsearch = `" = ""' + search + `"""' 
+
+    // Initialize the local variable 12
+    loctag = `" = ""' + tag + `"""' 
+
+    // Set the attribute  for this class 
+    this. = localternate + "locauthor" + "locbookmark" + "lochelp" + "loclicense" + "locnext" + "locnofollow" + "locnoreferrer" + "locprefetch" + "locprev" + "locsearch" + "loctag"
+
+} // End of Method  declaration for class area
+
+// Specifies the shape of the area 
+void area::set(| string scalar default, string scalar rect, string scalar circle, string scalar poly) { 
+
+    // Declare member variables based on arguments 
+    string scalar locdefault, "locrect", "loccircle", "locpoly" 
+
+    // Initialize the local variable 1
+    locdefault = `" = ""' + default + `"""' 
+
+    // Initialize the local variable 2
+    locrect = `" = ""' + rect + `"""' 
+
+    // Initialize the local variable 3
+    loccircle = `" = ""' + circle + `"""' 
+
+    // Initialize the local variable 4
+    locpoly = `" = ""' + poly + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locdefault + "locrect" + "loccircle" + "locpoly"
+
+} // End of Method  declaration for class area
+
+// Specifies whether the element is to have its spelling and grammar checked or not 
+void area::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class area
+
+// Specifies an inline CSS style for an element 
+void area::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class area
+
+// Specifies the tabbing order of an element 
+void area::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class area
+
+// Specifies where to open the target URL 
+void area::set(| string scalar _blank, string scalar _parent, string scalar _self, string scalar _top, string scalar framename) { 
+
+    // Declare member variables based on arguments 
+    string scalar loc_blank, "loc_parent", "loc_self", "loc_top", "locframename" 
+
+    // Initialize the local variable 1
+    loc_blank = `" = ""' + _blank + `"""' 
+
+    // Initialize the local variable 2
+    loc_parent = `" = ""' + _parent + `"""' 
+
+    // Initialize the local variable 3
+    loc_self = `" = ""' + _self + `"""' 
+
+    // Initialize the local variable 4
+    loc_top = `" = ""' + _top + `"""' 
+
+    // Initialize the local variable 5
+    locframename = `" = ""' + framename + `"""' 
+
+    // Set the attribute  for this class 
+    this. = loc_blank + "loc_parent" + "loc_self" + "loc_top" + "locframename"
+
+} // End of Method  declaration for class area
+
+// Specifies extra information about an element 
+void area::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class area
 
 // Getter method for opening bracket 
 string scalar area::getOpens() { 
 
- // Returns the opening bracket/tag w/o > character to allow attributes 
- return(this.opens + " ") 
+    // Returns the opening bracket/tag w/o > character to allow attributes 
+    return(this.opens + " ") 
 
 } // End of getter method for opens member of class area
 
 // Getter method for opening bracket closing character
 string scalar area::getOpene() { 
 
- // Returns the closing character for the opening bracket 
- return(this.opene + " ") 
+    // Returns the closing character for the opening bracket 
+    return(this.opene + " ") 
 
 } // End of getter method for opene member of class area
 
 // Getter method for closing bracket 
 string scalar area::getClose() { 
 
- // Returns the closing bracket/tag
- return(this.close + " ") 
+    // Returns the closing bracket/tag
+    return(this.close + " ") 
 
 } // End of getter method for close member of class area
 
 // Getter method for class arguments 
 string scalar area::getClassArgs() { 
 
- // Returns the class arguments that appear between the HTML tags 
- return(this.classargs) 
+    // Returns the class arguments that appear between the HTML tags 
+    return(this.classargs) 
 
 } // End of getter method for class arguments member of class area
 
-// Getter method for accesskey member variable 
-string scalar area::getAccesskey() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the accesskey variable 
- return(this.accesskey + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for accesskey member of class area
+} // End of getter method for  member of class area
 
-// Getter method for alt member variable 
-string scalar area::getAlt() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the alt variable 
- return(this.alt + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for alt member of class area
+} // End of getter method for  member of class area
 
-// Getter method for class member variable 
-string scalar area::getClass() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the class variable 
- return(this.class + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for class member of class area
+} // End of getter method for  member of class area
 
-// Getter method for contenteditable member variable 
-string scalar area::getContenteditable() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the contenteditable variable 
- return(this.contenteditable + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for contenteditable member of class area
+} // End of getter method for  member of class area
 
-// Getter method for contextmenu member variable 
-string scalar area::getContextmenu() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the contextmenu variable 
- return(this.contextmenu + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for contextmenu member of class area
+} // End of getter method for  member of class area
 
-// Getter method for coords member variable 
-string scalar area::getCoords() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the coords variable 
- return(this.coords + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for coords member of class area
+} // End of getter method for  member of class area
 
-// Getter method for data-* member variable 
-string scalar area::getData-*() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the data-* variable 
- return(this.data-* + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for data-* member of class area
+} // End of getter method for  member of class area
 
-// Getter method for dir member variable 
-string scalar area::getDir() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the dir variable 
- return(this.dir + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for dir member of class area
+} // End of getter method for  member of class area
 
-// Getter method for download member variable 
-string scalar area::getDownload() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the download variable 
- return(this.download + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for download member of class area
+} // End of getter method for  member of class area
 
-// Getter method for draggable member variable 
-string scalar area::getDraggable() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the draggable variable 
- return(this.draggable + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for draggable member of class area
+} // End of getter method for  member of class area
 
-// Getter method for dropzone member variable 
-string scalar area::getDropzone() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the dropzone variable 
- return(this.dropzone + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for dropzone member of class area
+} // End of getter method for  member of class area
 
-// Getter method for hidden member variable 
-string scalar area::getHidden() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the hidden variable 
- return(this.hidden + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for hidden member of class area
+} // End of getter method for  member of class area
 
-// Getter method for href member variable 
-string scalar area::getHref() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the href variable 
- return(this.href + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for href member of class area
+} // End of getter method for  member of class area
 
-// Getter method for hreflang member variable 
-string scalar area::getHreflang() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the hreflang variable 
- return(this.hreflang + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for hreflang member of class area
+} // End of getter method for  member of class area
 
-// Getter method for id member variable 
-string scalar area::getId() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the id variable 
- return(this.id + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for id member of class area
+} // End of getter method for  member of class area
 
-// Getter method for lang member variable 
-string scalar area::getLang() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the lang variable 
- return(this.lang + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for lang member of class area
+} // End of getter method for  member of class area
 
-// Getter method for media member variable 
-string scalar area::getMedia() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the media variable 
- return(this.media + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for media member of class area
+} // End of getter method for  member of class area
 
-// Getter method for nohref member variable 
-string scalar area::getNohref() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the nohref variable 
- return(this.nohref + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for nohref member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onabort member variable 
-string scalar area::getOnabort() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onabort variable 
- return(this.onabort + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onabort member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onafterprint member variable 
-string scalar area::getOnafterprint() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onafterprint variable 
- return(this.onafterprint + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onafterprint member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onbeforeprint member variable 
-string scalar area::getOnbeforeprint() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onbeforeprint variable 
- return(this.onbeforeprint + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onbeforeprint member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onbeforeunload member variable 
-string scalar area::getOnbeforeunload() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onbeforeunload variable 
- return(this.onbeforeunload + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onbeforeunload member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onblur member variable 
-string scalar area::getOnblur() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onblur variable 
- return(this.onblur + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onblur member of class area
+} // End of getter method for  member of class area
 
-// Getter method for oncanplay member variable 
-string scalar area::getOncanplay() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the oncanplay variable 
- return(this.oncanplay + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oncanplay member of class area
+} // End of getter method for  member of class area
 
-// Getter method for oncanplaythrough member variable 
-string scalar area::getOncanplaythrough() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the oncanplaythrough variable 
- return(this.oncanplaythrough + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oncanplaythrough member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onchange member variable 
-string scalar area::getOnchange() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onchange variable 
- return(this.onchange + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onchange member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onclick member variable 
-string scalar area::getOnclick() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onclick variable 
- return(this.onclick + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onclick member of class area
+} // End of getter method for  member of class area
 
-// Getter method for oncontextmenu member variable 
-string scalar area::getOncontextmenu() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the oncontextmenu variable 
- return(this.oncontextmenu + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oncontextmenu member of class area
+} // End of getter method for  member of class area
 
-// Getter method for oncopy member variable 
-string scalar area::getOncopy() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the oncopy variable 
- return(this.oncopy + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oncopy member of class area
+} // End of getter method for  member of class area
 
-// Getter method for oncuechange member variable 
-string scalar area::getOncuechange() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the oncuechange variable 
- return(this.oncuechange + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oncuechange member of class area
+} // End of getter method for  member of class area
 
-// Getter method for oncut member variable 
-string scalar area::getOncut() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the oncut variable 
- return(this.oncut + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oncut member of class area
+} // End of getter method for  member of class area
 
-// Getter method for ondblclick member variable 
-string scalar area::getOndblclick() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the ondblclick variable 
- return(this.ondblclick + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondblclick member of class area
+} // End of getter method for  member of class area
 
-// Getter method for ondrag member variable 
-string scalar area::getOndrag() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the ondrag variable 
- return(this.ondrag + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondrag member of class area
+} // End of getter method for  member of class area
 
-// Getter method for ondragend member variable 
-string scalar area::getOndragend() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the ondragend variable 
- return(this.ondragend + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondragend member of class area
+} // End of getter method for  member of class area
 
-// Getter method for ondragenter member variable 
-string scalar area::getOndragenter() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the ondragenter variable 
- return(this.ondragenter + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondragenter member of class area
+} // End of getter method for  member of class area
 
-// Getter method for ondragleave member variable 
-string scalar area::getOndragleave() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the ondragleave variable 
- return(this.ondragleave + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondragleave member of class area
+} // End of getter method for  member of class area
 
-// Getter method for ondragover member variable 
-string scalar area::getOndragover() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the ondragover variable 
- return(this.ondragover + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondragover member of class area
+} // End of getter method for  member of class area
 
-// Getter method for ondragstart member variable 
-string scalar area::getOndragstart() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the ondragstart variable 
- return(this.ondragstart + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondragstart member of class area
+} // End of getter method for  member of class area
 
-// Getter method for ondrop member variable 
-string scalar area::getOndrop() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the ondrop variable 
- return(this.ondrop + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondrop member of class area
+} // End of getter method for  member of class area
 
-// Getter method for ondurationchange member variable 
-string scalar area::getOndurationchange() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the ondurationchange variable 
- return(this.ondurationchange + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondurationchange member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onemptied member variable 
-string scalar area::getOnemptied() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onemptied variable 
- return(this.onemptied + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onemptied member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onended member variable 
-string scalar area::getOnended() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onended variable 
- return(this.onended + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onended member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onerror member variable 
-string scalar area::getOnerror() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onerror variable 
- return(this.onerror + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onerror member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onfocus member variable 
-string scalar area::getOnfocus() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onfocus variable 
- return(this.onfocus + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onfocus member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onhashchange member variable 
-string scalar area::getOnhashchange() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onhashchange variable 
- return(this.onhashchange + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onhashchange member of class area
+} // End of getter method for  member of class area
 
-// Getter method for oninput member variable 
-string scalar area::getOninput() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the oninput variable 
- return(this.oninput + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oninput member of class area
+} // End of getter method for  member of class area
 
-// Getter method for oninvalid member variable 
-string scalar area::getOninvalid() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the oninvalid variable 
- return(this.oninvalid + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oninvalid member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onkeydown member variable 
-string scalar area::getOnkeydown() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onkeydown variable 
- return(this.onkeydown + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onkeydown member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onkeypress member variable 
-string scalar area::getOnkeypress() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onkeypress variable 
- return(this.onkeypress + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onkeypress member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onkeyup member variable 
-string scalar area::getOnkeyup() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onkeyup variable 
- return(this.onkeyup + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onkeyup member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onload member variable 
-string scalar area::getOnload() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onload variable 
- return(this.onload + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onload member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onloadeddata member variable 
-string scalar area::getOnloadeddata() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onloadeddata variable 
- return(this.onloadeddata + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onloadeddata member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onloadedmetadata member variable 
-string scalar area::getOnloadedmetadata() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onloadedmetadata variable 
- return(this.onloadedmetadata + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onloadedmetadata member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onloadstart member variable 
-string scalar area::getOnloadstart() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onloadstart variable 
- return(this.onloadstart + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onloadstart member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onmessage member variable 
-string scalar area::getOnmessage() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onmessage variable 
- return(this.onmessage + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmessage member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onmousedown member variable 
-string scalar area::getOnmousedown() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onmousedown variable 
- return(this.onmousedown + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmousedown member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onmousemove member variable 
-string scalar area::getOnmousemove() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onmousemove variable 
- return(this.onmousemove + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmousemove member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onmouseout member variable 
-string scalar area::getOnmouseout() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onmouseout variable 
- return(this.onmouseout + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmouseout member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onmouseover member variable 
-string scalar area::getOnmouseover() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onmouseover variable 
- return(this.onmouseover + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmouseover member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onmouseup member variable 
-string scalar area::getOnmouseup() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onmouseup variable 
- return(this.onmouseup + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmouseup member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onmousewheel member variable 
-string scalar area::getOnmousewheel() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onmousewheel variable 
- return(this.onmousewheel + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmousewheel member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onoffline member variable 
-string scalar area::getOnoffline() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onoffline variable 
- return(this.onoffline + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onoffline member of class area
+} // End of getter method for  member of class area
 
-// Getter method for ononline member variable 
-string scalar area::getOnonline() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the ononline variable 
- return(this.ononline + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ononline member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onpagehide member variable 
-string scalar area::getOnpagehide() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onpagehide variable 
- return(this.onpagehide + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onpagehide member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onpageshow member variable 
-string scalar area::getOnpageshow() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onpageshow variable 
- return(this.onpageshow + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onpageshow member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onpaste member variable 
-string scalar area::getOnpaste() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onpaste variable 
- return(this.onpaste + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onpaste member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onpause member variable 
-string scalar area::getOnpause() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onpause variable 
- return(this.onpause + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onpause member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onplay member variable 
-string scalar area::getOnplay() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onplay variable 
- return(this.onplay + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onplay member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onplaying member variable 
-string scalar area::getOnplaying() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onplaying variable 
- return(this.onplaying + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onplaying member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onpopstate member variable 
-string scalar area::getOnpopstate() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onpopstate variable 
- return(this.onpopstate + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onpopstate member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onprogress member variable 
-string scalar area::getOnprogress() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onprogress variable 
- return(this.onprogress + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onprogress member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onratechange member variable 
-string scalar area::getOnratechange() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onratechange variable 
- return(this.onratechange + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onratechange member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onreset member variable 
-string scalar area::getOnreset() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onreset variable 
- return(this.onreset + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onreset member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onresize member variable 
-string scalar area::getOnresize() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onresize variable 
- return(this.onresize + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onresize member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onscroll member variable 
-string scalar area::getOnscroll() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onscroll variable 
- return(this.onscroll + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onscroll member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onsearch member variable 
-string scalar area::getOnsearch() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onsearch variable 
- return(this.onsearch + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onsearch member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onseeked member variable 
-string scalar area::getOnseeked() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onseeked variable 
- return(this.onseeked + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onseeked member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onseeking member variable 
-string scalar area::getOnseeking() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onseeking variable 
- return(this.onseeking + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onseeking member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onselect member variable 
-string scalar area::getOnselect() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onselect variable 
- return(this.onselect + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onselect member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onshow member variable 
-string scalar area::getOnshow() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onshow variable 
- return(this.onshow + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onshow member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onstalled member variable 
-string scalar area::getOnstalled() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onstalled variable 
- return(this.onstalled + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onstalled member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onstorage member variable 
-string scalar area::getOnstorage() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onstorage variable 
- return(this.onstorage + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onstorage member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onsubmit member variable 
-string scalar area::getOnsubmit() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onsubmit variable 
- return(this.onsubmit + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onsubmit member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onsuspend member variable 
-string scalar area::getOnsuspend() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onsuspend variable 
- return(this.onsuspend + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onsuspend member of class area
+} // End of getter method for  member of class area
 
-// Getter method for ontimeupdate member variable 
-string scalar area::getOntimeupdate() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the ontimeupdate variable 
- return(this.ontimeupdate + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ontimeupdate member of class area
+} // End of getter method for  member of class area
 
-// Getter method for ontoggle member variable 
-string scalar area::getOntoggle() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the ontoggle variable 
- return(this.ontoggle + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ontoggle member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onunload member variable 
-string scalar area::getOnunload() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onunload variable 
- return(this.onunload + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onunload member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onvolumechange member variable 
-string scalar area::getOnvolumechange() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onvolumechange variable 
- return(this.onvolumechange + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onvolumechange member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onwaiting member variable 
-string scalar area::getOnwaiting() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onwaiting variable 
- return(this.onwaiting + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onwaiting member of class area
+} // End of getter method for  member of class area
 
-// Getter method for onwheel member variable 
-string scalar area::getOnwheel() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the onwheel variable 
- return(this.onwheel + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onwheel member of class area
+} // End of getter method for  member of class area
 
-// Getter method for rel member variable 
-string scalar area::getRel() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the rel variable 
- return(this.rel + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for rel member of class area
+} // End of getter method for  member of class area
 
-// Getter method for shape member variable 
-string scalar area::getShape() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the shape variable 
- return(this.shape + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for shape member of class area
+} // End of getter method for  member of class area
 
-// Getter method for spellcheck member variable 
-string scalar area::getSpellcheck() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the spellcheck variable 
- return(this.spellcheck + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for spellcheck member of class area
+} // End of getter method for  member of class area
 
-// Getter method for style member variable 
-string scalar area::getStyle() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the style variable 
- return(this.style + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for style member of class area
+} // End of getter method for  member of class area
 
-// Getter method for tabindex member variable 
-string scalar area::getTabindex() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the tabindex variable 
- return(this.tabindex + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for tabindex member of class area
+} // End of getter method for  member of class area
 
-// Getter method for target member variable 
-string scalar area::getTarget() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the target variable 
- return(this.target + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for target member of class area
+} // End of getter method for  member of class area
 
-// Getter method for title member variable 
-string scalar area::getTitle() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the title variable 
- return(this.title + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for title member of class area
+} // End of getter method for  member of class area
 
-// Getter method for translate member variable 
-string scalar area::getTranslate() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the translate variable 
- return(this.translate + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for translate member of class area
+} // End of getter method for  member of class area
 
-// Getter method for type member variable 
-string scalar area::getType() { 
+// Getter method for  member variable 
+string scalar area::get() { 
 
- // Returns the type variable 
- return(this.type + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for type member of class area
+} // End of getter method for  member of class area
 
 // Get the HTML tag w/attributes and arguments 
 string scalar area::print() { 
 
- // Create local variables to piece together return string 
- string scalar open, args, close 
+    // Create local variables to piece together return string 
+    string scalar open, args, close 
 
- // Create opening string 
- open = getOpens() +  + getOpene()
+    // Create opening string 
+    open = getOpens() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + getOpene()
 
- // Get class arguments 
- args = getClassArgs() 
+    // Get class arguments 
+    args = getClassArgs() 
 
- // Get closing tag 
- close = getClose() 
+    // Get closing tag 
+    close = getClose() 
 
- // Return the complete HTML string 
- return(open + args + close) 
+    // Return the complete HTML string 
+    return(open + args + close) 
 
 } // End of print method for class area 
 

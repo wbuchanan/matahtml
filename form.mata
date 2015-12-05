@@ -7,870 +7,2250 @@ mata:
 // Definition of HTML Tag form Mata Class
 // Defines an HTML form for user input// Information retrieved from http://www.w3schools.com/tags/tag_form.asp
 class form { 
- // Define private member variables
- private: 
 
- // Static/final variables 
- static                  string                  scalar                  opens, opene, close, classargs
+    // Define private member variables
+    private: 
 
- // String scalar attributes  string                                                  scalar                  `"accept"', `"accept-charset"', `"accesskey"', `"action"', `"autocomplete"', `"class"', `"contenteditable"', `"contextmenu"', `"data-*"', `"dir"', `"draggable"', `"dropzone"', `"enctype"', `"hidden"', `"id"', `"lang"', `"method"', `"name"', `"novalidate"', `"onabort"', `"onafterprint"', `"onbeforeprint"', `"onbeforeunload"', `"onblur"', `"oncanplay"', `"oncanplaythrough"', `"onchange"', `"onclick"', `"oncontextmenu"', `"oncopy"', `"oncuechange"', `"oncut"', `"ondblclick"', `"ondrag"', `"ondragend"', `"ondragenter"', `"ondragleave"', `"ondragover"', `"ondragstart"', `"ondrop"', `"ondurationchange"', `"onemptied"', `"onended"', `"onerror"', `"onfocus"', `"onhashchange"', `"oninput"', `"oninvalid"', `"onkeydown"', `"onkeypress"', `"onkeyup"', `"onload"', `"onloadeddata"', `"onloadedmetadata"', `"onloadstart"', `"onmessage"', `"onmousedown"', `"onmousemove"', `"onmouseout"', `"onmouseover"', `"onmouseup"', `"onmousewheel"', `"onoffline"', `"ononline"', `"onpagehide"', `"onpageshow"', `"onpaste"', `"onpause"', `"onplay"', `"onplaying"', `"onpopstate"', `"onprogress"', `"onratechange"', `"onreset"', `"onresize"', `"onscroll"', `"onsearch"', `"onseeked"', `"onseeking"', `"onselect"', `"onshow"', `"onstalled"', `"onstorage"', `"onsubmit"', `"onsuspend"', `"ontimeupdate"', `"ontoggle"', `"onunload"', `"onvolumechange"', `"onwaiting"', `"onwheel"', `"spellcheck"', `"style"', `"tabindex"', `"target"', `"title"', `"translate"'
+    // Static/final variables 
+    static                       string                  scalar                  opens, opene, close, classargs
 
- // Define public members/methods 
- public: 
+    // String scalar attributes 
+    string                                                       scalar                  accept, accept-charset, accesskey, action, autocomplete, contenteditable, contextmenu, data, draggable, dropzone, enctype, hidden, htmlclass, htmldir, htmltranslate, id, lang, method, name, novalidate, onabort, onafterprint, onbeforeprint, onbeforeunload, onblur, oncanplay, oncanplaythrough, onchange, onclick, oncontextmenu, oncopy, oncuechange, oncut, ondblclick, ondrag, ondragend, ondragenter, ondragleave, ondragover, ondragstart, ondrop, ondurationchange, onemptied, onended, onerror, onfocus, onhashchange, oninput, oninvalid, onkeydown, onkeypress, onkeyup, onload, onloadeddata, onloadedmetadata, onloadstart, onmessage, onmousedown, onmousemove, onmouseout, onmouseover, onmouseup, onmousewheel, onoffline, ononline, onpagehide, onpageshow, onpaste, onpause, onplay, onplaying, onpopstate, onprogress, onratechange, onreset, onresize, onscroll, onsearch, onseeked, onseeking, onselect, onshow, onstalled, onstorage, onsubmit, onsuspend, ontimeupdate, ontoggle, onunload, onvolumechange, onwaiting, onwheel, spellcheck, style, tabindex, target, title
 
- // Setter methods  void                    new(), setClassArgs()
+    // Define public members/methods 
+    public: 
 
- // Getter methods  string                  scalar                  getOpens(), getOpene(), getClose(), print(), getClassargs()
+    // Setter methods 
+    void                 new(), setClassArgs(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set()
+
+    // Getter methods 
+    string                       scalar                  getOpens(), getOpene(), getClose(), print(), getClassargs(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get()
 
 } // End of class declaration
 
 // Class constructor method declaration 
 void form::new() { 
 
- // Defines the start of the opening tag for the class 
- this.opens = "<form" 
+    // Defines the start of the opening tag for the class 
+    this.opens = "<form" 
 
- // Defines the end of the opening tag for the class 
- this.opene = ">" 
+    // Defines the end of the opening tag for the class 
+    this.opene = ">" 
 
- // Defines the closing tag for the class 
- this.close = "</form>" 
+    // Defines the closing tag for the class 
+    this.close = "</form>" 
 
 } // End of class constructor method definition
 
 // Setter method for class arguments (appear between HTML tags) 
 void form::setClassArgs(| string scalar classarguments) { 
 
- // Defines arguments that appear between HTML tags 
- this.classargs = classarguments" 
+    // Defines arguments that appear between HTML tags 
+    this.classargs = classarguments 
 
 } // End of setter method for class arguments
+
+// Not supported in HTML5.Specifies a comma-separated list of file types  that the server accepts (that can be submitted through the file upload) 
+void form::set(| string scalar file_type) { 
+
+    // Declare member variables based on arguments 
+    string scalar locfile_type 
+
+    // Initialize the local variable 1
+    locfile_type = `" = ""' + file_type + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locfile_type
+
+} // End of Method  declaration for class form
+
+// Specifies the character encodings that are to be used for the form submission 
+void form::set(| string scalar character_set) { 
+
+    // Declare member variables based on arguments 
+    string scalar loccharacter_set 
+
+    // Initialize the local variable 1
+    loccharacter_set = `" = ""' + character_set + `"""' 
+
+    // Set the attribute  for this class 
+    this. = loccharacter_set
+
+} // End of Method  declaration for class form
+
+// Specifies a shortcut key to activate/focus an element 
+void form::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class form
+
+// Specifies where to send the form-data when a form is submitted 
+void form::set(| string scalar URL) { 
+
+    // Declare member variables based on arguments 
+    string scalar locURL 
+
+    // Initialize the local variable 1
+    locURL = `" = ""' + URL + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locURL
+
+} // End of Method  declaration for class form
+
+// Specifies whether a form should have autocomplete on or off 
+void form::set(| string scalar onoff) { 
+
+    // Declare member variables based on arguments 
+    string scalar loconoff 
+
+    // Initialize the local variable 1
+    loconoff = `" = ""' + onoff + `"""' 
+
+    // Set the attribute  for this class 
+    this. = loconoff
+
+} // End of Method  declaration for class form
+
+// Specifies whether the content of an element is editable or not 
+void form::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class form
+
+// Specifies a context menu for an element. The context menu appears when a user right-clicks on the element 
+void form::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class form
+
+// Used to store custom data private to the page or application 
+void form::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class form
+
+// Specifies whether an element is draggable or not 
+void form::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class form
+
+// Specifies whether the dragged data is copied, moved, or linked, when dropped 
+void form::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class form
+
+// Specifies how the form-data should be encoded when submitting it to the server (only for method="post") 
+void form::set(| string scalar application/x-www-form-urlencoded, string scalar multipart/form-data, string scalar text/plain) { 
+
+    // Declare member variables based on arguments 
+    string scalar locapplication/x-www-form-urlencoded, "locmultipart/form-data", "loctext/plain" 
+
+    // Initialize the local variable 1
+    locapplication/x-www-form-urlencoded = `" = ""' + application/x-www-form-urlencoded + `"""' 
+
+    // Initialize the local variable 2
+    locmultipart/form-data = `" = ""' + multipart/form-data + `"""' 
+
+    // Initialize the local variable 3
+    loctext/plain = `" = ""' + text/plain + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locapplication/x-www-form-urlencoded + "locmultipart/form-data" + "loctext/plain"
+
+} // End of Method  declaration for class form
+
+// Specifies that an element is not yet, or is no longer, relevant 
+void form::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class form
+
+// Specifies one or more classnames for an element (refers to a class in a style sheet) 
+void form::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class form
+
+// Specifies the text direction for the content in an element 
+void form::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class form
+
+// Specifies whether the content of an element should be translated or not 
+void form::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class form
+
+// Specifies a unique id for an element 
+void form::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class form
+
+// Specifies the language of the element's content 
+void form::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class form
+
+// Specifies the HTTP method to use when sending form-data 
+void form::set(| string scalar get, string scalar post) { 
+
+    // Declare member variables based on arguments 
+    string scalar locget, "locpost" 
+
+    // Initialize the local variable 1
+    locget = `" = ""' + get + `"""' 
+
+    // Initialize the local variable 2
+    locpost = `" = ""' + post + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locget + "locpost"
+
+} // End of Method  declaration for class form
+
+// Specifies the name of a form 
+void form::set(| string scalar text) { 
+
+    // Declare member variables based on arguments 
+    string scalar loctext 
+
+    // Initialize the local variable 1
+    loctext = `" = ""' + text + `"""' 
+
+    // Set the attribute  for this class 
+    this. = loctext
+
+} // End of Method  declaration for class form
+
+// Specifies that the form should not be validated when submitted 
+void form::set(| string scalar novalidate) { 
+
+    // Declare member variables based on arguments 
+    string scalar locnovalidate 
+
+    // Initialize the local variable 1
+    locnovalidate = `" = ""' + novalidate + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locnovalidate
+
+} // End of Method  declaration for class form
+
+// Script to be run on abort 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run after the document is printed 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run before the document is printed 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run when the document is about to be unloaded 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Fires the moment that the element loses focus 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run when a file is ready to start playing (when it has buffered enough to begin) 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run when a file can be played all the way to the end without pausing for buffering 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Fires the moment when the value of the element is changed 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Fires on a mouse click on the element 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run when a context menu is triggered 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Fires when the user copies the content of an element 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run when the cue changes in a <track> element 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Fires when the user cuts the content of an element 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Fires on a mouse double-click on the element 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run when an element is dragged 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run at the end of a drag operation 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run when an element has been dragged to a valid drop target 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run when an element leaves a valid drop target 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run when an element is being dragged over a valid drop target 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run at the start of a drag operation 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run when dragged element is being dropped 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run when the length of the media changes 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run when something bad happens and the file is suddenly unavailable (like unexpectedly disconnects) 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run when the media has reach the end (a useful event for messages like "thanks for listening") 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Fires when an error occurs while loading an external file Script to be run when an error occur Script to be run when an error occurs when the file is being loaded 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Fires the moment when the element gets focus 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run when there has been changes to the anchor part of the a URL 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run when an element gets user input 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run when an element is invalid 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Fires when a user is pressing a key 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Fires when a user presses a key 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Fires when a user releases a key 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Fires after the page is finished loading 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run when media data is loaded 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run when meta data (like dimensions and duration) are loaded 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run just as the file begins to load before anything is actually loaded 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run when the message is triggered 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Fires when a mouse button is pressed down on an element 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Fires when the mouse pointer is moving while it is over an element 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Fires when the mouse pointer moves out of an element 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Fires when the mouse pointer moves over an element 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Fires when a mouse button is released over an element 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Deprecated. Use the onwheel attribute instead 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run when the browser starts to work offline 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run when the browser starts to work online 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run when a user navigates away from a page 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run when a user navigates to a page 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Fires when the user pastes some content in an element 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run when the media is paused either by the user or programmatically 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run when the media is ready to start playing 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run when the media actually has started playing 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run when the window's history changes 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run when the browser is in the process of getting the media data 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run each time the playback rate changes (like when a user switches to a slow motion or fast forward mode) 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Fires when the Reset button in a form is clicked 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Fires when the browser window is resized 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run when an element's scrollbar is being scrolled 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Fires when the user writes something in a search field (for <input="search">) 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run when the seeking attribute is set to false indicating that seeking has ended 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run when the seeking attribute is set to true indicating that seeking is active 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Fires after some text has been selected in an element 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Fires when a <menu> element is shown as a context menu 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run when the browser is unable to fetch the media data for whatever reason 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run when a Web Storage area is updated 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Fires when a form is submitted 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run when fetching the media data is stopped before it is completely loaded for whatever reason 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run when the playing position has changed (like when the user fast forwards to a different point in the media) 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Fires when the user opens or closes the <details> element 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Fires once a page has unloaded (or the browser window has been closed) 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run each time the volume is changed which (includes setting the volume to "mute") 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Script to be run when the media has paused but is expected to resume (like when the media pauses to buffer more data) 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Fires when the mouse wheel rolls up or down over an element 
+void form::set(| string scalar script) { 
+
+    // Declare member variables based on arguments 
+    string scalar locscript 
+
+    // Initialize the local variable 1
+    locscript = `" = ""' + script + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locscript
+
+} // End of Method  declaration for class form
+
+// Specifies whether the element is to have its spelling and grammar checked or not 
+void form::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class form
+
+// Specifies an inline CSS style for an element 
+void form::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class form
+
+// Specifies the tabbing order of an element 
+void form::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class form
+
+// Specifies where to display the response that is received after submitting the form 
+void form::set(| string scalar _blank, string scalar _self, string scalar _parent, string scalar _top) { 
+
+    // Declare member variables based on arguments 
+    string scalar loc_blank, "loc_self", "loc_parent", "loc_top" 
+
+    // Initialize the local variable 1
+    loc_blank = `" = ""' + _blank + `"""' 
+
+    // Initialize the local variable 2
+    loc_self = `" = ""' + _self + `"""' 
+
+    // Initialize the local variable 3
+    loc_parent = `" = ""' + _parent + `"""' 
+
+    // Initialize the local variable 4
+    loc_top = `" = ""' + _top + `"""' 
+
+    // Set the attribute  for this class 
+    this. = loc_blank + "loc_self" + "loc_parent" + "loc_top"
+
+} // End of Method  declaration for class form
+
+// Specifies extra information about an element 
+void form::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class form
 
 // Getter method for opening bracket 
 string scalar form::getOpens() { 
 
- // Returns the opening bracket/tag w/o > character to allow attributes 
- return(this.opens + " ") 
+    // Returns the opening bracket/tag w/o > character to allow attributes 
+    return(this.opens + " ") 
 
 } // End of getter method for opens member of class form
 
 // Getter method for opening bracket closing character
 string scalar form::getOpene() { 
 
- // Returns the closing character for the opening bracket 
- return(this.opene + " ") 
+    // Returns the closing character for the opening bracket 
+    return(this.opene + " ") 
 
 } // End of getter method for opene member of class form
 
 // Getter method for closing bracket 
 string scalar form::getClose() { 
 
- // Returns the closing bracket/tag
- return(this.close + " ") 
+    // Returns the closing bracket/tag
+    return(this.close + " ") 
 
 } // End of getter method for close member of class form
 
 // Getter method for class arguments 
 string scalar form::getClassArgs() { 
 
- // Returns the class arguments that appear between the HTML tags 
- return(this.classargs) 
+    // Returns the class arguments that appear between the HTML tags 
+    return(this.classargs) 
 
 } // End of getter method for class arguments member of class form
 
-// Getter method for accept member variable 
-string scalar form::getAccept() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the accept variable 
- return(this.accept + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for accept member of class form
+} // End of getter method for  member of class form
 
-// Getter method for accept-charset member variable 
-string scalar form::getAccept-Charset() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the accept-charset variable 
- return(this.accept-charset + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for accept-charset member of class form
+} // End of getter method for  member of class form
 
-// Getter method for accesskey member variable 
-string scalar form::getAccesskey() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the accesskey variable 
- return(this.accesskey + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for accesskey member of class form
+} // End of getter method for  member of class form
 
-// Getter method for action member variable 
-string scalar form::getAction() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the action variable 
- return(this.action + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for action member of class form
+} // End of getter method for  member of class form
 
-// Getter method for autocomplete member variable 
-string scalar form::getAutocomplete() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the autocomplete variable 
- return(this.autocomplete + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for autocomplete member of class form
+} // End of getter method for  member of class form
 
-// Getter method for class member variable 
-string scalar form::getClass() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the class variable 
- return(this.class + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for class member of class form
+} // End of getter method for  member of class form
 
-// Getter method for contenteditable member variable 
-string scalar form::getContenteditable() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the contenteditable variable 
- return(this.contenteditable + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for contenteditable member of class form
+} // End of getter method for  member of class form
 
-// Getter method for contextmenu member variable 
-string scalar form::getContextmenu() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the contextmenu variable 
- return(this.contextmenu + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for contextmenu member of class form
+} // End of getter method for  member of class form
 
-// Getter method for data-* member variable 
-string scalar form::getData-*() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the data-* variable 
- return(this.data-* + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for data-* member of class form
+} // End of getter method for  member of class form
 
-// Getter method for dir member variable 
-string scalar form::getDir() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the dir variable 
- return(this.dir + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for dir member of class form
+} // End of getter method for  member of class form
 
-// Getter method for draggable member variable 
-string scalar form::getDraggable() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the draggable variable 
- return(this.draggable + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for draggable member of class form
+} // End of getter method for  member of class form
 
-// Getter method for dropzone member variable 
-string scalar form::getDropzone() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the dropzone variable 
- return(this.dropzone + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for dropzone member of class form
+} // End of getter method for  member of class form
 
-// Getter method for enctype member variable 
-string scalar form::getEnctype() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the enctype variable 
- return(this.enctype + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for enctype member of class form
+} // End of getter method for  member of class form
 
-// Getter method for hidden member variable 
-string scalar form::getHidden() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the hidden variable 
- return(this.hidden + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for hidden member of class form
+} // End of getter method for  member of class form
 
-// Getter method for id member variable 
-string scalar form::getId() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the id variable 
- return(this.id + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for id member of class form
+} // End of getter method for  member of class form
 
-// Getter method for lang member variable 
-string scalar form::getLang() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the lang variable 
- return(this.lang + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for lang member of class form
+} // End of getter method for  member of class form
 
-// Getter method for method member variable 
-string scalar form::getMethod() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the method variable 
- return(this.method + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for method member of class form
+} // End of getter method for  member of class form
 
-// Getter method for name member variable 
-string scalar form::getName() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the name variable 
- return(this.name + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for name member of class form
+} // End of getter method for  member of class form
 
-// Getter method for novalidate member variable 
-string scalar form::getNovalidate() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the novalidate variable 
- return(this.novalidate + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for novalidate member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onabort member variable 
-string scalar form::getOnabort() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onabort variable 
- return(this.onabort + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onabort member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onafterprint member variable 
-string scalar form::getOnafterprint() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onafterprint variable 
- return(this.onafterprint + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onafterprint member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onbeforeprint member variable 
-string scalar form::getOnbeforeprint() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onbeforeprint variable 
- return(this.onbeforeprint + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onbeforeprint member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onbeforeunload member variable 
-string scalar form::getOnbeforeunload() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onbeforeunload variable 
- return(this.onbeforeunload + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onbeforeunload member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onblur member variable 
-string scalar form::getOnblur() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onblur variable 
- return(this.onblur + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onblur member of class form
+} // End of getter method for  member of class form
 
-// Getter method for oncanplay member variable 
-string scalar form::getOncanplay() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the oncanplay variable 
- return(this.oncanplay + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oncanplay member of class form
+} // End of getter method for  member of class form
 
-// Getter method for oncanplaythrough member variable 
-string scalar form::getOncanplaythrough() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the oncanplaythrough variable 
- return(this.oncanplaythrough + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oncanplaythrough member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onchange member variable 
-string scalar form::getOnchange() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onchange variable 
- return(this.onchange + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onchange member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onclick member variable 
-string scalar form::getOnclick() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onclick variable 
- return(this.onclick + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onclick member of class form
+} // End of getter method for  member of class form
 
-// Getter method for oncontextmenu member variable 
-string scalar form::getOncontextmenu() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the oncontextmenu variable 
- return(this.oncontextmenu + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oncontextmenu member of class form
+} // End of getter method for  member of class form
 
-// Getter method for oncopy member variable 
-string scalar form::getOncopy() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the oncopy variable 
- return(this.oncopy + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oncopy member of class form
+} // End of getter method for  member of class form
 
-// Getter method for oncuechange member variable 
-string scalar form::getOncuechange() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the oncuechange variable 
- return(this.oncuechange + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oncuechange member of class form
+} // End of getter method for  member of class form
 
-// Getter method for oncut member variable 
-string scalar form::getOncut() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the oncut variable 
- return(this.oncut + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oncut member of class form
+} // End of getter method for  member of class form
 
-// Getter method for ondblclick member variable 
-string scalar form::getOndblclick() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the ondblclick variable 
- return(this.ondblclick + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondblclick member of class form
+} // End of getter method for  member of class form
 
-// Getter method for ondrag member variable 
-string scalar form::getOndrag() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the ondrag variable 
- return(this.ondrag + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondrag member of class form
+} // End of getter method for  member of class form
 
-// Getter method for ondragend member variable 
-string scalar form::getOndragend() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the ondragend variable 
- return(this.ondragend + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondragend member of class form
+} // End of getter method for  member of class form
 
-// Getter method for ondragenter member variable 
-string scalar form::getOndragenter() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the ondragenter variable 
- return(this.ondragenter + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondragenter member of class form
+} // End of getter method for  member of class form
 
-// Getter method for ondragleave member variable 
-string scalar form::getOndragleave() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the ondragleave variable 
- return(this.ondragleave + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondragleave member of class form
+} // End of getter method for  member of class form
 
-// Getter method for ondragover member variable 
-string scalar form::getOndragover() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the ondragover variable 
- return(this.ondragover + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondragover member of class form
+} // End of getter method for  member of class form
 
-// Getter method for ondragstart member variable 
-string scalar form::getOndragstart() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the ondragstart variable 
- return(this.ondragstart + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondragstart member of class form
+} // End of getter method for  member of class form
 
-// Getter method for ondrop member variable 
-string scalar form::getOndrop() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the ondrop variable 
- return(this.ondrop + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondrop member of class form
+} // End of getter method for  member of class form
 
-// Getter method for ondurationchange member variable 
-string scalar form::getOndurationchange() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the ondurationchange variable 
- return(this.ondurationchange + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ondurationchange member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onemptied member variable 
-string scalar form::getOnemptied() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onemptied variable 
- return(this.onemptied + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onemptied member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onended member variable 
-string scalar form::getOnended() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onended variable 
- return(this.onended + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onended member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onerror member variable 
-string scalar form::getOnerror() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onerror variable 
- return(this.onerror + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onerror member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onfocus member variable 
-string scalar form::getOnfocus() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onfocus variable 
- return(this.onfocus + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onfocus member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onhashchange member variable 
-string scalar form::getOnhashchange() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onhashchange variable 
- return(this.onhashchange + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onhashchange member of class form
+} // End of getter method for  member of class form
 
-// Getter method for oninput member variable 
-string scalar form::getOninput() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the oninput variable 
- return(this.oninput + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oninput member of class form
+} // End of getter method for  member of class form
 
-// Getter method for oninvalid member variable 
-string scalar form::getOninvalid() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the oninvalid variable 
- return(this.oninvalid + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for oninvalid member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onkeydown member variable 
-string scalar form::getOnkeydown() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onkeydown variable 
- return(this.onkeydown + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onkeydown member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onkeypress member variable 
-string scalar form::getOnkeypress() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onkeypress variable 
- return(this.onkeypress + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onkeypress member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onkeyup member variable 
-string scalar form::getOnkeyup() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onkeyup variable 
- return(this.onkeyup + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onkeyup member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onload member variable 
-string scalar form::getOnload() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onload variable 
- return(this.onload + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onload member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onloadeddata member variable 
-string scalar form::getOnloadeddata() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onloadeddata variable 
- return(this.onloadeddata + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onloadeddata member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onloadedmetadata member variable 
-string scalar form::getOnloadedmetadata() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onloadedmetadata variable 
- return(this.onloadedmetadata + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onloadedmetadata member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onloadstart member variable 
-string scalar form::getOnloadstart() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onloadstart variable 
- return(this.onloadstart + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onloadstart member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onmessage member variable 
-string scalar form::getOnmessage() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onmessage variable 
- return(this.onmessage + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmessage member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onmousedown member variable 
-string scalar form::getOnmousedown() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onmousedown variable 
- return(this.onmousedown + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmousedown member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onmousemove member variable 
-string scalar form::getOnmousemove() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onmousemove variable 
- return(this.onmousemove + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmousemove member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onmouseout member variable 
-string scalar form::getOnmouseout() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onmouseout variable 
- return(this.onmouseout + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmouseout member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onmouseover member variable 
-string scalar form::getOnmouseover() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onmouseover variable 
- return(this.onmouseover + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmouseover member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onmouseup member variable 
-string scalar form::getOnmouseup() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onmouseup variable 
- return(this.onmouseup + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmouseup member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onmousewheel member variable 
-string scalar form::getOnmousewheel() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onmousewheel variable 
- return(this.onmousewheel + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onmousewheel member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onoffline member variable 
-string scalar form::getOnoffline() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onoffline variable 
- return(this.onoffline + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onoffline member of class form
+} // End of getter method for  member of class form
 
-// Getter method for ononline member variable 
-string scalar form::getOnonline() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the ononline variable 
- return(this.ononline + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ononline member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onpagehide member variable 
-string scalar form::getOnpagehide() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onpagehide variable 
- return(this.onpagehide + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onpagehide member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onpageshow member variable 
-string scalar form::getOnpageshow() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onpageshow variable 
- return(this.onpageshow + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onpageshow member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onpaste member variable 
-string scalar form::getOnpaste() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onpaste variable 
- return(this.onpaste + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onpaste member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onpause member variable 
-string scalar form::getOnpause() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onpause variable 
- return(this.onpause + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onpause member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onplay member variable 
-string scalar form::getOnplay() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onplay variable 
- return(this.onplay + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onplay member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onplaying member variable 
-string scalar form::getOnplaying() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onplaying variable 
- return(this.onplaying + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onplaying member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onpopstate member variable 
-string scalar form::getOnpopstate() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onpopstate variable 
- return(this.onpopstate + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onpopstate member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onprogress member variable 
-string scalar form::getOnprogress() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onprogress variable 
- return(this.onprogress + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onprogress member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onratechange member variable 
-string scalar form::getOnratechange() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onratechange variable 
- return(this.onratechange + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onratechange member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onreset member variable 
-string scalar form::getOnreset() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onreset variable 
- return(this.onreset + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onreset member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onresize member variable 
-string scalar form::getOnresize() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onresize variable 
- return(this.onresize + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onresize member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onscroll member variable 
-string scalar form::getOnscroll() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onscroll variable 
- return(this.onscroll + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onscroll member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onsearch member variable 
-string scalar form::getOnsearch() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onsearch variable 
- return(this.onsearch + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onsearch member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onseeked member variable 
-string scalar form::getOnseeked() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onseeked variable 
- return(this.onseeked + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onseeked member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onseeking member variable 
-string scalar form::getOnseeking() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onseeking variable 
- return(this.onseeking + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onseeking member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onselect member variable 
-string scalar form::getOnselect() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onselect variable 
- return(this.onselect + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onselect member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onshow member variable 
-string scalar form::getOnshow() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onshow variable 
- return(this.onshow + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onshow member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onstalled member variable 
-string scalar form::getOnstalled() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onstalled variable 
- return(this.onstalled + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onstalled member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onstorage member variable 
-string scalar form::getOnstorage() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onstorage variable 
- return(this.onstorage + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onstorage member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onsubmit member variable 
-string scalar form::getOnsubmit() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onsubmit variable 
- return(this.onsubmit + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onsubmit member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onsuspend member variable 
-string scalar form::getOnsuspend() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onsuspend variable 
- return(this.onsuspend + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onsuspend member of class form
+} // End of getter method for  member of class form
 
-// Getter method for ontimeupdate member variable 
-string scalar form::getOntimeupdate() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the ontimeupdate variable 
- return(this.ontimeupdate + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ontimeupdate member of class form
+} // End of getter method for  member of class form
 
-// Getter method for ontoggle member variable 
-string scalar form::getOntoggle() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the ontoggle variable 
- return(this.ontoggle + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for ontoggle member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onunload member variable 
-string scalar form::getOnunload() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onunload variable 
- return(this.onunload + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onunload member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onvolumechange member variable 
-string scalar form::getOnvolumechange() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onvolumechange variable 
- return(this.onvolumechange + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onvolumechange member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onwaiting member variable 
-string scalar form::getOnwaiting() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onwaiting variable 
- return(this.onwaiting + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onwaiting member of class form
+} // End of getter method for  member of class form
 
-// Getter method for onwheel member variable 
-string scalar form::getOnwheel() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the onwheel variable 
- return(this.onwheel + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for onwheel member of class form
+} // End of getter method for  member of class form
 
-// Getter method for spellcheck member variable 
-string scalar form::getSpellcheck() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the spellcheck variable 
- return(this.spellcheck + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for spellcheck member of class form
+} // End of getter method for  member of class form
 
-// Getter method for style member variable 
-string scalar form::getStyle() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the style variable 
- return(this.style + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for style member of class form
+} // End of getter method for  member of class form
 
-// Getter method for tabindex member variable 
-string scalar form::getTabindex() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the tabindex variable 
- return(this.tabindex + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for tabindex member of class form
+} // End of getter method for  member of class form
 
-// Getter method for target member variable 
-string scalar form::getTarget() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the target variable 
- return(this.target + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for target member of class form
+} // End of getter method for  member of class form
 
-// Getter method for title member variable 
-string scalar form::getTitle() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the title variable 
- return(this.title + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for title member of class form
+} // End of getter method for  member of class form
 
-// Getter method for translate member variable 
-string scalar form::getTranslate() { 
+// Getter method for  member variable 
+string scalar form::get() { 
 
- // Returns the translate variable 
- return(this.translate + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for translate member of class form
+} // End of getter method for  member of class form
 
 // Get the HTML tag w/attributes and arguments 
 string scalar form::print() { 
 
- // Create local variables to piece together return string 
- string scalar open, args, close 
+    // Create local variables to piece together return string 
+    string scalar open, args, close 
 
- // Create opening string 
- open = getOpens() +  + getOpene()
+    // Create opening string 
+    open = getOpens() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + getOpene()
 
- // Get class arguments 
- args = getClassArgs() 
+    // Get class arguments 
+    args = getClassArgs() 
 
- // Get closing tag 
- close = getClose() 
+    // Get closing tag 
+    close = getClose() 
 
- // Return the complete HTML string 
- return(open + args + close) 
+    // Return the complete HTML string 
+    return(open + args + close) 
 
 } // End of print method for class form 
 

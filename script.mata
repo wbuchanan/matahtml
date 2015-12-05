@@ -7,270 +7,582 @@ mata:
 // Definition of HTML Tag script Mata Class
 // Defines a client-side script// Information retrieved from http://www.w3schools.com/tags/tag_script.asp
 class script { 
- // Define private member variables
- private: 
 
- // Static/final variables 
- static                  string                  scalar                  opens, opene, close, classargs
+    // Define private member variables
+    private: 
 
- // String scalar attributes  string                                                  scalar                  `"accesskey"', `"async"', `"charset"', `"class"', `"contenteditable"', `"contextmenu"', `"data-*"', `"defer"', `"dir"', `"draggable"', `"dropzone"', `"hidden"', `"id"', `"lang"', `"spellcheck"', `"src"', `"style"', `"tabindex"', `"title"', `"translate"', `"type"', `"xml:space"'
+    // Static/final variables 
+    static                       string                  scalar                  opens, opene, close, classargs
 
- // Define public members/methods 
- public: 
+    // String scalar attributes 
+    string                                                       scalar                  accesskey, async, charset, contenteditable, contextmenu, data, defer, draggable, dropzone, hidden, htmlclass, htmldir, htmltranslate, htmltype, id, lang, spellcheck, src, style, tabindex, title, xml:space
 
- // Setter methods  void                    new(), setClassArgs()
+    // Define public members/methods 
+    public: 
 
- // Getter methods  string                  scalar                  getOpens(), getOpene(), getClose(), print(), getClassargs()
+    // Setter methods 
+    void                 new(), setClassArgs(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set()
+
+    // Getter methods 
+    string                       scalar                  getOpens(), getOpene(), getClose(), print(), getClassargs(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get()
 
 } // End of class declaration
 
 // Class constructor method declaration 
 void script::new() { 
 
- // Defines the start of the opening tag for the class 
- this.opens = "<script" 
+    // Defines the start of the opening tag for the class 
+    this.opens = "<script" 
 
- // Defines the end of the opening tag for the class 
- this.opene = ">" 
+    // Defines the end of the opening tag for the class 
+    this.opene = ">" 
 
- // Defines the closing tag for the class 
- this.close = "</script>" 
+    // Defines the closing tag for the class 
+    this.close = "</script>" 
 
 } // End of class constructor method definition
 
 // Setter method for class arguments (appear between HTML tags) 
 void script::setClassArgs(| string scalar classarguments) { 
 
- // Defines arguments that appear between HTML tags 
- this.classargs = classarguments" 
+    // Defines arguments that appear between HTML tags 
+    this.classargs = classarguments 
 
 } // End of setter method for class arguments
+
+// Specifies a shortcut key to activate/focus an element 
+void script::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class script
+
+// Specifies that the script is executed asynchronously (only for external scripts) 
+void script::set(| string scalar async) { 
+
+    // Declare member variables based on arguments 
+    string scalar locasync 
+
+    // Initialize the local variable 1
+    locasync = `" = ""' + async + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locasync
+
+} // End of Method  declaration for class script
+
+// Specifies the character encoding used in an external script file 
+void script::set(| string scalar charset) { 
+
+    // Declare member variables based on arguments 
+    string scalar loccharset 
+
+    // Initialize the local variable 1
+    loccharset = `" = ""' + charset + `"""' 
+
+    // Set the attribute  for this class 
+    this. = loccharset
+
+} // End of Method  declaration for class script
+
+// Specifies whether the content of an element is editable or not 
+void script::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class script
+
+// Specifies a context menu for an element. The context menu appears when a user right-clicks on the element 
+void script::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class script
+
+// Used to store custom data private to the page or application 
+void script::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class script
+
+// Specifies that the script is executed when the page has finished parsing (only for external scripts) 
+void script::set(| string scalar defer) { 
+
+    // Declare member variables based on arguments 
+    string scalar locdefer 
+
+    // Initialize the local variable 1
+    locdefer = `" = ""' + defer + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locdefer
+
+} // End of Method  declaration for class script
+
+// Specifies whether an element is draggable or not 
+void script::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class script
+
+// Specifies whether the dragged data is copied, moved, or linked, when dropped 
+void script::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class script
+
+// Specifies that an element is not yet, or is no longer, relevant 
+void script::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class script
+
+// Specifies one or more classnames for an element (refers to a class in a style sheet) 
+void script::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class script
+
+// Specifies the text direction for the content in an element 
+void script::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class script
+
+// Specifies whether the content of an element should be translated or not 
+void script::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class script
+
+// Specifies the media type of the script 
+void script::set(| string scalar media_type) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmedia_type 
+
+    // Initialize the local variable 1
+    locmedia_type = `" = ""' + media_type + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmedia_type
+
+} // End of Method  declaration for class script
+
+// Specifies a unique id for an element 
+void script::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class script
+
+// Specifies the language of the element's content 
+void script::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class script
+
+// Specifies whether the element is to have its spelling and grammar checked or not 
+void script::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class script
+
+// Specifies the URL of an external script file 
+void script::set(| string scalar URL) { 
+
+    // Declare member variables based on arguments 
+    string scalar locURL 
+
+    // Initialize the local variable 1
+    locURL = `" = ""' + URL + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locURL
+
+} // End of Method  declaration for class script
+
+// Specifies an inline CSS style for an element 
+void script::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class script
+
+// Specifies the tabbing order of an element 
+void script::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class script
+
+// Specifies extra information about an element 
+void script::set(| string scalar methodarg) { 
+
+    // Declare member variables based on arguments 
+    string scalar locmethodarg 
+
+    // Initialize the local variable 1
+    locmethodarg = `" = ""' + methodarg + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locmethodarg
+
+} // End of Method  declaration for class script
+
+// Not supported in HTML5.Specifies whether whitespace in code should be preserved 
+void script::set(| string scalar preserve) { 
+
+    // Declare member variables based on arguments 
+    string scalar locpreserve 
+
+    // Initialize the local variable 1
+    locpreserve = `" = ""' + preserve + `"""' 
+
+    // Set the attribute  for this class 
+    this. = locpreserve
+
+} // End of Method  declaration for class script
 
 // Getter method for opening bracket 
 string scalar script::getOpens() { 
 
- // Returns the opening bracket/tag w/o > character to allow attributes 
- return(this.opens + " ") 
+    // Returns the opening bracket/tag w/o > character to allow attributes 
+    return(this.opens + " ") 
 
 } // End of getter method for opens member of class script
 
 // Getter method for opening bracket closing character
 string scalar script::getOpene() { 
 
- // Returns the closing character for the opening bracket 
- return(this.opene + " ") 
+    // Returns the closing character for the opening bracket 
+    return(this.opene + " ") 
 
 } // End of getter method for opene member of class script
 
 // Getter method for closing bracket 
 string scalar script::getClose() { 
 
- // Returns the closing bracket/tag
- return(this.close + " ") 
+    // Returns the closing bracket/tag
+    return(this.close + " ") 
 
 } // End of getter method for close member of class script
 
 // Getter method for class arguments 
 string scalar script::getClassArgs() { 
 
- // Returns the class arguments that appear between the HTML tags 
- return(this.classargs) 
+    // Returns the class arguments that appear between the HTML tags 
+    return(this.classargs) 
 
 } // End of getter method for class arguments member of class script
 
-// Getter method for accesskey member variable 
-string scalar script::getAccesskey() { 
+// Getter method for  member variable 
+string scalar script::get() { 
 
- // Returns the accesskey variable 
- return(this.accesskey + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for accesskey member of class script
+} // End of getter method for  member of class script
 
-// Getter method for async member variable 
-string scalar script::getAsync() { 
+// Getter method for  member variable 
+string scalar script::get() { 
 
- // Returns the async variable 
- return(this.async + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for async member of class script
+} // End of getter method for  member of class script
 
-// Getter method for charset member variable 
-string scalar script::getCharset() { 
+// Getter method for  member variable 
+string scalar script::get() { 
 
- // Returns the charset variable 
- return(this.charset + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for charset member of class script
+} // End of getter method for  member of class script
 
-// Getter method for class member variable 
-string scalar script::getClass() { 
+// Getter method for  member variable 
+string scalar script::get() { 
 
- // Returns the class variable 
- return(this.class + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for class member of class script
+} // End of getter method for  member of class script
 
-// Getter method for contenteditable member variable 
-string scalar script::getContenteditable() { 
+// Getter method for  member variable 
+string scalar script::get() { 
 
- // Returns the contenteditable variable 
- return(this.contenteditable + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for contenteditable member of class script
+} // End of getter method for  member of class script
 
-// Getter method for contextmenu member variable 
-string scalar script::getContextmenu() { 
+// Getter method for  member variable 
+string scalar script::get() { 
 
- // Returns the contextmenu variable 
- return(this.contextmenu + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for contextmenu member of class script
+} // End of getter method for  member of class script
 
-// Getter method for data-* member variable 
-string scalar script::getData-*() { 
+// Getter method for  member variable 
+string scalar script::get() { 
 
- // Returns the data-* variable 
- return(this.data-* + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for data-* member of class script
+} // End of getter method for  member of class script
 
-// Getter method for defer member variable 
-string scalar script::getDefer() { 
+// Getter method for  member variable 
+string scalar script::get() { 
 
- // Returns the defer variable 
- return(this.defer + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for defer member of class script
+} // End of getter method for  member of class script
 
-// Getter method for dir member variable 
-string scalar script::getDir() { 
+// Getter method for  member variable 
+string scalar script::get() { 
 
- // Returns the dir variable 
- return(this.dir + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for dir member of class script
+} // End of getter method for  member of class script
 
-// Getter method for draggable member variable 
-string scalar script::getDraggable() { 
+// Getter method for  member variable 
+string scalar script::get() { 
 
- // Returns the draggable variable 
- return(this.draggable + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for draggable member of class script
+} // End of getter method for  member of class script
 
-// Getter method for dropzone member variable 
-string scalar script::getDropzone() { 
+// Getter method for  member variable 
+string scalar script::get() { 
 
- // Returns the dropzone variable 
- return(this.dropzone + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for dropzone member of class script
+} // End of getter method for  member of class script
 
-// Getter method for hidden member variable 
-string scalar script::getHidden() { 
+// Getter method for  member variable 
+string scalar script::get() { 
 
- // Returns the hidden variable 
- return(this.hidden + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for hidden member of class script
+} // End of getter method for  member of class script
 
-// Getter method for id member variable 
-string scalar script::getId() { 
+// Getter method for  member variable 
+string scalar script::get() { 
 
- // Returns the id variable 
- return(this.id + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for id member of class script
+} // End of getter method for  member of class script
 
-// Getter method for lang member variable 
-string scalar script::getLang() { 
+// Getter method for  member variable 
+string scalar script::get() { 
 
- // Returns the lang variable 
- return(this.lang + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for lang member of class script
+} // End of getter method for  member of class script
 
-// Getter method for spellcheck member variable 
-string scalar script::getSpellcheck() { 
+// Getter method for  member variable 
+string scalar script::get() { 
 
- // Returns the spellcheck variable 
- return(this.spellcheck + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for spellcheck member of class script
+} // End of getter method for  member of class script
 
-// Getter method for src member variable 
-string scalar script::getSrc() { 
+// Getter method for  member variable 
+string scalar script::get() { 
 
- // Returns the src variable 
- return(this.src + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for src member of class script
+} // End of getter method for  member of class script
 
-// Getter method for style member variable 
-string scalar script::getStyle() { 
+// Getter method for  member variable 
+string scalar script::get() { 
 
- // Returns the style variable 
- return(this.style + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for style member of class script
+} // End of getter method for  member of class script
 
-// Getter method for tabindex member variable 
-string scalar script::getTabindex() { 
+// Getter method for  member variable 
+string scalar script::get() { 
 
- // Returns the tabindex variable 
- return(this.tabindex + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for tabindex member of class script
+} // End of getter method for  member of class script
 
-// Getter method for title member variable 
-string scalar script::getTitle() { 
+// Getter method for  member variable 
+string scalar script::get() { 
 
- // Returns the title variable 
- return(this.title + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for title member of class script
+} // End of getter method for  member of class script
 
-// Getter method for translate member variable 
-string scalar script::getTranslate() { 
+// Getter method for  member variable 
+string scalar script::get() { 
 
- // Returns the translate variable 
- return(this.translate + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for translate member of class script
+} // End of getter method for  member of class script
 
-// Getter method for type member variable 
-string scalar script::getType() { 
+// Getter method for  member variable 
+string scalar script::get() { 
 
- // Returns the type variable 
- return(this.type + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for type member of class script
+} // End of getter method for  member of class script
 
-// Getter method for xml:space member variable 
-string scalar script::getXml:Space() { 
+// Getter method for  member variable 
+string scalar script::get() { 
 
- // Returns the xml:space variable 
- return(this.xml:space + " ") 
+    // Returns the  variable 
+    return(this. + " ") 
 
-} // End of getter method for xml:space member of class script
+} // End of getter method for  member of class script
 
 // Get the HTML tag w/attributes and arguments 
 string scalar script::print() { 
 
- // Create local variables to piece together return string 
- string scalar open, args, close 
+    // Create local variables to piece together return string 
+    string scalar open, args, close 
 
- // Create opening string 
- open = getOpens() +  + getOpene()
+    // Create opening string 
+    open = getOpens() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + getOpene()
 
- // Get class arguments 
- args = getClassArgs() 
+    // Get class arguments 
+    args = getClassArgs() 
 
- // Get closing tag 
- close = getClose() 
+    // Get closing tag 
+    close = getClose() 
 
- // Return the complete HTML string 
- return(open + args + close) 
+    // Return the complete HTML string 
+    return(open + args + close) 
 
 } // End of print method for class script 
 
