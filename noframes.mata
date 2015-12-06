@@ -15,15 +15,16 @@ class noframes {
     static                       string                  scalar                  opens, opene, close, classargs
 
     // String scalar attributes 
-    string                                                       scalar                  
+    string                                                       scalar                  html
 
     // Define public members/methods 
     public: 
 
-    // Setter methods     void                 new(), setClassArgs()
+    // Setter methods 
+    void                 new(), setClassArgs()
 
     // Getter methods 
-    string                       scalar                  getOpens(), getOpene(), getClose(), print(), getClassargs()
+    string                       scalar                  getOpens(), getOpene(), getClose(), print(), getClassArgs()
 
 } // End of class declaration
 
@@ -88,7 +89,7 @@ string scalar noframes::print() {
     string scalar open, args, close 
 
     // Create opening string 
-    open = getOpens() +  + getOpene()
+    open = getOpens() + getOpens() + getOpene() + getClose() + print() + getClassArgs() + getOpene()
 
     // Get class arguments 
     args = getClassArgs() 

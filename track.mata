@@ -15,16 +15,16 @@ class track {
     static                       string                  scalar                  opens, opene, close, classargs
 
     // String scalar attributes 
-    string                                                       scalar                  accesskey, contenteditable, contextmenu, data, default, draggable, dropzone, hidden, htmlclass, htmldir, htmltranslate, id, kind, label, lang, onabort, onafterprint, onbeforeprint, onbeforeunload, onblur, oncanplay, oncanplaythrough, onchange, onclick, oncontextmenu, oncopy, oncuechange, oncut, ondblclick, ondrag, ondragend, ondragenter, ondragleave, ondragover, ondragstart, ondrop, ondurationchange, onemptied, onended, onerror, onfocus, onhashchange, oninput, oninvalid, onkeydown, onkeypress, onkeyup, onload, onloadeddata, onloadedmetadata, onloadstart, onmessage, onmousedown, onmousemove, onmouseout, onmouseover, onmouseup, onmousewheel, onoffline, ononline, onpagehide, onpageshow, onpaste, onpause, onplay, onplaying, onpopstate, onprogress, onratechange, onreset, onresize, onscroll, onsearch, onseeked, onseeking, onselect, onshow, onstalled, onstorage, onsubmit, onsuspend, ontimeupdate, ontoggle, onunload, onvolumechange, onwaiting, onwheel, spellcheck, src, srclang, style, tabindex, title
+    string                                                       scalar                  htmlaccesskey, htmlclass, htmlcontenteditable, htmlcontextmenu, htmldata, htmldefault, htmldir, htmldraggable, htmldropzone, htmlhidden, htmlid, htmlkind, htmllabel, htmllang, htmlonabort, htmlonafterprint, htmlonbeforeprint, htmlonbeforeunload, htmlonblur, htmloncanplay, htmloncanplaythrough, htmlonchange, htmlonclick, htmloncontextmenu, htmloncopy, htmloncuechange, htmloncut, htmlondblclick, htmlondrag, htmlondragend, htmlondragenter, htmlondragleave, htmlondragover, htmlondragstart, htmlondrop, htmlondurationchange, htmlonemptied, htmlonended, htmlonerror, htmlonfocus, htmlonhashchange, htmloninput, htmloninvalid, htmlonkeydown, htmlonkeypress, htmlonkeyup, htmlonload, htmlonloadeddata, htmlonloadedmetadata, htmlonloadstart, htmlonmessage, htmlonmousedown, htmlonmousemove, htmlonmouseout, htmlonmouseover, htmlonmouseup, htmlonmousewheel, htmlonoffline, htmlononline, htmlonpagehide, htmlonpageshow, htmlonpaste, htmlonpause, htmlonplay, htmlonplaying, htmlonpopstate, htmlonprogress, htmlonratechange, htmlonreset, htmlonresize, htmlonscroll, htmlonsearch, htmlonseeked, htmlonseeking, htmlonselect, htmlonshow, htmlonstalled, htmlonstorage, htmlonsubmit, htmlonsuspend, htmlontimeupdate, htmlontoggle, htmlonunload, htmlonvolumechange, htmlonwaiting, htmlonwheel, htmlspellcheck, htmlsrc, htmlsrclang, htmlstyle, htmltabindex, htmltitle, htmltranslate
 
     // Define public members/methods 
     public: 
 
     // Setter methods 
-    void                 new(), setClassArgs(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set(), set()
+    void                 new(), setClassArgs(), setAccesskey(), setClass(), setContenteditable(), setContextmenu(), setData(), setDefault(), setDir(), setDraggable(), setDropzone(), setHidden(), setId(), setKind(), setLabel(), setLang(), setOnabort(), setOnafterprint(), setOnbeforeprint(), setOnbeforeunload(), setOnblur(), setOncanplay(), setOncanplaythrough(), setOnchange(), setOnclick(), setOncontextmenu(), setOncopy(), setOncuechange(), setOncut(), setOndblclick(), setOndrag(), setOndragend(), setOndragenter(), setOndragleave(), setOndragover(), setOndragstart(), setOndrop(), setOndurationchange(), setOnemptied(), setOnended(), setOnerror(), setOnfocus(), setOnhashchange(), setOninput(), setOninvalid(), setOnkeydown(), setOnkeypress(), setOnkeyup(), setOnload(), setOnloadeddata(), setOnloadedmetadata(), setOnloadstart(), setOnmessage(), setOnmousedown(), setOnmousemove(), setOnmouseout(), setOnmouseover(), setOnmouseup(), setOnmousewheel(), setOnoffline(), setOnonline(), setOnpagehide(), setOnpageshow(), setOnpaste(), setOnpause(), setOnplay(), setOnplaying(), setOnpopstate(), setOnprogress(), setOnratechange(), setOnreset(), setOnresize(), setOnscroll(), setOnsearch(), setOnseeked(), setOnseeking(), setOnselect(), setOnshow(), setOnstalled(), setOnstorage(), setOnsubmit(), setOnsuspend(), setOntimeupdate(), setOntoggle(), setOnunload(), setOnvolumechange(), setOnwaiting(), setOnwheel(), setSpellcheck(), setSrc(), setSrclang(), setStyle(), setTabindex(), setTitle(), setTranslate()
 
     // Getter methods 
-    string                       scalar                  getOpens(), getOpene(), getClose(), print(), getClassargs(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get(), get()
+    string                       scalar                  getOpens(), getOpene(), getClose(), print(), getClassArgs(), getAccesskey(), getClass(), getContenteditable(), getContextmenu(), getData(), getDefault(), getDir(), getDraggable(), getDropzone(), getHidden(), getId(), getKind(), getLabel(), getLang(), getOnabort(), getOnafterprint(), getOnbeforeprint(), getOnbeforeunload(), getOnblur(), getOncanplay(), getOncanplaythrough(), getOnchange(), getOnclick(), getOncontextmenu(), getOncopy(), getOncuechange(), getOncut(), getOndblclick(), getOndrag(), getOndragend(), getOndragenter(), getOndragleave(), getOndragover(), getOndragstart(), getOndrop(), getOndurationchange(), getOnemptied(), getOnended(), getOnerror(), getOnfocus(), getOnhashchange(), getOninput(), getOninvalid(), getOnkeydown(), getOnkeypress(), getOnkeyup(), getOnload(), getOnloadeddata(), getOnloadedmetadata(), getOnloadstart(), getOnmessage(), getOnmousedown(), getOnmousemove(), getOnmouseout(), getOnmouseover(), getOnmouseup(), getOnmousewheel(), getOnoffline(), getOnonline(), getOnpagehide(), getOnpageshow(), getOnpaste(), getOnpause(), getOnplay(), getOnplaying(), getOnpopstate(), getOnprogress(), getOnratechange(), getOnreset(), getOnresize(), getOnscroll(), getOnsearch(), getOnseeked(), getOnseeking(), getOnselect(), getOnshow(), getOnstalled(), getOnstorage(), getOnsubmit(), getOnsuspend(), getOntimeupdate(), getOntoggle(), getOnunload(), getOnvolumechange(), getOnwaiting(), getOnwheel(), getSpellcheck(), getSrc(), getSrclang(), getStyle(), getTabindex(), getTitle(), getTranslate()
 
 } // End of class declaration
 
@@ -51,1318 +51,783 @@ void track::setClassArgs(| string scalar classarguments) {
 } // End of setter method for class arguments
 
 // Specifies a shortcut key to activate/focus an element 
-void track::set(| string scalar methodarg) { 
+void track::setAccesskey(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locmethodarg 
+    // Set the attribute accesskey for this class 
+    this.htmlaccesskey = `"accesskey = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locmethodarg = `" = ""' + methodarg + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locmethodarg
-
-} // End of Method  declaration for class track
-
-// Specifies whether the content of an element is editable or not 
-void track::set(| string scalar methodarg) { 
-
-    // Declare member variables based on arguments 
-    string scalar locmethodarg 
-
-    // Initialize the local variable 1
-    locmethodarg = `" = ""' + methodarg + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locmethodarg
-
-} // End of Method  declaration for class track
-
-// Specifies a context menu for an element. The context menu appears when a user right-clicks on the element 
-void track::set(| string scalar methodarg) { 
-
-    // Declare member variables based on arguments 
-    string scalar locmethodarg 
-
-    // Initialize the local variable 1
-    locmethodarg = `" = ""' + methodarg + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locmethodarg
-
-} // End of Method  declaration for class track
-
-// Used to store custom data private to the page or application 
-void track::set(| string scalar methodarg) { 
-
-    // Declare member variables based on arguments 
-    string scalar locmethodarg 
-
-    // Initialize the local variable 1
-    locmethodarg = `" = ""' + methodarg + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locmethodarg
-
-} // End of Method  declaration for class track
-
-// Specifies that the track is to be enabled if the user's preferences do not indicate that another track would be more appropriate 
-void track::set(| string scalar default) { 
-
-    // Declare member variables based on arguments 
-    string scalar locdefault 
-
-    // Initialize the local variable 1
-    locdefault = `" = ""' + default + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locdefault
-
-} // End of Method  declaration for class track
-
-// Specifies whether an element is draggable or not 
-void track::set(| string scalar methodarg) { 
-
-    // Declare member variables based on arguments 
-    string scalar locmethodarg 
-
-    // Initialize the local variable 1
-    locmethodarg = `" = ""' + methodarg + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locmethodarg
-
-} // End of Method  declaration for class track
-
-// Specifies whether the dragged data is copied, moved, or linked, when dropped 
-void track::set(| string scalar methodarg) { 
-
-    // Declare member variables based on arguments 
-    string scalar locmethodarg 
-
-    // Initialize the local variable 1
-    locmethodarg = `" = ""' + methodarg + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locmethodarg
-
-} // End of Method  declaration for class track
-
-// Specifies that an element is not yet, or is no longer, relevant 
-void track::set(| string scalar methodarg) { 
-
-    // Declare member variables based on arguments 
-    string scalar locmethodarg 
-
-    // Initialize the local variable 1
-    locmethodarg = `" = ""' + methodarg + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locmethodarg
-
-} // End of Method  declaration for class track
+} // End of Method accesskey declaration for class track
 
 // Specifies one or more classnames for an element (refers to a class in a style sheet) 
-void track::set(| string scalar methodarg) { 
+void track::setClass(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locmethodarg 
+    // Set the attribute class for this class 
+    this.htmlclass = `"class = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locmethodarg = `" = ""' + methodarg + `"""' 
+} // End of Method class declaration for class track
 
-    // Set the attribute  for this class 
-    this. = locmethodarg
+// Specifies whether the content of an element is editable or not 
+void track::setContenteditable(| string scalar methodarg) { 
 
-} // End of Method  declaration for class track
+    // Validate argument
+    if (methodarg == "true" | methodarg == "false") { 
+
+        // Set the attribute value 
+        this.htmlcontenteditable = `"contenteditable = ""' + methodarg + `"" "'
+
+    } // End IF Block for validated argument value 
+
+} // End of Method contenteditable declaration for class track
+
+// Specifies a context menu for an element. The context menu appears when a user right-clicks on the element 
+void track::setContextmenu(| string scalar methodarg) { 
+
+    // Set the attribute contextmenu for this class 
+    this.htmlcontextmenu = `"contextmenu = ""' + methodarg + `"" "'
+
+} // End of Method contextmenu declaration for class track
+
+// Used to store custom data private to the page or application 
+void track::setData(| string scalar methodarg) { 
+
+    // Set the attribute data for this class 
+    this.htmldata = `"data = ""' + methodarg + `"" "'
+
+} // End of Method data declaration for class track
+
+// Specifies that the track is to be enabled if the user's preferences do not indicate that another track would be more appropriate 
+void track::setDefault(| string scalar methodarg) { 
+
+    // Set the attribute default for this class 
+    this.htmldefault = `"default = ""' + methodarg + `"" "'
+
+} // End of Method default declaration for class track
 
 // Specifies the text direction for the content in an element 
-void track::set(| string scalar methodarg) { 
+void track::setDir(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locmethodarg 
+    // Validate argument
+    if (methodarg == "ltr" | methodarg == "rtl" | methodarg == "auto") { 
 
-    // Initialize the local variable 1
-    locmethodarg = `" = ""' + methodarg + `"""' 
+        // Set the attribute value 
+        this.htmldir = `"dir = ""' + methodarg + `"" "'
 
-    // Set the attribute  for this class 
-    this. = locmethodarg
+    } // End IF Block for validated argument value 
 
-} // End of Method  declaration for class track
+} // End of Method dir declaration for class track
 
-// Specifies whether the content of an element should be translated or not 
-void track::set(| string scalar methodarg) { 
+// Specifies whether an element is draggable or not 
+void track::setDraggable(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locmethodarg 
+    // Validate argument
+    if (methodarg == "true" | methodarg == "false" | methodarg == "auto") { 
 
-    // Initialize the local variable 1
-    locmethodarg = `" = ""' + methodarg + `"""' 
+        // Set the attribute value 
+        this.htmldraggable = `"draggable = ""' + methodarg + `"" "'
 
-    // Set the attribute  for this class 
-    this. = locmethodarg
+    } // End IF Block for validated argument value 
 
-} // End of Method  declaration for class track
+} // End of Method draggable declaration for class track
+
+// Specifies whether the dragged data is copied, moved, or linked, when dropped 
+void track::setDropzone(| string scalar methodarg) { 
+
+    // Validate argument
+    if (methodarg == "copy" | methodarg == "move" | methodarg == "link") { 
+
+        // Set the attribute value 
+        this.htmldropzone = `"dropzone = ""' + methodarg + `"" "'
+
+    } // End IF Block for validated argument value 
+
+} // End of Method dropzone declaration for class track
+
+// Specifies that an element is not yet, or is no longer, relevant 
+void track::setHidden(| string scalar methodarg) { 
+
+    // Set the attribute hidden for this class 
+    this.htmlhidden = `"hidden = ""' + methodarg + `"" "'
+
+} // End of Method hidden declaration for class track
 
 // Specifies a unique id for an element 
-void track::set(| string scalar methodarg) { 
+void track::setId(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locmethodarg 
+    // Set the attribute id for this class 
+    this.htmlid = `"id = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locmethodarg = `" = ""' + methodarg + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locmethodarg
-
-} // End of Method  declaration for class track
+} // End of Method id declaration for class track
 
 // Specifies the kind of text track 
-void track::set(| string scalar captions, string scalar chapters, string scalar descriptions, string scalar metadata, string scalar subtitles) { 
+void track::setKind(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar loccaptions, "locchapters", "locdescriptions", "locmetadata", "locsubtitles" 
+    // Validate argument
+    if (methodarg == "captions" | methodarg == "chapters" | methodarg == "descriptions" | methodarg == "metadata" | methodarg == "subtitles") { 
 
-    // Initialize the local variable 1
-    loccaptions = `" = ""' + captions + `"""' 
+        // Set the attribute value 
+        this.htmlkind = `"kind = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 2
-    locchapters = `" = ""' + chapters + `"""' 
+    } // End IF Block for validated argument value 
 
-    // Initialize the local variable 3
-    locdescriptions = `" = ""' + descriptions + `"""' 
-
-    // Initialize the local variable 4
-    locmetadata = `" = ""' + metadata + `"""' 
-
-    // Initialize the local variable 5
-    locsubtitles = `" = ""' + subtitles + `"""' 
-
-    // Set the attribute  for this class 
-    this. = loccaptions + "locchapters" + "locdescriptions" + "locmetadata" + "locsubtitles"
-
-} // End of Method  declaration for class track
+} // End of Method kind declaration for class track
 
 // Specifies the title of the text track 
-void track::set(| string scalar text) { 
+void track::setLabel(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar loctext 
+    // Set the attribute label for this class 
+    this.htmllabel = `"label = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    loctext = `" = ""' + text + `"""' 
-
-    // Set the attribute  for this class 
-    this. = loctext
-
-} // End of Method  declaration for class track
+} // End of Method label declaration for class track
 
 // Specifies the language of the element's content 
-void track::set(| string scalar methodarg) { 
+void track::setLang(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locmethodarg 
+    // Set the attribute lang for this class 
+    this.htmllang = `"lang = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locmethodarg = `" = ""' + methodarg + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locmethodarg
-
-} // End of Method  declaration for class track
+} // End of Method lang declaration for class track
 
 // Script to be run on abort 
-void track::set(| string scalar script) { 
+void track::setOnabort(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onabort for this class 
+    this.htmlonabort = `"onabort = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onabort declaration for class track
 
 // Script to be run after the document is printed 
-void track::set(| string scalar script) { 
+void track::setOnafterprint(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onafterprint for this class 
+    this.htmlonafterprint = `"onafterprint = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onafterprint declaration for class track
 
 // Script to be run before the document is printed 
-void track::set(| string scalar script) { 
+void track::setOnbeforeprint(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onbeforeprint for this class 
+    this.htmlonbeforeprint = `"onbeforeprint = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onbeforeprint declaration for class track
 
 // Script to be run when the document is about to be unloaded 
-void track::set(| string scalar script) { 
+void track::setOnbeforeunload(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onbeforeunload for this class 
+    this.htmlonbeforeunload = `"onbeforeunload = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onbeforeunload declaration for class track
 
 // Fires the moment that the element loses focus 
-void track::set(| string scalar script) { 
+void track::setOnblur(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onblur for this class 
+    this.htmlonblur = `"onblur = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onblur declaration for class track
 
 // Script to be run when a file is ready to start playing (when it has buffered enough to begin) 
-void track::set(| string scalar script) { 
+void track::setOncanplay(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute oncanplay for this class 
+    this.htmloncanplay = `"oncanplay = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method oncanplay declaration for class track
 
 // Script to be run when a file can be played all the way to the end without pausing for buffering 
-void track::set(| string scalar script) { 
+void track::setOncanplaythrough(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute oncanplaythrough for this class 
+    this.htmloncanplaythrough = `"oncanplaythrough = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method oncanplaythrough declaration for class track
 
 // Fires the moment when the value of the element is changed 
-void track::set(| string scalar script) { 
+void track::setOnchange(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onchange for this class 
+    this.htmlonchange = `"onchange = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onchange declaration for class track
 
 // Fires on a mouse click on the element 
-void track::set(| string scalar script) { 
+void track::setOnclick(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onclick for this class 
+    this.htmlonclick = `"onclick = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onclick declaration for class track
 
 // Script to be run when a context menu is triggered 
-void track::set(| string scalar script) { 
+void track::setOncontextmenu(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute oncontextmenu for this class 
+    this.htmloncontextmenu = `"oncontextmenu = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method oncontextmenu declaration for class track
 
 // Fires when the user copies the content of an element 
-void track::set(| string scalar script) { 
+void track::setOncopy(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute oncopy for this class 
+    this.htmloncopy = `"oncopy = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method oncopy declaration for class track
 
 // Script to be run when the cue changes in a <track> element 
-void track::set(| string scalar script) { 
+void track::setOncuechange(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute oncuechange for this class 
+    this.htmloncuechange = `"oncuechange = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method oncuechange declaration for class track
 
 // Fires when the user cuts the content of an element 
-void track::set(| string scalar script) { 
+void track::setOncut(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute oncut for this class 
+    this.htmloncut = `"oncut = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method oncut declaration for class track
 
 // Fires on a mouse double-click on the element 
-void track::set(| string scalar script) { 
+void track::setOndblclick(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute ondblclick for this class 
+    this.htmlondblclick = `"ondblclick = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method ondblclick declaration for class track
 
 // Script to be run when an element is dragged 
-void track::set(| string scalar script) { 
+void track::setOndrag(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute ondrag for this class 
+    this.htmlondrag = `"ondrag = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method ondrag declaration for class track
 
 // Script to be run at the end of a drag operation 
-void track::set(| string scalar script) { 
+void track::setOndragend(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute ondragend for this class 
+    this.htmlondragend = `"ondragend = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method ondragend declaration for class track
 
 // Script to be run when an element has been dragged to a valid drop target 
-void track::set(| string scalar script) { 
+void track::setOndragenter(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute ondragenter for this class 
+    this.htmlondragenter = `"ondragenter = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method ondragenter declaration for class track
 
 // Script to be run when an element leaves a valid drop target 
-void track::set(| string scalar script) { 
+void track::setOndragleave(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute ondragleave for this class 
+    this.htmlondragleave = `"ondragleave = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method ondragleave declaration for class track
 
 // Script to be run when an element is being dragged over a valid drop target 
-void track::set(| string scalar script) { 
+void track::setOndragover(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute ondragover for this class 
+    this.htmlondragover = `"ondragover = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method ondragover declaration for class track
 
 // Script to be run at the start of a drag operation 
-void track::set(| string scalar script) { 
+void track::setOndragstart(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute ondragstart for this class 
+    this.htmlondragstart = `"ondragstart = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method ondragstart declaration for class track
 
 // Script to be run when dragged element is being dropped 
-void track::set(| string scalar script) { 
+void track::setOndrop(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute ondrop for this class 
+    this.htmlondrop = `"ondrop = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method ondrop declaration for class track
 
 // Script to be run when the length of the media changes 
-void track::set(| string scalar script) { 
+void track::setOndurationchange(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute ondurationchange for this class 
+    this.htmlondurationchange = `"ondurationchange = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method ondurationchange declaration for class track
 
 // Script to be run when something bad happens and the file is suddenly unavailable (like unexpectedly disconnects) 
-void track::set(| string scalar script) { 
+void track::setOnemptied(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onemptied for this class 
+    this.htmlonemptied = `"onemptied = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onemptied declaration for class track
 
 // Script to be run when the media has reach the end (a useful event for messages like "thanks for listening") 
-void track::set(| string scalar script) { 
+void track::setOnended(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onended for this class 
+    this.htmlonended = `"onended = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onended declaration for class track
 
 // Fires when an error occurs while loading an external file Script to be run when an error occur Script to be run when an error occurs when the file is being loaded 
-void track::set(| string scalar script) { 
+void track::setOnerror(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onerror for this class 
+    this.htmlonerror = `"onerror = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onerror declaration for class track
 
 // Fires the moment when the element gets focus 
-void track::set(| string scalar script) { 
+void track::setOnfocus(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onfocus for this class 
+    this.htmlonfocus = `"onfocus = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onfocus declaration for class track
 
 // Script to be run when there has been changes to the anchor part of the a URL 
-void track::set(| string scalar script) { 
+void track::setOnhashchange(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onhashchange for this class 
+    this.htmlonhashchange = `"onhashchange = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onhashchange declaration for class track
 
 // Script to be run when an element gets user input 
-void track::set(| string scalar script) { 
+void track::setOninput(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute oninput for this class 
+    this.htmloninput = `"oninput = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method oninput declaration for class track
 
 // Script to be run when an element is invalid 
-void track::set(| string scalar script) { 
+void track::setOninvalid(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute oninvalid for this class 
+    this.htmloninvalid = `"oninvalid = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method oninvalid declaration for class track
 
 // Fires when a user is pressing a key 
-void track::set(| string scalar script) { 
+void track::setOnkeydown(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onkeydown for this class 
+    this.htmlonkeydown = `"onkeydown = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onkeydown declaration for class track
 
 // Fires when a user presses a key 
-void track::set(| string scalar script) { 
+void track::setOnkeypress(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onkeypress for this class 
+    this.htmlonkeypress = `"onkeypress = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onkeypress declaration for class track
 
 // Fires when a user releases a key 
-void track::set(| string scalar script) { 
+void track::setOnkeyup(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onkeyup for this class 
+    this.htmlonkeyup = `"onkeyup = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onkeyup declaration for class track
 
 // Fires after the page is finished loading 
-void track::set(| string scalar script) { 
+void track::setOnload(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onload for this class 
+    this.htmlonload = `"onload = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onload declaration for class track
 
 // Script to be run when media data is loaded 
-void track::set(| string scalar script) { 
+void track::setOnloadeddata(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onloadeddata for this class 
+    this.htmlonloadeddata = `"onloadeddata = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onloadeddata declaration for class track
 
 // Script to be run when meta data (like dimensions and duration) are loaded 
-void track::set(| string scalar script) { 
+void track::setOnloadedmetadata(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onloadedmetadata for this class 
+    this.htmlonloadedmetadata = `"onloadedmetadata = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onloadedmetadata declaration for class track
 
 // Script to be run just as the file begins to load before anything is actually loaded 
-void track::set(| string scalar script) { 
+void track::setOnloadstart(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onloadstart for this class 
+    this.htmlonloadstart = `"onloadstart = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onloadstart declaration for class track
 
 // Script to be run when the message is triggered 
-void track::set(| string scalar script) { 
+void track::setOnmessage(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onmessage for this class 
+    this.htmlonmessage = `"onmessage = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onmessage declaration for class track
 
 // Fires when a mouse button is pressed down on an element 
-void track::set(| string scalar script) { 
+void track::setOnmousedown(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onmousedown for this class 
+    this.htmlonmousedown = `"onmousedown = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onmousedown declaration for class track
 
 // Fires when the mouse pointer is moving while it is over an element 
-void track::set(| string scalar script) { 
+void track::setOnmousemove(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onmousemove for this class 
+    this.htmlonmousemove = `"onmousemove = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onmousemove declaration for class track
 
 // Fires when the mouse pointer moves out of an element 
-void track::set(| string scalar script) { 
+void track::setOnmouseout(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onmouseout for this class 
+    this.htmlonmouseout = `"onmouseout = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onmouseout declaration for class track
 
 // Fires when the mouse pointer moves over an element 
-void track::set(| string scalar script) { 
+void track::setOnmouseover(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onmouseover for this class 
+    this.htmlonmouseover = `"onmouseover = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onmouseover declaration for class track
 
 // Fires when a mouse button is released over an element 
-void track::set(| string scalar script) { 
+void track::setOnmouseup(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onmouseup for this class 
+    this.htmlonmouseup = `"onmouseup = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onmouseup declaration for class track
 
 // Deprecated. Use the onwheel attribute instead 
-void track::set(| string scalar script) { 
+void track::setOnmousewheel(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onmousewheel for this class 
+    this.htmlonmousewheel = `"onmousewheel = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onmousewheel declaration for class track
 
 // Script to be run when the browser starts to work offline 
-void track::set(| string scalar script) { 
+void track::setOnoffline(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onoffline for this class 
+    this.htmlonoffline = `"onoffline = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onoffline declaration for class track
 
 // Script to be run when the browser starts to work online 
-void track::set(| string scalar script) { 
+void track::setOnonline(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute ononline for this class 
+    this.htmlononline = `"ononline = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method ononline declaration for class track
 
 // Script to be run when a user navigates away from a page 
-void track::set(| string scalar script) { 
+void track::setOnpagehide(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onpagehide for this class 
+    this.htmlonpagehide = `"onpagehide = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onpagehide declaration for class track
 
 // Script to be run when a user navigates to a page 
-void track::set(| string scalar script) { 
+void track::setOnpageshow(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onpageshow for this class 
+    this.htmlonpageshow = `"onpageshow = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onpageshow declaration for class track
 
 // Fires when the user pastes some content in an element 
-void track::set(| string scalar script) { 
+void track::setOnpaste(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onpaste for this class 
+    this.htmlonpaste = `"onpaste = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onpaste declaration for class track
 
 // Script to be run when the media is paused either by the user or programmatically 
-void track::set(| string scalar script) { 
+void track::setOnpause(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onpause for this class 
+    this.htmlonpause = `"onpause = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onpause declaration for class track
 
 // Script to be run when the media is ready to start playing 
-void track::set(| string scalar script) { 
+void track::setOnplay(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onplay for this class 
+    this.htmlonplay = `"onplay = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onplay declaration for class track
 
 // Script to be run when the media actually has started playing 
-void track::set(| string scalar script) { 
+void track::setOnplaying(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onplaying for this class 
+    this.htmlonplaying = `"onplaying = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onplaying declaration for class track
 
 // Script to be run when the window's history changes 
-void track::set(| string scalar script) { 
+void track::setOnpopstate(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onpopstate for this class 
+    this.htmlonpopstate = `"onpopstate = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onpopstate declaration for class track
 
 // Script to be run when the browser is in the process of getting the media data 
-void track::set(| string scalar script) { 
+void track::setOnprogress(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onprogress for this class 
+    this.htmlonprogress = `"onprogress = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onprogress declaration for class track
 
 // Script to be run each time the playback rate changes (like when a user switches to a slow motion or fast forward mode) 
-void track::set(| string scalar script) { 
+void track::setOnratechange(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onratechange for this class 
+    this.htmlonratechange = `"onratechange = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onratechange declaration for class track
 
 // Fires when the Reset button in a form is clicked 
-void track::set(| string scalar script) { 
+void track::setOnreset(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onreset for this class 
+    this.htmlonreset = `"onreset = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onreset declaration for class track
 
 // Fires when the browser window is resized 
-void track::set(| string scalar script) { 
+void track::setOnresize(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onresize for this class 
+    this.htmlonresize = `"onresize = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onresize declaration for class track
 
 // Script to be run when an element's scrollbar is being scrolled 
-void track::set(| string scalar script) { 
+void track::setOnscroll(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onscroll for this class 
+    this.htmlonscroll = `"onscroll = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onscroll declaration for class track
 
 // Fires when the user writes something in a search field (for <input="search">) 
-void track::set(| string scalar script) { 
+void track::setOnsearch(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onsearch for this class 
+    this.htmlonsearch = `"onsearch = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onsearch declaration for class track
 
 // Script to be run when the seeking attribute is set to false indicating that seeking has ended 
-void track::set(| string scalar script) { 
+void track::setOnseeked(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onseeked for this class 
+    this.htmlonseeked = `"onseeked = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onseeked declaration for class track
 
 // Script to be run when the seeking attribute is set to true indicating that seeking is active 
-void track::set(| string scalar script) { 
+void track::setOnseeking(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onseeking for this class 
+    this.htmlonseeking = `"onseeking = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onseeking declaration for class track
 
 // Fires after some text has been selected in an element 
-void track::set(| string scalar script) { 
+void track::setOnselect(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onselect for this class 
+    this.htmlonselect = `"onselect = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onselect declaration for class track
 
 // Fires when a <menu> element is shown as a context menu 
-void track::set(| string scalar script) { 
+void track::setOnshow(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onshow for this class 
+    this.htmlonshow = `"onshow = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onshow declaration for class track
 
 // Script to be run when the browser is unable to fetch the media data for whatever reason 
-void track::set(| string scalar script) { 
+void track::setOnstalled(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onstalled for this class 
+    this.htmlonstalled = `"onstalled = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onstalled declaration for class track
 
 // Script to be run when a Web Storage area is updated 
-void track::set(| string scalar script) { 
+void track::setOnstorage(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onstorage for this class 
+    this.htmlonstorage = `"onstorage = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onstorage declaration for class track
 
 // Fires when a form is submitted 
-void track::set(| string scalar script) { 
+void track::setOnsubmit(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onsubmit for this class 
+    this.htmlonsubmit = `"onsubmit = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onsubmit declaration for class track
 
 // Script to be run when fetching the media data is stopped before it is completely loaded for whatever reason 
-void track::set(| string scalar script) { 
+void track::setOnsuspend(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onsuspend for this class 
+    this.htmlonsuspend = `"onsuspend = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onsuspend declaration for class track
 
 // Script to be run when the playing position has changed (like when the user fast forwards to a different point in the media) 
-void track::set(| string scalar script) { 
+void track::setOntimeupdate(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute ontimeupdate for this class 
+    this.htmlontimeupdate = `"ontimeupdate = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method ontimeupdate declaration for class track
 
 // Fires when the user opens or closes the <details> element 
-void track::set(| string scalar script) { 
+void track::setOntoggle(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute ontoggle for this class 
+    this.htmlontoggle = `"ontoggle = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method ontoggle declaration for class track
 
 // Fires once a page has unloaded (or the browser window has been closed) 
-void track::set(| string scalar script) { 
+void track::setOnunload(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onunload for this class 
+    this.htmlonunload = `"onunload = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onunload declaration for class track
 
 // Script to be run each time the volume is changed which (includes setting the volume to "mute") 
-void track::set(| string scalar script) { 
+void track::setOnvolumechange(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onvolumechange for this class 
+    this.htmlonvolumechange = `"onvolumechange = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onvolumechange declaration for class track
 
 // Script to be run when the media has paused but is expected to resume (like when the media pauses to buffer more data) 
-void track::set(| string scalar script) { 
+void track::setOnwaiting(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onwaiting for this class 
+    this.htmlonwaiting = `"onwaiting = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onwaiting declaration for class track
 
 // Fires when the mouse wheel rolls up or down over an element 
-void track::set(| string scalar script) { 
+void track::setOnwheel(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locscript 
+    // Set the attribute onwheel for this class 
+    this.htmlonwheel = `"onwheel = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locscript = `" = ""' + script + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locscript
-
-} // End of Method  declaration for class track
+} // End of Method onwheel declaration for class track
 
 // Specifies whether the element is to have its spelling and grammar checked or not 
-void track::set(| string scalar methodarg) { 
+void track::setSpellcheck(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locmethodarg 
+    // Validate argument
+    if (methodarg == "true" | methodarg == "false") { 
 
-    // Initialize the local variable 1
-    locmethodarg = `" = ""' + methodarg + `"""' 
+        // Set the attribute value 
+        this.htmlspellcheck = `"spellcheck = ""' + methodarg + `"" "'
 
-    // Set the attribute  for this class 
-    this. = locmethodarg
+    } // End IF Block for validated argument value 
 
-} // End of Method  declaration for class track
+} // End of Method spellcheck declaration for class track
 
 // Required. Specifies the URL of the track file 
-void track::set(| string scalar URL) { 
+void track::setSrc(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locURL 
+    // Set the attribute src for this class 
+    this.htmlsrc = `"src = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locURL = `" = ""' + URL + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locURL
-
-} // End of Method  declaration for class track
+} // End of Method src declaration for class track
 
 // Specifies the language of the track text data (required if kind="subtitles") 
-void track::set(| string scalar language_code) { 
+void track::setSrclang(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar loclanguage_code 
+    // Set the attribute srclang for this class 
+    this.htmlsrclang = `"srclang = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    loclanguage_code = `" = ""' + language_code + `"""' 
-
-    // Set the attribute  for this class 
-    this. = loclanguage_code
-
-} // End of Method  declaration for class track
+} // End of Method srclang declaration for class track
 
 // Specifies an inline CSS style for an element 
-void track::set(| string scalar methodarg) { 
+void track::setStyle(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locmethodarg 
+    // Set the attribute style for this class 
+    this.htmlstyle = `"style = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locmethodarg = `" = ""' + methodarg + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locmethodarg
-
-} // End of Method  declaration for class track
+} // End of Method style declaration for class track
 
 // Specifies the tabbing order of an element 
-void track::set(| string scalar methodarg) { 
+void track::setTabindex(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locmethodarg 
+    // Set the attribute tabindex for this class 
+    this.htmltabindex = `"tabindex = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locmethodarg = `" = ""' + methodarg + `"""' 
-
-    // Set the attribute  for this class 
-    this. = locmethodarg
-
-} // End of Method  declaration for class track
+} // End of Method tabindex declaration for class track
 
 // Specifies extra information about an element 
-void track::set(| string scalar methodarg) { 
+void track::setTitle(| string scalar methodarg) { 
 
-    // Declare member variables based on arguments 
-    string scalar locmethodarg 
+    // Set the attribute title for this class 
+    this.htmltitle = `"title = ""' + methodarg + `"" "'
 
-    // Initialize the local variable 1
-    locmethodarg = `" = ""' + methodarg + `"""' 
+} // End of Method title declaration for class track
 
-    // Set the attribute  for this class 
-    this. = locmethodarg
+// Specifies whether the content of an element should be translated or not 
+void track::setTranslate(| string scalar methodarg) { 
 
-} // End of Method  declaration for class track
+    // Validate argument
+    if (methodarg == "yes" | methodarg == "no") { 
+
+        // Set the attribute value 
+        this.htmltranslate = `"translate = ""' + methodarg + `"" "'
+
+    } // End IF Block for validated argument value 
+
+} // End of Method translate declaration for class track
 
 // Getter method for opening bracket 
 string scalar track::getOpens() { 
@@ -1396,749 +861,749 @@ string scalar track::getClassArgs() {
 
 } // End of getter method for class arguments member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for accesskey member variable 
+string scalar track::getAccesskey() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the accesskey variable 
+    return(this.htmlaccesskey) 
 
-} // End of getter method for  member of class track
+} // End of getter method for accesskey member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for class member variable 
+string scalar track::getClass() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the class variable 
+    return(this.htmlclass) 
 
-} // End of getter method for  member of class track
+} // End of getter method for class member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for contenteditable member variable 
+string scalar track::getContenteditable() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the contenteditable variable 
+    return(this.htmlcontenteditable) 
 
-} // End of getter method for  member of class track
+} // End of getter method for contenteditable member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for contextmenu member variable 
+string scalar track::getContextmenu() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the contextmenu variable 
+    return(this.htmlcontextmenu) 
 
-} // End of getter method for  member of class track
+} // End of getter method for contextmenu member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for data member variable 
+string scalar track::getData() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the data variable 
+    return(this.htmldata) 
 
-} // End of getter method for  member of class track
+} // End of getter method for data member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for default member variable 
+string scalar track::getDefault() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the default variable 
+    return(this.htmldefault) 
 
-} // End of getter method for  member of class track
+} // End of getter method for default member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for dir member variable 
+string scalar track::getDir() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the dir variable 
+    return(this.htmldir) 
 
-} // End of getter method for  member of class track
+} // End of getter method for dir member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for draggable member variable 
+string scalar track::getDraggable() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the draggable variable 
+    return(this.htmldraggable) 
 
-} // End of getter method for  member of class track
+} // End of getter method for draggable member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for dropzone member variable 
+string scalar track::getDropzone() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the dropzone variable 
+    return(this.htmldropzone) 
 
-} // End of getter method for  member of class track
+} // End of getter method for dropzone member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for hidden member variable 
+string scalar track::getHidden() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the hidden variable 
+    return(this.htmlhidden) 
 
-} // End of getter method for  member of class track
+} // End of getter method for hidden member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for id member variable 
+string scalar track::getId() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the id variable 
+    return(this.htmlid) 
 
-} // End of getter method for  member of class track
+} // End of getter method for id member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for kind member variable 
+string scalar track::getKind() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the kind variable 
+    return(this.htmlkind) 
 
-} // End of getter method for  member of class track
+} // End of getter method for kind member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for label member variable 
+string scalar track::getLabel() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the label variable 
+    return(this.htmllabel) 
 
-} // End of getter method for  member of class track
+} // End of getter method for label member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for lang member variable 
+string scalar track::getLang() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the lang variable 
+    return(this.htmllang) 
 
-} // End of getter method for  member of class track
+} // End of getter method for lang member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onabort member variable 
+string scalar track::getOnabort() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onabort variable 
+    return(this.htmlonabort) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onabort member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onafterprint member variable 
+string scalar track::getOnafterprint() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onafterprint variable 
+    return(this.htmlonafterprint) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onafterprint member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onbeforeprint member variable 
+string scalar track::getOnbeforeprint() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onbeforeprint variable 
+    return(this.htmlonbeforeprint) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onbeforeprint member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onbeforeunload member variable 
+string scalar track::getOnbeforeunload() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onbeforeunload variable 
+    return(this.htmlonbeforeunload) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onbeforeunload member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onblur member variable 
+string scalar track::getOnblur() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onblur variable 
+    return(this.htmlonblur) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onblur member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for oncanplay member variable 
+string scalar track::getOncanplay() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the oncanplay variable 
+    return(this.htmloncanplay) 
 
-} // End of getter method for  member of class track
+} // End of getter method for oncanplay member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for oncanplaythrough member variable 
+string scalar track::getOncanplaythrough() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the oncanplaythrough variable 
+    return(this.htmloncanplaythrough) 
 
-} // End of getter method for  member of class track
+} // End of getter method for oncanplaythrough member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onchange member variable 
+string scalar track::getOnchange() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onchange variable 
+    return(this.htmlonchange) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onchange member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onclick member variable 
+string scalar track::getOnclick() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onclick variable 
+    return(this.htmlonclick) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onclick member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for oncontextmenu member variable 
+string scalar track::getOncontextmenu() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the oncontextmenu variable 
+    return(this.htmloncontextmenu) 
 
-} // End of getter method for  member of class track
+} // End of getter method for oncontextmenu member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for oncopy member variable 
+string scalar track::getOncopy() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the oncopy variable 
+    return(this.htmloncopy) 
 
-} // End of getter method for  member of class track
+} // End of getter method for oncopy member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for oncuechange member variable 
+string scalar track::getOncuechange() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the oncuechange variable 
+    return(this.htmloncuechange) 
 
-} // End of getter method for  member of class track
+} // End of getter method for oncuechange member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for oncut member variable 
+string scalar track::getOncut() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the oncut variable 
+    return(this.htmloncut) 
 
-} // End of getter method for  member of class track
+} // End of getter method for oncut member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for ondblclick member variable 
+string scalar track::getOndblclick() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the ondblclick variable 
+    return(this.htmlondblclick) 
 
-} // End of getter method for  member of class track
+} // End of getter method for ondblclick member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for ondrag member variable 
+string scalar track::getOndrag() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the ondrag variable 
+    return(this.htmlondrag) 
 
-} // End of getter method for  member of class track
+} // End of getter method for ondrag member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for ondragend member variable 
+string scalar track::getOndragend() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the ondragend variable 
+    return(this.htmlondragend) 
 
-} // End of getter method for  member of class track
+} // End of getter method for ondragend member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for ondragenter member variable 
+string scalar track::getOndragenter() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the ondragenter variable 
+    return(this.htmlondragenter) 
 
-} // End of getter method for  member of class track
+} // End of getter method for ondragenter member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for ondragleave member variable 
+string scalar track::getOndragleave() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the ondragleave variable 
+    return(this.htmlondragleave) 
 
-} // End of getter method for  member of class track
+} // End of getter method for ondragleave member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for ondragover member variable 
+string scalar track::getOndragover() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the ondragover variable 
+    return(this.htmlondragover) 
 
-} // End of getter method for  member of class track
+} // End of getter method for ondragover member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for ondragstart member variable 
+string scalar track::getOndragstart() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the ondragstart variable 
+    return(this.htmlondragstart) 
 
-} // End of getter method for  member of class track
+} // End of getter method for ondragstart member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for ondrop member variable 
+string scalar track::getOndrop() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the ondrop variable 
+    return(this.htmlondrop) 
 
-} // End of getter method for  member of class track
+} // End of getter method for ondrop member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for ondurationchange member variable 
+string scalar track::getOndurationchange() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the ondurationchange variable 
+    return(this.htmlondurationchange) 
 
-} // End of getter method for  member of class track
+} // End of getter method for ondurationchange member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onemptied member variable 
+string scalar track::getOnemptied() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onemptied variable 
+    return(this.htmlonemptied) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onemptied member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onended member variable 
+string scalar track::getOnended() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onended variable 
+    return(this.htmlonended) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onended member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onerror member variable 
+string scalar track::getOnerror() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onerror variable 
+    return(this.htmlonerror) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onerror member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onfocus member variable 
+string scalar track::getOnfocus() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onfocus variable 
+    return(this.htmlonfocus) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onfocus member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onhashchange member variable 
+string scalar track::getOnhashchange() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onhashchange variable 
+    return(this.htmlonhashchange) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onhashchange member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for oninput member variable 
+string scalar track::getOninput() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the oninput variable 
+    return(this.htmloninput) 
 
-} // End of getter method for  member of class track
+} // End of getter method for oninput member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for oninvalid member variable 
+string scalar track::getOninvalid() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the oninvalid variable 
+    return(this.htmloninvalid) 
 
-} // End of getter method for  member of class track
+} // End of getter method for oninvalid member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onkeydown member variable 
+string scalar track::getOnkeydown() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onkeydown variable 
+    return(this.htmlonkeydown) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onkeydown member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onkeypress member variable 
+string scalar track::getOnkeypress() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onkeypress variable 
+    return(this.htmlonkeypress) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onkeypress member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onkeyup member variable 
+string scalar track::getOnkeyup() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onkeyup variable 
+    return(this.htmlonkeyup) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onkeyup member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onload member variable 
+string scalar track::getOnload() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onload variable 
+    return(this.htmlonload) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onload member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onloadeddata member variable 
+string scalar track::getOnloadeddata() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onloadeddata variable 
+    return(this.htmlonloadeddata) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onloadeddata member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onloadedmetadata member variable 
+string scalar track::getOnloadedmetadata() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onloadedmetadata variable 
+    return(this.htmlonloadedmetadata) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onloadedmetadata member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onloadstart member variable 
+string scalar track::getOnloadstart() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onloadstart variable 
+    return(this.htmlonloadstart) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onloadstart member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onmessage member variable 
+string scalar track::getOnmessage() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onmessage variable 
+    return(this.htmlonmessage) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onmessage member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onmousedown member variable 
+string scalar track::getOnmousedown() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onmousedown variable 
+    return(this.htmlonmousedown) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onmousedown member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onmousemove member variable 
+string scalar track::getOnmousemove() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onmousemove variable 
+    return(this.htmlonmousemove) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onmousemove member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onmouseout member variable 
+string scalar track::getOnmouseout() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onmouseout variable 
+    return(this.htmlonmouseout) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onmouseout member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onmouseover member variable 
+string scalar track::getOnmouseover() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onmouseover variable 
+    return(this.htmlonmouseover) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onmouseover member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onmouseup member variable 
+string scalar track::getOnmouseup() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onmouseup variable 
+    return(this.htmlonmouseup) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onmouseup member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onmousewheel member variable 
+string scalar track::getOnmousewheel() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onmousewheel variable 
+    return(this.htmlonmousewheel) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onmousewheel member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onoffline member variable 
+string scalar track::getOnoffline() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onoffline variable 
+    return(this.htmlonoffline) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onoffline member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for ononline member variable 
+string scalar track::getOnonline() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the ononline variable 
+    return(this.htmlononline) 
 
-} // End of getter method for  member of class track
+} // End of getter method for ononline member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onpagehide member variable 
+string scalar track::getOnpagehide() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onpagehide variable 
+    return(this.htmlonpagehide) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onpagehide member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onpageshow member variable 
+string scalar track::getOnpageshow() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onpageshow variable 
+    return(this.htmlonpageshow) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onpageshow member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onpaste member variable 
+string scalar track::getOnpaste() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onpaste variable 
+    return(this.htmlonpaste) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onpaste member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onpause member variable 
+string scalar track::getOnpause() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onpause variable 
+    return(this.htmlonpause) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onpause member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onplay member variable 
+string scalar track::getOnplay() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onplay variable 
+    return(this.htmlonplay) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onplay member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onplaying member variable 
+string scalar track::getOnplaying() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onplaying variable 
+    return(this.htmlonplaying) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onplaying member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onpopstate member variable 
+string scalar track::getOnpopstate() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onpopstate variable 
+    return(this.htmlonpopstate) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onpopstate member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onprogress member variable 
+string scalar track::getOnprogress() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onprogress variable 
+    return(this.htmlonprogress) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onprogress member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onratechange member variable 
+string scalar track::getOnratechange() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onratechange variable 
+    return(this.htmlonratechange) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onratechange member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onreset member variable 
+string scalar track::getOnreset() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onreset variable 
+    return(this.htmlonreset) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onreset member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onresize member variable 
+string scalar track::getOnresize() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onresize variable 
+    return(this.htmlonresize) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onresize member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onscroll member variable 
+string scalar track::getOnscroll() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onscroll variable 
+    return(this.htmlonscroll) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onscroll member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onsearch member variable 
+string scalar track::getOnsearch() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onsearch variable 
+    return(this.htmlonsearch) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onsearch member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onseeked member variable 
+string scalar track::getOnseeked() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onseeked variable 
+    return(this.htmlonseeked) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onseeked member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onseeking member variable 
+string scalar track::getOnseeking() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onseeking variable 
+    return(this.htmlonseeking) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onseeking member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onselect member variable 
+string scalar track::getOnselect() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onselect variable 
+    return(this.htmlonselect) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onselect member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onshow member variable 
+string scalar track::getOnshow() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onshow variable 
+    return(this.htmlonshow) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onshow member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onstalled member variable 
+string scalar track::getOnstalled() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onstalled variable 
+    return(this.htmlonstalled) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onstalled member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onstorage member variable 
+string scalar track::getOnstorage() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onstorage variable 
+    return(this.htmlonstorage) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onstorage member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onsubmit member variable 
+string scalar track::getOnsubmit() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onsubmit variable 
+    return(this.htmlonsubmit) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onsubmit member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onsuspend member variable 
+string scalar track::getOnsuspend() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onsuspend variable 
+    return(this.htmlonsuspend) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onsuspend member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for ontimeupdate member variable 
+string scalar track::getOntimeupdate() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the ontimeupdate variable 
+    return(this.htmlontimeupdate) 
 
-} // End of getter method for  member of class track
+} // End of getter method for ontimeupdate member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for ontoggle member variable 
+string scalar track::getOntoggle() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the ontoggle variable 
+    return(this.htmlontoggle) 
 
-} // End of getter method for  member of class track
+} // End of getter method for ontoggle member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onunload member variable 
+string scalar track::getOnunload() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onunload variable 
+    return(this.htmlonunload) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onunload member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onvolumechange member variable 
+string scalar track::getOnvolumechange() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onvolumechange variable 
+    return(this.htmlonvolumechange) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onvolumechange member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onwaiting member variable 
+string scalar track::getOnwaiting() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onwaiting variable 
+    return(this.htmlonwaiting) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onwaiting member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for onwheel member variable 
+string scalar track::getOnwheel() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the onwheel variable 
+    return(this.htmlonwheel) 
 
-} // End of getter method for  member of class track
+} // End of getter method for onwheel member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for spellcheck member variable 
+string scalar track::getSpellcheck() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the spellcheck variable 
+    return(this.htmlspellcheck) 
 
-} // End of getter method for  member of class track
+} // End of getter method for spellcheck member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for src member variable 
+string scalar track::getSrc() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the src variable 
+    return(this.htmlsrc) 
 
-} // End of getter method for  member of class track
+} // End of getter method for src member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for srclang member variable 
+string scalar track::getSrclang() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the srclang variable 
+    return(this.htmlsrclang) 
 
-} // End of getter method for  member of class track
+} // End of getter method for srclang member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for style member variable 
+string scalar track::getStyle() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the style variable 
+    return(this.htmlstyle) 
 
-} // End of getter method for  member of class track
+} // End of getter method for style member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for tabindex member variable 
+string scalar track::getTabindex() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the tabindex variable 
+    return(this.htmltabindex) 
 
-} // End of getter method for  member of class track
+} // End of getter method for tabindex member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for title member variable 
+string scalar track::getTitle() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the title variable 
+    return(this.htmltitle) 
 
-} // End of getter method for  member of class track
+} // End of getter method for title member of class track
 
-// Getter method for  member variable 
-string scalar track::get() { 
+// Getter method for translate member variable 
+string scalar track::getTranslate() { 
 
-    // Returns the  variable 
-    return(this. + " ") 
+    // Returns the translate variable 
+    return(this.htmltranslate) 
 
-} // End of getter method for  member of class track
+} // End of getter method for translate member of class track
 
 // Get the HTML tag w/attributes and arguments 
 string scalar track::print() { 
@@ -2147,7 +1612,7 @@ string scalar track::print() {
     string scalar open, args, close 
 
     // Create opening string 
-    open = getOpens() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + get() + getOpene()
+    open = getOpens() + getOpens() + getOpene() + getClose() + print() + getClassArgs() + getAccesskey() + getClass() + getContenteditable() + getContextmenu() + getData() + getDefault() + getDir() + getDraggable() + getDropzone() + getHidden() + getId() + getKind() + getLabel() + getLang() + getOnabort() + getOnafterprint() + getOnbeforeprint() + getOnbeforeunload() + getOnblur() + getOncanplay() + getOncanplaythrough() + getOnchange() + getOnclick() + getOncontextmenu() + getOncopy() + getOncuechange() + getOncut() + getOndblclick() + getOndrag() + getOndragend() + getOndragenter() + getOndragleave() + getOndragover() + getOndragstart() + getOndrop() + getOndurationchange() + getOnemptied() + getOnended() + getOnerror() + getOnfocus() + getOnhashchange() + getOninput() + getOninvalid() + getOnkeydown() + getOnkeypress() + getOnkeyup() + getOnload() + getOnloadeddata() + getOnloadedmetadata() + getOnloadstart() + getOnmessage() + getOnmousedown() + getOnmousemove() + getOnmouseout() + getOnmouseover() + getOnmouseup() + getOnmousewheel() + getOnoffline() + getOnonline() + getOnpagehide() + getOnpageshow() + getOnpaste() + getOnpause() + getOnplay() + getOnplaying() + getOnpopstate() + getOnprogress() + getOnratechange() + getOnreset() + getOnresize() + getOnscroll() + getOnsearch() + getOnseeked() + getOnseeking() + getOnselect() + getOnshow() + getOnstalled() + getOnstorage() + getOnsubmit() + getOnsuspend() + getOntimeupdate() + getOntoggle() + getOnunload() + getOnvolumechange() + getOnwaiting() + getOnwheel() + getSpellcheck() + getSrc() + getSrclang() + getStyle() + getTabindex() + getTitle() + getTranslate() + getOpene()
 
     // Get class arguments 
     args = getClassArgs() 
