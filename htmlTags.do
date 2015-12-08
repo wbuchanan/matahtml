@@ -23,10 +23,17 @@ save tagSpecificAttributes.dta, replace
 
 use htmlattrs.dta, clear
 clnhtmltags
+qui: g hasform = type == "Form Event Attributes"
+qui: g hasclipboard = type == "Clipboard Event Attributes"
+qui: g haskeyboard = type == "Keyboard Event Attributes"
+qui: g hasmedia = type == "Media Event Attributes"
+qui: g hasmisc = type == "Misc Event Attributes"
+qui: g hasmouse = type == "Mouse Event Attributes"
+qui: g haswindow = type == "Window Event Attributes"
 preserve
 	keep if hasglobal == 1
 	// rename (attribute value description)(globalattr globalval globaldesc)
-	drop type hasevent
+	drop type hasevent hasform hasclipboard haskeyboard hasmedia hasmisc hasmouse haswindow
 	save globalAttrs.dta, replace
 restore, preserve
 	keep if hasevent == 1
@@ -53,10 +60,15 @@ forv i = 2/6 {
 	qui: replace stem = "h`i'.asp" in `= `i' + 117'
 	qui: replace root = root[_n - 1]  in `= `i' + 117'
 }
+foreach v in hasform hasclipboard haskeyboard hasmedia hasmisc hasmouse haswindow {
+	qui: g byte `v' = .
+}
+
 qui: replace tag = "<h1>" in 49
 qui: replace stem = "h1.asp" in 49
 qui: replace tag = "<!DOCTYPE" in 2
 rename tag open
+qui: replace hasevent = 0 if inlist(tagelement, "a", "base", 
 qui: g close = "</" + substr(open, 2, length(open))
 qui: g tagelement = subinstr(subinstr(open, ">", "", .), "<", "", .)
 replace close = "-->" in 1
