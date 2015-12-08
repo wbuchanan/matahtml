@@ -63,6 +63,14 @@ prog def libhtml
 	if `"`library'"' != "" {
 	
 		/*
+		
+		foreach v of loc mataobs {
+		
+			mata: mata mosave `v', `dir' `complete' `replace'
+			
+		}
+	
+		
 		// Create the mata library
 		mata: mata mlib create libhtmlpt1, `replace' `dir' `size'    
 

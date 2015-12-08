@@ -56,9 +56,9 @@ foreach v of loc classnm {
 	file write `tmpfile' `"    // Define private member variables"' _n
 	file write `tmpfile' `"    private: "' _n(2)
 	file write `tmpfile' `"    // Static/final variables "' _n
-	file write `tmpfile' `"    static			string			scalar			opens, opene, close, classargs"' _n(2)
+	file write `tmpfile' `"    static	string	scalar	opens, opene, close, classargs"' _n(2)
 	file write `tmpfile' `"    // String scalar attributes "' _n
-	file write `tmpfile' `"    string							scalar			`: subinstr loc attr `" "' `", "', all'"' _n(2)
+	file write `tmpfile' `"    string		scalar		`: subinstr loc attr `" "' `", "', all'"' _n(2)
 	file write `tmpfile' `"    // Define public members/methods "' _n
 	file write `tmpfile' `"    public: "' _n(2)
 	
@@ -79,15 +79,15 @@ foreach v of loc classnm {
 	
 	if `"`setters'"' != "" {
 		file write `tmpfile' `"    // Setter methods "' _n
-		file write `tmpfile' `"    void			new(), setClassArgs(), `: subinstr loc setters `" "' `", "', all'"' _n(2)
+		file write `tmpfile' `"    void		new(), setClassArgs(), `: subinstr loc setters `" "' `", "', all'"' _n(2)
 	}
 	else {
 		file write `tmpfile' `"    // Setter methods "' _n
-		file write `tmpfile' `"    void			new(), setClassArgs()"' _n(2)
+		file write `tmpfile' `"    void		new(), setClassArgs()"' _n(2)
 	}
 	
 	file write `tmpfile' `"    // Getter methods "' _n
-	file write `tmpfile' `"    string			scalar			`: subinstr loc getters `" "' `", "', all'"' _n(2)
+	file write `tmpfile' `"    string		scalar		`: subinstr loc getters `" "' `", "', all'"' _n(2)
 
 	
 	file write `tmpfile' "} // End of class declaration" _n(2)
@@ -208,7 +208,11 @@ foreach v of loc classnm {
 	
 	
 	// parse getter methods
-	loc prntgetters `: subinstr loc getters `"getOpens() getOpene() getClose() print() getClassargs()"' "", all'
+	loc prntgetters `: subinstr loc getters `"getOpens()"' "", all'
+	loc prntgetters `: subinstr loc prntgetters `"getOpene()"' "", all' 
+	loc prntgetters `: subinstr loc prntgetters `"getClose()"' "", all' 
+	loc prntgetters `: subinstr loc prntgetters `"print()"' "", all' 
+	loc prntgetters `: subinstr loc prntgetters `"getClassArgs()"' "", all'
 	loc prntgetters `: subinstr loc prntgetters `" "' `" + "', all'
 	
 	file write `tmpfile' `"// Get the HTML tag w/attributes and arguments "' _n

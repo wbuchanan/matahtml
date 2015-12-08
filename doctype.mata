@@ -12,19 +12,19 @@ class doctype {
     private: 
 
     // Static/final variables 
-    static                       string                  scalar                  opens, opene, close, classargs
+    static       string  scalar  opens, opene, close, classargs
 
     // String scalar attributes 
-    string                                                       scalar                  html
+    string               scalar          html
 
     // Define public members/methods 
     public: 
 
     // Setter methods 
-    void                 new(), setClassArgs()
+    void         new(), setClassArgs()
 
     // Getter methods 
-    string                       scalar                  getOpens(), getOpene(), getClose(), print(), getClassArgs()
+    string               scalar          getOpens(), getOpene(), getClose(), print(), getClassArgs()
 
 } // End of class declaration
 
@@ -35,7 +35,7 @@ void doctype::new() {
     this.opens = "<!DOCTYPE" 
 
     // Defines the end of the opening tag for the class 
-    this.opene = ">" 
+    this.opene = "" 
 
     // Defines the closing tag for the class 
     this.close = ">" 
@@ -89,7 +89,7 @@ string scalar doctype::print() {
     string scalar open, args, close 
 
     // Create opening string 
-    open = getOpens() + getOpens() + getOpene() + getClose() + print() + getClassArgs() + getOpene()
+    open = getOpens() 
 
     // Get class arguments 
     args = getClassArgs() 

@@ -12,19 +12,19 @@ class script {
     private: 
 
     // Static/final variables 
-    static                       string                  scalar                  opens, opene, close, classargs
+    static       string  scalar  opens, opene, close, classargs
 
     // String scalar attributes 
-    string                                                       scalar                  html, htmlaccesskey, htmlasync, htmlcharset, htmlclass, htmlcontenteditable, htmlcontextmenu, htmldata, htmldefer, htmldir, htmldraggable, htmldropzone, htmlhidden, htmlid, htmllang, htmlspellcheck, htmlsrc, htmlstyle, htmltabindex, htmltitle, htmltranslate, htmltype, htmlxmlspace
+    string               scalar          html, htmlaccesskey, htmlasync, htmlcharset, htmlclass, htmlcontenteditable, htmlcontextmenu, htmldata, htmldefer, htmldir, htmldraggable, htmldropzone, htmlhidden, htmlid, htmllang, htmlspellcheck, htmlsrc, htmlstyle, htmltabindex, htmltitle, htmltranslate, htmltype, htmlxmlspace
 
     // Define public members/methods 
     public: 
 
     // Setter methods 
-    void                 new(), setClassArgs(), setAccesskey(), setAsync(), setCharset(), setClass(), setContenteditable(), setContextmenu(), setData(), setDefer(), setDir(), setDraggable(), setDropzone(), setHidden(), setId(), setLang(), setSpellcheck(), setSrc(), setStyle(), setTabindex(), setTitle(), setTranslate(), setType(), setXmlspace()
+    void         new(), setClassArgs(), setAccesskey(), setAsync(), setCharset(), setClass(), setContenteditable(), setContextmenu(), setData(), setDefer(), setDir(), setDraggable(), setDropzone(), setHidden(), setId(), setLang(), setSpellcheck(), setSrc(), setStyle(), setTabindex(), setTitle(), setTranslate(), setType(), setXmlspace()
 
     // Getter methods 
-    string                       scalar                  getOpens(), getOpene(), getClose(), print(), getClassArgs(), getAccesskey(), getAsync(), getCharset(), getClass(), getContenteditable(), getContextmenu(), getData(), getDefer(), getDir(), getDraggable(), getDropzone(), getHidden(), getId(), getLang(), getSpellcheck(), getSrc(), getStyle(), getTabindex(), getTitle(), getTranslate(), getType(), getXmlspace()
+    string               scalar          getOpens(), getOpene(), getClose(), print(), getClassArgs(), getAccesskey(), getAsync(), getCharset(), getClass(), getContenteditable(), getContextmenu(), getData(), getDefer(), getDir(), getDraggable(), getDropzone(), getHidden(), getId(), getLang(), getSpellcheck(), getSrc(), getStyle(), getTabindex(), getTitle(), getTranslate(), getType(), getXmlspace()
 
 } // End of class declaration
 
@@ -54,7 +54,7 @@ void script::setClassArgs(| string scalar classarguments) {
 void script::setAccesskey(| string scalar methodarg) { 
 
     // Set the attribute accesskey for this class 
-    this.htmlaccesskey = `"accesskey = ""' + methodarg + `"" "'
+    this.htmlaccesskey = `"accesskey = ""' + methodarg + "" 
 
 } // End of Method accesskey declaration for class script
 
@@ -62,7 +62,7 @@ void script::setAccesskey(| string scalar methodarg) {
 void script::setAsync(| string scalar methodarg) { 
 
     // Set the attribute async for this class 
-    this.htmlasync = `"async = ""' + methodarg + `"" "'
+    this.htmlasync = `"async = ""' + methodarg + "" 
 
 } // End of Method async declaration for class script
 
@@ -70,7 +70,7 @@ void script::setAsync(| string scalar methodarg) {
 void script::setCharset(| string scalar methodarg) { 
 
     // Set the attribute charset for this class 
-    this.htmlcharset = `"charset = ""' + methodarg + `"" "'
+    this.htmlcharset = `"charset = ""' + methodarg + "" 
 
 } // End of Method charset declaration for class script
 
@@ -78,7 +78,7 @@ void script::setCharset(| string scalar methodarg) {
 void script::setClass(| string scalar methodarg) { 
 
     // Set the attribute class for this class 
-    this.htmlclass = `"class = ""' + methodarg + `"" "'
+    this.htmlclass = `"class = ""' + methodarg + "" 
 
 } // End of Method class declaration for class script
 
@@ -89,7 +89,7 @@ void script::setContenteditable(| string scalar methodarg) {
     if (methodarg == "true" | methodarg == "false") { 
 
         // Set the attribute value 
-        this.htmlcontenteditable = `"contenteditable = ""' + methodarg + `"" "'
+        this.htmlcontenteditable = `"contenteditable = ""' + methodarg + "" 
 
     } // End IF Block for validated argument value 
 
@@ -99,7 +99,7 @@ void script::setContenteditable(| string scalar methodarg) {
 void script::setContextmenu(| string scalar methodarg) { 
 
     // Set the attribute contextmenu for this class 
-    this.htmlcontextmenu = `"contextmenu = ""' + methodarg + `"" "'
+    this.htmlcontextmenu = `"contextmenu = ""' + methodarg + "" 
 
 } // End of Method contextmenu declaration for class script
 
@@ -107,7 +107,7 @@ void script::setContextmenu(| string scalar methodarg) {
 void script::setData(| string scalar methodarg) { 
 
     // Set the attribute data for this class 
-    this.htmldata = `"data = ""' + methodarg + `"" "'
+    this.htmldata = `"data = ""' + methodarg + "" 
 
 } // End of Method data declaration for class script
 
@@ -115,7 +115,7 @@ void script::setData(| string scalar methodarg) {
 void script::setDefer(| string scalar methodarg) { 
 
     // Set the attribute defer for this class 
-    this.htmldefer = `"defer = ""' + methodarg + `"" "'
+    this.htmldefer = `"defer = ""' + methodarg + "" 
 
 } // End of Method defer declaration for class script
 
@@ -126,7 +126,7 @@ void script::setDir(| string scalar methodarg) {
     if (methodarg == "ltr" | methodarg == "rtl" | methodarg == "auto") { 
 
         // Set the attribute value 
-        this.htmldir = `"dir = ""' + methodarg + `"" "'
+        this.htmldir = `"dir = ""' + methodarg + "" 
 
     } // End IF Block for validated argument value 
 
@@ -139,7 +139,7 @@ void script::setDraggable(| string scalar methodarg) {
     if (methodarg == "true" | methodarg == "false" | methodarg == "auto") { 
 
         // Set the attribute value 
-        this.htmldraggable = `"draggable = ""' + methodarg + `"" "'
+        this.htmldraggable = `"draggable = ""' + methodarg + "" 
 
     } // End IF Block for validated argument value 
 
@@ -152,7 +152,7 @@ void script::setDropzone(| string scalar methodarg) {
     if (methodarg == "copy" | methodarg == "move" | methodarg == "link") { 
 
         // Set the attribute value 
-        this.htmldropzone = `"dropzone = ""' + methodarg + `"" "'
+        this.htmldropzone = `"dropzone = ""' + methodarg + "" 
 
     } // End IF Block for validated argument value 
 
@@ -162,7 +162,7 @@ void script::setDropzone(| string scalar methodarg) {
 void script::setHidden(| string scalar methodarg) { 
 
     // Set the attribute hidden for this class 
-    this.htmlhidden = `"hidden = ""' + methodarg + `"" "'
+    this.htmlhidden = `"hidden = ""' + methodarg + "" 
 
 } // End of Method hidden declaration for class script
 
@@ -170,7 +170,7 @@ void script::setHidden(| string scalar methodarg) {
 void script::setId(| string scalar methodarg) { 
 
     // Set the attribute id for this class 
-    this.htmlid = `"id = ""' + methodarg + `"" "'
+    this.htmlid = `"id = ""' + methodarg + "" 
 
 } // End of Method id declaration for class script
 
@@ -178,7 +178,7 @@ void script::setId(| string scalar methodarg) {
 void script::setLang(| string scalar methodarg) { 
 
     // Set the attribute lang for this class 
-    this.htmllang = `"lang = ""' + methodarg + `"" "'
+    this.htmllang = `"lang = ""' + methodarg + "" 
 
 } // End of Method lang declaration for class script
 
@@ -189,7 +189,7 @@ void script::setSpellcheck(| string scalar methodarg) {
     if (methodarg == "true" | methodarg == "false") { 
 
         // Set the attribute value 
-        this.htmlspellcheck = `"spellcheck = ""' + methodarg + `"" "'
+        this.htmlspellcheck = `"spellcheck = ""' + methodarg + "" 
 
     } // End IF Block for validated argument value 
 
@@ -199,7 +199,7 @@ void script::setSpellcheck(| string scalar methodarg) {
 void script::setSrc(| string scalar methodarg) { 
 
     // Set the attribute src for this class 
-    this.htmlsrc = `"src = ""' + methodarg + `"" "'
+    this.htmlsrc = `"src = ""' + methodarg + "" 
 
 } // End of Method src declaration for class script
 
@@ -207,7 +207,7 @@ void script::setSrc(| string scalar methodarg) {
 void script::setStyle(| string scalar methodarg) { 
 
     // Set the attribute style for this class 
-    this.htmlstyle = `"style = ""' + methodarg + `"" "'
+    this.htmlstyle = `"style = ""' + methodarg + "" 
 
 } // End of Method style declaration for class script
 
@@ -215,7 +215,7 @@ void script::setStyle(| string scalar methodarg) {
 void script::setTabindex(| string scalar methodarg) { 
 
     // Set the attribute tabindex for this class 
-    this.htmltabindex = `"tabindex = ""' + methodarg + `"" "'
+    this.htmltabindex = `"tabindex = ""' + methodarg + "" 
 
 } // End of Method tabindex declaration for class script
 
@@ -223,7 +223,7 @@ void script::setTabindex(| string scalar methodarg) {
 void script::setTitle(| string scalar methodarg) { 
 
     // Set the attribute title for this class 
-    this.htmltitle = `"title = ""' + methodarg + `"" "'
+    this.htmltitle = `"title = ""' + methodarg + "" 
 
 } // End of Method title declaration for class script
 
@@ -234,7 +234,7 @@ void script::setTranslate(| string scalar methodarg) {
     if (methodarg == "yes" | methodarg == "no") { 
 
         // Set the attribute value 
-        this.htmltranslate = `"translate = ""' + methodarg + `"" "'
+        this.htmltranslate = `"translate = ""' + methodarg + "" 
 
     } // End IF Block for validated argument value 
 
@@ -244,7 +244,7 @@ void script::setTranslate(| string scalar methodarg) {
 void script::setType(| string scalar methodarg) { 
 
     // Set the attribute type for this class 
-    this.htmltype = `"type = ""' + methodarg + `"" "'
+    this.htmltype = `"type = ""' + methodarg + "" 
 
 } // End of Method type declaration for class script
 
@@ -252,7 +252,7 @@ void script::setType(| string scalar methodarg) {
 void script::setXmlspace(| string scalar methodarg) { 
 
     // Set the attribute xmlspace for this class 
-    this.htmlxmlspace = `"xml:space = ""' + methodarg + `"" "'
+    this.htmlxmlspace = `"xml:space = ""' + methodarg + "" 
 
 } // End of Method xmlspace declaration for class script
 
@@ -471,7 +471,7 @@ string scalar script::print() {
     string scalar open, args, close 
 
     // Create opening string 
-    open = getOpens() + getOpens() + getOpene() + getClose() + print() + getClassArgs() + getAccesskey() + getAsync() + getCharset() + getClass() + getContenteditable() + getContextmenu() + getData() + getDefer() + getDir() + getDraggable() + getDropzone() + getHidden() + getId() + getLang() + getSpellcheck() + getSrc() + getStyle() + getTabindex() + getTitle() + getTranslate() + getType() + getXmlspace() + getOpene()
+    open = getOpens() + getAccesskey() + getAsync() + getCharset() + getClass() + getContenteditable() + getContextmenu() + getData() + getDefer() + getDir() + getDraggable() + getDropzone() + getHidden() + getId() + getLang() + getSpellcheck() + getSrc() + getStyle() + getTabindex() + getTitle() + getTranslate() + getType() + getXmlspace() + getOpene()
 
     // Get class arguments 
     args = getClassArgs() 

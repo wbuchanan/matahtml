@@ -15,7 +15,7 @@ class input {
     static                       string                  scalar                  opens, opene, close, classargs
 
     // String scalar attributes 
-    string                                                       scalar                  htmlaccept, htmlaccesskey, htmlalign, htmlalt, htmlautocomplete, htmlautofocus, htmlchecked, htmlclass, htmlcontenteditable, htmlcontextmenu, htmldata, htmldir, htmldisabled, htmldraggable, htmldropzone, htmlform, htmlformaction, htmlformenctype, htmlformmethod, htmlformnovalidate, htmlformtarget, htmlheight, htmlhidden, htmlid, htmllang, htmllist, htmlmax, htmlmaxlength, htmlmin, htmlmultiple, htmlname, htmlonabort, htmlonafterprint, htmlonbeforeprint, htmlonbeforeunload, htmlonblur, htmloncanplay, htmloncanplaythrough, htmlonchange, htmlonclick, htmloncontextmenu, htmloncopy, htmloncuechange, htmloncut, htmlondblclick, htmlondrag, htmlondragend, htmlondragenter, htmlondragleave
+    string		scalar		htmlaccept, htmlaccesskey, htmlalign, htmlalt, htmlautocomplete, htmlautofocus, htmlchecked, htmlclass, htmlcontenteditable, htmlcontextmenu, htmldata, htmldir, htmldisabled, htmldraggable, htmldropzone, htmlform, htmlformaction, htmlformenctype, htmlformmethod, htmlformnovalidate, htmlformtarget, htmlheight, htmlhidden, htmlid, htmllang, htmllist, htmlmax, htmlmaxlength, htmlmin, htmlmultiple, htmlname, htmlonabort, htmlonafterprint, htmlonbeforeprint, htmlonbeforeunload, htmlonblur, htmloncanplay, htmloncanplaythrough, htmlonchange, htmlonclick, htmloncontextmenu, htmloncopy, htmloncuechange, htmloncut, htmlondblclick, htmlondrag, htmlondragend, htmlondragenter, htmlondragleave
 	string		scalar		htmlondragover, htmlondragstart, htmlondrop, htmlondurationchange, htmlonemptied, htmlonended, htmlonerror, htmlonfocus, htmlonhashchange, htmloninput, htmloninvalid, htmlonkeydown, htmlonkeypress, htmlonkeyup, htmlonload, htmlonloadeddata, htmlonloadedmetadata, htmlonloadstart, htmlonmessage, htmlonmousedown, htmlonmousemove, htmlonmouseout, htmlonmouseover, htmlonmouseup, htmlonmousewheel, htmlonoffline, htmlononline, htmlonpagehide, htmlonpageshow, htmlonpaste, htmlonpause, htmlonplay, htmlonplaying, htmlonpopstate, htmlonprogress, htmlonratechange, htmlonreset, htmlonresize
 	string		scalar		htmlonscroll, htmlonsearch, htmlonseeked, htmlonseeking, htmlonselect, htmlonshow, htmlonstalled, htmlonstorage, htmlonsubmit, htmlonsuspend, htmlontimeupdate, htmlontoggle, htmlonunload, htmlonvolumechange, htmlonwaiting, htmlonwheel, htmlpattern, htmlplaceholder, htmlreadonly, htmlrequired, htmlsize, htmlspellcheck, htmlsrc, htmlstep, htmlstyle, htmltabindex, htmltitle, htmltranslate, htmltype, htmlvalue, htmlwidth
 
@@ -1045,7 +1045,29 @@ void input::setTranslate(| string scalar methodarg) {
 void input::setType(| string scalar methodarg) { 
 
     // Validate argument
-    if (methodarg == "button" | methodarg == "checkbox" | methodarg == "color" | methodarg == "date" | methodarg == "datetime" | methodarg == "datetime-local" | methodarg == "email" | methodarg == "file" | methodarg == "hidden" | methodarg == "image" | methodarg == "month" | methodarg == "number" | methodarg == "password" | methodarg == "radio" | methodarg == "range" | methodarg == "reset" | methodarg == "search" | methodarg == "submit" | methodarg == "tel" | methodarg == "text" | methodarg == "time" | methodarg == "url" | methodarg == "week") { 
+    if (methodarg == "button" | 
+		methodarg == "checkbox" | 
+		methodarg == "color" | 
+		methodarg == "date" | 
+		methodarg == "datetime" | 
+		methodarg == "datetime-local" | 
+		methodarg == "email" | 
+		methodarg == "file" | 
+		methodarg == "hidden" | 
+		methodarg == "image" | 
+		methodarg == "month" | 
+		methodarg == "number" | 
+		methodarg == "password" | 
+		methodarg == "radio" | 
+		methodarg == "range" | 
+		methodarg == "reset" | 
+		methodarg == "search" | 
+		methodarg == "submit" | 
+		methodarg == "tel" | 
+		methodarg == "text" | 
+		methodarg == "time" | 
+		methodarg == "url" | 
+		methodarg == "week") { 
 
         // Set the attribute value 
         this.htmltype = `"type = ""' + methodarg + `"" "' 
@@ -2053,7 +2075,7 @@ string scalar input::print() {
     string scalar open, args, close 
 
     // Create opening string 
-    open = getOpens() + getOpens() + getOpene() + getClose() + print() + getClassArgs() + getAccept() + getAccesskey() + getAlign() + getAlt() + getAutocomplete() + getAutofocus() + getChecked() + getClass() + getContenteditable() + getContextmenu() + getData() + getDir() + getDisabled() + getDraggable() + getDropzone() + getForm() + getFormaction() + getFormenctype() + getFormmethod() + getFormnovalidate() + getFormtarget() + getHeight() + getHidden() + getId() + getLang() + getList() + getMax() + getMaxlength() + getMin() + getMultiple() + getName() + getOnabort() + getOnafterprint() 
+    open = getOpens() + getAccept() + getAccesskey() + getAlign() + getAlt() + getAutocomplete() + getAutofocus() + getChecked() + getClass() + getContenteditable() + getContextmenu() + getData() + getDir() + getDisabled() + getDraggable() + getDropzone() + getForm() + getFormaction() + getFormenctype() + getFormmethod() + getFormnovalidate() + getFormtarget() + getHeight() + getHidden() + getId() + getLang() + getList() + getMax() + getMaxlength() + getMin() + getMultiple() + getName() + getOnabort() + getOnafterprint() 
 	open = open + getOnbeforeprint() + getOnbeforeunload() + getOnblur() + getOncanplay() + getOncanplaythrough() + getOnchange() + getOnclick() + getOncontextmenu() + getOncopy() + getOncuechange() + getOncut() + getOndblclick() + getOndrag() + getOndragend() + getOndragenter() + getOndragleave() + getOndragover() + getOndragstart() + getOndrop() + getOndurationchange() + getOnemptied() + getOnended() + getOnerror() + getOnfocus() + getOnhashchange() + getOninput() + getOninvalid() + getOnkeydown() + getOnkeypress() + getOnkeyup() + getOnload() + getOnloadeddata() + getOnloadedmetadata() 
 	open = open + getOnloadstart() + getOnmessage() + getOnmousedown() + getOnmousemove() + getOnmouseout() + getOnmouseover() + getOnmouseup() + getOnmousewheel() + getOnoffline() + getOnonline() + getOnpagehide() + getOnpageshow() + getOnpaste() + getOnpause() + getOnplay() + getOnplaying() + getOnpopstate() + getOnprogress() + getOnratechange() + getOnreset() + getOnresize() + getOnscroll() + getOnsearch() + getOnseeked() 
 	open = open + getOnseeking() + getOnselect() + getOnshow() + getOnstalled() + getOnstorage() + getOnsubmit() + getOnsuspend() + getOntimeupdate() + getOntoggle() + getOnunload() + getOnvolumechange() + getOnwaiting() + getOnwheel() + getPattern() + getPlaceholder() + getReadonly() + getRequired() + getSize() + getSpellcheck() + getSrc() + getStep() + getStyle() + getTabindex() + getTitle() + getTranslate() + getType() + getValue() + getWidth() + getOpene()

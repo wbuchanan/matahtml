@@ -12,19 +12,19 @@ class meta {
     private: 
 
     // Static/final variables 
-    static                       string                  scalar                  opens, opene, close, classargs
+    static       string  scalar  opens, opene, close, classargs
 
     // String scalar attributes 
-    string                                                       scalar                  html, htmlaccesskey, htmlcharset, htmlclass, htmlcontent, htmlcontenteditable, htmlcontextmenu, htmldata, htmldir, htmldraggable, htmldropzone, htmlhidden, htmlhttp_equiv, htmlid, htmllang, htmlname, htmlscheme, htmlspellcheck, htmlstyle, htmltabindex, htmltitle, htmltranslate
+    string               scalar          html, htmlaccesskey, htmlcharset, htmlclass, htmlcontent, htmlcontenteditable, htmlcontextmenu, htmldata, htmldir, htmldraggable, htmldropzone, htmlhidden, htmlhttp_equiv, htmlid, htmllang, htmlname, htmlscheme, htmlspellcheck, htmlstyle, htmltabindex, htmltitle, htmltranslate
 
     // Define public members/methods 
     public: 
 
     // Setter methods 
-    void                 new(), setClassArgs(), setAccesskey(), setCharset(), setClass(), setContent(), setContenteditable(), setContextmenu(), setData(), setDir(), setDraggable(), setDropzone(), setHidden(), setHttp_Equiv(), setId(), setLang(), setName(), setScheme(), setSpellcheck(), setStyle(), setTabindex(), setTitle(), setTranslate()
+    void         new(), setClassArgs(), setAccesskey(), setCharset(), setClass(), setContent(), setContenteditable(), setContextmenu(), setData(), setDir(), setDraggable(), setDropzone(), setHidden(), setHttp_Equiv(), setId(), setLang(), setName(), setScheme(), setSpellcheck(), setStyle(), setTabindex(), setTitle(), setTranslate()
 
     // Getter methods 
-    string                       scalar                  getOpens(), getOpene(), getClose(), print(), getClassArgs(), getAccesskey(), getCharset(), getClass(), getContent(), getContenteditable(), getContextmenu(), getData(), getDir(), getDraggable(), getDropzone(), getHidden(), getHttp_Equiv(), getId(), getLang(), getName(), getScheme(), getSpellcheck(), getStyle(), getTabindex(), getTitle(), getTranslate()
+    string               scalar          getOpens(), getOpene(), getClose(), print(), getClassArgs(), getAccesskey(), getCharset(), getClass(), getContent(), getContenteditable(), getContextmenu(), getData(), getDir(), getDraggable(), getDropzone(), getHidden(), getHttp_Equiv(), getId(), getLang(), getName(), getScheme(), getSpellcheck(), getStyle(), getTabindex(), getTitle(), getTranslate()
 
 } // End of class declaration
 
@@ -38,7 +38,7 @@ void meta::new() {
     this.opene = ">" 
 
     // Defines the closing tag for the class 
-    this.close = "</meta>" 
+    this.close = "" 
 
 } // End of class constructor method definition
 
@@ -54,7 +54,7 @@ void meta::setClassArgs(| string scalar classarguments) {
 void meta::setAccesskey(| string scalar methodarg) { 
 
     // Set the attribute accesskey for this class 
-    this.htmlaccesskey = `"accesskey = ""' + methodarg + `"" "'
+    this.htmlaccesskey = `"accesskey = ""' + methodarg + "" 
 
 } // End of Method accesskey declaration for class meta
 
@@ -62,7 +62,7 @@ void meta::setAccesskey(| string scalar methodarg) {
 void meta::setCharset(| string scalar methodarg) { 
 
     // Set the attribute charset for this class 
-    this.htmlcharset = `"charset = ""' + methodarg + `"" "'
+    this.htmlcharset = `"charset = ""' + methodarg + "" 
 
 } // End of Method charset declaration for class meta
 
@@ -70,7 +70,7 @@ void meta::setCharset(| string scalar methodarg) {
 void meta::setClass(| string scalar methodarg) { 
 
     // Set the attribute class for this class 
-    this.htmlclass = `"class = ""' + methodarg + `"" "'
+    this.htmlclass = `"class = ""' + methodarg + "" 
 
 } // End of Method class declaration for class meta
 
@@ -78,7 +78,7 @@ void meta::setClass(| string scalar methodarg) {
 void meta::setContent(| string scalar methodarg) { 
 
     // Set the attribute content for this class 
-    this.htmlcontent = `"content = ""' + methodarg + `"" "'
+    this.htmlcontent = `"content = ""' + methodarg + "" 
 
 } // End of Method content declaration for class meta
 
@@ -89,7 +89,7 @@ void meta::setContenteditable(| string scalar methodarg) {
     if (methodarg == "true" | methodarg == "false") { 
 
         // Set the attribute value 
-        this.htmlcontenteditable = `"contenteditable = ""' + methodarg + `"" "'
+        this.htmlcontenteditable = `"contenteditable = ""' + methodarg + "" 
 
     } // End IF Block for validated argument value 
 
@@ -99,7 +99,7 @@ void meta::setContenteditable(| string scalar methodarg) {
 void meta::setContextmenu(| string scalar methodarg) { 
 
     // Set the attribute contextmenu for this class 
-    this.htmlcontextmenu = `"contextmenu = ""' + methodarg + `"" "'
+    this.htmlcontextmenu = `"contextmenu = ""' + methodarg + "" 
 
 } // End of Method contextmenu declaration for class meta
 
@@ -107,7 +107,7 @@ void meta::setContextmenu(| string scalar methodarg) {
 void meta::setData(| string scalar methodarg) { 
 
     // Set the attribute data for this class 
-    this.htmldata = `"data = ""' + methodarg + `"" "'
+    this.htmldata = `"data = ""' + methodarg + "" 
 
 } // End of Method data declaration for class meta
 
@@ -118,7 +118,7 @@ void meta::setDir(| string scalar methodarg) {
     if (methodarg == "ltr" | methodarg == "rtl" | methodarg == "auto") { 
 
         // Set the attribute value 
-        this.htmldir = `"dir = ""' + methodarg + `"" "'
+        this.htmldir = `"dir = ""' + methodarg + "" 
 
     } // End IF Block for validated argument value 
 
@@ -131,7 +131,7 @@ void meta::setDraggable(| string scalar methodarg) {
     if (methodarg == "true" | methodarg == "false" | methodarg == "auto") { 
 
         // Set the attribute value 
-        this.htmldraggable = `"draggable = ""' + methodarg + `"" "'
+        this.htmldraggable = `"draggable = ""' + methodarg + "" 
 
     } // End IF Block for validated argument value 
 
@@ -144,7 +144,7 @@ void meta::setDropzone(| string scalar methodarg) {
     if (methodarg == "copy" | methodarg == "move" | methodarg == "link") { 
 
         // Set the attribute value 
-        this.htmldropzone = `"dropzone = ""' + methodarg + `"" "'
+        this.htmldropzone = `"dropzone = ""' + methodarg + "" 
 
     } // End IF Block for validated argument value 
 
@@ -154,7 +154,7 @@ void meta::setDropzone(| string scalar methodarg) {
 void meta::setHidden(| string scalar methodarg) { 
 
     // Set the attribute hidden for this class 
-    this.htmlhidden = `"hidden = ""' + methodarg + `"" "'
+    this.htmlhidden = `"hidden = ""' + methodarg + "" 
 
 } // End of Method hidden declaration for class meta
 
@@ -165,7 +165,7 @@ void meta::setHttp_Equiv(| string scalar methodarg) {
     if (methodarg == "content-type" | methodarg == "default-style" | methodarg == "refresh") { 
 
         // Set the attribute value 
-        this.htmlhttp_equiv = `"http-equiv = ""' + methodarg + `"" "'
+        this.htmlhttp_equiv = `"http-equiv = ""' + methodarg + "" 
 
     } // End IF Block for validated argument value 
 
@@ -175,7 +175,7 @@ void meta::setHttp_Equiv(| string scalar methodarg) {
 void meta::setId(| string scalar methodarg) { 
 
     // Set the attribute id for this class 
-    this.htmlid = `"id = ""' + methodarg + `"" "'
+    this.htmlid = `"id = ""' + methodarg + "" 
 
 } // End of Method id declaration for class meta
 
@@ -183,7 +183,7 @@ void meta::setId(| string scalar methodarg) {
 void meta::setLang(| string scalar methodarg) { 
 
     // Set the attribute lang for this class 
-    this.htmllang = `"lang = ""' + methodarg + `"" "'
+    this.htmllang = `"lang = ""' + methodarg + "" 
 
 } // End of Method lang declaration for class meta
 
@@ -194,7 +194,7 @@ void meta::setName(| string scalar methodarg) {
     if (methodarg == "application-name" | methodarg == "author" | methodarg == "description" | methodarg == "generator" | methodarg == "keywords") { 
 
         // Set the attribute value 
-        this.htmlname = `"name = ""' + methodarg + `"" "'
+        this.htmlname = `"name = ""' + methodarg + "" 
 
     } // End IF Block for validated argument value 
 
@@ -204,7 +204,7 @@ void meta::setName(| string scalar methodarg) {
 void meta::setScheme(| string scalar methodarg) { 
 
     // Set the attribute scheme for this class 
-    this.htmlscheme = `"scheme = ""' + methodarg + `"" "'
+    this.htmlscheme = `"scheme = ""' + methodarg + "" 
 
 } // End of Method scheme declaration for class meta
 
@@ -215,7 +215,7 @@ void meta::setSpellcheck(| string scalar methodarg) {
     if (methodarg == "true" | methodarg == "false") { 
 
         // Set the attribute value 
-        this.htmlspellcheck = `"spellcheck = ""' + methodarg + `"" "'
+        this.htmlspellcheck = `"spellcheck = ""' + methodarg + "" 
 
     } // End IF Block for validated argument value 
 
@@ -225,7 +225,7 @@ void meta::setSpellcheck(| string scalar methodarg) {
 void meta::setStyle(| string scalar methodarg) { 
 
     // Set the attribute style for this class 
-    this.htmlstyle = `"style = ""' + methodarg + `"" "'
+    this.htmlstyle = `"style = ""' + methodarg + "" 
 
 } // End of Method style declaration for class meta
 
@@ -233,7 +233,7 @@ void meta::setStyle(| string scalar methodarg) {
 void meta::setTabindex(| string scalar methodarg) { 
 
     // Set the attribute tabindex for this class 
-    this.htmltabindex = `"tabindex = ""' + methodarg + `"" "'
+    this.htmltabindex = `"tabindex = ""' + methodarg + "" 
 
 } // End of Method tabindex declaration for class meta
 
@@ -241,7 +241,7 @@ void meta::setTabindex(| string scalar methodarg) {
 void meta::setTitle(| string scalar methodarg) { 
 
     // Set the attribute title for this class 
-    this.htmltitle = `"title = ""' + methodarg + `"" "'
+    this.htmltitle = `"title = ""' + methodarg + "" 
 
 } // End of Method title declaration for class meta
 
@@ -252,7 +252,7 @@ void meta::setTranslate(| string scalar methodarg) {
     if (methodarg == "yes" | methodarg == "no") { 
 
         // Set the attribute value 
-        this.htmltranslate = `"translate = ""' + methodarg + `"" "'
+        this.htmltranslate = `"translate = ""' + methodarg + "" 
 
     } // End IF Block for validated argument value 
 
@@ -465,16 +465,10 @@ string scalar meta::print() {
     string scalar open, args, close 
 
     // Create opening string 
-    open = getOpens() + getOpens() + getOpene() + getClose() + print() + getClassArgs() + getAccesskey() + getCharset() + getClass() + getContent() + getContenteditable() + getContextmenu() + getData() + getDir() + getDraggable() + getDropzone() + getHidden() + getHttp_Equiv() + getId() + getLang() + getName() + getScheme() + getSpellcheck() + getStyle() + getTabindex() + getTitle() + getTranslate() + getOpene()
-
-    // Get class arguments 
-    args = getClassArgs() 
-
-    // Get closing tag 
-    close = getClose() 
+    open = getOpens() + getAccesskey() + getCharset() + getClass() + getContent() + getContenteditable() + getContextmenu() + getData() + getDir() + getDraggable() + getDropzone() + getHidden() + getHttp_Equiv() + getId() + getLang() + getName() + getScheme() + getSpellcheck() + getStyle() + getTabindex() + getTitle() + getTranslate() + getOpene()
 
     // Return the complete HTML string 
-    return(open + args + close) 
+    return(open) 
 
 } // End of print method for class meta 
 

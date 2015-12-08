@@ -12,19 +12,19 @@ class form {
     private: 
 
     // Static/final variables 
-    static                       string                  scalar                  opens, opene, close, classargs
+    static       string  scalar  opens, opene, close, classargs
 
     // String scalar attributes 
-    string                                                       scalar                  htmlaccept, htmlaccept_charset, htmlaccesskey, htmlaction, htmlautocomplete, htmlclass, htmlcontenteditable, htmlcontextmenu, htmldata, htmldir, htmldraggable, htmldropzone, htmlenctype, htmlhidden, htmlid, htmllang, htmlmethod, htmlname, htmlnovalidate, htmlonabort, htmlonafterprint, htmlonbeforeprint, htmlonbeforeunload, htmlonblur, htmloncanplay, htmloncanplaythrough, htmlonchange, htmlonclick, htmloncontextmenu, htmloncopy, htmloncuechange, htmloncut, htmlondblclick, htmlondrag, htmlondragend, htmlondragenter, htmlondragleave, htmlondragover, htmlondragstart, htmlondrop, htmlondurationchange, htmlonemptied, htmlonended, htmlonerror, htmlonfocus, htmlonhashchange, htmloninput, htmloninvalid, htmlonkeydown, htmlonkeypress, htmlonkeyup, htmlonload, htmlonloadeddata, htmlonloadedmetadata, htmlonloadstart, htmlonmessage, htmlonmousedown, htmlonmousemove, htmlonmouseout, htmlonmouseover, htmlonmouseup, htmlonmousewheel, htmlonoffline, htmlononline, htmlonpagehide, htmlonpageshow, htmlonpaste, htmlonpause, htmlonplay, htmlonplaying, htmlonpopstate, htmlonprogress, htmlonratechange, htmlonreset, htmlonresize, htmlonscroll, htmlonsearch, htmlonseeked, htmlonseeking, htmlonselect, htmlonshow, htmlonstalled, htmlonstorage, htmlonsubmit, htmlonsuspend, htmlontimeupdate, htmlontoggle, htmlonunload, htmlonvolumechange, htmlonwaiting, htmlonwheel, htmlspellcheck, htmlstyle, htmltabindex, htmltarget, htmltitle, htmltranslate
+    string               scalar          htmlaccept, htmlaccept_charset, htmlaccesskey, htmlaction, htmlautocomplete, htmlclass, htmlcontenteditable, htmlcontextmenu, htmldata, htmldir, htmldraggable, htmldropzone, htmlenctype, htmlhidden, htmlid, htmllang, htmlmethod, htmlname, htmlnovalidate, htmlonabort, htmlonafterprint, htmlonbeforeprint, htmlonbeforeunload, htmlonblur, htmloncanplay, htmloncanplaythrough, htmlonchange, htmlonclick, htmloncontextmenu, htmloncopy, htmloncuechange, htmloncut, htmlondblclick, htmlondrag, htmlondragend, htmlondragenter, htmlondragleave, htmlondragover, htmlondragstart, htmlondrop, htmlondurationchange, htmlonemptied, htmlonended, htmlonerror, htmlonfocus, htmlonhashchange, htmloninput, htmloninvalid, htmlonkeydown, htmlonkeypress, htmlonkeyup, htmlonload, htmlonloadeddata, htmlonloadedmetadata, htmlonloadstart, htmlonmessage, htmlonmousedown, htmlonmousemove, htmlonmouseout, htmlonmouseover, htmlonmouseup, htmlonmousewheel, htmlonoffline, htmlononline, htmlonpagehide, htmlonpageshow, htmlonpaste, htmlonpause, htmlonplay, htmlonplaying, htmlonpopstate, htmlonprogress, htmlonratechange, htmlonreset, htmlonresize, htmlonscroll, htmlonsearch, htmlonseeked, htmlonseeking, htmlonselect, htmlonshow, htmlonstalled, htmlonstorage, htmlonsubmit, htmlonsuspend, htmlontimeupdate, htmlontoggle, htmlonunload, htmlonvolumechange, htmlonwaiting, htmlonwheel, htmlspellcheck, htmlstyle, htmltabindex, htmltarget, htmltitle, htmltranslate
 
     // Define public members/methods 
     public: 
 
     // Setter methods 
-    void                 new(), setClassArgs(), setAccept(), setAccept_Charset(), setAccesskey(), setAction(), setAutocomplete(), setClass(), setContenteditable(), setContextmenu(), setData(), setDir(), setDraggable(), setDropzone(), setEnctype(), setHidden(), setId(), setLang(), setMethod(), setName(), setNovalidate(), setOnabort(), setOnafterprint(), setOnbeforeprint(), setOnbeforeunload(), setOnblur(), setOncanplay(), setOncanplaythrough(), setOnchange(), setOnclick(), setOncontextmenu(), setOncopy(), setOncuechange(), setOncut(), setOndblclick(), setOndrag(), setOndragend(), setOndragenter(), setOndragleave(), setOndragover(), setOndragstart(), setOndrop(), setOndurationchange(), setOnemptied(), setOnended(), setOnerror(), setOnfocus(), setOnhashchange(), setOninput(), setOninvalid(), setOnkeydown(), setOnkeypress(), setOnkeyup(), setOnload(), setOnloadeddata(), setOnloadedmetadata(), setOnloadstart(), setOnmessage(), setOnmousedown(), setOnmousemove(), setOnmouseout(), setOnmouseover(), setOnmouseup(), setOnmousewheel(), setOnoffline(), setOnonline(), setOnpagehide(), setOnpageshow(), setOnpaste(), setOnpause(), setOnplay(), setOnplaying(), setOnpopstate(), setOnprogress(), setOnratechange(), setOnreset(), setOnresize(), setOnscroll(), setOnsearch(), setOnseeked(), setOnseeking(), setOnselect(), setOnshow(), setOnstalled(), setOnstorage(), setOnsubmit(), setOnsuspend(), setOntimeupdate(), setOntoggle(), setOnunload(), setOnvolumechange(), setOnwaiting(), setOnwheel(), setSpellcheck(), setStyle(), setTabindex(), setTarget(), setTitle(), setTranslate()
+    void         new(), setClassArgs(), setAccept(), setAccept_Charset(), setAccesskey(), setAction(), setAutocomplete(), setClass(), setContenteditable(), setContextmenu(), setData(), setDir(), setDraggable(), setDropzone(), setEnctype(), setHidden(), setId(), setLang(), setMethod(), setName(), setNovalidate(), setOnabort(), setOnafterprint(), setOnbeforeprint(), setOnbeforeunload(), setOnblur(), setOncanplay(), setOncanplaythrough(), setOnchange(), setOnclick(), setOncontextmenu(), setOncopy(), setOncuechange(), setOncut(), setOndblclick(), setOndrag(), setOndragend(), setOndragenter(), setOndragleave(), setOndragover(), setOndragstart(), setOndrop(), setOndurationchange(), setOnemptied(), setOnended(), setOnerror(), setOnfocus(), setOnhashchange(), setOninput(), setOninvalid(), setOnkeydown(), setOnkeypress(), setOnkeyup(), setOnload(), setOnloadeddata(), setOnloadedmetadata(), setOnloadstart(), setOnmessage(), setOnmousedown(), setOnmousemove(), setOnmouseout(), setOnmouseover(), setOnmouseup(), setOnmousewheel(), setOnoffline(), setOnonline(), setOnpagehide(), setOnpageshow(), setOnpaste(), setOnpause(), setOnplay(), setOnplaying(), setOnpopstate(), setOnprogress(), setOnratechange(), setOnreset(), setOnresize(), setOnscroll(), setOnsearch(), setOnseeked(), setOnseeking(), setOnselect(), setOnshow(), setOnstalled(), setOnstorage(), setOnsubmit(), setOnsuspend(), setOntimeupdate(), setOntoggle(), setOnunload(), setOnvolumechange(), setOnwaiting(), setOnwheel(), setSpellcheck(), setStyle(), setTabindex(), setTarget(), setTitle(), setTranslate()
 
     // Getter methods 
-    string                       scalar                  getOpens(), getOpene(), getClose(), print(), getClassArgs(), getAccept(), getAccept_Charset(), getAccesskey(), getAction(), getAutocomplete(), getClass(), getContenteditable(), getContextmenu(), getData(), getDir(), getDraggable(), getDropzone(), getEnctype(), getHidden(), getId(), getLang(), getMethod(), getName(), getNovalidate(), getOnabort(), getOnafterprint(), getOnbeforeprint(), getOnbeforeunload(), getOnblur(), getOncanplay(), getOncanplaythrough(), getOnchange(), getOnclick(), getOncontextmenu(), getOncopy(), getOncuechange(), getOncut(), getOndblclick(), getOndrag(), getOndragend(), getOndragenter(), getOndragleave(), getOndragover(), getOndragstart(), getOndrop(), getOndurationchange(), getOnemptied(), getOnended(), getOnerror(), getOnfocus(), getOnhashchange(), getOninput(), getOninvalid(), getOnkeydown(), getOnkeypress(), getOnkeyup(), getOnload(), getOnloadeddata(), getOnloadedmetadata(), getOnloadstart(), getOnmessage(), getOnmousedown(), getOnmousemove(), getOnmouseout(), getOnmouseover(), getOnmouseup(), getOnmousewheel(), getOnoffline(), getOnonline(), getOnpagehide(), getOnpageshow(), getOnpaste(), getOnpause(), getOnplay(), getOnplaying(), getOnpopstate(), getOnprogress(), getOnratechange(), getOnreset(), getOnresize(), getOnscroll(), getOnsearch(), getOnseeked(), getOnseeking(), getOnselect(), getOnshow(), getOnstalled(), getOnstorage(), getOnsubmit(), getOnsuspend(), getOntimeupdate(), getOntoggle(), getOnunload(), getOnvolumechange(), getOnwaiting(), getOnwheel(), getSpellcheck(), getStyle(), getTabindex(), getTarget(), getTitle(), getTranslate()
+    string               scalar          getOpens(), getOpene(), getClose(), print(), getClassArgs(), getAccept(), getAccept_Charset(), getAccesskey(), getAction(), getAutocomplete(), getClass(), getContenteditable(), getContextmenu(), getData(), getDir(), getDraggable(), getDropzone(), getEnctype(), getHidden(), getId(), getLang(), getMethod(), getName(), getNovalidate(), getOnabort(), getOnafterprint(), getOnbeforeprint(), getOnbeforeunload(), getOnblur(), getOncanplay(), getOncanplaythrough(), getOnchange(), getOnclick(), getOncontextmenu(), getOncopy(), getOncuechange(), getOncut(), getOndblclick(), getOndrag(), getOndragend(), getOndragenter(), getOndragleave(), getOndragover(), getOndragstart(), getOndrop(), getOndurationchange(), getOnemptied(), getOnended(), getOnerror(), getOnfocus(), getOnhashchange(), getOninput(), getOninvalid(), getOnkeydown(), getOnkeypress(), getOnkeyup(), getOnload(), getOnloadeddata(), getOnloadedmetadata(), getOnloadstart(), getOnmessage(), getOnmousedown(), getOnmousemove(), getOnmouseout(), getOnmouseover(), getOnmouseup(), getOnmousewheel(), getOnoffline(), getOnonline(), getOnpagehide(), getOnpageshow(), getOnpaste(), getOnpause(), getOnplay(), getOnplaying(), getOnpopstate(), getOnprogress(), getOnratechange(), getOnreset(), getOnresize(), getOnscroll(), getOnsearch(), getOnseeked(), getOnseeking(), getOnselect(), getOnshow(), getOnstalled(), getOnstorage(), getOnsubmit(), getOnsuspend(), getOntimeupdate(), getOntoggle(), getOnunload(), getOnvolumechange(), getOnwaiting(), getOnwheel(), getSpellcheck(), getStyle(), getTabindex(), getTarget(), getTitle(), getTranslate()
 
 } // End of class declaration
 
@@ -54,7 +54,7 @@ void form::setClassArgs(| string scalar classarguments) {
 void form::setAccept(| string scalar methodarg) { 
 
     // Set the attribute accept for this class 
-    this.htmlaccept = `"accept = ""' + methodarg + `"" "'
+    this.htmlaccept = `"accept = ""' + methodarg + "" 
 
 } // End of Method accept declaration for class form
 
@@ -62,7 +62,7 @@ void form::setAccept(| string scalar methodarg) {
 void form::setAccept_Charset(| string scalar methodarg) { 
 
     // Set the attribute accept_charset for this class 
-    this.htmlaccept_charset = `"accept-charset = ""' + methodarg + `"" "'
+    this.htmlaccept_charset = `"accept-charset = ""' + methodarg + "" 
 
 } // End of Method accept_charset declaration for class form
 
@@ -70,7 +70,7 @@ void form::setAccept_Charset(| string scalar methodarg) {
 void form::setAccesskey(| string scalar methodarg) { 
 
     // Set the attribute accesskey for this class 
-    this.htmlaccesskey = `"accesskey = ""' + methodarg + `"" "'
+    this.htmlaccesskey = `"accesskey = ""' + methodarg + "" 
 
 } // End of Method accesskey declaration for class form
 
@@ -78,7 +78,7 @@ void form::setAccesskey(| string scalar methodarg) {
 void form::setAction(| string scalar methodarg) { 
 
     // Set the attribute action for this class 
-    this.htmlaction = `"action = ""' + methodarg + `"" "'
+    this.htmlaction = `"action = ""' + methodarg + "" 
 
 } // End of Method action declaration for class form
 
@@ -86,7 +86,7 @@ void form::setAction(| string scalar methodarg) {
 void form::setAutocomplete(| string scalar methodarg) { 
 
     // Set the attribute autocomplete for this class 
-    this.htmlautocomplete = `"autocomplete = ""' + methodarg + `"" "'
+    this.htmlautocomplete = `"autocomplete = ""' + methodarg + "" 
 
 } // End of Method autocomplete declaration for class form
 
@@ -94,7 +94,7 @@ void form::setAutocomplete(| string scalar methodarg) {
 void form::setClass(| string scalar methodarg) { 
 
     // Set the attribute class for this class 
-    this.htmlclass = `"class = ""' + methodarg + `"" "'
+    this.htmlclass = `"class = ""' + methodarg + "" 
 
 } // End of Method class declaration for class form
 
@@ -105,7 +105,7 @@ void form::setContenteditable(| string scalar methodarg) {
     if (methodarg == "true" | methodarg == "false") { 
 
         // Set the attribute value 
-        this.htmlcontenteditable = `"contenteditable = ""' + methodarg + `"" "'
+        this.htmlcontenteditable = `"contenteditable = ""' + methodarg + "" 
 
     } // End IF Block for validated argument value 
 
@@ -115,7 +115,7 @@ void form::setContenteditable(| string scalar methodarg) {
 void form::setContextmenu(| string scalar methodarg) { 
 
     // Set the attribute contextmenu for this class 
-    this.htmlcontextmenu = `"contextmenu = ""' + methodarg + `"" "'
+    this.htmlcontextmenu = `"contextmenu = ""' + methodarg + "" 
 
 } // End of Method contextmenu declaration for class form
 
@@ -123,7 +123,7 @@ void form::setContextmenu(| string scalar methodarg) {
 void form::setData(| string scalar methodarg) { 
 
     // Set the attribute data for this class 
-    this.htmldata = `"data = ""' + methodarg + `"" "'
+    this.htmldata = `"data = ""' + methodarg + "" 
 
 } // End of Method data declaration for class form
 
@@ -134,7 +134,7 @@ void form::setDir(| string scalar methodarg) {
     if (methodarg == "ltr" | methodarg == "rtl" | methodarg == "auto") { 
 
         // Set the attribute value 
-        this.htmldir = `"dir = ""' + methodarg + `"" "'
+        this.htmldir = `"dir = ""' + methodarg + "" 
 
     } // End IF Block for validated argument value 
 
@@ -147,7 +147,7 @@ void form::setDraggable(| string scalar methodarg) {
     if (methodarg == "true" | methodarg == "false" | methodarg == "auto") { 
 
         // Set the attribute value 
-        this.htmldraggable = `"draggable = ""' + methodarg + `"" "'
+        this.htmldraggable = `"draggable = ""' + methodarg + "" 
 
     } // End IF Block for validated argument value 
 
@@ -160,7 +160,7 @@ void form::setDropzone(| string scalar methodarg) {
     if (methodarg == "copy" | methodarg == "move" | methodarg == "link") { 
 
         // Set the attribute value 
-        this.htmldropzone = `"dropzone = ""' + methodarg + `"" "'
+        this.htmldropzone = `"dropzone = ""' + methodarg + "" 
 
     } // End IF Block for validated argument value 
 
@@ -173,7 +173,7 @@ void form::setEnctype(| string scalar methodarg) {
     if (methodarg == "application/x-www-form-urlencoded" | methodarg == "multipart/form-data" | methodarg == "text/plain") { 
 
         // Set the attribute value 
-        this.htmlenctype = `"enctype = ""' + methodarg + `"" "'
+        this.htmlenctype = `"enctype = ""' + methodarg + "" 
 
     } // End IF Block for validated argument value 
 
@@ -183,7 +183,7 @@ void form::setEnctype(| string scalar methodarg) {
 void form::setHidden(| string scalar methodarg) { 
 
     // Set the attribute hidden for this class 
-    this.htmlhidden = `"hidden = ""' + methodarg + `"" "'
+    this.htmlhidden = `"hidden = ""' + methodarg + "" 
 
 } // End of Method hidden declaration for class form
 
@@ -191,7 +191,7 @@ void form::setHidden(| string scalar methodarg) {
 void form::setId(| string scalar methodarg) { 
 
     // Set the attribute id for this class 
-    this.htmlid = `"id = ""' + methodarg + `"" "'
+    this.htmlid = `"id = ""' + methodarg + "" 
 
 } // End of Method id declaration for class form
 
@@ -199,7 +199,7 @@ void form::setId(| string scalar methodarg) {
 void form::setLang(| string scalar methodarg) { 
 
     // Set the attribute lang for this class 
-    this.htmllang = `"lang = ""' + methodarg + `"" "'
+    this.htmllang = `"lang = ""' + methodarg + "" 
 
 } // End of Method lang declaration for class form
 
@@ -210,7 +210,7 @@ void form::setMethod(| string scalar methodarg) {
     if (methodarg == "get" | methodarg == "post") { 
 
         // Set the attribute value 
-        this.htmlmethod = `"method = ""' + methodarg + `"" "'
+        this.htmlmethod = `"method = ""' + methodarg + "" 
 
     } // End IF Block for validated argument value 
 
@@ -220,7 +220,7 @@ void form::setMethod(| string scalar methodarg) {
 void form::setName(| string scalar methodarg) { 
 
     // Set the attribute name for this class 
-    this.htmlname = `"name = ""' + methodarg + `"" "'
+    this.htmlname = `"name = ""' + methodarg + "" 
 
 } // End of Method name declaration for class form
 
@@ -228,7 +228,7 @@ void form::setName(| string scalar methodarg) {
 void form::setNovalidate(| string scalar methodarg) { 
 
     // Set the attribute novalidate for this class 
-    this.htmlnovalidate = `"novalidate = ""' + methodarg + `"" "'
+    this.htmlnovalidate = `"novalidate = ""' + methodarg + "" 
 
 } // End of Method novalidate declaration for class form
 
@@ -236,7 +236,7 @@ void form::setNovalidate(| string scalar methodarg) {
 void form::setOnabort(| string scalar methodarg) { 
 
     // Set the attribute onabort for this class 
-    this.htmlonabort = `"onabort = ""' + methodarg + `"" "'
+    this.htmlonabort = `"onabort = ""' + methodarg + "" 
 
 } // End of Method onabort declaration for class form
 
@@ -244,7 +244,7 @@ void form::setOnabort(| string scalar methodarg) {
 void form::setOnafterprint(| string scalar methodarg) { 
 
     // Set the attribute onafterprint for this class 
-    this.htmlonafterprint = `"onafterprint = ""' + methodarg + `"" "'
+    this.htmlonafterprint = `"onafterprint = ""' + methodarg + "" 
 
 } // End of Method onafterprint declaration for class form
 
@@ -252,7 +252,7 @@ void form::setOnafterprint(| string scalar methodarg) {
 void form::setOnbeforeprint(| string scalar methodarg) { 
 
     // Set the attribute onbeforeprint for this class 
-    this.htmlonbeforeprint = `"onbeforeprint = ""' + methodarg + `"" "'
+    this.htmlonbeforeprint = `"onbeforeprint = ""' + methodarg + "" 
 
 } // End of Method onbeforeprint declaration for class form
 
@@ -260,7 +260,7 @@ void form::setOnbeforeprint(| string scalar methodarg) {
 void form::setOnbeforeunload(| string scalar methodarg) { 
 
     // Set the attribute onbeforeunload for this class 
-    this.htmlonbeforeunload = `"onbeforeunload = ""' + methodarg + `"" "'
+    this.htmlonbeforeunload = `"onbeforeunload = ""' + methodarg + "" 
 
 } // End of Method onbeforeunload declaration for class form
 
@@ -268,7 +268,7 @@ void form::setOnbeforeunload(| string scalar methodarg) {
 void form::setOnblur(| string scalar methodarg) { 
 
     // Set the attribute onblur for this class 
-    this.htmlonblur = `"onblur = ""' + methodarg + `"" "'
+    this.htmlonblur = `"onblur = ""' + methodarg + "" 
 
 } // End of Method onblur declaration for class form
 
@@ -276,7 +276,7 @@ void form::setOnblur(| string scalar methodarg) {
 void form::setOncanplay(| string scalar methodarg) { 
 
     // Set the attribute oncanplay for this class 
-    this.htmloncanplay = `"oncanplay = ""' + methodarg + `"" "'
+    this.htmloncanplay = `"oncanplay = ""' + methodarg + "" 
 
 } // End of Method oncanplay declaration for class form
 
@@ -284,7 +284,7 @@ void form::setOncanplay(| string scalar methodarg) {
 void form::setOncanplaythrough(| string scalar methodarg) { 
 
     // Set the attribute oncanplaythrough for this class 
-    this.htmloncanplaythrough = `"oncanplaythrough = ""' + methodarg + `"" "'
+    this.htmloncanplaythrough = `"oncanplaythrough = ""' + methodarg + "" 
 
 } // End of Method oncanplaythrough declaration for class form
 
@@ -292,7 +292,7 @@ void form::setOncanplaythrough(| string scalar methodarg) {
 void form::setOnchange(| string scalar methodarg) { 
 
     // Set the attribute onchange for this class 
-    this.htmlonchange = `"onchange = ""' + methodarg + `"" "'
+    this.htmlonchange = `"onchange = ""' + methodarg + "" 
 
 } // End of Method onchange declaration for class form
 
@@ -300,7 +300,7 @@ void form::setOnchange(| string scalar methodarg) {
 void form::setOnclick(| string scalar methodarg) { 
 
     // Set the attribute onclick for this class 
-    this.htmlonclick = `"onclick = ""' + methodarg + `"" "'
+    this.htmlonclick = `"onclick = ""' + methodarg + "" 
 
 } // End of Method onclick declaration for class form
 
@@ -308,7 +308,7 @@ void form::setOnclick(| string scalar methodarg) {
 void form::setOncontextmenu(| string scalar methodarg) { 
 
     // Set the attribute oncontextmenu for this class 
-    this.htmloncontextmenu = `"oncontextmenu = ""' + methodarg + `"" "'
+    this.htmloncontextmenu = `"oncontextmenu = ""' + methodarg + "" 
 
 } // End of Method oncontextmenu declaration for class form
 
@@ -316,7 +316,7 @@ void form::setOncontextmenu(| string scalar methodarg) {
 void form::setOncopy(| string scalar methodarg) { 
 
     // Set the attribute oncopy for this class 
-    this.htmloncopy = `"oncopy = ""' + methodarg + `"" "'
+    this.htmloncopy = `"oncopy = ""' + methodarg + "" 
 
 } // End of Method oncopy declaration for class form
 
@@ -324,7 +324,7 @@ void form::setOncopy(| string scalar methodarg) {
 void form::setOncuechange(| string scalar methodarg) { 
 
     // Set the attribute oncuechange for this class 
-    this.htmloncuechange = `"oncuechange = ""' + methodarg + `"" "'
+    this.htmloncuechange = `"oncuechange = ""' + methodarg + "" 
 
 } // End of Method oncuechange declaration for class form
 
@@ -332,7 +332,7 @@ void form::setOncuechange(| string scalar methodarg) {
 void form::setOncut(| string scalar methodarg) { 
 
     // Set the attribute oncut for this class 
-    this.htmloncut = `"oncut = ""' + methodarg + `"" "'
+    this.htmloncut = `"oncut = ""' + methodarg + "" 
 
 } // End of Method oncut declaration for class form
 
@@ -340,7 +340,7 @@ void form::setOncut(| string scalar methodarg) {
 void form::setOndblclick(| string scalar methodarg) { 
 
     // Set the attribute ondblclick for this class 
-    this.htmlondblclick = `"ondblclick = ""' + methodarg + `"" "'
+    this.htmlondblclick = `"ondblclick = ""' + methodarg + "" 
 
 } // End of Method ondblclick declaration for class form
 
@@ -348,7 +348,7 @@ void form::setOndblclick(| string scalar methodarg) {
 void form::setOndrag(| string scalar methodarg) { 
 
     // Set the attribute ondrag for this class 
-    this.htmlondrag = `"ondrag = ""' + methodarg + `"" "'
+    this.htmlondrag = `"ondrag = ""' + methodarg + "" 
 
 } // End of Method ondrag declaration for class form
 
@@ -356,7 +356,7 @@ void form::setOndrag(| string scalar methodarg) {
 void form::setOndragend(| string scalar methodarg) { 
 
     // Set the attribute ondragend for this class 
-    this.htmlondragend = `"ondragend = ""' + methodarg + `"" "'
+    this.htmlondragend = `"ondragend = ""' + methodarg + "" 
 
 } // End of Method ondragend declaration for class form
 
@@ -364,7 +364,7 @@ void form::setOndragend(| string scalar methodarg) {
 void form::setOndragenter(| string scalar methodarg) { 
 
     // Set the attribute ondragenter for this class 
-    this.htmlondragenter = `"ondragenter = ""' + methodarg + `"" "'
+    this.htmlondragenter = `"ondragenter = ""' + methodarg + "" 
 
 } // End of Method ondragenter declaration for class form
 
@@ -372,7 +372,7 @@ void form::setOndragenter(| string scalar methodarg) {
 void form::setOndragleave(| string scalar methodarg) { 
 
     // Set the attribute ondragleave for this class 
-    this.htmlondragleave = `"ondragleave = ""' + methodarg + `"" "'
+    this.htmlondragleave = `"ondragleave = ""' + methodarg + "" 
 
 } // End of Method ondragleave declaration for class form
 
@@ -380,7 +380,7 @@ void form::setOndragleave(| string scalar methodarg) {
 void form::setOndragover(| string scalar methodarg) { 
 
     // Set the attribute ondragover for this class 
-    this.htmlondragover = `"ondragover = ""' + methodarg + `"" "'
+    this.htmlondragover = `"ondragover = ""' + methodarg + "" 
 
 } // End of Method ondragover declaration for class form
 
@@ -388,7 +388,7 @@ void form::setOndragover(| string scalar methodarg) {
 void form::setOndragstart(| string scalar methodarg) { 
 
     // Set the attribute ondragstart for this class 
-    this.htmlondragstart = `"ondragstart = ""' + methodarg + `"" "'
+    this.htmlondragstart = `"ondragstart = ""' + methodarg + "" 
 
 } // End of Method ondragstart declaration for class form
 
@@ -396,7 +396,7 @@ void form::setOndragstart(| string scalar methodarg) {
 void form::setOndrop(| string scalar methodarg) { 
 
     // Set the attribute ondrop for this class 
-    this.htmlondrop = `"ondrop = ""' + methodarg + `"" "'
+    this.htmlondrop = `"ondrop = ""' + methodarg + "" 
 
 } // End of Method ondrop declaration for class form
 
@@ -404,7 +404,7 @@ void form::setOndrop(| string scalar methodarg) {
 void form::setOndurationchange(| string scalar methodarg) { 
 
     // Set the attribute ondurationchange for this class 
-    this.htmlondurationchange = `"ondurationchange = ""' + methodarg + `"" "'
+    this.htmlondurationchange = `"ondurationchange = ""' + methodarg + "" 
 
 } // End of Method ondurationchange declaration for class form
 
@@ -412,7 +412,7 @@ void form::setOndurationchange(| string scalar methodarg) {
 void form::setOnemptied(| string scalar methodarg) { 
 
     // Set the attribute onemptied for this class 
-    this.htmlonemptied = `"onemptied = ""' + methodarg + `"" "'
+    this.htmlonemptied = `"onemptied = ""' + methodarg + "" 
 
 } // End of Method onemptied declaration for class form
 
@@ -420,7 +420,7 @@ void form::setOnemptied(| string scalar methodarg) {
 void form::setOnended(| string scalar methodarg) { 
 
     // Set the attribute onended for this class 
-    this.htmlonended = `"onended = ""' + methodarg + `"" "'
+    this.htmlonended = `"onended = ""' + methodarg + "" 
 
 } // End of Method onended declaration for class form
 
@@ -428,7 +428,7 @@ void form::setOnended(| string scalar methodarg) {
 void form::setOnerror(| string scalar methodarg) { 
 
     // Set the attribute onerror for this class 
-    this.htmlonerror = `"onerror = ""' + methodarg + `"" "'
+    this.htmlonerror = `"onerror = ""' + methodarg + "" 
 
 } // End of Method onerror declaration for class form
 
@@ -436,7 +436,7 @@ void form::setOnerror(| string scalar methodarg) {
 void form::setOnfocus(| string scalar methodarg) { 
 
     // Set the attribute onfocus for this class 
-    this.htmlonfocus = `"onfocus = ""' + methodarg + `"" "'
+    this.htmlonfocus = `"onfocus = ""' + methodarg + "" 
 
 } // End of Method onfocus declaration for class form
 
@@ -444,7 +444,7 @@ void form::setOnfocus(| string scalar methodarg) {
 void form::setOnhashchange(| string scalar methodarg) { 
 
     // Set the attribute onhashchange for this class 
-    this.htmlonhashchange = `"onhashchange = ""' + methodarg + `"" "'
+    this.htmlonhashchange = `"onhashchange = ""' + methodarg + "" 
 
 } // End of Method onhashchange declaration for class form
 
@@ -452,7 +452,7 @@ void form::setOnhashchange(| string scalar methodarg) {
 void form::setOninput(| string scalar methodarg) { 
 
     // Set the attribute oninput for this class 
-    this.htmloninput = `"oninput = ""' + methodarg + `"" "'
+    this.htmloninput = `"oninput = ""' + methodarg + "" 
 
 } // End of Method oninput declaration for class form
 
@@ -460,7 +460,7 @@ void form::setOninput(| string scalar methodarg) {
 void form::setOninvalid(| string scalar methodarg) { 
 
     // Set the attribute oninvalid for this class 
-    this.htmloninvalid = `"oninvalid = ""' + methodarg + `"" "'
+    this.htmloninvalid = `"oninvalid = ""' + methodarg + "" 
 
 } // End of Method oninvalid declaration for class form
 
@@ -468,7 +468,7 @@ void form::setOninvalid(| string scalar methodarg) {
 void form::setOnkeydown(| string scalar methodarg) { 
 
     // Set the attribute onkeydown for this class 
-    this.htmlonkeydown = `"onkeydown = ""' + methodarg + `"" "'
+    this.htmlonkeydown = `"onkeydown = ""' + methodarg + "" 
 
 } // End of Method onkeydown declaration for class form
 
@@ -476,7 +476,7 @@ void form::setOnkeydown(| string scalar methodarg) {
 void form::setOnkeypress(| string scalar methodarg) { 
 
     // Set the attribute onkeypress for this class 
-    this.htmlonkeypress = `"onkeypress = ""' + methodarg + `"" "'
+    this.htmlonkeypress = `"onkeypress = ""' + methodarg + "" 
 
 } // End of Method onkeypress declaration for class form
 
@@ -484,7 +484,7 @@ void form::setOnkeypress(| string scalar methodarg) {
 void form::setOnkeyup(| string scalar methodarg) { 
 
     // Set the attribute onkeyup for this class 
-    this.htmlonkeyup = `"onkeyup = ""' + methodarg + `"" "'
+    this.htmlonkeyup = `"onkeyup = ""' + methodarg + "" 
 
 } // End of Method onkeyup declaration for class form
 
@@ -492,7 +492,7 @@ void form::setOnkeyup(| string scalar methodarg) {
 void form::setOnload(| string scalar methodarg) { 
 
     // Set the attribute onload for this class 
-    this.htmlonload = `"onload = ""' + methodarg + `"" "'
+    this.htmlonload = `"onload = ""' + methodarg + "" 
 
 } // End of Method onload declaration for class form
 
@@ -500,7 +500,7 @@ void form::setOnload(| string scalar methodarg) {
 void form::setOnloadeddata(| string scalar methodarg) { 
 
     // Set the attribute onloadeddata for this class 
-    this.htmlonloadeddata = `"onloadeddata = ""' + methodarg + `"" "'
+    this.htmlonloadeddata = `"onloadeddata = ""' + methodarg + "" 
 
 } // End of Method onloadeddata declaration for class form
 
@@ -508,7 +508,7 @@ void form::setOnloadeddata(| string scalar methodarg) {
 void form::setOnloadedmetadata(| string scalar methodarg) { 
 
     // Set the attribute onloadedmetadata for this class 
-    this.htmlonloadedmetadata = `"onloadedmetadata = ""' + methodarg + `"" "'
+    this.htmlonloadedmetadata = `"onloadedmetadata = ""' + methodarg + "" 
 
 } // End of Method onloadedmetadata declaration for class form
 
@@ -516,7 +516,7 @@ void form::setOnloadedmetadata(| string scalar methodarg) {
 void form::setOnloadstart(| string scalar methodarg) { 
 
     // Set the attribute onloadstart for this class 
-    this.htmlonloadstart = `"onloadstart = ""' + methodarg + `"" "'
+    this.htmlonloadstart = `"onloadstart = ""' + methodarg + "" 
 
 } // End of Method onloadstart declaration for class form
 
@@ -524,7 +524,7 @@ void form::setOnloadstart(| string scalar methodarg) {
 void form::setOnmessage(| string scalar methodarg) { 
 
     // Set the attribute onmessage for this class 
-    this.htmlonmessage = `"onmessage = ""' + methodarg + `"" "'
+    this.htmlonmessage = `"onmessage = ""' + methodarg + "" 
 
 } // End of Method onmessage declaration for class form
 
@@ -532,7 +532,7 @@ void form::setOnmessage(| string scalar methodarg) {
 void form::setOnmousedown(| string scalar methodarg) { 
 
     // Set the attribute onmousedown for this class 
-    this.htmlonmousedown = `"onmousedown = ""' + methodarg + `"" "'
+    this.htmlonmousedown = `"onmousedown = ""' + methodarg + "" 
 
 } // End of Method onmousedown declaration for class form
 
@@ -540,7 +540,7 @@ void form::setOnmousedown(| string scalar methodarg) {
 void form::setOnmousemove(| string scalar methodarg) { 
 
     // Set the attribute onmousemove for this class 
-    this.htmlonmousemove = `"onmousemove = ""' + methodarg + `"" "'
+    this.htmlonmousemove = `"onmousemove = ""' + methodarg + "" 
 
 } // End of Method onmousemove declaration for class form
 
@@ -548,7 +548,7 @@ void form::setOnmousemove(| string scalar methodarg) {
 void form::setOnmouseout(| string scalar methodarg) { 
 
     // Set the attribute onmouseout for this class 
-    this.htmlonmouseout = `"onmouseout = ""' + methodarg + `"" "'
+    this.htmlonmouseout = `"onmouseout = ""' + methodarg + "" 
 
 } // End of Method onmouseout declaration for class form
 
@@ -556,7 +556,7 @@ void form::setOnmouseout(| string scalar methodarg) {
 void form::setOnmouseover(| string scalar methodarg) { 
 
     // Set the attribute onmouseover for this class 
-    this.htmlonmouseover = `"onmouseover = ""' + methodarg + `"" "'
+    this.htmlonmouseover = `"onmouseover = ""' + methodarg + "" 
 
 } // End of Method onmouseover declaration for class form
 
@@ -564,7 +564,7 @@ void form::setOnmouseover(| string scalar methodarg) {
 void form::setOnmouseup(| string scalar methodarg) { 
 
     // Set the attribute onmouseup for this class 
-    this.htmlonmouseup = `"onmouseup = ""' + methodarg + `"" "'
+    this.htmlonmouseup = `"onmouseup = ""' + methodarg + "" 
 
 } // End of Method onmouseup declaration for class form
 
@@ -572,7 +572,7 @@ void form::setOnmouseup(| string scalar methodarg) {
 void form::setOnmousewheel(| string scalar methodarg) { 
 
     // Set the attribute onmousewheel for this class 
-    this.htmlonmousewheel = `"onmousewheel = ""' + methodarg + `"" "'
+    this.htmlonmousewheel = `"onmousewheel = ""' + methodarg + "" 
 
 } // End of Method onmousewheel declaration for class form
 
@@ -580,7 +580,7 @@ void form::setOnmousewheel(| string scalar methodarg) {
 void form::setOnoffline(| string scalar methodarg) { 
 
     // Set the attribute onoffline for this class 
-    this.htmlonoffline = `"onoffline = ""' + methodarg + `"" "'
+    this.htmlonoffline = `"onoffline = ""' + methodarg + "" 
 
 } // End of Method onoffline declaration for class form
 
@@ -588,7 +588,7 @@ void form::setOnoffline(| string scalar methodarg) {
 void form::setOnonline(| string scalar methodarg) { 
 
     // Set the attribute ononline for this class 
-    this.htmlononline = `"ononline = ""' + methodarg + `"" "'
+    this.htmlononline = `"ononline = ""' + methodarg + "" 
 
 } // End of Method ononline declaration for class form
 
@@ -596,7 +596,7 @@ void form::setOnonline(| string scalar methodarg) {
 void form::setOnpagehide(| string scalar methodarg) { 
 
     // Set the attribute onpagehide for this class 
-    this.htmlonpagehide = `"onpagehide = ""' + methodarg + `"" "'
+    this.htmlonpagehide = `"onpagehide = ""' + methodarg + "" 
 
 } // End of Method onpagehide declaration for class form
 
@@ -604,7 +604,7 @@ void form::setOnpagehide(| string scalar methodarg) {
 void form::setOnpageshow(| string scalar methodarg) { 
 
     // Set the attribute onpageshow for this class 
-    this.htmlonpageshow = `"onpageshow = ""' + methodarg + `"" "'
+    this.htmlonpageshow = `"onpageshow = ""' + methodarg + "" 
 
 } // End of Method onpageshow declaration for class form
 
@@ -612,7 +612,7 @@ void form::setOnpageshow(| string scalar methodarg) {
 void form::setOnpaste(| string scalar methodarg) { 
 
     // Set the attribute onpaste for this class 
-    this.htmlonpaste = `"onpaste = ""' + methodarg + `"" "'
+    this.htmlonpaste = `"onpaste = ""' + methodarg + "" 
 
 } // End of Method onpaste declaration for class form
 
@@ -620,7 +620,7 @@ void form::setOnpaste(| string scalar methodarg) {
 void form::setOnpause(| string scalar methodarg) { 
 
     // Set the attribute onpause for this class 
-    this.htmlonpause = `"onpause = ""' + methodarg + `"" "'
+    this.htmlonpause = `"onpause = ""' + methodarg + "" 
 
 } // End of Method onpause declaration for class form
 
@@ -628,7 +628,7 @@ void form::setOnpause(| string scalar methodarg) {
 void form::setOnplay(| string scalar methodarg) { 
 
     // Set the attribute onplay for this class 
-    this.htmlonplay = `"onplay = ""' + methodarg + `"" "'
+    this.htmlonplay = `"onplay = ""' + methodarg + "" 
 
 } // End of Method onplay declaration for class form
 
@@ -636,7 +636,7 @@ void form::setOnplay(| string scalar methodarg) {
 void form::setOnplaying(| string scalar methodarg) { 
 
     // Set the attribute onplaying for this class 
-    this.htmlonplaying = `"onplaying = ""' + methodarg + `"" "'
+    this.htmlonplaying = `"onplaying = ""' + methodarg + "" 
 
 } // End of Method onplaying declaration for class form
 
@@ -644,7 +644,7 @@ void form::setOnplaying(| string scalar methodarg) {
 void form::setOnpopstate(| string scalar methodarg) { 
 
     // Set the attribute onpopstate for this class 
-    this.htmlonpopstate = `"onpopstate = ""' + methodarg + `"" "'
+    this.htmlonpopstate = `"onpopstate = ""' + methodarg + "" 
 
 } // End of Method onpopstate declaration for class form
 
@@ -652,7 +652,7 @@ void form::setOnpopstate(| string scalar methodarg) {
 void form::setOnprogress(| string scalar methodarg) { 
 
     // Set the attribute onprogress for this class 
-    this.htmlonprogress = `"onprogress = ""' + methodarg + `"" "'
+    this.htmlonprogress = `"onprogress = ""' + methodarg + "" 
 
 } // End of Method onprogress declaration for class form
 
@@ -660,7 +660,7 @@ void form::setOnprogress(| string scalar methodarg) {
 void form::setOnratechange(| string scalar methodarg) { 
 
     // Set the attribute onratechange for this class 
-    this.htmlonratechange = `"onratechange = ""' + methodarg + `"" "'
+    this.htmlonratechange = `"onratechange = ""' + methodarg + "" 
 
 } // End of Method onratechange declaration for class form
 
@@ -668,7 +668,7 @@ void form::setOnratechange(| string scalar methodarg) {
 void form::setOnreset(| string scalar methodarg) { 
 
     // Set the attribute onreset for this class 
-    this.htmlonreset = `"onreset = ""' + methodarg + `"" "'
+    this.htmlonreset = `"onreset = ""' + methodarg + "" 
 
 } // End of Method onreset declaration for class form
 
@@ -676,7 +676,7 @@ void form::setOnreset(| string scalar methodarg) {
 void form::setOnresize(| string scalar methodarg) { 
 
     // Set the attribute onresize for this class 
-    this.htmlonresize = `"onresize = ""' + methodarg + `"" "'
+    this.htmlonresize = `"onresize = ""' + methodarg + "" 
 
 } // End of Method onresize declaration for class form
 
@@ -684,7 +684,7 @@ void form::setOnresize(| string scalar methodarg) {
 void form::setOnscroll(| string scalar methodarg) { 
 
     // Set the attribute onscroll for this class 
-    this.htmlonscroll = `"onscroll = ""' + methodarg + `"" "'
+    this.htmlonscroll = `"onscroll = ""' + methodarg + "" 
 
 } // End of Method onscroll declaration for class form
 
@@ -692,7 +692,7 @@ void form::setOnscroll(| string scalar methodarg) {
 void form::setOnsearch(| string scalar methodarg) { 
 
     // Set the attribute onsearch for this class 
-    this.htmlonsearch = `"onsearch = ""' + methodarg + `"" "'
+    this.htmlonsearch = `"onsearch = ""' + methodarg + "" 
 
 } // End of Method onsearch declaration for class form
 
@@ -700,7 +700,7 @@ void form::setOnsearch(| string scalar methodarg) {
 void form::setOnseeked(| string scalar methodarg) { 
 
     // Set the attribute onseeked for this class 
-    this.htmlonseeked = `"onseeked = ""' + methodarg + `"" "'
+    this.htmlonseeked = `"onseeked = ""' + methodarg + "" 
 
 } // End of Method onseeked declaration for class form
 
@@ -708,7 +708,7 @@ void form::setOnseeked(| string scalar methodarg) {
 void form::setOnseeking(| string scalar methodarg) { 
 
     // Set the attribute onseeking for this class 
-    this.htmlonseeking = `"onseeking = ""' + methodarg + `"" "'
+    this.htmlonseeking = `"onseeking = ""' + methodarg + "" 
 
 } // End of Method onseeking declaration for class form
 
@@ -716,7 +716,7 @@ void form::setOnseeking(| string scalar methodarg) {
 void form::setOnselect(| string scalar methodarg) { 
 
     // Set the attribute onselect for this class 
-    this.htmlonselect = `"onselect = ""' + methodarg + `"" "'
+    this.htmlonselect = `"onselect = ""' + methodarg + "" 
 
 } // End of Method onselect declaration for class form
 
@@ -724,7 +724,7 @@ void form::setOnselect(| string scalar methodarg) {
 void form::setOnshow(| string scalar methodarg) { 
 
     // Set the attribute onshow for this class 
-    this.htmlonshow = `"onshow = ""' + methodarg + `"" "'
+    this.htmlonshow = `"onshow = ""' + methodarg + "" 
 
 } // End of Method onshow declaration for class form
 
@@ -732,7 +732,7 @@ void form::setOnshow(| string scalar methodarg) {
 void form::setOnstalled(| string scalar methodarg) { 
 
     // Set the attribute onstalled for this class 
-    this.htmlonstalled = `"onstalled = ""' + methodarg + `"" "'
+    this.htmlonstalled = `"onstalled = ""' + methodarg + "" 
 
 } // End of Method onstalled declaration for class form
 
@@ -740,7 +740,7 @@ void form::setOnstalled(| string scalar methodarg) {
 void form::setOnstorage(| string scalar methodarg) { 
 
     // Set the attribute onstorage for this class 
-    this.htmlonstorage = `"onstorage = ""' + methodarg + `"" "'
+    this.htmlonstorage = `"onstorage = ""' + methodarg + "" 
 
 } // End of Method onstorage declaration for class form
 
@@ -748,7 +748,7 @@ void form::setOnstorage(| string scalar methodarg) {
 void form::setOnsubmit(| string scalar methodarg) { 
 
     // Set the attribute onsubmit for this class 
-    this.htmlonsubmit = `"onsubmit = ""' + methodarg + `"" "'
+    this.htmlonsubmit = `"onsubmit = ""' + methodarg + "" 
 
 } // End of Method onsubmit declaration for class form
 
@@ -756,7 +756,7 @@ void form::setOnsubmit(| string scalar methodarg) {
 void form::setOnsuspend(| string scalar methodarg) { 
 
     // Set the attribute onsuspend for this class 
-    this.htmlonsuspend = `"onsuspend = ""' + methodarg + `"" "'
+    this.htmlonsuspend = `"onsuspend = ""' + methodarg + "" 
 
 } // End of Method onsuspend declaration for class form
 
@@ -764,7 +764,7 @@ void form::setOnsuspend(| string scalar methodarg) {
 void form::setOntimeupdate(| string scalar methodarg) { 
 
     // Set the attribute ontimeupdate for this class 
-    this.htmlontimeupdate = `"ontimeupdate = ""' + methodarg + `"" "'
+    this.htmlontimeupdate = `"ontimeupdate = ""' + methodarg + "" 
 
 } // End of Method ontimeupdate declaration for class form
 
@@ -772,7 +772,7 @@ void form::setOntimeupdate(| string scalar methodarg) {
 void form::setOntoggle(| string scalar methodarg) { 
 
     // Set the attribute ontoggle for this class 
-    this.htmlontoggle = `"ontoggle = ""' + methodarg + `"" "'
+    this.htmlontoggle = `"ontoggle = ""' + methodarg + "" 
 
 } // End of Method ontoggle declaration for class form
 
@@ -780,7 +780,7 @@ void form::setOntoggle(| string scalar methodarg) {
 void form::setOnunload(| string scalar methodarg) { 
 
     // Set the attribute onunload for this class 
-    this.htmlonunload = `"onunload = ""' + methodarg + `"" "'
+    this.htmlonunload = `"onunload = ""' + methodarg + "" 
 
 } // End of Method onunload declaration for class form
 
@@ -788,7 +788,7 @@ void form::setOnunload(| string scalar methodarg) {
 void form::setOnvolumechange(| string scalar methodarg) { 
 
     // Set the attribute onvolumechange for this class 
-    this.htmlonvolumechange = `"onvolumechange = ""' + methodarg + `"" "'
+    this.htmlonvolumechange = `"onvolumechange = ""' + methodarg + "" 
 
 } // End of Method onvolumechange declaration for class form
 
@@ -796,7 +796,7 @@ void form::setOnvolumechange(| string scalar methodarg) {
 void form::setOnwaiting(| string scalar methodarg) { 
 
     // Set the attribute onwaiting for this class 
-    this.htmlonwaiting = `"onwaiting = ""' + methodarg + `"" "'
+    this.htmlonwaiting = `"onwaiting = ""' + methodarg + "" 
 
 } // End of Method onwaiting declaration for class form
 
@@ -804,7 +804,7 @@ void form::setOnwaiting(| string scalar methodarg) {
 void form::setOnwheel(| string scalar methodarg) { 
 
     // Set the attribute onwheel for this class 
-    this.htmlonwheel = `"onwheel = ""' + methodarg + `"" "'
+    this.htmlonwheel = `"onwheel = ""' + methodarg + "" 
 
 } // End of Method onwheel declaration for class form
 
@@ -815,7 +815,7 @@ void form::setSpellcheck(| string scalar methodarg) {
     if (methodarg == "true" | methodarg == "false") { 
 
         // Set the attribute value 
-        this.htmlspellcheck = `"spellcheck = ""' + methodarg + `"" "'
+        this.htmlspellcheck = `"spellcheck = ""' + methodarg + "" 
 
     } // End IF Block for validated argument value 
 
@@ -825,7 +825,7 @@ void form::setSpellcheck(| string scalar methodarg) {
 void form::setStyle(| string scalar methodarg) { 
 
     // Set the attribute style for this class 
-    this.htmlstyle = `"style = ""' + methodarg + `"" "'
+    this.htmlstyle = `"style = ""' + methodarg + "" 
 
 } // End of Method style declaration for class form
 
@@ -833,7 +833,7 @@ void form::setStyle(| string scalar methodarg) {
 void form::setTabindex(| string scalar methodarg) { 
 
     // Set the attribute tabindex for this class 
-    this.htmltabindex = `"tabindex = ""' + methodarg + `"" "'
+    this.htmltabindex = `"tabindex = ""' + methodarg + "" 
 
 } // End of Method tabindex declaration for class form
 
@@ -844,7 +844,7 @@ void form::setTarget(| string scalar methodarg) {
     if (methodarg == "_blank" | methodarg == "_self" | methodarg == "_parent" | methodarg == "_top") { 
 
         // Set the attribute value 
-        this.htmltarget = `"target = ""' + methodarg + `"" "'
+        this.htmltarget = `"target = ""' + methodarg + "" 
 
     } // End IF Block for validated argument value 
 
@@ -854,7 +854,7 @@ void form::setTarget(| string scalar methodarg) {
 void form::setTitle(| string scalar methodarg) { 
 
     // Set the attribute title for this class 
-    this.htmltitle = `"title = ""' + methodarg + `"" "'
+    this.htmltitle = `"title = ""' + methodarg + "" 
 
 } // End of Method title declaration for class form
 
@@ -865,7 +865,7 @@ void form::setTranslate(| string scalar methodarg) {
     if (methodarg == "yes" | methodarg == "no") { 
 
         // Set the attribute value 
-        this.htmltranslate = `"translate = ""' + methodarg + `"" "'
+        this.htmltranslate = `"translate = ""' + methodarg + "" 
 
     } // End IF Block for validated argument value 
 
@@ -1686,7 +1686,7 @@ string scalar form::print() {
     string scalar open, args, close 
 
     // Create opening string 
-    open = getOpens() + getOpens() + getOpene() + getClose() + print() + getClassArgs() + getAccept() + getAccept_Charset() + getAccesskey() + getAction() + getAutocomplete() + getClass() + getContenteditable() + getContextmenu() + getData() + getDir() + getDraggable() + getDropzone() + getEnctype() + getHidden() + getId() + getLang() + getMethod() + getName() + getNovalidate() + getOnabort() + getOnafterprint() + getOnbeforeprint() + getOnbeforeunload() + getOnblur() + getOncanplay() + getOncanplaythrough() + getOnchange() + getOnclick() + getOncontextmenu() + getOncopy() + getOncuechange() + getOncut() + getOndblclick() + getOndrag() + getOndragend() + getOndragenter() + getOndragleave() + getOndragover() + getOndragstart() + getOndrop() + getOndurationchange() + getOnemptied() + getOnended() + getOnerror() + getOnfocus() + getOnhashchange() + getOninput() + getOninvalid() + getOnkeydown() + getOnkeypress() + getOnkeyup() + getOnload() + getOnloadeddata() + getOnloadedmetadata() + getOnloadstart() + getOnmessage() + getOnmousedown() + getOnmousemove() + getOnmouseout() + getOnmouseover() + getOnmouseup() + getOnmousewheel() + getOnoffline() + getOnonline() + getOnpagehide() + getOnpageshow() + getOnpaste() + getOnpause() + getOnplay() + getOnplaying() + getOnpopstate() + getOnprogress() + getOnratechange() + getOnreset() + getOnresize() + getOnscroll() + getOnsearch() + getOnseeked() + getOnseeking() + getOnselect() + getOnshow() + getOnstalled() + getOnstorage() + getOnsubmit() + getOnsuspend() + getOntimeupdate() + getOntoggle() + getOnunload() + getOnvolumechange() + getOnwaiting() + getOnwheel() + getSpellcheck() + getStyle() + getTabindex() + getTarget() + getTitle() + getTranslate() + getOpene()
+    open = getOpens() + getAccept() + getAccept_Charset() + getAccesskey() + getAction() + getAutocomplete() + getClass() + getContenteditable() + getContextmenu() + getData() + getDir() + getDraggable() + getDropzone() + getEnctype() + getHidden() + getId() + getLang() + getMethod() + getName() + getNovalidate() + getOnabort() + getOnafter + getOnbefore + getOnbeforeunload() + getOnblur() + getOncanplay() + getOncanplaythrough() + getOnchange() + getOnclick() + getOncontextmenu() + getOncopy() + getOncuechange() + getOncut() + getOndblclick() + getOndrag() + getOndragend() + getOndragenter() + getOndragleave() + getOndragover() + getOndragstart() + getOndrop() + getOndurationchange() + getOnemptied() + getOnended() + getOnerror() + getOnfocus() + getOnhashchange() + getOninput() + getOninvalid() + getOnkeydown() + getOnkeypress() + getOnkeyup() + getOnload() + getOnloadeddata() + getOnloadedmetadata() + getOnloadstart() + getOnmessage() + getOnmousedown() + getOnmousemove() + getOnmouseout() + getOnmouseover() + getOnmouseup() + getOnmousewheel() + getOnoffline() + getOnonline() + getOnpagehide() + getOnpageshow() + getOnpaste() + getOnpause() + getOnplay() + getOnplaying() + getOnpopstate() + getOnprogress() + getOnratechange() + getOnreset() + getOnresize() + getOnscroll() + getOnsearch() + getOnseeked() + getOnseeking() + getOnselect() + getOnshow() + getOnstalled() + getOnstorage() + getOnsubmit() + getOnsuspend() + getOntimeupdate() + getOntoggle() + getOnunload() + getOnvolumechange() + getOnwaiting() + getOnwheel() + getSpellcheck() + getStyle() + getTabindex() + getTarget() + getTitle() + getTranslate() + getOpene()
 
     // Get class arguments 
     args = getClassArgs() 
