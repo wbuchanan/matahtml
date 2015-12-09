@@ -20,8 +20,11 @@ class details {
     // Define public members/methods 
     public: 
 
+    // Class constructor method 
+    void         new()
+
     // Setter methods 
-    void         new(), setClassArgs(), setAccesskey(), setClass(), setContenteditable(), setContextmenu(), setData(), setDir(), setDraggable(), setDropzone(), setHidden(), setId(), setLang(), setOnabort(), setOnafterprint(), setOnbeforeprint(), setOnbeforeunload(), setOnblur(), setOncanplay(), setOncanplaythrough(), setOnchange(), setOnclick(), setOncontextmenu(), setOncopy(), setOncuechange(), setOncut(), setOndblclick(), setOndrag(), setOndragend(), setOndragenter(), setOndragleave(), setOndragover(), setOndragstart(), setOndrop(), setOndurationchange(), setOnemptied(), setOnended(), setOnerror(), setOnfocus(), setOnhashchange(), setOninput(), setOninvalid(), setOnkeydown(), setOnkeypress(), setOnkeyup(), setOnload(), setOnloadeddata(), setOnloadedmetadata(), setOnloadstart(), setOnmessage(), setOnmousedown(), setOnmousemove(), setOnmouseout(), setOnmouseover(), setOnmouseup(), setOnmousewheel(), setOnoffline(), setOnonline(), setOnpagehide(), setOnpageshow(), setOnpaste(), setOnpause(), setOnplay(), setOnplaying(), setOnpopstate(), setOnprogress(), setOnratechange(), setOnreset(), setOnresize(), setOnscroll(), setOnsearch(), setOnseeked(), setOnseeking(), setOnselect(), setOnshow(), setOnstalled(), setOnstorage(), setOnsubmit(), setOnsuspend(), setOntimeupdate(), setOntoggle(), setOnunload(), setOnvolumechange(), setOnwaiting(), setOnwheel(), setOpen(), setSpellcheck(), setStyle(), setTabindex(), setTitle(), setTranslate()
+    class        details     scalar  setClassArgs(), setAccesskey(), setClass(), setContenteditable(), setContextmenu(), setData(), setDir(), setDraggable(), setDropzone(), setHidden(), setId(), setLang(), setOnabort(), setOnafterprint(), setOnbeforeprint(), setOnbeforeunload(), setOnblur(), setOncanplay(), setOncanplaythrough(), setOnchange(), setOnclick(), setOncontextmenu(), setOncopy(), setOncuechange(), setOncut(), setOndblclick(), setOndrag(), setOndragend(), setOndragenter(), setOndragleave(), setOndragover(), setOndragstart(), setOndrop(), setOndurationchange(), setOnemptied(), setOnended(), setOnerror(), setOnfocus(), setOnhashchange(), setOninput(), setOninvalid(), setOnkeydown(), setOnkeypress(), setOnkeyup(), setOnload(), setOnloadeddata(), setOnloadedmetadata(), setOnloadstart(), setOnmessage(), setOnmousedown(), setOnmousemove(), setOnmouseout(), setOnmouseover(), setOnmouseup(), setOnmousewheel(), setOnoffline(), setOnonline(), setOnpagehide(), setOnpageshow(), setOnpaste(), setOnpause(), setOnplay(), setOnplaying(), setOnpopstate(), setOnprogress(), setOnratechange(), setOnreset(), setOnresize(), setOnscroll(), setOnsearch(), setOnseeked(), setOnseeking(), setOnselect(), setOnshow(), setOnstalled(), setOnstorage(), setOnsubmit(), setOnsuspend(), setOntimeupdate(), setOntoggle(), setOnunload(), setOnvolumechange(), setOnwaiting(), setOnwheel(), setOpen(), setSpellcheck(), setStyle(), setTabindex(), setTitle(), setTranslate()
 
     // Getter methods 
     string               scalar          getOpens(), getOpene(), getClose(), print(), getClassArgs(), getAccesskey(), getClass(), getContenteditable(), getContextmenu(), getData(), getDir(), getDraggable(), getDropzone(), getHidden(), getId(), getLang(), getOnabort(), getOnafterprint(), getOnbeforeprint(), getOnbeforeunload(), getOnblur(), getOncanplay(), getOncanplaythrough(), getOnchange(), getOnclick(), getOncontextmenu(), getOncopy(), getOncuechange(), getOncut(), getOndblclick(), getOndrag(), getOndragend(), getOndragenter(), getOndragleave(), getOndragover(), getOndragstart(), getOndrop(), getOndurationchange(), getOnemptied(), getOnended(), getOnerror(), getOnfocus(), getOnhashchange(), getOninput(), getOninvalid(), getOnkeydown(), getOnkeypress(), getOnkeyup(), getOnload(), getOnloadeddata(), getOnloadedmetadata(), getOnloadstart(), getOnmessage(), getOnmousedown(), getOnmousemove(), getOnmouseout(), getOnmouseover(), getOnmouseup(), getOnmousewheel(), getOnoffline(), getOnonline(), getOnpagehide(), getOnpageshow(), getOnpaste(), getOnpause(), getOnplay(), getOnplaying(), getOnpopstate(), getOnprogress(), getOnratechange(), getOnreset(), getOnresize(), getOnscroll(), getOnsearch(), getOnseeked(), getOnseeking(), getOnselect(), getOnshow(), getOnstalled(), getOnstorage(), getOnsubmit(), getOnsuspend(), getOntimeupdate(), getOntoggle(), getOnunload(), getOnvolumechange(), getOnwaiting(), getOnwheel(), getOpen(), getSpellcheck(), getStyle(), getTabindex(), getTitle(), getTranslate()
@@ -43,31 +46,40 @@ void details::new() {
 } // End of class constructor method definition
 
 // Setter method for class arguments (appear between HTML tags) 
-void details::setClassArgs(| string scalar classarguments) { 
+class details scalar details::setClassArgs(| string scalar classarguments) { 
 
     // Defines arguments that appear between HTML tags 
     this.classargs = classarguments 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of setter method for class arguments
 
 // Specifies a shortcut key to activate/focus an element 
-void details::setAccesskey(| string scalar methodarg) { 
+class details scalar details::setAccesskey(| string scalar methodarg) { 
 
     // Set the attribute accesskey for this class 
     this.htmlaccesskey = `"accesskey = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method accesskey declaration for class details
 
 // Specifies one or more classnames for an element (refers to a class in a style sheet) 
-void details::setClass(| string scalar methodarg) { 
+class details scalar details::setClass(| string scalar methodarg) { 
 
     // Set the attribute class for this class 
     this.htmlclass = `"class = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method class declaration for class details
 
 // Specifies whether the content of an element is editable or not 
-void details::setContenteditable(| string scalar methodarg) { 
+class details scalar details::setContenteditable(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "true" | methodarg == "false") { 
@@ -77,26 +89,35 @@ void details::setContenteditable(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method contenteditable declaration for class details
 
 // Specifies a context menu for an element. The context menu appears when a user right-clicks on the element 
-void details::setContextmenu(| string scalar methodarg) { 
+class details scalar details::setContextmenu(| string scalar methodarg) { 
 
     // Set the attribute contextmenu for this class 
     this.htmlcontextmenu = `"contextmenu = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method contextmenu declaration for class details
 
 // Used to store custom data private to the page or application 
-void details::setData(| string scalar methodarg) { 
+class details scalar details::setData(| string scalar methodarg) { 
 
     // Set the attribute data for this class 
     this.htmldata = `"data = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method data declaration for class details
 
 // Specifies the text direction for the content in an element 
-void details::setDir(| string scalar methodarg) { 
+class details scalar details::setDir(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "ltr" | methodarg == "rtl" | methodarg == "auto") { 
@@ -106,10 +127,13 @@ void details::setDir(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method dir declaration for class details
 
 // Specifies whether an element is draggable or not 
-void details::setDraggable(| string scalar methodarg) { 
+class details scalar details::setDraggable(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "true" | methodarg == "false" | methodarg == "auto") { 
@@ -119,10 +143,13 @@ void details::setDraggable(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method draggable declaration for class details
 
 // Specifies whether the dragged data is copied, moved, or linked, when dropped 
-void details::setDropzone(| string scalar methodarg) { 
+class details scalar details::setDropzone(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "copy" | methodarg == "move" | methodarg == "link") { 
@@ -132,618 +159,849 @@ void details::setDropzone(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method dropzone declaration for class details
 
 // Specifies that an element is not yet, or is no longer, relevant 
-void details::setHidden(| string scalar methodarg) { 
+class details scalar details::setHidden(| string scalar methodarg) { 
 
     // Set the attribute hidden for this class 
     this.htmlhidden = `"hidden = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method hidden declaration for class details
 
 // Specifies a unique id for an element 
-void details::setId(| string scalar methodarg) { 
+class details scalar details::setId(| string scalar methodarg) { 
 
     // Set the attribute id for this class 
     this.htmlid = `"id = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method id declaration for class details
 
 // Specifies the language of the element's content 
-void details::setLang(| string scalar methodarg) { 
+class details scalar details::setLang(| string scalar methodarg) { 
 
     // Set the attribute lang for this class 
     this.htmllang = `"lang = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method lang declaration for class details
 
 // Script to be run on abort 
-void details::setOnabort(| string scalar methodarg) { 
+class details scalar details::setOnabort(| string scalar methodarg) { 
 
     // Set the attribute onabort for this class 
     this.htmlonabort = `"onabort = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onabort declaration for class details
 
 // Script to be run after the document is printed 
-void details::setOnafterprint(| string scalar methodarg) { 
+class details scalar details::setOnafterprint(| string scalar methodarg) { 
 
     // Set the attribute onafterprint for this class 
     this.htmlonafterprint = `"onafterprint = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onafterprint declaration for class details
 
 // Script to be run before the document is printed 
-void details::setOnbeforeprint(| string scalar methodarg) { 
+class details scalar details::setOnbeforeprint(| string scalar methodarg) { 
 
     // Set the attribute onbeforeprint for this class 
     this.htmlonbeforeprint = `"onbeforeprint = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onbeforeprint declaration for class details
 
 // Script to be run when the document is about to be unloaded 
-void details::setOnbeforeunload(| string scalar methodarg) { 
+class details scalar details::setOnbeforeunload(| string scalar methodarg) { 
 
     // Set the attribute onbeforeunload for this class 
     this.htmlonbeforeunload = `"onbeforeunload = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onbeforeunload declaration for class details
 
 // Fires the moment that the element loses focus 
-void details::setOnblur(| string scalar methodarg) { 
+class details scalar details::setOnblur(| string scalar methodarg) { 
 
     // Set the attribute onblur for this class 
     this.htmlonblur = `"onblur = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onblur declaration for class details
 
 // Script to be run when a file is ready to start playing (when it has buffered enough to begin) 
-void details::setOncanplay(| string scalar methodarg) { 
+class details scalar details::setOncanplay(| string scalar methodarg) { 
 
     // Set the attribute oncanplay for this class 
     this.htmloncanplay = `"oncanplay = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncanplay declaration for class details
 
 // Script to be run when a file can be played all the way to the end without pausing for buffering 
-void details::setOncanplaythrough(| string scalar methodarg) { 
+class details scalar details::setOncanplaythrough(| string scalar methodarg) { 
 
     // Set the attribute oncanplaythrough for this class 
     this.htmloncanplaythrough = `"oncanplaythrough = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncanplaythrough declaration for class details
 
 // Fires the moment when the value of the element is changed 
-void details::setOnchange(| string scalar methodarg) { 
+class details scalar details::setOnchange(| string scalar methodarg) { 
 
     // Set the attribute onchange for this class 
     this.htmlonchange = `"onchange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onchange declaration for class details
 
 // Fires on a mouse click on the element 
-void details::setOnclick(| string scalar methodarg) { 
+class details scalar details::setOnclick(| string scalar methodarg) { 
 
     // Set the attribute onclick for this class 
     this.htmlonclick = `"onclick = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onclick declaration for class details
 
 // Script to be run when a context menu is triggered 
-void details::setOncontextmenu(| string scalar methodarg) { 
+class details scalar details::setOncontextmenu(| string scalar methodarg) { 
 
     // Set the attribute oncontextmenu for this class 
     this.htmloncontextmenu = `"oncontextmenu = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncontextmenu declaration for class details
 
 // Fires when the user copies the content of an element 
-void details::setOncopy(| string scalar methodarg) { 
+class details scalar details::setOncopy(| string scalar methodarg) { 
 
     // Set the attribute oncopy for this class 
     this.htmloncopy = `"oncopy = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncopy declaration for class details
 
 // Script to be run when the cue changes in a <track> element 
-void details::setOncuechange(| string scalar methodarg) { 
+class details scalar details::setOncuechange(| string scalar methodarg) { 
 
     // Set the attribute oncuechange for this class 
     this.htmloncuechange = `"oncuechange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncuechange declaration for class details
 
 // Fires when the user cuts the content of an element 
-void details::setOncut(| string scalar methodarg) { 
+class details scalar details::setOncut(| string scalar methodarg) { 
 
     // Set the attribute oncut for this class 
     this.htmloncut = `"oncut = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncut declaration for class details
 
 // Fires on a mouse double-click on the element 
-void details::setOndblclick(| string scalar methodarg) { 
+class details scalar details::setOndblclick(| string scalar methodarg) { 
 
     // Set the attribute ondblclick for this class 
     this.htmlondblclick = `"ondblclick = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondblclick declaration for class details
 
 // Script to be run when an element is dragged 
-void details::setOndrag(| string scalar methodarg) { 
+class details scalar details::setOndrag(| string scalar methodarg) { 
 
     // Set the attribute ondrag for this class 
     this.htmlondrag = `"ondrag = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondrag declaration for class details
 
 // Script to be run at the end of a drag operation 
-void details::setOndragend(| string scalar methodarg) { 
+class details scalar details::setOndragend(| string scalar methodarg) { 
 
     // Set the attribute ondragend for this class 
     this.htmlondragend = `"ondragend = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragend declaration for class details
 
 // Script to be run when an element has been dragged to a valid drop target 
-void details::setOndragenter(| string scalar methodarg) { 
+class details scalar details::setOndragenter(| string scalar methodarg) { 
 
     // Set the attribute ondragenter for this class 
     this.htmlondragenter = `"ondragenter = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragenter declaration for class details
 
 // Script to be run when an element leaves a valid drop target 
-void details::setOndragleave(| string scalar methodarg) { 
+class details scalar details::setOndragleave(| string scalar methodarg) { 
 
     // Set the attribute ondragleave for this class 
     this.htmlondragleave = `"ondragleave = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragleave declaration for class details
 
 // Script to be run when an element is being dragged over a valid drop target 
-void details::setOndragover(| string scalar methodarg) { 
+class details scalar details::setOndragover(| string scalar methodarg) { 
 
     // Set the attribute ondragover for this class 
     this.htmlondragover = `"ondragover = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragover declaration for class details
 
 // Script to be run at the start of a drag operation 
-void details::setOndragstart(| string scalar methodarg) { 
+class details scalar details::setOndragstart(| string scalar methodarg) { 
 
     // Set the attribute ondragstart for this class 
     this.htmlondragstart = `"ondragstart = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragstart declaration for class details
 
 // Script to be run when dragged element is being dropped 
-void details::setOndrop(| string scalar methodarg) { 
+class details scalar details::setOndrop(| string scalar methodarg) { 
 
     // Set the attribute ondrop for this class 
     this.htmlondrop = `"ondrop = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondrop declaration for class details
 
 // Script to be run when the length of the media changes 
-void details::setOndurationchange(| string scalar methodarg) { 
+class details scalar details::setOndurationchange(| string scalar methodarg) { 
 
     // Set the attribute ondurationchange for this class 
     this.htmlondurationchange = `"ondurationchange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondurationchange declaration for class details
 
 // Script to be run when something bad happens and the file is suddenly unavailable (like unexpectedly disconnects) 
-void details::setOnemptied(| string scalar methodarg) { 
+class details scalar details::setOnemptied(| string scalar methodarg) { 
 
     // Set the attribute onemptied for this class 
     this.htmlonemptied = `"onemptied = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onemptied declaration for class details
 
 // Script to be run when the media has reach the end (a useful event for messages like "thanks for listening") 
-void details::setOnended(| string scalar methodarg) { 
+class details scalar details::setOnended(| string scalar methodarg) { 
 
     // Set the attribute onended for this class 
     this.htmlonended = `"onended = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onended declaration for class details
 
 // Fires when an error occurs while loading an external file Script to be run when an error occur Script to be run when an error occurs when the file is being loaded 
-void details::setOnerror(| string scalar methodarg) { 
+class details scalar details::setOnerror(| string scalar methodarg) { 
 
     // Set the attribute onerror for this class 
     this.htmlonerror = `"onerror = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onerror declaration for class details
 
 // Fires the moment when the element gets focus 
-void details::setOnfocus(| string scalar methodarg) { 
+class details scalar details::setOnfocus(| string scalar methodarg) { 
 
     // Set the attribute onfocus for this class 
     this.htmlonfocus = `"onfocus = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onfocus declaration for class details
 
 // Script to be run when there has been changes to the anchor part of the a URL 
-void details::setOnhashchange(| string scalar methodarg) { 
+class details scalar details::setOnhashchange(| string scalar methodarg) { 
 
     // Set the attribute onhashchange for this class 
     this.htmlonhashchange = `"onhashchange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onhashchange declaration for class details
 
 // Script to be run when an element gets user input 
-void details::setOninput(| string scalar methodarg) { 
+class details scalar details::setOninput(| string scalar methodarg) { 
 
     // Set the attribute oninput for this class 
     this.htmloninput = `"oninput = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oninput declaration for class details
 
 // Script to be run when an element is invalid 
-void details::setOninvalid(| string scalar methodarg) { 
+class details scalar details::setOninvalid(| string scalar methodarg) { 
 
     // Set the attribute oninvalid for this class 
     this.htmloninvalid = `"oninvalid = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oninvalid declaration for class details
 
 // Fires when a user is pressing a key 
-void details::setOnkeydown(| string scalar methodarg) { 
+class details scalar details::setOnkeydown(| string scalar methodarg) { 
 
     // Set the attribute onkeydown for this class 
     this.htmlonkeydown = `"onkeydown = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onkeydown declaration for class details
 
 // Fires when a user presses a key 
-void details::setOnkeypress(| string scalar methodarg) { 
+class details scalar details::setOnkeypress(| string scalar methodarg) { 
 
     // Set the attribute onkeypress for this class 
     this.htmlonkeypress = `"onkeypress = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onkeypress declaration for class details
 
 // Fires when a user releases a key 
-void details::setOnkeyup(| string scalar methodarg) { 
+class details scalar details::setOnkeyup(| string scalar methodarg) { 
 
     // Set the attribute onkeyup for this class 
     this.htmlonkeyup = `"onkeyup = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onkeyup declaration for class details
 
 // Fires after the page is finished loading 
-void details::setOnload(| string scalar methodarg) { 
+class details scalar details::setOnload(| string scalar methodarg) { 
 
     // Set the attribute onload for this class 
     this.htmlonload = `"onload = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onload declaration for class details
 
 // Script to be run when media data is loaded 
-void details::setOnloadeddata(| string scalar methodarg) { 
+class details scalar details::setOnloadeddata(| string scalar methodarg) { 
 
     // Set the attribute onloadeddata for this class 
     this.htmlonloadeddata = `"onloadeddata = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onloadeddata declaration for class details
 
 // Script to be run when meta data (like dimensions and duration) are loaded 
-void details::setOnloadedmetadata(| string scalar methodarg) { 
+class details scalar details::setOnloadedmetadata(| string scalar methodarg) { 
 
     // Set the attribute onloadedmetadata for this class 
     this.htmlonloadedmetadata = `"onloadedmetadata = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onloadedmetadata declaration for class details
 
 // Script to be run just as the file begins to load before anything is actually loaded 
-void details::setOnloadstart(| string scalar methodarg) { 
+class details scalar details::setOnloadstart(| string scalar methodarg) { 
 
     // Set the attribute onloadstart for this class 
     this.htmlonloadstart = `"onloadstart = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onloadstart declaration for class details
 
 // Script to be run when the message is triggered 
-void details::setOnmessage(| string scalar methodarg) { 
+class details scalar details::setOnmessage(| string scalar methodarg) { 
 
     // Set the attribute onmessage for this class 
     this.htmlonmessage = `"onmessage = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmessage declaration for class details
 
 // Fires when a mouse button is pressed down on an element 
-void details::setOnmousedown(| string scalar methodarg) { 
+class details scalar details::setOnmousedown(| string scalar methodarg) { 
 
     // Set the attribute onmousedown for this class 
     this.htmlonmousedown = `"onmousedown = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmousedown declaration for class details
 
 // Fires when the mouse pointer is moving while it is over an element 
-void details::setOnmousemove(| string scalar methodarg) { 
+class details scalar details::setOnmousemove(| string scalar methodarg) { 
 
     // Set the attribute onmousemove for this class 
     this.htmlonmousemove = `"onmousemove = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmousemove declaration for class details
 
 // Fires when the mouse pointer moves out of an element 
-void details::setOnmouseout(| string scalar methodarg) { 
+class details scalar details::setOnmouseout(| string scalar methodarg) { 
 
     // Set the attribute onmouseout for this class 
     this.htmlonmouseout = `"onmouseout = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmouseout declaration for class details
 
 // Fires when the mouse pointer moves over an element 
-void details::setOnmouseover(| string scalar methodarg) { 
+class details scalar details::setOnmouseover(| string scalar methodarg) { 
 
     // Set the attribute onmouseover for this class 
     this.htmlonmouseover = `"onmouseover = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmouseover declaration for class details
 
 // Fires when a mouse button is released over an element 
-void details::setOnmouseup(| string scalar methodarg) { 
+class details scalar details::setOnmouseup(| string scalar methodarg) { 
 
     // Set the attribute onmouseup for this class 
     this.htmlonmouseup = `"onmouseup = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmouseup declaration for class details
 
 // Deprecated. Use the onwheel attribute instead 
-void details::setOnmousewheel(| string scalar methodarg) { 
+class details scalar details::setOnmousewheel(| string scalar methodarg) { 
 
     // Set the attribute onmousewheel for this class 
     this.htmlonmousewheel = `"onmousewheel = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmousewheel declaration for class details
 
 // Script to be run when the browser starts to work offline 
-void details::setOnoffline(| string scalar methodarg) { 
+class details scalar details::setOnoffline(| string scalar methodarg) { 
 
     // Set the attribute onoffline for this class 
     this.htmlonoffline = `"onoffline = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onoffline declaration for class details
 
 // Script to be run when the browser starts to work online 
-void details::setOnonline(| string scalar methodarg) { 
+class details scalar details::setOnonline(| string scalar methodarg) { 
 
     // Set the attribute ononline for this class 
     this.htmlononline = `"ononline = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ononline declaration for class details
 
 // Script to be run when a user navigates away from a page 
-void details::setOnpagehide(| string scalar methodarg) { 
+class details scalar details::setOnpagehide(| string scalar methodarg) { 
 
     // Set the attribute onpagehide for this class 
     this.htmlonpagehide = `"onpagehide = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpagehide declaration for class details
 
 // Script to be run when a user navigates to a page 
-void details::setOnpageshow(| string scalar methodarg) { 
+class details scalar details::setOnpageshow(| string scalar methodarg) { 
 
     // Set the attribute onpageshow for this class 
     this.htmlonpageshow = `"onpageshow = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpageshow declaration for class details
 
 // Fires when the user pastes some content in an element 
-void details::setOnpaste(| string scalar methodarg) { 
+class details scalar details::setOnpaste(| string scalar methodarg) { 
 
     // Set the attribute onpaste for this class 
     this.htmlonpaste = `"onpaste = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpaste declaration for class details
 
 // Script to be run when the media is paused either by the user or programmatically 
-void details::setOnpause(| string scalar methodarg) { 
+class details scalar details::setOnpause(| string scalar methodarg) { 
 
     // Set the attribute onpause for this class 
     this.htmlonpause = `"onpause = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpause declaration for class details
 
 // Script to be run when the media is ready to start playing 
-void details::setOnplay(| string scalar methodarg) { 
+class details scalar details::setOnplay(| string scalar methodarg) { 
 
     // Set the attribute onplay for this class 
     this.htmlonplay = `"onplay = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onplay declaration for class details
 
 // Script to be run when the media actually has started playing 
-void details::setOnplaying(| string scalar methodarg) { 
+class details scalar details::setOnplaying(| string scalar methodarg) { 
 
     // Set the attribute onplaying for this class 
     this.htmlonplaying = `"onplaying = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onplaying declaration for class details
 
 // Script to be run when the window's history changes 
-void details::setOnpopstate(| string scalar methodarg) { 
+class details scalar details::setOnpopstate(| string scalar methodarg) { 
 
     // Set the attribute onpopstate for this class 
     this.htmlonpopstate = `"onpopstate = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpopstate declaration for class details
 
 // Script to be run when the browser is in the process of getting the media data 
-void details::setOnprogress(| string scalar methodarg) { 
+class details scalar details::setOnprogress(| string scalar methodarg) { 
 
     // Set the attribute onprogress for this class 
     this.htmlonprogress = `"onprogress = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onprogress declaration for class details
 
 // Script to be run each time the playback rate changes (like when a user switches to a slow motion or fast forward mode) 
-void details::setOnratechange(| string scalar methodarg) { 
+class details scalar details::setOnratechange(| string scalar methodarg) { 
 
     // Set the attribute onratechange for this class 
     this.htmlonratechange = `"onratechange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onratechange declaration for class details
 
 // Fires when the Reset button in a form is clicked 
-void details::setOnreset(| string scalar methodarg) { 
+class details scalar details::setOnreset(| string scalar methodarg) { 
 
     // Set the attribute onreset for this class 
     this.htmlonreset = `"onreset = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onreset declaration for class details
 
 // Fires when the browser window is resized 
-void details::setOnresize(| string scalar methodarg) { 
+class details scalar details::setOnresize(| string scalar methodarg) { 
 
     // Set the attribute onresize for this class 
     this.htmlonresize = `"onresize = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onresize declaration for class details
 
 // Script to be run when an element's scrollbar is being scrolled 
-void details::setOnscroll(| string scalar methodarg) { 
+class details scalar details::setOnscroll(| string scalar methodarg) { 
 
     // Set the attribute onscroll for this class 
     this.htmlonscroll = `"onscroll = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onscroll declaration for class details
 
 // Fires when the user writes something in a search field (for <input="search">) 
-void details::setOnsearch(| string scalar methodarg) { 
+class details scalar details::setOnsearch(| string scalar methodarg) { 
 
     // Set the attribute onsearch for this class 
     this.htmlonsearch = `"onsearch = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onsearch declaration for class details
 
 // Script to be run when the seeking attribute is set to false indicating that seeking has ended 
-void details::setOnseeked(| string scalar methodarg) { 
+class details scalar details::setOnseeked(| string scalar methodarg) { 
 
     // Set the attribute onseeked for this class 
     this.htmlonseeked = `"onseeked = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onseeked declaration for class details
 
 // Script to be run when the seeking attribute is set to true indicating that seeking is active 
-void details::setOnseeking(| string scalar methodarg) { 
+class details scalar details::setOnseeking(| string scalar methodarg) { 
 
     // Set the attribute onseeking for this class 
     this.htmlonseeking = `"onseeking = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onseeking declaration for class details
 
 // Fires after some text has been selected in an element 
-void details::setOnselect(| string scalar methodarg) { 
+class details scalar details::setOnselect(| string scalar methodarg) { 
 
     // Set the attribute onselect for this class 
     this.htmlonselect = `"onselect = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onselect declaration for class details
 
 // Fires when a <menu> element is shown as a context menu 
-void details::setOnshow(| string scalar methodarg) { 
+class details scalar details::setOnshow(| string scalar methodarg) { 
 
     // Set the attribute onshow for this class 
     this.htmlonshow = `"onshow = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onshow declaration for class details
 
 // Script to be run when the browser is unable to fetch the media data for whatever reason 
-void details::setOnstalled(| string scalar methodarg) { 
+class details scalar details::setOnstalled(| string scalar methodarg) { 
 
     // Set the attribute onstalled for this class 
     this.htmlonstalled = `"onstalled = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onstalled declaration for class details
 
 // Script to be run when a Web Storage area is updated 
-void details::setOnstorage(| string scalar methodarg) { 
+class details scalar details::setOnstorage(| string scalar methodarg) { 
 
     // Set the attribute onstorage for this class 
     this.htmlonstorage = `"onstorage = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onstorage declaration for class details
 
 // Fires when a form is submitted 
-void details::setOnsubmit(| string scalar methodarg) { 
+class details scalar details::setOnsubmit(| string scalar methodarg) { 
 
     // Set the attribute onsubmit for this class 
     this.htmlonsubmit = `"onsubmit = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onsubmit declaration for class details
 
 // Script to be run when fetching the media data is stopped before it is completely loaded for whatever reason 
-void details::setOnsuspend(| string scalar methodarg) { 
+class details scalar details::setOnsuspend(| string scalar methodarg) { 
 
     // Set the attribute onsuspend for this class 
     this.htmlonsuspend = `"onsuspend = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onsuspend declaration for class details
 
 // Script to be run when the playing position has changed (like when the user fast forwards to a different point in the media) 
-void details::setOntimeupdate(| string scalar methodarg) { 
+class details scalar details::setOntimeupdate(| string scalar methodarg) { 
 
     // Set the attribute ontimeupdate for this class 
     this.htmlontimeupdate = `"ontimeupdate = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ontimeupdate declaration for class details
 
 // Fires when the user opens or closes the <details> element 
-void details::setOntoggle(| string scalar methodarg) { 
+class details scalar details::setOntoggle(| string scalar methodarg) { 
 
     // Set the attribute ontoggle for this class 
     this.htmlontoggle = `"ontoggle = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ontoggle declaration for class details
 
 // Fires once a page has unloaded (or the browser window has been closed) 
-void details::setOnunload(| string scalar methodarg) { 
+class details scalar details::setOnunload(| string scalar methodarg) { 
 
     // Set the attribute onunload for this class 
     this.htmlonunload = `"onunload = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onunload declaration for class details
 
 // Script to be run each time the volume is changed which (includes setting the volume to "mute") 
-void details::setOnvolumechange(| string scalar methodarg) { 
+class details scalar details::setOnvolumechange(| string scalar methodarg) { 
 
     // Set the attribute onvolumechange for this class 
     this.htmlonvolumechange = `"onvolumechange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onvolumechange declaration for class details
 
 // Script to be run when the media has paused but is expected to resume (like when the media pauses to buffer more data) 
-void details::setOnwaiting(| string scalar methodarg) { 
+class details scalar details::setOnwaiting(| string scalar methodarg) { 
 
     // Set the attribute onwaiting for this class 
     this.htmlonwaiting = `"onwaiting = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onwaiting declaration for class details
 
 // Fires when the mouse wheel rolls up or down over an element 
-void details::setOnwheel(| string scalar methodarg) { 
+class details scalar details::setOnwheel(| string scalar methodarg) { 
 
     // Set the attribute onwheel for this class 
     this.htmlonwheel = `"onwheel = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onwheel declaration for class details
 
 // Specifies that the details should be visible (open) to the user 
-void details::setOpen(| string scalar methodarg) { 
+class details scalar details::setOpen(| string scalar methodarg) { 
 
     // Set the attribute open for this class 
     this.htmlopen = `"open = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method open declaration for class details
 
 // Specifies whether the element is to have its spelling and grammar checked or not 
-void details::setSpellcheck(| string scalar methodarg) { 
+class details scalar details::setSpellcheck(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "true" | methodarg == "false") { 
@@ -753,34 +1011,46 @@ void details::setSpellcheck(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method spellcheck declaration for class details
 
 // Specifies an inline CSS style for an element 
-void details::setStyle(| string scalar methodarg) { 
+class details scalar details::setStyle(| string scalar methodarg) { 
 
     // Set the attribute style for this class 
     this.htmlstyle = `"style = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method style declaration for class details
 
 // Specifies the tabbing order of an element 
-void details::setTabindex(| string scalar methodarg) { 
+class details scalar details::setTabindex(| string scalar methodarg) { 
 
     // Set the attribute tabindex for this class 
     this.htmltabindex = `"tabindex = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method tabindex declaration for class details
 
 // Specifies extra information about an element 
-void details::setTitle(| string scalar methodarg) { 
+class details scalar details::setTitle(| string scalar methodarg) { 
 
     // Set the attribute title for this class 
     this.htmltitle = `"title = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method title declaration for class details
 
 // Specifies whether the content of an element should be translated or not 
-void details::setTranslate(| string scalar methodarg) { 
+class details scalar details::setTranslate(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "yes" | methodarg == "no") { 
@@ -789,6 +1059,9 @@ void details::setTranslate(| string scalar methodarg) {
         this.htmltranslate = `"translate = ""' + methodarg + "" 
 
     } // End IF Block for validated argument value 
+
+    // Return a copy of the object 
+    return(this)
 
 } // End of Method translate declaration for class details
 

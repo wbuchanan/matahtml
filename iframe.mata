@@ -20,8 +20,11 @@ class iframe {
     // Define public members/methods 
     public: 
 
+    // Class constructor method 
+    void         new()
+
     // Setter methods 
-    void         new(), setClassArgs(), setAccesskey(), setAlign(), setClass(), setContenteditable(), setContextmenu(), setData(), setDir(), setDraggable(), setDropzone(), setFrameborder(), setHeight(), setHidden(), setId(), setLang(), setLongdesc(), setMarginheight(), setMarginwidth(), setName(), setOnabort(), setOnafterprint(), setOnbeforeprint(), setOnbeforeunload(), setOnblur(), setOncanplay(), setOncanplaythrough(), setOnchange(), setOnclick(), setOncontextmenu(), setOncopy(), setOncuechange(), setOncut(), setOndblclick(), setOndrag(), setOndragend(), setOndragenter(), setOndragleave(), setOndragover(), setOndragstart(), setOndrop(), setOndurationchange(), setOnemptied(), setOnended(), setOnerror(), setOnfocus(), setOnhashchange(), setOninput(), setOninvalid(), setOnkeydown(), setOnkeypress(), setOnkeyup(), setOnload(), setOnloadeddata(), setOnloadedmetadata(), setOnloadstart(), setOnmessage(), setOnmousedown(), setOnmousemove(), setOnmouseout(), setOnmouseover(), setOnmouseup(), setOnmousewheel(), setOnoffline(), setOnonline(), setOnpagehide(), setOnpageshow(), setOnpaste(), setOnpause(), setOnplay(), setOnplaying(), setOnpopstate(), setOnprogress(), setOnratechange(), setOnreset(), setOnresize(), setOnscroll(), setOnsearch(), setOnseeked(), setOnseeking(), setOnselect(), setOnshow(), setOnstalled(), setOnstorage(), setOnsubmit(), setOnsuspend(), setOntimeupdate(), setOntoggle(), setOnunload(), setOnvolumechange(), setOnwaiting(), setOnwheel(), setSandbox(), setScrolling(), setSpellcheck(), setSrc(), setSrcdoc(), setStyle(), setTabindex(), setTitle(), setTranslate(), setWidth()
+    class        iframe     scalar  setClassArgs(), setAccesskey(), setAlign(), setClass(), setContenteditable(), setContextmenu(), setData(), setDir(), setDraggable(), setDropzone(), setFrameborder(), setHeight(), setHidden(), setId(), setLang(), setLongdesc(), setMarginheight(), setMarginwidth(), setName(), setOnabort(), setOnafterprint(), setOnbeforeprint(), setOnbeforeunload(), setOnblur(), setOncanplay(), setOncanplaythrough(), setOnchange(), setOnclick(), setOncontextmenu(), setOncopy(), setOncuechange(), setOncut(), setOndblclick(), setOndrag(), setOndragend(), setOndragenter(), setOndragleave(), setOndragover(), setOndragstart(), setOndrop(), setOndurationchange(), setOnemptied(), setOnended(), setOnerror(), setOnfocus(), setOnhashchange(), setOninput(), setOninvalid(), setOnkeydown(), setOnkeypress(), setOnkeyup(), setOnload(), setOnloadeddata(), setOnloadedmetadata(), setOnloadstart(), setOnmessage(), setOnmousedown(), setOnmousemove(), setOnmouseout(), setOnmouseover(), setOnmouseup(), setOnmousewheel(), setOnoffline(), setOnonline(), setOnpagehide(), setOnpageshow(), setOnpaste(), setOnpause(), setOnplay(), setOnplaying(), setOnpopstate(), setOnprogress(), setOnratechange(), setOnreset(), setOnresize(), setOnscroll(), setOnsearch(), setOnseeked(), setOnseeking(), setOnselect(), setOnshow(), setOnstalled(), setOnstorage(), setOnsubmit(), setOnsuspend(), setOntimeupdate(), setOntoggle(), setOnunload(), setOnvolumechange(), setOnwaiting(), setOnwheel(), setSandbox(), setScrolling(), setSpellcheck(), setSrc(), setSrcdoc(), setStyle(), setTabindex(), setTitle(), setTranslate(), setWidth()
 
     // Getter methods 
     string               scalar          getOpens(), getOpene(), getClose(), print(), getClassArgs(), getAccesskey(), getAlign(), getClass(), getContenteditable(), getContextmenu(), getData(), getDir(), getDraggable(), getDropzone(), getFrameborder(), getHeight(), getHidden(), getId(), getLang(), getLongdesc(), getMarginheight(), getMarginwidth(), getName(), getOnabort(), getOnafterprint(), getOnbeforeprint(), getOnbeforeunload(), getOnblur(), getOncanplay(), getOncanplaythrough(), getOnchange(), getOnclick(), getOncontextmenu(), getOncopy(), getOncuechange(), getOncut(), getOndblclick(), getOndrag(), getOndragend(), getOndragenter(), getOndragleave(), getOndragover(), getOndragstart(), getOndrop(), getOndurationchange(), getOnemptied(), getOnended(), getOnerror(), getOnfocus(), getOnhashchange(), getOninput(), getOninvalid(), getOnkeydown(), getOnkeypress(), getOnkeyup(), getOnload(), getOnloadeddata(), getOnloadedmetadata(), getOnloadstart(), getOnmessage(), getOnmousedown(), getOnmousemove(), getOnmouseout(), getOnmouseover(), getOnmouseup(), getOnmousewheel(), getOnoffline(), getOnonline(), getOnpagehide(), getOnpageshow(), getOnpaste(), getOnpause(), getOnplay(), getOnplaying(), getOnpopstate(), getOnprogress(), getOnratechange(), getOnreset(), getOnresize(), getOnscroll(), getOnsearch(), getOnseeked(), getOnseeking(), getOnselect(), getOnshow(), getOnstalled(), getOnstorage(), getOnsubmit(), getOnsuspend(), getOntimeupdate(), getOntoggle(), getOnunload(), getOnvolumechange(), getOnwaiting(), getOnwheel(), getSandbox(), getScrolling(), getSpellcheck(), getSrc(), getSrcdoc(), getStyle(), getTabindex(), getTitle(), getTranslate(), getWidth()
@@ -43,23 +46,29 @@ void iframe::new() {
 } // End of class constructor method definition
 
 // Setter method for class arguments (appear between HTML tags) 
-void iframe::setClassArgs(| string scalar classarguments) { 
+class iframe scalar iframe::setClassArgs(| string scalar classarguments) { 
 
     // Defines arguments that appear between HTML tags 
     this.classargs = classarguments 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of setter method for class arguments
 
 // Specifies a shortcut key to activate/focus an element 
-void iframe::setAccesskey(| string scalar methodarg) { 
+class iframe scalar iframe::setAccesskey(| string scalar methodarg) { 
 
     // Set the attribute accesskey for this class 
     this.htmlaccesskey = `"accesskey = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method accesskey declaration for class iframe
 
 // Not supported in HTML5. Specifies the alignment of an <iframe> according to surrounding elements 
-void iframe::setAlign(| string scalar methodarg) { 
+class iframe scalar iframe::setAlign(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "left" | methodarg == "right" | methodarg == "top" | methodarg == "middle" | methodarg == "bottom") { 
@@ -69,18 +78,24 @@ void iframe::setAlign(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method align declaration for class iframe
 
 // Specifies one or more classnames for an element (refers to a class in a style sheet) 
-void iframe::setClass(| string scalar methodarg) { 
+class iframe scalar iframe::setClass(| string scalar methodarg) { 
 
     // Set the attribute class for this class 
     this.htmlclass = `"class = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method class declaration for class iframe
 
 // Specifies whether the content of an element is editable or not 
-void iframe::setContenteditable(| string scalar methodarg) { 
+class iframe scalar iframe::setContenteditable(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "true" | methodarg == "false") { 
@@ -90,26 +105,35 @@ void iframe::setContenteditable(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method contenteditable declaration for class iframe
 
 // Specifies a context menu for an element. The context menu appears when a user right-clicks on the element 
-void iframe::setContextmenu(| string scalar methodarg) { 
+class iframe scalar iframe::setContextmenu(| string scalar methodarg) { 
 
     // Set the attribute contextmenu for this class 
     this.htmlcontextmenu = `"contextmenu = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method contextmenu declaration for class iframe
 
 // Used to store custom data private to the page or application 
-void iframe::setData(| string scalar methodarg) { 
+class iframe scalar iframe::setData(| string scalar methodarg) { 
 
     // Set the attribute data for this class 
     this.htmldata = `"data = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method data declaration for class iframe
 
 // Specifies the text direction for the content in an element 
-void iframe::setDir(| string scalar methodarg) { 
+class iframe scalar iframe::setDir(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "ltr" | methodarg == "rtl" | methodarg == "auto") { 
@@ -119,10 +143,13 @@ void iframe::setDir(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method dir declaration for class iframe
 
 // Specifies whether an element is draggable or not 
-void iframe::setDraggable(| string scalar methodarg) { 
+class iframe scalar iframe::setDraggable(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "true" | methodarg == "false" | methodarg == "auto") { 
@@ -132,10 +159,13 @@ void iframe::setDraggable(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method draggable declaration for class iframe
 
 // Specifies whether the dragged data is copied, moved, or linked, when dropped 
-void iframe::setDropzone(| string scalar methodarg) { 
+class iframe scalar iframe::setDropzone(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "copy" | methodarg == "move" | methodarg == "link") { 
@@ -145,10 +175,13 @@ void iframe::setDropzone(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method dropzone declaration for class iframe
 
 // Not supported in HTML5.Specifies whether or not to display a border around an <iframe> 
-void iframe::setFrameborder(| string scalar methodarg) { 
+class iframe scalar iframe::setFrameborder(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "1" | methodarg == "0") { 
@@ -158,650 +191,893 @@ void iframe::setFrameborder(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method frameborder declaration for class iframe
 
 // Specifies the height of an <iframe> 
-void iframe::setHeight(| string scalar methodarg) { 
+class iframe scalar iframe::setHeight(| string scalar methodarg) { 
 
     // Set the attribute height for this class 
     this.htmlheight = `"height = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method height declaration for class iframe
 
 // Specifies that an element is not yet, or is no longer, relevant 
-void iframe::setHidden(| string scalar methodarg) { 
+class iframe scalar iframe::setHidden(| string scalar methodarg) { 
 
     // Set the attribute hidden for this class 
     this.htmlhidden = `"hidden = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method hidden declaration for class iframe
 
 // Specifies a unique id for an element 
-void iframe::setId(| string scalar methodarg) { 
+class iframe scalar iframe::setId(| string scalar methodarg) { 
 
     // Set the attribute id for this class 
     this.htmlid = `"id = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method id declaration for class iframe
 
 // Specifies the language of the element's content 
-void iframe::setLang(| string scalar methodarg) { 
+class iframe scalar iframe::setLang(| string scalar methodarg) { 
 
     // Set the attribute lang for this class 
     this.htmllang = `"lang = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method lang declaration for class iframe
 
 // Not supported in HTML5.Specifies a page that contains a long description of the content of an <iframe> 
-void iframe::setLongdesc(| string scalar methodarg) { 
+class iframe scalar iframe::setLongdesc(| string scalar methodarg) { 
 
     // Set the attribute longdesc for this class 
     this.htmllongdesc = `"longdesc = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method longdesc declaration for class iframe
 
 // Not supported in HTML5.Specifies the top and bottom margins of the content of an <iframe> 
-void iframe::setMarginheight(| string scalar methodarg) { 
+class iframe scalar iframe::setMarginheight(| string scalar methodarg) { 
 
     // Set the attribute marginheight for this class 
     this.htmlmarginheight = `"marginheight = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method marginheight declaration for class iframe
 
 // Not supported in HTML5.Specifies the left and right margins of the content of an <iframe> 
-void iframe::setMarginwidth(| string scalar methodarg) { 
+class iframe scalar iframe::setMarginwidth(| string scalar methodarg) { 
 
     // Set the attribute marginwidth for this class 
     this.htmlmarginwidth = `"marginwidth = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method marginwidth declaration for class iframe
 
 // Specifies the name of an <iframe> 
-void iframe::setName(| string scalar methodarg) { 
+class iframe scalar iframe::setName(| string scalar methodarg) { 
 
     // Set the attribute name for this class 
     this.htmlname = `"name = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method name declaration for class iframe
 
 // Script to be run on abort 
-void iframe::setOnabort(| string scalar methodarg) { 
+class iframe scalar iframe::setOnabort(| string scalar methodarg) { 
 
     // Set the attribute onabort for this class 
     this.htmlonabort = `"onabort = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onabort declaration for class iframe
 
 // Script to be run after the document is printed 
-void iframe::setOnafterprint(| string scalar methodarg) { 
+class iframe scalar iframe::setOnafterprint(| string scalar methodarg) { 
 
     // Set the attribute onafterprint for this class 
     this.htmlonafterprint = `"onafterprint = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onafterprint declaration for class iframe
 
 // Script to be run before the document is printed 
-void iframe::setOnbeforeprint(| string scalar methodarg) { 
+class iframe scalar iframe::setOnbeforeprint(| string scalar methodarg) { 
 
     // Set the attribute onbeforeprint for this class 
     this.htmlonbeforeprint = `"onbeforeprint = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onbeforeprint declaration for class iframe
 
 // Script to be run when the document is about to be unloaded 
-void iframe::setOnbeforeunload(| string scalar methodarg) { 
+class iframe scalar iframe::setOnbeforeunload(| string scalar methodarg) { 
 
     // Set the attribute onbeforeunload for this class 
     this.htmlonbeforeunload = `"onbeforeunload = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onbeforeunload declaration for class iframe
 
 // Fires the moment that the element loses focus 
-void iframe::setOnblur(| string scalar methodarg) { 
+class iframe scalar iframe::setOnblur(| string scalar methodarg) { 
 
     // Set the attribute onblur for this class 
     this.htmlonblur = `"onblur = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onblur declaration for class iframe
 
 // Script to be run when a file is ready to start playing (when it has buffered enough to begin) 
-void iframe::setOncanplay(| string scalar methodarg) { 
+class iframe scalar iframe::setOncanplay(| string scalar methodarg) { 
 
     // Set the attribute oncanplay for this class 
     this.htmloncanplay = `"oncanplay = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncanplay declaration for class iframe
 
 // Script to be run when a file can be played all the way to the end without pausing for buffering 
-void iframe::setOncanplaythrough(| string scalar methodarg) { 
+class iframe scalar iframe::setOncanplaythrough(| string scalar methodarg) { 
 
     // Set the attribute oncanplaythrough for this class 
     this.htmloncanplaythrough = `"oncanplaythrough = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncanplaythrough declaration for class iframe
 
 // Fires the moment when the value of the element is changed 
-void iframe::setOnchange(| string scalar methodarg) { 
+class iframe scalar iframe::setOnchange(| string scalar methodarg) { 
 
     // Set the attribute onchange for this class 
     this.htmlonchange = `"onchange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onchange declaration for class iframe
 
 // Fires on a mouse click on the element 
-void iframe::setOnclick(| string scalar methodarg) { 
+class iframe scalar iframe::setOnclick(| string scalar methodarg) { 
 
     // Set the attribute onclick for this class 
     this.htmlonclick = `"onclick = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onclick declaration for class iframe
 
 // Script to be run when a context menu is triggered 
-void iframe::setOncontextmenu(| string scalar methodarg) { 
+class iframe scalar iframe::setOncontextmenu(| string scalar methodarg) { 
 
     // Set the attribute oncontextmenu for this class 
     this.htmloncontextmenu = `"oncontextmenu = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncontextmenu declaration for class iframe
 
 // Fires when the user copies the content of an element 
-void iframe::setOncopy(| string scalar methodarg) { 
+class iframe scalar iframe::setOncopy(| string scalar methodarg) { 
 
     // Set the attribute oncopy for this class 
     this.htmloncopy = `"oncopy = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncopy declaration for class iframe
 
 // Script to be run when the cue changes in a <track> element 
-void iframe::setOncuechange(| string scalar methodarg) { 
+class iframe scalar iframe::setOncuechange(| string scalar methodarg) { 
 
     // Set the attribute oncuechange for this class 
     this.htmloncuechange = `"oncuechange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncuechange declaration for class iframe
 
 // Fires when the user cuts the content of an element 
-void iframe::setOncut(| string scalar methodarg) { 
+class iframe scalar iframe::setOncut(| string scalar methodarg) { 
 
     // Set the attribute oncut for this class 
     this.htmloncut = `"oncut = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncut declaration for class iframe
 
 // Fires on a mouse double-click on the element 
-void iframe::setOndblclick(| string scalar methodarg) { 
+class iframe scalar iframe::setOndblclick(| string scalar methodarg) { 
 
     // Set the attribute ondblclick for this class 
     this.htmlondblclick = `"ondblclick = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondblclick declaration for class iframe
 
 // Script to be run when an element is dragged 
-void iframe::setOndrag(| string scalar methodarg) { 
+class iframe scalar iframe::setOndrag(| string scalar methodarg) { 
 
     // Set the attribute ondrag for this class 
     this.htmlondrag = `"ondrag = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondrag declaration for class iframe
 
 // Script to be run at the end of a drag operation 
-void iframe::setOndragend(| string scalar methodarg) { 
+class iframe scalar iframe::setOndragend(| string scalar methodarg) { 
 
     // Set the attribute ondragend for this class 
     this.htmlondragend = `"ondragend = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragend declaration for class iframe
 
 // Script to be run when an element has been dragged to a valid drop target 
-void iframe::setOndragenter(| string scalar methodarg) { 
+class iframe scalar iframe::setOndragenter(| string scalar methodarg) { 
 
     // Set the attribute ondragenter for this class 
     this.htmlondragenter = `"ondragenter = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragenter declaration for class iframe
 
 // Script to be run when an element leaves a valid drop target 
-void iframe::setOndragleave(| string scalar methodarg) { 
+class iframe scalar iframe::setOndragleave(| string scalar methodarg) { 
 
     // Set the attribute ondragleave for this class 
     this.htmlondragleave = `"ondragleave = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragleave declaration for class iframe
 
 // Script to be run when an element is being dragged over a valid drop target 
-void iframe::setOndragover(| string scalar methodarg) { 
+class iframe scalar iframe::setOndragover(| string scalar methodarg) { 
 
     // Set the attribute ondragover for this class 
     this.htmlondragover = `"ondragover = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragover declaration for class iframe
 
 // Script to be run at the start of a drag operation 
-void iframe::setOndragstart(| string scalar methodarg) { 
+class iframe scalar iframe::setOndragstart(| string scalar methodarg) { 
 
     // Set the attribute ondragstart for this class 
     this.htmlondragstart = `"ondragstart = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragstart declaration for class iframe
 
 // Script to be run when dragged element is being dropped 
-void iframe::setOndrop(| string scalar methodarg) { 
+class iframe scalar iframe::setOndrop(| string scalar methodarg) { 
 
     // Set the attribute ondrop for this class 
     this.htmlondrop = `"ondrop = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondrop declaration for class iframe
 
 // Script to be run when the length of the media changes 
-void iframe::setOndurationchange(| string scalar methodarg) { 
+class iframe scalar iframe::setOndurationchange(| string scalar methodarg) { 
 
     // Set the attribute ondurationchange for this class 
     this.htmlondurationchange = `"ondurationchange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondurationchange declaration for class iframe
 
 // Script to be run when something bad happens and the file is suddenly unavailable (like unexpectedly disconnects) 
-void iframe::setOnemptied(| string scalar methodarg) { 
+class iframe scalar iframe::setOnemptied(| string scalar methodarg) { 
 
     // Set the attribute onemptied for this class 
     this.htmlonemptied = `"onemptied = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onemptied declaration for class iframe
 
 // Script to be run when the media has reach the end (a useful event for messages like "thanks for listening") 
-void iframe::setOnended(| string scalar methodarg) { 
+class iframe scalar iframe::setOnended(| string scalar methodarg) { 
 
     // Set the attribute onended for this class 
     this.htmlonended = `"onended = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onended declaration for class iframe
 
 // Fires when an error occurs while loading an external file Script to be run when an error occur Script to be run when an error occurs when the file is being loaded 
-void iframe::setOnerror(| string scalar methodarg) { 
+class iframe scalar iframe::setOnerror(| string scalar methodarg) { 
 
     // Set the attribute onerror for this class 
     this.htmlonerror = `"onerror = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onerror declaration for class iframe
 
 // Fires the moment when the element gets focus 
-void iframe::setOnfocus(| string scalar methodarg) { 
+class iframe scalar iframe::setOnfocus(| string scalar methodarg) { 
 
     // Set the attribute onfocus for this class 
     this.htmlonfocus = `"onfocus = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onfocus declaration for class iframe
 
 // Script to be run when there has been changes to the anchor part of the a URL 
-void iframe::setOnhashchange(| string scalar methodarg) { 
+class iframe scalar iframe::setOnhashchange(| string scalar methodarg) { 
 
     // Set the attribute onhashchange for this class 
     this.htmlonhashchange = `"onhashchange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onhashchange declaration for class iframe
 
 // Script to be run when an element gets user input 
-void iframe::setOninput(| string scalar methodarg) { 
+class iframe scalar iframe::setOninput(| string scalar methodarg) { 
 
     // Set the attribute oninput for this class 
     this.htmloninput = `"oninput = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oninput declaration for class iframe
 
 // Script to be run when an element is invalid 
-void iframe::setOninvalid(| string scalar methodarg) { 
+class iframe scalar iframe::setOninvalid(| string scalar methodarg) { 
 
     // Set the attribute oninvalid for this class 
     this.htmloninvalid = `"oninvalid = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oninvalid declaration for class iframe
 
 // Fires when a user is pressing a key 
-void iframe::setOnkeydown(| string scalar methodarg) { 
+class iframe scalar iframe::setOnkeydown(| string scalar methodarg) { 
 
     // Set the attribute onkeydown for this class 
     this.htmlonkeydown = `"onkeydown = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onkeydown declaration for class iframe
 
 // Fires when a user presses a key 
-void iframe::setOnkeypress(| string scalar methodarg) { 
+class iframe scalar iframe::setOnkeypress(| string scalar methodarg) { 
 
     // Set the attribute onkeypress for this class 
     this.htmlonkeypress = `"onkeypress = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onkeypress declaration for class iframe
 
 // Fires when a user releases a key 
-void iframe::setOnkeyup(| string scalar methodarg) { 
+class iframe scalar iframe::setOnkeyup(| string scalar methodarg) { 
 
     // Set the attribute onkeyup for this class 
     this.htmlonkeyup = `"onkeyup = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onkeyup declaration for class iframe
 
 // Fires after the page is finished loading 
-void iframe::setOnload(| string scalar methodarg) { 
+class iframe scalar iframe::setOnload(| string scalar methodarg) { 
 
     // Set the attribute onload for this class 
     this.htmlonload = `"onload = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onload declaration for class iframe
 
 // Script to be run when media data is loaded 
-void iframe::setOnloadeddata(| string scalar methodarg) { 
+class iframe scalar iframe::setOnloadeddata(| string scalar methodarg) { 
 
     // Set the attribute onloadeddata for this class 
     this.htmlonloadeddata = `"onloadeddata = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onloadeddata declaration for class iframe
 
 // Script to be run when meta data (like dimensions and duration) are loaded 
-void iframe::setOnloadedmetadata(| string scalar methodarg) { 
+class iframe scalar iframe::setOnloadedmetadata(| string scalar methodarg) { 
 
     // Set the attribute onloadedmetadata for this class 
     this.htmlonloadedmetadata = `"onloadedmetadata = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onloadedmetadata declaration for class iframe
 
 // Script to be run just as the file begins to load before anything is actually loaded 
-void iframe::setOnloadstart(| string scalar methodarg) { 
+class iframe scalar iframe::setOnloadstart(| string scalar methodarg) { 
 
     // Set the attribute onloadstart for this class 
     this.htmlonloadstart = `"onloadstart = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onloadstart declaration for class iframe
 
 // Script to be run when the message is triggered 
-void iframe::setOnmessage(| string scalar methodarg) { 
+class iframe scalar iframe::setOnmessage(| string scalar methodarg) { 
 
     // Set the attribute onmessage for this class 
     this.htmlonmessage = `"onmessage = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmessage declaration for class iframe
 
 // Fires when a mouse button is pressed down on an element 
-void iframe::setOnmousedown(| string scalar methodarg) { 
+class iframe scalar iframe::setOnmousedown(| string scalar methodarg) { 
 
     // Set the attribute onmousedown for this class 
     this.htmlonmousedown = `"onmousedown = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmousedown declaration for class iframe
 
 // Fires when the mouse pointer is moving while it is over an element 
-void iframe::setOnmousemove(| string scalar methodarg) { 
+class iframe scalar iframe::setOnmousemove(| string scalar methodarg) { 
 
     // Set the attribute onmousemove for this class 
     this.htmlonmousemove = `"onmousemove = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmousemove declaration for class iframe
 
 // Fires when the mouse pointer moves out of an element 
-void iframe::setOnmouseout(| string scalar methodarg) { 
+class iframe scalar iframe::setOnmouseout(| string scalar methodarg) { 
 
     // Set the attribute onmouseout for this class 
     this.htmlonmouseout = `"onmouseout = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmouseout declaration for class iframe
 
 // Fires when the mouse pointer moves over an element 
-void iframe::setOnmouseover(| string scalar methodarg) { 
+class iframe scalar iframe::setOnmouseover(| string scalar methodarg) { 
 
     // Set the attribute onmouseover for this class 
     this.htmlonmouseover = `"onmouseover = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmouseover declaration for class iframe
 
 // Fires when a mouse button is released over an element 
-void iframe::setOnmouseup(| string scalar methodarg) { 
+class iframe scalar iframe::setOnmouseup(| string scalar methodarg) { 
 
     // Set the attribute onmouseup for this class 
     this.htmlonmouseup = `"onmouseup = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmouseup declaration for class iframe
 
 // Deprecated. Use the onwheel attribute instead 
-void iframe::setOnmousewheel(| string scalar methodarg) { 
+class iframe scalar iframe::setOnmousewheel(| string scalar methodarg) { 
 
     // Set the attribute onmousewheel for this class 
     this.htmlonmousewheel = `"onmousewheel = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmousewheel declaration for class iframe
 
 // Script to be run when the browser starts to work offline 
-void iframe::setOnoffline(| string scalar methodarg) { 
+class iframe scalar iframe::setOnoffline(| string scalar methodarg) { 
 
     // Set the attribute onoffline for this class 
     this.htmlonoffline = `"onoffline = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onoffline declaration for class iframe
 
 // Script to be run when the browser starts to work online 
-void iframe::setOnonline(| string scalar methodarg) { 
+class iframe scalar iframe::setOnonline(| string scalar methodarg) { 
 
     // Set the attribute ononline for this class 
     this.htmlononline = `"ononline = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ononline declaration for class iframe
 
 // Script to be run when a user navigates away from a page 
-void iframe::setOnpagehide(| string scalar methodarg) { 
+class iframe scalar iframe::setOnpagehide(| string scalar methodarg) { 
 
     // Set the attribute onpagehide for this class 
     this.htmlonpagehide = `"onpagehide = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpagehide declaration for class iframe
 
 // Script to be run when a user navigates to a page 
-void iframe::setOnpageshow(| string scalar methodarg) { 
+class iframe scalar iframe::setOnpageshow(| string scalar methodarg) { 
 
     // Set the attribute onpageshow for this class 
     this.htmlonpageshow = `"onpageshow = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpageshow declaration for class iframe
 
 // Fires when the user pastes some content in an element 
-void iframe::setOnpaste(| string scalar methodarg) { 
+class iframe scalar iframe::setOnpaste(| string scalar methodarg) { 
 
     // Set the attribute onpaste for this class 
     this.htmlonpaste = `"onpaste = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpaste declaration for class iframe
 
 // Script to be run when the media is paused either by the user or programmatically 
-void iframe::setOnpause(| string scalar methodarg) { 
+class iframe scalar iframe::setOnpause(| string scalar methodarg) { 
 
     // Set the attribute onpause for this class 
     this.htmlonpause = `"onpause = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpause declaration for class iframe
 
 // Script to be run when the media is ready to start playing 
-void iframe::setOnplay(| string scalar methodarg) { 
+class iframe scalar iframe::setOnplay(| string scalar methodarg) { 
 
     // Set the attribute onplay for this class 
     this.htmlonplay = `"onplay = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onplay declaration for class iframe
 
 // Script to be run when the media actually has started playing 
-void iframe::setOnplaying(| string scalar methodarg) { 
+class iframe scalar iframe::setOnplaying(| string scalar methodarg) { 
 
     // Set the attribute onplaying for this class 
     this.htmlonplaying = `"onplaying = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onplaying declaration for class iframe
 
 // Script to be run when the window's history changes 
-void iframe::setOnpopstate(| string scalar methodarg) { 
+class iframe scalar iframe::setOnpopstate(| string scalar methodarg) { 
 
     // Set the attribute onpopstate for this class 
     this.htmlonpopstate = `"onpopstate = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpopstate declaration for class iframe
 
 // Script to be run when the browser is in the process of getting the media data 
-void iframe::setOnprogress(| string scalar methodarg) { 
+class iframe scalar iframe::setOnprogress(| string scalar methodarg) { 
 
     // Set the attribute onprogress for this class 
     this.htmlonprogress = `"onprogress = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onprogress declaration for class iframe
 
 // Script to be run each time the playback rate changes (like when a user switches to a slow motion or fast forward mode) 
-void iframe::setOnratechange(| string scalar methodarg) { 
+class iframe scalar iframe::setOnratechange(| string scalar methodarg) { 
 
     // Set the attribute onratechange for this class 
     this.htmlonratechange = `"onratechange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onratechange declaration for class iframe
 
 // Fires when the Reset button in a form is clicked 
-void iframe::setOnreset(| string scalar methodarg) { 
+class iframe scalar iframe::setOnreset(| string scalar methodarg) { 
 
     // Set the attribute onreset for this class 
     this.htmlonreset = `"onreset = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onreset declaration for class iframe
 
 // Fires when the browser window is resized 
-void iframe::setOnresize(| string scalar methodarg) { 
+class iframe scalar iframe::setOnresize(| string scalar methodarg) { 
 
     // Set the attribute onresize for this class 
     this.htmlonresize = `"onresize = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onresize declaration for class iframe
 
 // Script to be run when an element's scrollbar is being scrolled 
-void iframe::setOnscroll(| string scalar methodarg) { 
+class iframe scalar iframe::setOnscroll(| string scalar methodarg) { 
 
     // Set the attribute onscroll for this class 
     this.htmlonscroll = `"onscroll = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onscroll declaration for class iframe
 
 // Fires when the user writes something in a search field (for <input="search">) 
-void iframe::setOnsearch(| string scalar methodarg) { 
+class iframe scalar iframe::setOnsearch(| string scalar methodarg) { 
 
     // Set the attribute onsearch for this class 
     this.htmlonsearch = `"onsearch = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onsearch declaration for class iframe
 
 // Script to be run when the seeking attribute is set to false indicating that seeking has ended 
-void iframe::setOnseeked(| string scalar methodarg) { 
+class iframe scalar iframe::setOnseeked(| string scalar methodarg) { 
 
     // Set the attribute onseeked for this class 
     this.htmlonseeked = `"onseeked = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onseeked declaration for class iframe
 
 // Script to be run when the seeking attribute is set to true indicating that seeking is active 
-void iframe::setOnseeking(| string scalar methodarg) { 
+class iframe scalar iframe::setOnseeking(| string scalar methodarg) { 
 
     // Set the attribute onseeking for this class 
     this.htmlonseeking = `"onseeking = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onseeking declaration for class iframe
 
 // Fires after some text has been selected in an element 
-void iframe::setOnselect(| string scalar methodarg) { 
+class iframe scalar iframe::setOnselect(| string scalar methodarg) { 
 
     // Set the attribute onselect for this class 
     this.htmlonselect = `"onselect = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onselect declaration for class iframe
 
 // Fires when a <menu> element is shown as a context menu 
-void iframe::setOnshow(| string scalar methodarg) { 
+class iframe scalar iframe::setOnshow(| string scalar methodarg) { 
 
     // Set the attribute onshow for this class 
     this.htmlonshow = `"onshow = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onshow declaration for class iframe
 
 // Script to be run when the browser is unable to fetch the media data for whatever reason 
-void iframe::setOnstalled(| string scalar methodarg) { 
+class iframe scalar iframe::setOnstalled(| string scalar methodarg) { 
 
     // Set the attribute onstalled for this class 
     this.htmlonstalled = `"onstalled = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onstalled declaration for class iframe
 
 // Script to be run when a Web Storage area is updated 
-void iframe::setOnstorage(| string scalar methodarg) { 
+class iframe scalar iframe::setOnstorage(| string scalar methodarg) { 
 
     // Set the attribute onstorage for this class 
     this.htmlonstorage = `"onstorage = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onstorage declaration for class iframe
 
 // Fires when a form is submitted 
-void iframe::setOnsubmit(| string scalar methodarg) { 
+class iframe scalar iframe::setOnsubmit(| string scalar methodarg) { 
 
     // Set the attribute onsubmit for this class 
     this.htmlonsubmit = `"onsubmit = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onsubmit declaration for class iframe
 
 // Script to be run when fetching the media data is stopped before it is completely loaded for whatever reason 
-void iframe::setOnsuspend(| string scalar methodarg) { 
+class iframe scalar iframe::setOnsuspend(| string scalar methodarg) { 
 
     // Set the attribute onsuspend for this class 
     this.htmlonsuspend = `"onsuspend = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onsuspend declaration for class iframe
 
 // Script to be run when the playing position has changed (like when the user fast forwards to a different point in the media) 
-void iframe::setOntimeupdate(| string scalar methodarg) { 
+class iframe scalar iframe::setOntimeupdate(| string scalar methodarg) { 
 
     // Set the attribute ontimeupdate for this class 
     this.htmlontimeupdate = `"ontimeupdate = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ontimeupdate declaration for class iframe
 
 // Fires when the user opens or closes the <details> element 
-void iframe::setOntoggle(| string scalar methodarg) { 
+class iframe scalar iframe::setOntoggle(| string scalar methodarg) { 
 
     // Set the attribute ontoggle for this class 
     this.htmlontoggle = `"ontoggle = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ontoggle declaration for class iframe
 
 // Fires once a page has unloaded (or the browser window has been closed) 
-void iframe::setOnunload(| string scalar methodarg) { 
+class iframe scalar iframe::setOnunload(| string scalar methodarg) { 
 
     // Set the attribute onunload for this class 
     this.htmlonunload = `"onunload = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onunload declaration for class iframe
 
 // Script to be run each time the volume is changed which (includes setting the volume to "mute") 
-void iframe::setOnvolumechange(| string scalar methodarg) { 
+class iframe scalar iframe::setOnvolumechange(| string scalar methodarg) { 
 
     // Set the attribute onvolumechange for this class 
     this.htmlonvolumechange = `"onvolumechange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onvolumechange declaration for class iframe
 
 // Script to be run when the media has paused but is expected to resume (like when the media pauses to buffer more data) 
-void iframe::setOnwaiting(| string scalar methodarg) { 
+class iframe scalar iframe::setOnwaiting(| string scalar methodarg) { 
 
     // Set the attribute onwaiting for this class 
     this.htmlonwaiting = `"onwaiting = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onwaiting declaration for class iframe
 
 // Fires when the mouse wheel rolls up or down over an element 
-void iframe::setOnwheel(| string scalar methodarg) { 
+class iframe scalar iframe::setOnwheel(| string scalar methodarg) { 
 
     // Set the attribute onwheel for this class 
     this.htmlonwheel = `"onwheel = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onwheel declaration for class iframe
 
 // Enables an extra set of restrictions for the content in an <iframe> 
-void iframe::setSandbox(| string scalar methodarg) { 
+class iframe scalar iframe::setSandbox(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "allow-formsallow-pointer-lockallow-popups" | methodarg == "allow-same-origin" | methodarg == "allow-scripts" | methodarg == "allow-top-navigation") { 
@@ -811,10 +1087,13 @@ void iframe::setSandbox(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method sandbox declaration for class iframe
 
 // Not supported in HTML5.Specifies whether or not to display scrollbars in an <iframe> 
-void iframe::setScrolling(| string scalar methodarg) { 
+class iframe scalar iframe::setScrolling(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "yes" | methodarg == "no" | methodarg == "auto") { 
@@ -824,10 +1103,13 @@ void iframe::setScrolling(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method scrolling declaration for class iframe
 
 // Specifies whether the element is to have its spelling and grammar checked or not 
-void iframe::setSpellcheck(| string scalar methodarg) { 
+class iframe scalar iframe::setSpellcheck(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "true" | methodarg == "false") { 
@@ -837,50 +1119,68 @@ void iframe::setSpellcheck(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method spellcheck declaration for class iframe
 
 // Specifies the address of the document to embed in the <iframe> 
-void iframe::setSrc(| string scalar methodarg) { 
+class iframe scalar iframe::setSrc(| string scalar methodarg) { 
 
     // Set the attribute src for this class 
     this.htmlsrc = `"src = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method src declaration for class iframe
 
 // Specifies the HTML content of the page to show in the <iframe> 
-void iframe::setSrcdoc(| string scalar methodarg) { 
+class iframe scalar iframe::setSrcdoc(| string scalar methodarg) { 
 
     // Set the attribute srcdoc for this class 
     this.htmlsrcdoc = `"srcdoc = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method srcdoc declaration for class iframe
 
 // Specifies an inline CSS style for an element 
-void iframe::setStyle(| string scalar methodarg) { 
+class iframe scalar iframe::setStyle(| string scalar methodarg) { 
 
     // Set the attribute style for this class 
     this.htmlstyle = `"style = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method style declaration for class iframe
 
 // Specifies the tabbing order of an element 
-void iframe::setTabindex(| string scalar methodarg) { 
+class iframe scalar iframe::setTabindex(| string scalar methodarg) { 
 
     // Set the attribute tabindex for this class 
     this.htmltabindex = `"tabindex = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method tabindex declaration for class iframe
 
 // Specifies extra information about an element 
-void iframe::setTitle(| string scalar methodarg) { 
+class iframe scalar iframe::setTitle(| string scalar methodarg) { 
 
     // Set the attribute title for this class 
     this.htmltitle = `"title = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method title declaration for class iframe
 
 // Specifies whether the content of an element should be translated or not 
-void iframe::setTranslate(| string scalar methodarg) { 
+class iframe scalar iframe::setTranslate(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "yes" | methodarg == "no") { 
@@ -890,13 +1190,19 @@ void iframe::setTranslate(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method translate declaration for class iframe
 
 // Specifies the width of an <iframe> 
-void iframe::setWidth(| string scalar methodarg) { 
+class iframe scalar iframe::setWidth(| string scalar methodarg) { 
 
     // Set the attribute width for this class 
     this.htmlwidth = `"width = ""' + methodarg + "" 
+
+    // Return a copy of the object 
+    return(this)
 
 } // End of Method width declaration for class iframe
 

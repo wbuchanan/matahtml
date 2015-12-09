@@ -20,8 +20,11 @@ class button {
     // Define public members/methods 
     public: 
 
+    // Class constructor method 
+    void         new()
+
     // Setter methods 
-    void         new(), setClassArgs(), setAccesskey(), setAutofocus(), setClass(), setContenteditable(), setContextmenu(), setData(), setDir(), setDisabled(), setDraggable(), setDropzone(), setForm(), setFormaction(), setFormenctype(), setFormmethod(), setFormnovalidate(), setFormtarget(), setHidden(), setId(), setLang(), setName(), setOnabort(), setOnafterprint(), setOnbeforeprint(), setOnbeforeunload(), setOnblur(), setOncanplay(), setOncanplaythrough(), setOnchange(), setOnclick(), setOncontextmenu(), setOncopy(), setOncuechange(), setOncut(), setOndblclick(), setOndrag(), setOndragend(), setOndragenter(), setOndragleave(), setOndragover(), setOndragstart(), setOndrop(), setOndurationchange(), setOnemptied(), setOnended(), setOnerror(), setOnfocus(), setOnhashchange(), setOninput(), setOninvalid(), setOnkeydown(), setOnkeypress(), setOnkeyup(), setOnload(), setOnloadeddata(), setOnloadedmetadata(), setOnloadstart(), setOnmessage(), setOnmousedown(), setOnmousemove(), setOnmouseout(), setOnmouseover(), setOnmouseup(), setOnmousewheel(), setOnoffline(), setOnonline(), setOnpagehide(), setOnpageshow(), setOnpaste(), setOnpause(), setOnplay(), setOnplaying(), setOnpopstate(), setOnprogress(), setOnratechange(), setOnreset(), setOnresize(), setOnscroll(), setOnsearch(), setOnseeked(), setOnseeking(), setOnselect(), setOnshow(), setOnstalled(), setOnstorage(), setOnsubmit(), setOnsuspend(), setOntimeupdate(), setOntoggle(), setOnunload(), setOnvolumechange(), setOnwaiting(), setOnwheel(), setSpellcheck(), setStyle(), setTabindex(), setTitle(), setTranslate(), setType(), setValue()
+    class        button     scalar  setClassArgs(), setAccesskey(), setAutofocus(), setClass(), setContenteditable(), setContextmenu(), setData(), setDir(), setDisabled(), setDraggable(), setDropzone(), setForm(), setFormaction(), setFormenctype(), setFormmethod(), setFormnovalidate(), setFormtarget(), setHidden(), setId(), setLang(), setName(), setOnabort(), setOnafterprint(), setOnbeforeprint(), setOnbeforeunload(), setOnblur(), setOncanplay(), setOncanplaythrough(), setOnchange(), setOnclick(), setOncontextmenu(), setOncopy(), setOncuechange(), setOncut(), setOndblclick(), setOndrag(), setOndragend(), setOndragenter(), setOndragleave(), setOndragover(), setOndragstart(), setOndrop(), setOndurationchange(), setOnemptied(), setOnended(), setOnerror(), setOnfocus(), setOnhashchange(), setOninput(), setOninvalid(), setOnkeydown(), setOnkeypress(), setOnkeyup(), setOnload(), setOnloadeddata(), setOnloadedmetadata(), setOnloadstart(), setOnmessage(), setOnmousedown(), setOnmousemove(), setOnmouseout(), setOnmouseover(), setOnmouseup(), setOnmousewheel(), setOnoffline(), setOnonline(), setOnpagehide(), setOnpageshow(), setOnpaste(), setOnpause(), setOnplay(), setOnplaying(), setOnpopstate(), setOnprogress(), setOnratechange(), setOnreset(), setOnresize(), setOnscroll(), setOnsearch(), setOnseeked(), setOnseeking(), setOnselect(), setOnshow(), setOnstalled(), setOnstorage(), setOnsubmit(), setOnsuspend(), setOntimeupdate(), setOntoggle(), setOnunload(), setOnvolumechange(), setOnwaiting(), setOnwheel(), setSpellcheck(), setStyle(), setTabindex(), setTitle(), setTranslate(), setType(), setValue()
 
     // Getter methods 
     string               scalar          getOpens(), getOpene(), getClose(), print(), getClassArgs(), getAccesskey(), getAutofocus(), getClass(), getContenteditable(), getContextmenu(), getData(), getDir(), getDisabled(), getDraggable(), getDropzone(), getForm(), getFormaction(), getFormenctype(), getFormmethod(), getFormnovalidate(), getFormtarget(), getHidden(), getId(), getLang(), getName(), getOnabort(), getOnafterprint(), getOnbeforeprint(), getOnbeforeunload(), getOnblur(), getOncanplay(), getOncanplaythrough(), getOnchange(), getOnclick(), getOncontextmenu(), getOncopy(), getOncuechange(), getOncut(), getOndblclick(), getOndrag(), getOndragend(), getOndragenter(), getOndragleave(), getOndragover(), getOndragstart(), getOndrop(), getOndurationchange(), getOnemptied(), getOnended(), getOnerror(), getOnfocus(), getOnhashchange(), getOninput(), getOninvalid(), getOnkeydown(), getOnkeypress(), getOnkeyup(), getOnload(), getOnloadeddata(), getOnloadedmetadata(), getOnloadstart(), getOnmessage(), getOnmousedown(), getOnmousemove(), getOnmouseout(), getOnmouseover(), getOnmouseup(), getOnmousewheel(), getOnoffline(), getOnonline(), getOnpagehide(), getOnpageshow(), getOnpaste(), getOnpause(), getOnplay(), getOnplaying(), getOnpopstate(), getOnprogress(), getOnratechange(), getOnreset(), getOnresize(), getOnscroll(), getOnsearch(), getOnseeked(), getOnseeking(), getOnselect(), getOnshow(), getOnstalled(), getOnstorage(), getOnsubmit(), getOnsuspend(), getOntimeupdate(), getOntoggle(), getOnunload(), getOnvolumechange(), getOnwaiting(), getOnwheel(), getSpellcheck(), getStyle(), getTabindex(), getTitle(), getTranslate(), getType(), getValue()
@@ -43,39 +46,51 @@ void button::new() {
 } // End of class constructor method definition
 
 // Setter method for class arguments (appear between HTML tags) 
-void button::setClassArgs(| string scalar classarguments) { 
+class button scalar button::setClassArgs(| string scalar classarguments) { 
 
     // Defines arguments that appear between HTML tags 
     this.classargs = classarguments 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of setter method for class arguments
 
 // Specifies a shortcut key to activate/focus an element 
-void button::setAccesskey(| string scalar methodarg) { 
+class button scalar button::setAccesskey(| string scalar methodarg) { 
 
     // Set the attribute accesskey for this class 
     this.htmlaccesskey = `"accesskey = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method accesskey declaration for class button
 
 // Specifies that a button should automatically get focus when the page loads 
-void button::setAutofocus(| string scalar methodarg) { 
+class button scalar button::setAutofocus(| string scalar methodarg) { 
 
     // Set the attribute autofocus for this class 
     this.htmlautofocus = `"autofocus = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method autofocus declaration for class button
 
 // Specifies one or more classnames for an element (refers to a class in a style sheet) 
-void button::setClass(| string scalar methodarg) { 
+class button scalar button::setClass(| string scalar methodarg) { 
 
     // Set the attribute class for this class 
     this.htmlclass = `"class = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method class declaration for class button
 
 // Specifies whether the content of an element is editable or not 
-void button::setContenteditable(| string scalar methodarg) { 
+class button scalar button::setContenteditable(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "true" | methodarg == "false") { 
@@ -85,26 +100,35 @@ void button::setContenteditable(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method contenteditable declaration for class button
 
 // Specifies a context menu for an element. The context menu appears when a user right-clicks on the element 
-void button::setContextmenu(| string scalar methodarg) { 
+class button scalar button::setContextmenu(| string scalar methodarg) { 
 
     // Set the attribute contextmenu for this class 
     this.htmlcontextmenu = `"contextmenu = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method contextmenu declaration for class button
 
 // Used to store custom data private to the page or application 
-void button::setData(| string scalar methodarg) { 
+class button scalar button::setData(| string scalar methodarg) { 
 
     // Set the attribute data for this class 
     this.htmldata = `"data = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method data declaration for class button
 
 // Specifies the text direction for the content in an element 
-void button::setDir(| string scalar methodarg) { 
+class button scalar button::setDir(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "ltr" | methodarg == "rtl" | methodarg == "auto") { 
@@ -114,18 +138,24 @@ void button::setDir(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method dir declaration for class button
 
 // Specifies that a button should be disabled 
-void button::setDisabled(| string scalar methodarg) { 
+class button scalar button::setDisabled(| string scalar methodarg) { 
 
     // Set the attribute disabled for this class 
     this.htmldisabled = `"disabled = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method disabled declaration for class button
 
 // Specifies whether an element is draggable or not 
-void button::setDraggable(| string scalar methodarg) { 
+class button scalar button::setDraggable(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "true" | methodarg == "false" | methodarg == "auto") { 
@@ -135,10 +165,13 @@ void button::setDraggable(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method draggable declaration for class button
 
 // Specifies whether the dragged data is copied, moved, or linked, when dropped 
-void button::setDropzone(| string scalar methodarg) { 
+class button scalar button::setDropzone(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "copy" | methodarg == "move" | methodarg == "link") { 
@@ -148,26 +181,35 @@ void button::setDropzone(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method dropzone declaration for class button
 
 // Specifies one or more forms the button belongs to 
-void button::setForm(| string scalar methodarg) { 
+class button scalar button::setForm(| string scalar methodarg) { 
 
     // Set the attribute form for this class 
     this.htmlform = `"form = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method form declaration for class button
 
 // Specifies where to send the form-data when a form is submitted. Only for type="submit" 
-void button::setFormaction(| string scalar methodarg) { 
+class button scalar button::setFormaction(| string scalar methodarg) { 
 
     // Set the attribute formaction for this class 
     this.htmlformaction = `"formaction = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method formaction declaration for class button
 
 // Specifies how form-data should be encoded before sending it to a server. Only for type="submit" 
-void button::setFormenctype(| string scalar methodarg) { 
+class button scalar button::setFormenctype(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "application/x-www-form-urlencoded" | methodarg == "multipart/form-data" | methodarg == "text/plain") { 
@@ -177,26 +219,35 @@ void button::setFormenctype(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method formenctype declaration for class button
 
 // Specifies how to send the form-data (which HTTP method to use). Only for type="submit" 
-void button::setFormmethod(| string scalar methodarg) { 
+class button scalar button::setFormmethod(| string scalar methodarg) { 
 
     // Set the attribute formmethod for this class 
     this.htmlformmethod = `"formmethod = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method formmethod declaration for class button
 
 // Specifies that the form-data should not be validated on submission. Only for type="submit" 
-void button::setFormnovalidate(| string scalar methodarg) { 
+class button scalar button::setFormnovalidate(| string scalar methodarg) { 
 
     // Set the attribute formnovalidate for this class 
     this.htmlformnovalidate = `"formnovalidate = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method formnovalidate declaration for class button
 
 // Specifies where to display the response after submitting the form. Only for type="submit" 
-void button::setFormtarget(| string scalar methodarg) { 
+class button scalar button::setFormtarget(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "_blank" | methodarg == "_self" | methodarg == "_parent" | methodarg == "_top" | methodarg == "framename") { 
@@ -206,618 +257,849 @@ void button::setFormtarget(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method formtarget declaration for class button
 
 // Specifies that an element is not yet, or is no longer, relevant 
-void button::setHidden(| string scalar methodarg) { 
+class button scalar button::setHidden(| string scalar methodarg) { 
 
     // Set the attribute hidden for this class 
     this.htmlhidden = `"hidden = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method hidden declaration for class button
 
 // Specifies a unique id for an element 
-void button::setId(| string scalar methodarg) { 
+class button scalar button::setId(| string scalar methodarg) { 
 
     // Set the attribute id for this class 
     this.htmlid = `"id = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method id declaration for class button
 
 // Specifies the language of the element's content 
-void button::setLang(| string scalar methodarg) { 
+class button scalar button::setLang(| string scalar methodarg) { 
 
     // Set the attribute lang for this class 
     this.htmllang = `"lang = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method lang declaration for class button
 
 // Specifies a name for the button 
-void button::setName(| string scalar methodarg) { 
+class button scalar button::setName(| string scalar methodarg) { 
 
     // Set the attribute name for this class 
     this.htmlname = `"name = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method name declaration for class button
 
 // Script to be run on abort 
-void button::setOnabort(| string scalar methodarg) { 
+class button scalar button::setOnabort(| string scalar methodarg) { 
 
     // Set the attribute onabort for this class 
     this.htmlonabort = `"onabort = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onabort declaration for class button
 
 // Script to be run after the document is printed 
-void button::setOnafterprint(| string scalar methodarg) { 
+class button scalar button::setOnafterprint(| string scalar methodarg) { 
 
     // Set the attribute onafterprint for this class 
     this.htmlonafterprint = `"onafterprint = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onafterprint declaration for class button
 
 // Script to be run before the document is printed 
-void button::setOnbeforeprint(| string scalar methodarg) { 
+class button scalar button::setOnbeforeprint(| string scalar methodarg) { 
 
     // Set the attribute onbeforeprint for this class 
     this.htmlonbeforeprint = `"onbeforeprint = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onbeforeprint declaration for class button
 
 // Script to be run when the document is about to be unloaded 
-void button::setOnbeforeunload(| string scalar methodarg) { 
+class button scalar button::setOnbeforeunload(| string scalar methodarg) { 
 
     // Set the attribute onbeforeunload for this class 
     this.htmlonbeforeunload = `"onbeforeunload = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onbeforeunload declaration for class button
 
 // Fires the moment that the element loses focus 
-void button::setOnblur(| string scalar methodarg) { 
+class button scalar button::setOnblur(| string scalar methodarg) { 
 
     // Set the attribute onblur for this class 
     this.htmlonblur = `"onblur = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onblur declaration for class button
 
 // Script to be run when a file is ready to start playing (when it has buffered enough to begin) 
-void button::setOncanplay(| string scalar methodarg) { 
+class button scalar button::setOncanplay(| string scalar methodarg) { 
 
     // Set the attribute oncanplay for this class 
     this.htmloncanplay = `"oncanplay = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncanplay declaration for class button
 
 // Script to be run when a file can be played all the way to the end without pausing for buffering 
-void button::setOncanplaythrough(| string scalar methodarg) { 
+class button scalar button::setOncanplaythrough(| string scalar methodarg) { 
 
     // Set the attribute oncanplaythrough for this class 
     this.htmloncanplaythrough = `"oncanplaythrough = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncanplaythrough declaration for class button
 
 // Fires the moment when the value of the element is changed 
-void button::setOnchange(| string scalar methodarg) { 
+class button scalar button::setOnchange(| string scalar methodarg) { 
 
     // Set the attribute onchange for this class 
     this.htmlonchange = `"onchange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onchange declaration for class button
 
 // Fires on a mouse click on the element 
-void button::setOnclick(| string scalar methodarg) { 
+class button scalar button::setOnclick(| string scalar methodarg) { 
 
     // Set the attribute onclick for this class 
     this.htmlonclick = `"onclick = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onclick declaration for class button
 
 // Script to be run when a context menu is triggered 
-void button::setOncontextmenu(| string scalar methodarg) { 
+class button scalar button::setOncontextmenu(| string scalar methodarg) { 
 
     // Set the attribute oncontextmenu for this class 
     this.htmloncontextmenu = `"oncontextmenu = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncontextmenu declaration for class button
 
 // Fires when the user copies the content of an element 
-void button::setOncopy(| string scalar methodarg) { 
+class button scalar button::setOncopy(| string scalar methodarg) { 
 
     // Set the attribute oncopy for this class 
     this.htmloncopy = `"oncopy = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncopy declaration for class button
 
 // Script to be run when the cue changes in a <track> element 
-void button::setOncuechange(| string scalar methodarg) { 
+class button scalar button::setOncuechange(| string scalar methodarg) { 
 
     // Set the attribute oncuechange for this class 
     this.htmloncuechange = `"oncuechange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncuechange declaration for class button
 
 // Fires when the user cuts the content of an element 
-void button::setOncut(| string scalar methodarg) { 
+class button scalar button::setOncut(| string scalar methodarg) { 
 
     // Set the attribute oncut for this class 
     this.htmloncut = `"oncut = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncut declaration for class button
 
 // Fires on a mouse double-click on the element 
-void button::setOndblclick(| string scalar methodarg) { 
+class button scalar button::setOndblclick(| string scalar methodarg) { 
 
     // Set the attribute ondblclick for this class 
     this.htmlondblclick = `"ondblclick = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondblclick declaration for class button
 
 // Script to be run when an element is dragged 
-void button::setOndrag(| string scalar methodarg) { 
+class button scalar button::setOndrag(| string scalar methodarg) { 
 
     // Set the attribute ondrag for this class 
     this.htmlondrag = `"ondrag = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondrag declaration for class button
 
 // Script to be run at the end of a drag operation 
-void button::setOndragend(| string scalar methodarg) { 
+class button scalar button::setOndragend(| string scalar methodarg) { 
 
     // Set the attribute ondragend for this class 
     this.htmlondragend = `"ondragend = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragend declaration for class button
 
 // Script to be run when an element has been dragged to a valid drop target 
-void button::setOndragenter(| string scalar methodarg) { 
+class button scalar button::setOndragenter(| string scalar methodarg) { 
 
     // Set the attribute ondragenter for this class 
     this.htmlondragenter = `"ondragenter = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragenter declaration for class button
 
 // Script to be run when an element leaves a valid drop target 
-void button::setOndragleave(| string scalar methodarg) { 
+class button scalar button::setOndragleave(| string scalar methodarg) { 
 
     // Set the attribute ondragleave for this class 
     this.htmlondragleave = `"ondragleave = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragleave declaration for class button
 
 // Script to be run when an element is being dragged over a valid drop target 
-void button::setOndragover(| string scalar methodarg) { 
+class button scalar button::setOndragover(| string scalar methodarg) { 
 
     // Set the attribute ondragover for this class 
     this.htmlondragover = `"ondragover = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragover declaration for class button
 
 // Script to be run at the start of a drag operation 
-void button::setOndragstart(| string scalar methodarg) { 
+class button scalar button::setOndragstart(| string scalar methodarg) { 
 
     // Set the attribute ondragstart for this class 
     this.htmlondragstart = `"ondragstart = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragstart declaration for class button
 
 // Script to be run when dragged element is being dropped 
-void button::setOndrop(| string scalar methodarg) { 
+class button scalar button::setOndrop(| string scalar methodarg) { 
 
     // Set the attribute ondrop for this class 
     this.htmlondrop = `"ondrop = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondrop declaration for class button
 
 // Script to be run when the length of the media changes 
-void button::setOndurationchange(| string scalar methodarg) { 
+class button scalar button::setOndurationchange(| string scalar methodarg) { 
 
     // Set the attribute ondurationchange for this class 
     this.htmlondurationchange = `"ondurationchange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondurationchange declaration for class button
 
 // Script to be run when something bad happens and the file is suddenly unavailable (like unexpectedly disconnects) 
-void button::setOnemptied(| string scalar methodarg) { 
+class button scalar button::setOnemptied(| string scalar methodarg) { 
 
     // Set the attribute onemptied for this class 
     this.htmlonemptied = `"onemptied = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onemptied declaration for class button
 
 // Script to be run when the media has reach the end (a useful event for messages like "thanks for listening") 
-void button::setOnended(| string scalar methodarg) { 
+class button scalar button::setOnended(| string scalar methodarg) { 
 
     // Set the attribute onended for this class 
     this.htmlonended = `"onended = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onended declaration for class button
 
 // Fires when an error occurs while loading an external file Script to be run when an error occur Script to be run when an error occurs when the file is being loaded 
-void button::setOnerror(| string scalar methodarg) { 
+class button scalar button::setOnerror(| string scalar methodarg) { 
 
     // Set the attribute onerror for this class 
     this.htmlonerror = `"onerror = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onerror declaration for class button
 
 // Fires the moment when the element gets focus 
-void button::setOnfocus(| string scalar methodarg) { 
+class button scalar button::setOnfocus(| string scalar methodarg) { 
 
     // Set the attribute onfocus for this class 
     this.htmlonfocus = `"onfocus = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onfocus declaration for class button
 
 // Script to be run when there has been changes to the anchor part of the a URL 
-void button::setOnhashchange(| string scalar methodarg) { 
+class button scalar button::setOnhashchange(| string scalar methodarg) { 
 
     // Set the attribute onhashchange for this class 
     this.htmlonhashchange = `"onhashchange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onhashchange declaration for class button
 
 // Script to be run when an element gets user input 
-void button::setOninput(| string scalar methodarg) { 
+class button scalar button::setOninput(| string scalar methodarg) { 
 
     // Set the attribute oninput for this class 
     this.htmloninput = `"oninput = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oninput declaration for class button
 
 // Script to be run when an element is invalid 
-void button::setOninvalid(| string scalar methodarg) { 
+class button scalar button::setOninvalid(| string scalar methodarg) { 
 
     // Set the attribute oninvalid for this class 
     this.htmloninvalid = `"oninvalid = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oninvalid declaration for class button
 
 // Fires when a user is pressing a key 
-void button::setOnkeydown(| string scalar methodarg) { 
+class button scalar button::setOnkeydown(| string scalar methodarg) { 
 
     // Set the attribute onkeydown for this class 
     this.htmlonkeydown = `"onkeydown = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onkeydown declaration for class button
 
 // Fires when a user presses a key 
-void button::setOnkeypress(| string scalar methodarg) { 
+class button scalar button::setOnkeypress(| string scalar methodarg) { 
 
     // Set the attribute onkeypress for this class 
     this.htmlonkeypress = `"onkeypress = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onkeypress declaration for class button
 
 // Fires when a user releases a key 
-void button::setOnkeyup(| string scalar methodarg) { 
+class button scalar button::setOnkeyup(| string scalar methodarg) { 
 
     // Set the attribute onkeyup for this class 
     this.htmlonkeyup = `"onkeyup = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onkeyup declaration for class button
 
 // Fires after the page is finished loading 
-void button::setOnload(| string scalar methodarg) { 
+class button scalar button::setOnload(| string scalar methodarg) { 
 
     // Set the attribute onload for this class 
     this.htmlonload = `"onload = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onload declaration for class button
 
 // Script to be run when media data is loaded 
-void button::setOnloadeddata(| string scalar methodarg) { 
+class button scalar button::setOnloadeddata(| string scalar methodarg) { 
 
     // Set the attribute onloadeddata for this class 
     this.htmlonloadeddata = `"onloadeddata = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onloadeddata declaration for class button
 
 // Script to be run when meta data (like dimensions and duration) are loaded 
-void button::setOnloadedmetadata(| string scalar methodarg) { 
+class button scalar button::setOnloadedmetadata(| string scalar methodarg) { 
 
     // Set the attribute onloadedmetadata for this class 
     this.htmlonloadedmetadata = `"onloadedmetadata = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onloadedmetadata declaration for class button
 
 // Script to be run just as the file begins to load before anything is actually loaded 
-void button::setOnloadstart(| string scalar methodarg) { 
+class button scalar button::setOnloadstart(| string scalar methodarg) { 
 
     // Set the attribute onloadstart for this class 
     this.htmlonloadstart = `"onloadstart = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onloadstart declaration for class button
 
 // Script to be run when the message is triggered 
-void button::setOnmessage(| string scalar methodarg) { 
+class button scalar button::setOnmessage(| string scalar methodarg) { 
 
     // Set the attribute onmessage for this class 
     this.htmlonmessage = `"onmessage = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmessage declaration for class button
 
 // Fires when a mouse button is pressed down on an element 
-void button::setOnmousedown(| string scalar methodarg) { 
+class button scalar button::setOnmousedown(| string scalar methodarg) { 
 
     // Set the attribute onmousedown for this class 
     this.htmlonmousedown = `"onmousedown = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmousedown declaration for class button
 
 // Fires when the mouse pointer is moving while it is over an element 
-void button::setOnmousemove(| string scalar methodarg) { 
+class button scalar button::setOnmousemove(| string scalar methodarg) { 
 
     // Set the attribute onmousemove for this class 
     this.htmlonmousemove = `"onmousemove = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmousemove declaration for class button
 
 // Fires when the mouse pointer moves out of an element 
-void button::setOnmouseout(| string scalar methodarg) { 
+class button scalar button::setOnmouseout(| string scalar methodarg) { 
 
     // Set the attribute onmouseout for this class 
     this.htmlonmouseout = `"onmouseout = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmouseout declaration for class button
 
 // Fires when the mouse pointer moves over an element 
-void button::setOnmouseover(| string scalar methodarg) { 
+class button scalar button::setOnmouseover(| string scalar methodarg) { 
 
     // Set the attribute onmouseover for this class 
     this.htmlonmouseover = `"onmouseover = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmouseover declaration for class button
 
 // Fires when a mouse button is released over an element 
-void button::setOnmouseup(| string scalar methodarg) { 
+class button scalar button::setOnmouseup(| string scalar methodarg) { 
 
     // Set the attribute onmouseup for this class 
     this.htmlonmouseup = `"onmouseup = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmouseup declaration for class button
 
 // Deprecated. Use the onwheel attribute instead 
-void button::setOnmousewheel(| string scalar methodarg) { 
+class button scalar button::setOnmousewheel(| string scalar methodarg) { 
 
     // Set the attribute onmousewheel for this class 
     this.htmlonmousewheel = `"onmousewheel = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmousewheel declaration for class button
 
 // Script to be run when the browser starts to work offline 
-void button::setOnoffline(| string scalar methodarg) { 
+class button scalar button::setOnoffline(| string scalar methodarg) { 
 
     // Set the attribute onoffline for this class 
     this.htmlonoffline = `"onoffline = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onoffline declaration for class button
 
 // Script to be run when the browser starts to work online 
-void button::setOnonline(| string scalar methodarg) { 
+class button scalar button::setOnonline(| string scalar methodarg) { 
 
     // Set the attribute ononline for this class 
     this.htmlononline = `"ononline = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ononline declaration for class button
 
 // Script to be run when a user navigates away from a page 
-void button::setOnpagehide(| string scalar methodarg) { 
+class button scalar button::setOnpagehide(| string scalar methodarg) { 
 
     // Set the attribute onpagehide for this class 
     this.htmlonpagehide = `"onpagehide = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpagehide declaration for class button
 
 // Script to be run when a user navigates to a page 
-void button::setOnpageshow(| string scalar methodarg) { 
+class button scalar button::setOnpageshow(| string scalar methodarg) { 
 
     // Set the attribute onpageshow for this class 
     this.htmlonpageshow = `"onpageshow = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpageshow declaration for class button
 
 // Fires when the user pastes some content in an element 
-void button::setOnpaste(| string scalar methodarg) { 
+class button scalar button::setOnpaste(| string scalar methodarg) { 
 
     // Set the attribute onpaste for this class 
     this.htmlonpaste = `"onpaste = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpaste declaration for class button
 
 // Script to be run when the media is paused either by the user or programmatically 
-void button::setOnpause(| string scalar methodarg) { 
+class button scalar button::setOnpause(| string scalar methodarg) { 
 
     // Set the attribute onpause for this class 
     this.htmlonpause = `"onpause = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpause declaration for class button
 
 // Script to be run when the media is ready to start playing 
-void button::setOnplay(| string scalar methodarg) { 
+class button scalar button::setOnplay(| string scalar methodarg) { 
 
     // Set the attribute onplay for this class 
     this.htmlonplay = `"onplay = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onplay declaration for class button
 
 // Script to be run when the media actually has started playing 
-void button::setOnplaying(| string scalar methodarg) { 
+class button scalar button::setOnplaying(| string scalar methodarg) { 
 
     // Set the attribute onplaying for this class 
     this.htmlonplaying = `"onplaying = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onplaying declaration for class button
 
 // Script to be run when the window's history changes 
-void button::setOnpopstate(| string scalar methodarg) { 
+class button scalar button::setOnpopstate(| string scalar methodarg) { 
 
     // Set the attribute onpopstate for this class 
     this.htmlonpopstate = `"onpopstate = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpopstate declaration for class button
 
 // Script to be run when the browser is in the process of getting the media data 
-void button::setOnprogress(| string scalar methodarg) { 
+class button scalar button::setOnprogress(| string scalar methodarg) { 
 
     // Set the attribute onprogress for this class 
     this.htmlonprogress = `"onprogress = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onprogress declaration for class button
 
 // Script to be run each time the playback rate changes (like when a user switches to a slow motion or fast forward mode) 
-void button::setOnratechange(| string scalar methodarg) { 
+class button scalar button::setOnratechange(| string scalar methodarg) { 
 
     // Set the attribute onratechange for this class 
     this.htmlonratechange = `"onratechange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onratechange declaration for class button
 
 // Fires when the Reset button in a form is clicked 
-void button::setOnreset(| string scalar methodarg) { 
+class button scalar button::setOnreset(| string scalar methodarg) { 
 
     // Set the attribute onreset for this class 
     this.htmlonreset = `"onreset = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onreset declaration for class button
 
 // Fires when the browser window is resized 
-void button::setOnresize(| string scalar methodarg) { 
+class button scalar button::setOnresize(| string scalar methodarg) { 
 
     // Set the attribute onresize for this class 
     this.htmlonresize = `"onresize = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onresize declaration for class button
 
 // Script to be run when an element's scrollbar is being scrolled 
-void button::setOnscroll(| string scalar methodarg) { 
+class button scalar button::setOnscroll(| string scalar methodarg) { 
 
     // Set the attribute onscroll for this class 
     this.htmlonscroll = `"onscroll = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onscroll declaration for class button
 
 // Fires when the user writes something in a search field (for <input="search">) 
-void button::setOnsearch(| string scalar methodarg) { 
+class button scalar button::setOnsearch(| string scalar methodarg) { 
 
     // Set the attribute onsearch for this class 
     this.htmlonsearch = `"onsearch = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onsearch declaration for class button
 
 // Script to be run when the seeking attribute is set to false indicating that seeking has ended 
-void button::setOnseeked(| string scalar methodarg) { 
+class button scalar button::setOnseeked(| string scalar methodarg) { 
 
     // Set the attribute onseeked for this class 
     this.htmlonseeked = `"onseeked = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onseeked declaration for class button
 
 // Script to be run when the seeking attribute is set to true indicating that seeking is active 
-void button::setOnseeking(| string scalar methodarg) { 
+class button scalar button::setOnseeking(| string scalar methodarg) { 
 
     // Set the attribute onseeking for this class 
     this.htmlonseeking = `"onseeking = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onseeking declaration for class button
 
 // Fires after some text has been selected in an element 
-void button::setOnselect(| string scalar methodarg) { 
+class button scalar button::setOnselect(| string scalar methodarg) { 
 
     // Set the attribute onselect for this class 
     this.htmlonselect = `"onselect = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onselect declaration for class button
 
 // Fires when a <menu> element is shown as a context menu 
-void button::setOnshow(| string scalar methodarg) { 
+class button scalar button::setOnshow(| string scalar methodarg) { 
 
     // Set the attribute onshow for this class 
     this.htmlonshow = `"onshow = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onshow declaration for class button
 
 // Script to be run when the browser is unable to fetch the media data for whatever reason 
-void button::setOnstalled(| string scalar methodarg) { 
+class button scalar button::setOnstalled(| string scalar methodarg) { 
 
     // Set the attribute onstalled for this class 
     this.htmlonstalled = `"onstalled = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onstalled declaration for class button
 
 // Script to be run when a Web Storage area is updated 
-void button::setOnstorage(| string scalar methodarg) { 
+class button scalar button::setOnstorage(| string scalar methodarg) { 
 
     // Set the attribute onstorage for this class 
     this.htmlonstorage = `"onstorage = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onstorage declaration for class button
 
 // Fires when a form is submitted 
-void button::setOnsubmit(| string scalar methodarg) { 
+class button scalar button::setOnsubmit(| string scalar methodarg) { 
 
     // Set the attribute onsubmit for this class 
     this.htmlonsubmit = `"onsubmit = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onsubmit declaration for class button
 
 // Script to be run when fetching the media data is stopped before it is completely loaded for whatever reason 
-void button::setOnsuspend(| string scalar methodarg) { 
+class button scalar button::setOnsuspend(| string scalar methodarg) { 
 
     // Set the attribute onsuspend for this class 
     this.htmlonsuspend = `"onsuspend = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onsuspend declaration for class button
 
 // Script to be run when the playing position has changed (like when the user fast forwards to a different point in the media) 
-void button::setOntimeupdate(| string scalar methodarg) { 
+class button scalar button::setOntimeupdate(| string scalar methodarg) { 
 
     // Set the attribute ontimeupdate for this class 
     this.htmlontimeupdate = `"ontimeupdate = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ontimeupdate declaration for class button
 
 // Fires when the user opens or closes the <details> element 
-void button::setOntoggle(| string scalar methodarg) { 
+class button scalar button::setOntoggle(| string scalar methodarg) { 
 
     // Set the attribute ontoggle for this class 
     this.htmlontoggle = `"ontoggle = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ontoggle declaration for class button
 
 // Fires once a page has unloaded (or the browser window has been closed) 
-void button::setOnunload(| string scalar methodarg) { 
+class button scalar button::setOnunload(| string scalar methodarg) { 
 
     // Set the attribute onunload for this class 
     this.htmlonunload = `"onunload = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onunload declaration for class button
 
 // Script to be run each time the volume is changed which (includes setting the volume to "mute") 
-void button::setOnvolumechange(| string scalar methodarg) { 
+class button scalar button::setOnvolumechange(| string scalar methodarg) { 
 
     // Set the attribute onvolumechange for this class 
     this.htmlonvolumechange = `"onvolumechange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onvolumechange declaration for class button
 
 // Script to be run when the media has paused but is expected to resume (like when the media pauses to buffer more data) 
-void button::setOnwaiting(| string scalar methodarg) { 
+class button scalar button::setOnwaiting(| string scalar methodarg) { 
 
     // Set the attribute onwaiting for this class 
     this.htmlonwaiting = `"onwaiting = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onwaiting declaration for class button
 
 // Fires when the mouse wheel rolls up or down over an element 
-void button::setOnwheel(| string scalar methodarg) { 
+class button scalar button::setOnwheel(| string scalar methodarg) { 
 
     // Set the attribute onwheel for this class 
     this.htmlonwheel = `"onwheel = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onwheel declaration for class button
 
 // Specifies whether the element is to have its spelling and grammar checked or not 
-void button::setSpellcheck(| string scalar methodarg) { 
+class button scalar button::setSpellcheck(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "true" | methodarg == "false") { 
@@ -827,34 +1109,46 @@ void button::setSpellcheck(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method spellcheck declaration for class button
 
 // Specifies an inline CSS style for an element 
-void button::setStyle(| string scalar methodarg) { 
+class button scalar button::setStyle(| string scalar methodarg) { 
 
     // Set the attribute style for this class 
     this.htmlstyle = `"style = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method style declaration for class button
 
 // Specifies the tabbing order of an element 
-void button::setTabindex(| string scalar methodarg) { 
+class button scalar button::setTabindex(| string scalar methodarg) { 
 
     // Set the attribute tabindex for this class 
     this.htmltabindex = `"tabindex = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method tabindex declaration for class button
 
 // Specifies extra information about an element 
-void button::setTitle(| string scalar methodarg) { 
+class button scalar button::setTitle(| string scalar methodarg) { 
 
     // Set the attribute title for this class 
     this.htmltitle = `"title = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method title declaration for class button
 
 // Specifies whether the content of an element should be translated or not 
-void button::setTranslate(| string scalar methodarg) { 
+class button scalar button::setTranslate(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "yes" | methodarg == "no") { 
@@ -864,10 +1158,13 @@ void button::setTranslate(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method translate declaration for class button
 
 // Specifies the type of button 
-void button::setType(| string scalar methodarg) { 
+class button scalar button::setType(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "button" | methodarg == "reset" | methodarg == "submit") { 
@@ -877,13 +1174,19 @@ void button::setType(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method type declaration for class button
 
 // Specifies an initial value for the button 
-void button::setValue(| string scalar methodarg) { 
+class button scalar button::setValue(| string scalar methodarg) { 
 
     // Set the attribute value for this class 
     this.htmlvalue = `"value = ""' + methodarg + "" 
+
+    // Return a copy of the object 
+    return(this)
 
 } // End of Method value declaration for class button
 

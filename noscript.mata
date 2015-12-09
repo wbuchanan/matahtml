@@ -20,8 +20,11 @@ class noscript {
     // Define public members/methods 
     public: 
 
+    // Class constructor method 
+    void         new()
+
     // Setter methods 
-    void         new(), setClassArgs(), setAccesskey(), setClass(), setContenteditable(), setContextmenu(), setData(), setDir(), setDraggable(), setDropzone(), setHidden(), setId(), setLang(), setSpellcheck(), setStyle(), setTabindex(), setTitle(), setTranslate()
+    class        noscript     scalar  setClassArgs(), setAccesskey(), setClass(), setContenteditable(), setContextmenu(), setData(), setDir(), setDraggable(), setDropzone(), setHidden(), setId(), setLang(), setSpellcheck(), setStyle(), setTabindex(), setTitle(), setTranslate()
 
     // Getter methods 
     string               scalar          getOpens(), getOpene(), getClose(), print(), getClassArgs(), getAccesskey(), getClass(), getContenteditable(), getContextmenu(), getData(), getDir(), getDraggable(), getDropzone(), getHidden(), getId(), getLang(), getSpellcheck(), getStyle(), getTabindex(), getTitle(), getTranslate()
@@ -43,31 +46,40 @@ void noscript::new() {
 } // End of class constructor method definition
 
 // Setter method for class arguments (appear between HTML tags) 
-void noscript::setClassArgs(| string scalar classarguments) { 
+class noscript scalar noscript::setClassArgs(| string scalar classarguments) { 
 
     // Defines arguments that appear between HTML tags 
     this.classargs = classarguments 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of setter method for class arguments
 
 // Specifies a shortcut key to activate/focus an element 
-void noscript::setAccesskey(| string scalar methodarg) { 
+class noscript scalar noscript::setAccesskey(| string scalar methodarg) { 
 
     // Set the attribute accesskey for this class 
     this.htmlaccesskey = `"accesskey = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method accesskey declaration for class noscript
 
 // Specifies one or more classnames for an element (refers to a class in a style sheet) 
-void noscript::setClass(| string scalar methodarg) { 
+class noscript scalar noscript::setClass(| string scalar methodarg) { 
 
     // Set the attribute class for this class 
     this.htmlclass = `"class = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method class declaration for class noscript
 
 // Specifies whether the content of an element is editable or not 
-void noscript::setContenteditable(| string scalar methodarg) { 
+class noscript scalar noscript::setContenteditable(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "true" | methodarg == "false") { 
@@ -77,26 +89,35 @@ void noscript::setContenteditable(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method contenteditable declaration for class noscript
 
 // Specifies a context menu for an element. The context menu appears when a user right-clicks on the element 
-void noscript::setContextmenu(| string scalar methodarg) { 
+class noscript scalar noscript::setContextmenu(| string scalar methodarg) { 
 
     // Set the attribute contextmenu for this class 
     this.htmlcontextmenu = `"contextmenu = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method contextmenu declaration for class noscript
 
 // Used to store custom data private to the page or application 
-void noscript::setData(| string scalar methodarg) { 
+class noscript scalar noscript::setData(| string scalar methodarg) { 
 
     // Set the attribute data for this class 
     this.htmldata = `"data = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method data declaration for class noscript
 
 // Specifies the text direction for the content in an element 
-void noscript::setDir(| string scalar methodarg) { 
+class noscript scalar noscript::setDir(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "ltr" | methodarg == "rtl" | methodarg == "auto") { 
@@ -106,10 +127,13 @@ void noscript::setDir(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method dir declaration for class noscript
 
 // Specifies whether an element is draggable or not 
-void noscript::setDraggable(| string scalar methodarg) { 
+class noscript scalar noscript::setDraggable(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "true" | methodarg == "false" | methodarg == "auto") { 
@@ -119,10 +143,13 @@ void noscript::setDraggable(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method draggable declaration for class noscript
 
 // Specifies whether the dragged data is copied, moved, or linked, when dropped 
-void noscript::setDropzone(| string scalar methodarg) { 
+class noscript scalar noscript::setDropzone(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "copy" | methodarg == "move" | methodarg == "link") { 
@@ -132,34 +159,46 @@ void noscript::setDropzone(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method dropzone declaration for class noscript
 
 // Specifies that an element is not yet, or is no longer, relevant 
-void noscript::setHidden(| string scalar methodarg) { 
+class noscript scalar noscript::setHidden(| string scalar methodarg) { 
 
     // Set the attribute hidden for this class 
     this.htmlhidden = `"hidden = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method hidden declaration for class noscript
 
 // Specifies a unique id for an element 
-void noscript::setId(| string scalar methodarg) { 
+class noscript scalar noscript::setId(| string scalar methodarg) { 
 
     // Set the attribute id for this class 
     this.htmlid = `"id = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method id declaration for class noscript
 
 // Specifies the language of the element's content 
-void noscript::setLang(| string scalar methodarg) { 
+class noscript scalar noscript::setLang(| string scalar methodarg) { 
 
     // Set the attribute lang for this class 
     this.htmllang = `"lang = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method lang declaration for class noscript
 
 // Specifies whether the element is to have its spelling and grammar checked or not 
-void noscript::setSpellcheck(| string scalar methodarg) { 
+class noscript scalar noscript::setSpellcheck(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "true" | methodarg == "false") { 
@@ -169,34 +208,46 @@ void noscript::setSpellcheck(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method spellcheck declaration for class noscript
 
 // Specifies an inline CSS style for an element 
-void noscript::setStyle(| string scalar methodarg) { 
+class noscript scalar noscript::setStyle(| string scalar methodarg) { 
 
     // Set the attribute style for this class 
     this.htmlstyle = `"style = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method style declaration for class noscript
 
 // Specifies the tabbing order of an element 
-void noscript::setTabindex(| string scalar methodarg) { 
+class noscript scalar noscript::setTabindex(| string scalar methodarg) { 
 
     // Set the attribute tabindex for this class 
     this.htmltabindex = `"tabindex = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method tabindex declaration for class noscript
 
 // Specifies extra information about an element 
-void noscript::setTitle(| string scalar methodarg) { 
+class noscript scalar noscript::setTitle(| string scalar methodarg) { 
 
     // Set the attribute title for this class 
     this.htmltitle = `"title = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method title declaration for class noscript
 
 // Specifies whether the content of an element should be translated or not 
-void noscript::setTranslate(| string scalar methodarg) { 
+class noscript scalar noscript::setTranslate(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "yes" | methodarg == "no") { 
@@ -205,6 +256,9 @@ void noscript::setTranslate(| string scalar methodarg) {
         this.htmltranslate = `"translate = ""' + methodarg + "" 
 
     } // End IF Block for validated argument value 
+
+    // Return a copy of the object 
+    return(this)
 
 } // End of Method translate declaration for class noscript
 

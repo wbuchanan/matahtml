@@ -20,8 +20,11 @@ class textarea {
     // Define public members/methods 
     public: 
 
+    // Class constructor method 
+    void         new()
+
     // Setter methods 
-    void         new(), setClassArgs(), setAccesskey(), setAutofocus(), setClass(), setCols(), setContenteditable(), setContextmenu(), setData(), setDir(), setDisabled(), setDraggable(), setDropzone(), setForm(), setHidden(), setId(), setLang(), setMaxlength(), setName(), setOnabort(), setOnafterprint(), setOnbeforeprint(), setOnbeforeunload(), setOnblur(), setOncanplay(), setOncanplaythrough(), setOnchange(), setOnclick(), setOncontextmenu(), setOncopy(), setOncuechange(), setOncut(), setOndblclick(), setOndrag(), setOndragend(), setOndragenter(), setOndragleave(), setOndragover(), setOndragstart(), setOndrop(), setOndurationchange(), setOnemptied(), setOnended(), setOnerror(), setOnfocus(), setOnhashchange(), setOninput(), setOninvalid(), setOnkeydown(), setOnkeypress(), setOnkeyup(), setOnload(), setOnloadeddata(), setOnloadedmetadata(), setOnloadstart(), setOnmessage(), setOnmousedown(), setOnmousemove(), setOnmouseout(), setOnmouseover(), setOnmouseup(), setOnmousewheel(), setOnoffline(), setOnonline(), setOnpagehide(), setOnpageshow(), setOnpaste(), setOnpause(), setOnplay(), setOnplaying(), setOnpopstate(), setOnprogress(), setOnratechange(), setOnreset(), setOnresize(), setOnscroll(), setOnsearch(), setOnseeked(), setOnseeking(), setOnselect(), setOnshow(), setOnstalled(), setOnstorage(), setOnsubmit(), setOnsuspend(), setOntimeupdate(), setOntoggle(), setOnunload(), setOnvolumechange(), setOnwaiting(), setOnwheel(), setPlaceholder(), setReadonly(), setRequired(), setRows(), setSpellcheck(), setStyle(), setTabindex(), setTitle(), setTranslate(), setWrap()
+    class        textarea     scalar  setClassArgs(), setAccesskey(), setAutofocus(), setClass(), setCols(), setContenteditable(), setContextmenu(), setData(), setDir(), setDisabled(), setDraggable(), setDropzone(), setForm(), setHidden(), setId(), setLang(), setMaxlength(), setName(), setOnabort(), setOnafterprint(), setOnbeforeprint(), setOnbeforeunload(), setOnblur(), setOncanplay(), setOncanplaythrough(), setOnchange(), setOnclick(), setOncontextmenu(), setOncopy(), setOncuechange(), setOncut(), setOndblclick(), setOndrag(), setOndragend(), setOndragenter(), setOndragleave(), setOndragover(), setOndragstart(), setOndrop(), setOndurationchange(), setOnemptied(), setOnended(), setOnerror(), setOnfocus(), setOnhashchange(), setOninput(), setOninvalid(), setOnkeydown(), setOnkeypress(), setOnkeyup(), setOnload(), setOnloadeddata(), setOnloadedmetadata(), setOnloadstart(), setOnmessage(), setOnmousedown(), setOnmousemove(), setOnmouseout(), setOnmouseover(), setOnmouseup(), setOnmousewheel(), setOnoffline(), setOnonline(), setOnpagehide(), setOnpageshow(), setOnpaste(), setOnpause(), setOnplay(), setOnplaying(), setOnpopstate(), setOnprogress(), setOnratechange(), setOnreset(), setOnresize(), setOnscroll(), setOnsearch(), setOnseeked(), setOnseeking(), setOnselect(), setOnshow(), setOnstalled(), setOnstorage(), setOnsubmit(), setOnsuspend(), setOntimeupdate(), setOntoggle(), setOnunload(), setOnvolumechange(), setOnwaiting(), setOnwheel(), setPlaceholder(), setReadonly(), setRequired(), setRows(), setSpellcheck(), setStyle(), setTabindex(), setTitle(), setTranslate(), setWrap()
 
     // Getter methods 
     string               scalar          getOpens(), getOpene(), getClose(), print(), getClassArgs(), getAccesskey(), getAutofocus(), getClass(), getCols(), getContenteditable(), getContextmenu(), getData(), getDir(), getDisabled(), getDraggable(), getDropzone(), getForm(), getHidden(), getId(), getLang(), getMaxlength(), getName(), getOnabort(), getOnafterprint(), getOnbeforeprint(), getOnbeforeunload(), getOnblur(), getOncanplay(), getOncanplaythrough(), getOnchange(), getOnclick(), getOncontextmenu(), getOncopy(), getOncuechange(), getOncut(), getOndblclick(), getOndrag(), getOndragend(), getOndragenter(), getOndragleave(), getOndragover(), getOndragstart(), getOndrop(), getOndurationchange(), getOnemptied(), getOnended(), getOnerror(), getOnfocus(), getOnhashchange(), getOninput(), getOninvalid(), getOnkeydown(), getOnkeypress(), getOnkeyup(), getOnload(), getOnloadeddata(), getOnloadedmetadata(), getOnloadstart(), getOnmessage(), getOnmousedown(), getOnmousemove(), getOnmouseout(), getOnmouseover(), getOnmouseup(), getOnmousewheel(), getOnoffline(), getOnonline(), getOnpagehide(), getOnpageshow(), getOnpaste(), getOnpause(), getOnplay(), getOnplaying(), getOnpopstate(), getOnprogress(), getOnratechange(), getOnreset(), getOnresize(), getOnscroll(), getOnsearch(), getOnseeked(), getOnseeking(), getOnselect(), getOnshow(), getOnstalled(), getOnstorage(), getOnsubmit(), getOnsuspend(), getOntimeupdate(), getOntoggle(), getOnunload(), getOnvolumechange(), getOnwaiting(), getOnwheel(), getPlaceholder(), getReadonly(), getRequired(), getRows(), getSpellcheck(), getStyle(), getTabindex(), getTitle(), getTranslate(), getWrap()
@@ -43,47 +46,62 @@ void textarea::new() {
 } // End of class constructor method definition
 
 // Setter method for class arguments (appear between HTML tags) 
-void textarea::setClassArgs(| string scalar classarguments) { 
+class textarea scalar textarea::setClassArgs(| string scalar classarguments) { 
 
     // Defines arguments that appear between HTML tags 
     this.classargs = classarguments 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of setter method for class arguments
 
 // Specifies a shortcut key to activate/focus an element 
-void textarea::setAccesskey(| string scalar methodarg) { 
+class textarea scalar textarea::setAccesskey(| string scalar methodarg) { 
 
     // Set the attribute accesskey for this class 
     this.htmlaccesskey = `"accesskey = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method accesskey declaration for class textarea
 
 // Specifies that a text area should automatically get focus when the page loads 
-void textarea::setAutofocus(| string scalar methodarg) { 
+class textarea scalar textarea::setAutofocus(| string scalar methodarg) { 
 
     // Set the attribute autofocus for this class 
     this.htmlautofocus = `"autofocus = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method autofocus declaration for class textarea
 
 // Specifies one or more classnames for an element (refers to a class in a style sheet) 
-void textarea::setClass(| string scalar methodarg) { 
+class textarea scalar textarea::setClass(| string scalar methodarg) { 
 
     // Set the attribute class for this class 
     this.htmlclass = `"class = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method class declaration for class textarea
 
 // Specifies the visible width of a text area 
-void textarea::setCols(| string scalar methodarg) { 
+class textarea scalar textarea::setCols(| string scalar methodarg) { 
 
     // Set the attribute cols for this class 
     this.htmlcols = `"cols = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method cols declaration for class textarea
 
 // Specifies whether the content of an element is editable or not 
-void textarea::setContenteditable(| string scalar methodarg) { 
+class textarea scalar textarea::setContenteditable(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "true" | methodarg == "false") { 
@@ -93,26 +111,35 @@ void textarea::setContenteditable(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method contenteditable declaration for class textarea
 
 // Specifies a context menu for an element. The context menu appears when a user right-clicks on the element 
-void textarea::setContextmenu(| string scalar methodarg) { 
+class textarea scalar textarea::setContextmenu(| string scalar methodarg) { 
 
     // Set the attribute contextmenu for this class 
     this.htmlcontextmenu = `"contextmenu = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method contextmenu declaration for class textarea
 
 // Used to store custom data private to the page or application 
-void textarea::setData(| string scalar methodarg) { 
+class textarea scalar textarea::setData(| string scalar methodarg) { 
 
     // Set the attribute data for this class 
     this.htmldata = `"data = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method data declaration for class textarea
 
 // Specifies the text direction for the content in an element 
-void textarea::setDir(| string scalar methodarg) { 
+class textarea scalar textarea::setDir(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "ltr" | methodarg == "rtl" | methodarg == "auto") { 
@@ -122,18 +149,24 @@ void textarea::setDir(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method dir declaration for class textarea
 
 // Specifies that a text area should be disabled 
-void textarea::setDisabled(| string scalar methodarg) { 
+class textarea scalar textarea::setDisabled(| string scalar methodarg) { 
 
     // Set the attribute disabled for this class 
     this.htmldisabled = `"disabled = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method disabled declaration for class textarea
 
 // Specifies whether an element is draggable or not 
-void textarea::setDraggable(| string scalar methodarg) { 
+class textarea scalar textarea::setDraggable(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "true" | methodarg == "false" | methodarg == "auto") { 
@@ -143,10 +176,13 @@ void textarea::setDraggable(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method draggable declaration for class textarea
 
 // Specifies whether the dragged data is copied, moved, or linked, when dropped 
-void textarea::setDropzone(| string scalar methodarg) { 
+class textarea scalar textarea::setDropzone(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "copy" | methodarg == "move" | methodarg == "link") { 
@@ -156,666 +192,915 @@ void textarea::setDropzone(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method dropzone declaration for class textarea
 
 // Specifies one or more forms the text area belongs to 
-void textarea::setForm(| string scalar methodarg) { 
+class textarea scalar textarea::setForm(| string scalar methodarg) { 
 
     // Set the attribute form for this class 
     this.htmlform = `"form = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method form declaration for class textarea
 
 // Specifies that an element is not yet, or is no longer, relevant 
-void textarea::setHidden(| string scalar methodarg) { 
+class textarea scalar textarea::setHidden(| string scalar methodarg) { 
 
     // Set the attribute hidden for this class 
     this.htmlhidden = `"hidden = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method hidden declaration for class textarea
 
 // Specifies a unique id for an element 
-void textarea::setId(| string scalar methodarg) { 
+class textarea scalar textarea::setId(| string scalar methodarg) { 
 
     // Set the attribute id for this class 
     this.htmlid = `"id = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method id declaration for class textarea
 
 // Specifies the language of the element's content 
-void textarea::setLang(| string scalar methodarg) { 
+class textarea scalar textarea::setLang(| string scalar methodarg) { 
 
     // Set the attribute lang for this class 
     this.htmllang = `"lang = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method lang declaration for class textarea
 
 // Specifies the maximum number of characters allowed in the text area 
-void textarea::setMaxlength(| string scalar methodarg) { 
+class textarea scalar textarea::setMaxlength(| string scalar methodarg) { 
 
     // Set the attribute maxlength for this class 
     this.htmlmaxlength = `"maxlength = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method maxlength declaration for class textarea
 
 // Specifies a name for a text area 
-void textarea::setName(| string scalar methodarg) { 
+class textarea scalar textarea::setName(| string scalar methodarg) { 
 
     // Set the attribute name for this class 
     this.htmlname = `"name = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method name declaration for class textarea
 
 // Script to be run on abort 
-void textarea::setOnabort(| string scalar methodarg) { 
+class textarea scalar textarea::setOnabort(| string scalar methodarg) { 
 
     // Set the attribute onabort for this class 
     this.htmlonabort = `"onabort = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onabort declaration for class textarea
 
 // Script to be run after the document is printed 
-void textarea::setOnafterprint(| string scalar methodarg) { 
+class textarea scalar textarea::setOnafterprint(| string scalar methodarg) { 
 
     // Set the attribute onafterprint for this class 
     this.htmlonafterprint = `"onafterprint = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onafterprint declaration for class textarea
 
 // Script to be run before the document is printed 
-void textarea::setOnbeforeprint(| string scalar methodarg) { 
+class textarea scalar textarea::setOnbeforeprint(| string scalar methodarg) { 
 
     // Set the attribute onbeforeprint for this class 
     this.htmlonbeforeprint = `"onbeforeprint = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onbeforeprint declaration for class textarea
 
 // Script to be run when the document is about to be unloaded 
-void textarea::setOnbeforeunload(| string scalar methodarg) { 
+class textarea scalar textarea::setOnbeforeunload(| string scalar methodarg) { 
 
     // Set the attribute onbeforeunload for this class 
     this.htmlonbeforeunload = `"onbeforeunload = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onbeforeunload declaration for class textarea
 
 // Fires the moment that the element loses focus 
-void textarea::setOnblur(| string scalar methodarg) { 
+class textarea scalar textarea::setOnblur(| string scalar methodarg) { 
 
     // Set the attribute onblur for this class 
     this.htmlonblur = `"onblur = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onblur declaration for class textarea
 
 // Script to be run when a file is ready to start playing (when it has buffered enough to begin) 
-void textarea::setOncanplay(| string scalar methodarg) { 
+class textarea scalar textarea::setOncanplay(| string scalar methodarg) { 
 
     // Set the attribute oncanplay for this class 
     this.htmloncanplay = `"oncanplay = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncanplay declaration for class textarea
 
 // Script to be run when a file can be played all the way to the end without pausing for buffering 
-void textarea::setOncanplaythrough(| string scalar methodarg) { 
+class textarea scalar textarea::setOncanplaythrough(| string scalar methodarg) { 
 
     // Set the attribute oncanplaythrough for this class 
     this.htmloncanplaythrough = `"oncanplaythrough = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncanplaythrough declaration for class textarea
 
 // Fires the moment when the value of the element is changed 
-void textarea::setOnchange(| string scalar methodarg) { 
+class textarea scalar textarea::setOnchange(| string scalar methodarg) { 
 
     // Set the attribute onchange for this class 
     this.htmlonchange = `"onchange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onchange declaration for class textarea
 
 // Fires on a mouse click on the element 
-void textarea::setOnclick(| string scalar methodarg) { 
+class textarea scalar textarea::setOnclick(| string scalar methodarg) { 
 
     // Set the attribute onclick for this class 
     this.htmlonclick = `"onclick = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onclick declaration for class textarea
 
 // Script to be run when a context menu is triggered 
-void textarea::setOncontextmenu(| string scalar methodarg) { 
+class textarea scalar textarea::setOncontextmenu(| string scalar methodarg) { 
 
     // Set the attribute oncontextmenu for this class 
     this.htmloncontextmenu = `"oncontextmenu = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncontextmenu declaration for class textarea
 
 // Fires when the user copies the content of an element 
-void textarea::setOncopy(| string scalar methodarg) { 
+class textarea scalar textarea::setOncopy(| string scalar methodarg) { 
 
     // Set the attribute oncopy for this class 
     this.htmloncopy = `"oncopy = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncopy declaration for class textarea
 
 // Script to be run when the cue changes in a <track> element 
-void textarea::setOncuechange(| string scalar methodarg) { 
+class textarea scalar textarea::setOncuechange(| string scalar methodarg) { 
 
     // Set the attribute oncuechange for this class 
     this.htmloncuechange = `"oncuechange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncuechange declaration for class textarea
 
 // Fires when the user cuts the content of an element 
-void textarea::setOncut(| string scalar methodarg) { 
+class textarea scalar textarea::setOncut(| string scalar methodarg) { 
 
     // Set the attribute oncut for this class 
     this.htmloncut = `"oncut = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncut declaration for class textarea
 
 // Fires on a mouse double-click on the element 
-void textarea::setOndblclick(| string scalar methodarg) { 
+class textarea scalar textarea::setOndblclick(| string scalar methodarg) { 
 
     // Set the attribute ondblclick for this class 
     this.htmlondblclick = `"ondblclick = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondblclick declaration for class textarea
 
 // Script to be run when an element is dragged 
-void textarea::setOndrag(| string scalar methodarg) { 
+class textarea scalar textarea::setOndrag(| string scalar methodarg) { 
 
     // Set the attribute ondrag for this class 
     this.htmlondrag = `"ondrag = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondrag declaration for class textarea
 
 // Script to be run at the end of a drag operation 
-void textarea::setOndragend(| string scalar methodarg) { 
+class textarea scalar textarea::setOndragend(| string scalar methodarg) { 
 
     // Set the attribute ondragend for this class 
     this.htmlondragend = `"ondragend = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragend declaration for class textarea
 
 // Script to be run when an element has been dragged to a valid drop target 
-void textarea::setOndragenter(| string scalar methodarg) { 
+class textarea scalar textarea::setOndragenter(| string scalar methodarg) { 
 
     // Set the attribute ondragenter for this class 
     this.htmlondragenter = `"ondragenter = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragenter declaration for class textarea
 
 // Script to be run when an element leaves a valid drop target 
-void textarea::setOndragleave(| string scalar methodarg) { 
+class textarea scalar textarea::setOndragleave(| string scalar methodarg) { 
 
     // Set the attribute ondragleave for this class 
     this.htmlondragleave = `"ondragleave = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragleave declaration for class textarea
 
 // Script to be run when an element is being dragged over a valid drop target 
-void textarea::setOndragover(| string scalar methodarg) { 
+class textarea scalar textarea::setOndragover(| string scalar methodarg) { 
 
     // Set the attribute ondragover for this class 
     this.htmlondragover = `"ondragover = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragover declaration for class textarea
 
 // Script to be run at the start of a drag operation 
-void textarea::setOndragstart(| string scalar methodarg) { 
+class textarea scalar textarea::setOndragstart(| string scalar methodarg) { 
 
     // Set the attribute ondragstart for this class 
     this.htmlondragstart = `"ondragstart = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragstart declaration for class textarea
 
 // Script to be run when dragged element is being dropped 
-void textarea::setOndrop(| string scalar methodarg) { 
+class textarea scalar textarea::setOndrop(| string scalar methodarg) { 
 
     // Set the attribute ondrop for this class 
     this.htmlondrop = `"ondrop = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondrop declaration for class textarea
 
 // Script to be run when the length of the media changes 
-void textarea::setOndurationchange(| string scalar methodarg) { 
+class textarea scalar textarea::setOndurationchange(| string scalar methodarg) { 
 
     // Set the attribute ondurationchange for this class 
     this.htmlondurationchange = `"ondurationchange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondurationchange declaration for class textarea
 
 // Script to be run when something bad happens and the file is suddenly unavailable (like unexpectedly disconnects) 
-void textarea::setOnemptied(| string scalar methodarg) { 
+class textarea scalar textarea::setOnemptied(| string scalar methodarg) { 
 
     // Set the attribute onemptied for this class 
     this.htmlonemptied = `"onemptied = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onemptied declaration for class textarea
 
 // Script to be run when the media has reach the end (a useful event for messages like "thanks for listening") 
-void textarea::setOnended(| string scalar methodarg) { 
+class textarea scalar textarea::setOnended(| string scalar methodarg) { 
 
     // Set the attribute onended for this class 
     this.htmlonended = `"onended = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onended declaration for class textarea
 
 // Fires when an error occurs while loading an external file Script to be run when an error occur Script to be run when an error occurs when the file is being loaded 
-void textarea::setOnerror(| string scalar methodarg) { 
+class textarea scalar textarea::setOnerror(| string scalar methodarg) { 
 
     // Set the attribute onerror for this class 
     this.htmlonerror = `"onerror = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onerror declaration for class textarea
 
 // Fires the moment when the element gets focus 
-void textarea::setOnfocus(| string scalar methodarg) { 
+class textarea scalar textarea::setOnfocus(| string scalar methodarg) { 
 
     // Set the attribute onfocus for this class 
     this.htmlonfocus = `"onfocus = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onfocus declaration for class textarea
 
 // Script to be run when there has been changes to the anchor part of the a URL 
-void textarea::setOnhashchange(| string scalar methodarg) { 
+class textarea scalar textarea::setOnhashchange(| string scalar methodarg) { 
 
     // Set the attribute onhashchange for this class 
     this.htmlonhashchange = `"onhashchange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onhashchange declaration for class textarea
 
 // Script to be run when an element gets user input 
-void textarea::setOninput(| string scalar methodarg) { 
+class textarea scalar textarea::setOninput(| string scalar methodarg) { 
 
     // Set the attribute oninput for this class 
     this.htmloninput = `"oninput = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oninput declaration for class textarea
 
 // Script to be run when an element is invalid 
-void textarea::setOninvalid(| string scalar methodarg) { 
+class textarea scalar textarea::setOninvalid(| string scalar methodarg) { 
 
     // Set the attribute oninvalid for this class 
     this.htmloninvalid = `"oninvalid = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oninvalid declaration for class textarea
 
 // Fires when a user is pressing a key 
-void textarea::setOnkeydown(| string scalar methodarg) { 
+class textarea scalar textarea::setOnkeydown(| string scalar methodarg) { 
 
     // Set the attribute onkeydown for this class 
     this.htmlonkeydown = `"onkeydown = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onkeydown declaration for class textarea
 
 // Fires when a user presses a key 
-void textarea::setOnkeypress(| string scalar methodarg) { 
+class textarea scalar textarea::setOnkeypress(| string scalar methodarg) { 
 
     // Set the attribute onkeypress for this class 
     this.htmlonkeypress = `"onkeypress = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onkeypress declaration for class textarea
 
 // Fires when a user releases a key 
-void textarea::setOnkeyup(| string scalar methodarg) { 
+class textarea scalar textarea::setOnkeyup(| string scalar methodarg) { 
 
     // Set the attribute onkeyup for this class 
     this.htmlonkeyup = `"onkeyup = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onkeyup declaration for class textarea
 
 // Fires after the page is finished loading 
-void textarea::setOnload(| string scalar methodarg) { 
+class textarea scalar textarea::setOnload(| string scalar methodarg) { 
 
     // Set the attribute onload for this class 
     this.htmlonload = `"onload = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onload declaration for class textarea
 
 // Script to be run when media data is loaded 
-void textarea::setOnloadeddata(| string scalar methodarg) { 
+class textarea scalar textarea::setOnloadeddata(| string scalar methodarg) { 
 
     // Set the attribute onloadeddata for this class 
     this.htmlonloadeddata = `"onloadeddata = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onloadeddata declaration for class textarea
 
 // Script to be run when meta data (like dimensions and duration) are loaded 
-void textarea::setOnloadedmetadata(| string scalar methodarg) { 
+class textarea scalar textarea::setOnloadedmetadata(| string scalar methodarg) { 
 
     // Set the attribute onloadedmetadata for this class 
     this.htmlonloadedmetadata = `"onloadedmetadata = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onloadedmetadata declaration for class textarea
 
 // Script to be run just as the file begins to load before anything is actually loaded 
-void textarea::setOnloadstart(| string scalar methodarg) { 
+class textarea scalar textarea::setOnloadstart(| string scalar methodarg) { 
 
     // Set the attribute onloadstart for this class 
     this.htmlonloadstart = `"onloadstart = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onloadstart declaration for class textarea
 
 // Script to be run when the message is triggered 
-void textarea::setOnmessage(| string scalar methodarg) { 
+class textarea scalar textarea::setOnmessage(| string scalar methodarg) { 
 
     // Set the attribute onmessage for this class 
     this.htmlonmessage = `"onmessage = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmessage declaration for class textarea
 
 // Fires when a mouse button is pressed down on an element 
-void textarea::setOnmousedown(| string scalar methodarg) { 
+class textarea scalar textarea::setOnmousedown(| string scalar methodarg) { 
 
     // Set the attribute onmousedown for this class 
     this.htmlonmousedown = `"onmousedown = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmousedown declaration for class textarea
 
 // Fires when the mouse pointer is moving while it is over an element 
-void textarea::setOnmousemove(| string scalar methodarg) { 
+class textarea scalar textarea::setOnmousemove(| string scalar methodarg) { 
 
     // Set the attribute onmousemove for this class 
     this.htmlonmousemove = `"onmousemove = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmousemove declaration for class textarea
 
 // Fires when the mouse pointer moves out of an element 
-void textarea::setOnmouseout(| string scalar methodarg) { 
+class textarea scalar textarea::setOnmouseout(| string scalar methodarg) { 
 
     // Set the attribute onmouseout for this class 
     this.htmlonmouseout = `"onmouseout = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmouseout declaration for class textarea
 
 // Fires when the mouse pointer moves over an element 
-void textarea::setOnmouseover(| string scalar methodarg) { 
+class textarea scalar textarea::setOnmouseover(| string scalar methodarg) { 
 
     // Set the attribute onmouseover for this class 
     this.htmlonmouseover = `"onmouseover = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmouseover declaration for class textarea
 
 // Fires when a mouse button is released over an element 
-void textarea::setOnmouseup(| string scalar methodarg) { 
+class textarea scalar textarea::setOnmouseup(| string scalar methodarg) { 
 
     // Set the attribute onmouseup for this class 
     this.htmlonmouseup = `"onmouseup = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmouseup declaration for class textarea
 
 // Deprecated. Use the onwheel attribute instead 
-void textarea::setOnmousewheel(| string scalar methodarg) { 
+class textarea scalar textarea::setOnmousewheel(| string scalar methodarg) { 
 
     // Set the attribute onmousewheel for this class 
     this.htmlonmousewheel = `"onmousewheel = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmousewheel declaration for class textarea
 
 // Script to be run when the browser starts to work offline 
-void textarea::setOnoffline(| string scalar methodarg) { 
+class textarea scalar textarea::setOnoffline(| string scalar methodarg) { 
 
     // Set the attribute onoffline for this class 
     this.htmlonoffline = `"onoffline = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onoffline declaration for class textarea
 
 // Script to be run when the browser starts to work online 
-void textarea::setOnonline(| string scalar methodarg) { 
+class textarea scalar textarea::setOnonline(| string scalar methodarg) { 
 
     // Set the attribute ononline for this class 
     this.htmlononline = `"ononline = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ononline declaration for class textarea
 
 // Script to be run when a user navigates away from a page 
-void textarea::setOnpagehide(| string scalar methodarg) { 
+class textarea scalar textarea::setOnpagehide(| string scalar methodarg) { 
 
     // Set the attribute onpagehide for this class 
     this.htmlonpagehide = `"onpagehide = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpagehide declaration for class textarea
 
 // Script to be run when a user navigates to a page 
-void textarea::setOnpageshow(| string scalar methodarg) { 
+class textarea scalar textarea::setOnpageshow(| string scalar methodarg) { 
 
     // Set the attribute onpageshow for this class 
     this.htmlonpageshow = `"onpageshow = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpageshow declaration for class textarea
 
 // Fires when the user pastes some content in an element 
-void textarea::setOnpaste(| string scalar methodarg) { 
+class textarea scalar textarea::setOnpaste(| string scalar methodarg) { 
 
     // Set the attribute onpaste for this class 
     this.htmlonpaste = `"onpaste = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpaste declaration for class textarea
 
 // Script to be run when the media is paused either by the user or programmatically 
-void textarea::setOnpause(| string scalar methodarg) { 
+class textarea scalar textarea::setOnpause(| string scalar methodarg) { 
 
     // Set the attribute onpause for this class 
     this.htmlonpause = `"onpause = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpause declaration for class textarea
 
 // Script to be run when the media is ready to start playing 
-void textarea::setOnplay(| string scalar methodarg) { 
+class textarea scalar textarea::setOnplay(| string scalar methodarg) { 
 
     // Set the attribute onplay for this class 
     this.htmlonplay = `"onplay = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onplay declaration for class textarea
 
 // Script to be run when the media actually has started playing 
-void textarea::setOnplaying(| string scalar methodarg) { 
+class textarea scalar textarea::setOnplaying(| string scalar methodarg) { 
 
     // Set the attribute onplaying for this class 
     this.htmlonplaying = `"onplaying = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onplaying declaration for class textarea
 
 // Script to be run when the window's history changes 
-void textarea::setOnpopstate(| string scalar methodarg) { 
+class textarea scalar textarea::setOnpopstate(| string scalar methodarg) { 
 
     // Set the attribute onpopstate for this class 
     this.htmlonpopstate = `"onpopstate = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpopstate declaration for class textarea
 
 // Script to be run when the browser is in the process of getting the media data 
-void textarea::setOnprogress(| string scalar methodarg) { 
+class textarea scalar textarea::setOnprogress(| string scalar methodarg) { 
 
     // Set the attribute onprogress for this class 
     this.htmlonprogress = `"onprogress = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onprogress declaration for class textarea
 
 // Script to be run each time the playback rate changes (like when a user switches to a slow motion or fast forward mode) 
-void textarea::setOnratechange(| string scalar methodarg) { 
+class textarea scalar textarea::setOnratechange(| string scalar methodarg) { 
 
     // Set the attribute onratechange for this class 
     this.htmlonratechange = `"onratechange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onratechange declaration for class textarea
 
 // Fires when the Reset button in a form is clicked 
-void textarea::setOnreset(| string scalar methodarg) { 
+class textarea scalar textarea::setOnreset(| string scalar methodarg) { 
 
     // Set the attribute onreset for this class 
     this.htmlonreset = `"onreset = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onreset declaration for class textarea
 
 // Fires when the browser window is resized 
-void textarea::setOnresize(| string scalar methodarg) { 
+class textarea scalar textarea::setOnresize(| string scalar methodarg) { 
 
     // Set the attribute onresize for this class 
     this.htmlonresize = `"onresize = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onresize declaration for class textarea
 
 // Script to be run when an element's scrollbar is being scrolled 
-void textarea::setOnscroll(| string scalar methodarg) { 
+class textarea scalar textarea::setOnscroll(| string scalar methodarg) { 
 
     // Set the attribute onscroll for this class 
     this.htmlonscroll = `"onscroll = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onscroll declaration for class textarea
 
 // Fires when the user writes something in a search field (for <input="search">) 
-void textarea::setOnsearch(| string scalar methodarg) { 
+class textarea scalar textarea::setOnsearch(| string scalar methodarg) { 
 
     // Set the attribute onsearch for this class 
     this.htmlonsearch = `"onsearch = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onsearch declaration for class textarea
 
 // Script to be run when the seeking attribute is set to false indicating that seeking has ended 
-void textarea::setOnseeked(| string scalar methodarg) { 
+class textarea scalar textarea::setOnseeked(| string scalar methodarg) { 
 
     // Set the attribute onseeked for this class 
     this.htmlonseeked = `"onseeked = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onseeked declaration for class textarea
 
 // Script to be run when the seeking attribute is set to true indicating that seeking is active 
-void textarea::setOnseeking(| string scalar methodarg) { 
+class textarea scalar textarea::setOnseeking(| string scalar methodarg) { 
 
     // Set the attribute onseeking for this class 
     this.htmlonseeking = `"onseeking = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onseeking declaration for class textarea
 
 // Fires after some text has been selected in an element 
-void textarea::setOnselect(| string scalar methodarg) { 
+class textarea scalar textarea::setOnselect(| string scalar methodarg) { 
 
     // Set the attribute onselect for this class 
     this.htmlonselect = `"onselect = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onselect declaration for class textarea
 
 // Fires when a <menu> element is shown as a context menu 
-void textarea::setOnshow(| string scalar methodarg) { 
+class textarea scalar textarea::setOnshow(| string scalar methodarg) { 
 
     // Set the attribute onshow for this class 
     this.htmlonshow = `"onshow = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onshow declaration for class textarea
 
 // Script to be run when the browser is unable to fetch the media data for whatever reason 
-void textarea::setOnstalled(| string scalar methodarg) { 
+class textarea scalar textarea::setOnstalled(| string scalar methodarg) { 
 
     // Set the attribute onstalled for this class 
     this.htmlonstalled = `"onstalled = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onstalled declaration for class textarea
 
 // Script to be run when a Web Storage area is updated 
-void textarea::setOnstorage(| string scalar methodarg) { 
+class textarea scalar textarea::setOnstorage(| string scalar methodarg) { 
 
     // Set the attribute onstorage for this class 
     this.htmlonstorage = `"onstorage = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onstorage declaration for class textarea
 
 // Fires when a form is submitted 
-void textarea::setOnsubmit(| string scalar methodarg) { 
+class textarea scalar textarea::setOnsubmit(| string scalar methodarg) { 
 
     // Set the attribute onsubmit for this class 
     this.htmlonsubmit = `"onsubmit = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onsubmit declaration for class textarea
 
 // Script to be run when fetching the media data is stopped before it is completely loaded for whatever reason 
-void textarea::setOnsuspend(| string scalar methodarg) { 
+class textarea scalar textarea::setOnsuspend(| string scalar methodarg) { 
 
     // Set the attribute onsuspend for this class 
     this.htmlonsuspend = `"onsuspend = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onsuspend declaration for class textarea
 
 // Script to be run when the playing position has changed (like when the user fast forwards to a different point in the media) 
-void textarea::setOntimeupdate(| string scalar methodarg) { 
+class textarea scalar textarea::setOntimeupdate(| string scalar methodarg) { 
 
     // Set the attribute ontimeupdate for this class 
     this.htmlontimeupdate = `"ontimeupdate = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ontimeupdate declaration for class textarea
 
 // Fires when the user opens or closes the <details> element 
-void textarea::setOntoggle(| string scalar methodarg) { 
+class textarea scalar textarea::setOntoggle(| string scalar methodarg) { 
 
     // Set the attribute ontoggle for this class 
     this.htmlontoggle = `"ontoggle = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ontoggle declaration for class textarea
 
 // Fires once a page has unloaded (or the browser window has been closed) 
-void textarea::setOnunload(| string scalar methodarg) { 
+class textarea scalar textarea::setOnunload(| string scalar methodarg) { 
 
     // Set the attribute onunload for this class 
     this.htmlonunload = `"onunload = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onunload declaration for class textarea
 
 // Script to be run each time the volume is changed which (includes setting the volume to "mute") 
-void textarea::setOnvolumechange(| string scalar methodarg) { 
+class textarea scalar textarea::setOnvolumechange(| string scalar methodarg) { 
 
     // Set the attribute onvolumechange for this class 
     this.htmlonvolumechange = `"onvolumechange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onvolumechange declaration for class textarea
 
 // Script to be run when the media has paused but is expected to resume (like when the media pauses to buffer more data) 
-void textarea::setOnwaiting(| string scalar methodarg) { 
+class textarea scalar textarea::setOnwaiting(| string scalar methodarg) { 
 
     // Set the attribute onwaiting for this class 
     this.htmlonwaiting = `"onwaiting = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onwaiting declaration for class textarea
 
 // Fires when the mouse wheel rolls up or down over an element 
-void textarea::setOnwheel(| string scalar methodarg) { 
+class textarea scalar textarea::setOnwheel(| string scalar methodarg) { 
 
     // Set the attribute onwheel for this class 
     this.htmlonwheel = `"onwheel = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onwheel declaration for class textarea
 
 // Specifies a short hint that describes the expected value of a text area 
-void textarea::setPlaceholder(| string scalar methodarg) { 
+class textarea scalar textarea::setPlaceholder(| string scalar methodarg) { 
 
     // Set the attribute placeholder for this class 
     this.htmlplaceholder = `"placeholder = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method placeholder declaration for class textarea
 
 // Specifies that a text area should be read-only 
-void textarea::setReadonly(| string scalar methodarg) { 
+class textarea scalar textarea::setReadonly(| string scalar methodarg) { 
 
     // Set the attribute readonly for this class 
     this.htmlreadonly = `"readonly = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method readonly declaration for class textarea
 
 // Specifies that a text area is required/must be filled out 
-void textarea::setRequired(| string scalar methodarg) { 
+class textarea scalar textarea::setRequired(| string scalar methodarg) { 
 
     // Set the attribute required for this class 
     this.htmlrequired = `"required = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method required declaration for class textarea
 
 // Specifies the visible number of lines in a text area 
-void textarea::setRows(| string scalar methodarg) { 
+class textarea scalar textarea::setRows(| string scalar methodarg) { 
 
     // Set the attribute rows for this class 
     this.htmlrows = `"rows = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method rows declaration for class textarea
 
 // Specifies whether the element is to have its spelling and grammar checked or not 
-void textarea::setSpellcheck(| string scalar methodarg) { 
+class textarea scalar textarea::setSpellcheck(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "true" | methodarg == "false") { 
@@ -825,34 +1110,46 @@ void textarea::setSpellcheck(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method spellcheck declaration for class textarea
 
 // Specifies an inline CSS style for an element 
-void textarea::setStyle(| string scalar methodarg) { 
+class textarea scalar textarea::setStyle(| string scalar methodarg) { 
 
     // Set the attribute style for this class 
     this.htmlstyle = `"style = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method style declaration for class textarea
 
 // Specifies the tabbing order of an element 
-void textarea::setTabindex(| string scalar methodarg) { 
+class textarea scalar textarea::setTabindex(| string scalar methodarg) { 
 
     // Set the attribute tabindex for this class 
     this.htmltabindex = `"tabindex = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method tabindex declaration for class textarea
 
 // Specifies extra information about an element 
-void textarea::setTitle(| string scalar methodarg) { 
+class textarea scalar textarea::setTitle(| string scalar methodarg) { 
 
     // Set the attribute title for this class 
     this.htmltitle = `"title = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method title declaration for class textarea
 
 // Specifies whether the content of an element should be translated or not 
-void textarea::setTranslate(| string scalar methodarg) { 
+class textarea scalar textarea::setTranslate(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "yes" | methodarg == "no") { 
@@ -862,10 +1159,13 @@ void textarea::setTranslate(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method translate declaration for class textarea
 
 // Specifies how the text in a text area is to be wrapped when submitted in a form 
-void textarea::setWrap(| string scalar methodarg) { 
+class textarea scalar textarea::setWrap(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "hard" | methodarg == "soft") { 
@@ -874,6 +1174,9 @@ void textarea::setWrap(| string scalar methodarg) {
         this.htmlwrap = `"wrap = ""' + methodarg + "" 
 
     } // End IF Block for validated argument value 
+
+    // Return a copy of the object 
+    return(this)
 
 } // End of Method wrap declaration for class textarea
 

@@ -20,8 +20,11 @@ class html {
     // Define public members/methods 
     public: 
 
+    // Class constructor method 
+    void         new()
+
     // Setter methods 
-    void         new(), setClassArgs(), setAccesskey(), setClass(), setContenteditable(), setContextmenu(), setData(), setDir(), setDraggable(), setDropzone(), setHidden(), setId(), setLang(), setManifest(), setSpellcheck(), setStyle(), setTabindex(), setTitle(), setTranslate(), setXmlns()
+    class        html     scalar  setClassArgs(), setAccesskey(), setClass(), setContenteditable(), setContextmenu(), setData(), setDir(), setDraggable(), setDropzone(), setHidden(), setId(), setLang(), setManifest(), setSpellcheck(), setStyle(), setTabindex(), setTitle(), setTranslate(), setXmlns()
 
     // Getter methods 
     string               scalar          getOpens(), getOpene(), getClose(), print(), getClassArgs(), getAccesskey(), getClass(), getContenteditable(), getContextmenu(), getData(), getDir(), getDraggable(), getDropzone(), getHidden(), getId(), getLang(), getManifest(), getSpellcheck(), getStyle(), getTabindex(), getTitle(), getTranslate(), getXmlns()
@@ -43,31 +46,40 @@ void html::new() {
 } // End of class constructor method definition
 
 // Setter method for class arguments (appear between HTML tags) 
-void html::setClassArgs(| string scalar classarguments) { 
+class html scalar html::setClassArgs(| string scalar classarguments) { 
 
     // Defines arguments that appear between HTML tags 
     this.classargs = classarguments 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of setter method for class arguments
 
 // Specifies a shortcut key to activate/focus an element 
-void html::setAccesskey(| string scalar methodarg) { 
+class html scalar html::setAccesskey(| string scalar methodarg) { 
 
     // Set the attribute accesskey for this class 
     this.htmlaccesskey = `"accesskey = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method accesskey declaration for class html
 
 // Specifies one or more classnames for an element (refers to a class in a style sheet) 
-void html::setClass(| string scalar methodarg) { 
+class html scalar html::setClass(| string scalar methodarg) { 
 
     // Set the attribute class for this class 
     this.htmlclass = `"class = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method class declaration for class html
 
 // Specifies whether the content of an element is editable or not 
-void html::setContenteditable(| string scalar methodarg) { 
+class html scalar html::setContenteditable(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "true" | methodarg == "false") { 
@@ -77,26 +89,35 @@ void html::setContenteditable(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method contenteditable declaration for class html
 
 // Specifies a context menu for an element. The context menu appears when a user right-clicks on the element 
-void html::setContextmenu(| string scalar methodarg) { 
+class html scalar html::setContextmenu(| string scalar methodarg) { 
 
     // Set the attribute contextmenu for this class 
     this.htmlcontextmenu = `"contextmenu = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method contextmenu declaration for class html
 
 // Used to store custom data private to the page or application 
-void html::setData(| string scalar methodarg) { 
+class html scalar html::setData(| string scalar methodarg) { 
 
     // Set the attribute data for this class 
     this.htmldata = `"data = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method data declaration for class html
 
 // Specifies the text direction for the content in an element 
-void html::setDir(| string scalar methodarg) { 
+class html scalar html::setDir(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "ltr" | methodarg == "rtl" | methodarg == "auto") { 
@@ -106,10 +127,13 @@ void html::setDir(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method dir declaration for class html
 
 // Specifies whether an element is draggable or not 
-void html::setDraggable(| string scalar methodarg) { 
+class html scalar html::setDraggable(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "true" | methodarg == "false" | methodarg == "auto") { 
@@ -119,10 +143,13 @@ void html::setDraggable(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method draggable declaration for class html
 
 // Specifies whether the dragged data is copied, moved, or linked, when dropped 
-void html::setDropzone(| string scalar methodarg) { 
+class html scalar html::setDropzone(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "copy" | methodarg == "move" | methodarg == "link") { 
@@ -132,42 +159,57 @@ void html::setDropzone(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method dropzone declaration for class html
 
 // Specifies that an element is not yet, or is no longer, relevant 
-void html::setHidden(| string scalar methodarg) { 
+class html scalar html::setHidden(| string scalar methodarg) { 
 
     // Set the attribute hidden for this class 
     this.htmlhidden = `"hidden = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method hidden declaration for class html
 
 // Specifies a unique id for an element 
-void html::setId(| string scalar methodarg) { 
+class html scalar html::setId(| string scalar methodarg) { 
 
     // Set the attribute id for this class 
     this.htmlid = `"id = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method id declaration for class html
 
 // Specifies the language of the element's content 
-void html::setLang(| string scalar methodarg) { 
+class html scalar html::setLang(| string scalar methodarg) { 
 
     // Set the attribute lang for this class 
     this.htmllang = `"lang = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method lang declaration for class html
 
 // Specifies the address of the document's cache manifest (for offline browsing) 
-void html::setManifest(| string scalar methodarg) { 
+class html scalar html::setManifest(| string scalar methodarg) { 
 
     // Set the attribute manifest for this class 
     this.htmlmanifest = `"manifest = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method manifest declaration for class html
 
 // Specifies whether the element is to have its spelling and grammar checked or not 
-void html::setSpellcheck(| string scalar methodarg) { 
+class html scalar html::setSpellcheck(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "true" | methodarg == "false") { 
@@ -177,34 +219,46 @@ void html::setSpellcheck(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method spellcheck declaration for class html
 
 // Specifies an inline CSS style for an element 
-void html::setStyle(| string scalar methodarg) { 
+class html scalar html::setStyle(| string scalar methodarg) { 
 
     // Set the attribute style for this class 
     this.htmlstyle = `"style = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method style declaration for class html
 
 // Specifies the tabbing order of an element 
-void html::setTabindex(| string scalar methodarg) { 
+class html scalar html::setTabindex(| string scalar methodarg) { 
 
     // Set the attribute tabindex for this class 
     this.htmltabindex = `"tabindex = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method tabindex declaration for class html
 
 // Specifies extra information about an element 
-void html::setTitle(| string scalar methodarg) { 
+class html scalar html::setTitle(| string scalar methodarg) { 
 
     // Set the attribute title for this class 
     this.htmltitle = `"title = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method title declaration for class html
 
 // Specifies whether the content of an element should be translated or not 
-void html::setTranslate(| string scalar methodarg) { 
+class html scalar html::setTranslate(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "yes" | methodarg == "no") { 
@@ -214,13 +268,19 @@ void html::setTranslate(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method translate declaration for class html
 
 // Specifies the XML namespace attribute (If you need your content to conform to XHTML) 
-void html::setXmlns(| string scalar methodarg) { 
+class html scalar html::setXmlns(| string scalar methodarg) { 
 
     // Set the attribute xmlns for this class 
     this.htmlxmlns = `"xmlns = ""' + methodarg + "" 
+
+    // Return a copy of the object 
+    return(this)
 
 } // End of Method xmlns declaration for class html
 

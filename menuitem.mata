@@ -20,8 +20,11 @@ class menuitem {
     // Define public members/methods 
     public: 
 
+    // Class constructor method 
+    void         new()
+
     // Setter methods 
-    void         new(), setClassArgs(), setAccesskey(), setChecked(), setClass(), setCommand(), setContenteditable(), setContextmenu(), setData(), setDefault(), setDir(), setDisabled(), setDraggable(), setDropzone(), setHidden(), setIcon(), setId(), setLabel(), setLang(), setOnabort(), setOnafterprint(), setOnbeforeprint(), setOnbeforeunload(), setOnblur(), setOncanplay(), setOncanplaythrough(), setOnchange(), setOnclick(), setOncontextmenu(), setOncopy(), setOncuechange(), setOncut(), setOndblclick(), setOndrag(), setOndragend(), setOndragenter(), setOndragleave(), setOndragover(), setOndragstart(), setOndrop(), setOndurationchange(), setOnemptied(), setOnended(), setOnerror(), setOnfocus(), setOnhashchange(), setOninput(), setOninvalid(), setOnkeydown(), setOnkeypress(), setOnkeyup(), setOnload(), setOnloadeddata(), setOnloadedmetadata(), setOnloadstart(), setOnmessage(), setOnmousedown(), setOnmousemove(), setOnmouseout(), setOnmouseover(), setOnmouseup(), setOnmousewheel(), setOnoffline(), setOnonline(), setOnpagehide(), setOnpageshow(), setOnpaste(), setOnpause(), setOnplay(), setOnplaying(), setOnpopstate(), setOnprogress(), setOnratechange(), setOnreset(), setOnresize(), setOnscroll(), setOnsearch(), setOnseeked(), setOnseeking(), setOnselect(), setOnshow(), setOnstalled(), setOnstorage(), setOnsubmit(), setOnsuspend(), setOntimeupdate(), setOntoggle(), setOnunload(), setOnvolumechange(), setOnwaiting(), setOnwheel(), setRadiogroup(), setSpellcheck(), setStyle(), setTabindex(), setTitle(), setTranslate(), setType()
+    class        menuitem     scalar  setClassArgs(), setAccesskey(), setChecked(), setClass(), setCommand(), setContenteditable(), setContextmenu(), setData(), setDefault(), setDir(), setDisabled(), setDraggable(), setDropzone(), setHidden(), setIcon(), setId(), setLabel(), setLang(), setOnabort(), setOnafterprint(), setOnbeforeprint(), setOnbeforeunload(), setOnblur(), setOncanplay(), setOncanplaythrough(), setOnchange(), setOnclick(), setOncontextmenu(), setOncopy(), setOncuechange(), setOncut(), setOndblclick(), setOndrag(), setOndragend(), setOndragenter(), setOndragleave(), setOndragover(), setOndragstart(), setOndrop(), setOndurationchange(), setOnemptied(), setOnended(), setOnerror(), setOnfocus(), setOnhashchange(), setOninput(), setOninvalid(), setOnkeydown(), setOnkeypress(), setOnkeyup(), setOnload(), setOnloadeddata(), setOnloadedmetadata(), setOnloadstart(), setOnmessage(), setOnmousedown(), setOnmousemove(), setOnmouseout(), setOnmouseover(), setOnmouseup(), setOnmousewheel(), setOnoffline(), setOnonline(), setOnpagehide(), setOnpageshow(), setOnpaste(), setOnpause(), setOnplay(), setOnplaying(), setOnpopstate(), setOnprogress(), setOnratechange(), setOnreset(), setOnresize(), setOnscroll(), setOnsearch(), setOnseeked(), setOnseeking(), setOnselect(), setOnshow(), setOnstalled(), setOnstorage(), setOnsubmit(), setOnsuspend(), setOntimeupdate(), setOntoggle(), setOnunload(), setOnvolumechange(), setOnwaiting(), setOnwheel(), setRadiogroup(), setSpellcheck(), setStyle(), setTabindex(), setTitle(), setTranslate(), setType()
 
     // Getter methods 
     string               scalar          getOpens(), getOpene(), getClose(), print(), getClassArgs(), getAccesskey(), getChecked(), getClass(), getCommand(), getContenteditable(), getContextmenu(), getData(), getDefault(), getDir(), getDisabled(), getDraggable(), getDropzone(), getHidden(), getIcon(), getId(), getLabel(), getLang(), getOnabort(), getOnafterprint(), getOnbeforeprint(), getOnbeforeunload(), getOnblur(), getOncanplay(), getOncanplaythrough(), getOnchange(), getOnclick(), getOncontextmenu(), getOncopy(), getOncuechange(), getOncut(), getOndblclick(), getOndrag(), getOndragend(), getOndragenter(), getOndragleave(), getOndragover(), getOndragstart(), getOndrop(), getOndurationchange(), getOnemptied(), getOnended(), getOnerror(), getOnfocus(), getOnhashchange(), getOninput(), getOninvalid(), getOnkeydown(), getOnkeypress(), getOnkeyup(), getOnload(), getOnloadeddata(), getOnloadedmetadata(), getOnloadstart(), getOnmessage(), getOnmousedown(), getOnmousemove(), getOnmouseout(), getOnmouseover(), getOnmouseup(), getOnmousewheel(), getOnoffline(), getOnonline(), getOnpagehide(), getOnpageshow(), getOnpaste(), getOnpause(), getOnplay(), getOnplaying(), getOnpopstate(), getOnprogress(), getOnratechange(), getOnreset(), getOnresize(), getOnscroll(), getOnsearch(), getOnseeked(), getOnseeking(), getOnselect(), getOnshow(), getOnstalled(), getOnstorage(), getOnsubmit(), getOnsuspend(), getOntimeupdate(), getOntoggle(), getOnunload(), getOnvolumechange(), getOnwaiting(), getOnwheel(), getRadiogroup(), getSpellcheck(), getStyle(), getTabindex(), getTitle(), getTranslate(), getType()
@@ -43,47 +46,62 @@ void menuitem::new() {
 } // End of class constructor method definition
 
 // Setter method for class arguments (appear between HTML tags) 
-void menuitem::setClassArgs(| string scalar classarguments) { 
+class menuitem scalar menuitem::setClassArgs(| string scalar classarguments) { 
 
     // Defines arguments that appear between HTML tags 
     this.classargs = classarguments 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of setter method for class arguments
 
 // Specifies a shortcut key to activate/focus an element 
-void menuitem::setAccesskey(| string scalar methodarg) { 
+class menuitem scalar menuitem::setAccesskey(| string scalar methodarg) { 
 
     // Set the attribute accesskey for this class 
     this.htmlaccesskey = `"accesskey = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method accesskey declaration for class menuitem
 
 // Specifies that the command/menu item should be checked when the page loads. Only for type="radio" or type="checkbox" 
-void menuitem::setChecked(| string scalar methodarg) { 
+class menuitem scalar menuitem::setChecked(| string scalar methodarg) { 
 
     // Set the attribute checked for this class 
     this.htmlchecked = `"checked = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method checked declaration for class menuitem
 
 // Specifies one or more classnames for an element (refers to a class in a style sheet) 
-void menuitem::setClass(| string scalar methodarg) { 
+class menuitem scalar menuitem::setClass(| string scalar methodarg) { 
 
     // Set the attribute class for this class 
     this.htmlclass = `"class = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method class declaration for class menuitem
 
 //   
-void menuitem::setCommand(| string scalar methodarg) { 
+class menuitem scalar menuitem::setCommand(| string scalar methodarg) { 
 
     // Set the attribute command for this class 
     this.htmlcommand = `"command = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method command declaration for class menuitem
 
 // Specifies whether the content of an element is editable or not 
-void menuitem::setContenteditable(| string scalar methodarg) { 
+class menuitem scalar menuitem::setContenteditable(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "true" | methodarg == "false") { 
@@ -93,34 +111,46 @@ void menuitem::setContenteditable(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method contenteditable declaration for class menuitem
 
 // Specifies a context menu for an element. The context menu appears when a user right-clicks on the element 
-void menuitem::setContextmenu(| string scalar methodarg) { 
+class menuitem scalar menuitem::setContextmenu(| string scalar methodarg) { 
 
     // Set the attribute contextmenu for this class 
     this.htmlcontextmenu = `"contextmenu = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method contextmenu declaration for class menuitem
 
 // Used to store custom data private to the page or application 
-void menuitem::setData(| string scalar methodarg) { 
+class menuitem scalar menuitem::setData(| string scalar methodarg) { 
 
     // Set the attribute data for this class 
     this.htmldata = `"data = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method data declaration for class menuitem
 
 // Marks the command/menu item as being a default command 
-void menuitem::setDefault(| string scalar methodarg) { 
+class menuitem scalar menuitem::setDefault(| string scalar methodarg) { 
 
     // Set the attribute default for this class 
     this.htmldefault = `"default = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method default declaration for class menuitem
 
 // Specifies the text direction for the content in an element 
-void menuitem::setDir(| string scalar methodarg) { 
+class menuitem scalar menuitem::setDir(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "ltr" | methodarg == "rtl" | methodarg == "auto") { 
@@ -130,18 +160,24 @@ void menuitem::setDir(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method dir declaration for class menuitem
 
 // Specifies that the command/menu item should be disabled 
-void menuitem::setDisabled(| string scalar methodarg) { 
+class menuitem scalar menuitem::setDisabled(| string scalar methodarg) { 
 
     // Set the attribute disabled for this class 
     this.htmldisabled = `"disabled = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method disabled declaration for class menuitem
 
 // Specifies whether an element is draggable or not 
-void menuitem::setDraggable(| string scalar methodarg) { 
+class menuitem scalar menuitem::setDraggable(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "true" | methodarg == "false" | methodarg == "auto") { 
@@ -151,10 +187,13 @@ void menuitem::setDraggable(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method draggable declaration for class menuitem
 
 // Specifies whether the dragged data is copied, moved, or linked, when dropped 
-void menuitem::setDropzone(| string scalar methodarg) { 
+class menuitem scalar menuitem::setDropzone(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "copy" | methodarg == "move" | methodarg == "link") { 
@@ -164,634 +203,871 @@ void menuitem::setDropzone(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method dropzone declaration for class menuitem
 
 // Specifies that an element is not yet, or is no longer, relevant 
-void menuitem::setHidden(| string scalar methodarg) { 
+class menuitem scalar menuitem::setHidden(| string scalar methodarg) { 
 
     // Set the attribute hidden for this class 
     this.htmlhidden = `"hidden = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method hidden declaration for class menuitem
 
 // Specifies an icon for the command/menu item 
-void menuitem::setIcon(| string scalar methodarg) { 
+class menuitem scalar menuitem::setIcon(| string scalar methodarg) { 
 
     // Set the attribute icon for this class 
     this.htmlicon = `"icon = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method icon declaration for class menuitem
 
 // Specifies a unique id for an element 
-void menuitem::setId(| string scalar methodarg) { 
+class menuitem scalar menuitem::setId(| string scalar methodarg) { 
 
     // Set the attribute id for this class 
     this.htmlid = `"id = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method id declaration for class menuitem
 
 // Required. Specifies the name of the command/menu item, as shown to the user 
-void menuitem::setLabel(| string scalar methodarg) { 
+class menuitem scalar menuitem::setLabel(| string scalar methodarg) { 
 
     // Set the attribute label for this class 
     this.htmllabel = `"label = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method label declaration for class menuitem
 
 // Specifies the language of the element's content 
-void menuitem::setLang(| string scalar methodarg) { 
+class menuitem scalar menuitem::setLang(| string scalar methodarg) { 
 
     // Set the attribute lang for this class 
     this.htmllang = `"lang = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method lang declaration for class menuitem
 
 // Script to be run on abort 
-void menuitem::setOnabort(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnabort(| string scalar methodarg) { 
 
     // Set the attribute onabort for this class 
     this.htmlonabort = `"onabort = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onabort declaration for class menuitem
 
 // Script to be run after the document is printed 
-void menuitem::setOnafterprint(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnafterprint(| string scalar methodarg) { 
 
     // Set the attribute onafterprint for this class 
     this.htmlonafterprint = `"onafterprint = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onafterprint declaration for class menuitem
 
 // Script to be run before the document is printed 
-void menuitem::setOnbeforeprint(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnbeforeprint(| string scalar methodarg) { 
 
     // Set the attribute onbeforeprint for this class 
     this.htmlonbeforeprint = `"onbeforeprint = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onbeforeprint declaration for class menuitem
 
 // Script to be run when the document is about to be unloaded 
-void menuitem::setOnbeforeunload(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnbeforeunload(| string scalar methodarg) { 
 
     // Set the attribute onbeforeunload for this class 
     this.htmlonbeforeunload = `"onbeforeunload = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onbeforeunload declaration for class menuitem
 
 // Fires the moment that the element loses focus 
-void menuitem::setOnblur(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnblur(| string scalar methodarg) { 
 
     // Set the attribute onblur for this class 
     this.htmlonblur = `"onblur = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onblur declaration for class menuitem
 
 // Script to be run when a file is ready to start playing (when it has buffered enough to begin) 
-void menuitem::setOncanplay(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOncanplay(| string scalar methodarg) { 
 
     // Set the attribute oncanplay for this class 
     this.htmloncanplay = `"oncanplay = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncanplay declaration for class menuitem
 
 // Script to be run when a file can be played all the way to the end without pausing for buffering 
-void menuitem::setOncanplaythrough(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOncanplaythrough(| string scalar methodarg) { 
 
     // Set the attribute oncanplaythrough for this class 
     this.htmloncanplaythrough = `"oncanplaythrough = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncanplaythrough declaration for class menuitem
 
 // Fires the moment when the value of the element is changed 
-void menuitem::setOnchange(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnchange(| string scalar methodarg) { 
 
     // Set the attribute onchange for this class 
     this.htmlonchange = `"onchange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onchange declaration for class menuitem
 
 // Fires on a mouse click on the element 
-void menuitem::setOnclick(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnclick(| string scalar methodarg) { 
 
     // Set the attribute onclick for this class 
     this.htmlonclick = `"onclick = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onclick declaration for class menuitem
 
 // Script to be run when a context menu is triggered 
-void menuitem::setOncontextmenu(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOncontextmenu(| string scalar methodarg) { 
 
     // Set the attribute oncontextmenu for this class 
     this.htmloncontextmenu = `"oncontextmenu = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncontextmenu declaration for class menuitem
 
 // Fires when the user copies the content of an element 
-void menuitem::setOncopy(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOncopy(| string scalar methodarg) { 
 
     // Set the attribute oncopy for this class 
     this.htmloncopy = `"oncopy = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncopy declaration for class menuitem
 
 // Script to be run when the cue changes in a <track> element 
-void menuitem::setOncuechange(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOncuechange(| string scalar methodarg) { 
 
     // Set the attribute oncuechange for this class 
     this.htmloncuechange = `"oncuechange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncuechange declaration for class menuitem
 
 // Fires when the user cuts the content of an element 
-void menuitem::setOncut(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOncut(| string scalar methodarg) { 
 
     // Set the attribute oncut for this class 
     this.htmloncut = `"oncut = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncut declaration for class menuitem
 
 // Fires on a mouse double-click on the element 
-void menuitem::setOndblclick(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOndblclick(| string scalar methodarg) { 
 
     // Set the attribute ondblclick for this class 
     this.htmlondblclick = `"ondblclick = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondblclick declaration for class menuitem
 
 // Script to be run when an element is dragged 
-void menuitem::setOndrag(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOndrag(| string scalar methodarg) { 
 
     // Set the attribute ondrag for this class 
     this.htmlondrag = `"ondrag = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondrag declaration for class menuitem
 
 // Script to be run at the end of a drag operation 
-void menuitem::setOndragend(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOndragend(| string scalar methodarg) { 
 
     // Set the attribute ondragend for this class 
     this.htmlondragend = `"ondragend = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragend declaration for class menuitem
 
 // Script to be run when an element has been dragged to a valid drop target 
-void menuitem::setOndragenter(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOndragenter(| string scalar methodarg) { 
 
     // Set the attribute ondragenter for this class 
     this.htmlondragenter = `"ondragenter = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragenter declaration for class menuitem
 
 // Script to be run when an element leaves a valid drop target 
-void menuitem::setOndragleave(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOndragleave(| string scalar methodarg) { 
 
     // Set the attribute ondragleave for this class 
     this.htmlondragleave = `"ondragleave = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragleave declaration for class menuitem
 
 // Script to be run when an element is being dragged over a valid drop target 
-void menuitem::setOndragover(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOndragover(| string scalar methodarg) { 
 
     // Set the attribute ondragover for this class 
     this.htmlondragover = `"ondragover = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragover declaration for class menuitem
 
 // Script to be run at the start of a drag operation 
-void menuitem::setOndragstart(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOndragstart(| string scalar methodarg) { 
 
     // Set the attribute ondragstart for this class 
     this.htmlondragstart = `"ondragstart = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragstart declaration for class menuitem
 
 // Script to be run when dragged element is being dropped 
-void menuitem::setOndrop(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOndrop(| string scalar methodarg) { 
 
     // Set the attribute ondrop for this class 
     this.htmlondrop = `"ondrop = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondrop declaration for class menuitem
 
 // Script to be run when the length of the media changes 
-void menuitem::setOndurationchange(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOndurationchange(| string scalar methodarg) { 
 
     // Set the attribute ondurationchange for this class 
     this.htmlondurationchange = `"ondurationchange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondurationchange declaration for class menuitem
 
 // Script to be run when something bad happens and the file is suddenly unavailable (like unexpectedly disconnects) 
-void menuitem::setOnemptied(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnemptied(| string scalar methodarg) { 
 
     // Set the attribute onemptied for this class 
     this.htmlonemptied = `"onemptied = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onemptied declaration for class menuitem
 
 // Script to be run when the media has reach the end (a useful event for messages like "thanks for listening") 
-void menuitem::setOnended(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnended(| string scalar methodarg) { 
 
     // Set the attribute onended for this class 
     this.htmlonended = `"onended = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onended declaration for class menuitem
 
 // Fires when an error occurs while loading an external file Script to be run when an error occur Script to be run when an error occurs when the file is being loaded 
-void menuitem::setOnerror(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnerror(| string scalar methodarg) { 
 
     // Set the attribute onerror for this class 
     this.htmlonerror = `"onerror = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onerror declaration for class menuitem
 
 // Fires the moment when the element gets focus 
-void menuitem::setOnfocus(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnfocus(| string scalar methodarg) { 
 
     // Set the attribute onfocus for this class 
     this.htmlonfocus = `"onfocus = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onfocus declaration for class menuitem
 
 // Script to be run when there has been changes to the anchor part of the a URL 
-void menuitem::setOnhashchange(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnhashchange(| string scalar methodarg) { 
 
     // Set the attribute onhashchange for this class 
     this.htmlonhashchange = `"onhashchange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onhashchange declaration for class menuitem
 
 // Script to be run when an element gets user input 
-void menuitem::setOninput(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOninput(| string scalar methodarg) { 
 
     // Set the attribute oninput for this class 
     this.htmloninput = `"oninput = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oninput declaration for class menuitem
 
 // Script to be run when an element is invalid 
-void menuitem::setOninvalid(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOninvalid(| string scalar methodarg) { 
 
     // Set the attribute oninvalid for this class 
     this.htmloninvalid = `"oninvalid = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oninvalid declaration for class menuitem
 
 // Fires when a user is pressing a key 
-void menuitem::setOnkeydown(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnkeydown(| string scalar methodarg) { 
 
     // Set the attribute onkeydown for this class 
     this.htmlonkeydown = `"onkeydown = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onkeydown declaration for class menuitem
 
 // Fires when a user presses a key 
-void menuitem::setOnkeypress(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnkeypress(| string scalar methodarg) { 
 
     // Set the attribute onkeypress for this class 
     this.htmlonkeypress = `"onkeypress = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onkeypress declaration for class menuitem
 
 // Fires when a user releases a key 
-void menuitem::setOnkeyup(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnkeyup(| string scalar methodarg) { 
 
     // Set the attribute onkeyup for this class 
     this.htmlonkeyup = `"onkeyup = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onkeyup declaration for class menuitem
 
 // Fires after the page is finished loading 
-void menuitem::setOnload(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnload(| string scalar methodarg) { 
 
     // Set the attribute onload for this class 
     this.htmlonload = `"onload = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onload declaration for class menuitem
 
 // Script to be run when media data is loaded 
-void menuitem::setOnloadeddata(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnloadeddata(| string scalar methodarg) { 
 
     // Set the attribute onloadeddata for this class 
     this.htmlonloadeddata = `"onloadeddata = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onloadeddata declaration for class menuitem
 
 // Script to be run when meta data (like dimensions and duration) are loaded 
-void menuitem::setOnloadedmetadata(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnloadedmetadata(| string scalar methodarg) { 
 
     // Set the attribute onloadedmetadata for this class 
     this.htmlonloadedmetadata = `"onloadedmetadata = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onloadedmetadata declaration for class menuitem
 
 // Script to be run just as the file begins to load before anything is actually loaded 
-void menuitem::setOnloadstart(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnloadstart(| string scalar methodarg) { 
 
     // Set the attribute onloadstart for this class 
     this.htmlonloadstart = `"onloadstart = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onloadstart declaration for class menuitem
 
 // Script to be run when the message is triggered 
-void menuitem::setOnmessage(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnmessage(| string scalar methodarg) { 
 
     // Set the attribute onmessage for this class 
     this.htmlonmessage = `"onmessage = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmessage declaration for class menuitem
 
 // Fires when a mouse button is pressed down on an element 
-void menuitem::setOnmousedown(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnmousedown(| string scalar methodarg) { 
 
     // Set the attribute onmousedown for this class 
     this.htmlonmousedown = `"onmousedown = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmousedown declaration for class menuitem
 
 // Fires when the mouse pointer is moving while it is over an element 
-void menuitem::setOnmousemove(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnmousemove(| string scalar methodarg) { 
 
     // Set the attribute onmousemove for this class 
     this.htmlonmousemove = `"onmousemove = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmousemove declaration for class menuitem
 
 // Fires when the mouse pointer moves out of an element 
-void menuitem::setOnmouseout(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnmouseout(| string scalar methodarg) { 
 
     // Set the attribute onmouseout for this class 
     this.htmlonmouseout = `"onmouseout = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmouseout declaration for class menuitem
 
 // Fires when the mouse pointer moves over an element 
-void menuitem::setOnmouseover(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnmouseover(| string scalar methodarg) { 
 
     // Set the attribute onmouseover for this class 
     this.htmlonmouseover = `"onmouseover = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmouseover declaration for class menuitem
 
 // Fires when a mouse button is released over an element 
-void menuitem::setOnmouseup(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnmouseup(| string scalar methodarg) { 
 
     // Set the attribute onmouseup for this class 
     this.htmlonmouseup = `"onmouseup = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmouseup declaration for class menuitem
 
 // Deprecated. Use the onwheel attribute instead 
-void menuitem::setOnmousewheel(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnmousewheel(| string scalar methodarg) { 
 
     // Set the attribute onmousewheel for this class 
     this.htmlonmousewheel = `"onmousewheel = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmousewheel declaration for class menuitem
 
 // Script to be run when the browser starts to work offline 
-void menuitem::setOnoffline(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnoffline(| string scalar methodarg) { 
 
     // Set the attribute onoffline for this class 
     this.htmlonoffline = `"onoffline = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onoffline declaration for class menuitem
 
 // Script to be run when the browser starts to work online 
-void menuitem::setOnonline(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnonline(| string scalar methodarg) { 
 
     // Set the attribute ononline for this class 
     this.htmlononline = `"ononline = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ononline declaration for class menuitem
 
 // Script to be run when a user navigates away from a page 
-void menuitem::setOnpagehide(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnpagehide(| string scalar methodarg) { 
 
     // Set the attribute onpagehide for this class 
     this.htmlonpagehide = `"onpagehide = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpagehide declaration for class menuitem
 
 // Script to be run when a user navigates to a page 
-void menuitem::setOnpageshow(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnpageshow(| string scalar methodarg) { 
 
     // Set the attribute onpageshow for this class 
     this.htmlonpageshow = `"onpageshow = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpageshow declaration for class menuitem
 
 // Fires when the user pastes some content in an element 
-void menuitem::setOnpaste(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnpaste(| string scalar methodarg) { 
 
     // Set the attribute onpaste for this class 
     this.htmlonpaste = `"onpaste = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpaste declaration for class menuitem
 
 // Script to be run when the media is paused either by the user or programmatically 
-void menuitem::setOnpause(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnpause(| string scalar methodarg) { 
 
     // Set the attribute onpause for this class 
     this.htmlonpause = `"onpause = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpause declaration for class menuitem
 
 // Script to be run when the media is ready to start playing 
-void menuitem::setOnplay(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnplay(| string scalar methodarg) { 
 
     // Set the attribute onplay for this class 
     this.htmlonplay = `"onplay = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onplay declaration for class menuitem
 
 // Script to be run when the media actually has started playing 
-void menuitem::setOnplaying(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnplaying(| string scalar methodarg) { 
 
     // Set the attribute onplaying for this class 
     this.htmlonplaying = `"onplaying = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onplaying declaration for class menuitem
 
 // Script to be run when the window's history changes 
-void menuitem::setOnpopstate(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnpopstate(| string scalar methodarg) { 
 
     // Set the attribute onpopstate for this class 
     this.htmlonpopstate = `"onpopstate = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpopstate declaration for class menuitem
 
 // Script to be run when the browser is in the process of getting the media data 
-void menuitem::setOnprogress(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnprogress(| string scalar methodarg) { 
 
     // Set the attribute onprogress for this class 
     this.htmlonprogress = `"onprogress = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onprogress declaration for class menuitem
 
 // Script to be run each time the playback rate changes (like when a user switches to a slow motion or fast forward mode) 
-void menuitem::setOnratechange(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnratechange(| string scalar methodarg) { 
 
     // Set the attribute onratechange for this class 
     this.htmlonratechange = `"onratechange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onratechange declaration for class menuitem
 
 // Fires when the Reset button in a form is clicked 
-void menuitem::setOnreset(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnreset(| string scalar methodarg) { 
 
     // Set the attribute onreset for this class 
     this.htmlonreset = `"onreset = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onreset declaration for class menuitem
 
 // Fires when the browser window is resized 
-void menuitem::setOnresize(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnresize(| string scalar methodarg) { 
 
     // Set the attribute onresize for this class 
     this.htmlonresize = `"onresize = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onresize declaration for class menuitem
 
 // Script to be run when an element's scrollbar is being scrolled 
-void menuitem::setOnscroll(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnscroll(| string scalar methodarg) { 
 
     // Set the attribute onscroll for this class 
     this.htmlonscroll = `"onscroll = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onscroll declaration for class menuitem
 
 // Fires when the user writes something in a search field (for <input="search">) 
-void menuitem::setOnsearch(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnsearch(| string scalar methodarg) { 
 
     // Set the attribute onsearch for this class 
     this.htmlonsearch = `"onsearch = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onsearch declaration for class menuitem
 
 // Script to be run when the seeking attribute is set to false indicating that seeking has ended 
-void menuitem::setOnseeked(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnseeked(| string scalar methodarg) { 
 
     // Set the attribute onseeked for this class 
     this.htmlonseeked = `"onseeked = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onseeked declaration for class menuitem
 
 // Script to be run when the seeking attribute is set to true indicating that seeking is active 
-void menuitem::setOnseeking(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnseeking(| string scalar methodarg) { 
 
     // Set the attribute onseeking for this class 
     this.htmlonseeking = `"onseeking = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onseeking declaration for class menuitem
 
 // Fires after some text has been selected in an element 
-void menuitem::setOnselect(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnselect(| string scalar methodarg) { 
 
     // Set the attribute onselect for this class 
     this.htmlonselect = `"onselect = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onselect declaration for class menuitem
 
 // Fires when a <menu> element is shown as a context menu 
-void menuitem::setOnshow(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnshow(| string scalar methodarg) { 
 
     // Set the attribute onshow for this class 
     this.htmlonshow = `"onshow = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onshow declaration for class menuitem
 
 // Script to be run when the browser is unable to fetch the media data for whatever reason 
-void menuitem::setOnstalled(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnstalled(| string scalar methodarg) { 
 
     // Set the attribute onstalled for this class 
     this.htmlonstalled = `"onstalled = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onstalled declaration for class menuitem
 
 // Script to be run when a Web Storage area is updated 
-void menuitem::setOnstorage(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnstorage(| string scalar methodarg) { 
 
     // Set the attribute onstorage for this class 
     this.htmlonstorage = `"onstorage = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onstorage declaration for class menuitem
 
 // Fires when a form is submitted 
-void menuitem::setOnsubmit(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnsubmit(| string scalar methodarg) { 
 
     // Set the attribute onsubmit for this class 
     this.htmlonsubmit = `"onsubmit = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onsubmit declaration for class menuitem
 
 // Script to be run when fetching the media data is stopped before it is completely loaded for whatever reason 
-void menuitem::setOnsuspend(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnsuspend(| string scalar methodarg) { 
 
     // Set the attribute onsuspend for this class 
     this.htmlonsuspend = `"onsuspend = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onsuspend declaration for class menuitem
 
 // Script to be run when the playing position has changed (like when the user fast forwards to a different point in the media) 
-void menuitem::setOntimeupdate(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOntimeupdate(| string scalar methodarg) { 
 
     // Set the attribute ontimeupdate for this class 
     this.htmlontimeupdate = `"ontimeupdate = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ontimeupdate declaration for class menuitem
 
 // Fires when the user opens or closes the <details> element 
-void menuitem::setOntoggle(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOntoggle(| string scalar methodarg) { 
 
     // Set the attribute ontoggle for this class 
     this.htmlontoggle = `"ontoggle = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ontoggle declaration for class menuitem
 
 // Fires once a page has unloaded (or the browser window has been closed) 
-void menuitem::setOnunload(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnunload(| string scalar methodarg) { 
 
     // Set the attribute onunload for this class 
     this.htmlonunload = `"onunload = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onunload declaration for class menuitem
 
 // Script to be run each time the volume is changed which (includes setting the volume to "mute") 
-void menuitem::setOnvolumechange(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnvolumechange(| string scalar methodarg) { 
 
     // Set the attribute onvolumechange for this class 
     this.htmlonvolumechange = `"onvolumechange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onvolumechange declaration for class menuitem
 
 // Script to be run when the media has paused but is expected to resume (like when the media pauses to buffer more data) 
-void menuitem::setOnwaiting(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnwaiting(| string scalar methodarg) { 
 
     // Set the attribute onwaiting for this class 
     this.htmlonwaiting = `"onwaiting = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onwaiting declaration for class menuitem
 
 // Fires when the mouse wheel rolls up or down over an element 
-void menuitem::setOnwheel(| string scalar methodarg) { 
+class menuitem scalar menuitem::setOnwheel(| string scalar methodarg) { 
 
     // Set the attribute onwheel for this class 
     this.htmlonwheel = `"onwheel = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onwheel declaration for class menuitem
 
 // Specifies the name of the group of commands that will be toggled when the command/menu item itself is toggled. Only for type="radio" 
-void menuitem::setRadiogroup(| string scalar methodarg) { 
+class menuitem scalar menuitem::setRadiogroup(| string scalar methodarg) { 
 
     // Set the attribute radiogroup for this class 
     this.htmlradiogroup = `"radiogroup = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method radiogroup declaration for class menuitem
 
 // Specifies whether the element is to have its spelling and grammar checked or not 
-void menuitem::setSpellcheck(| string scalar methodarg) { 
+class menuitem scalar menuitem::setSpellcheck(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "true" | methodarg == "false") { 
@@ -801,34 +1077,46 @@ void menuitem::setSpellcheck(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method spellcheck declaration for class menuitem
 
 // Specifies an inline CSS style for an element 
-void menuitem::setStyle(| string scalar methodarg) { 
+class menuitem scalar menuitem::setStyle(| string scalar methodarg) { 
 
     // Set the attribute style for this class 
     this.htmlstyle = `"style = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method style declaration for class menuitem
 
 // Specifies the tabbing order of an element 
-void menuitem::setTabindex(| string scalar methodarg) { 
+class menuitem scalar menuitem::setTabindex(| string scalar methodarg) { 
 
     // Set the attribute tabindex for this class 
     this.htmltabindex = `"tabindex = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method tabindex declaration for class menuitem
 
 // Specifies extra information about an element 
-void menuitem::setTitle(| string scalar methodarg) { 
+class menuitem scalar menuitem::setTitle(| string scalar methodarg) { 
 
     // Set the attribute title for this class 
     this.htmltitle = `"title = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method title declaration for class menuitem
 
 // Specifies whether the content of an element should be translated or not 
-void menuitem::setTranslate(| string scalar methodarg) { 
+class menuitem scalar menuitem::setTranslate(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "yes" | methodarg == "no") { 
@@ -838,10 +1126,13 @@ void menuitem::setTranslate(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method translate declaration for class menuitem
 
 // Specifies the type of command/menu item. Default is "command" 
-void menuitem::setType(| string scalar methodarg) { 
+class menuitem scalar menuitem::setType(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "checkbox" | methodarg == "command" | methodarg == "radio") { 
@@ -850,6 +1141,9 @@ void menuitem::setType(| string scalar methodarg) {
         this.htmltype = `"type = ""' + methodarg + "" 
 
     } // End IF Block for validated argument value 
+
+    // Return a copy of the object 
+    return(this)
 
 } // End of Method type declaration for class menuitem
 

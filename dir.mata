@@ -20,8 +20,11 @@ class stdir {
     // Define public members/methods 
     public: 
 
+    // Class constructor method 
+    void         new()
+
     // Setter methods 
-    void         new(), setClassArgs()
+    class        stdir     scalar  setClassArgs()
 
     // Getter methods 
     string               scalar          getOpens(), getOpene(), getClose(), print(), getClassArgs()
@@ -43,10 +46,13 @@ void stdir::new() {
 } // End of class constructor method definition
 
 // Setter method for class arguments (appear between HTML tags) 
-void stdir::setClassArgs(| string scalar classarguments) { 
+class stdir scalar stdir::setClassArgs(| string scalar classarguments) { 
 
     // Defines arguments that appear between HTML tags 
     this.classargs = classarguments 
+
+    // Return a copy of the object 
+    return(this)
 
 } // End of setter method for class arguments
 

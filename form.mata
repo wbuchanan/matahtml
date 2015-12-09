@@ -20,8 +20,11 @@ class form {
     // Define public members/methods 
     public: 
 
+    // Class constructor method 
+    void         new()
+
     // Setter methods 
-    void         new(), setClassArgs(), setAccept(), setAccept_Charset(), setAccesskey(), setAction(), setAutocomplete(), setClass(), setContenteditable(), setContextmenu(), setData(), setDir(), setDraggable(), setDropzone(), setEnctype(), setHidden(), setId(), setLang(), setMethod(), setName(), setNovalidate(), setOnabort(), setOnafterprint(), setOnbeforeprint(), setOnbeforeunload(), setOnblur(), setOncanplay(), setOncanplaythrough(), setOnchange(), setOnclick(), setOncontextmenu(), setOncopy(), setOncuechange(), setOncut(), setOndblclick(), setOndrag(), setOndragend(), setOndragenter(), setOndragleave(), setOndragover(), setOndragstart(), setOndrop(), setOndurationchange(), setOnemptied(), setOnended(), setOnerror(), setOnfocus(), setOnhashchange(), setOninput(), setOninvalid(), setOnkeydown(), setOnkeypress(), setOnkeyup(), setOnload(), setOnloadeddata(), setOnloadedmetadata(), setOnloadstart(), setOnmessage(), setOnmousedown(), setOnmousemove(), setOnmouseout(), setOnmouseover(), setOnmouseup(), setOnmousewheel(), setOnoffline(), setOnonline(), setOnpagehide(), setOnpageshow(), setOnpaste(), setOnpause(), setOnplay(), setOnplaying(), setOnpopstate(), setOnprogress(), setOnratechange(), setOnreset(), setOnresize(), setOnscroll(), setOnsearch(), setOnseeked(), setOnseeking(), setOnselect(), setOnshow(), setOnstalled(), setOnstorage(), setOnsubmit(), setOnsuspend(), setOntimeupdate(), setOntoggle(), setOnunload(), setOnvolumechange(), setOnwaiting(), setOnwheel(), setSpellcheck(), setStyle(), setTabindex(), setTarget(), setTitle(), setTranslate()
+    class        form     scalar  setClassArgs(), setAccept(), setAccept_Charset(), setAccesskey(), setAction(), setAutocomplete(), setClass(), setContenteditable(), setContextmenu(), setData(), setDir(), setDraggable(), setDropzone(), setEnctype(), setHidden(), setId(), setLang(), setMethod(), setName(), setNovalidate(), setOnabort(), setOnafterprint(), setOnbeforeprint(), setOnbeforeunload(), setOnblur(), setOncanplay(), setOncanplaythrough(), setOnchange(), setOnclick(), setOncontextmenu(), setOncopy(), setOncuechange(), setOncut(), setOndblclick(), setOndrag(), setOndragend(), setOndragenter(), setOndragleave(), setOndragover(), setOndragstart(), setOndrop(), setOndurationchange(), setOnemptied(), setOnended(), setOnerror(), setOnfocus(), setOnhashchange(), setOninput(), setOninvalid(), setOnkeydown(), setOnkeypress(), setOnkeyup(), setOnload(), setOnloadeddata(), setOnloadedmetadata(), setOnloadstart(), setOnmessage(), setOnmousedown(), setOnmousemove(), setOnmouseout(), setOnmouseover(), setOnmouseup(), setOnmousewheel(), setOnoffline(), setOnonline(), setOnpagehide(), setOnpageshow(), setOnpaste(), setOnpause(), setOnplay(), setOnplaying(), setOnpopstate(), setOnprogress(), setOnratechange(), setOnreset(), setOnresize(), setOnscroll(), setOnsearch(), setOnseeked(), setOnseeking(), setOnselect(), setOnshow(), setOnstalled(), setOnstorage(), setOnsubmit(), setOnsuspend(), setOntimeupdate(), setOntoggle(), setOnunload(), setOnvolumechange(), setOnwaiting(), setOnwheel(), setSpellcheck(), setStyle(), setTabindex(), setTarget(), setTitle(), setTranslate()
 
     // Getter methods 
     string               scalar          getOpens(), getOpene(), getClose(), print(), getClassArgs(), getAccept(), getAccept_Charset(), getAccesskey(), getAction(), getAutocomplete(), getClass(), getContenteditable(), getContextmenu(), getData(), getDir(), getDraggable(), getDropzone(), getEnctype(), getHidden(), getId(), getLang(), getMethod(), getName(), getNovalidate(), getOnabort(), getOnafterprint(), getOnbeforeprint(), getOnbeforeunload(), getOnblur(), getOncanplay(), getOncanplaythrough(), getOnchange(), getOnclick(), getOncontextmenu(), getOncopy(), getOncuechange(), getOncut(), getOndblclick(), getOndrag(), getOndragend(), getOndragenter(), getOndragleave(), getOndragover(), getOndragstart(), getOndrop(), getOndurationchange(), getOnemptied(), getOnended(), getOnerror(), getOnfocus(), getOnhashchange(), getOninput(), getOninvalid(), getOnkeydown(), getOnkeypress(), getOnkeyup(), getOnload(), getOnloadeddata(), getOnloadedmetadata(), getOnloadstart(), getOnmessage(), getOnmousedown(), getOnmousemove(), getOnmouseout(), getOnmouseover(), getOnmouseup(), getOnmousewheel(), getOnoffline(), getOnonline(), getOnpagehide(), getOnpageshow(), getOnpaste(), getOnpause(), getOnplay(), getOnplaying(), getOnpopstate(), getOnprogress(), getOnratechange(), getOnreset(), getOnresize(), getOnscroll(), getOnsearch(), getOnseeked(), getOnseeking(), getOnselect(), getOnshow(), getOnstalled(), getOnstorage(), getOnsubmit(), getOnsuspend(), getOntimeupdate(), getOntoggle(), getOnunload(), getOnvolumechange(), getOnwaiting(), getOnwheel(), getSpellcheck(), getStyle(), getTabindex(), getTarget(), getTitle(), getTranslate()
@@ -43,63 +46,84 @@ void form::new() {
 } // End of class constructor method definition
 
 // Setter method for class arguments (appear between HTML tags) 
-void form::setClassArgs(| string scalar classarguments) { 
+class form scalar form::setClassArgs(| string scalar classarguments) { 
 
     // Defines arguments that appear between HTML tags 
     this.classargs = classarguments 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of setter method for class arguments
 
 // Not supported in HTML5.Specifies a comma-separated list of file types  that the server accepts (that can be submitted through the file upload) 
-void form::setAccept(| string scalar methodarg) { 
+class form scalar form::setAccept(| string scalar methodarg) { 
 
     // Set the attribute accept for this class 
     this.htmlaccept = `"accept = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method accept declaration for class form
 
 // Specifies the character encodings that are to be used for the form submission 
-void form::setAccept_Charset(| string scalar methodarg) { 
+class form scalar form::setAccept_Charset(| string scalar methodarg) { 
 
     // Set the attribute accept_charset for this class 
     this.htmlaccept_charset = `"accept-charset = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method accept_charset declaration for class form
 
 // Specifies a shortcut key to activate/focus an element 
-void form::setAccesskey(| string scalar methodarg) { 
+class form scalar form::setAccesskey(| string scalar methodarg) { 
 
     // Set the attribute accesskey for this class 
     this.htmlaccesskey = `"accesskey = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method accesskey declaration for class form
 
 // Specifies where to send the form-data when a form is submitted 
-void form::setAction(| string scalar methodarg) { 
+class form scalar form::setAction(| string scalar methodarg) { 
 
     // Set the attribute action for this class 
     this.htmlaction = `"action = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method action declaration for class form
 
 // Specifies whether a form should have autocomplete on or off 
-void form::setAutocomplete(| string scalar methodarg) { 
+class form scalar form::setAutocomplete(| string scalar methodarg) { 
 
     // Set the attribute autocomplete for this class 
     this.htmlautocomplete = `"autocomplete = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method autocomplete declaration for class form
 
 // Specifies one or more classnames for an element (refers to a class in a style sheet) 
-void form::setClass(| string scalar methodarg) { 
+class form scalar form::setClass(| string scalar methodarg) { 
 
     // Set the attribute class for this class 
     this.htmlclass = `"class = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method class declaration for class form
 
 // Specifies whether the content of an element is editable or not 
-void form::setContenteditable(| string scalar methodarg) { 
+class form scalar form::setContenteditable(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "true" | methodarg == "false") { 
@@ -109,26 +133,35 @@ void form::setContenteditable(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method contenteditable declaration for class form
 
 // Specifies a context menu for an element. The context menu appears when a user right-clicks on the element 
-void form::setContextmenu(| string scalar methodarg) { 
+class form scalar form::setContextmenu(| string scalar methodarg) { 
 
     // Set the attribute contextmenu for this class 
     this.htmlcontextmenu = `"contextmenu = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method contextmenu declaration for class form
 
 // Used to store custom data private to the page or application 
-void form::setData(| string scalar methodarg) { 
+class form scalar form::setData(| string scalar methodarg) { 
 
     // Set the attribute data for this class 
     this.htmldata = `"data = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method data declaration for class form
 
 // Specifies the text direction for the content in an element 
-void form::setDir(| string scalar methodarg) { 
+class form scalar form::setDir(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "ltr" | methodarg == "rtl" | methodarg == "auto") { 
@@ -138,10 +171,13 @@ void form::setDir(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method dir declaration for class form
 
 // Specifies whether an element is draggable or not 
-void form::setDraggable(| string scalar methodarg) { 
+class form scalar form::setDraggable(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "true" | methodarg == "false" | methodarg == "auto") { 
@@ -151,10 +187,13 @@ void form::setDraggable(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method draggable declaration for class form
 
 // Specifies whether the dragged data is copied, moved, or linked, when dropped 
-void form::setDropzone(| string scalar methodarg) { 
+class form scalar form::setDropzone(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "copy" | methodarg == "move" | methodarg == "link") { 
@@ -164,10 +203,13 @@ void form::setDropzone(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method dropzone declaration for class form
 
 // Specifies how the form-data should be encoded when submitting it to the server (only for method="post") 
-void form::setEnctype(| string scalar methodarg) { 
+class form scalar form::setEnctype(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "application/x-www-form-urlencoded" | methodarg == "multipart/form-data" | methodarg == "text/plain") { 
@@ -177,34 +219,46 @@ void form::setEnctype(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method enctype declaration for class form
 
 // Specifies that an element is not yet, or is no longer, relevant 
-void form::setHidden(| string scalar methodarg) { 
+class form scalar form::setHidden(| string scalar methodarg) { 
 
     // Set the attribute hidden for this class 
     this.htmlhidden = `"hidden = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method hidden declaration for class form
 
 // Specifies a unique id for an element 
-void form::setId(| string scalar methodarg) { 
+class form scalar form::setId(| string scalar methodarg) { 
 
     // Set the attribute id for this class 
     this.htmlid = `"id = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method id declaration for class form
 
 // Specifies the language of the element's content 
-void form::setLang(| string scalar methodarg) { 
+class form scalar form::setLang(| string scalar methodarg) { 
 
     // Set the attribute lang for this class 
     this.htmllang = `"lang = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method lang declaration for class form
 
 // Specifies the HTTP method to use when sending form-data 
-void form::setMethod(| string scalar methodarg) { 
+class form scalar form::setMethod(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "get" | methodarg == "post") { 
@@ -214,602 +268,827 @@ void form::setMethod(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method method declaration for class form
 
 // Specifies the name of a form 
-void form::setName(| string scalar methodarg) { 
+class form scalar form::setName(| string scalar methodarg) { 
 
     // Set the attribute name for this class 
     this.htmlname = `"name = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method name declaration for class form
 
 // Specifies that the form should not be validated when submitted 
-void form::setNovalidate(| string scalar methodarg) { 
+class form scalar form::setNovalidate(| string scalar methodarg) { 
 
     // Set the attribute novalidate for this class 
     this.htmlnovalidate = `"novalidate = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method novalidate declaration for class form
 
 // Script to be run on abort 
-void form::setOnabort(| string scalar methodarg) { 
+class form scalar form::setOnabort(| string scalar methodarg) { 
 
     // Set the attribute onabort for this class 
     this.htmlonabort = `"onabort = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onabort declaration for class form
 
 // Script to be run after the document is printed 
-void form::setOnafterprint(| string scalar methodarg) { 
+class form scalar form::setOnafterprint(| string scalar methodarg) { 
 
     // Set the attribute onafterprint for this class 
     this.htmlonafterprint = `"onafterprint = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onafterprint declaration for class form
 
 // Script to be run before the document is printed 
-void form::setOnbeforeprint(| string scalar methodarg) { 
+class form scalar form::setOnbeforeprint(| string scalar methodarg) { 
 
     // Set the attribute onbeforeprint for this class 
     this.htmlonbeforeprint = `"onbeforeprint = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onbeforeprint declaration for class form
 
 // Script to be run when the document is about to be unloaded 
-void form::setOnbeforeunload(| string scalar methodarg) { 
+class form scalar form::setOnbeforeunload(| string scalar methodarg) { 
 
     // Set the attribute onbeforeunload for this class 
     this.htmlonbeforeunload = `"onbeforeunload = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onbeforeunload declaration for class form
 
 // Fires the moment that the element loses focus 
-void form::setOnblur(| string scalar methodarg) { 
+class form scalar form::setOnblur(| string scalar methodarg) { 
 
     // Set the attribute onblur for this class 
     this.htmlonblur = `"onblur = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onblur declaration for class form
 
 // Script to be run when a file is ready to start playing (when it has buffered enough to begin) 
-void form::setOncanplay(| string scalar methodarg) { 
+class form scalar form::setOncanplay(| string scalar methodarg) { 
 
     // Set the attribute oncanplay for this class 
     this.htmloncanplay = `"oncanplay = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncanplay declaration for class form
 
 // Script to be run when a file can be played all the way to the end without pausing for buffering 
-void form::setOncanplaythrough(| string scalar methodarg) { 
+class form scalar form::setOncanplaythrough(| string scalar methodarg) { 
 
     // Set the attribute oncanplaythrough for this class 
     this.htmloncanplaythrough = `"oncanplaythrough = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncanplaythrough declaration for class form
 
 // Fires the moment when the value of the element is changed 
-void form::setOnchange(| string scalar methodarg) { 
+class form scalar form::setOnchange(| string scalar methodarg) { 
 
     // Set the attribute onchange for this class 
     this.htmlonchange = `"onchange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onchange declaration for class form
 
 // Fires on a mouse click on the element 
-void form::setOnclick(| string scalar methodarg) { 
+class form scalar form::setOnclick(| string scalar methodarg) { 
 
     // Set the attribute onclick for this class 
     this.htmlonclick = `"onclick = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onclick declaration for class form
 
 // Script to be run when a context menu is triggered 
-void form::setOncontextmenu(| string scalar methodarg) { 
+class form scalar form::setOncontextmenu(| string scalar methodarg) { 
 
     // Set the attribute oncontextmenu for this class 
     this.htmloncontextmenu = `"oncontextmenu = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncontextmenu declaration for class form
 
 // Fires when the user copies the content of an element 
-void form::setOncopy(| string scalar methodarg) { 
+class form scalar form::setOncopy(| string scalar methodarg) { 
 
     // Set the attribute oncopy for this class 
     this.htmloncopy = `"oncopy = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncopy declaration for class form
 
 // Script to be run when the cue changes in a <track> element 
-void form::setOncuechange(| string scalar methodarg) { 
+class form scalar form::setOncuechange(| string scalar methodarg) { 
 
     // Set the attribute oncuechange for this class 
     this.htmloncuechange = `"oncuechange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncuechange declaration for class form
 
 // Fires when the user cuts the content of an element 
-void form::setOncut(| string scalar methodarg) { 
+class form scalar form::setOncut(| string scalar methodarg) { 
 
     // Set the attribute oncut for this class 
     this.htmloncut = `"oncut = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncut declaration for class form
 
 // Fires on a mouse double-click on the element 
-void form::setOndblclick(| string scalar methodarg) { 
+class form scalar form::setOndblclick(| string scalar methodarg) { 
 
     // Set the attribute ondblclick for this class 
     this.htmlondblclick = `"ondblclick = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondblclick declaration for class form
 
 // Script to be run when an element is dragged 
-void form::setOndrag(| string scalar methodarg) { 
+class form scalar form::setOndrag(| string scalar methodarg) { 
 
     // Set the attribute ondrag for this class 
     this.htmlondrag = `"ondrag = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondrag declaration for class form
 
 // Script to be run at the end of a drag operation 
-void form::setOndragend(| string scalar methodarg) { 
+class form scalar form::setOndragend(| string scalar methodarg) { 
 
     // Set the attribute ondragend for this class 
     this.htmlondragend = `"ondragend = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragend declaration for class form
 
 // Script to be run when an element has been dragged to a valid drop target 
-void form::setOndragenter(| string scalar methodarg) { 
+class form scalar form::setOndragenter(| string scalar methodarg) { 
 
     // Set the attribute ondragenter for this class 
     this.htmlondragenter = `"ondragenter = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragenter declaration for class form
 
 // Script to be run when an element leaves a valid drop target 
-void form::setOndragleave(| string scalar methodarg) { 
+class form scalar form::setOndragleave(| string scalar methodarg) { 
 
     // Set the attribute ondragleave for this class 
     this.htmlondragleave = `"ondragleave = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragleave declaration for class form
 
 // Script to be run when an element is being dragged over a valid drop target 
-void form::setOndragover(| string scalar methodarg) { 
+class form scalar form::setOndragover(| string scalar methodarg) { 
 
     // Set the attribute ondragover for this class 
     this.htmlondragover = `"ondragover = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragover declaration for class form
 
 // Script to be run at the start of a drag operation 
-void form::setOndragstart(| string scalar methodarg) { 
+class form scalar form::setOndragstart(| string scalar methodarg) { 
 
     // Set the attribute ondragstart for this class 
     this.htmlondragstart = `"ondragstart = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragstart declaration for class form
 
 // Script to be run when dragged element is being dropped 
-void form::setOndrop(| string scalar methodarg) { 
+class form scalar form::setOndrop(| string scalar methodarg) { 
 
     // Set the attribute ondrop for this class 
     this.htmlondrop = `"ondrop = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondrop declaration for class form
 
 // Script to be run when the length of the media changes 
-void form::setOndurationchange(| string scalar methodarg) { 
+class form scalar form::setOndurationchange(| string scalar methodarg) { 
 
     // Set the attribute ondurationchange for this class 
     this.htmlondurationchange = `"ondurationchange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondurationchange declaration for class form
 
 // Script to be run when something bad happens and the file is suddenly unavailable (like unexpectedly disconnects) 
-void form::setOnemptied(| string scalar methodarg) { 
+class form scalar form::setOnemptied(| string scalar methodarg) { 
 
     // Set the attribute onemptied for this class 
     this.htmlonemptied = `"onemptied = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onemptied declaration for class form
 
 // Script to be run when the media has reach the end (a useful event for messages like "thanks for listening") 
-void form::setOnended(| string scalar methodarg) { 
+class form scalar form::setOnended(| string scalar methodarg) { 
 
     // Set the attribute onended for this class 
     this.htmlonended = `"onended = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onended declaration for class form
 
 // Fires when an error occurs while loading an external file Script to be run when an error occur Script to be run when an error occurs when the file is being loaded 
-void form::setOnerror(| string scalar methodarg) { 
+class form scalar form::setOnerror(| string scalar methodarg) { 
 
     // Set the attribute onerror for this class 
     this.htmlonerror = `"onerror = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onerror declaration for class form
 
 // Fires the moment when the element gets focus 
-void form::setOnfocus(| string scalar methodarg) { 
+class form scalar form::setOnfocus(| string scalar methodarg) { 
 
     // Set the attribute onfocus for this class 
     this.htmlonfocus = `"onfocus = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onfocus declaration for class form
 
 // Script to be run when there has been changes to the anchor part of the a URL 
-void form::setOnhashchange(| string scalar methodarg) { 
+class form scalar form::setOnhashchange(| string scalar methodarg) { 
 
     // Set the attribute onhashchange for this class 
     this.htmlonhashchange = `"onhashchange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onhashchange declaration for class form
 
 // Script to be run when an element gets user input 
-void form::setOninput(| string scalar methodarg) { 
+class form scalar form::setOninput(| string scalar methodarg) { 
 
     // Set the attribute oninput for this class 
     this.htmloninput = `"oninput = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oninput declaration for class form
 
 // Script to be run when an element is invalid 
-void form::setOninvalid(| string scalar methodarg) { 
+class form scalar form::setOninvalid(| string scalar methodarg) { 
 
     // Set the attribute oninvalid for this class 
     this.htmloninvalid = `"oninvalid = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oninvalid declaration for class form
 
 // Fires when a user is pressing a key 
-void form::setOnkeydown(| string scalar methodarg) { 
+class form scalar form::setOnkeydown(| string scalar methodarg) { 
 
     // Set the attribute onkeydown for this class 
     this.htmlonkeydown = `"onkeydown = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onkeydown declaration for class form
 
 // Fires when a user presses a key 
-void form::setOnkeypress(| string scalar methodarg) { 
+class form scalar form::setOnkeypress(| string scalar methodarg) { 
 
     // Set the attribute onkeypress for this class 
     this.htmlonkeypress = `"onkeypress = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onkeypress declaration for class form
 
 // Fires when a user releases a key 
-void form::setOnkeyup(| string scalar methodarg) { 
+class form scalar form::setOnkeyup(| string scalar methodarg) { 
 
     // Set the attribute onkeyup for this class 
     this.htmlonkeyup = `"onkeyup = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onkeyup declaration for class form
 
 // Fires after the page is finished loading 
-void form::setOnload(| string scalar methodarg) { 
+class form scalar form::setOnload(| string scalar methodarg) { 
 
     // Set the attribute onload for this class 
     this.htmlonload = `"onload = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onload declaration for class form
 
 // Script to be run when media data is loaded 
-void form::setOnloadeddata(| string scalar methodarg) { 
+class form scalar form::setOnloadeddata(| string scalar methodarg) { 
 
     // Set the attribute onloadeddata for this class 
     this.htmlonloadeddata = `"onloadeddata = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onloadeddata declaration for class form
 
 // Script to be run when meta data (like dimensions and duration) are loaded 
-void form::setOnloadedmetadata(| string scalar methodarg) { 
+class form scalar form::setOnloadedmetadata(| string scalar methodarg) { 
 
     // Set the attribute onloadedmetadata for this class 
     this.htmlonloadedmetadata = `"onloadedmetadata = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onloadedmetadata declaration for class form
 
 // Script to be run just as the file begins to load before anything is actually loaded 
-void form::setOnloadstart(| string scalar methodarg) { 
+class form scalar form::setOnloadstart(| string scalar methodarg) { 
 
     // Set the attribute onloadstart for this class 
     this.htmlonloadstart = `"onloadstart = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onloadstart declaration for class form
 
 // Script to be run when the message is triggered 
-void form::setOnmessage(| string scalar methodarg) { 
+class form scalar form::setOnmessage(| string scalar methodarg) { 
 
     // Set the attribute onmessage for this class 
     this.htmlonmessage = `"onmessage = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmessage declaration for class form
 
 // Fires when a mouse button is pressed down on an element 
-void form::setOnmousedown(| string scalar methodarg) { 
+class form scalar form::setOnmousedown(| string scalar methodarg) { 
 
     // Set the attribute onmousedown for this class 
     this.htmlonmousedown = `"onmousedown = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmousedown declaration for class form
 
 // Fires when the mouse pointer is moving while it is over an element 
-void form::setOnmousemove(| string scalar methodarg) { 
+class form scalar form::setOnmousemove(| string scalar methodarg) { 
 
     // Set the attribute onmousemove for this class 
     this.htmlonmousemove = `"onmousemove = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmousemove declaration for class form
 
 // Fires when the mouse pointer moves out of an element 
-void form::setOnmouseout(| string scalar methodarg) { 
+class form scalar form::setOnmouseout(| string scalar methodarg) { 
 
     // Set the attribute onmouseout for this class 
     this.htmlonmouseout = `"onmouseout = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmouseout declaration for class form
 
 // Fires when the mouse pointer moves over an element 
-void form::setOnmouseover(| string scalar methodarg) { 
+class form scalar form::setOnmouseover(| string scalar methodarg) { 
 
     // Set the attribute onmouseover for this class 
     this.htmlonmouseover = `"onmouseover = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmouseover declaration for class form
 
 // Fires when a mouse button is released over an element 
-void form::setOnmouseup(| string scalar methodarg) { 
+class form scalar form::setOnmouseup(| string scalar methodarg) { 
 
     // Set the attribute onmouseup for this class 
     this.htmlonmouseup = `"onmouseup = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmouseup declaration for class form
 
 // Deprecated. Use the onwheel attribute instead 
-void form::setOnmousewheel(| string scalar methodarg) { 
+class form scalar form::setOnmousewheel(| string scalar methodarg) { 
 
     // Set the attribute onmousewheel for this class 
     this.htmlonmousewheel = `"onmousewheel = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmousewheel declaration for class form
 
 // Script to be run when the browser starts to work offline 
-void form::setOnoffline(| string scalar methodarg) { 
+class form scalar form::setOnoffline(| string scalar methodarg) { 
 
     // Set the attribute onoffline for this class 
     this.htmlonoffline = `"onoffline = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onoffline declaration for class form
 
 // Script to be run when the browser starts to work online 
-void form::setOnonline(| string scalar methodarg) { 
+class form scalar form::setOnonline(| string scalar methodarg) { 
 
     // Set the attribute ononline for this class 
     this.htmlononline = `"ononline = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ononline declaration for class form
 
 // Script to be run when a user navigates away from a page 
-void form::setOnpagehide(| string scalar methodarg) { 
+class form scalar form::setOnpagehide(| string scalar methodarg) { 
 
     // Set the attribute onpagehide for this class 
     this.htmlonpagehide = `"onpagehide = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpagehide declaration for class form
 
 // Script to be run when a user navigates to a page 
-void form::setOnpageshow(| string scalar methodarg) { 
+class form scalar form::setOnpageshow(| string scalar methodarg) { 
 
     // Set the attribute onpageshow for this class 
     this.htmlonpageshow = `"onpageshow = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpageshow declaration for class form
 
 // Fires when the user pastes some content in an element 
-void form::setOnpaste(| string scalar methodarg) { 
+class form scalar form::setOnpaste(| string scalar methodarg) { 
 
     // Set the attribute onpaste for this class 
     this.htmlonpaste = `"onpaste = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpaste declaration for class form
 
 // Script to be run when the media is paused either by the user or programmatically 
-void form::setOnpause(| string scalar methodarg) { 
+class form scalar form::setOnpause(| string scalar methodarg) { 
 
     // Set the attribute onpause for this class 
     this.htmlonpause = `"onpause = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpause declaration for class form
 
 // Script to be run when the media is ready to start playing 
-void form::setOnplay(| string scalar methodarg) { 
+class form scalar form::setOnplay(| string scalar methodarg) { 
 
     // Set the attribute onplay for this class 
     this.htmlonplay = `"onplay = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onplay declaration for class form
 
 // Script to be run when the media actually has started playing 
-void form::setOnplaying(| string scalar methodarg) { 
+class form scalar form::setOnplaying(| string scalar methodarg) { 
 
     // Set the attribute onplaying for this class 
     this.htmlonplaying = `"onplaying = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onplaying declaration for class form
 
 // Script to be run when the window's history changes 
-void form::setOnpopstate(| string scalar methodarg) { 
+class form scalar form::setOnpopstate(| string scalar methodarg) { 
 
     // Set the attribute onpopstate for this class 
     this.htmlonpopstate = `"onpopstate = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpopstate declaration for class form
 
 // Script to be run when the browser is in the process of getting the media data 
-void form::setOnprogress(| string scalar methodarg) { 
+class form scalar form::setOnprogress(| string scalar methodarg) { 
 
     // Set the attribute onprogress for this class 
     this.htmlonprogress = `"onprogress = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onprogress declaration for class form
 
 // Script to be run each time the playback rate changes (like when a user switches to a slow motion or fast forward mode) 
-void form::setOnratechange(| string scalar methodarg) { 
+class form scalar form::setOnratechange(| string scalar methodarg) { 
 
     // Set the attribute onratechange for this class 
     this.htmlonratechange = `"onratechange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onratechange declaration for class form
 
 // Fires when the Reset button in a form is clicked 
-void form::setOnreset(| string scalar methodarg) { 
+class form scalar form::setOnreset(| string scalar methodarg) { 
 
     // Set the attribute onreset for this class 
     this.htmlonreset = `"onreset = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onreset declaration for class form
 
 // Fires when the browser window is resized 
-void form::setOnresize(| string scalar methodarg) { 
+class form scalar form::setOnresize(| string scalar methodarg) { 
 
     // Set the attribute onresize for this class 
     this.htmlonresize = `"onresize = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onresize declaration for class form
 
 // Script to be run when an element's scrollbar is being scrolled 
-void form::setOnscroll(| string scalar methodarg) { 
+class form scalar form::setOnscroll(| string scalar methodarg) { 
 
     // Set the attribute onscroll for this class 
     this.htmlonscroll = `"onscroll = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onscroll declaration for class form
 
 // Fires when the user writes something in a search field (for <input="search">) 
-void form::setOnsearch(| string scalar methodarg) { 
+class form scalar form::setOnsearch(| string scalar methodarg) { 
 
     // Set the attribute onsearch for this class 
     this.htmlonsearch = `"onsearch = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onsearch declaration for class form
 
 // Script to be run when the seeking attribute is set to false indicating that seeking has ended 
-void form::setOnseeked(| string scalar methodarg) { 
+class form scalar form::setOnseeked(| string scalar methodarg) { 
 
     // Set the attribute onseeked for this class 
     this.htmlonseeked = `"onseeked = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onseeked declaration for class form
 
 // Script to be run when the seeking attribute is set to true indicating that seeking is active 
-void form::setOnseeking(| string scalar methodarg) { 
+class form scalar form::setOnseeking(| string scalar methodarg) { 
 
     // Set the attribute onseeking for this class 
     this.htmlonseeking = `"onseeking = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onseeking declaration for class form
 
 // Fires after some text has been selected in an element 
-void form::setOnselect(| string scalar methodarg) { 
+class form scalar form::setOnselect(| string scalar methodarg) { 
 
     // Set the attribute onselect for this class 
     this.htmlonselect = `"onselect = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onselect declaration for class form
 
 // Fires when a <menu> element is shown as a context menu 
-void form::setOnshow(| string scalar methodarg) { 
+class form scalar form::setOnshow(| string scalar methodarg) { 
 
     // Set the attribute onshow for this class 
     this.htmlonshow = `"onshow = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onshow declaration for class form
 
 // Script to be run when the browser is unable to fetch the media data for whatever reason 
-void form::setOnstalled(| string scalar methodarg) { 
+class form scalar form::setOnstalled(| string scalar methodarg) { 
 
     // Set the attribute onstalled for this class 
     this.htmlonstalled = `"onstalled = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onstalled declaration for class form
 
 // Script to be run when a Web Storage area is updated 
-void form::setOnstorage(| string scalar methodarg) { 
+class form scalar form::setOnstorage(| string scalar methodarg) { 
 
     // Set the attribute onstorage for this class 
     this.htmlonstorage = `"onstorage = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onstorage declaration for class form
 
 // Fires when a form is submitted 
-void form::setOnsubmit(| string scalar methodarg) { 
+class form scalar form::setOnsubmit(| string scalar methodarg) { 
 
     // Set the attribute onsubmit for this class 
     this.htmlonsubmit = `"onsubmit = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onsubmit declaration for class form
 
 // Script to be run when fetching the media data is stopped before it is completely loaded for whatever reason 
-void form::setOnsuspend(| string scalar methodarg) { 
+class form scalar form::setOnsuspend(| string scalar methodarg) { 
 
     // Set the attribute onsuspend for this class 
     this.htmlonsuspend = `"onsuspend = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onsuspend declaration for class form
 
 // Script to be run when the playing position has changed (like when the user fast forwards to a different point in the media) 
-void form::setOntimeupdate(| string scalar methodarg) { 
+class form scalar form::setOntimeupdate(| string scalar methodarg) { 
 
     // Set the attribute ontimeupdate for this class 
     this.htmlontimeupdate = `"ontimeupdate = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ontimeupdate declaration for class form
 
 // Fires when the user opens or closes the <details> element 
-void form::setOntoggle(| string scalar methodarg) { 
+class form scalar form::setOntoggle(| string scalar methodarg) { 
 
     // Set the attribute ontoggle for this class 
     this.htmlontoggle = `"ontoggle = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ontoggle declaration for class form
 
 // Fires once a page has unloaded (or the browser window has been closed) 
-void form::setOnunload(| string scalar methodarg) { 
+class form scalar form::setOnunload(| string scalar methodarg) { 
 
     // Set the attribute onunload for this class 
     this.htmlonunload = `"onunload = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onunload declaration for class form
 
 // Script to be run each time the volume is changed which (includes setting the volume to "mute") 
-void form::setOnvolumechange(| string scalar methodarg) { 
+class form scalar form::setOnvolumechange(| string scalar methodarg) { 
 
     // Set the attribute onvolumechange for this class 
     this.htmlonvolumechange = `"onvolumechange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onvolumechange declaration for class form
 
 // Script to be run when the media has paused but is expected to resume (like when the media pauses to buffer more data) 
-void form::setOnwaiting(| string scalar methodarg) { 
+class form scalar form::setOnwaiting(| string scalar methodarg) { 
 
     // Set the attribute onwaiting for this class 
     this.htmlonwaiting = `"onwaiting = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onwaiting declaration for class form
 
 // Fires when the mouse wheel rolls up or down over an element 
-void form::setOnwheel(| string scalar methodarg) { 
+class form scalar form::setOnwheel(| string scalar methodarg) { 
 
     // Set the attribute onwheel for this class 
     this.htmlonwheel = `"onwheel = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onwheel declaration for class form
 
 // Specifies whether the element is to have its spelling and grammar checked or not 
-void form::setSpellcheck(| string scalar methodarg) { 
+class form scalar form::setSpellcheck(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "true" | methodarg == "false") { 
@@ -819,26 +1098,35 @@ void form::setSpellcheck(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method spellcheck declaration for class form
 
 // Specifies an inline CSS style for an element 
-void form::setStyle(| string scalar methodarg) { 
+class form scalar form::setStyle(| string scalar methodarg) { 
 
     // Set the attribute style for this class 
     this.htmlstyle = `"style = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method style declaration for class form
 
 // Specifies the tabbing order of an element 
-void form::setTabindex(| string scalar methodarg) { 
+class form scalar form::setTabindex(| string scalar methodarg) { 
 
     // Set the attribute tabindex for this class 
     this.htmltabindex = `"tabindex = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method tabindex declaration for class form
 
 // Specifies where to display the response that is received after submitting the form 
-void form::setTarget(| string scalar methodarg) { 
+class form scalar form::setTarget(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "_blank" | methodarg == "_self" | methodarg == "_parent" | methodarg == "_top") { 
@@ -848,18 +1136,24 @@ void form::setTarget(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method target declaration for class form
 
 // Specifies extra information about an element 
-void form::setTitle(| string scalar methodarg) { 
+class form scalar form::setTitle(| string scalar methodarg) { 
 
     // Set the attribute title for this class 
     this.htmltitle = `"title = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method title declaration for class form
 
 // Specifies whether the content of an element should be translated or not 
-void form::setTranslate(| string scalar methodarg) { 
+class form scalar form::setTranslate(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "yes" | methodarg == "no") { 
@@ -868,6 +1162,9 @@ void form::setTranslate(| string scalar methodarg) {
         this.htmltranslate = `"translate = ""' + methodarg + "" 
 
     } // End IF Block for validated argument value 
+
+    // Return a copy of the object 
+    return(this)
 
 } // End of Method translate declaration for class form
 

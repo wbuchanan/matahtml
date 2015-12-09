@@ -20,8 +20,11 @@ class applet {
     // Define public members/methods 
     public: 
 
+    // Class constructor method 
+    void         new()
+
     // Setter methods 
-    void         new(), setClassArgs()
+    class        applet     scalar  setClassArgs()
 
     // Getter methods 
     string               scalar          getOpens(), getOpene(), getClose(), print(), getClassArgs()
@@ -43,10 +46,13 @@ void applet::new() {
 } // End of class constructor method definition
 
 // Setter method for class arguments (appear between HTML tags) 
-void applet::setClassArgs(| string scalar classarguments) { 
+class applet scalar applet::setClassArgs(| string scalar classarguments) { 
 
     // Defines arguments that appear between HTML tags 
     this.classargs = classarguments 
+
+    // Return a copy of the object 
+    return(this)
 
 } // End of setter method for class arguments
 

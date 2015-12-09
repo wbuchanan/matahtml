@@ -20,8 +20,11 @@ class tbody {
     // Define public members/methods 
     public: 
 
+    // Class constructor method 
+    void         new()
+
     // Setter methods 
-    void         new(), setClassArgs(), setAccesskey(), setAlign(), setChar(), setCharoff(), setClass(), setContenteditable(), setContextmenu(), setData(), setDir(), setDraggable(), setDropzone(), setHidden(), setId(), setLang(), setOnabort(), setOnafterprint(), setOnbeforeprint(), setOnbeforeunload(), setOnblur(), setOncanplay(), setOncanplaythrough(), setOnchange(), setOnclick(), setOncontextmenu(), setOncopy(), setOncuechange(), setOncut(), setOndblclick(), setOndrag(), setOndragend(), setOndragenter(), setOndragleave(), setOndragover(), setOndragstart(), setOndrop(), setOndurationchange(), setOnemptied(), setOnended(), setOnerror(), setOnfocus(), setOnhashchange(), setOninput(), setOninvalid(), setOnkeydown(), setOnkeypress(), setOnkeyup(), setOnload(), setOnloadeddata(), setOnloadedmetadata(), setOnloadstart(), setOnmessage(), setOnmousedown(), setOnmousemove(), setOnmouseout(), setOnmouseover(), setOnmouseup(), setOnmousewheel(), setOnoffline(), setOnonline(), setOnpagehide(), setOnpageshow(), setOnpaste(), setOnpause(), setOnplay(), setOnplaying(), setOnpopstate(), setOnprogress(), setOnratechange(), setOnreset(), setOnresize(), setOnscroll(), setOnsearch(), setOnseeked(), setOnseeking(), setOnselect(), setOnshow(), setOnstalled(), setOnstorage(), setOnsubmit(), setOnsuspend(), setOntimeupdate(), setOntoggle(), setOnunload(), setOnvolumechange(), setOnwaiting(), setOnwheel(), setSpellcheck(), setStyle(), setTabindex(), setTitle(), setTranslate(), setValign()
+    class        tbody     scalar  setClassArgs(), setAccesskey(), setAlign(), setChar(), setCharoff(), setClass(), setContenteditable(), setContextmenu(), setData(), setDir(), setDraggable(), setDropzone(), setHidden(), setId(), setLang(), setOnabort(), setOnafterprint(), setOnbeforeprint(), setOnbeforeunload(), setOnblur(), setOncanplay(), setOncanplaythrough(), setOnchange(), setOnclick(), setOncontextmenu(), setOncopy(), setOncuechange(), setOncut(), setOndblclick(), setOndrag(), setOndragend(), setOndragenter(), setOndragleave(), setOndragover(), setOndragstart(), setOndrop(), setOndurationchange(), setOnemptied(), setOnended(), setOnerror(), setOnfocus(), setOnhashchange(), setOninput(), setOninvalid(), setOnkeydown(), setOnkeypress(), setOnkeyup(), setOnload(), setOnloadeddata(), setOnloadedmetadata(), setOnloadstart(), setOnmessage(), setOnmousedown(), setOnmousemove(), setOnmouseout(), setOnmouseover(), setOnmouseup(), setOnmousewheel(), setOnoffline(), setOnonline(), setOnpagehide(), setOnpageshow(), setOnpaste(), setOnpause(), setOnplay(), setOnplaying(), setOnpopstate(), setOnprogress(), setOnratechange(), setOnreset(), setOnresize(), setOnscroll(), setOnsearch(), setOnseeked(), setOnseeking(), setOnselect(), setOnshow(), setOnstalled(), setOnstorage(), setOnsubmit(), setOnsuspend(), setOntimeupdate(), setOntoggle(), setOnunload(), setOnvolumechange(), setOnwaiting(), setOnwheel(), setSpellcheck(), setStyle(), setTabindex(), setTitle(), setTranslate(), setValign()
 
     // Getter methods 
     string               scalar          getOpens(), getOpene(), getClose(), print(), getClassArgs(), getAccesskey(), getAlign(), getChar(), getCharoff(), getClass(), getContenteditable(), getContextmenu(), getData(), getDir(), getDraggable(), getDropzone(), getHidden(), getId(), getLang(), getOnabort(), getOnafterprint(), getOnbeforeprint(), getOnbeforeunload(), getOnblur(), getOncanplay(), getOncanplaythrough(), getOnchange(), getOnclick(), getOncontextmenu(), getOncopy(), getOncuechange(), getOncut(), getOndblclick(), getOndrag(), getOndragend(), getOndragenter(), getOndragleave(), getOndragover(), getOndragstart(), getOndrop(), getOndurationchange(), getOnemptied(), getOnended(), getOnerror(), getOnfocus(), getOnhashchange(), getOninput(), getOninvalid(), getOnkeydown(), getOnkeypress(), getOnkeyup(), getOnload(), getOnloadeddata(), getOnloadedmetadata(), getOnloadstart(), getOnmessage(), getOnmousedown(), getOnmousemove(), getOnmouseout(), getOnmouseover(), getOnmouseup(), getOnmousewheel(), getOnoffline(), getOnonline(), getOnpagehide(), getOnpageshow(), getOnpaste(), getOnpause(), getOnplay(), getOnplaying(), getOnpopstate(), getOnprogress(), getOnratechange(), getOnreset(), getOnresize(), getOnscroll(), getOnsearch(), getOnseeked(), getOnseeking(), getOnselect(), getOnshow(), getOnstalled(), getOnstorage(), getOnsubmit(), getOnsuspend(), getOntimeupdate(), getOntoggle(), getOnunload(), getOnvolumechange(), getOnwaiting(), getOnwheel(), getSpellcheck(), getStyle(), getTabindex(), getTitle(), getTranslate(), getValign()
@@ -43,23 +46,29 @@ void tbody::new() {
 } // End of class constructor method definition
 
 // Setter method for class arguments (appear between HTML tags) 
-void tbody::setClassArgs(| string scalar classarguments) { 
+class tbody scalar tbody::setClassArgs(| string scalar classarguments) { 
 
     // Defines arguments that appear between HTML tags 
     this.classargs = classarguments 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of setter method for class arguments
 
 // Specifies a shortcut key to activate/focus an element 
-void tbody::setAccesskey(| string scalar methodarg) { 
+class tbody scalar tbody::setAccesskey(| string scalar methodarg) { 
 
     // Set the attribute accesskey for this class 
     this.htmlaccesskey = `"accesskey = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method accesskey declaration for class tbody
 
 // Not supported in HTML5.Aligns the content inside the <tbody> element 
-void tbody::setAlign(| string scalar methodarg) { 
+class tbody scalar tbody::setAlign(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "right" | methodarg == "left" | methodarg == "center" | methodarg == "justify" | methodarg == "char") { 
@@ -69,34 +78,46 @@ void tbody::setAlign(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method align declaration for class tbody
 
 // Not supported in HTML5.Aligns the content inside the <tbody> element to a character 
-void tbody::setChar(| string scalar methodarg) { 
+class tbody scalar tbody::setChar(| string scalar methodarg) { 
 
     // Set the attribute char for this class 
     this.htmlchar = `"char = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method char declaration for class tbody
 
 // Not supported in HTML5.Sets the number of characters the content inside the <tbody> element will be aligned from the character specified by the char attribute 
-void tbody::setCharoff(| string scalar methodarg) { 
+class tbody scalar tbody::setCharoff(| string scalar methodarg) { 
 
     // Set the attribute charoff for this class 
     this.htmlcharoff = `"charoff = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method charoff declaration for class tbody
 
 // Specifies one or more classnames for an element (refers to a class in a style sheet) 
-void tbody::setClass(| string scalar methodarg) { 
+class tbody scalar tbody::setClass(| string scalar methodarg) { 
 
     // Set the attribute class for this class 
     this.htmlclass = `"class = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method class declaration for class tbody
 
 // Specifies whether the content of an element is editable or not 
-void tbody::setContenteditable(| string scalar methodarg) { 
+class tbody scalar tbody::setContenteditable(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "true" | methodarg == "false") { 
@@ -106,26 +127,35 @@ void tbody::setContenteditable(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method contenteditable declaration for class tbody
 
 // Specifies a context menu for an element. The context menu appears when a user right-clicks on the element 
-void tbody::setContextmenu(| string scalar methodarg) { 
+class tbody scalar tbody::setContextmenu(| string scalar methodarg) { 
 
     // Set the attribute contextmenu for this class 
     this.htmlcontextmenu = `"contextmenu = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method contextmenu declaration for class tbody
 
 // Used to store custom data private to the page or application 
-void tbody::setData(| string scalar methodarg) { 
+class tbody scalar tbody::setData(| string scalar methodarg) { 
 
     // Set the attribute data for this class 
     this.htmldata = `"data = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method data declaration for class tbody
 
 // Specifies the text direction for the content in an element 
-void tbody::setDir(| string scalar methodarg) { 
+class tbody scalar tbody::setDir(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "ltr" | methodarg == "rtl" | methodarg == "auto") { 
@@ -135,10 +165,13 @@ void tbody::setDir(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method dir declaration for class tbody
 
 // Specifies whether an element is draggable or not 
-void tbody::setDraggable(| string scalar methodarg) { 
+class tbody scalar tbody::setDraggable(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "true" | methodarg == "false" | methodarg == "auto") { 
@@ -148,10 +181,13 @@ void tbody::setDraggable(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method draggable declaration for class tbody
 
 // Specifies whether the dragged data is copied, moved, or linked, when dropped 
-void tbody::setDropzone(| string scalar methodarg) { 
+class tbody scalar tbody::setDropzone(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "copy" | methodarg == "move" | methodarg == "link") { 
@@ -161,610 +197,838 @@ void tbody::setDropzone(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method dropzone declaration for class tbody
 
 // Specifies that an element is not yet, or is no longer, relevant 
-void tbody::setHidden(| string scalar methodarg) { 
+class tbody scalar tbody::setHidden(| string scalar methodarg) { 
 
     // Set the attribute hidden for this class 
     this.htmlhidden = `"hidden = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method hidden declaration for class tbody
 
 // Specifies a unique id for an element 
-void tbody::setId(| string scalar methodarg) { 
+class tbody scalar tbody::setId(| string scalar methodarg) { 
 
     // Set the attribute id for this class 
     this.htmlid = `"id = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method id declaration for class tbody
 
 // Specifies the language of the element's content 
-void tbody::setLang(| string scalar methodarg) { 
+class tbody scalar tbody::setLang(| string scalar methodarg) { 
 
     // Set the attribute lang for this class 
     this.htmllang = `"lang = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method lang declaration for class tbody
 
 // Script to be run on abort 
-void tbody::setOnabort(| string scalar methodarg) { 
+class tbody scalar tbody::setOnabort(| string scalar methodarg) { 
 
     // Set the attribute onabort for this class 
     this.htmlonabort = `"onabort = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onabort declaration for class tbody
 
 // Script to be run after the document is printed 
-void tbody::setOnafterprint(| string scalar methodarg) { 
+class tbody scalar tbody::setOnafterprint(| string scalar methodarg) { 
 
     // Set the attribute onafterprint for this class 
     this.htmlonafterprint = `"onafterprint = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onafterprint declaration for class tbody
 
 // Script to be run before the document is printed 
-void tbody::setOnbeforeprint(| string scalar methodarg) { 
+class tbody scalar tbody::setOnbeforeprint(| string scalar methodarg) { 
 
     // Set the attribute onbeforeprint for this class 
     this.htmlonbeforeprint = `"onbeforeprint = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onbeforeprint declaration for class tbody
 
 // Script to be run when the document is about to be unloaded 
-void tbody::setOnbeforeunload(| string scalar methodarg) { 
+class tbody scalar tbody::setOnbeforeunload(| string scalar methodarg) { 
 
     // Set the attribute onbeforeunload for this class 
     this.htmlonbeforeunload = `"onbeforeunload = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onbeforeunload declaration for class tbody
 
 // Fires the moment that the element loses focus 
-void tbody::setOnblur(| string scalar methodarg) { 
+class tbody scalar tbody::setOnblur(| string scalar methodarg) { 
 
     // Set the attribute onblur for this class 
     this.htmlonblur = `"onblur = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onblur declaration for class tbody
 
 // Script to be run when a file is ready to start playing (when it has buffered enough to begin) 
-void tbody::setOncanplay(| string scalar methodarg) { 
+class tbody scalar tbody::setOncanplay(| string scalar methodarg) { 
 
     // Set the attribute oncanplay for this class 
     this.htmloncanplay = `"oncanplay = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncanplay declaration for class tbody
 
 // Script to be run when a file can be played all the way to the end without pausing for buffering 
-void tbody::setOncanplaythrough(| string scalar methodarg) { 
+class tbody scalar tbody::setOncanplaythrough(| string scalar methodarg) { 
 
     // Set the attribute oncanplaythrough for this class 
     this.htmloncanplaythrough = `"oncanplaythrough = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncanplaythrough declaration for class tbody
 
 // Fires the moment when the value of the element is changed 
-void tbody::setOnchange(| string scalar methodarg) { 
+class tbody scalar tbody::setOnchange(| string scalar methodarg) { 
 
     // Set the attribute onchange for this class 
     this.htmlonchange = `"onchange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onchange declaration for class tbody
 
 // Fires on a mouse click on the element 
-void tbody::setOnclick(| string scalar methodarg) { 
+class tbody scalar tbody::setOnclick(| string scalar methodarg) { 
 
     // Set the attribute onclick for this class 
     this.htmlonclick = `"onclick = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onclick declaration for class tbody
 
 // Script to be run when a context menu is triggered 
-void tbody::setOncontextmenu(| string scalar methodarg) { 
+class tbody scalar tbody::setOncontextmenu(| string scalar methodarg) { 
 
     // Set the attribute oncontextmenu for this class 
     this.htmloncontextmenu = `"oncontextmenu = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncontextmenu declaration for class tbody
 
 // Fires when the user copies the content of an element 
-void tbody::setOncopy(| string scalar methodarg) { 
+class tbody scalar tbody::setOncopy(| string scalar methodarg) { 
 
     // Set the attribute oncopy for this class 
     this.htmloncopy = `"oncopy = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncopy declaration for class tbody
 
 // Script to be run when the cue changes in a <track> element 
-void tbody::setOncuechange(| string scalar methodarg) { 
+class tbody scalar tbody::setOncuechange(| string scalar methodarg) { 
 
     // Set the attribute oncuechange for this class 
     this.htmloncuechange = `"oncuechange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncuechange declaration for class tbody
 
 // Fires when the user cuts the content of an element 
-void tbody::setOncut(| string scalar methodarg) { 
+class tbody scalar tbody::setOncut(| string scalar methodarg) { 
 
     // Set the attribute oncut for this class 
     this.htmloncut = `"oncut = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncut declaration for class tbody
 
 // Fires on a mouse double-click on the element 
-void tbody::setOndblclick(| string scalar methodarg) { 
+class tbody scalar tbody::setOndblclick(| string scalar methodarg) { 
 
     // Set the attribute ondblclick for this class 
     this.htmlondblclick = `"ondblclick = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondblclick declaration for class tbody
 
 // Script to be run when an element is dragged 
-void tbody::setOndrag(| string scalar methodarg) { 
+class tbody scalar tbody::setOndrag(| string scalar methodarg) { 
 
     // Set the attribute ondrag for this class 
     this.htmlondrag = `"ondrag = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondrag declaration for class tbody
 
 // Script to be run at the end of a drag operation 
-void tbody::setOndragend(| string scalar methodarg) { 
+class tbody scalar tbody::setOndragend(| string scalar methodarg) { 
 
     // Set the attribute ondragend for this class 
     this.htmlondragend = `"ondragend = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragend declaration for class tbody
 
 // Script to be run when an element has been dragged to a valid drop target 
-void tbody::setOndragenter(| string scalar methodarg) { 
+class tbody scalar tbody::setOndragenter(| string scalar methodarg) { 
 
     // Set the attribute ondragenter for this class 
     this.htmlondragenter = `"ondragenter = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragenter declaration for class tbody
 
 // Script to be run when an element leaves a valid drop target 
-void tbody::setOndragleave(| string scalar methodarg) { 
+class tbody scalar tbody::setOndragleave(| string scalar methodarg) { 
 
     // Set the attribute ondragleave for this class 
     this.htmlondragleave = `"ondragleave = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragleave declaration for class tbody
 
 // Script to be run when an element is being dragged over a valid drop target 
-void tbody::setOndragover(| string scalar methodarg) { 
+class tbody scalar tbody::setOndragover(| string scalar methodarg) { 
 
     // Set the attribute ondragover for this class 
     this.htmlondragover = `"ondragover = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragover declaration for class tbody
 
 // Script to be run at the start of a drag operation 
-void tbody::setOndragstart(| string scalar methodarg) { 
+class tbody scalar tbody::setOndragstart(| string scalar methodarg) { 
 
     // Set the attribute ondragstart for this class 
     this.htmlondragstart = `"ondragstart = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragstart declaration for class tbody
 
 // Script to be run when dragged element is being dropped 
-void tbody::setOndrop(| string scalar methodarg) { 
+class tbody scalar tbody::setOndrop(| string scalar methodarg) { 
 
     // Set the attribute ondrop for this class 
     this.htmlondrop = `"ondrop = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondrop declaration for class tbody
 
 // Script to be run when the length of the media changes 
-void tbody::setOndurationchange(| string scalar methodarg) { 
+class tbody scalar tbody::setOndurationchange(| string scalar methodarg) { 
 
     // Set the attribute ondurationchange for this class 
     this.htmlondurationchange = `"ondurationchange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondurationchange declaration for class tbody
 
 // Script to be run when something bad happens and the file is suddenly unavailable (like unexpectedly disconnects) 
-void tbody::setOnemptied(| string scalar methodarg) { 
+class tbody scalar tbody::setOnemptied(| string scalar methodarg) { 
 
     // Set the attribute onemptied for this class 
     this.htmlonemptied = `"onemptied = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onemptied declaration for class tbody
 
 // Script to be run when the media has reach the end (a useful event for messages like "thanks for listening") 
-void tbody::setOnended(| string scalar methodarg) { 
+class tbody scalar tbody::setOnended(| string scalar methodarg) { 
 
     // Set the attribute onended for this class 
     this.htmlonended = `"onended = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onended declaration for class tbody
 
 // Fires when an error occurs while loading an external file Script to be run when an error occur Script to be run when an error occurs when the file is being loaded 
-void tbody::setOnerror(| string scalar methodarg) { 
+class tbody scalar tbody::setOnerror(| string scalar methodarg) { 
 
     // Set the attribute onerror for this class 
     this.htmlonerror = `"onerror = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onerror declaration for class tbody
 
 // Fires the moment when the element gets focus 
-void tbody::setOnfocus(| string scalar methodarg) { 
+class tbody scalar tbody::setOnfocus(| string scalar methodarg) { 
 
     // Set the attribute onfocus for this class 
     this.htmlonfocus = `"onfocus = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onfocus declaration for class tbody
 
 // Script to be run when there has been changes to the anchor part of the a URL 
-void tbody::setOnhashchange(| string scalar methodarg) { 
+class tbody scalar tbody::setOnhashchange(| string scalar methodarg) { 
 
     // Set the attribute onhashchange for this class 
     this.htmlonhashchange = `"onhashchange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onhashchange declaration for class tbody
 
 // Script to be run when an element gets user input 
-void tbody::setOninput(| string scalar methodarg) { 
+class tbody scalar tbody::setOninput(| string scalar methodarg) { 
 
     // Set the attribute oninput for this class 
     this.htmloninput = `"oninput = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oninput declaration for class tbody
 
 // Script to be run when an element is invalid 
-void tbody::setOninvalid(| string scalar methodarg) { 
+class tbody scalar tbody::setOninvalid(| string scalar methodarg) { 
 
     // Set the attribute oninvalid for this class 
     this.htmloninvalid = `"oninvalid = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oninvalid declaration for class tbody
 
 // Fires when a user is pressing a key 
-void tbody::setOnkeydown(| string scalar methodarg) { 
+class tbody scalar tbody::setOnkeydown(| string scalar methodarg) { 
 
     // Set the attribute onkeydown for this class 
     this.htmlonkeydown = `"onkeydown = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onkeydown declaration for class tbody
 
 // Fires when a user presses a key 
-void tbody::setOnkeypress(| string scalar methodarg) { 
+class tbody scalar tbody::setOnkeypress(| string scalar methodarg) { 
 
     // Set the attribute onkeypress for this class 
     this.htmlonkeypress = `"onkeypress = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onkeypress declaration for class tbody
 
 // Fires when a user releases a key 
-void tbody::setOnkeyup(| string scalar methodarg) { 
+class tbody scalar tbody::setOnkeyup(| string scalar methodarg) { 
 
     // Set the attribute onkeyup for this class 
     this.htmlonkeyup = `"onkeyup = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onkeyup declaration for class tbody
 
 // Fires after the page is finished loading 
-void tbody::setOnload(| string scalar methodarg) { 
+class tbody scalar tbody::setOnload(| string scalar methodarg) { 
 
     // Set the attribute onload for this class 
     this.htmlonload = `"onload = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onload declaration for class tbody
 
 // Script to be run when media data is loaded 
-void tbody::setOnloadeddata(| string scalar methodarg) { 
+class tbody scalar tbody::setOnloadeddata(| string scalar methodarg) { 
 
     // Set the attribute onloadeddata for this class 
     this.htmlonloadeddata = `"onloadeddata = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onloadeddata declaration for class tbody
 
 // Script to be run when meta data (like dimensions and duration) are loaded 
-void tbody::setOnloadedmetadata(| string scalar methodarg) { 
+class tbody scalar tbody::setOnloadedmetadata(| string scalar methodarg) { 
 
     // Set the attribute onloadedmetadata for this class 
     this.htmlonloadedmetadata = `"onloadedmetadata = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onloadedmetadata declaration for class tbody
 
 // Script to be run just as the file begins to load before anything is actually loaded 
-void tbody::setOnloadstart(| string scalar methodarg) { 
+class tbody scalar tbody::setOnloadstart(| string scalar methodarg) { 
 
     // Set the attribute onloadstart for this class 
     this.htmlonloadstart = `"onloadstart = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onloadstart declaration for class tbody
 
 // Script to be run when the message is triggered 
-void tbody::setOnmessage(| string scalar methodarg) { 
+class tbody scalar tbody::setOnmessage(| string scalar methodarg) { 
 
     // Set the attribute onmessage for this class 
     this.htmlonmessage = `"onmessage = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmessage declaration for class tbody
 
 // Fires when a mouse button is pressed down on an element 
-void tbody::setOnmousedown(| string scalar methodarg) { 
+class tbody scalar tbody::setOnmousedown(| string scalar methodarg) { 
 
     // Set the attribute onmousedown for this class 
     this.htmlonmousedown = `"onmousedown = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmousedown declaration for class tbody
 
 // Fires when the mouse pointer is moving while it is over an element 
-void tbody::setOnmousemove(| string scalar methodarg) { 
+class tbody scalar tbody::setOnmousemove(| string scalar methodarg) { 
 
     // Set the attribute onmousemove for this class 
     this.htmlonmousemove = `"onmousemove = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmousemove declaration for class tbody
 
 // Fires when the mouse pointer moves out of an element 
-void tbody::setOnmouseout(| string scalar methodarg) { 
+class tbody scalar tbody::setOnmouseout(| string scalar methodarg) { 
 
     // Set the attribute onmouseout for this class 
     this.htmlonmouseout = `"onmouseout = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmouseout declaration for class tbody
 
 // Fires when the mouse pointer moves over an element 
-void tbody::setOnmouseover(| string scalar methodarg) { 
+class tbody scalar tbody::setOnmouseover(| string scalar methodarg) { 
 
     // Set the attribute onmouseover for this class 
     this.htmlonmouseover = `"onmouseover = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmouseover declaration for class tbody
 
 // Fires when a mouse button is released over an element 
-void tbody::setOnmouseup(| string scalar methodarg) { 
+class tbody scalar tbody::setOnmouseup(| string scalar methodarg) { 
 
     // Set the attribute onmouseup for this class 
     this.htmlonmouseup = `"onmouseup = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmouseup declaration for class tbody
 
 // Deprecated. Use the onwheel attribute instead 
-void tbody::setOnmousewheel(| string scalar methodarg) { 
+class tbody scalar tbody::setOnmousewheel(| string scalar methodarg) { 
 
     // Set the attribute onmousewheel for this class 
     this.htmlonmousewheel = `"onmousewheel = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmousewheel declaration for class tbody
 
 // Script to be run when the browser starts to work offline 
-void tbody::setOnoffline(| string scalar methodarg) { 
+class tbody scalar tbody::setOnoffline(| string scalar methodarg) { 
 
     // Set the attribute onoffline for this class 
     this.htmlonoffline = `"onoffline = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onoffline declaration for class tbody
 
 // Script to be run when the browser starts to work online 
-void tbody::setOnonline(| string scalar methodarg) { 
+class tbody scalar tbody::setOnonline(| string scalar methodarg) { 
 
     // Set the attribute ononline for this class 
     this.htmlononline = `"ononline = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ononline declaration for class tbody
 
 // Script to be run when a user navigates away from a page 
-void tbody::setOnpagehide(| string scalar methodarg) { 
+class tbody scalar tbody::setOnpagehide(| string scalar methodarg) { 
 
     // Set the attribute onpagehide for this class 
     this.htmlonpagehide = `"onpagehide = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpagehide declaration for class tbody
 
 // Script to be run when a user navigates to a page 
-void tbody::setOnpageshow(| string scalar methodarg) { 
+class tbody scalar tbody::setOnpageshow(| string scalar methodarg) { 
 
     // Set the attribute onpageshow for this class 
     this.htmlonpageshow = `"onpageshow = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpageshow declaration for class tbody
 
 // Fires when the user pastes some content in an element 
-void tbody::setOnpaste(| string scalar methodarg) { 
+class tbody scalar tbody::setOnpaste(| string scalar methodarg) { 
 
     // Set the attribute onpaste for this class 
     this.htmlonpaste = `"onpaste = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpaste declaration for class tbody
 
 // Script to be run when the media is paused either by the user or programmatically 
-void tbody::setOnpause(| string scalar methodarg) { 
+class tbody scalar tbody::setOnpause(| string scalar methodarg) { 
 
     // Set the attribute onpause for this class 
     this.htmlonpause = `"onpause = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpause declaration for class tbody
 
 // Script to be run when the media is ready to start playing 
-void tbody::setOnplay(| string scalar methodarg) { 
+class tbody scalar tbody::setOnplay(| string scalar methodarg) { 
 
     // Set the attribute onplay for this class 
     this.htmlonplay = `"onplay = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onplay declaration for class tbody
 
 // Script to be run when the media actually has started playing 
-void tbody::setOnplaying(| string scalar methodarg) { 
+class tbody scalar tbody::setOnplaying(| string scalar methodarg) { 
 
     // Set the attribute onplaying for this class 
     this.htmlonplaying = `"onplaying = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onplaying declaration for class tbody
 
 // Script to be run when the window's history changes 
-void tbody::setOnpopstate(| string scalar methodarg) { 
+class tbody scalar tbody::setOnpopstate(| string scalar methodarg) { 
 
     // Set the attribute onpopstate for this class 
     this.htmlonpopstate = `"onpopstate = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpopstate declaration for class tbody
 
 // Script to be run when the browser is in the process of getting the media data 
-void tbody::setOnprogress(| string scalar methodarg) { 
+class tbody scalar tbody::setOnprogress(| string scalar methodarg) { 
 
     // Set the attribute onprogress for this class 
     this.htmlonprogress = `"onprogress = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onprogress declaration for class tbody
 
 // Script to be run each time the playback rate changes (like when a user switches to a slow motion or fast forward mode) 
-void tbody::setOnratechange(| string scalar methodarg) { 
+class tbody scalar tbody::setOnratechange(| string scalar methodarg) { 
 
     // Set the attribute onratechange for this class 
     this.htmlonratechange = `"onratechange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onratechange declaration for class tbody
 
 // Fires when the Reset button in a form is clicked 
-void tbody::setOnreset(| string scalar methodarg) { 
+class tbody scalar tbody::setOnreset(| string scalar methodarg) { 
 
     // Set the attribute onreset for this class 
     this.htmlonreset = `"onreset = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onreset declaration for class tbody
 
 // Fires when the browser window is resized 
-void tbody::setOnresize(| string scalar methodarg) { 
+class tbody scalar tbody::setOnresize(| string scalar methodarg) { 
 
     // Set the attribute onresize for this class 
     this.htmlonresize = `"onresize = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onresize declaration for class tbody
 
 // Script to be run when an element's scrollbar is being scrolled 
-void tbody::setOnscroll(| string scalar methodarg) { 
+class tbody scalar tbody::setOnscroll(| string scalar methodarg) { 
 
     // Set the attribute onscroll for this class 
     this.htmlonscroll = `"onscroll = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onscroll declaration for class tbody
 
 // Fires when the user writes something in a search field (for <input="search">) 
-void tbody::setOnsearch(| string scalar methodarg) { 
+class tbody scalar tbody::setOnsearch(| string scalar methodarg) { 
 
     // Set the attribute onsearch for this class 
     this.htmlonsearch = `"onsearch = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onsearch declaration for class tbody
 
 // Script to be run when the seeking attribute is set to false indicating that seeking has ended 
-void tbody::setOnseeked(| string scalar methodarg) { 
+class tbody scalar tbody::setOnseeked(| string scalar methodarg) { 
 
     // Set the attribute onseeked for this class 
     this.htmlonseeked = `"onseeked = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onseeked declaration for class tbody
 
 // Script to be run when the seeking attribute is set to true indicating that seeking is active 
-void tbody::setOnseeking(| string scalar methodarg) { 
+class tbody scalar tbody::setOnseeking(| string scalar methodarg) { 
 
     // Set the attribute onseeking for this class 
     this.htmlonseeking = `"onseeking = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onseeking declaration for class tbody
 
 // Fires after some text has been selected in an element 
-void tbody::setOnselect(| string scalar methodarg) { 
+class tbody scalar tbody::setOnselect(| string scalar methodarg) { 
 
     // Set the attribute onselect for this class 
     this.htmlonselect = `"onselect = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onselect declaration for class tbody
 
 // Fires when a <menu> element is shown as a context menu 
-void tbody::setOnshow(| string scalar methodarg) { 
+class tbody scalar tbody::setOnshow(| string scalar methodarg) { 
 
     // Set the attribute onshow for this class 
     this.htmlonshow = `"onshow = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onshow declaration for class tbody
 
 // Script to be run when the browser is unable to fetch the media data for whatever reason 
-void tbody::setOnstalled(| string scalar methodarg) { 
+class tbody scalar tbody::setOnstalled(| string scalar methodarg) { 
 
     // Set the attribute onstalled for this class 
     this.htmlonstalled = `"onstalled = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onstalled declaration for class tbody
 
 // Script to be run when a Web Storage area is updated 
-void tbody::setOnstorage(| string scalar methodarg) { 
+class tbody scalar tbody::setOnstorage(| string scalar methodarg) { 
 
     // Set the attribute onstorage for this class 
     this.htmlonstorage = `"onstorage = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onstorage declaration for class tbody
 
 // Fires when a form is submitted 
-void tbody::setOnsubmit(| string scalar methodarg) { 
+class tbody scalar tbody::setOnsubmit(| string scalar methodarg) { 
 
     // Set the attribute onsubmit for this class 
     this.htmlonsubmit = `"onsubmit = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onsubmit declaration for class tbody
 
 // Script to be run when fetching the media data is stopped before it is completely loaded for whatever reason 
-void tbody::setOnsuspend(| string scalar methodarg) { 
+class tbody scalar tbody::setOnsuspend(| string scalar methodarg) { 
 
     // Set the attribute onsuspend for this class 
     this.htmlonsuspend = `"onsuspend = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onsuspend declaration for class tbody
 
 // Script to be run when the playing position has changed (like when the user fast forwards to a different point in the media) 
-void tbody::setOntimeupdate(| string scalar methodarg) { 
+class tbody scalar tbody::setOntimeupdate(| string scalar methodarg) { 
 
     // Set the attribute ontimeupdate for this class 
     this.htmlontimeupdate = `"ontimeupdate = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ontimeupdate declaration for class tbody
 
 // Fires when the user opens or closes the <details> element 
-void tbody::setOntoggle(| string scalar methodarg) { 
+class tbody scalar tbody::setOntoggle(| string scalar methodarg) { 
 
     // Set the attribute ontoggle for this class 
     this.htmlontoggle = `"ontoggle = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ontoggle declaration for class tbody
 
 // Fires once a page has unloaded (or the browser window has been closed) 
-void tbody::setOnunload(| string scalar methodarg) { 
+class tbody scalar tbody::setOnunload(| string scalar methodarg) { 
 
     // Set the attribute onunload for this class 
     this.htmlonunload = `"onunload = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onunload declaration for class tbody
 
 // Script to be run each time the volume is changed which (includes setting the volume to "mute") 
-void tbody::setOnvolumechange(| string scalar methodarg) { 
+class tbody scalar tbody::setOnvolumechange(| string scalar methodarg) { 
 
     // Set the attribute onvolumechange for this class 
     this.htmlonvolumechange = `"onvolumechange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onvolumechange declaration for class tbody
 
 // Script to be run when the media has paused but is expected to resume (like when the media pauses to buffer more data) 
-void tbody::setOnwaiting(| string scalar methodarg) { 
+class tbody scalar tbody::setOnwaiting(| string scalar methodarg) { 
 
     // Set the attribute onwaiting for this class 
     this.htmlonwaiting = `"onwaiting = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onwaiting declaration for class tbody
 
 // Fires when the mouse wheel rolls up or down over an element 
-void tbody::setOnwheel(| string scalar methodarg) { 
+class tbody scalar tbody::setOnwheel(| string scalar methodarg) { 
 
     // Set the attribute onwheel for this class 
     this.htmlonwheel = `"onwheel = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onwheel declaration for class tbody
 
 // Specifies whether the element is to have its spelling and grammar checked or not 
-void tbody::setSpellcheck(| string scalar methodarg) { 
+class tbody scalar tbody::setSpellcheck(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "true" | methodarg == "false") { 
@@ -774,34 +1038,46 @@ void tbody::setSpellcheck(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method spellcheck declaration for class tbody
 
 // Specifies an inline CSS style for an element 
-void tbody::setStyle(| string scalar methodarg) { 
+class tbody scalar tbody::setStyle(| string scalar methodarg) { 
 
     // Set the attribute style for this class 
     this.htmlstyle = `"style = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method style declaration for class tbody
 
 // Specifies the tabbing order of an element 
-void tbody::setTabindex(| string scalar methodarg) { 
+class tbody scalar tbody::setTabindex(| string scalar methodarg) { 
 
     // Set the attribute tabindex for this class 
     this.htmltabindex = `"tabindex = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method tabindex declaration for class tbody
 
 // Specifies extra information about an element 
-void tbody::setTitle(| string scalar methodarg) { 
+class tbody scalar tbody::setTitle(| string scalar methodarg) { 
 
     // Set the attribute title for this class 
     this.htmltitle = `"title = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method title declaration for class tbody
 
 // Specifies whether the content of an element should be translated or not 
-void tbody::setTranslate(| string scalar methodarg) { 
+class tbody scalar tbody::setTranslate(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "yes" | methodarg == "no") { 
@@ -811,10 +1087,13 @@ void tbody::setTranslate(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method translate declaration for class tbody
 
 // Not supported in HTML5. Vertical aligns the content inside the <tbody> element 
-void tbody::setValign(| string scalar methodarg) { 
+class tbody scalar tbody::setValign(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "top" | methodarg == "middle" | methodarg == "bottom" | methodarg == "baseline") { 
@@ -823,6 +1102,9 @@ void tbody::setValign(| string scalar methodarg) {
         this.htmlvalign = `"valign = ""' + methodarg + "" 
 
     } // End IF Block for validated argument value 
+
+    // Return a copy of the object 
+    return(this)
 
 } // End of Method valign declaration for class tbody
 

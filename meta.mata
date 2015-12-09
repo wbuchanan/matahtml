@@ -20,8 +20,11 @@ class meta {
     // Define public members/methods 
     public: 
 
+    // Class constructor method 
+    void         new()
+
     // Setter methods 
-    void         new(), setClassArgs(), setAccesskey(), setCharset(), setClass(), setContent(), setContenteditable(), setContextmenu(), setData(), setDir(), setDraggable(), setDropzone(), setHidden(), setHttp_Equiv(), setId(), setLang(), setName(), setScheme(), setSpellcheck(), setStyle(), setTabindex(), setTitle(), setTranslate()
+    class        meta     scalar  setClassArgs(), setAccesskey(), setCharset(), setClass(), setContent(), setContenteditable(), setContextmenu(), setData(), setDir(), setDraggable(), setDropzone(), setHidden(), setHttp_Equiv(), setId(), setLang(), setName(), setScheme(), setSpellcheck(), setStyle(), setTabindex(), setTitle(), setTranslate()
 
     // Getter methods 
     string               scalar          getOpens(), getOpene(), getClose(), print(), getClassArgs(), getAccesskey(), getCharset(), getClass(), getContent(), getContenteditable(), getContextmenu(), getData(), getDir(), getDraggable(), getDropzone(), getHidden(), getHttp_Equiv(), getId(), getLang(), getName(), getScheme(), getSpellcheck(), getStyle(), getTabindex(), getTitle(), getTranslate()
@@ -38,52 +41,67 @@ void meta::new() {
     this.opene = ">" 
 
     // Defines the closing tag for the class 
-    this.close = "" 
+    this.close = "</meta>" 
 
 } // End of class constructor method definition
 
 // Setter method for class arguments (appear between HTML tags) 
-void meta::setClassArgs(| string scalar classarguments) { 
+class meta scalar meta::setClassArgs(| string scalar classarguments) { 
 
     // Defines arguments that appear between HTML tags 
     this.classargs = classarguments 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of setter method for class arguments
 
 // Specifies a shortcut key to activate/focus an element 
-void meta::setAccesskey(| string scalar methodarg) { 
+class meta scalar meta::setAccesskey(| string scalar methodarg) { 
 
     // Set the attribute accesskey for this class 
     this.htmlaccesskey = `"accesskey = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method accesskey declaration for class meta
 
 // Specifies the character encoding for the HTML document 
-void meta::setCharset(| string scalar methodarg) { 
+class meta scalar meta::setCharset(| string scalar methodarg) { 
 
     // Set the attribute charset for this class 
     this.htmlcharset = `"charset = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method charset declaration for class meta
 
 // Specifies one or more classnames for an element (refers to a class in a style sheet) 
-void meta::setClass(| string scalar methodarg) { 
+class meta scalar meta::setClass(| string scalar methodarg) { 
 
     // Set the attribute class for this class 
     this.htmlclass = `"class = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method class declaration for class meta
 
 // Gives the value associated with the http-equiv or name attribute 
-void meta::setContent(| string scalar methodarg) { 
+class meta scalar meta::setContent(| string scalar methodarg) { 
 
     // Set the attribute content for this class 
     this.htmlcontent = `"content = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method content declaration for class meta
 
 // Specifies whether the content of an element is editable or not 
-void meta::setContenteditable(| string scalar methodarg) { 
+class meta scalar meta::setContenteditable(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "true" | methodarg == "false") { 
@@ -93,26 +111,35 @@ void meta::setContenteditable(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method contenteditable declaration for class meta
 
 // Specifies a context menu for an element. The context menu appears when a user right-clicks on the element 
-void meta::setContextmenu(| string scalar methodarg) { 
+class meta scalar meta::setContextmenu(| string scalar methodarg) { 
 
     // Set the attribute contextmenu for this class 
     this.htmlcontextmenu = `"contextmenu = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method contextmenu declaration for class meta
 
 // Used to store custom data private to the page or application 
-void meta::setData(| string scalar methodarg) { 
+class meta scalar meta::setData(| string scalar methodarg) { 
 
     // Set the attribute data for this class 
     this.htmldata = `"data = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method data declaration for class meta
 
 // Specifies the text direction for the content in an element 
-void meta::setDir(| string scalar methodarg) { 
+class meta scalar meta::setDir(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "ltr" | methodarg == "rtl" | methodarg == "auto") { 
@@ -122,10 +149,13 @@ void meta::setDir(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method dir declaration for class meta
 
 // Specifies whether an element is draggable or not 
-void meta::setDraggable(| string scalar methodarg) { 
+class meta scalar meta::setDraggable(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "true" | methodarg == "false" | methodarg == "auto") { 
@@ -135,10 +165,13 @@ void meta::setDraggable(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method draggable declaration for class meta
 
 // Specifies whether the dragged data is copied, moved, or linked, when dropped 
-void meta::setDropzone(| string scalar methodarg) { 
+class meta scalar meta::setDropzone(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "copy" | methodarg == "move" | methodarg == "link") { 
@@ -148,18 +181,24 @@ void meta::setDropzone(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method dropzone declaration for class meta
 
 // Specifies that an element is not yet, or is no longer, relevant 
-void meta::setHidden(| string scalar methodarg) { 
+class meta scalar meta::setHidden(| string scalar methodarg) { 
 
     // Set the attribute hidden for this class 
     this.htmlhidden = `"hidden = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method hidden declaration for class meta
 
 // Provides an HTTP header for the information/value of the content attribute 
-void meta::setHttp_Equiv(| string scalar methodarg) { 
+class meta scalar meta::setHttp_Equiv(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "content-type" | methodarg == "default-style" | methodarg == "refresh") { 
@@ -169,26 +208,35 @@ void meta::setHttp_Equiv(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method http_equiv declaration for class meta
 
 // Specifies a unique id for an element 
-void meta::setId(| string scalar methodarg) { 
+class meta scalar meta::setId(| string scalar methodarg) { 
 
     // Set the attribute id for this class 
     this.htmlid = `"id = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method id declaration for class meta
 
 // Specifies the language of the element's content 
-void meta::setLang(| string scalar methodarg) { 
+class meta scalar meta::setLang(| string scalar methodarg) { 
 
     // Set the attribute lang for this class 
     this.htmllang = `"lang = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method lang declaration for class meta
 
 // Specifies a name for the metadata 
-void meta::setName(| string scalar methodarg) { 
+class meta scalar meta::setName(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "application-name" | methodarg == "author" | methodarg == "description" | methodarg == "generator" | methodarg == "keywords") { 
@@ -198,18 +246,24 @@ void meta::setName(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method name declaration for class meta
 
 // Not supported in HTML5.Specifies a scheme to be used to interpret the value of the content attribute 
-void meta::setScheme(| string scalar methodarg) { 
+class meta scalar meta::setScheme(| string scalar methodarg) { 
 
     // Set the attribute scheme for this class 
     this.htmlscheme = `"scheme = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method scheme declaration for class meta
 
 // Specifies whether the element is to have its spelling and grammar checked or not 
-void meta::setSpellcheck(| string scalar methodarg) { 
+class meta scalar meta::setSpellcheck(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "true" | methodarg == "false") { 
@@ -219,34 +273,46 @@ void meta::setSpellcheck(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method spellcheck declaration for class meta
 
 // Specifies an inline CSS style for an element 
-void meta::setStyle(| string scalar methodarg) { 
+class meta scalar meta::setStyle(| string scalar methodarg) { 
 
     // Set the attribute style for this class 
     this.htmlstyle = `"style = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method style declaration for class meta
 
 // Specifies the tabbing order of an element 
-void meta::setTabindex(| string scalar methodarg) { 
+class meta scalar meta::setTabindex(| string scalar methodarg) { 
 
     // Set the attribute tabindex for this class 
     this.htmltabindex = `"tabindex = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method tabindex declaration for class meta
 
 // Specifies extra information about an element 
-void meta::setTitle(| string scalar methodarg) { 
+class meta scalar meta::setTitle(| string scalar methodarg) { 
 
     // Set the attribute title for this class 
     this.htmltitle = `"title = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method title declaration for class meta
 
 // Specifies whether the content of an element should be translated or not 
-void meta::setTranslate(| string scalar methodarg) { 
+class meta scalar meta::setTranslate(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "yes" | methodarg == "no") { 
@@ -255,6 +321,9 @@ void meta::setTranslate(| string scalar methodarg) {
         this.htmltranslate = `"translate = ""' + methodarg + "" 
 
     } // End IF Block for validated argument value 
+
+    // Return a copy of the object 
+    return(this)
 
 } // End of Method translate declaration for class meta
 
@@ -467,8 +536,14 @@ string scalar meta::print() {
     // Create opening string 
     open = getOpens() + getAccesskey() + getCharset() + getClass() + getContent() + getContenteditable() + getContextmenu() + getData() + getDir() + getDraggable() + getDropzone() + getHidden() + getHttp_Equiv() + getId() + getLang() + getName() + getScheme() + getSpellcheck() + getStyle() + getTabindex() + getTitle() + getTranslate() + getOpene()
 
+    // Get class arguments 
+    args = getClassArgs() 
+
+    // Get closing tag 
+    close = getClose() 
+
     // Return the complete HTML string 
-    return(open) 
+    return(open + args + close) 
 
 } // End of print method for class meta 
 

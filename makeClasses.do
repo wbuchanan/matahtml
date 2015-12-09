@@ -78,12 +78,16 @@ foreach v of loc classnm {
 	}
 	
 	if `"`setters'"' != "" {
+		file write `tmpfile' `"    // Class constructor method "' _n
+		file write `tmpfile' `"    void		new()"' _n(2)
 		file write `tmpfile' `"    // Setter methods "' _n
-		file write `tmpfile' `"    void		new(), setClassArgs(), `: subinstr loc setters `" "' `", "', all'"' _n(2)
+		file write `tmpfile' `"    class	`v'	scalar	setClassArgs(), `: subinstr loc setters `" "' `", "', all'"' _n(2)
 	}
 	else {
+		file write `tmpfile' `"    // Class constructor method "' _n
+		file write `tmpfile' `"    void		new()"' _n(2)
 		file write `tmpfile' `"    // Setter methods "' _n
-		file write `tmpfile' `"    void		new(), setClassArgs()"' _n(2)
+		file write `tmpfile' `"    class	`v'	scalar	setClassArgs()"' _n(2)
 	}
 	
 	file write `tmpfile' `"    // Getter methods "' _n
@@ -101,9 +105,11 @@ foreach v of loc classnm {
 	file write `tmpfile' `"    this.close = "`close'" "' _n(2)
 	file write `tmpfile' "} // End of class constructor method definition" _n(2)
 	file write `tmpfile' `"// Setter method for class arguments (appear between HTML tags) "' _n
-	file write `tmpfile' "void `v'::setClassArgs(| string scalar classarguments) { " _n(2)
+	file write `tmpfile' "class `v' scalar `v'::setClassArgs(| string scalar classarguments) { " _n(2)
 	file write `tmpfile' `"    // Defines arguments that appear between HTML tags "' _n
 	file write `tmpfile' `"    this.classargs = classarguments "' _n(2)
+	file write `tmpfile' `"    // Return a copy of the object "' _n
+	file write `tmpfile' `"    return(this)"' _n(2)
 	file write `tmpfile' "} // End of setter method for class arguments" _n(2)
 	
 	/* Need handling for 'hidden' - no args just add 'hidden' to attributes
@@ -149,7 +155,7 @@ foreach v of loc classnm {
 				// Write method
 				loc methodnm `v'::set`: di proper("`method'")'
 				file write `tmpfile' `"// `mdesc' "' _n
-				file write `tmpfile' "void `methodnm'(`args') { " _n(2)
+				file write `tmpfile' "class `v' scalar `methodnm'(`args') { " _n(2)
 				if `argcnt' >= 2 {
 					file write `tmpfile' `"    // Validate argument"' _n
 					file write `tmpfile' `"    if (`margs') { "' _n(2)
@@ -161,6 +167,8 @@ foreach v of loc classnm {
 					file write `tmpfile' `"    // Set the attribute `method' for this class "' _n
 					file write `tmpfile' `"    this.html`method' = `"`mymthname' = ""' + methodarg + "" "' _n(2)
 				}
+				file write `tmpfile' `"    // Return a copy of the object "' _n
+				file write `tmpfile' `"    return(this)"' _n(2)
 				file write `tmpfile' "} // End of Method `method' declaration for class `v'" _n(2)
 			}
 			

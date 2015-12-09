@@ -20,8 +20,11 @@ class doctype {
     // Define public members/methods 
     public: 
 
+    // Class constructor method 
+    void         new()
+
     // Setter methods 
-    void         new(), setClassArgs()
+    class        doctype     scalar  setClassArgs()
 
     // Getter methods 
     string               scalar          getOpens(), getOpene(), getClose(), print(), getClassArgs()
@@ -35,7 +38,7 @@ void doctype::new() {
     this.opens = "<!DOCTYPE" 
 
     // Defines the end of the opening tag for the class 
-    this.opene = "" 
+    this.opene = ">" 
 
     // Defines the closing tag for the class 
     this.close = ">" 
@@ -43,10 +46,13 @@ void doctype::new() {
 } // End of class constructor method definition
 
 // Setter method for class arguments (appear between HTML tags) 
-void doctype::setClassArgs(| string scalar classarguments) { 
+class doctype scalar doctype::setClassArgs(| string scalar classarguments) { 
 
     // Defines arguments that appear between HTML tags 
     this.classargs = classarguments 
+
+    // Return a copy of the object 
+    return(this)
 
 } // End of setter method for class arguments
 
@@ -89,7 +95,7 @@ string scalar doctype::print() {
     string scalar open, args, close 
 
     // Create opening string 
-    open = getOpens() 
+    open = getOpens() +  + getOpene()
 
     // Get class arguments 
     args = getClassArgs() 

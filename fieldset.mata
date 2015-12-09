@@ -20,8 +20,11 @@ class fieldset {
     // Define public members/methods 
     public: 
 
+    // Class constructor method 
+    void         new()
+
     // Setter methods 
-    void         new(), setClassArgs(), setAccesskey(), setClass(), setContenteditable(), setContextmenu(), setData(), setDir(), setDisabled(), setDraggable(), setDropzone(), setForm(), setHidden(), setId(), setLang(), setName(), setOnabort(), setOnafterprint(), setOnbeforeprint(), setOnbeforeunload(), setOnblur(), setOncanplay(), setOncanplaythrough(), setOnchange(), setOnclick(), setOncontextmenu(), setOncopy(), setOncuechange(), setOncut(), setOndblclick(), setOndrag(), setOndragend(), setOndragenter(), setOndragleave(), setOndragover(), setOndragstart(), setOndrop(), setOndurationchange(), setOnemptied(), setOnended(), setOnerror(), setOnfocus(), setOnhashchange(), setOninput(), setOninvalid(), setOnkeydown(), setOnkeypress(), setOnkeyup(), setOnload(), setOnloadeddata(), setOnloadedmetadata(), setOnloadstart(), setOnmessage(), setOnmousedown(), setOnmousemove(), setOnmouseout(), setOnmouseover(), setOnmouseup(), setOnmousewheel(), setOnoffline(), setOnonline(), setOnpagehide(), setOnpageshow(), setOnpaste(), setOnpause(), setOnplay(), setOnplaying(), setOnpopstate(), setOnprogress(), setOnratechange(), setOnreset(), setOnresize(), setOnscroll(), setOnsearch(), setOnseeked(), setOnseeking(), setOnselect(), setOnshow(), setOnstalled(), setOnstorage(), setOnsubmit(), setOnsuspend(), setOntimeupdate(), setOntoggle(), setOnunload(), setOnvolumechange(), setOnwaiting(), setOnwheel(), setSpellcheck(), setStyle(), setTabindex(), setTitle(), setTranslate()
+    class        fieldset     scalar  setClassArgs(), setAccesskey(), setClass(), setContenteditable(), setContextmenu(), setData(), setDir(), setDisabled(), setDraggable(), setDropzone(), setForm(), setHidden(), setId(), setLang(), setName(), setOnabort(), setOnafterprint(), setOnbeforeprint(), setOnbeforeunload(), setOnblur(), setOncanplay(), setOncanplaythrough(), setOnchange(), setOnclick(), setOncontextmenu(), setOncopy(), setOncuechange(), setOncut(), setOndblclick(), setOndrag(), setOndragend(), setOndragenter(), setOndragleave(), setOndragover(), setOndragstart(), setOndrop(), setOndurationchange(), setOnemptied(), setOnended(), setOnerror(), setOnfocus(), setOnhashchange(), setOninput(), setOninvalid(), setOnkeydown(), setOnkeypress(), setOnkeyup(), setOnload(), setOnloadeddata(), setOnloadedmetadata(), setOnloadstart(), setOnmessage(), setOnmousedown(), setOnmousemove(), setOnmouseout(), setOnmouseover(), setOnmouseup(), setOnmousewheel(), setOnoffline(), setOnonline(), setOnpagehide(), setOnpageshow(), setOnpaste(), setOnpause(), setOnplay(), setOnplaying(), setOnpopstate(), setOnprogress(), setOnratechange(), setOnreset(), setOnresize(), setOnscroll(), setOnsearch(), setOnseeked(), setOnseeking(), setOnselect(), setOnshow(), setOnstalled(), setOnstorage(), setOnsubmit(), setOnsuspend(), setOntimeupdate(), setOntoggle(), setOnunload(), setOnvolumechange(), setOnwaiting(), setOnwheel(), setSpellcheck(), setStyle(), setTabindex(), setTitle(), setTranslate()
 
     // Getter methods 
     string               scalar          getOpens(), getOpene(), getClose(), print(), getClassArgs(), getAccesskey(), getClass(), getContenteditable(), getContextmenu(), getData(), getDir(), getDisabled(), getDraggable(), getDropzone(), getForm(), getHidden(), getId(), getLang(), getName(), getOnabort(), getOnafterprint(), getOnbeforeprint(), getOnbeforeunload(), getOnblur(), getOncanplay(), getOncanplaythrough(), getOnchange(), getOnclick(), getOncontextmenu(), getOncopy(), getOncuechange(), getOncut(), getOndblclick(), getOndrag(), getOndragend(), getOndragenter(), getOndragleave(), getOndragover(), getOndragstart(), getOndrop(), getOndurationchange(), getOnemptied(), getOnended(), getOnerror(), getOnfocus(), getOnhashchange(), getOninput(), getOninvalid(), getOnkeydown(), getOnkeypress(), getOnkeyup(), getOnload(), getOnloadeddata(), getOnloadedmetadata(), getOnloadstart(), getOnmessage(), getOnmousedown(), getOnmousemove(), getOnmouseout(), getOnmouseover(), getOnmouseup(), getOnmousewheel(), getOnoffline(), getOnonline(), getOnpagehide(), getOnpageshow(), getOnpaste(), getOnpause(), getOnplay(), getOnplaying(), getOnpopstate(), getOnprogress(), getOnratechange(), getOnreset(), getOnresize(), getOnscroll(), getOnsearch(), getOnseeked(), getOnseeking(), getOnselect(), getOnshow(), getOnstalled(), getOnstorage(), getOnsubmit(), getOnsuspend(), getOntimeupdate(), getOntoggle(), getOnunload(), getOnvolumechange(), getOnwaiting(), getOnwheel(), getSpellcheck(), getStyle(), getTabindex(), getTitle(), getTranslate()
@@ -43,31 +46,40 @@ void fieldset::new() {
 } // End of class constructor method definition
 
 // Setter method for class arguments (appear between HTML tags) 
-void fieldset::setClassArgs(| string scalar classarguments) { 
+class fieldset scalar fieldset::setClassArgs(| string scalar classarguments) { 
 
     // Defines arguments that appear between HTML tags 
     this.classargs = classarguments 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of setter method for class arguments
 
 // Specifies a shortcut key to activate/focus an element 
-void fieldset::setAccesskey(| string scalar methodarg) { 
+class fieldset scalar fieldset::setAccesskey(| string scalar methodarg) { 
 
     // Set the attribute accesskey for this class 
     this.htmlaccesskey = `"accesskey = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method accesskey declaration for class fieldset
 
 // Specifies one or more classnames for an element (refers to a class in a style sheet) 
-void fieldset::setClass(| string scalar methodarg) { 
+class fieldset scalar fieldset::setClass(| string scalar methodarg) { 
 
     // Set the attribute class for this class 
     this.htmlclass = `"class = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method class declaration for class fieldset
 
 // Specifies whether the content of an element is editable or not 
-void fieldset::setContenteditable(| string scalar methodarg) { 
+class fieldset scalar fieldset::setContenteditable(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "true" | methodarg == "false") { 
@@ -77,26 +89,35 @@ void fieldset::setContenteditable(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method contenteditable declaration for class fieldset
 
 // Specifies a context menu for an element. The context menu appears when a user right-clicks on the element 
-void fieldset::setContextmenu(| string scalar methodarg) { 
+class fieldset scalar fieldset::setContextmenu(| string scalar methodarg) { 
 
     // Set the attribute contextmenu for this class 
     this.htmlcontextmenu = `"contextmenu = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method contextmenu declaration for class fieldset
 
 // Used to store custom data private to the page or application 
-void fieldset::setData(| string scalar methodarg) { 
+class fieldset scalar fieldset::setData(| string scalar methodarg) { 
 
     // Set the attribute data for this class 
     this.htmldata = `"data = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method data declaration for class fieldset
 
 // Specifies the text direction for the content in an element 
-void fieldset::setDir(| string scalar methodarg) { 
+class fieldset scalar fieldset::setDir(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "ltr" | methodarg == "rtl" | methodarg == "auto") { 
@@ -106,18 +127,24 @@ void fieldset::setDir(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method dir declaration for class fieldset
 
 // Specifies that a group of related form elements should be disabled 
-void fieldset::setDisabled(| string scalar methodarg) { 
+class fieldset scalar fieldset::setDisabled(| string scalar methodarg) { 
 
     // Set the attribute disabled for this class 
     this.htmldisabled = `"disabled = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method disabled declaration for class fieldset
 
 // Specifies whether an element is draggable or not 
-void fieldset::setDraggable(| string scalar methodarg) { 
+class fieldset scalar fieldset::setDraggable(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "true" | methodarg == "false" | methodarg == "auto") { 
@@ -127,10 +154,13 @@ void fieldset::setDraggable(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method draggable declaration for class fieldset
 
 // Specifies whether the dragged data is copied, moved, or linked, when dropped 
-void fieldset::setDropzone(| string scalar methodarg) { 
+class fieldset scalar fieldset::setDropzone(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "copy" | methodarg == "move" | methodarg == "link") { 
@@ -140,626 +170,860 @@ void fieldset::setDropzone(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method dropzone declaration for class fieldset
 
 // Specifies one or more forms the fieldset belongs to 
-void fieldset::setForm(| string scalar methodarg) { 
+class fieldset scalar fieldset::setForm(| string scalar methodarg) { 
 
     // Set the attribute form for this class 
     this.htmlform = `"form = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method form declaration for class fieldset
 
 // Specifies that an element is not yet, or is no longer, relevant 
-void fieldset::setHidden(| string scalar methodarg) { 
+class fieldset scalar fieldset::setHidden(| string scalar methodarg) { 
 
     // Set the attribute hidden for this class 
     this.htmlhidden = `"hidden = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method hidden declaration for class fieldset
 
 // Specifies a unique id for an element 
-void fieldset::setId(| string scalar methodarg) { 
+class fieldset scalar fieldset::setId(| string scalar methodarg) { 
 
     // Set the attribute id for this class 
     this.htmlid = `"id = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method id declaration for class fieldset
 
 // Specifies the language of the element's content 
-void fieldset::setLang(| string scalar methodarg) { 
+class fieldset scalar fieldset::setLang(| string scalar methodarg) { 
 
     // Set the attribute lang for this class 
     this.htmllang = `"lang = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method lang declaration for class fieldset
 
 // Specifies a name for the fieldset 
-void fieldset::setName(| string scalar methodarg) { 
+class fieldset scalar fieldset::setName(| string scalar methodarg) { 
 
     // Set the attribute name for this class 
     this.htmlname = `"name = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method name declaration for class fieldset
 
 // Script to be run on abort 
-void fieldset::setOnabort(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnabort(| string scalar methodarg) { 
 
     // Set the attribute onabort for this class 
     this.htmlonabort = `"onabort = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onabort declaration for class fieldset
 
 // Script to be run after the document is printed 
-void fieldset::setOnafterprint(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnafterprint(| string scalar methodarg) { 
 
     // Set the attribute onafterprint for this class 
     this.htmlonafterprint = `"onafterprint = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onafterprint declaration for class fieldset
 
 // Script to be run before the document is printed 
-void fieldset::setOnbeforeprint(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnbeforeprint(| string scalar methodarg) { 
 
     // Set the attribute onbeforeprint for this class 
     this.htmlonbeforeprint = `"onbeforeprint = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onbeforeprint declaration for class fieldset
 
 // Script to be run when the document is about to be unloaded 
-void fieldset::setOnbeforeunload(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnbeforeunload(| string scalar methodarg) { 
 
     // Set the attribute onbeforeunload for this class 
     this.htmlonbeforeunload = `"onbeforeunload = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onbeforeunload declaration for class fieldset
 
 // Fires the moment that the element loses focus 
-void fieldset::setOnblur(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnblur(| string scalar methodarg) { 
 
     // Set the attribute onblur for this class 
     this.htmlonblur = `"onblur = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onblur declaration for class fieldset
 
 // Script to be run when a file is ready to start playing (when it has buffered enough to begin) 
-void fieldset::setOncanplay(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOncanplay(| string scalar methodarg) { 
 
     // Set the attribute oncanplay for this class 
     this.htmloncanplay = `"oncanplay = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncanplay declaration for class fieldset
 
 // Script to be run when a file can be played all the way to the end without pausing for buffering 
-void fieldset::setOncanplaythrough(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOncanplaythrough(| string scalar methodarg) { 
 
     // Set the attribute oncanplaythrough for this class 
     this.htmloncanplaythrough = `"oncanplaythrough = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncanplaythrough declaration for class fieldset
 
 // Fires the moment when the value of the element is changed 
-void fieldset::setOnchange(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnchange(| string scalar methodarg) { 
 
     // Set the attribute onchange for this class 
     this.htmlonchange = `"onchange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onchange declaration for class fieldset
 
 // Fires on a mouse click on the element 
-void fieldset::setOnclick(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnclick(| string scalar methodarg) { 
 
     // Set the attribute onclick for this class 
     this.htmlonclick = `"onclick = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onclick declaration for class fieldset
 
 // Script to be run when a context menu is triggered 
-void fieldset::setOncontextmenu(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOncontextmenu(| string scalar methodarg) { 
 
     // Set the attribute oncontextmenu for this class 
     this.htmloncontextmenu = `"oncontextmenu = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncontextmenu declaration for class fieldset
 
 // Fires when the user copies the content of an element 
-void fieldset::setOncopy(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOncopy(| string scalar methodarg) { 
 
     // Set the attribute oncopy for this class 
     this.htmloncopy = `"oncopy = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncopy declaration for class fieldset
 
 // Script to be run when the cue changes in a <track> element 
-void fieldset::setOncuechange(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOncuechange(| string scalar methodarg) { 
 
     // Set the attribute oncuechange for this class 
     this.htmloncuechange = `"oncuechange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncuechange declaration for class fieldset
 
 // Fires when the user cuts the content of an element 
-void fieldset::setOncut(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOncut(| string scalar methodarg) { 
 
     // Set the attribute oncut for this class 
     this.htmloncut = `"oncut = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncut declaration for class fieldset
 
 // Fires on a mouse double-click on the element 
-void fieldset::setOndblclick(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOndblclick(| string scalar methodarg) { 
 
     // Set the attribute ondblclick for this class 
     this.htmlondblclick = `"ondblclick = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondblclick declaration for class fieldset
 
 // Script to be run when an element is dragged 
-void fieldset::setOndrag(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOndrag(| string scalar methodarg) { 
 
     // Set the attribute ondrag for this class 
     this.htmlondrag = `"ondrag = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondrag declaration for class fieldset
 
 // Script to be run at the end of a drag operation 
-void fieldset::setOndragend(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOndragend(| string scalar methodarg) { 
 
     // Set the attribute ondragend for this class 
     this.htmlondragend = `"ondragend = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragend declaration for class fieldset
 
 // Script to be run when an element has been dragged to a valid drop target 
-void fieldset::setOndragenter(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOndragenter(| string scalar methodarg) { 
 
     // Set the attribute ondragenter for this class 
     this.htmlondragenter = `"ondragenter = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragenter declaration for class fieldset
 
 // Script to be run when an element leaves a valid drop target 
-void fieldset::setOndragleave(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOndragleave(| string scalar methodarg) { 
 
     // Set the attribute ondragleave for this class 
     this.htmlondragleave = `"ondragleave = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragleave declaration for class fieldset
 
 // Script to be run when an element is being dragged over a valid drop target 
-void fieldset::setOndragover(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOndragover(| string scalar methodarg) { 
 
     // Set the attribute ondragover for this class 
     this.htmlondragover = `"ondragover = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragover declaration for class fieldset
 
 // Script to be run at the start of a drag operation 
-void fieldset::setOndragstart(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOndragstart(| string scalar methodarg) { 
 
     // Set the attribute ondragstart for this class 
     this.htmlondragstart = `"ondragstart = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragstart declaration for class fieldset
 
 // Script to be run when dragged element is being dropped 
-void fieldset::setOndrop(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOndrop(| string scalar methodarg) { 
 
     // Set the attribute ondrop for this class 
     this.htmlondrop = `"ondrop = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondrop declaration for class fieldset
 
 // Script to be run when the length of the media changes 
-void fieldset::setOndurationchange(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOndurationchange(| string scalar methodarg) { 
 
     // Set the attribute ondurationchange for this class 
     this.htmlondurationchange = `"ondurationchange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondurationchange declaration for class fieldset
 
 // Script to be run when something bad happens and the file is suddenly unavailable (like unexpectedly disconnects) 
-void fieldset::setOnemptied(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnemptied(| string scalar methodarg) { 
 
     // Set the attribute onemptied for this class 
     this.htmlonemptied = `"onemptied = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onemptied declaration for class fieldset
 
 // Script to be run when the media has reach the end (a useful event for messages like "thanks for listening") 
-void fieldset::setOnended(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnended(| string scalar methodarg) { 
 
     // Set the attribute onended for this class 
     this.htmlonended = `"onended = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onended declaration for class fieldset
 
 // Fires when an error occurs while loading an external file Script to be run when an error occur Script to be run when an error occurs when the file is being loaded 
-void fieldset::setOnerror(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnerror(| string scalar methodarg) { 
 
     // Set the attribute onerror for this class 
     this.htmlonerror = `"onerror = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onerror declaration for class fieldset
 
 // Fires the moment when the element gets focus 
-void fieldset::setOnfocus(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnfocus(| string scalar methodarg) { 
 
     // Set the attribute onfocus for this class 
     this.htmlonfocus = `"onfocus = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onfocus declaration for class fieldset
 
 // Script to be run when there has been changes to the anchor part of the a URL 
-void fieldset::setOnhashchange(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnhashchange(| string scalar methodarg) { 
 
     // Set the attribute onhashchange for this class 
     this.htmlonhashchange = `"onhashchange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onhashchange declaration for class fieldset
 
 // Script to be run when an element gets user input 
-void fieldset::setOninput(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOninput(| string scalar methodarg) { 
 
     // Set the attribute oninput for this class 
     this.htmloninput = `"oninput = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oninput declaration for class fieldset
 
 // Script to be run when an element is invalid 
-void fieldset::setOninvalid(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOninvalid(| string scalar methodarg) { 
 
     // Set the attribute oninvalid for this class 
     this.htmloninvalid = `"oninvalid = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oninvalid declaration for class fieldset
 
 // Fires when a user is pressing a key 
-void fieldset::setOnkeydown(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnkeydown(| string scalar methodarg) { 
 
     // Set the attribute onkeydown for this class 
     this.htmlonkeydown = `"onkeydown = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onkeydown declaration for class fieldset
 
 // Fires when a user presses a key 
-void fieldset::setOnkeypress(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnkeypress(| string scalar methodarg) { 
 
     // Set the attribute onkeypress for this class 
     this.htmlonkeypress = `"onkeypress = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onkeypress declaration for class fieldset
 
 // Fires when a user releases a key 
-void fieldset::setOnkeyup(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnkeyup(| string scalar methodarg) { 
 
     // Set the attribute onkeyup for this class 
     this.htmlonkeyup = `"onkeyup = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onkeyup declaration for class fieldset
 
 // Fires after the page is finished loading 
-void fieldset::setOnload(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnload(| string scalar methodarg) { 
 
     // Set the attribute onload for this class 
     this.htmlonload = `"onload = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onload declaration for class fieldset
 
 // Script to be run when media data is loaded 
-void fieldset::setOnloadeddata(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnloadeddata(| string scalar methodarg) { 
 
     // Set the attribute onloadeddata for this class 
     this.htmlonloadeddata = `"onloadeddata = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onloadeddata declaration for class fieldset
 
 // Script to be run when meta data (like dimensions and duration) are loaded 
-void fieldset::setOnloadedmetadata(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnloadedmetadata(| string scalar methodarg) { 
 
     // Set the attribute onloadedmetadata for this class 
     this.htmlonloadedmetadata = `"onloadedmetadata = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onloadedmetadata declaration for class fieldset
 
 // Script to be run just as the file begins to load before anything is actually loaded 
-void fieldset::setOnloadstart(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnloadstart(| string scalar methodarg) { 
 
     // Set the attribute onloadstart for this class 
     this.htmlonloadstart = `"onloadstart = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onloadstart declaration for class fieldset
 
 // Script to be run when the message is triggered 
-void fieldset::setOnmessage(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnmessage(| string scalar methodarg) { 
 
     // Set the attribute onmessage for this class 
     this.htmlonmessage = `"onmessage = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmessage declaration for class fieldset
 
 // Fires when a mouse button is pressed down on an element 
-void fieldset::setOnmousedown(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnmousedown(| string scalar methodarg) { 
 
     // Set the attribute onmousedown for this class 
     this.htmlonmousedown = `"onmousedown = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmousedown declaration for class fieldset
 
 // Fires when the mouse pointer is moving while it is over an element 
-void fieldset::setOnmousemove(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnmousemove(| string scalar methodarg) { 
 
     // Set the attribute onmousemove for this class 
     this.htmlonmousemove = `"onmousemove = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmousemove declaration for class fieldset
 
 // Fires when the mouse pointer moves out of an element 
-void fieldset::setOnmouseout(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnmouseout(| string scalar methodarg) { 
 
     // Set the attribute onmouseout for this class 
     this.htmlonmouseout = `"onmouseout = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmouseout declaration for class fieldset
 
 // Fires when the mouse pointer moves over an element 
-void fieldset::setOnmouseover(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnmouseover(| string scalar methodarg) { 
 
     // Set the attribute onmouseover for this class 
     this.htmlonmouseover = `"onmouseover = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmouseover declaration for class fieldset
 
 // Fires when a mouse button is released over an element 
-void fieldset::setOnmouseup(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnmouseup(| string scalar methodarg) { 
 
     // Set the attribute onmouseup for this class 
     this.htmlonmouseup = `"onmouseup = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmouseup declaration for class fieldset
 
 // Deprecated. Use the onwheel attribute instead 
-void fieldset::setOnmousewheel(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnmousewheel(| string scalar methodarg) { 
 
     // Set the attribute onmousewheel for this class 
     this.htmlonmousewheel = `"onmousewheel = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmousewheel declaration for class fieldset
 
 // Script to be run when the browser starts to work offline 
-void fieldset::setOnoffline(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnoffline(| string scalar methodarg) { 
 
     // Set the attribute onoffline for this class 
     this.htmlonoffline = `"onoffline = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onoffline declaration for class fieldset
 
 // Script to be run when the browser starts to work online 
-void fieldset::setOnonline(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnonline(| string scalar methodarg) { 
 
     // Set the attribute ononline for this class 
     this.htmlononline = `"ononline = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ononline declaration for class fieldset
 
 // Script to be run when a user navigates away from a page 
-void fieldset::setOnpagehide(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnpagehide(| string scalar methodarg) { 
 
     // Set the attribute onpagehide for this class 
     this.htmlonpagehide = `"onpagehide = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpagehide declaration for class fieldset
 
 // Script to be run when a user navigates to a page 
-void fieldset::setOnpageshow(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnpageshow(| string scalar methodarg) { 
 
     // Set the attribute onpageshow for this class 
     this.htmlonpageshow = `"onpageshow = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpageshow declaration for class fieldset
 
 // Fires when the user pastes some content in an element 
-void fieldset::setOnpaste(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnpaste(| string scalar methodarg) { 
 
     // Set the attribute onpaste for this class 
     this.htmlonpaste = `"onpaste = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpaste declaration for class fieldset
 
 // Script to be run when the media is paused either by the user or programmatically 
-void fieldset::setOnpause(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnpause(| string scalar methodarg) { 
 
     // Set the attribute onpause for this class 
     this.htmlonpause = `"onpause = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpause declaration for class fieldset
 
 // Script to be run when the media is ready to start playing 
-void fieldset::setOnplay(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnplay(| string scalar methodarg) { 
 
     // Set the attribute onplay for this class 
     this.htmlonplay = `"onplay = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onplay declaration for class fieldset
 
 // Script to be run when the media actually has started playing 
-void fieldset::setOnplaying(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnplaying(| string scalar methodarg) { 
 
     // Set the attribute onplaying for this class 
     this.htmlonplaying = `"onplaying = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onplaying declaration for class fieldset
 
 // Script to be run when the window's history changes 
-void fieldset::setOnpopstate(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnpopstate(| string scalar methodarg) { 
 
     // Set the attribute onpopstate for this class 
     this.htmlonpopstate = `"onpopstate = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpopstate declaration for class fieldset
 
 // Script to be run when the browser is in the process of getting the media data 
-void fieldset::setOnprogress(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnprogress(| string scalar methodarg) { 
 
     // Set the attribute onprogress for this class 
     this.htmlonprogress = `"onprogress = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onprogress declaration for class fieldset
 
 // Script to be run each time the playback rate changes (like when a user switches to a slow motion or fast forward mode) 
-void fieldset::setOnratechange(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnratechange(| string scalar methodarg) { 
 
     // Set the attribute onratechange for this class 
     this.htmlonratechange = `"onratechange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onratechange declaration for class fieldset
 
 // Fires when the Reset button in a form is clicked 
-void fieldset::setOnreset(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnreset(| string scalar methodarg) { 
 
     // Set the attribute onreset for this class 
     this.htmlonreset = `"onreset = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onreset declaration for class fieldset
 
 // Fires when the browser window is resized 
-void fieldset::setOnresize(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnresize(| string scalar methodarg) { 
 
     // Set the attribute onresize for this class 
     this.htmlonresize = `"onresize = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onresize declaration for class fieldset
 
 // Script to be run when an element's scrollbar is being scrolled 
-void fieldset::setOnscroll(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnscroll(| string scalar methodarg) { 
 
     // Set the attribute onscroll for this class 
     this.htmlonscroll = `"onscroll = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onscroll declaration for class fieldset
 
 // Fires when the user writes something in a search field (for <input="search">) 
-void fieldset::setOnsearch(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnsearch(| string scalar methodarg) { 
 
     // Set the attribute onsearch for this class 
     this.htmlonsearch = `"onsearch = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onsearch declaration for class fieldset
 
 // Script to be run when the seeking attribute is set to false indicating that seeking has ended 
-void fieldset::setOnseeked(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnseeked(| string scalar methodarg) { 
 
     // Set the attribute onseeked for this class 
     this.htmlonseeked = `"onseeked = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onseeked declaration for class fieldset
 
 // Script to be run when the seeking attribute is set to true indicating that seeking is active 
-void fieldset::setOnseeking(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnseeking(| string scalar methodarg) { 
 
     // Set the attribute onseeking for this class 
     this.htmlonseeking = `"onseeking = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onseeking declaration for class fieldset
 
 // Fires after some text has been selected in an element 
-void fieldset::setOnselect(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnselect(| string scalar methodarg) { 
 
     // Set the attribute onselect for this class 
     this.htmlonselect = `"onselect = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onselect declaration for class fieldset
 
 // Fires when a <menu> element is shown as a context menu 
-void fieldset::setOnshow(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnshow(| string scalar methodarg) { 
 
     // Set the attribute onshow for this class 
     this.htmlonshow = `"onshow = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onshow declaration for class fieldset
 
 // Script to be run when the browser is unable to fetch the media data for whatever reason 
-void fieldset::setOnstalled(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnstalled(| string scalar methodarg) { 
 
     // Set the attribute onstalled for this class 
     this.htmlonstalled = `"onstalled = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onstalled declaration for class fieldset
 
 // Script to be run when a Web Storage area is updated 
-void fieldset::setOnstorage(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnstorage(| string scalar methodarg) { 
 
     // Set the attribute onstorage for this class 
     this.htmlonstorage = `"onstorage = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onstorage declaration for class fieldset
 
 // Fires when a form is submitted 
-void fieldset::setOnsubmit(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnsubmit(| string scalar methodarg) { 
 
     // Set the attribute onsubmit for this class 
     this.htmlonsubmit = `"onsubmit = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onsubmit declaration for class fieldset
 
 // Script to be run when fetching the media data is stopped before it is completely loaded for whatever reason 
-void fieldset::setOnsuspend(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnsuspend(| string scalar methodarg) { 
 
     // Set the attribute onsuspend for this class 
     this.htmlonsuspend = `"onsuspend = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onsuspend declaration for class fieldset
 
 // Script to be run when the playing position has changed (like when the user fast forwards to a different point in the media) 
-void fieldset::setOntimeupdate(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOntimeupdate(| string scalar methodarg) { 
 
     // Set the attribute ontimeupdate for this class 
     this.htmlontimeupdate = `"ontimeupdate = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ontimeupdate declaration for class fieldset
 
 // Fires when the user opens or closes the <details> element 
-void fieldset::setOntoggle(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOntoggle(| string scalar methodarg) { 
 
     // Set the attribute ontoggle for this class 
     this.htmlontoggle = `"ontoggle = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ontoggle declaration for class fieldset
 
 // Fires once a page has unloaded (or the browser window has been closed) 
-void fieldset::setOnunload(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnunload(| string scalar methodarg) { 
 
     // Set the attribute onunload for this class 
     this.htmlonunload = `"onunload = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onunload declaration for class fieldset
 
 // Script to be run each time the volume is changed which (includes setting the volume to "mute") 
-void fieldset::setOnvolumechange(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnvolumechange(| string scalar methodarg) { 
 
     // Set the attribute onvolumechange for this class 
     this.htmlonvolumechange = `"onvolumechange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onvolumechange declaration for class fieldset
 
 // Script to be run when the media has paused but is expected to resume (like when the media pauses to buffer more data) 
-void fieldset::setOnwaiting(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnwaiting(| string scalar methodarg) { 
 
     // Set the attribute onwaiting for this class 
     this.htmlonwaiting = `"onwaiting = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onwaiting declaration for class fieldset
 
 // Fires when the mouse wheel rolls up or down over an element 
-void fieldset::setOnwheel(| string scalar methodarg) { 
+class fieldset scalar fieldset::setOnwheel(| string scalar methodarg) { 
 
     // Set the attribute onwheel for this class 
     this.htmlonwheel = `"onwheel = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onwheel declaration for class fieldset
 
 // Specifies whether the element is to have its spelling and grammar checked or not 
-void fieldset::setSpellcheck(| string scalar methodarg) { 
+class fieldset scalar fieldset::setSpellcheck(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "true" | methodarg == "false") { 
@@ -769,34 +1033,46 @@ void fieldset::setSpellcheck(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method spellcheck declaration for class fieldset
 
 // Specifies an inline CSS style for an element 
-void fieldset::setStyle(| string scalar methodarg) { 
+class fieldset scalar fieldset::setStyle(| string scalar methodarg) { 
 
     // Set the attribute style for this class 
     this.htmlstyle = `"style = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method style declaration for class fieldset
 
 // Specifies the tabbing order of an element 
-void fieldset::setTabindex(| string scalar methodarg) { 
+class fieldset scalar fieldset::setTabindex(| string scalar methodarg) { 
 
     // Set the attribute tabindex for this class 
     this.htmltabindex = `"tabindex = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method tabindex declaration for class fieldset
 
 // Specifies extra information about an element 
-void fieldset::setTitle(| string scalar methodarg) { 
+class fieldset scalar fieldset::setTitle(| string scalar methodarg) { 
 
     // Set the attribute title for this class 
     this.htmltitle = `"title = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method title declaration for class fieldset
 
 // Specifies whether the content of an element should be translated or not 
-void fieldset::setTranslate(| string scalar methodarg) { 
+class fieldset scalar fieldset::setTranslate(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "yes" | methodarg == "no") { 
@@ -805,6 +1081,9 @@ void fieldset::setTranslate(| string scalar methodarg) {
         this.htmltranslate = `"translate = ""' + methodarg + "" 
 
     } // End IF Block for validated argument value 
+
+    // Return a copy of the object 
+    return(this)
 
 } // End of Method translate declaration for class fieldset
 

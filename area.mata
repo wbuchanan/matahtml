@@ -20,8 +20,11 @@ class area {
     // Define public members/methods 
     public: 
 
+    // Class constructor method 
+    void         new()
+
     // Setter methods 
-    void         new(), setClassArgs(), setAccesskey(), setAlt(), setClass(), setContenteditable(), setContextmenu(), setCoords(), setData(), setDir(), setDownload(), setDraggable(), setDropzone(), setHidden(), setHref(), setHreflang(), setId(), setLang(), setMedia(), setNohref(), setOnabort(), setOnafterprint(), setOnbeforeprint(), setOnbeforeunload(), setOnblur(), setOncanplay(), setOncanplaythrough(), setOnchange(), setOnclick(), setOncontextmenu(), setOncopy(), setOncuechange(), setOncut(), setOndblclick(), setOndrag(), setOndragend(), setOndragenter(), setOndragleave(), setOndragover(), setOndragstart(), setOndrop(), setOndurationchange(), setOnemptied(), setOnended(), setOnerror(), setOnfocus(), setOnhashchange(), setOninput(), setOninvalid(), setOnkeydown(), setOnkeypress(), setOnkeyup(), setOnload(), setOnloadeddata(), setOnloadedmetadata(), setOnloadstart(), setOnmessage(), setOnmousedown(), setOnmousemove(), setOnmouseout(), setOnmouseover(), setOnmouseup(), setOnmousewheel(), setOnoffline(), setOnonline(), setOnpagehide(), setOnpageshow(), setOnpaste(), setOnpause(), setOnplay(), setOnplaying(), setOnpopstate(), setOnprogress(), setOnratechange(), setOnreset(), setOnresize(), setOnscroll(), setOnsearch(), setOnseeked(), setOnseeking(), setOnselect(), setOnshow(), setOnstalled(), setOnstorage(), setOnsubmit(), setOnsuspend(), setOntimeupdate(), setOntoggle(), setOnunload(), setOnvolumechange(), setOnwaiting(), setOnwheel(), setRel(), setShape(), setSpellcheck(), setStyle(), setTabindex(), setTarget(), setTitle(), setTranslate(), setType()
+    class        area     scalar  setClassArgs(), setAccesskey(), setAlt(), setClass(), setContenteditable(), setContextmenu(), setCoords(), setData(), setDir(), setDownload(), setDraggable(), setDropzone(), setHidden(), setHref(), setHreflang(), setId(), setLang(), setMedia(), setNohref(), setOnabort(), setOnafterprint(), setOnbeforeprint(), setOnbeforeunload(), setOnblur(), setOncanplay(), setOncanplaythrough(), setOnchange(), setOnclick(), setOncontextmenu(), setOncopy(), setOncuechange(), setOncut(), setOndblclick(), setOndrag(), setOndragend(), setOndragenter(), setOndragleave(), setOndragover(), setOndragstart(), setOndrop(), setOndurationchange(), setOnemptied(), setOnended(), setOnerror(), setOnfocus(), setOnhashchange(), setOninput(), setOninvalid(), setOnkeydown(), setOnkeypress(), setOnkeyup(), setOnload(), setOnloadeddata(), setOnloadedmetadata(), setOnloadstart(), setOnmessage(), setOnmousedown(), setOnmousemove(), setOnmouseout(), setOnmouseover(), setOnmouseup(), setOnmousewheel(), setOnoffline(), setOnonline(), setOnpagehide(), setOnpageshow(), setOnpaste(), setOnpause(), setOnplay(), setOnplaying(), setOnpopstate(), setOnprogress(), setOnratechange(), setOnreset(), setOnresize(), setOnscroll(), setOnsearch(), setOnseeked(), setOnseeking(), setOnselect(), setOnshow(), setOnstalled(), setOnstorage(), setOnsubmit(), setOnsuspend(), setOntimeupdate(), setOntoggle(), setOnunload(), setOnvolumechange(), setOnwaiting(), setOnwheel(), setRel(), setShape(), setSpellcheck(), setStyle(), setTabindex(), setTarget(), setTitle(), setTranslate(), setType()
 
     // Getter methods 
     string               scalar          getOpens(), getOpene(), getClose(), print(), getClassArgs(), getAccesskey(), getAlt(), getClass(), getContenteditable(), getContextmenu(), getCoords(), getData(), getDir(), getDownload(), getDraggable(), getDropzone(), getHidden(), getHref(), getHreflang(), getId(), getLang(), getMedia(), getNohref(), getOnabort(), getOnafterprint(), getOnbeforeprint(), getOnbeforeunload(), getOnblur(), getOncanplay(), getOncanplaythrough(), getOnchange(), getOnclick(), getOncontextmenu(), getOncopy(), getOncuechange(), getOncut(), getOndblclick(), getOndrag(), getOndragend(), getOndragenter(), getOndragleave(), getOndragover(), getOndragstart(), getOndrop(), getOndurationchange(), getOnemptied(), getOnended(), getOnerror(), getOnfocus(), getOnhashchange(), getOninput(), getOninvalid(), getOnkeydown(), getOnkeypress(), getOnkeyup(), getOnload(), getOnloadeddata(), getOnloadedmetadata(), getOnloadstart(), getOnmessage(), getOnmousedown(), getOnmousemove(), getOnmouseout(), getOnmouseover(), getOnmouseup(), getOnmousewheel(), getOnoffline(), getOnonline(), getOnpagehide(), getOnpageshow(), getOnpaste(), getOnpause(), getOnplay(), getOnplaying(), getOnpopstate(), getOnprogress(), getOnratechange(), getOnreset(), getOnresize(), getOnscroll(), getOnsearch(), getOnseeked(), getOnseeking(), getOnselect(), getOnshow(), getOnstalled(), getOnstorage(), getOnsubmit(), getOnsuspend(), getOntimeupdate(), getOntoggle(), getOnunload(), getOnvolumechange(), getOnwaiting(), getOnwheel(), getRel(), getShape(), getSpellcheck(), getStyle(), getTabindex(), getTarget(), getTitle(), getTranslate(), getType()
@@ -43,39 +46,51 @@ void area::new() {
 } // End of class constructor method definition
 
 // Setter method for class arguments (appear between HTML tags) 
-void area::setClassArgs(| string scalar classarguments) { 
+class area scalar area::setClassArgs(| string scalar classarguments) { 
 
     // Defines arguments that appear between HTML tags 
     this.classargs = classarguments 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of setter method for class arguments
 
 // Specifies a shortcut key to activate/focus an element 
-void area::setAccesskey(| string scalar methodarg) { 
+class area scalar area::setAccesskey(| string scalar methodarg) { 
 
     // Set the attribute accesskey for this class 
     this.htmlaccesskey = `"accesskey = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method accesskey declaration for class area
 
 // Specifies an alternate text for the area. Required if the href attribute is present 
-void area::setAlt(| string scalar methodarg) { 
+class area scalar area::setAlt(| string scalar methodarg) { 
 
     // Set the attribute alt for this class 
     this.htmlalt = `"alt = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method alt declaration for class area
 
 // Specifies one or more classnames for an element (refers to a class in a style sheet) 
-void area::setClass(| string scalar methodarg) { 
+class area scalar area::setClass(| string scalar methodarg) { 
 
     // Set the attribute class for this class 
     this.htmlclass = `"class = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method class declaration for class area
 
 // Specifies whether the content of an element is editable or not 
-void area::setContenteditable(| string scalar methodarg) { 
+class area scalar area::setContenteditable(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "true" | methodarg == "false") { 
@@ -85,34 +100,46 @@ void area::setContenteditable(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method contenteditable declaration for class area
 
 // Specifies a context menu for an element. The context menu appears when a user right-clicks on the element 
-void area::setContextmenu(| string scalar methodarg) { 
+class area scalar area::setContextmenu(| string scalar methodarg) { 
 
     // Set the attribute contextmenu for this class 
     this.htmlcontextmenu = `"contextmenu = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method contextmenu declaration for class area
 
 // Specifies the coordinates of the area 
-void area::setCoords(| string scalar methodarg) { 
+class area scalar area::setCoords(| string scalar methodarg) { 
 
     // Set the attribute coords for this class 
     this.htmlcoords = `"coords = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method coords declaration for class area
 
 // Used to store custom data private to the page or application 
-void area::setData(| string scalar methodarg) { 
+class area scalar area::setData(| string scalar methodarg) { 
 
     // Set the attribute data for this class 
     this.htmldata = `"data = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method data declaration for class area
 
 // Specifies the text direction for the content in an element 
-void area::setDir(| string scalar methodarg) { 
+class area scalar area::setDir(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "ltr" | methodarg == "rtl" | methodarg == "auto") { 
@@ -122,18 +149,24 @@ void area::setDir(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method dir declaration for class area
 
 // Specifies that the target will be downloaded when a user clicks on the hyperlink 
-void area::setDownload(| string scalar methodarg) { 
+class area scalar area::setDownload(| string scalar methodarg) { 
 
     // Set the attribute download for this class 
     this.htmldownload = `"download = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method download declaration for class area
 
 // Specifies whether an element is draggable or not 
-void area::setDraggable(| string scalar methodarg) { 
+class area scalar area::setDraggable(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "true" | methodarg == "false" | methodarg == "auto") { 
@@ -143,10 +176,13 @@ void area::setDraggable(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method draggable declaration for class area
 
 // Specifies whether the dragged data is copied, moved, or linked, when dropped 
-void area::setDropzone(| string scalar methodarg) { 
+class area scalar area::setDropzone(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "copy" | methodarg == "move" | methodarg == "link") { 
@@ -156,50 +192,68 @@ void area::setDropzone(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method dropzone declaration for class area
 
 // Specifies that an element is not yet, or is no longer, relevant 
-void area::setHidden(| string scalar methodarg) { 
+class area scalar area::setHidden(| string scalar methodarg) { 
 
     // Set the attribute hidden for this class 
     this.htmlhidden = `"hidden = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method hidden declaration for class area
 
 // Specifies the hyperlink target for the area 
-void area::setHref(| string scalar methodarg) { 
+class area scalar area::setHref(| string scalar methodarg) { 
 
     // Set the attribute href for this class 
     this.htmlhref = `"href = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method href declaration for class area
 
 // Specifies the language of the target URL 
-void area::setHreflang(| string scalar methodarg) { 
+class area scalar area::setHreflang(| string scalar methodarg) { 
 
     // Set the attribute hreflang for this class 
     this.htmlhreflang = `"hreflang = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method hreflang declaration for class area
 
 // Specifies a unique id for an element 
-void area::setId(| string scalar methodarg) { 
+class area scalar area::setId(| string scalar methodarg) { 
 
     // Set the attribute id for this class 
     this.htmlid = `"id = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method id declaration for class area
 
 // Specifies the language of the element's content 
-void area::setLang(| string scalar methodarg) { 
+class area scalar area::setLang(| string scalar methodarg) { 
 
     // Set the attribute lang for this class 
     this.htmllang = `"lang = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method lang declaration for class area
 
 // Specifies what media/device the target URL is optimized for 
-void area::setMedia(| string scalar methodarg) { 
+class area scalar area::setMedia(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "media" | methodarg == "query") { 
@@ -209,594 +263,816 @@ void area::setMedia(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method media declaration for class area
 
 // Not supported in HTML5.Specifies that an area has no associated link 
-void area::setNohref(| string scalar methodarg) { 
+class area scalar area::setNohref(| string scalar methodarg) { 
 
     // Set the attribute nohref for this class 
     this.htmlnohref = `"nohref = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method nohref declaration for class area
 
 // Script to be run on abort 
-void area::setOnabort(| string scalar methodarg) { 
+class area scalar area::setOnabort(| string scalar methodarg) { 
 
     // Set the attribute onabort for this class 
     this.htmlonabort = `"onabort = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onabort declaration for class area
 
 // Script to be run after the document is printed 
-void area::setOnafterprint(| string scalar methodarg) { 
+class area scalar area::setOnafterprint(| string scalar methodarg) { 
 
     // Set the attribute onafterprint for this class 
     this.htmlonafterprint = `"onafterprint = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onafterprint declaration for class area
 
 // Script to be run before the document is printed 
-void area::setOnbeforeprint(| string scalar methodarg) { 
+class area scalar area::setOnbeforeprint(| string scalar methodarg) { 
 
     // Set the attribute onbeforeprint for this class 
     this.htmlonbeforeprint = `"onbeforeprint = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onbeforeprint declaration for class area
 
 // Script to be run when the document is about to be unloaded 
-void area::setOnbeforeunload(| string scalar methodarg) { 
+class area scalar area::setOnbeforeunload(| string scalar methodarg) { 
 
     // Set the attribute onbeforeunload for this class 
     this.htmlonbeforeunload = `"onbeforeunload = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onbeforeunload declaration for class area
 
 // Fires the moment that the element loses focus 
-void area::setOnblur(| string scalar methodarg) { 
+class area scalar area::setOnblur(| string scalar methodarg) { 
 
     // Set the attribute onblur for this class 
     this.htmlonblur = `"onblur = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onblur declaration for class area
 
 // Script to be run when a file is ready to start playing (when it has buffered enough to begin) 
-void area::setOncanplay(| string scalar methodarg) { 
+class area scalar area::setOncanplay(| string scalar methodarg) { 
 
     // Set the attribute oncanplay for this class 
     this.htmloncanplay = `"oncanplay = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncanplay declaration for class area
 
 // Script to be run when a file can be played all the way to the end without pausing for buffering 
-void area::setOncanplaythrough(| string scalar methodarg) { 
+class area scalar area::setOncanplaythrough(| string scalar methodarg) { 
 
     // Set the attribute oncanplaythrough for this class 
     this.htmloncanplaythrough = `"oncanplaythrough = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncanplaythrough declaration for class area
 
 // Fires the moment when the value of the element is changed 
-void area::setOnchange(| string scalar methodarg) { 
+class area scalar area::setOnchange(| string scalar methodarg) { 
 
     // Set the attribute onchange for this class 
     this.htmlonchange = `"onchange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onchange declaration for class area
 
 // Fires on a mouse click on the element 
-void area::setOnclick(| string scalar methodarg) { 
+class area scalar area::setOnclick(| string scalar methodarg) { 
 
     // Set the attribute onclick for this class 
     this.htmlonclick = `"onclick = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onclick declaration for class area
 
 // Script to be run when a context menu is triggered 
-void area::setOncontextmenu(| string scalar methodarg) { 
+class area scalar area::setOncontextmenu(| string scalar methodarg) { 
 
     // Set the attribute oncontextmenu for this class 
     this.htmloncontextmenu = `"oncontextmenu = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncontextmenu declaration for class area
 
 // Fires when the user copies the content of an element 
-void area::setOncopy(| string scalar methodarg) { 
+class area scalar area::setOncopy(| string scalar methodarg) { 
 
     // Set the attribute oncopy for this class 
     this.htmloncopy = `"oncopy = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncopy declaration for class area
 
 // Script to be run when the cue changes in a <track> element 
-void area::setOncuechange(| string scalar methodarg) { 
+class area scalar area::setOncuechange(| string scalar methodarg) { 
 
     // Set the attribute oncuechange for this class 
     this.htmloncuechange = `"oncuechange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncuechange declaration for class area
 
 // Fires when the user cuts the content of an element 
-void area::setOncut(| string scalar methodarg) { 
+class area scalar area::setOncut(| string scalar methodarg) { 
 
     // Set the attribute oncut for this class 
     this.htmloncut = `"oncut = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oncut declaration for class area
 
 // Fires on a mouse double-click on the element 
-void area::setOndblclick(| string scalar methodarg) { 
+class area scalar area::setOndblclick(| string scalar methodarg) { 
 
     // Set the attribute ondblclick for this class 
     this.htmlondblclick = `"ondblclick = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondblclick declaration for class area
 
 // Script to be run when an element is dragged 
-void area::setOndrag(| string scalar methodarg) { 
+class area scalar area::setOndrag(| string scalar methodarg) { 
 
     // Set the attribute ondrag for this class 
     this.htmlondrag = `"ondrag = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondrag declaration for class area
 
 // Script to be run at the end of a drag operation 
-void area::setOndragend(| string scalar methodarg) { 
+class area scalar area::setOndragend(| string scalar methodarg) { 
 
     // Set the attribute ondragend for this class 
     this.htmlondragend = `"ondragend = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragend declaration for class area
 
 // Script to be run when an element has been dragged to a valid drop target 
-void area::setOndragenter(| string scalar methodarg) { 
+class area scalar area::setOndragenter(| string scalar methodarg) { 
 
     // Set the attribute ondragenter for this class 
     this.htmlondragenter = `"ondragenter = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragenter declaration for class area
 
 // Script to be run when an element leaves a valid drop target 
-void area::setOndragleave(| string scalar methodarg) { 
+class area scalar area::setOndragleave(| string scalar methodarg) { 
 
     // Set the attribute ondragleave for this class 
     this.htmlondragleave = `"ondragleave = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragleave declaration for class area
 
 // Script to be run when an element is being dragged over a valid drop target 
-void area::setOndragover(| string scalar methodarg) { 
+class area scalar area::setOndragover(| string scalar methodarg) { 
 
     // Set the attribute ondragover for this class 
     this.htmlondragover = `"ondragover = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragover declaration for class area
 
 // Script to be run at the start of a drag operation 
-void area::setOndragstart(| string scalar methodarg) { 
+class area scalar area::setOndragstart(| string scalar methodarg) { 
 
     // Set the attribute ondragstart for this class 
     this.htmlondragstart = `"ondragstart = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondragstart declaration for class area
 
 // Script to be run when dragged element is being dropped 
-void area::setOndrop(| string scalar methodarg) { 
+class area scalar area::setOndrop(| string scalar methodarg) { 
 
     // Set the attribute ondrop for this class 
     this.htmlondrop = `"ondrop = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondrop declaration for class area
 
 // Script to be run when the length of the media changes 
-void area::setOndurationchange(| string scalar methodarg) { 
+class area scalar area::setOndurationchange(| string scalar methodarg) { 
 
     // Set the attribute ondurationchange for this class 
     this.htmlondurationchange = `"ondurationchange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ondurationchange declaration for class area
 
 // Script to be run when something bad happens and the file is suddenly unavailable (like unexpectedly disconnects) 
-void area::setOnemptied(| string scalar methodarg) { 
+class area scalar area::setOnemptied(| string scalar methodarg) { 
 
     // Set the attribute onemptied for this class 
     this.htmlonemptied = `"onemptied = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onemptied declaration for class area
 
 // Script to be run when the media has reach the end (a useful event for messages like "thanks for listening") 
-void area::setOnended(| string scalar methodarg) { 
+class area scalar area::setOnended(| string scalar methodarg) { 
 
     // Set the attribute onended for this class 
     this.htmlonended = `"onended = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onended declaration for class area
 
 // Fires when an error occurs while loading an external file Script to be run when an error occur Script to be run when an error occurs when the file is being loaded 
-void area::setOnerror(| string scalar methodarg) { 
+class area scalar area::setOnerror(| string scalar methodarg) { 
 
     // Set the attribute onerror for this class 
     this.htmlonerror = `"onerror = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onerror declaration for class area
 
 // Fires the moment when the element gets focus 
-void area::setOnfocus(| string scalar methodarg) { 
+class area scalar area::setOnfocus(| string scalar methodarg) { 
 
     // Set the attribute onfocus for this class 
     this.htmlonfocus = `"onfocus = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onfocus declaration for class area
 
 // Script to be run when there has been changes to the anchor part of the a URL 
-void area::setOnhashchange(| string scalar methodarg) { 
+class area scalar area::setOnhashchange(| string scalar methodarg) { 
 
     // Set the attribute onhashchange for this class 
     this.htmlonhashchange = `"onhashchange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onhashchange declaration for class area
 
 // Script to be run when an element gets user input 
-void area::setOninput(| string scalar methodarg) { 
+class area scalar area::setOninput(| string scalar methodarg) { 
 
     // Set the attribute oninput for this class 
     this.htmloninput = `"oninput = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oninput declaration for class area
 
 // Script to be run when an element is invalid 
-void area::setOninvalid(| string scalar methodarg) { 
+class area scalar area::setOninvalid(| string scalar methodarg) { 
 
     // Set the attribute oninvalid for this class 
     this.htmloninvalid = `"oninvalid = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method oninvalid declaration for class area
 
 // Fires when a user is pressing a key 
-void area::setOnkeydown(| string scalar methodarg) { 
+class area scalar area::setOnkeydown(| string scalar methodarg) { 
 
     // Set the attribute onkeydown for this class 
     this.htmlonkeydown = `"onkeydown = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onkeydown declaration for class area
 
 // Fires when a user presses a key 
-void area::setOnkeypress(| string scalar methodarg) { 
+class area scalar area::setOnkeypress(| string scalar methodarg) { 
 
     // Set the attribute onkeypress for this class 
     this.htmlonkeypress = `"onkeypress = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onkeypress declaration for class area
 
 // Fires when a user releases a key 
-void area::setOnkeyup(| string scalar methodarg) { 
+class area scalar area::setOnkeyup(| string scalar methodarg) { 
 
     // Set the attribute onkeyup for this class 
     this.htmlonkeyup = `"onkeyup = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onkeyup declaration for class area
 
 // Fires after the page is finished loading 
-void area::setOnload(| string scalar methodarg) { 
+class area scalar area::setOnload(| string scalar methodarg) { 
 
     // Set the attribute onload for this class 
     this.htmlonload = `"onload = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onload declaration for class area
 
 // Script to be run when media data is loaded 
-void area::setOnloadeddata(| string scalar methodarg) { 
+class area scalar area::setOnloadeddata(| string scalar methodarg) { 
 
     // Set the attribute onloadeddata for this class 
     this.htmlonloadeddata = `"onloadeddata = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onloadeddata declaration for class area
 
 // Script to be run when meta data (like dimensions and duration) are loaded 
-void area::setOnloadedmetadata(| string scalar methodarg) { 
+class area scalar area::setOnloadedmetadata(| string scalar methodarg) { 
 
     // Set the attribute onloadedmetadata for this class 
     this.htmlonloadedmetadata = `"onloadedmetadata = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onloadedmetadata declaration for class area
 
 // Script to be run just as the file begins to load before anything is actually loaded 
-void area::setOnloadstart(| string scalar methodarg) { 
+class area scalar area::setOnloadstart(| string scalar methodarg) { 
 
     // Set the attribute onloadstart for this class 
     this.htmlonloadstart = `"onloadstart = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onloadstart declaration for class area
 
 // Script to be run when the message is triggered 
-void area::setOnmessage(| string scalar methodarg) { 
+class area scalar area::setOnmessage(| string scalar methodarg) { 
 
     // Set the attribute onmessage for this class 
     this.htmlonmessage = `"onmessage = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmessage declaration for class area
 
 // Fires when a mouse button is pressed down on an element 
-void area::setOnmousedown(| string scalar methodarg) { 
+class area scalar area::setOnmousedown(| string scalar methodarg) { 
 
     // Set the attribute onmousedown for this class 
     this.htmlonmousedown = `"onmousedown = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmousedown declaration for class area
 
 // Fires when the mouse pointer is moving while it is over an element 
-void area::setOnmousemove(| string scalar methodarg) { 
+class area scalar area::setOnmousemove(| string scalar methodarg) { 
 
     // Set the attribute onmousemove for this class 
     this.htmlonmousemove = `"onmousemove = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmousemove declaration for class area
 
 // Fires when the mouse pointer moves out of an element 
-void area::setOnmouseout(| string scalar methodarg) { 
+class area scalar area::setOnmouseout(| string scalar methodarg) { 
 
     // Set the attribute onmouseout for this class 
     this.htmlonmouseout = `"onmouseout = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmouseout declaration for class area
 
 // Fires when the mouse pointer moves over an element 
-void area::setOnmouseover(| string scalar methodarg) { 
+class area scalar area::setOnmouseover(| string scalar methodarg) { 
 
     // Set the attribute onmouseover for this class 
     this.htmlonmouseover = `"onmouseover = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmouseover declaration for class area
 
 // Fires when a mouse button is released over an element 
-void area::setOnmouseup(| string scalar methodarg) { 
+class area scalar area::setOnmouseup(| string scalar methodarg) { 
 
     // Set the attribute onmouseup for this class 
     this.htmlonmouseup = `"onmouseup = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmouseup declaration for class area
 
 // Deprecated. Use the onwheel attribute instead 
-void area::setOnmousewheel(| string scalar methodarg) { 
+class area scalar area::setOnmousewheel(| string scalar methodarg) { 
 
     // Set the attribute onmousewheel for this class 
     this.htmlonmousewheel = `"onmousewheel = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onmousewheel declaration for class area
 
 // Script to be run when the browser starts to work offline 
-void area::setOnoffline(| string scalar methodarg) { 
+class area scalar area::setOnoffline(| string scalar methodarg) { 
 
     // Set the attribute onoffline for this class 
     this.htmlonoffline = `"onoffline = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onoffline declaration for class area
 
 // Script to be run when the browser starts to work online 
-void area::setOnonline(| string scalar methodarg) { 
+class area scalar area::setOnonline(| string scalar methodarg) { 
 
     // Set the attribute ononline for this class 
     this.htmlononline = `"ononline = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ononline declaration for class area
 
 // Script to be run when a user navigates away from a page 
-void area::setOnpagehide(| string scalar methodarg) { 
+class area scalar area::setOnpagehide(| string scalar methodarg) { 
 
     // Set the attribute onpagehide for this class 
     this.htmlonpagehide = `"onpagehide = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpagehide declaration for class area
 
 // Script to be run when a user navigates to a page 
-void area::setOnpageshow(| string scalar methodarg) { 
+class area scalar area::setOnpageshow(| string scalar methodarg) { 
 
     // Set the attribute onpageshow for this class 
     this.htmlonpageshow = `"onpageshow = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpageshow declaration for class area
 
 // Fires when the user pastes some content in an element 
-void area::setOnpaste(| string scalar methodarg) { 
+class area scalar area::setOnpaste(| string scalar methodarg) { 
 
     // Set the attribute onpaste for this class 
     this.htmlonpaste = `"onpaste = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpaste declaration for class area
 
 // Script to be run when the media is paused either by the user or programmatically 
-void area::setOnpause(| string scalar methodarg) { 
+class area scalar area::setOnpause(| string scalar methodarg) { 
 
     // Set the attribute onpause for this class 
     this.htmlonpause = `"onpause = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpause declaration for class area
 
 // Script to be run when the media is ready to start playing 
-void area::setOnplay(| string scalar methodarg) { 
+class area scalar area::setOnplay(| string scalar methodarg) { 
 
     // Set the attribute onplay for this class 
     this.htmlonplay = `"onplay = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onplay declaration for class area
 
 // Script to be run when the media actually has started playing 
-void area::setOnplaying(| string scalar methodarg) { 
+class area scalar area::setOnplaying(| string scalar methodarg) { 
 
     // Set the attribute onplaying for this class 
     this.htmlonplaying = `"onplaying = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onplaying declaration for class area
 
 // Script to be run when the window's history changes 
-void area::setOnpopstate(| string scalar methodarg) { 
+class area scalar area::setOnpopstate(| string scalar methodarg) { 
 
     // Set the attribute onpopstate for this class 
     this.htmlonpopstate = `"onpopstate = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onpopstate declaration for class area
 
 // Script to be run when the browser is in the process of getting the media data 
-void area::setOnprogress(| string scalar methodarg) { 
+class area scalar area::setOnprogress(| string scalar methodarg) { 
 
     // Set the attribute onprogress for this class 
     this.htmlonprogress = `"onprogress = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onprogress declaration for class area
 
 // Script to be run each time the playback rate changes (like when a user switches to a slow motion or fast forward mode) 
-void area::setOnratechange(| string scalar methodarg) { 
+class area scalar area::setOnratechange(| string scalar methodarg) { 
 
     // Set the attribute onratechange for this class 
     this.htmlonratechange = `"onratechange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onratechange declaration for class area
 
 // Fires when the Reset button in a form is clicked 
-void area::setOnreset(| string scalar methodarg) { 
+class area scalar area::setOnreset(| string scalar methodarg) { 
 
     // Set the attribute onreset for this class 
     this.htmlonreset = `"onreset = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onreset declaration for class area
 
 // Fires when the browser window is resized 
-void area::setOnresize(| string scalar methodarg) { 
+class area scalar area::setOnresize(| string scalar methodarg) { 
 
     // Set the attribute onresize for this class 
     this.htmlonresize = `"onresize = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onresize declaration for class area
 
 // Script to be run when an element's scrollbar is being scrolled 
-void area::setOnscroll(| string scalar methodarg) { 
+class area scalar area::setOnscroll(| string scalar methodarg) { 
 
     // Set the attribute onscroll for this class 
     this.htmlonscroll = `"onscroll = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onscroll declaration for class area
 
 // Fires when the user writes something in a search field (for <input="search">) 
-void area::setOnsearch(| string scalar methodarg) { 
+class area scalar area::setOnsearch(| string scalar methodarg) { 
 
     // Set the attribute onsearch for this class 
     this.htmlonsearch = `"onsearch = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onsearch declaration for class area
 
 // Script to be run when the seeking attribute is set to false indicating that seeking has ended 
-void area::setOnseeked(| string scalar methodarg) { 
+class area scalar area::setOnseeked(| string scalar methodarg) { 
 
     // Set the attribute onseeked for this class 
     this.htmlonseeked = `"onseeked = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onseeked declaration for class area
 
 // Script to be run when the seeking attribute is set to true indicating that seeking is active 
-void area::setOnseeking(| string scalar methodarg) { 
+class area scalar area::setOnseeking(| string scalar methodarg) { 
 
     // Set the attribute onseeking for this class 
     this.htmlonseeking = `"onseeking = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onseeking declaration for class area
 
 // Fires after some text has been selected in an element 
-void area::setOnselect(| string scalar methodarg) { 
+class area scalar area::setOnselect(| string scalar methodarg) { 
 
     // Set the attribute onselect for this class 
     this.htmlonselect = `"onselect = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onselect declaration for class area
 
 // Fires when a <menu> element is shown as a context menu 
-void area::setOnshow(| string scalar methodarg) { 
+class area scalar area::setOnshow(| string scalar methodarg) { 
 
     // Set the attribute onshow for this class 
     this.htmlonshow = `"onshow = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onshow declaration for class area
 
 // Script to be run when the browser is unable to fetch the media data for whatever reason 
-void area::setOnstalled(| string scalar methodarg) { 
+class area scalar area::setOnstalled(| string scalar methodarg) { 
 
     // Set the attribute onstalled for this class 
     this.htmlonstalled = `"onstalled = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onstalled declaration for class area
 
 // Script to be run when a Web Storage area is updated 
-void area::setOnstorage(| string scalar methodarg) { 
+class area scalar area::setOnstorage(| string scalar methodarg) { 
 
     // Set the attribute onstorage for this class 
     this.htmlonstorage = `"onstorage = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onstorage declaration for class area
 
 // Fires when a form is submitted 
-void area::setOnsubmit(| string scalar methodarg) { 
+class area scalar area::setOnsubmit(| string scalar methodarg) { 
 
     // Set the attribute onsubmit for this class 
     this.htmlonsubmit = `"onsubmit = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onsubmit declaration for class area
 
 // Script to be run when fetching the media data is stopped before it is completely loaded for whatever reason 
-void area::setOnsuspend(| string scalar methodarg) { 
+class area scalar area::setOnsuspend(| string scalar methodarg) { 
 
     // Set the attribute onsuspend for this class 
     this.htmlonsuspend = `"onsuspend = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onsuspend declaration for class area
 
 // Script to be run when the playing position has changed (like when the user fast forwards to a different point in the media) 
-void area::setOntimeupdate(| string scalar methodarg) { 
+class area scalar area::setOntimeupdate(| string scalar methodarg) { 
 
     // Set the attribute ontimeupdate for this class 
     this.htmlontimeupdate = `"ontimeupdate = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ontimeupdate declaration for class area
 
 // Fires when the user opens or closes the <details> element 
-void area::setOntoggle(| string scalar methodarg) { 
+class area scalar area::setOntoggle(| string scalar methodarg) { 
 
     // Set the attribute ontoggle for this class 
     this.htmlontoggle = `"ontoggle = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method ontoggle declaration for class area
 
 // Fires once a page has unloaded (or the browser window has been closed) 
-void area::setOnunload(| string scalar methodarg) { 
+class area scalar area::setOnunload(| string scalar methodarg) { 
 
     // Set the attribute onunload for this class 
     this.htmlonunload = `"onunload = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onunload declaration for class area
 
 // Script to be run each time the volume is changed which (includes setting the volume to "mute") 
-void area::setOnvolumechange(| string scalar methodarg) { 
+class area scalar area::setOnvolumechange(| string scalar methodarg) { 
 
     // Set the attribute onvolumechange for this class 
     this.htmlonvolumechange = `"onvolumechange = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onvolumechange declaration for class area
 
 // Script to be run when the media has paused but is expected to resume (like when the media pauses to buffer more data) 
-void area::setOnwaiting(| string scalar methodarg) { 
+class area scalar area::setOnwaiting(| string scalar methodarg) { 
 
     // Set the attribute onwaiting for this class 
     this.htmlonwaiting = `"onwaiting = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onwaiting declaration for class area
 
 // Fires when the mouse wheel rolls up or down over an element 
-void area::setOnwheel(| string scalar methodarg) { 
+class area scalar area::setOnwheel(| string scalar methodarg) { 
 
     // Set the attribute onwheel for this class 
     this.htmlonwheel = `"onwheel = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method onwheel declaration for class area
 
 // Specifies the relationship between the current document and the target URL 
-void area::setRel(| string scalar methodarg) { 
+class area scalar area::setRel(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "alternate" | methodarg == "author" | methodarg == "bookmark" | methodarg == "help" | methodarg == "license" | methodarg == "next" | methodarg == "nofollow" | methodarg == "noreferrer" | methodarg == "prefetch" | methodarg == "prev" | methodarg == "search" | methodarg == "tag") { 
@@ -806,10 +1082,13 @@ void area::setRel(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method rel declaration for class area
 
 // Specifies the shape of the area 
-void area::setShape(| string scalar methodarg) { 
+class area scalar area::setShape(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "default" | methodarg == "rect" | methodarg == "circle" | methodarg == "poly") { 
@@ -819,10 +1098,13 @@ void area::setShape(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method shape declaration for class area
 
 // Specifies whether the element is to have its spelling and grammar checked or not 
-void area::setSpellcheck(| string scalar methodarg) { 
+class area scalar area::setSpellcheck(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "true" | methodarg == "false") { 
@@ -832,26 +1114,35 @@ void area::setSpellcheck(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method spellcheck declaration for class area
 
 // Specifies an inline CSS style for an element 
-void area::setStyle(| string scalar methodarg) { 
+class area scalar area::setStyle(| string scalar methodarg) { 
 
     // Set the attribute style for this class 
     this.htmlstyle = `"style = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method style declaration for class area
 
 // Specifies the tabbing order of an element 
-void area::setTabindex(| string scalar methodarg) { 
+class area scalar area::setTabindex(| string scalar methodarg) { 
 
     // Set the attribute tabindex for this class 
     this.htmltabindex = `"tabindex = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method tabindex declaration for class area
 
 // Specifies where to open the target URL 
-void area::setTarget(| string scalar methodarg) { 
+class area scalar area::setTarget(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "_blank" | methodarg == "_parent" | methodarg == "_self" | methodarg == "_top" | methodarg == "framename") { 
@@ -861,18 +1152,24 @@ void area::setTarget(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method target declaration for class area
 
 // Specifies extra information about an element 
-void area::setTitle(| string scalar methodarg) { 
+class area scalar area::setTitle(| string scalar methodarg) { 
 
     // Set the attribute title for this class 
     this.htmltitle = `"title = ""' + methodarg + "" 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method title declaration for class area
 
 // Specifies whether the content of an element should be translated or not 
-void area::setTranslate(| string scalar methodarg) { 
+class area scalar area::setTranslate(| string scalar methodarg) { 
 
     // Validate argument
     if (methodarg == "yes" | methodarg == "no") { 
@@ -882,13 +1179,19 @@ void area::setTranslate(| string scalar methodarg) {
 
     } // End IF Block for validated argument value 
 
+    // Return a copy of the object 
+    return(this)
+
 } // End of Method translate declaration for class area
 
 // Specifies the media type of the target URL 
-void area::setType(| string scalar methodarg) { 
+class area scalar area::setType(| string scalar methodarg) { 
 
     // Set the attribute type for this class 
     this.htmltype = `"type = ""' + methodarg + "" 
+
+    // Return a copy of the object 
+    return(this)
 
 } // End of Method type declaration for class area
 
