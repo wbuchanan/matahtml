@@ -6,7 +6,7 @@ mata:
 
 // Definition of HTML Tag title Mata Class
 // Defines a title for the document// Information retrieved from http://www.w3schools.com/tags/tag_title.asp
-class title { 
+class title extends htmlglobal { 
 
     // Define private member variables
     private: 
@@ -95,7 +95,7 @@ string scalar title::print() {
     string scalar open, args, close 
 
     // Create opening string 
-    open = getOpens() +  + getOpene()
+    open = getOpens() +  + globalAttrs() + getOpene()
 
     // Get class arguments 
     args = getClassArgs() 

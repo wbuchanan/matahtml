@@ -11,20 +11,19 @@ prog def libhtml
 	syntax [, REPlace LIBrary dir(passthru) size(passthru) complete ]
 
 	// Mata object names in the library
-	loc mataobs a() abbr() acronym() address() applet() area() article() 	 ///   
-	aside() audio() b() base() basefont() bdi() bdo() big() blockquote() 	 ///   
-	body() br() button() canvas() caption() center() cite() code() col() 	 ///   
-	colgroup() comment() datalist() dd() del() details() dfn() dialog() 	 ///   
-	stdir() div() dl() doctype() dt() em() embed() fieldset() figcaption() 	 ///   
-	figure() font() footer() form() frame() frameset() h1() h2() h3() h4() 	 ///   
-	h5() h6() head() header() hr() html() i() iframe() img() input() ins() 	 ///   
-	kbd() keygen() label() legend() li() link() main() map() mark() menu() 	 ///   
-	menuitem() meta() meter() nav() noframes() noscript() object() ol() 	 ///   
-	optgroup() option() output() p() param() pre() progress() q() rp() strt() ///   
-	ruby() s() samp() script() section() stselect() small() source() span()  ///   
-	strike() strong() style() sub() summary() sup() table() tbody() td() 	 ///   
-	textarea() tfoot() th() thead() time() title() tr() track() tt() u() 	 ///   
-	ul() var() video() wbr() 
+	loc mataobs htmlglobal() a() abbr() address() area() article() aside() 	 ///   
+	audio() b() base() bdi() bdo() blockquote() body() br() button() 		 ///   
+	canvas() caption() cite() code() col() colgroup() comment() datalist() 	 ///   
+	dd() del() details() dfn() dialog() div() dl() doctype() dt() em() 		 ///   
+	embed() fieldset() figcaption() figure() footer() form() h1() h2() h3()  ///   
+	h4() h5() h6() head() header() hr() html() i() iframe() img() input() 	 ///   
+	ins() kbd() keygen() label() legend() li() link() main() map() mark() 	 ///   
+	menu() menuitem() meta() meter() nav() noscript() object() ol() 		 ///   
+	optgroup() option() output() p() param() pre() progress() q() rp() 		 ///   
+	strt() ruby() s() samp() script() section() stselect() small() source()  ///   
+	span() strong() style() sub() summary() sup() table() tbody() td() 		 ///   
+	textarea() tfoot() th() thead() time() title() tr() track() u() ul() 	 ///   
+	var() video() wbr() 
 
 	// If no size argument is passed, specify a higher memory default
 	if `"`size'"' == "" loc size size(2048) 

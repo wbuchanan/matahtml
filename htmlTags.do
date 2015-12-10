@@ -30,17 +30,6 @@ qui: g hasmedia = type == "Media Event Attributes"
 qui: g hasmisc = type == "Misc Event Attributes"
 qui: g hasmouse = type == "Mouse Event Attributes"
 qui: g haswindow = type == "Window Event Attributes"
-preserve
-	keep if hasglobal == 1
-	// rename (attribute value description)(globalattr globalval globaldesc)
-	drop type hasevent hasform hasclipboard haskeyboard hasmedia hasmisc hasmouse haswindow
-	save globalAttrs.dta, replace
-restore, preserve
-	keep if hasevent == 1
-	// rename (attribute value description)(eventattr eventval eventdesc)
-	drop type hasglobal
-	save eventAttrs.dta, replace
-restore
 save htmlattrs.dta, replace
 
 import excel using htmltags.xlsx, clear case(l) first
@@ -83,6 +72,7 @@ sort tag
 clnhtmltags
 rename description tagdesc
 save clnhtmltags.dta, replace
+/*
 joinby hasattr hasglobal using globalAttrs.dta, unm(master) update _merge(globalattribs)
 drop globalattribs
 save tagswithglobal.dta, replace
@@ -90,15 +80,17 @@ use clnhtmltags.dta, clear
 joinby hasattr hasevent using eventAttrs.dta, unm(master) update _merge(eventattribs)
 drop eventattribs
 save tagswithevent.dta, replace
+*/
 use clnhtmltags.dta, clear
 merge 1:m tagelement using tagSpecificAttributes.dta, nogen
-append using tagswithglobal.dta
-append using tagswithevent.dta
+// append using tagswithglobal.dta
+// append using tagswithevent.dta
 duplicates drop
 sort tagelement
 g classname = cond(!inlist(tagelement, "!--...--", "!DOCTYPE"), tagelement, ///   
 			  cond(tagelement == "!--...--", "comment", "doctype"))
 bys classname (attribute): g clsline = _n
 replace tagdesc = subinstr(tagdesc, "åÊ", "", .)
+// Drop tags that are no longer supported by HTML 5
+qui: drop if regexm(tagdesc, "^Not supported in HTML5.*") == 1
 save tagsWithAttributes.dta, replace
-

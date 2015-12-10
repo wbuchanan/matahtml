@@ -48,7 +48,14 @@ foreach v of loc classnm {
 	file write `tmpfile' `"// Definition of HTML Tag `v' Mata Class"' _n
 	file write `tmpfile' `"// `: di tagdesc[1]'"'
 	file write `tmpfile' `"// Information retrieved from `: di ref[1]'"' _n
-	file write `tmpfile' "class `v' { " _n(2)
+	if !inlist(`"`v'"', "doctype", "comment") {
+		file write `tmpfile' "class `v' extends htmlglobal { " _n(2)
+		loc extraprint globalAttrs() + 
+	}
+	else {
+		file write `tmpfile' "class `v' { " _n(2)
+		loc extraprint ""
+	}
 	// get open and closing tags
 	loc open1 `: di opens[1]'
 	loc open2 `: di opene[1]'
@@ -228,7 +235,7 @@ foreach v of loc classnm {
 	file write `tmpfile' `"    // Create local variables to piece together return string "' _n
 	file write `tmpfile' `"    string scalar open, args, close "' _n(2)
 	file write `tmpfile' `"    // Create opening string "' _n
-	file write `tmpfile' `"    open = getOpens() + `prntgetters' + getOpene()"' _n(2)
+	file write `tmpfile' `"    open = getOpens() + `prntgetters' + `extraprint' getOpene()"' _n(2)
 	file write `tmpfile' `"    // Get class arguments "' _n
 	file write `tmpfile' `"    args = getClassArgs() "' _n(2)
 	file write `tmpfile' `"    // Get closing tag "' _n
@@ -247,29 +254,4 @@ foreach v of loc classnm {
 } // End Loop over HTML tags
 
 restore
-
-/*
-tempname x
-qui: levelsof classname, loc(classnm)
-file open `x' using sthtml.ado, w replace
-file write `x' `"// Program used to compile mata library "' _n
-file write `x' `"cap prog drop sthtml "' _n
-file write `x' `"prog def sthml "' _n
-file write `x' `"version 13.1 "' _n
-file write `x' `"syntax [, REPlace LIBrary dir(passthru) size(passthru) complete ]"' _n
-file write `x' `"if `"`size'"' == "" loc size size(2048) "' _n
-file write `x' "if `"`replace'"' != "" { " _n
-file write `x' `"mata: mata drop `: subinstr loc classnm `" "' `"(), "', all' "' _n
-file write `x' `"} "' _n
-file write `x' `"foreach v in `classnm' {"' _n
-file write `x' `"	do `v'.mata "' _n
-file write `x' `"	loc classes `classes' `v'() "' _n
-file write `x' `"} "' _n
-file write `x' `"if `"`library'"' != "" {"' _n
-file write `x' `"	mata: mata mlib create libhtml, `dir' `size' `replace' "' _n
-file write `x' `"	mata: mata mlib add libhtml `classes', `dir' `complete' "' _n
-file write `x' "}" _n
-file write `x' `"end "' _n(3)
-file close `x'
-*/
 
