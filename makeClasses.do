@@ -229,13 +229,15 @@ foreach v of loc classnm {
 	loc prntgetters `: subinstr loc prntgetters `"print()"' "", all' 
 	loc prntgetters `: subinstr loc prntgetters `"getClassArgs()"' "", all'
 	loc prntgetters `: subinstr loc prntgetters `" "' `" + "', all'
+	if `"`prntgetters'"' != "" loc prntgetters `prntgetters' +
+	else loc prntgetters ""
 	
 	file write `tmpfile' `"// Get the HTML tag w/attributes and arguments "' _n
 	file write `tmpfile' "string scalar `v'::print() { " _n(2)
 	file write `tmpfile' `"    // Create local variables to piece together return string "' _n
 	file write `tmpfile' `"    string scalar open, args, close "' _n(2)
 	file write `tmpfile' `"    // Create opening string "' _n
-	file write `tmpfile' `"    open = getOpens() + `prntgetters' + `extraprint' getOpene()"' _n(2)
+	file write `tmpfile' `"    open = getOpens() + `prntgetters' `extraprint' getOpene()"' _n(2)
 	file write `tmpfile' `"    // Get class arguments "' _n
 	file write `tmpfile' `"    args = getClassArgs() "' _n(2)
 	file write `tmpfile' `"    // Get closing tag "' _n

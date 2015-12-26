@@ -8,7 +8,7 @@ prog def libhtml
 	version 13.1 
 	
 	// Syntax definition for the program
-	syntax [, REPlace LIBrary dir(passthru) size(passthru) complete ]
+	syntax [, REPlace LIBrary MOSave dir(passthru) size(passthru) complete ]
 
 	// Mata object names in the library
 	loc mataobs htmlglobal() a() abbr() address() area() article() aside() 	 ///   
@@ -23,7 +23,7 @@ prog def libhtml
 	strt() ruby() s() samp() script() section() stselect() small() source()  ///   
 	span() strong() style() sub() summary() sup() table() tbody() td() 		 ///   
 	textarea() tfoot() th() thead() time() title() tr() track() u() ul() 	 ///   
-	var() video() wbr() 
+	var() video() wbr() htmlstatic()
 
 	// If no size argument is passed, specify a higher memory default
 	if `"`size'"' == "" loc size size(2048) 
@@ -46,7 +46,7 @@ prog def libhtml
 
 		// Check for classes that have modified file/class names due to 
 		// Stata/Mata namespace conflicts
-		if inlist(`"`v'"', "stdir()", "stselect()", "strt()") == 1 {
+		if inlist(`"`v'"', "stselect()", "strt()") == 1 {
 		
 			// Replace the st at the start of the word with null string
 			loc v `: subinstr loc v "st" ""'
@@ -54,58 +54,40 @@ prog def libhtml
 		} // End IF Block for classes with modified names
 		
 		// Run the do file that defines the mata class
-		qui: do `: subinstr loc v `"()"' "", all'.mata
+		run `: subinstr loc v `"()"' "", all'.mata
 		
 	} // End Loop over mata classes/objects
+	
+	// If the mosave option is specified
+	if `"`mosave'"' != "" {
+	
+		// Loop over the objects
+		foreach v of loc mataobs {
 
+			// Save compiled object/method definitions in .mo files
+			mata: mata mosave `v', `dir' `complete' `replace'
+			
+		} // End Loop over objects to save
+		
+	} // End IF Block for mosave option
+	
 	// If user requests to compile into a mata library
 	if `"`library'"' != "" {
 	
-		/*
-		
+		// Create the mata library
+		mata: mata mlib create libhtml, `replace' `dir' `size'    
+
+		// Loop over objects
 		foreach v of loc mataobs {
 		
-			mata: mata mosave `v', `dir' `complete' `replace'
-			
-		}
+			// Add the classes/objects to the mata library
+			mata: mata mlib add libhtml `v', `dir' `complete'  
 	
+		} // End Loop to construct Mata library file
 		
-		// Create the mata library
-		mata: mata mlib create libhtmlpt1, `replace' `dir' `size'    
-
-		// Add the classes/objects to the mata library
-		mata: mata mlib add libhtmlpt1 a() abbr() acronym() address() 		 ///   
-		applet() area() article() aside() audio() b() base() basefont() 	 ///   
-		bdi() bdo() big() blockquote() body() br() button() canvas() 		 ///   
-		caption() center() cite() code() col() colgroup() comment(), `dir' 	 ///   
-		`complete'  
-		
-		mata: mata mlib create libhtmlpt2, `replace' `dir' `size'
-		
-		mata: mata mlib add libhtmlpt2 datalist() dd() del() details() dfn() ///   
-		dialog() stdir() div() dl() doctype() dt() em() embed() fieldset()   ///   
-		figcaption() figure() font() footer() form() frame() frameset() h1() ///   
-		h2() h3() h4() h5() h6() head() header() hr() html() i() iframe() 	 ///   
-		img() input() ins() kbd() keygen() label() legend() li() link(), 	 ///   
-		`dir' `complete'  
-		
-		mata: mata mlib create libhtmlpt3, `replace' `dir' `size'
-
-		mata: mata mlib add libhtmlpt3 main() map() mark() menu() menuitem() ///    
-		meta() meter() nav() noframes() noscript() object() ol() optgroup()  ///   
-		option() output() p() param() pre() progress() q() rp() strt() 		 ///   
-		ruby() s() samp() script() section() stselect() small() source(),  	 ///   
-		`dir' `complete'  
-		
-		mata: mata mlib create libhtmlpt4, `replace' `dir' `size'
-
-		mata: mata mlib add libhtmlpt4 span() strike() strong() style() 	 ///   
-		sub() summary() sup() table() tbody() td() textarea() tfoot() th() 	 ///   
-		thead() time() title() tr() track() tt() u() ul() var() video() 	 ///   
-		wbr(), `dir' `complete' 
-		
-		*/
-		
+		// Reindex mata libraries to search
+		qui: mata: mata mlib index
+	
 	} // End IF Block to create Mata library
 
 // End of Stata program definition	

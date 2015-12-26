@@ -95,7 +95,7 @@ string scalar dl::print() {
     string scalar open, args, close 
 
     // Create opening string 
-    open = getOpens() +  + globalAttrs() + getOpene()
+    open = getOpens() +  globalAttrs() + getOpene()
 
     // Get class arguments 
     args = getClassArgs() 

@@ -95,7 +95,7 @@ string scalar comment::print() {
     string scalar open, args, close 
 
     // Create opening string 
-    open = getOpens() +  +  getOpene()
+    open = getOpens() +   getOpene()
 
     // Get class arguments 
     args = getClassArgs() 
