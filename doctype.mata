@@ -12,10 +12,13 @@ class doctype {
     private: 
 
     // Static/final variables 
-    static       string  scalar  opens, opene, close, classargs
+    static       string  scalar  opens, opene, close
 
     // String scalar attributes 
     string               scalar          html
+
+    // Make class args non-static to prevent assignment of class args to all instances of class
+    string               scalar          classargs
 
     // Define public members/methods 
     public: 
@@ -100,11 +103,8 @@ string scalar doctype::print() {
     // Get class arguments 
     args = getClassArgs() 
 
-    // Get closing tag 
-    close = getClose() 
-
     // Return the complete HTML string 
-    return(open + args + close) 
+    return(open + args) 
 
 } // End of print method for class doctype 
 

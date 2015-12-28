@@ -12,10 +12,13 @@ class ins extends htmlglobal {
     private: 
 
     // Static/final variables 
-    static       string  scalar  opens, opene, close, classargs
+    static       string  scalar  opens, opene, close
 
     // String scalar attributes 
     string               scalar          htmlcite, htmldatetime
+
+    // Make class args non-static to prevent assignment of class args to all instances of class
+    string               scalar          classargs
 
     // Define public members/methods 
     public: 
@@ -60,7 +63,7 @@ class ins scalar ins::setClassArgs(| string scalar classarguments) {
 class ins scalar ins::setCite(| string scalar methodarg) { 
 
     // Set the attribute cite for this class 
-    this.htmlcite = `"cite = ""' + methodarg + "" 
+    this.htmlcite = `"cite = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -71,7 +74,7 @@ class ins scalar ins::setCite(| string scalar methodarg) {
 class ins scalar ins::setDatetime(| string scalar methodarg) { 
 
     // Set the attribute datetime for this class 
-    this.htmldatetime = `"datetime = ""' + methodarg + "" 
+    this.htmldatetime = `"datetime = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -142,7 +145,7 @@ string scalar ins::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(open + args + close) 
+    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
 
 } // End of print method for class ins 
 

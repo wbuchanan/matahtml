@@ -63,9 +63,11 @@ foreach v of loc classnm {
 	file write `tmpfile' `"    // Define private member variables"' _n
 	file write `tmpfile' `"    private: "' _n(2)
 	file write `tmpfile' `"    // Static/final variables "' _n
-	file write `tmpfile' `"    static	string	scalar	opens, opene, close, classargs"' _n(2)
+	file write `tmpfile' `"    static	string	scalar	opens, opene, close"' _n(2)
 	file write `tmpfile' `"    // String scalar attributes "' _n
 	file write `tmpfile' `"    string		scalar		`: subinstr loc attr `" "' `", "', all'"' _n(2)
+	file write `tmpfile' `"    // Make class args non-static to prevent assignment of class args to all instances of class"' _n
+	file write `tmpfile' `"    string		scalar		classargs"' _n(2)
 	file write `tmpfile' `"    // Define public members/methods "' _n
 	file write `tmpfile' `"    public: "' _n(2)
 	
@@ -167,12 +169,12 @@ foreach v of loc classnm {
 					file write `tmpfile' `"    // Validate argument"' _n
 					file write `tmpfile' `"    if (`margs') { "' _n(2)
 					file write `tmpfile' `"        // Set the attribute value "' _n
-					file write `tmpfile' `"        this.html`method' = `"`mymthname' = ""' + methodarg + "" "' _n(2)
+					file write `tmpfile' `"        this.html`method' = `"`mymthname' = ""' + methodarg + `"" "'"' _n(2)
 					file write `tmpfile' "    } // End IF Block for validated argument value " _n(2)
 				} 
 				else {
 					file write `tmpfile' `"    // Set the attribute `method' for this class "' _n
-					file write `tmpfile' `"    this.html`method' = `"`mymthname' = ""' + methodarg + "" "' _n(2)
+					file write `tmpfile' `"    this.html`method' = `"`mymthname' = ""' + methodarg + `"" "'"' _n(2)
 				}
 				file write `tmpfile' `"    // Return a copy of the object "' _n
 				file write `tmpfile' `"    return(this)"' _n(2)
@@ -243,7 +245,7 @@ foreach v of loc classnm {
 	file write `tmpfile' `"    // Get closing tag "' _n
 	file write `tmpfile' `"    close = getClose() "' _n(2)
 	file write `tmpfile' `"    // Return the complete HTML string "' _n
-	file write `tmpfile' `"    return(open + args + close) "' _n(2)
+	file write `tmpfile' `"    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) "' _n(2)
 	file write `tmpfile' "} // End of print method for class `v' " _n(2)
 	
 	file write `tmpfile' "// End of Mata session " _n

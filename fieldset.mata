@@ -12,10 +12,13 @@ class fieldset extends htmlglobal {
     private: 
 
     // Static/final variables 
-    static       string  scalar  opens, opene, close, classargs
+    static       string  scalar  opens, opene, close
 
     // String scalar attributes 
     string               scalar          htmldisabled, htmlform, htmlname
+
+    // Make class args non-static to prevent assignment of class args to all instances of class
+    string               scalar          classargs
 
     // Define public members/methods 
     public: 
@@ -60,7 +63,7 @@ class fieldset scalar fieldset::setClassArgs(| string scalar classarguments) {
 class fieldset scalar fieldset::setDisabled(| string scalar methodarg) { 
 
     // Set the attribute disabled for this class 
-    this.htmldisabled = `"disabled = ""' + methodarg + "" 
+    this.htmldisabled = `"disabled = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -71,7 +74,7 @@ class fieldset scalar fieldset::setDisabled(| string scalar methodarg) {
 class fieldset scalar fieldset::setForm(| string scalar methodarg) { 
 
     // Set the attribute form for this class 
-    this.htmlform = `"form = ""' + methodarg + "" 
+    this.htmlform = `"form = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -82,7 +85,7 @@ class fieldset scalar fieldset::setForm(| string scalar methodarg) {
 class fieldset scalar fieldset::setName(| string scalar methodarg) { 
 
     // Set the attribute name for this class 
-    this.htmlname = `"name = ""' + methodarg + "" 
+    this.htmlname = `"name = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -161,7 +164,7 @@ string scalar fieldset::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(open + args + close) 
+    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
 
 } // End of print method for class fieldset 
 

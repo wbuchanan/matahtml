@@ -12,10 +12,13 @@ class input extends htmlglobal {
     private: 
 
     // Static/final variables 
-    static       string  scalar  opens, opene, close, classargs
+    static       string  scalar  opens, opene, close
 
     // String scalar attributes 
     string               scalar          htmlaccept, htmlalign, htmlalt, htmlautocomplete, htmlautofocus, htmlchecked, htmldisabled, htmlform, htmlformaction, htmlformenctype, htmlformmethod, htmlformnovalidate, htmlformtarget, htmlheight, htmllist, htmlmax, htmlmaxlength, htmlmin, htmlmultiple, htmlname, htmlpattern, htmlplaceholder, htmlreadonly, htmlrequired, htmlsize, htmlsrc, htmlstep, htmltype, htmlvalue, htmlwidth
+
+    // Make class args non-static to prevent assignment of class args to all instances of class
+    string               scalar          classargs
 
     // Define public members/methods 
     public: 
@@ -63,7 +66,7 @@ class input scalar input::setAccept(| string scalar methodarg) {
     if (methodarg == "file_extension" | methodarg == "audio/*" | methodarg == "video/*" | methodarg == "image/*" | methodarg == "media_type") { 
 
         // Set the attribute value 
-        this.htmlaccept = `"accept = ""' + methodarg + "" 
+        this.htmlaccept = `"accept = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -79,7 +82,7 @@ class input scalar input::setAlign(| string scalar methodarg) {
     if (methodarg == "left" | methodarg == "right" | methodarg == "top" | methodarg == "middle" | methodarg == "bottom") { 
 
         // Set the attribute value 
-        this.htmlalign = `"align = ""' + methodarg + "" 
+        this.htmlalign = `"align = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -92,7 +95,7 @@ class input scalar input::setAlign(| string scalar methodarg) {
 class input scalar input::setAlt(| string scalar methodarg) { 
 
     // Set the attribute alt for this class 
-    this.htmlalt = `"alt = ""' + methodarg + "" 
+    this.htmlalt = `"alt = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -106,7 +109,7 @@ class input scalar input::setAutocomplete(| string scalar methodarg) {
     if (methodarg == "on" | methodarg == "off") { 
 
         // Set the attribute value 
-        this.htmlautocomplete = `"autocomplete = ""' + methodarg + "" 
+        this.htmlautocomplete = `"autocomplete = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -119,7 +122,7 @@ class input scalar input::setAutocomplete(| string scalar methodarg) {
 class input scalar input::setAutofocus(| string scalar methodarg) { 
 
     // Set the attribute autofocus for this class 
-    this.htmlautofocus = `"autofocus = ""' + methodarg + "" 
+    this.htmlautofocus = `"autofocus = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -130,7 +133,7 @@ class input scalar input::setAutofocus(| string scalar methodarg) {
 class input scalar input::setChecked(| string scalar methodarg) { 
 
     // Set the attribute checked for this class 
-    this.htmlchecked = `"checked = ""' + methodarg + "" 
+    this.htmlchecked = `"checked = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -141,7 +144,7 @@ class input scalar input::setChecked(| string scalar methodarg) {
 class input scalar input::setDisabled(| string scalar methodarg) { 
 
     // Set the attribute disabled for this class 
-    this.htmldisabled = `"disabled = ""' + methodarg + "" 
+    this.htmldisabled = `"disabled = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -152,7 +155,7 @@ class input scalar input::setDisabled(| string scalar methodarg) {
 class input scalar input::setForm(| string scalar methodarg) { 
 
     // Set the attribute form for this class 
-    this.htmlform = `"form = ""' + methodarg + "" 
+    this.htmlform = `"form = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -163,7 +166,7 @@ class input scalar input::setForm(| string scalar methodarg) {
 class input scalar input::setFormaction(| string scalar methodarg) { 
 
     // Set the attribute formaction for this class 
-    this.htmlformaction = `"formaction = ""' + methodarg + "" 
+    this.htmlformaction = `"formaction = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -177,7 +180,7 @@ class input scalar input::setFormenctype(| string scalar methodarg) {
     if (methodarg == "application/x-www-form-urlencoded" | methodarg == "multipart/form-data" | methodarg == "text/plain") { 
 
         // Set the attribute value 
-        this.htmlformenctype = `"formenctype = ""' + methodarg + "" 
+        this.htmlformenctype = `"formenctype = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -190,7 +193,7 @@ class input scalar input::setFormenctype(| string scalar methodarg) {
 class input scalar input::setFormmethod(| string scalar methodarg) { 
 
     // Set the attribute formmethod for this class 
-    this.htmlformmethod = `"formmethod = ""' + methodarg + "" 
+    this.htmlformmethod = `"formmethod = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -201,7 +204,7 @@ class input scalar input::setFormmethod(| string scalar methodarg) {
 class input scalar input::setFormnovalidate(| string scalar methodarg) { 
 
     // Set the attribute formnovalidate for this class 
-    this.htmlformnovalidate = `"formnovalidate = ""' + methodarg + "" 
+    this.htmlformnovalidate = `"formnovalidate = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -215,7 +218,7 @@ class input scalar input::setFormtarget(| string scalar methodarg) {
     if (methodarg == "_blank" | methodarg == "_self" | methodarg == "_parent" | methodarg == "_top" | methodarg == "framename") { 
 
         // Set the attribute value 
-        this.htmlformtarget = `"formtarget = ""' + methodarg + "" 
+        this.htmlformtarget = `"formtarget = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -228,7 +231,7 @@ class input scalar input::setFormtarget(| string scalar methodarg) {
 class input scalar input::setHeight(| string scalar methodarg) { 
 
     // Set the attribute height for this class 
-    this.htmlheight = `"height = ""' + methodarg + "" 
+    this.htmlheight = `"height = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -239,7 +242,7 @@ class input scalar input::setHeight(| string scalar methodarg) {
 class input scalar input::setList(| string scalar methodarg) { 
 
     // Set the attribute list for this class 
-    this.htmllist = `"list = ""' + methodarg + "" 
+    this.htmllist = `"list = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -253,7 +256,7 @@ class input scalar input::setMax(| string scalar methodarg) {
     if (methodarg == "number" | methodarg == "date") { 
 
         // Set the attribute value 
-        this.htmlmax = `"max = ""' + methodarg + "" 
+        this.htmlmax = `"max = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -266,7 +269,7 @@ class input scalar input::setMax(| string scalar methodarg) {
 class input scalar input::setMaxlength(| string scalar methodarg) { 
 
     // Set the attribute maxlength for this class 
-    this.htmlmaxlength = `"maxlength = ""' + methodarg + "" 
+    this.htmlmaxlength = `"maxlength = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -280,7 +283,7 @@ class input scalar input::setMin(| string scalar methodarg) {
     if (methodarg == "number" | methodarg == "date") { 
 
         // Set the attribute value 
-        this.htmlmin = `"min = ""' + methodarg + "" 
+        this.htmlmin = `"min = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -293,7 +296,7 @@ class input scalar input::setMin(| string scalar methodarg) {
 class input scalar input::setMultiple(| string scalar methodarg) { 
 
     // Set the attribute multiple for this class 
-    this.htmlmultiple = `"multiple = ""' + methodarg + "" 
+    this.htmlmultiple = `"multiple = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -304,7 +307,7 @@ class input scalar input::setMultiple(| string scalar methodarg) {
 class input scalar input::setName(| string scalar methodarg) { 
 
     // Set the attribute name for this class 
-    this.htmlname = `"name = ""' + methodarg + "" 
+    this.htmlname = `"name = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -315,7 +318,7 @@ class input scalar input::setName(| string scalar methodarg) {
 class input scalar input::setPattern(| string scalar methodarg) { 
 
     // Set the attribute pattern for this class 
-    this.htmlpattern = `"pattern = ""' + methodarg + "" 
+    this.htmlpattern = `"pattern = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -326,7 +329,7 @@ class input scalar input::setPattern(| string scalar methodarg) {
 class input scalar input::setPlaceholder(| string scalar methodarg) { 
 
     // Set the attribute placeholder for this class 
-    this.htmlplaceholder = `"placeholder = ""' + methodarg + "" 
+    this.htmlplaceholder = `"placeholder = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -337,7 +340,7 @@ class input scalar input::setPlaceholder(| string scalar methodarg) {
 class input scalar input::setReadonly(| string scalar methodarg) { 
 
     // Set the attribute readonly for this class 
-    this.htmlreadonly = `"readonly = ""' + methodarg + "" 
+    this.htmlreadonly = `"readonly = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -348,7 +351,7 @@ class input scalar input::setReadonly(| string scalar methodarg) {
 class input scalar input::setRequired(| string scalar methodarg) { 
 
     // Set the attribute required for this class 
-    this.htmlrequired = `"required = ""' + methodarg + "" 
+    this.htmlrequired = `"required = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -359,7 +362,7 @@ class input scalar input::setRequired(| string scalar methodarg) {
 class input scalar input::setSize(| string scalar methodarg) { 
 
     // Set the attribute size for this class 
-    this.htmlsize = `"size = ""' + methodarg + "" 
+    this.htmlsize = `"size = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -370,7 +373,7 @@ class input scalar input::setSize(| string scalar methodarg) {
 class input scalar input::setSrc(| string scalar methodarg) { 
 
     // Set the attribute src for this class 
-    this.htmlsrc = `"src = ""' + methodarg + "" 
+    this.htmlsrc = `"src = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -381,7 +384,7 @@ class input scalar input::setSrc(| string scalar methodarg) {
 class input scalar input::setStep(| string scalar methodarg) { 
 
     // Set the attribute step for this class 
-    this.htmlstep = `"step = ""' + methodarg + "" 
+    this.htmlstep = `"step = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -395,7 +398,7 @@ class input scalar input::setType(| string scalar methodarg) {
     if (methodarg == "button" | methodarg == "checkbox" | methodarg == "color" | methodarg == "date" | methodarg == "datetime" | methodarg == "datetime-local" | methodarg == "email" | methodarg == "file" | methodarg == "hidden" | methodarg == "image" | methodarg == "month" | methodarg == "number" | methodarg == "password" | methodarg == "radio" | methodarg == "range" | methodarg == "reset" | methodarg == "search" | methodarg == "submit" | methodarg == "tel" | methodarg == "text" | methodarg == "time" | methodarg == "url" | methodarg == "week") { 
 
         // Set the attribute value 
-        this.htmltype = `"type = ""' + methodarg + "" 
+        this.htmltype = `"type = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -408,7 +411,7 @@ class input scalar input::setType(| string scalar methodarg) {
 class input scalar input::setValue(| string scalar methodarg) { 
 
     // Set the attribute value for this class 
-    this.htmlvalue = `"value = ""' + methodarg + "" 
+    this.htmlvalue = `"value = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -419,7 +422,7 @@ class input scalar input::setValue(| string scalar methodarg) {
 class input scalar input::setWidth(| string scalar methodarg) { 
 
     // Set the attribute width for this class 
-    this.htmlwidth = `"width = ""' + methodarg + "" 
+    this.htmlwidth = `"width = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -714,7 +717,7 @@ string scalar input::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(open + args + close) 
+    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
 
 } // End of print method for class input 
 

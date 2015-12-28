@@ -12,10 +12,13 @@ class embed extends htmlglobal {
     private: 
 
     // Static/final variables 
-    static       string  scalar  opens, opene, close, classargs
+    static       string  scalar  opens, opene, close
 
     // String scalar attributes 
     string               scalar          htmlheight, htmlsrc, htmltype, htmlwidth
+
+    // Make class args non-static to prevent assignment of class args to all instances of class
+    string               scalar          classargs
 
     // Define public members/methods 
     public: 
@@ -60,7 +63,7 @@ class embed scalar embed::setClassArgs(| string scalar classarguments) {
 class embed scalar embed::setHeight(| string scalar methodarg) { 
 
     // Set the attribute height for this class 
-    this.htmlheight = `"height = ""' + methodarg + "" 
+    this.htmlheight = `"height = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -71,7 +74,7 @@ class embed scalar embed::setHeight(| string scalar methodarg) {
 class embed scalar embed::setSrc(| string scalar methodarg) { 
 
     // Set the attribute src for this class 
-    this.htmlsrc = `"src = ""' + methodarg + "" 
+    this.htmlsrc = `"src = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -82,7 +85,7 @@ class embed scalar embed::setSrc(| string scalar methodarg) {
 class embed scalar embed::setType(| string scalar methodarg) { 
 
     // Set the attribute type for this class 
-    this.htmltype = `"type = ""' + methodarg + "" 
+    this.htmltype = `"type = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -93,7 +96,7 @@ class embed scalar embed::setType(| string scalar methodarg) {
 class embed scalar embed::setWidth(| string scalar methodarg) { 
 
     // Set the attribute width for this class 
-    this.htmlwidth = `"width = ""' + methodarg + "" 
+    this.htmlwidth = `"width = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -180,7 +183,7 @@ string scalar embed::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(open + args + close) 
+    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
 
 } // End of print method for class embed 
 

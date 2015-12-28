@@ -12,10 +12,13 @@ class body extends htmlglobal {
     private: 
 
     // Static/final variables 
-    static       string  scalar  opens, opene, close, classargs
+    static       string  scalar  opens, opene, close
 
     // String scalar attributes 
     string               scalar          htmlalink, htmlbackground, htmlbgcolor, htmllink, htmltext, htmlvlink
+
+    // Make class args non-static to prevent assignment of class args to all instances of class
+    string               scalar          classargs
 
     // Define public members/methods 
     public: 
@@ -60,7 +63,7 @@ class body scalar body::setClassArgs(| string scalar classarguments) {
 class body scalar body::setAlink(| string scalar methodarg) { 
 
     // Set the attribute alink for this class 
-    this.htmlalink = `"alink = ""' + methodarg + "" 
+    this.htmlalink = `"alink = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -71,7 +74,7 @@ class body scalar body::setAlink(| string scalar methodarg) {
 class body scalar body::setBackground(| string scalar methodarg) { 
 
     // Set the attribute background for this class 
-    this.htmlbackground = `"background = ""' + methodarg + "" 
+    this.htmlbackground = `"background = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -82,7 +85,7 @@ class body scalar body::setBackground(| string scalar methodarg) {
 class body scalar body::setBgcolor(| string scalar methodarg) { 
 
     // Set the attribute bgcolor for this class 
-    this.htmlbgcolor = `"bgcolor = ""' + methodarg + "" 
+    this.htmlbgcolor = `"bgcolor = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -93,7 +96,7 @@ class body scalar body::setBgcolor(| string scalar methodarg) {
 class body scalar body::setLink(| string scalar methodarg) { 
 
     // Set the attribute link for this class 
-    this.htmllink = `"link = ""' + methodarg + "" 
+    this.htmllink = `"link = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -104,7 +107,7 @@ class body scalar body::setLink(| string scalar methodarg) {
 class body scalar body::setText(| string scalar methodarg) { 
 
     // Set the attribute text for this class 
-    this.htmltext = `"text = ""' + methodarg + "" 
+    this.htmltext = `"text = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -115,7 +118,7 @@ class body scalar body::setText(| string scalar methodarg) {
 class body scalar body::setVlink(| string scalar methodarg) { 
 
     // Set the attribute vlink for this class 
-    this.htmlvlink = `"vlink = ""' + methodarg + "" 
+    this.htmlvlink = `"vlink = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -218,7 +221,7 @@ string scalar body::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(open + args + close) 
+    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
 
 } // End of print method for class body 
 

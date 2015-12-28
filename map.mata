@@ -12,10 +12,13 @@ class map extends htmlglobal {
     private: 
 
     // Static/final variables 
-    static       string  scalar  opens, opene, close, classargs
+    static       string  scalar  opens, opene, close
 
     // String scalar attributes 
     string               scalar          htmlname
+
+    // Make class args non-static to prevent assignment of class args to all instances of class
+    string               scalar          classargs
 
     // Define public members/methods 
     public: 
@@ -60,7 +63,7 @@ class map scalar map::setClassArgs(| string scalar classarguments) {
 class map scalar map::setName(| string scalar methodarg) { 
 
     // Set the attribute name for this class 
-    this.htmlname = `"name = ""' + methodarg + "" 
+    this.htmlname = `"name = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -123,7 +126,7 @@ string scalar map::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(open + args + close) 
+    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
 
 } // End of print method for class map 
 

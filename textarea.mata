@@ -12,10 +12,13 @@ class textarea extends htmlglobal {
     private: 
 
     // Static/final variables 
-    static       string  scalar  opens, opene, close, classargs
+    static       string  scalar  opens, opene, close
 
     // String scalar attributes 
     string               scalar          htmlautofocus, htmlcols, htmldisabled, htmlform, htmlmaxlength, htmlname, htmlplaceholder, htmlreadonly, htmlrequired, htmlrows, htmlwrap
+
+    // Make class args non-static to prevent assignment of class args to all instances of class
+    string               scalar          classargs
 
     // Define public members/methods 
     public: 
@@ -60,7 +63,7 @@ class textarea scalar textarea::setClassArgs(| string scalar classarguments) {
 class textarea scalar textarea::setAutofocus(| string scalar methodarg) { 
 
     // Set the attribute autofocus for this class 
-    this.htmlautofocus = `"autofocus = ""' + methodarg + "" 
+    this.htmlautofocus = `"autofocus = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -71,7 +74,7 @@ class textarea scalar textarea::setAutofocus(| string scalar methodarg) {
 class textarea scalar textarea::setCols(| string scalar methodarg) { 
 
     // Set the attribute cols for this class 
-    this.htmlcols = `"cols = ""' + methodarg + "" 
+    this.htmlcols = `"cols = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -82,7 +85,7 @@ class textarea scalar textarea::setCols(| string scalar methodarg) {
 class textarea scalar textarea::setDisabled(| string scalar methodarg) { 
 
     // Set the attribute disabled for this class 
-    this.htmldisabled = `"disabled = ""' + methodarg + "" 
+    this.htmldisabled = `"disabled = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -93,7 +96,7 @@ class textarea scalar textarea::setDisabled(| string scalar methodarg) {
 class textarea scalar textarea::setForm(| string scalar methodarg) { 
 
     // Set the attribute form for this class 
-    this.htmlform = `"form = ""' + methodarg + "" 
+    this.htmlform = `"form = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -104,7 +107,7 @@ class textarea scalar textarea::setForm(| string scalar methodarg) {
 class textarea scalar textarea::setMaxlength(| string scalar methodarg) { 
 
     // Set the attribute maxlength for this class 
-    this.htmlmaxlength = `"maxlength = ""' + methodarg + "" 
+    this.htmlmaxlength = `"maxlength = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -115,7 +118,7 @@ class textarea scalar textarea::setMaxlength(| string scalar methodarg) {
 class textarea scalar textarea::setName(| string scalar methodarg) { 
 
     // Set the attribute name for this class 
-    this.htmlname = `"name = ""' + methodarg + "" 
+    this.htmlname = `"name = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -126,7 +129,7 @@ class textarea scalar textarea::setName(| string scalar methodarg) {
 class textarea scalar textarea::setPlaceholder(| string scalar methodarg) { 
 
     // Set the attribute placeholder for this class 
-    this.htmlplaceholder = `"placeholder = ""' + methodarg + "" 
+    this.htmlplaceholder = `"placeholder = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -137,7 +140,7 @@ class textarea scalar textarea::setPlaceholder(| string scalar methodarg) {
 class textarea scalar textarea::setReadonly(| string scalar methodarg) { 
 
     // Set the attribute readonly for this class 
-    this.htmlreadonly = `"readonly = ""' + methodarg + "" 
+    this.htmlreadonly = `"readonly = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -148,7 +151,7 @@ class textarea scalar textarea::setReadonly(| string scalar methodarg) {
 class textarea scalar textarea::setRequired(| string scalar methodarg) { 
 
     // Set the attribute required for this class 
-    this.htmlrequired = `"required = ""' + methodarg + "" 
+    this.htmlrequired = `"required = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -159,7 +162,7 @@ class textarea scalar textarea::setRequired(| string scalar methodarg) {
 class textarea scalar textarea::setRows(| string scalar methodarg) { 
 
     // Set the attribute rows for this class 
-    this.htmlrows = `"rows = ""' + methodarg + "" 
+    this.htmlrows = `"rows = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -173,7 +176,7 @@ class textarea scalar textarea::setWrap(| string scalar methodarg) {
     if (methodarg == "hard" | methodarg == "soft") { 
 
         // Set the attribute value 
-        this.htmlwrap = `"wrap = ""' + methodarg + "" 
+        this.htmlwrap = `"wrap = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -318,7 +321,7 @@ string scalar textarea::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(open + args + close) 
+    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
 
 } // End of print method for class textarea 
 

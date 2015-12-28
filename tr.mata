@@ -12,10 +12,13 @@ class tr extends htmlglobal {
     private: 
 
     // Static/final variables 
-    static       string  scalar  opens, opene, close, classargs
+    static       string  scalar  opens, opene, close
 
     // String scalar attributes 
     string               scalar          htmlalign, htmlbgcolor, htmlchar, htmlcharoff, htmlvalign
+
+    // Make class args non-static to prevent assignment of class args to all instances of class
+    string               scalar          classargs
 
     // Define public members/methods 
     public: 
@@ -63,7 +66,7 @@ class tr scalar tr::setAlign(| string scalar methodarg) {
     if (methodarg == "right" | methodarg == "left" | methodarg == "center" | methodarg == "justify" | methodarg == "char") { 
 
         // Set the attribute value 
-        this.htmlalign = `"align = ""' + methodarg + "" 
+        this.htmlalign = `"align = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -79,7 +82,7 @@ class tr scalar tr::setBgcolor(| string scalar methodarg) {
     if (methodarg == "rgb(x,x,x)" | methodarg == "#xxxxxx" | methodarg == "colorname") { 
 
         // Set the attribute value 
-        this.htmlbgcolor = `"bgcolor = ""' + methodarg + "" 
+        this.htmlbgcolor = `"bgcolor = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -92,7 +95,7 @@ class tr scalar tr::setBgcolor(| string scalar methodarg) {
 class tr scalar tr::setChar(| string scalar methodarg) { 
 
     // Set the attribute char for this class 
-    this.htmlchar = `"char = ""' + methodarg + "" 
+    this.htmlchar = `"char = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -103,7 +106,7 @@ class tr scalar tr::setChar(| string scalar methodarg) {
 class tr scalar tr::setCharoff(| string scalar methodarg) { 
 
     // Set the attribute charoff for this class 
-    this.htmlcharoff = `"charoff = ""' + methodarg + "" 
+    this.htmlcharoff = `"charoff = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -117,7 +120,7 @@ class tr scalar tr::setValign(| string scalar methodarg) {
     if (methodarg == "top" | methodarg == "middle" | methodarg == "bottom" | methodarg == "baseline") { 
 
         // Set the attribute value 
-        this.htmlvalign = `"valign = ""' + methodarg + "" 
+        this.htmlvalign = `"valign = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -214,7 +217,7 @@ string scalar tr::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(open + args + close) 
+    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
 
 } // End of print method for class tr 
 

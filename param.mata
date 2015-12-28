@@ -12,10 +12,13 @@ class param extends htmlglobal {
     private: 
 
     // Static/final variables 
-    static       string  scalar  opens, opene, close, classargs
+    static       string  scalar  opens, opene, close
 
     // String scalar attributes 
     string               scalar          htmlname, htmltype, htmlvalue, htmlvaluetype
+
+    // Make class args non-static to prevent assignment of class args to all instances of class
+    string               scalar          classargs
 
     // Define public members/methods 
     public: 
@@ -60,7 +63,7 @@ class param scalar param::setClassArgs(| string scalar classarguments) {
 class param scalar param::setName(| string scalar methodarg) { 
 
     // Set the attribute name for this class 
-    this.htmlname = `"name = ""' + methodarg + "" 
+    this.htmlname = `"name = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -71,7 +74,7 @@ class param scalar param::setName(| string scalar methodarg) {
 class param scalar param::setType(| string scalar methodarg) { 
 
     // Set the attribute type for this class 
-    this.htmltype = `"type = ""' + methodarg + "" 
+    this.htmltype = `"type = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -82,7 +85,7 @@ class param scalar param::setType(| string scalar methodarg) {
 class param scalar param::setValue(| string scalar methodarg) { 
 
     // Set the attribute value for this class 
-    this.htmlvalue = `"value = ""' + methodarg + "" 
+    this.htmlvalue = `"value = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -96,7 +99,7 @@ class param scalar param::setValuetype(| string scalar methodarg) {
     if (methodarg == "data" | methodarg == "ref" | methodarg == "object") { 
 
         // Set the attribute value 
-        this.htmlvaluetype = `"valuetype = ""' + methodarg + "" 
+        this.htmlvaluetype = `"valuetype = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -185,7 +188,7 @@ string scalar param::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(open + args + close) 
+    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
 
 } // End of print method for class param 
 

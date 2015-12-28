@@ -12,10 +12,13 @@ class ul extends htmlglobal {
     private: 
 
     // Static/final variables 
-    static       string  scalar  opens, opene, close, classargs
+    static       string  scalar  opens, opene, close
 
     // String scalar attributes 
     string               scalar          htmlcompact, htmltype
+
+    // Make class args non-static to prevent assignment of class args to all instances of class
+    string               scalar          classargs
 
     // Define public members/methods 
     public: 
@@ -60,7 +63,7 @@ class ul scalar ul::setClassArgs(| string scalar classarguments) {
 class ul scalar ul::setCompact(| string scalar methodarg) { 
 
     // Set the attribute compact for this class 
-    this.htmlcompact = `"compact = ""' + methodarg + "" 
+    this.htmlcompact = `"compact = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -74,7 +77,7 @@ class ul scalar ul::setType(| string scalar methodarg) {
     if (methodarg == "disc" | methodarg == "square" | methodarg == "circle") { 
 
         // Set the attribute value 
-        this.htmltype = `"type = ""' + methodarg + "" 
+        this.htmltype = `"type = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -147,7 +150,7 @@ string scalar ul::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(open + args + close) 
+    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
 
 } // End of print method for class ul 
 

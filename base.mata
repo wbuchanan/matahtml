@@ -12,10 +12,13 @@ class base extends htmlglobal {
     private: 
 
     // Static/final variables 
-    static       string  scalar  opens, opene, close, classargs
+    static       string  scalar  opens, opene, close
 
     // String scalar attributes 
     string               scalar          htmlhref, htmltarget
+
+    // Make class args non-static to prevent assignment of class args to all instances of class
+    string               scalar          classargs
 
     // Define public members/methods 
     public: 
@@ -60,7 +63,7 @@ class base scalar base::setClassArgs(| string scalar classarguments) {
 class base scalar base::setHref(| string scalar methodarg) { 
 
     // Set the attribute href for this class 
-    this.htmlhref = `"href = ""' + methodarg + "" 
+    this.htmlhref = `"href = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -74,7 +77,7 @@ class base scalar base::setTarget(| string scalar methodarg) {
     if (methodarg == "_blank" | methodarg == "_parent" | methodarg == "_self" | methodarg == "_top" | methodarg == "framename") { 
 
         // Set the attribute value 
-        this.htmltarget = `"target = ""' + methodarg + "" 
+        this.htmltarget = `"target = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -147,7 +150,7 @@ string scalar base::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(open + args + close) 
+    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
 
 } // End of print method for class base 
 

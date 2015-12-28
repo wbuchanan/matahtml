@@ -12,10 +12,13 @@ class label extends htmlglobal {
     private: 
 
     // Static/final variables 
-    static       string  scalar  opens, opene, close, classargs
+    static       string  scalar  opens, opene, close
 
     // String scalar attributes 
     string               scalar          htmlfor, htmlform
+
+    // Make class args non-static to prevent assignment of class args to all instances of class
+    string               scalar          classargs
 
     // Define public members/methods 
     public: 
@@ -60,7 +63,7 @@ class label scalar label::setClassArgs(| string scalar classarguments) {
 class label scalar label::setFor(| string scalar methodarg) { 
 
     // Set the attribute for for this class 
-    this.htmlfor = `"for = ""' + methodarg + "" 
+    this.htmlfor = `"for = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -71,7 +74,7 @@ class label scalar label::setFor(| string scalar methodarg) {
 class label scalar label::setForm(| string scalar methodarg) { 
 
     // Set the attribute form for this class 
-    this.htmlform = `"form = ""' + methodarg + "" 
+    this.htmlform = `"form = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -142,7 +145,7 @@ string scalar label::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(open + args + close) 
+    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
 
 } // End of print method for class label 
 

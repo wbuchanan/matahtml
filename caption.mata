@@ -12,10 +12,13 @@ class caption extends htmlglobal {
     private: 
 
     // Static/final variables 
-    static       string  scalar  opens, opene, close, classargs
+    static       string  scalar  opens, opene, close
 
     // String scalar attributes 
     string               scalar          htmlalign
+
+    // Make class args non-static to prevent assignment of class args to all instances of class
+    string               scalar          classargs
 
     // Define public members/methods 
     public: 
@@ -63,7 +66,7 @@ class caption scalar caption::setAlign(| string scalar methodarg) {
     if (methodarg == "left" | methodarg == "right" | methodarg == "top" | methodarg == "bottom") { 
 
         // Set the attribute value 
-        this.htmlalign = `"align = ""' + methodarg + "" 
+        this.htmlalign = `"align = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -128,7 +131,7 @@ string scalar caption::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(open + args + close) 
+    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
 
 } // End of print method for class caption 
 

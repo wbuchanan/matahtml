@@ -12,10 +12,13 @@ class source extends htmlglobal {
     private: 
 
     // Static/final variables 
-    static       string  scalar  opens, opene, close, classargs
+    static       string  scalar  opens, opene, close
 
     // String scalar attributes 
     string               scalar          htmlmedia, htmlsrc, htmltype
+
+    // Make class args non-static to prevent assignment of class args to all instances of class
+    string               scalar          classargs
 
     // Define public members/methods 
     public: 
@@ -60,7 +63,7 @@ class source scalar source::setClassArgs(| string scalar classarguments) {
 class source scalar source::setMedia(| string scalar methodarg) { 
 
     // Set the attribute media for this class 
-    this.htmlmedia = `"media = ""' + methodarg + "" 
+    this.htmlmedia = `"media = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -71,7 +74,7 @@ class source scalar source::setMedia(| string scalar methodarg) {
 class source scalar source::setSrc(| string scalar methodarg) { 
 
     // Set the attribute src for this class 
-    this.htmlsrc = `"src = ""' + methodarg + "" 
+    this.htmlsrc = `"src = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -82,7 +85,7 @@ class source scalar source::setSrc(| string scalar methodarg) {
 class source scalar source::setType(| string scalar methodarg) { 
 
     // Set the attribute type for this class 
-    this.htmltype = `"type = ""' + methodarg + "" 
+    this.htmltype = `"type = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -161,7 +164,7 @@ string scalar source::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(open + args + close) 
+    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
 
 } // End of print method for class source 
 

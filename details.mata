@@ -12,10 +12,13 @@ class details extends htmlglobal {
     private: 
 
     // Static/final variables 
-    static       string  scalar  opens, opene, close, classargs
+    static       string  scalar  opens, opene, close
 
     // String scalar attributes 
     string               scalar          htmlopen
+
+    // Make class args non-static to prevent assignment of class args to all instances of class
+    string               scalar          classargs
 
     // Define public members/methods 
     public: 
@@ -60,7 +63,7 @@ class details scalar details::setClassArgs(| string scalar classarguments) {
 class details scalar details::setOpen(| string scalar methodarg) { 
 
     // Set the attribute open for this class 
-    this.htmlopen = `"open = ""' + methodarg + "" 
+    this.htmlopen = `"open = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -123,7 +126,7 @@ string scalar details::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(open + args + close) 
+    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
 
 } // End of print method for class details 
 

@@ -12,10 +12,13 @@ class ol extends htmlglobal {
     private: 
 
     // Static/final variables 
-    static       string  scalar  opens, opene, close, classargs
+    static       string  scalar  opens, opene, close
 
     // String scalar attributes 
     string               scalar          htmlcompact, htmlreversed, htmlstart, htmltype
+
+    // Make class args non-static to prevent assignment of class args to all instances of class
+    string               scalar          classargs
 
     // Define public members/methods 
     public: 
@@ -60,7 +63,7 @@ class ol scalar ol::setClassArgs(| string scalar classarguments) {
 class ol scalar ol::setCompact(| string scalar methodarg) { 
 
     // Set the attribute compact for this class 
-    this.htmlcompact = `"compact = ""' + methodarg + "" 
+    this.htmlcompact = `"compact = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -71,7 +74,7 @@ class ol scalar ol::setCompact(| string scalar methodarg) {
 class ol scalar ol::setReversed(| string scalar methodarg) { 
 
     // Set the attribute reversed for this class 
-    this.htmlreversed = `"reversed = ""' + methodarg + "" 
+    this.htmlreversed = `"reversed = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -82,7 +85,7 @@ class ol scalar ol::setReversed(| string scalar methodarg) {
 class ol scalar ol::setStart(| string scalar methodarg) { 
 
     // Set the attribute start for this class 
-    this.htmlstart = `"start = ""' + methodarg + "" 
+    this.htmlstart = `"start = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -96,7 +99,7 @@ class ol scalar ol::setType(| string scalar methodarg) {
     if (methodarg == "1" | methodarg == "A" | methodarg == "a" | methodarg == "I" | methodarg == "i") { 
 
         // Set the attribute value 
-        this.htmltype = `"type = ""' + methodarg + "" 
+        this.htmltype = `"type = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -185,7 +188,7 @@ string scalar ol::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(open + args + close) 
+    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
 
 } // End of print method for class ol 
 

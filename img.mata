@@ -12,10 +12,13 @@ class img extends htmlglobal {
     private: 
 
     // Static/final variables 
-    static       string  scalar  opens, opene, close, classargs
+    static       string  scalar  opens, opene, close
 
     // String scalar attributes 
     string               scalar          htmlalign, htmlalt, htmlborder, htmlcrossorigin, htmlheight, htmlhspace, htmlismap, htmllongdesc, htmlsrc, htmlusemap, htmlvspace, htmlwidth
+
+    // Make class args non-static to prevent assignment of class args to all instances of class
+    string               scalar          classargs
 
     // Define public members/methods 
     public: 
@@ -63,7 +66,7 @@ class img scalar img::setAlign(| string scalar methodarg) {
     if (methodarg == "top" | methodarg == "bottom" | methodarg == "middle" | methodarg == "left" | methodarg == "right") { 
 
         // Set the attribute value 
-        this.htmlalign = `"align = ""' + methodarg + "" 
+        this.htmlalign = `"align = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -76,7 +79,7 @@ class img scalar img::setAlign(| string scalar methodarg) {
 class img scalar img::setAlt(| string scalar methodarg) { 
 
     // Set the attribute alt for this class 
-    this.htmlalt = `"alt = ""' + methodarg + "" 
+    this.htmlalt = `"alt = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -87,7 +90,7 @@ class img scalar img::setAlt(| string scalar methodarg) {
 class img scalar img::setBorder(| string scalar methodarg) { 
 
     // Set the attribute border for this class 
-    this.htmlborder = `"border = ""' + methodarg + "" 
+    this.htmlborder = `"border = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -101,7 +104,7 @@ class img scalar img::setCrossorigin(| string scalar methodarg) {
     if (methodarg == "anonymous" | methodarg == "use-credentials") { 
 
         // Set the attribute value 
-        this.htmlcrossorigin = `"crossorigin = ""' + methodarg + "" 
+        this.htmlcrossorigin = `"crossorigin = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -114,7 +117,7 @@ class img scalar img::setCrossorigin(| string scalar methodarg) {
 class img scalar img::setHeight(| string scalar methodarg) { 
 
     // Set the attribute height for this class 
-    this.htmlheight = `"height = ""' + methodarg + "" 
+    this.htmlheight = `"height = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -125,7 +128,7 @@ class img scalar img::setHeight(| string scalar methodarg) {
 class img scalar img::setHspace(| string scalar methodarg) { 
 
     // Set the attribute hspace for this class 
-    this.htmlhspace = `"hspace = ""' + methodarg + "" 
+    this.htmlhspace = `"hspace = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -136,7 +139,7 @@ class img scalar img::setHspace(| string scalar methodarg) {
 class img scalar img::setIsmap(| string scalar methodarg) { 
 
     // Set the attribute ismap for this class 
-    this.htmlismap = `"ismap = ""' + methodarg + "" 
+    this.htmlismap = `"ismap = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -147,7 +150,7 @@ class img scalar img::setIsmap(| string scalar methodarg) {
 class img scalar img::setLongdesc(| string scalar methodarg) { 
 
     // Set the attribute longdesc for this class 
-    this.htmllongdesc = `"longdesc = ""' + methodarg + "" 
+    this.htmllongdesc = `"longdesc = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -158,7 +161,7 @@ class img scalar img::setLongdesc(| string scalar methodarg) {
 class img scalar img::setSrc(| string scalar methodarg) { 
 
     // Set the attribute src for this class 
-    this.htmlsrc = `"src = ""' + methodarg + "" 
+    this.htmlsrc = `"src = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -169,7 +172,7 @@ class img scalar img::setSrc(| string scalar methodarg) {
 class img scalar img::setUsemap(| string scalar methodarg) { 
 
     // Set the attribute usemap for this class 
-    this.htmlusemap = `"usemap = ""' + methodarg + "" 
+    this.htmlusemap = `"usemap = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -180,7 +183,7 @@ class img scalar img::setUsemap(| string scalar methodarg) {
 class img scalar img::setVspace(| string scalar methodarg) { 
 
     // Set the attribute vspace for this class 
-    this.htmlvspace = `"vspace = ""' + methodarg + "" 
+    this.htmlvspace = `"vspace = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -191,7 +194,7 @@ class img scalar img::setVspace(| string scalar methodarg) {
 class img scalar img::setWidth(| string scalar methodarg) { 
 
     // Set the attribute width for this class 
-    this.htmlwidth = `"width = ""' + methodarg + "" 
+    this.htmlwidth = `"width = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -342,7 +345,7 @@ string scalar img::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(open + args + close) 
+    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
 
 } // End of print method for class img 
 

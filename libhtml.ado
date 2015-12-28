@@ -35,7 +35,10 @@ prog def libhtml
 		foreach v of loc mataobs {
 		
 			// Drop the object/class from memory
-			mata: mata drop `v'
+			cap: mata: mata drop `v'
+			
+			// Drop if the class/function exists
+			if _rc == 0 mata:mata drop `v'
 			
 		} // End Loop over the objects/classes
 		
@@ -54,7 +57,7 @@ prog def libhtml
 		} // End IF Block for classes with modified names
 		
 		// Run the do file that defines the mata class
-		run `: subinstr loc v `"()"' "", all'.mata
+		qui: run `: subinstr loc v `"()"' "", all'.mata
 		
 	} // End Loop over mata classes/objects
 	

@@ -12,10 +12,13 @@ class comment {
     private: 
 
     // Static/final variables 
-    static       string  scalar  opens, opene, close, classargs
+    static       string  scalar  opens, opene, close
 
     // String scalar attributes 
     string               scalar          html
+
+    // Make class args non-static to prevent assignment of class args to all instances of class
+    string               scalar          classargs
 
     // Define public members/methods 
     public: 
@@ -95,7 +98,7 @@ string scalar comment::print() {
     string scalar open, args, close 
 
     // Create opening string 
-    open = getOpens() +   getOpene()
+    open = getOpens() 
 
     // Get class arguments 
     args = getClassArgs() 
@@ -104,7 +107,7 @@ string scalar comment::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(open + args + close) 
+    return(char((13)) + open + args + close + char((13))) 
 
 } // End of print method for class comment 
 

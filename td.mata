@@ -12,10 +12,13 @@ class td extends htmlglobal {
     private: 
 
     // Static/final variables 
-    static       string  scalar  opens, opene, close, classargs
+    static       string  scalar  opens, opene, close
 
     // String scalar attributes 
     string               scalar          htmlabbr, htmlalign, htmlaxis, htmlbgcolor, htmlchar, htmlcharoff, htmlcolspan, htmlheaders, htmlheight, htmlnowrap, htmlrowspan, htmlscope, htmlvalign, htmlwidth
+
+    // Make class args non-static to prevent assignment of class args to all instances of class
+    string               scalar          classargs
 
     // Define public members/methods 
     public: 
@@ -60,7 +63,7 @@ class td scalar td::setClassArgs(| string scalar classarguments) {
 class td scalar td::setAbbr(| string scalar methodarg) { 
 
     // Set the attribute abbr for this class 
-    this.htmlabbr = `"abbr = ""' + methodarg + "" 
+    this.htmlabbr = `"abbr = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -74,7 +77,7 @@ class td scalar td::setAlign(| string scalar methodarg) {
     if (methodarg == "left" | methodarg == "right" | methodarg == "center" | methodarg == "justify" | methodarg == "char") { 
 
         // Set the attribute value 
-        this.htmlalign = `"align = ""' + methodarg + "" 
+        this.htmlalign = `"align = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -87,7 +90,7 @@ class td scalar td::setAlign(| string scalar methodarg) {
 class td scalar td::setAxis(| string scalar methodarg) { 
 
     // Set the attribute axis for this class 
-    this.htmlaxis = `"axis = ""' + methodarg + "" 
+    this.htmlaxis = `"axis = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -101,7 +104,7 @@ class td scalar td::setBgcolor(| string scalar methodarg) {
     if (methodarg == "rgb(x,x,x)" | methodarg == "#xxxxxx" | methodarg == "colorname") { 
 
         // Set the attribute value 
-        this.htmlbgcolor = `"bgcolor = ""' + methodarg + "" 
+        this.htmlbgcolor = `"bgcolor = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -114,7 +117,7 @@ class td scalar td::setBgcolor(| string scalar methodarg) {
 class td scalar td::setChar(| string scalar methodarg) { 
 
     // Set the attribute char for this class 
-    this.htmlchar = `"char = ""' + methodarg + "" 
+    this.htmlchar = `"char = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -125,7 +128,7 @@ class td scalar td::setChar(| string scalar methodarg) {
 class td scalar td::setCharoff(| string scalar methodarg) { 
 
     // Set the attribute charoff for this class 
-    this.htmlcharoff = `"charoff = ""' + methodarg + "" 
+    this.htmlcharoff = `"charoff = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -136,7 +139,7 @@ class td scalar td::setCharoff(| string scalar methodarg) {
 class td scalar td::setColspan(| string scalar methodarg) { 
 
     // Set the attribute colspan for this class 
-    this.htmlcolspan = `"colspan = ""' + methodarg + "" 
+    this.htmlcolspan = `"colspan = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -147,7 +150,7 @@ class td scalar td::setColspan(| string scalar methodarg) {
 class td scalar td::setHeaders(| string scalar methodarg) { 
 
     // Set the attribute headers for this class 
-    this.htmlheaders = `"headers = ""' + methodarg + "" 
+    this.htmlheaders = `"headers = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -161,7 +164,7 @@ class td scalar td::setHeight(| string scalar methodarg) {
     if (methodarg == "pixels" | methodarg == "%") { 
 
         // Set the attribute value 
-        this.htmlheight = `"height = ""' + methodarg + "" 
+        this.htmlheight = `"height = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -174,7 +177,7 @@ class td scalar td::setHeight(| string scalar methodarg) {
 class td scalar td::setNowrap(| string scalar methodarg) { 
 
     // Set the attribute nowrap for this class 
-    this.htmlnowrap = `"nowrap = ""' + methodarg + "" 
+    this.htmlnowrap = `"nowrap = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -185,7 +188,7 @@ class td scalar td::setNowrap(| string scalar methodarg) {
 class td scalar td::setRowspan(| string scalar methodarg) { 
 
     // Set the attribute rowspan for this class 
-    this.htmlrowspan = `"rowspan = ""' + methodarg + "" 
+    this.htmlrowspan = `"rowspan = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -199,7 +202,7 @@ class td scalar td::setScope(| string scalar methodarg) {
     if (methodarg == "col" | methodarg == "colgroup" | methodarg == "row" | methodarg == "rowgroup") { 
 
         // Set the attribute value 
-        this.htmlscope = `"scope = ""' + methodarg + "" 
+        this.htmlscope = `"scope = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -215,7 +218,7 @@ class td scalar td::setValign(| string scalar methodarg) {
     if (methodarg == "top" | methodarg == "middle" | methodarg == "bottom" | methodarg == "baseline") { 
 
         // Set the attribute value 
-        this.htmlvalign = `"valign = ""' + methodarg + "" 
+        this.htmlvalign = `"valign = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -231,7 +234,7 @@ class td scalar td::setWidth(| string scalar methodarg) {
     if (methodarg == "pixels" | methodarg == "%") { 
 
         // Set the attribute value 
-        this.htmlwidth = `"width = ""' + methodarg + "" 
+        this.htmlwidth = `"width = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -400,7 +403,7 @@ string scalar td::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(open + args + close) 
+    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
 
 } // End of print method for class td 
 

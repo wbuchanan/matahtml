@@ -12,10 +12,13 @@ class link extends htmlglobal {
     private: 
 
     // Static/final variables 
-    static       string  scalar  opens, opene, close, classargs
+    static       string  scalar  opens, opene, close
 
     // String scalar attributes 
     string               scalar          htmlcharset, htmlcrossorigin, htmlhref, htmlhreflang, htmlmedia, htmlrel, htmlrev, htmlsizes, htmltarget, htmltype
+
+    // Make class args non-static to prevent assignment of class args to all instances of class
+    string               scalar          classargs
 
     // Define public members/methods 
     public: 
@@ -60,7 +63,7 @@ class link scalar link::setClassArgs(| string scalar classarguments) {
 class link scalar link::setCharset(| string scalar methodarg) { 
 
     // Set the attribute charset for this class 
-    this.htmlcharset = `"charset = ""' + methodarg + "" 
+    this.htmlcharset = `"charset = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -71,7 +74,7 @@ class link scalar link::setCharset(| string scalar methodarg) {
 class link scalar link::setCrossorigin(| string scalar methodarg) { 
 
     // Set the attribute crossorigin for this class 
-    this.htmlcrossorigin = `"crossorigin = ""' + methodarg + "" 
+    this.htmlcrossorigin = `"crossorigin = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -82,7 +85,7 @@ class link scalar link::setCrossorigin(| string scalar methodarg) {
 class link scalar link::setHref(| string scalar methodarg) { 
 
     // Set the attribute href for this class 
-    this.htmlhref = `"href = ""' + methodarg + "" 
+    this.htmlhref = `"href = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -93,7 +96,7 @@ class link scalar link::setHref(| string scalar methodarg) {
 class link scalar link::setHreflang(| string scalar methodarg) { 
 
     // Set the attribute hreflang for this class 
-    this.htmlhreflang = `"hreflang = ""' + methodarg + "" 
+    this.htmlhreflang = `"hreflang = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -104,7 +107,7 @@ class link scalar link::setHreflang(| string scalar methodarg) {
 class link scalar link::setMedia(| string scalar methodarg) { 
 
     // Set the attribute media for this class 
-    this.htmlmedia = `"media = ""' + methodarg + "" 
+    this.htmlmedia = `"media = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -118,7 +121,7 @@ class link scalar link::setRel(| string scalar methodarg) {
     if (methodarg == "alternate" | methodarg == "archives" | methodarg == "author" | methodarg == "bookmark" | methodarg == "external" | methodarg == "first" | methodarg == "help" | methodarg == "icon" | methodarg == "last" | methodarg == "license" | methodarg == "next" | methodarg == "nofollow" | methodarg == "noreferrer" | methodarg == "pingback" | methodarg == "prefetch" | methodarg == "prev" | methodarg == "search" | methodarg == "sidebar" | methodarg == "stylesheet" | methodarg == "tag" | methodarg == "up") { 
 
         // Set the attribute value 
-        this.htmlrel = `"rel = ""' + methodarg + "" 
+        this.htmlrel = `"rel = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -134,7 +137,7 @@ class link scalar link::setRev(| string scalar methodarg) {
     if (methodarg == "reversed" | methodarg == "relationship") { 
 
         // Set the attribute value 
-        this.htmlrev = `"rev = ""' + methodarg + "" 
+        this.htmlrev = `"rev = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -150,7 +153,7 @@ class link scalar link::setSizes(| string scalar methodarg) {
     if (methodarg == "HeightxWidth" | methodarg == "any") { 
 
         // Set the attribute value 
-        this.htmlsizes = `"sizes = ""' + methodarg + "" 
+        this.htmlsizes = `"sizes = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -166,7 +169,7 @@ class link scalar link::setTarget(| string scalar methodarg) {
     if (methodarg == "_blank" | methodarg == "_self" | methodarg == "_top" | methodarg == "_parent" | methodarg == "frame_name") { 
 
         // Set the attribute value 
-        this.htmltarget = `"target = ""' + methodarg + "" 
+        this.htmltarget = `"target = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -179,7 +182,7 @@ class link scalar link::setTarget(| string scalar methodarg) {
 class link scalar link::setType(| string scalar methodarg) { 
 
     // Set the attribute type for this class 
-    this.htmltype = `"type = ""' + methodarg + "" 
+    this.htmltype = `"type = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -314,7 +317,7 @@ string scalar link::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(open + args + close) 
+    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
 
 } // End of print method for class link 
 

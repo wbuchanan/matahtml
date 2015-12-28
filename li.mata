@@ -12,10 +12,13 @@ class li extends htmlglobal {
     private: 
 
     // Static/final variables 
-    static       string  scalar  opens, opene, close, classargs
+    static       string  scalar  opens, opene, close
 
     // String scalar attributes 
     string               scalar          htmltype, htmlvalue
+
+    // Make class args non-static to prevent assignment of class args to all instances of class
+    string               scalar          classargs
 
     // Define public members/methods 
     public: 
@@ -63,7 +66,7 @@ class li scalar li::setType(| string scalar methodarg) {
     if (methodarg == "1" | methodarg == "A" | methodarg == "a" | methodarg == "I" | methodarg == "i" | methodarg == "disc" | methodarg == "square" | methodarg == "circle") { 
 
         // Set the attribute value 
-        this.htmltype = `"type = ""' + methodarg + "" 
+        this.htmltype = `"type = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -76,7 +79,7 @@ class li scalar li::setType(| string scalar methodarg) {
 class li scalar li::setValue(| string scalar methodarg) { 
 
     // Set the attribute value for this class 
-    this.htmlvalue = `"value = ""' + methodarg + "" 
+    this.htmlvalue = `"value = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -147,7 +150,7 @@ string scalar li::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(open + args + close) 
+    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
 
 } // End of print method for class li 
 

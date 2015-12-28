@@ -12,10 +12,13 @@ class col extends htmlglobal {
     private: 
 
     // Static/final variables 
-    static       string  scalar  opens, opene, close, classargs
+    static       string  scalar  opens, opene, close
 
     // String scalar attributes 
     string               scalar          htmlalign, htmlchar, htmlcharoff, htmlspan, htmlvalign, htmlwidth
+
+    // Make class args non-static to prevent assignment of class args to all instances of class
+    string               scalar          classargs
 
     // Define public members/methods 
     public: 
@@ -63,7 +66,7 @@ class col scalar col::setAlign(| string scalar methodarg) {
     if (methodarg == "left" | methodarg == "right" | methodarg == "center" | methodarg == "justify" | methodarg == "char") { 
 
         // Set the attribute value 
-        this.htmlalign = `"align = ""' + methodarg + "" 
+        this.htmlalign = `"align = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -76,7 +79,7 @@ class col scalar col::setAlign(| string scalar methodarg) {
 class col scalar col::setChar(| string scalar methodarg) { 
 
     // Set the attribute char for this class 
-    this.htmlchar = `"char = ""' + methodarg + "" 
+    this.htmlchar = `"char = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -87,7 +90,7 @@ class col scalar col::setChar(| string scalar methodarg) {
 class col scalar col::setCharoff(| string scalar methodarg) { 
 
     // Set the attribute charoff for this class 
-    this.htmlcharoff = `"charoff = ""' + methodarg + "" 
+    this.htmlcharoff = `"charoff = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -98,7 +101,7 @@ class col scalar col::setCharoff(| string scalar methodarg) {
 class col scalar col::setSpan(| string scalar methodarg) { 
 
     // Set the attribute span for this class 
-    this.htmlspan = `"span = ""' + methodarg + "" 
+    this.htmlspan = `"span = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -112,7 +115,7 @@ class col scalar col::setValign(| string scalar methodarg) {
     if (methodarg == "top" | methodarg == "middle" | methodarg == "bottom" | methodarg == "baseline") { 
 
         // Set the attribute value 
-        this.htmlvalign = `"valign = ""' + methodarg + "" 
+        this.htmlvalign = `"valign = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -128,7 +131,7 @@ class col scalar col::setWidth(| string scalar methodarg) {
     if (methodarg == "%" | methodarg == "pixels" | methodarg == "relative_length") { 
 
         // Set the attribute value 
-        this.htmlwidth = `"width = ""' + methodarg + "" 
+        this.htmlwidth = `"width = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -233,7 +236,7 @@ string scalar col::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(open + args + close) 
+    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
 
 } // End of print method for class col 
 

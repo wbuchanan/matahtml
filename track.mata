@@ -12,10 +12,13 @@ class track extends htmlglobal {
     private: 
 
     // Static/final variables 
-    static       string  scalar  opens, opene, close, classargs
+    static       string  scalar  opens, opene, close
 
     // String scalar attributes 
     string               scalar          htmldefault, htmlkind, htmllabel, htmlsrc, htmlsrclang
+
+    // Make class args non-static to prevent assignment of class args to all instances of class
+    string               scalar          classargs
 
     // Define public members/methods 
     public: 
@@ -60,7 +63,7 @@ class track scalar track::setClassArgs(| string scalar classarguments) {
 class track scalar track::setDefault(| string scalar methodarg) { 
 
     // Set the attribute default for this class 
-    this.htmldefault = `"default = ""' + methodarg + "" 
+    this.htmldefault = `"default = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -74,7 +77,7 @@ class track scalar track::setKind(| string scalar methodarg) {
     if (methodarg == "captions" | methodarg == "chapters" | methodarg == "descriptions" | methodarg == "metadata" | methodarg == "subtitles") { 
 
         // Set the attribute value 
-        this.htmlkind = `"kind = ""' + methodarg + "" 
+        this.htmlkind = `"kind = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -87,7 +90,7 @@ class track scalar track::setKind(| string scalar methodarg) {
 class track scalar track::setLabel(| string scalar methodarg) { 
 
     // Set the attribute label for this class 
-    this.htmllabel = `"label = ""' + methodarg + "" 
+    this.htmllabel = `"label = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -98,7 +101,7 @@ class track scalar track::setLabel(| string scalar methodarg) {
 class track scalar track::setSrc(| string scalar methodarg) { 
 
     // Set the attribute src for this class 
-    this.htmlsrc = `"src = ""' + methodarg + "" 
+    this.htmlsrc = `"src = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -109,7 +112,7 @@ class track scalar track::setSrc(| string scalar methodarg) {
 class track scalar track::setSrclang(| string scalar methodarg) { 
 
     // Set the attribute srclang for this class 
-    this.htmlsrclang = `"srclang = ""' + methodarg + "" 
+    this.htmlsrclang = `"srclang = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -204,7 +207,7 @@ string scalar track::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(open + args + close) 
+    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
 
 } // End of print method for class track 
 

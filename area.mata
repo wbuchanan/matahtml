@@ -12,10 +12,13 @@ class area extends htmlglobal {
     private: 
 
     // Static/final variables 
-    static       string  scalar  opens, opene, close, classargs
+    static       string  scalar  opens, opene, close
 
     // String scalar attributes 
     string               scalar          htmlalt, htmlcoords, htmldownload, htmlhref, htmlhreflang, htmlmedia, htmlnohref, htmlrel, htmlshape, htmltarget, htmltype
+
+    // Make class args non-static to prevent assignment of class args to all instances of class
+    string               scalar          classargs
 
     // Define public members/methods 
     public: 
@@ -60,7 +63,7 @@ class area scalar area::setClassArgs(| string scalar classarguments) {
 class area scalar area::setAlt(| string scalar methodarg) { 
 
     // Set the attribute alt for this class 
-    this.htmlalt = `"alt = ""' + methodarg + "" 
+    this.htmlalt = `"alt = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -71,7 +74,7 @@ class area scalar area::setAlt(| string scalar methodarg) {
 class area scalar area::setCoords(| string scalar methodarg) { 
 
     // Set the attribute coords for this class 
-    this.htmlcoords = `"coords = ""' + methodarg + "" 
+    this.htmlcoords = `"coords = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -82,7 +85,7 @@ class area scalar area::setCoords(| string scalar methodarg) {
 class area scalar area::setDownload(| string scalar methodarg) { 
 
     // Set the attribute download for this class 
-    this.htmldownload = `"download = ""' + methodarg + "" 
+    this.htmldownload = `"download = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -93,7 +96,7 @@ class area scalar area::setDownload(| string scalar methodarg) {
 class area scalar area::setHref(| string scalar methodarg) { 
 
     // Set the attribute href for this class 
-    this.htmlhref = `"href = ""' + methodarg + "" 
+    this.htmlhref = `"href = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -104,7 +107,7 @@ class area scalar area::setHref(| string scalar methodarg) {
 class area scalar area::setHreflang(| string scalar methodarg) { 
 
     // Set the attribute hreflang for this class 
-    this.htmlhreflang = `"hreflang = ""' + methodarg + "" 
+    this.htmlhreflang = `"hreflang = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -118,7 +121,7 @@ class area scalar area::setMedia(| string scalar methodarg) {
     if (methodarg == "media" | methodarg == "query") { 
 
         // Set the attribute value 
-        this.htmlmedia = `"media = ""' + methodarg + "" 
+        this.htmlmedia = `"media = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -131,7 +134,7 @@ class area scalar area::setMedia(| string scalar methodarg) {
 class area scalar area::setNohref(| string scalar methodarg) { 
 
     // Set the attribute nohref for this class 
-    this.htmlnohref = `"nohref = ""' + methodarg + "" 
+    this.htmlnohref = `"nohref = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -145,7 +148,7 @@ class area scalar area::setRel(| string scalar methodarg) {
     if (methodarg == "alternate" | methodarg == "author" | methodarg == "bookmark" | methodarg == "help" | methodarg == "license" | methodarg == "next" | methodarg == "nofollow" | methodarg == "noreferrer" | methodarg == "prefetch" | methodarg == "prev" | methodarg == "search" | methodarg == "tag") { 
 
         // Set the attribute value 
-        this.htmlrel = `"rel = ""' + methodarg + "" 
+        this.htmlrel = `"rel = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -161,7 +164,7 @@ class area scalar area::setShape(| string scalar methodarg) {
     if (methodarg == "default" | methodarg == "rect" | methodarg == "circle" | methodarg == "poly") { 
 
         // Set the attribute value 
-        this.htmlshape = `"shape = ""' + methodarg + "" 
+        this.htmlshape = `"shape = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -177,7 +180,7 @@ class area scalar area::setTarget(| string scalar methodarg) {
     if (methodarg == "_blank" | methodarg == "_parent" | methodarg == "_self" | methodarg == "_top" | methodarg == "framename") { 
 
         // Set the attribute value 
-        this.htmltarget = `"target = ""' + methodarg + "" 
+        this.htmltarget = `"target = ""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -190,7 +193,7 @@ class area scalar area::setTarget(| string scalar methodarg) {
 class area scalar area::setType(| string scalar methodarg) { 
 
     // Set the attribute type for this class 
-    this.htmltype = `"type = ""' + methodarg + "" 
+    this.htmltype = `"type = ""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -333,7 +336,7 @@ string scalar area::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(open + args + close) 
+    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
 
 } // End of print method for class area 
 
