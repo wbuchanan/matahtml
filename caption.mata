@@ -66,7 +66,7 @@ class caption scalar caption::setAlign(| string scalar methodarg) {
     if (methodarg == "left" | methodarg == "right" | methodarg == "top" | methodarg == "bottom") { 
 
         // Set the attribute value 
-        this.htmlalign = `"align = ""' + methodarg + `"" "'
+        this.htmlalign = `" align=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -79,7 +79,7 @@ class caption scalar caption::setAlign(| string scalar methodarg) {
 string scalar caption::getOpens() { 
 
     // Returns the opening bracket/tag w/o > character to allow attributes 
-    return(this.opens + " ") 
+    return(this.opens) 
 
 } // End of getter method for opens member of class caption
 
@@ -87,7 +87,7 @@ string scalar caption::getOpens() {
 string scalar caption::getOpene() { 
 
     // Returns the closing character for the opening bracket 
-    return(this.opene + " ") 
+    return(this.opene) 
 
 } // End of getter method for opene member of class caption
 
@@ -95,7 +95,7 @@ string scalar caption::getOpene() {
 string scalar caption::getClose() { 
 
     // Returns the closing bracket/tag
-    return(this.close + " ") 
+    return(this.close) 
 
 } // End of getter method for close member of class caption
 
@@ -131,7 +131,7 @@ string scalar caption::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
+    return(char((10)) + subinstr(open, " >", ">") + args + close + char((10))) 
 
 } // End of print method for class caption 
 

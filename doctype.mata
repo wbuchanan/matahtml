@@ -15,7 +15,7 @@ class doctype {
     static       string  scalar  opens, opene, close
 
     // String scalar attributes 
-    string               scalar          html
+    string               scalar          html, doctype
 
     // Make class args non-static to prevent assignment of class args to all instances of class
     string               scalar          classargs
@@ -27,10 +27,11 @@ class doctype {
     void         new()
 
     // Setter methods 
-    class        doctype     scalar  setClassArgs()
+    class        doctype     scalar  setClassArgs(), setDocType()
 
     // Getter methods 
-    string               scalar          getOpens(), getOpene(), getClose(), print(), getClassArgs()
+    string               scalar     getOpens(), getOpene(), getClose(), print(), 
+									getClassArgs(), getDocType()
 
 } // End of class declaration
 
@@ -45,14 +46,26 @@ void doctype::new() {
 
     // Defines the closing tag for the class 
     this.close = ">" 
+	
+	// Initialize a blank doctype
+	this.doctype = ""
 
 } // End of class constructor method definition
+
+class doctype scalar doctype::setDocType(string scalar doctype) {
+	this.doctype = " " + doctype
+	return(this)
+}
+
+string scalar doctype::getDocType() {
+	return(this.doctype)
+}
 
 // Setter method for class arguments (appear between HTML tags) 
 class doctype scalar doctype::setClassArgs(| string scalar classarguments) { 
 
     // Defines arguments that appear between HTML tags 
-    this.classargs = classarguments 
+    this.classargs = " " + classarguments 
 
     // Return a copy of the object 
     return(this)
@@ -63,7 +76,7 @@ class doctype scalar doctype::setClassArgs(| string scalar classarguments) {
 string scalar doctype::getOpens() { 
 
     // Returns the opening bracket/tag w/o > character to allow attributes 
-    return(this.opens + " ") 
+    return(this.opens) 
 
 } // End of getter method for opens member of class doctype
 
@@ -71,7 +84,7 @@ string scalar doctype::getOpens() {
 string scalar doctype::getOpene() { 
 
     // Returns the closing character for the opening bracket 
-    return(this.opene + " ") 
+    return(this.opene) 
 
 } // End of getter method for opene member of class doctype
 
@@ -79,7 +92,7 @@ string scalar doctype::getOpene() {
 string scalar doctype::getClose() { 
 
     // Returns the closing bracket/tag
-    return(this.close + " ") 
+    return(this.close) 
 
 } // End of getter method for close member of class doctype
 
@@ -98,13 +111,12 @@ string scalar doctype::print() {
     string scalar open, args, close 
 
     // Create opening string 
-    open = getOpens() +   getOpene()
-
-    // Get class arguments 
-    args = getClassArgs() 
+    open = getOpens() + getDocType() + getOpene() 
+	
+	open = subinstr(open, " >", ">") + char((10)) + getClassArgs() 
 
     // Return the complete HTML string 
-    return(open + args) 
+    return(open) 
 
 } // End of print method for class doctype 
 

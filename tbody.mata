@@ -66,7 +66,7 @@ class tbody scalar tbody::setAlign(| string scalar methodarg) {
     if (methodarg == "right" | methodarg == "left" | methodarg == "center" | methodarg == "justify" | methodarg == "char") { 
 
         // Set the attribute value 
-        this.htmlalign = `"align = ""' + methodarg + `"" "'
+        this.htmlalign = `" align=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -79,7 +79,7 @@ class tbody scalar tbody::setAlign(| string scalar methodarg) {
 class tbody scalar tbody::setChar(| string scalar methodarg) { 
 
     // Set the attribute char for this class 
-    this.htmlchar = `"char = ""' + methodarg + `"" "'
+    this.htmlchar = `" char=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -90,7 +90,7 @@ class tbody scalar tbody::setChar(| string scalar methodarg) {
 class tbody scalar tbody::setCharoff(| string scalar methodarg) { 
 
     // Set the attribute charoff for this class 
-    this.htmlcharoff = `"charoff = ""' + methodarg + `"" "'
+    this.htmlcharoff = `" charoff=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -104,7 +104,7 @@ class tbody scalar tbody::setValign(| string scalar methodarg) {
     if (methodarg == "top" | methodarg == "middle" | methodarg == "bottom" | methodarg == "baseline") { 
 
         // Set the attribute value 
-        this.htmlvalign = `"valign = ""' + methodarg + `"" "'
+        this.htmlvalign = `" valign=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -117,7 +117,7 @@ class tbody scalar tbody::setValign(| string scalar methodarg) {
 string scalar tbody::getOpens() { 
 
     // Returns the opening bracket/tag w/o > character to allow attributes 
-    return(this.opens + " ") 
+    return(this.opens) 
 
 } // End of getter method for opens member of class tbody
 
@@ -125,7 +125,7 @@ string scalar tbody::getOpens() {
 string scalar tbody::getOpene() { 
 
     // Returns the closing character for the opening bracket 
-    return(this.opene + " ") 
+    return(this.opene) 
 
 } // End of getter method for opene member of class tbody
 
@@ -133,7 +133,7 @@ string scalar tbody::getOpene() {
 string scalar tbody::getClose() { 
 
     // Returns the closing bracket/tag
-    return(this.close + " ") 
+    return(this.close) 
 
 } // End of getter method for close member of class tbody
 
@@ -193,7 +193,7 @@ string scalar tbody::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
+    return(char((10)) + subinstr(open, " >", ">") + args + close + char((10))) 
 
 } // End of print method for class tbody 
 

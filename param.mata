@@ -63,7 +63,7 @@ class param scalar param::setClassArgs(| string scalar classarguments) {
 class param scalar param::setName(| string scalar methodarg) { 
 
     // Set the attribute name for this class 
-    this.htmlname = `"name = ""' + methodarg + `"" "'
+    this.htmlname = `" name=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -74,7 +74,7 @@ class param scalar param::setName(| string scalar methodarg) {
 class param scalar param::setType(| string scalar methodarg) { 
 
     // Set the attribute type for this class 
-    this.htmltype = `"type = ""' + methodarg + `"" "'
+    this.htmltype = `" type=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -85,7 +85,7 @@ class param scalar param::setType(| string scalar methodarg) {
 class param scalar param::setValue(| string scalar methodarg) { 
 
     // Set the attribute value for this class 
-    this.htmlvalue = `"value = ""' + methodarg + `"" "'
+    this.htmlvalue = `" value=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -99,7 +99,7 @@ class param scalar param::setValuetype(| string scalar methodarg) {
     if (methodarg == "data" | methodarg == "ref" | methodarg == "object") { 
 
         // Set the attribute value 
-        this.htmlvaluetype = `"valuetype = ""' + methodarg + `"" "'
+        this.htmlvaluetype = `" valuetype=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -112,7 +112,7 @@ class param scalar param::setValuetype(| string scalar methodarg) {
 string scalar param::getOpens() { 
 
     // Returns the opening bracket/tag w/o > character to allow attributes 
-    return(this.opens + " ") 
+    return(this.opens) 
 
 } // End of getter method for opens member of class param
 
@@ -120,7 +120,7 @@ string scalar param::getOpens() {
 string scalar param::getOpene() { 
 
     // Returns the closing character for the opening bracket 
-    return(this.opene + " ") 
+    return(this.opene) 
 
 } // End of getter method for opene member of class param
 
@@ -128,7 +128,7 @@ string scalar param::getOpene() {
 string scalar param::getClose() { 
 
     // Returns the closing bracket/tag
-    return(this.close + " ") 
+    return(this.close) 
 
 } // End of getter method for close member of class param
 
@@ -188,7 +188,7 @@ string scalar param::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
+    return(char((10)) + subinstr(open, " >", ">") + args + close + char((10))) 
 
 } // End of print method for class param 
 

@@ -66,7 +66,7 @@ class img scalar img::setAlign(| string scalar methodarg) {
     if (methodarg == "top" | methodarg == "bottom" | methodarg == "middle" | methodarg == "left" | methodarg == "right") { 
 
         // Set the attribute value 
-        this.htmlalign = `"align = ""' + methodarg + `"" "'
+        this.htmlalign = `" align=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -79,7 +79,7 @@ class img scalar img::setAlign(| string scalar methodarg) {
 class img scalar img::setAlt(| string scalar methodarg) { 
 
     // Set the attribute alt for this class 
-    this.htmlalt = `"alt = ""' + methodarg + `"" "'
+    this.htmlalt = `" alt=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -90,7 +90,7 @@ class img scalar img::setAlt(| string scalar methodarg) {
 class img scalar img::setBorder(| string scalar methodarg) { 
 
     // Set the attribute border for this class 
-    this.htmlborder = `"border = ""' + methodarg + `"" "'
+    this.htmlborder = `" border=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -104,7 +104,7 @@ class img scalar img::setCrossorigin(| string scalar methodarg) {
     if (methodarg == "anonymous" | methodarg == "use-credentials") { 
 
         // Set the attribute value 
-        this.htmlcrossorigin = `"crossorigin = ""' + methodarg + `"" "'
+        this.htmlcrossorigin = `" crossorigin=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -117,7 +117,7 @@ class img scalar img::setCrossorigin(| string scalar methodarg) {
 class img scalar img::setHeight(| string scalar methodarg) { 
 
     // Set the attribute height for this class 
-    this.htmlheight = `"height = ""' + methodarg + `"" "'
+    this.htmlheight = `" height=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -128,7 +128,7 @@ class img scalar img::setHeight(| string scalar methodarg) {
 class img scalar img::setHspace(| string scalar methodarg) { 
 
     // Set the attribute hspace for this class 
-    this.htmlhspace = `"hspace = ""' + methodarg + `"" "'
+    this.htmlhspace = `" hspace=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -139,7 +139,7 @@ class img scalar img::setHspace(| string scalar methodarg) {
 class img scalar img::setIsmap(| string scalar methodarg) { 
 
     // Set the attribute ismap for this class 
-    this.htmlismap = `"ismap = ""' + methodarg + `"" "'
+    this.htmlismap = `" ismap=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -150,7 +150,7 @@ class img scalar img::setIsmap(| string scalar methodarg) {
 class img scalar img::setLongdesc(| string scalar methodarg) { 
 
     // Set the attribute longdesc for this class 
-    this.htmllongdesc = `"longdesc = ""' + methodarg + `"" "'
+    this.htmllongdesc = `" longdesc=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -161,7 +161,7 @@ class img scalar img::setLongdesc(| string scalar methodarg) {
 class img scalar img::setSrc(| string scalar methodarg) { 
 
     // Set the attribute src for this class 
-    this.htmlsrc = `"src = ""' + methodarg + `"" "'
+    this.htmlsrc = `" src=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -172,7 +172,7 @@ class img scalar img::setSrc(| string scalar methodarg) {
 class img scalar img::setUsemap(| string scalar methodarg) { 
 
     // Set the attribute usemap for this class 
-    this.htmlusemap = `"usemap = ""' + methodarg + `"" "'
+    this.htmlusemap = `" usemap=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -183,7 +183,7 @@ class img scalar img::setUsemap(| string scalar methodarg) {
 class img scalar img::setVspace(| string scalar methodarg) { 
 
     // Set the attribute vspace for this class 
-    this.htmlvspace = `"vspace = ""' + methodarg + `"" "'
+    this.htmlvspace = `" vspace=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -194,7 +194,7 @@ class img scalar img::setVspace(| string scalar methodarg) {
 class img scalar img::setWidth(| string scalar methodarg) { 
 
     // Set the attribute width for this class 
-    this.htmlwidth = `"width = ""' + methodarg + `"" "'
+    this.htmlwidth = `" width=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -205,7 +205,7 @@ class img scalar img::setWidth(| string scalar methodarg) {
 string scalar img::getOpens() { 
 
     // Returns the opening bracket/tag w/o > character to allow attributes 
-    return(this.opens + " ") 
+    return(this.opens) 
 
 } // End of getter method for opens member of class img
 
@@ -213,7 +213,7 @@ string scalar img::getOpens() {
 string scalar img::getOpene() { 
 
     // Returns the closing character for the opening bracket 
-    return(this.opene + " ") 
+    return(this.opene) 
 
 } // End of getter method for opene member of class img
 
@@ -221,7 +221,7 @@ string scalar img::getOpene() {
 string scalar img::getClose() { 
 
     // Returns the closing bracket/tag
-    return(this.close + " ") 
+    return(this.close) 
 
 } // End of getter method for close member of class img
 
@@ -345,7 +345,7 @@ string scalar img::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
+    return(char((10)) + subinstr(open, " >", ">") + args + close + char((10))) 
 
 } // End of print method for class img 
 

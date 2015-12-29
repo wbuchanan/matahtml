@@ -30,7 +30,7 @@ class comment {
     class        comment     scalar  setClassArgs()
 
     // Getter methods 
-    string               scalar          getOpens(), getOpene(), getClose(), print(), getClassArgs()
+    string               scalar      getOpens(), getOpene(), getClose(), print(), getClassArgs()
 
 } // End of class declaration
 
@@ -38,13 +38,10 @@ class comment {
 void comment::new() { 
 
     // Defines the start of the opening tag for the class 
-    this.opens = "<!--" 
-
-    // Defines the end of the opening tag for the class 
-    this.opene = ">" 
+    this.opens = "<!-- " 
 
     // Defines the closing tag for the class 
-    this.close = "-->" 
+    this.close = " -->" 
 
 } // End of class constructor method definition
 
@@ -63,7 +60,7 @@ class comment scalar comment::setClassArgs(| string scalar classarguments) {
 string scalar comment::getOpens() { 
 
     // Returns the opening bracket/tag w/o > character to allow attributes 
-    return(this.opens + " ") 
+    return(this.opens) 
 
 } // End of getter method for opens member of class comment
 
@@ -71,7 +68,7 @@ string scalar comment::getOpens() {
 string scalar comment::getOpene() { 
 
     // Returns the closing character for the opening bracket 
-    return(this.opene + " ") 
+    return(this.opene) 
 
 } // End of getter method for opene member of class comment
 
@@ -79,7 +76,7 @@ string scalar comment::getOpene() {
 string scalar comment::getClose() { 
 
     // Returns the closing bracket/tag
-    return(this.close + " ") 
+    return(this.close) 
 
 } // End of getter method for close member of class comment
 
@@ -95,19 +92,13 @@ string scalar comment::getClassArgs() {
 string scalar comment::print() { 
 
     // Create local variables to piece together return string 
-    string scalar open, args, close 
+    string scalar open
 
     // Create opening string 
-    open = getOpens() 
-
-    // Get class arguments 
-    args = getClassArgs() 
-
-    // Get closing tag 
-    close = getClose() 
+    open = getOpens() + getClassArgs() + getClose()
 
     // Return the complete HTML string 
-    return(char((13)) + open + args + close + char((13))) 
+    return(char((10)) + open + char((10))) 
 
 } // End of print method for class comment 
 

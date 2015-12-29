@@ -63,7 +63,7 @@ class figure scalar figure::setClassArgs(| string scalar classarguments) {
 string scalar figure::getOpens() { 
 
     // Returns the opening bracket/tag w/o > character to allow attributes 
-    return(this.opens + " ") 
+    return(this.opens) 
 
 } // End of getter method for opens member of class figure
 
@@ -71,7 +71,7 @@ string scalar figure::getOpens() {
 string scalar figure::getOpene() { 
 
     // Returns the closing character for the opening bracket 
-    return(this.opene + " ") 
+    return(this.opene) 
 
 } // End of getter method for opene member of class figure
 
@@ -79,7 +79,7 @@ string scalar figure::getOpene() {
 string scalar figure::getClose() { 
 
     // Returns the closing bracket/tag
-    return(this.close + " ") 
+    return(this.close) 
 
 } // End of getter method for close member of class figure
 
@@ -107,7 +107,7 @@ string scalar figure::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
+    return(char((10)) + subinstr(open, " >", ">") + args + close + char((10))) 
 
 } // End of print method for class figure 
 

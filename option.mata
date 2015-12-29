@@ -63,7 +63,7 @@ class option scalar option::setClassArgs(| string scalar classarguments) {
 class option scalar option::setDisabled(| string scalar methodarg) { 
 
     // Set the attribute disabled for this class 
-    this.htmldisabled = `"disabled = ""' + methodarg + `"" "'
+    this.htmldisabled = `" disabled=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -74,7 +74,7 @@ class option scalar option::setDisabled(| string scalar methodarg) {
 class option scalar option::setLabel(| string scalar methodarg) { 
 
     // Set the attribute label for this class 
-    this.htmllabel = `"label = ""' + methodarg + `"" "'
+    this.htmllabel = `" label=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -85,7 +85,7 @@ class option scalar option::setLabel(| string scalar methodarg) {
 class option scalar option::setSelected(| string scalar methodarg) { 
 
     // Set the attribute selected for this class 
-    this.htmlselected = `"selected = ""' + methodarg + `"" "'
+    this.htmlselected = `" selected=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -96,7 +96,7 @@ class option scalar option::setSelected(| string scalar methodarg) {
 class option scalar option::setValue(| string scalar methodarg) { 
 
     // Set the attribute value for this class 
-    this.htmlvalue = `"value = ""' + methodarg + `"" "'
+    this.htmlvalue = `" value=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -107,7 +107,7 @@ class option scalar option::setValue(| string scalar methodarg) {
 string scalar option::getOpens() { 
 
     // Returns the opening bracket/tag w/o > character to allow attributes 
-    return(this.opens + " ") 
+    return(this.opens) 
 
 } // End of getter method for opens member of class option
 
@@ -115,7 +115,7 @@ string scalar option::getOpens() {
 string scalar option::getOpene() { 
 
     // Returns the closing character for the opening bracket 
-    return(this.opene + " ") 
+    return(this.opene) 
 
 } // End of getter method for opene member of class option
 
@@ -123,7 +123,7 @@ string scalar option::getOpene() {
 string scalar option::getClose() { 
 
     // Returns the closing bracket/tag
-    return(this.close + " ") 
+    return(this.close) 
 
 } // End of getter method for close member of class option
 
@@ -183,7 +183,7 @@ string scalar option::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
+    return(char((10)) + subinstr(open, " >", ">") + args + close + char((10))) 
 
 } // End of print method for class option 
 

@@ -169,12 +169,12 @@ foreach v of loc classnm {
 					file write `tmpfile' `"    // Validate argument"' _n
 					file write `tmpfile' `"    if (`margs') { "' _n(2)
 					file write `tmpfile' `"        // Set the attribute value "' _n
-					file write `tmpfile' `"        this.html`method' = `"`mymthname' = ""' + methodarg + `"" "'"' _n(2)
+					file write `tmpfile' `"        this.html`method' = `" `mymthname'=""' + methodarg + `"""'"' _n(2)
 					file write `tmpfile' "    } // End IF Block for validated argument value " _n(2)
 				} 
 				else {
 					file write `tmpfile' `"    // Set the attribute `method' for this class "' _n
-					file write `tmpfile' `"    this.html`method' = `"`mymthname' = ""' + methodarg + `"" "'"' _n(2)
+					file write `tmpfile' `"    this.html`method' = `" `mymthname'=""' + methodarg + `"""'"' _n(2)
 				}
 				file write `tmpfile' `"    // Return a copy of the object "' _n
 				file write `tmpfile' `"    return(this)"' _n(2)
@@ -190,19 +190,19 @@ foreach v of loc classnm {
 	file write `tmpfile' `"// Getter method for opening bracket "' _n
 	file write `tmpfile' "string scalar `v'::getOpens() { " _n(2)
 	file write `tmpfile' `"    // Returns the opening bracket/tag w/o > character to allow attributes "' _n
-	file write `tmpfile' `"    return(this.opens + " ") "' _n(2)
+	file write `tmpfile' `"    return(this.opens) "' _n(2)
 	file write `tmpfile' "} // End of getter method for opens member of class `v'" _n(2)
 	
 	file write `tmpfile' `"// Getter method for opening bracket closing character"' _n
 	file write `tmpfile' "string scalar `v'::getOpene() { " _n(2)
 	file write `tmpfile' `"    // Returns the closing character for the opening bracket "' _n
-	file write `tmpfile' `"    return(this.opene + " ") "' _n(2)
+	file write `tmpfile' `"    return(this.opene) "' _n(2)
 	file write `tmpfile' "} // End of getter method for opene member of class `v'" _n(2)
 	
 	file write `tmpfile' `"// Getter method for closing bracket "' _n
 	file write `tmpfile' "string scalar `v'::getClose() { " _n(2)
 	file write `tmpfile' `"    // Returns the closing bracket/tag"' _n
-	file write `tmpfile' `"    return(this.close + " ") "' _n(2)
+	file write `tmpfile' `"    return(this.close) "' _n(2)
 	file write `tmpfile' "} // End of getter method for close member of class `v'" _n(2)
 	
 	file write `tmpfile' `"// Getter method for class arguments "' _n
@@ -245,7 +245,7 @@ foreach v of loc classnm {
 	file write `tmpfile' `"    // Get closing tag "' _n
 	file write `tmpfile' `"    close = getClose() "' _n(2)
 	file write `tmpfile' `"    // Return the complete HTML string "' _n
-	file write `tmpfile' `"    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) "' _n(2)
+	file write `tmpfile' `"    return(char((10)) + subinstr(open, " >", ">") + args + close + char((10))) "' _n(2)
 	file write `tmpfile' "} // End of print method for class `v' " _n(2)
 	
 	file write `tmpfile' "// End of Mata session " _n

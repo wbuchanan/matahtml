@@ -63,7 +63,7 @@ class audio scalar audio::setClassArgs(| string scalar classarguments) {
 class audio scalar audio::setAutoplay(| string scalar methodarg) { 
 
     // Set the attribute autoplay for this class 
-    this.htmlautoplay = `"autoplay = ""' + methodarg + `"" "'
+    this.htmlautoplay = `" autoplay=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -74,7 +74,7 @@ class audio scalar audio::setAutoplay(| string scalar methodarg) {
 class audio scalar audio::setControls(| string scalar methodarg) { 
 
     // Set the attribute controls for this class 
-    this.htmlcontrols = `"controls = ""' + methodarg + `"" "'
+    this.htmlcontrols = `" controls=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -85,7 +85,7 @@ class audio scalar audio::setControls(| string scalar methodarg) {
 class audio scalar audio::setLoop(| string scalar methodarg) { 
 
     // Set the attribute loop for this class 
-    this.htmlloop = `"loop = ""' + methodarg + `"" "'
+    this.htmlloop = `" loop=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -96,7 +96,7 @@ class audio scalar audio::setLoop(| string scalar methodarg) {
 class audio scalar audio::setMuted(| string scalar methodarg) { 
 
     // Set the attribute muted for this class 
-    this.htmlmuted = `"muted = ""' + methodarg + `"" "'
+    this.htmlmuted = `" muted=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -110,7 +110,7 @@ class audio scalar audio::setPreload(| string scalar methodarg) {
     if (methodarg == "auto" | methodarg == "metadata" | methodarg == "none") { 
 
         // Set the attribute value 
-        this.htmlpreload = `"preload = ""' + methodarg + `"" "'
+        this.htmlpreload = `" preload=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -123,7 +123,7 @@ class audio scalar audio::setPreload(| string scalar methodarg) {
 class audio scalar audio::setSrc(| string scalar methodarg) { 
 
     // Set the attribute src for this class 
-    this.htmlsrc = `"src = ""' + methodarg + `"" "'
+    this.htmlsrc = `" src=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -134,7 +134,7 @@ class audio scalar audio::setSrc(| string scalar methodarg) {
 string scalar audio::getOpens() { 
 
     // Returns the opening bracket/tag w/o > character to allow attributes 
-    return(this.opens + " ") 
+    return(this.opens) 
 
 } // End of getter method for opens member of class audio
 
@@ -142,7 +142,7 @@ string scalar audio::getOpens() {
 string scalar audio::getOpene() { 
 
     // Returns the closing character for the opening bracket 
-    return(this.opene + " ") 
+    return(this.opene) 
 
 } // End of getter method for opene member of class audio
 
@@ -150,7 +150,7 @@ string scalar audio::getOpene() {
 string scalar audio::getClose() { 
 
     // Returns the closing bracket/tag
-    return(this.close + " ") 
+    return(this.close) 
 
 } // End of getter method for close member of class audio
 
@@ -226,7 +226,7 @@ string scalar audio::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
+    return(char((10)) + subinstr(open, " >", ">") + args + close + char((10))) 
 
 } // End of print method for class audio 
 

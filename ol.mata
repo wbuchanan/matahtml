@@ -63,7 +63,7 @@ class ol scalar ol::setClassArgs(| string scalar classarguments) {
 class ol scalar ol::setCompact(| string scalar methodarg) { 
 
     // Set the attribute compact for this class 
-    this.htmlcompact = `"compact = ""' + methodarg + `"" "'
+    this.htmlcompact = `" compact=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -74,7 +74,7 @@ class ol scalar ol::setCompact(| string scalar methodarg) {
 class ol scalar ol::setReversed(| string scalar methodarg) { 
 
     // Set the attribute reversed for this class 
-    this.htmlreversed = `"reversed = ""' + methodarg + `"" "'
+    this.htmlreversed = `" reversed=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -85,7 +85,7 @@ class ol scalar ol::setReversed(| string scalar methodarg) {
 class ol scalar ol::setStart(| string scalar methodarg) { 
 
     // Set the attribute start for this class 
-    this.htmlstart = `"start = ""' + methodarg + `"" "'
+    this.htmlstart = `" start=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -99,7 +99,7 @@ class ol scalar ol::setType(| string scalar methodarg) {
     if (methodarg == "1" | methodarg == "A" | methodarg == "a" | methodarg == "I" | methodarg == "i") { 
 
         // Set the attribute value 
-        this.htmltype = `"type = ""' + methodarg + `"" "'
+        this.htmltype = `" type=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -112,7 +112,7 @@ class ol scalar ol::setType(| string scalar methodarg) {
 string scalar ol::getOpens() { 
 
     // Returns the opening bracket/tag w/o > character to allow attributes 
-    return(this.opens + " ") 
+    return(this.opens) 
 
 } // End of getter method for opens member of class ol
 
@@ -120,7 +120,7 @@ string scalar ol::getOpens() {
 string scalar ol::getOpene() { 
 
     // Returns the closing character for the opening bracket 
-    return(this.opene + " ") 
+    return(this.opene) 
 
 } // End of getter method for opene member of class ol
 
@@ -128,7 +128,7 @@ string scalar ol::getOpene() {
 string scalar ol::getClose() { 
 
     // Returns the closing bracket/tag
-    return(this.close + " ") 
+    return(this.close) 
 
 } // End of getter method for close member of class ol
 
@@ -188,7 +188,7 @@ string scalar ol::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
+    return(char((10)) + subinstr(open, " >", ">") + args + close + char((10))) 
 
 } // End of print method for class ol 
 

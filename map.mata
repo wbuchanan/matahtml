@@ -63,7 +63,7 @@ class map scalar map::setClassArgs(| string scalar classarguments) {
 class map scalar map::setName(| string scalar methodarg) { 
 
     // Set the attribute name for this class 
-    this.htmlname = `"name = ""' + methodarg + `"" "'
+    this.htmlname = `" name=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -74,7 +74,7 @@ class map scalar map::setName(| string scalar methodarg) {
 string scalar map::getOpens() { 
 
     // Returns the opening bracket/tag w/o > character to allow attributes 
-    return(this.opens + " ") 
+    return(this.opens) 
 
 } // End of getter method for opens member of class map
 
@@ -82,7 +82,7 @@ string scalar map::getOpens() {
 string scalar map::getOpene() { 
 
     // Returns the closing character for the opening bracket 
-    return(this.opene + " ") 
+    return(this.opene) 
 
 } // End of getter method for opene member of class map
 
@@ -90,7 +90,7 @@ string scalar map::getOpene() {
 string scalar map::getClose() { 
 
     // Returns the closing bracket/tag
-    return(this.close + " ") 
+    return(this.close) 
 
 } // End of getter method for close member of class map
 
@@ -126,7 +126,7 @@ string scalar map::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
+    return(char((10)) + subinstr(open, " >", ">") + args + close + char((10))) 
 
 } // End of print method for class map 
 

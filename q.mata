@@ -63,7 +63,7 @@ class q scalar q::setClassArgs(| string scalar classarguments) {
 class q scalar q::setCite(| string scalar methodarg) { 
 
     // Set the attribute cite for this class 
-    this.htmlcite = `"cite = ""' + methodarg + `"" "'
+    this.htmlcite = `" cite=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -74,7 +74,7 @@ class q scalar q::setCite(| string scalar methodarg) {
 string scalar q::getOpens() { 
 
     // Returns the opening bracket/tag w/o > character to allow attributes 
-    return(this.opens + " ") 
+    return(this.opens) 
 
 } // End of getter method for opens member of class q
 
@@ -82,7 +82,7 @@ string scalar q::getOpens() {
 string scalar q::getOpene() { 
 
     // Returns the closing character for the opening bracket 
-    return(this.opene + " ") 
+    return(this.opene) 
 
 } // End of getter method for opene member of class q
 
@@ -90,7 +90,7 @@ string scalar q::getOpene() {
 string scalar q::getClose() { 
 
     // Returns the closing bracket/tag
-    return(this.close + " ") 
+    return(this.close) 
 
 } // End of getter method for close member of class q
 
@@ -126,7 +126,7 @@ string scalar q::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
+    return(char((10)) + subinstr(open, " >", ">") + args + close + char((10))) 
 
 } // End of print method for class q 
 

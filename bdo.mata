@@ -66,7 +66,7 @@ class bdo scalar bdo::setDir(| string scalar methodarg) {
     if (methodarg == "ltr" | methodarg == "rtl" | methodarg == "auto") { 
 
         // Set the attribute value 
-        this.htmldir = `"dir = ""' + methodarg + `"" "'
+        this.htmldir = `" dir=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -79,7 +79,7 @@ class bdo scalar bdo::setDir(| string scalar methodarg) {
 string scalar bdo::getOpens() { 
 
     // Returns the opening bracket/tag w/o > character to allow attributes 
-    return(this.opens + " ") 
+    return(this.opens) 
 
 } // End of getter method for opens member of class bdo
 
@@ -87,7 +87,7 @@ string scalar bdo::getOpens() {
 string scalar bdo::getOpene() { 
 
     // Returns the closing character for the opening bracket 
-    return(this.opene + " ") 
+    return(this.opene) 
 
 } // End of getter method for opene member of class bdo
 
@@ -95,7 +95,7 @@ string scalar bdo::getOpene() {
 string scalar bdo::getClose() { 
 
     // Returns the closing bracket/tag
-    return(this.close + " ") 
+    return(this.close) 
 
 } // End of getter method for close member of class bdo
 
@@ -131,7 +131,7 @@ string scalar bdo::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
+    return(char((10)) + subinstr(open, " >", ">") + args + close + char((10))) 
 
 } // End of print method for class bdo 
 

@@ -63,7 +63,7 @@ class script scalar script::setClassArgs(| string scalar classarguments) {
 class script scalar script::setAsync(| string scalar methodarg) { 
 
     // Set the attribute async for this class 
-    this.htmlasync = `"async = ""' + methodarg + `"" "'
+    this.htmlasync = `" async=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -74,7 +74,7 @@ class script scalar script::setAsync(| string scalar methodarg) {
 class script scalar script::setCharset(| string scalar methodarg) { 
 
     // Set the attribute charset for this class 
-    this.htmlcharset = `"charset = ""' + methodarg + `"" "'
+    this.htmlcharset = `" charset=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -85,7 +85,7 @@ class script scalar script::setCharset(| string scalar methodarg) {
 class script scalar script::setDefer(| string scalar methodarg) { 
 
     // Set the attribute defer for this class 
-    this.htmldefer = `"defer = ""' + methodarg + `"" "'
+    this.htmldefer = `" defer=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -96,7 +96,7 @@ class script scalar script::setDefer(| string scalar methodarg) {
 class script scalar script::setSrc(| string scalar methodarg) { 
 
     // Set the attribute src for this class 
-    this.htmlsrc = `"src = ""' + methodarg + `"" "'
+    this.htmlsrc = `" src=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -107,7 +107,7 @@ class script scalar script::setSrc(| string scalar methodarg) {
 class script scalar script::setType(| string scalar methodarg) { 
 
     // Set the attribute type for this class 
-    this.htmltype = `"type = ""' + methodarg + `"" "'
+    this.htmltype = `" type=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -118,7 +118,7 @@ class script scalar script::setType(| string scalar methodarg) {
 class script scalar script::setXmlspace(| string scalar methodarg) { 
 
     // Set the attribute xmlspace for this class 
-    this.htmlxmlspace = `"xml:space = ""' + methodarg + `"" "'
+    this.htmlxmlspace = `" xml:space=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -129,7 +129,7 @@ class script scalar script::setXmlspace(| string scalar methodarg) {
 string scalar script::getOpens() { 
 
     // Returns the opening bracket/tag w/o > character to allow attributes 
-    return(this.opens + " ") 
+    return(this.opens) 
 
 } // End of getter method for opens member of class script
 
@@ -137,7 +137,7 @@ string scalar script::getOpens() {
 string scalar script::getOpene() { 
 
     // Returns the closing character for the opening bracket 
-    return(this.opene + " ") 
+    return(this.opene) 
 
 } // End of getter method for opene member of class script
 
@@ -145,7 +145,7 @@ string scalar script::getOpene() {
 string scalar script::getClose() { 
 
     // Returns the closing bracket/tag
-    return(this.close + " ") 
+    return(this.close) 
 
 } // End of getter method for close member of class script
 
@@ -221,7 +221,7 @@ string scalar script::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
+    return(char((10)) + subinstr(open, " >", ">") + args + close + char((10))) 
 
 } // End of print method for class script 
 

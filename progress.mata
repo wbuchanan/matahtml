@@ -63,7 +63,7 @@ class progress scalar progress::setClassArgs(| string scalar classarguments) {
 class progress scalar progress::setMax(| string scalar methodarg) { 
 
     // Set the attribute max for this class 
-    this.htmlmax = `"max = ""' + methodarg + `"" "'
+    this.htmlmax = `" max=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -74,7 +74,7 @@ class progress scalar progress::setMax(| string scalar methodarg) {
 class progress scalar progress::setValue(| string scalar methodarg) { 
 
     // Set the attribute value for this class 
-    this.htmlvalue = `"value = ""' + methodarg + `"" "'
+    this.htmlvalue = `" value=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -85,7 +85,7 @@ class progress scalar progress::setValue(| string scalar methodarg) {
 string scalar progress::getOpens() { 
 
     // Returns the opening bracket/tag w/o > character to allow attributes 
-    return(this.opens + " ") 
+    return(this.opens) 
 
 } // End of getter method for opens member of class progress
 
@@ -93,7 +93,7 @@ string scalar progress::getOpens() {
 string scalar progress::getOpene() { 
 
     // Returns the closing character for the opening bracket 
-    return(this.opene + " ") 
+    return(this.opene) 
 
 } // End of getter method for opene member of class progress
 
@@ -101,7 +101,7 @@ string scalar progress::getOpene() {
 string scalar progress::getClose() { 
 
     // Returns the closing bracket/tag
-    return(this.close + " ") 
+    return(this.close) 
 
 } // End of getter method for close member of class progress
 
@@ -145,7 +145,7 @@ string scalar progress::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
+    return(char((10)) + subinstr(open, " >", ">") + args + close + char((10))) 
 
 } // End of print method for class progress 
 

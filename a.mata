@@ -63,7 +63,7 @@ class a scalar a::setClassArgs(| string scalar classarguments) {
 class a scalar a::setCharset(| string scalar methodarg) { 
 
     // Set the attribute charset for this class 
-    this.htmlcharset = `"charset = ""' + methodarg + `"" "'
+    this.htmlcharset = `" charset=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -74,7 +74,7 @@ class a scalar a::setCharset(| string scalar methodarg) {
 class a scalar a::setCoords(| string scalar methodarg) { 
 
     // Set the attribute coords for this class 
-    this.htmlcoords = `"coords = ""' + methodarg + `"" "'
+    this.htmlcoords = `" coords=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -85,7 +85,7 @@ class a scalar a::setCoords(| string scalar methodarg) {
 class a scalar a::setDownload(| string scalar methodarg) { 
 
     // Set the attribute download for this class 
-    this.htmldownload = `"download = ""' + methodarg + `"" "'
+    this.htmldownload = `" download=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -96,7 +96,7 @@ class a scalar a::setDownload(| string scalar methodarg) {
 class a scalar a::setHref(| string scalar methodarg) { 
 
     // Set the attribute href for this class 
-    this.htmlhref = `"href = ""' + methodarg + `"" "'
+    this.htmlhref = `" href=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -107,7 +107,7 @@ class a scalar a::setHref(| string scalar methodarg) {
 class a scalar a::setHreflang(| string scalar methodarg) { 
 
     // Set the attribute hreflang for this class 
-    this.htmlhreflang = `"hreflang = ""' + methodarg + `"" "'
+    this.htmlhreflang = `" hreflang=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -118,7 +118,7 @@ class a scalar a::setHreflang(| string scalar methodarg) {
 class a scalar a::setMedia(| string scalar methodarg) { 
 
     // Set the attribute media for this class 
-    this.htmlmedia = `"media = ""' + methodarg + `"" "'
+    this.htmlmedia = `" media=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -129,7 +129,7 @@ class a scalar a::setMedia(| string scalar methodarg) {
 class a scalar a::setName(| string scalar methodarg) { 
 
     // Set the attribute name for this class 
-    this.htmlname = `"name = ""' + methodarg + `"" "'
+    this.htmlname = `" name=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -143,7 +143,7 @@ class a scalar a::setRel(| string scalar methodarg) {
     if (methodarg == "alternate" | methodarg == "author" | methodarg == "bookmark" | methodarg == "help" | methodarg == "license" | methodarg == "next" | methodarg == "nofollow" | methodarg == "noreferrer" | methodarg == "prefetch" | methodarg == "prev" | methodarg == "search" | methodarg == "tag") { 
 
         // Set the attribute value 
-        this.htmlrel = `"rel = ""' + methodarg + `"" "'
+        this.htmlrel = `" rel=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -156,7 +156,7 @@ class a scalar a::setRel(| string scalar methodarg) {
 class a scalar a::setRev(| string scalar methodarg) { 
 
     // Set the attribute rev for this class 
-    this.htmlrev = `"rev = ""' + methodarg + `"" "'
+    this.htmlrev = `" rev=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -170,7 +170,7 @@ class a scalar a::setShape(| string scalar methodarg) {
     if (methodarg == "default" | methodarg == "rect" | methodarg == "circle" | methodarg == "poly") { 
 
         // Set the attribute value 
-        this.htmlshape = `"shape = ""' + methodarg + `"" "'
+        this.htmlshape = `" shape=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -186,7 +186,7 @@ class a scalar a::setTarget(| string scalar methodarg) {
     if (methodarg == "_blank" | methodarg == "_parent" | methodarg == "_self" | methodarg == "_top" | methodarg == "framename") { 
 
         // Set the attribute value 
-        this.htmltarget = `"target = ""' + methodarg + `"" "'
+        this.htmltarget = `" target=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -199,7 +199,7 @@ class a scalar a::setTarget(| string scalar methodarg) {
 class a scalar a::setType(| string scalar methodarg) { 
 
     // Set the attribute type for this class 
-    this.htmltype = `"type = ""' + methodarg + `"" "'
+    this.htmltype = `" type=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -210,7 +210,7 @@ class a scalar a::setType(| string scalar methodarg) {
 string scalar a::getOpens() { 
 
     // Returns the opening bracket/tag w/o > character to allow attributes 
-    return(this.opens + " ") 
+    return(this.opens) 
 
 } // End of getter method for opens member of class a
 
@@ -218,7 +218,7 @@ string scalar a::getOpens() {
 string scalar a::getOpene() { 
 
     // Returns the closing character for the opening bracket 
-    return(this.opene + " ") 
+    return(this.opene) 
 
 } // End of getter method for opene member of class a
 
@@ -226,7 +226,7 @@ string scalar a::getOpene() {
 string scalar a::getClose() { 
 
     // Returns the closing bracket/tag
-    return(this.close + " ") 
+    return(this.close) 
 
 } // End of getter method for close member of class a
 
@@ -350,7 +350,7 @@ string scalar a::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
+    return(char((10)) + subinstr(open, " >", ">") + args + close + char((10))) 
 
 } // End of print method for class a 
 

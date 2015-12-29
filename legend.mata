@@ -66,7 +66,7 @@ class legend scalar legend::setAlign(| string scalar methodarg) {
     if (methodarg == "top" | methodarg == "bottom" | methodarg == "left" | methodarg == "right") { 
 
         // Set the attribute value 
-        this.htmlalign = `"align = ""' + methodarg + `"" "'
+        this.htmlalign = `" align=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -79,7 +79,7 @@ class legend scalar legend::setAlign(| string scalar methodarg) {
 string scalar legend::getOpens() { 
 
     // Returns the opening bracket/tag w/o > character to allow attributes 
-    return(this.opens + " ") 
+    return(this.opens) 
 
 } // End of getter method for opens member of class legend
 
@@ -87,7 +87,7 @@ string scalar legend::getOpens() {
 string scalar legend::getOpene() { 
 
     // Returns the closing character for the opening bracket 
-    return(this.opene + " ") 
+    return(this.opene) 
 
 } // End of getter method for opene member of class legend
 
@@ -95,7 +95,7 @@ string scalar legend::getOpene() {
 string scalar legend::getClose() { 
 
     // Returns the closing bracket/tag
-    return(this.close + " ") 
+    return(this.close) 
 
 } // End of getter method for close member of class legend
 
@@ -131,7 +131,7 @@ string scalar legend::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
+    return(char((10)) + subinstr(open, " >", ">") + args + close + char((10))) 
 
 } // End of print method for class legend 
 

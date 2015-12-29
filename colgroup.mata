@@ -66,7 +66,7 @@ class colgroup scalar colgroup::setAlign(| string scalar methodarg) {
     if (methodarg == "left" | methodarg == "right" | methodarg == "center" | methodarg == "justify" | methodarg == "char") { 
 
         // Set the attribute value 
-        this.htmlalign = `"align = ""' + methodarg + `"" "'
+        this.htmlalign = `" align=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -79,7 +79,7 @@ class colgroup scalar colgroup::setAlign(| string scalar methodarg) {
 class colgroup scalar colgroup::setChar(| string scalar methodarg) { 
 
     // Set the attribute char for this class 
-    this.htmlchar = `"char = ""' + methodarg + `"" "'
+    this.htmlchar = `" char=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -90,7 +90,7 @@ class colgroup scalar colgroup::setChar(| string scalar methodarg) {
 class colgroup scalar colgroup::setCharoff(| string scalar methodarg) { 
 
     // Set the attribute charoff for this class 
-    this.htmlcharoff = `"charoff = ""' + methodarg + `"" "'
+    this.htmlcharoff = `" charoff=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -101,7 +101,7 @@ class colgroup scalar colgroup::setCharoff(| string scalar methodarg) {
 class colgroup scalar colgroup::setSpan(| string scalar methodarg) { 
 
     // Set the attribute span for this class 
-    this.htmlspan = `"span = ""' + methodarg + `"" "'
+    this.htmlspan = `" span=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -115,7 +115,7 @@ class colgroup scalar colgroup::setValign(| string scalar methodarg) {
     if (methodarg == "top" | methodarg == "middle" | methodarg == "bottom" | methodarg == "baseline") { 
 
         // Set the attribute value 
-        this.htmlvalign = `"valign = ""' + methodarg + `"" "'
+        this.htmlvalign = `" valign=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -131,7 +131,7 @@ class colgroup scalar colgroup::setWidth(| string scalar methodarg) {
     if (methodarg == "pixels" | methodarg == "%" | methodarg == "relative_length") { 
 
         // Set the attribute value 
-        this.htmlwidth = `"width = ""' + methodarg + `"" "'
+        this.htmlwidth = `" width=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -144,7 +144,7 @@ class colgroup scalar colgroup::setWidth(| string scalar methodarg) {
 string scalar colgroup::getOpens() { 
 
     // Returns the opening bracket/tag w/o > character to allow attributes 
-    return(this.opens + " ") 
+    return(this.opens) 
 
 } // End of getter method for opens member of class colgroup
 
@@ -152,7 +152,7 @@ string scalar colgroup::getOpens() {
 string scalar colgroup::getOpene() { 
 
     // Returns the closing character for the opening bracket 
-    return(this.opene + " ") 
+    return(this.opene) 
 
 } // End of getter method for opene member of class colgroup
 
@@ -160,7 +160,7 @@ string scalar colgroup::getOpene() {
 string scalar colgroup::getClose() { 
 
     // Returns the closing bracket/tag
-    return(this.close + " ") 
+    return(this.close) 
 
 } // End of getter method for close member of class colgroup
 
@@ -236,7 +236,7 @@ string scalar colgroup::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
+    return(char((10)) + subinstr(open, " >", ">") + args + close + char((10))) 
 
 } // End of print method for class colgroup 
 

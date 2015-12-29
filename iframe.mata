@@ -66,7 +66,7 @@ class iframe scalar iframe::setAlign(| string scalar methodarg) {
     if (methodarg == "left" | methodarg == "right" | methodarg == "top" | methodarg == "middle" | methodarg == "bottom") { 
 
         // Set the attribute value 
-        this.htmlalign = `"align = ""' + methodarg + `"" "'
+        this.htmlalign = `" align=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -82,7 +82,7 @@ class iframe scalar iframe::setFrameborder(| string scalar methodarg) {
     if (methodarg == "1" | methodarg == "0") { 
 
         // Set the attribute value 
-        this.htmlframeborder = `"frameborder = ""' + methodarg + `"" "'
+        this.htmlframeborder = `" frameborder=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -95,7 +95,7 @@ class iframe scalar iframe::setFrameborder(| string scalar methodarg) {
 class iframe scalar iframe::setHeight(| string scalar methodarg) { 
 
     // Set the attribute height for this class 
-    this.htmlheight = `"height = ""' + methodarg + `"" "'
+    this.htmlheight = `" height=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -106,7 +106,7 @@ class iframe scalar iframe::setHeight(| string scalar methodarg) {
 class iframe scalar iframe::setLongdesc(| string scalar methodarg) { 
 
     // Set the attribute longdesc for this class 
-    this.htmllongdesc = `"longdesc = ""' + methodarg + `"" "'
+    this.htmllongdesc = `" longdesc=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -117,7 +117,7 @@ class iframe scalar iframe::setLongdesc(| string scalar methodarg) {
 class iframe scalar iframe::setMarginheight(| string scalar methodarg) { 
 
     // Set the attribute marginheight for this class 
-    this.htmlmarginheight = `"marginheight = ""' + methodarg + `"" "'
+    this.htmlmarginheight = `" marginheight=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -128,7 +128,7 @@ class iframe scalar iframe::setMarginheight(| string scalar methodarg) {
 class iframe scalar iframe::setMarginwidth(| string scalar methodarg) { 
 
     // Set the attribute marginwidth for this class 
-    this.htmlmarginwidth = `"marginwidth = ""' + methodarg + `"" "'
+    this.htmlmarginwidth = `" marginwidth=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -139,7 +139,7 @@ class iframe scalar iframe::setMarginwidth(| string scalar methodarg) {
 class iframe scalar iframe::setName(| string scalar methodarg) { 
 
     // Set the attribute name for this class 
-    this.htmlname = `"name = ""' + methodarg + `"" "'
+    this.htmlname = `" name=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -153,7 +153,7 @@ class iframe scalar iframe::setSandbox(| string scalar methodarg) {
     if (methodarg == "allow-formsallow-pointer-lockallow-popups" | methodarg == "allow-same-origin" | methodarg == "allow-scripts" | methodarg == "allow-top-navigation") { 
 
         // Set the attribute value 
-        this.htmlsandbox = `"sandbox = ""' + methodarg + `"" "'
+        this.htmlsandbox = `" sandbox=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -169,7 +169,7 @@ class iframe scalar iframe::setScrolling(| string scalar methodarg) {
     if (methodarg == "yes" | methodarg == "no" | methodarg == "auto") { 
 
         // Set the attribute value 
-        this.htmlscrolling = `"scrolling = ""' + methodarg + `"" "'
+        this.htmlscrolling = `" scrolling=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -182,7 +182,7 @@ class iframe scalar iframe::setScrolling(| string scalar methodarg) {
 class iframe scalar iframe::setSrc(| string scalar methodarg) { 
 
     // Set the attribute src for this class 
-    this.htmlsrc = `"src = ""' + methodarg + `"" "'
+    this.htmlsrc = `" src=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -193,7 +193,7 @@ class iframe scalar iframe::setSrc(| string scalar methodarg) {
 class iframe scalar iframe::setSrcdoc(| string scalar methodarg) { 
 
     // Set the attribute srcdoc for this class 
-    this.htmlsrcdoc = `"srcdoc = ""' + methodarg + `"" "'
+    this.htmlsrcdoc = `" srcdoc=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -204,7 +204,7 @@ class iframe scalar iframe::setSrcdoc(| string scalar methodarg) {
 class iframe scalar iframe::setWidth(| string scalar methodarg) { 
 
     // Set the attribute width for this class 
-    this.htmlwidth = `"width = ""' + methodarg + `"" "'
+    this.htmlwidth = `" width=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -215,7 +215,7 @@ class iframe scalar iframe::setWidth(| string scalar methodarg) {
 string scalar iframe::getOpens() { 
 
     // Returns the opening bracket/tag w/o > character to allow attributes 
-    return(this.opens + " ") 
+    return(this.opens) 
 
 } // End of getter method for opens member of class iframe
 
@@ -223,7 +223,7 @@ string scalar iframe::getOpens() {
 string scalar iframe::getOpene() { 
 
     // Returns the closing character for the opening bracket 
-    return(this.opene + " ") 
+    return(this.opene) 
 
 } // End of getter method for opene member of class iframe
 
@@ -231,7 +231,7 @@ string scalar iframe::getOpene() {
 string scalar iframe::getClose() { 
 
     // Returns the closing bracket/tag
-    return(this.close + " ") 
+    return(this.close) 
 
 } // End of getter method for close member of class iframe
 
@@ -355,7 +355,7 @@ string scalar iframe::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
+    return(char((10)) + subinstr(open, " >", ">") + args + close + char((10))) 
 
 } // End of print method for class iframe 
 

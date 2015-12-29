@@ -63,7 +63,7 @@ class keygen scalar keygen::setClassArgs(| string scalar classarguments) {
 string scalar keygen::getOpens() { 
 
     // Returns the opening bracket/tag w/o > character to allow attributes 
-    return(this.opens + " ") 
+    return(this.opens) 
 
 } // End of getter method for opens member of class keygen
 
@@ -71,7 +71,7 @@ string scalar keygen::getOpens() {
 string scalar keygen::getOpene() { 
 
     // Returns the closing character for the opening bracket 
-    return(this.opene + " ") 
+    return(this.opene) 
 
 } // End of getter method for opene member of class keygen
 
@@ -79,7 +79,7 @@ string scalar keygen::getOpene() {
 string scalar keygen::getClose() { 
 
     // Returns the closing bracket/tag
-    return(this.close + " ") 
+    return(this.close) 
 
 } // End of getter method for close member of class keygen
 
@@ -107,7 +107,7 @@ string scalar keygen::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
+    return(char((10)) + subinstr(open, " >", ">") + args + close + char((10))) 
 
 } // End of print method for class keygen 
 

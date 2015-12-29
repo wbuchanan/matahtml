@@ -66,7 +66,7 @@ class table scalar table::setAlign(| string scalar methodarg) {
     if (methodarg == "left" | methodarg == "center" | methodarg == "right") { 
 
         // Set the attribute value 
-        this.htmlalign = `"align = ""' + methodarg + `"" "'
+        this.htmlalign = `" align=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -82,7 +82,7 @@ class table scalar table::setBgcolor(| string scalar methodarg) {
     if (methodarg == "rgb(x,x,x)" | methodarg == "#xxxxxx" | methodarg == "colorname") { 
 
         // Set the attribute value 
-        this.htmlbgcolor = `"bgcolor = ""' + methodarg + `"" "'
+        this.htmlbgcolor = `" bgcolor=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -95,7 +95,7 @@ class table scalar table::setBgcolor(| string scalar methodarg) {
 class table scalar table::setBorder(| string scalar methodarg) { 
 
     // Set the attribute border for this class 
-    this.htmlborder = `"border = ""' + methodarg + `"" "'
+    this.htmlborder = `" border=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -106,7 +106,7 @@ class table scalar table::setBorder(| string scalar methodarg) {
 class table scalar table::setCellpadding(| string scalar methodarg) { 
 
     // Set the attribute cellpadding for this class 
-    this.htmlcellpadding = `"cellpadding = ""' + methodarg + `"" "'
+    this.htmlcellpadding = `" cellpadding=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -117,7 +117,7 @@ class table scalar table::setCellpadding(| string scalar methodarg) {
 class table scalar table::setCellspacing(| string scalar methodarg) { 
 
     // Set the attribute cellspacing for this class 
-    this.htmlcellspacing = `"cellspacing = ""' + methodarg + `"" "'
+    this.htmlcellspacing = `" cellspacing=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -131,7 +131,7 @@ class table scalar table::setFrame(| string scalar methodarg) {
     if (methodarg == "void" | methodarg == "above" | methodarg == "below" | methodarg == "hsides" | methodarg == "lhs" | methodarg == "rhs" | methodarg == "vsides" | methodarg == "box" | methodarg == "border") { 
 
         // Set the attribute value 
-        this.htmlframe = `"frame = ""' + methodarg + `"" "'
+        this.htmlframe = `" frame=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -147,7 +147,7 @@ class table scalar table::setRules(| string scalar methodarg) {
     if (methodarg == "none" | methodarg == "groups" | methodarg == "rows" | methodarg == "cols" | methodarg == "all") { 
 
         // Set the attribute value 
-        this.htmlrules = `"rules = ""' + methodarg + `"" "'
+        this.htmlrules = `" rules=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -160,7 +160,7 @@ class table scalar table::setRules(| string scalar methodarg) {
 class table scalar table::setSortable(| string scalar methodarg) { 
 
     // Set the attribute sortable for this class 
-    this.htmlsortable = `"sortable = ""' + methodarg + `"" "'
+    this.htmlsortable = `" sortable=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -171,7 +171,7 @@ class table scalar table::setSortable(| string scalar methodarg) {
 class table scalar table::setSummary(| string scalar methodarg) { 
 
     // Set the attribute summary for this class 
-    this.htmlsummary = `"summary = ""' + methodarg + `"" "'
+    this.htmlsummary = `" summary=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -185,7 +185,7 @@ class table scalar table::setWidth(| string scalar methodarg) {
     if (methodarg == "pixels" | methodarg == "%") { 
 
         // Set the attribute value 
-        this.htmlwidth = `"width = ""' + methodarg + `"" "'
+        this.htmlwidth = `" width=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -198,7 +198,7 @@ class table scalar table::setWidth(| string scalar methodarg) {
 string scalar table::getOpens() { 
 
     // Returns the opening bracket/tag w/o > character to allow attributes 
-    return(this.opens + " ") 
+    return(this.opens) 
 
 } // End of getter method for opens member of class table
 
@@ -206,7 +206,7 @@ string scalar table::getOpens() {
 string scalar table::getOpene() { 
 
     // Returns the closing character for the opening bracket 
-    return(this.opene + " ") 
+    return(this.opene) 
 
 } // End of getter method for opene member of class table
 
@@ -214,7 +214,7 @@ string scalar table::getOpene() {
 string scalar table::getClose() { 
 
     // Returns the closing bracket/tag
-    return(this.close + " ") 
+    return(this.close) 
 
 } // End of getter method for close member of class table
 
@@ -322,7 +322,7 @@ string scalar table::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
+    return(char((10)) + subinstr(open, " >", ">") + args + close + char((10))) 
 
 } // End of print method for class table 
 

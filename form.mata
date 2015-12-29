@@ -63,7 +63,7 @@ class form scalar form::setClassArgs(| string scalar classarguments) {
 class form scalar form::setAccept(| string scalar methodarg) { 
 
     // Set the attribute accept for this class 
-    this.htmlaccept = `"accept = ""' + methodarg + `"" "'
+    this.htmlaccept = `" accept=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -74,7 +74,7 @@ class form scalar form::setAccept(| string scalar methodarg) {
 class form scalar form::setAccept_Charset(| string scalar methodarg) { 
 
     // Set the attribute accept_charset for this class 
-    this.htmlaccept_charset = `"accept-charset = ""' + methodarg + `"" "'
+    this.htmlaccept_charset = `" accept-charset=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -85,7 +85,7 @@ class form scalar form::setAccept_Charset(| string scalar methodarg) {
 class form scalar form::setAction(| string scalar methodarg) { 
 
     // Set the attribute action for this class 
-    this.htmlaction = `"action = ""' + methodarg + `"" "'
+    this.htmlaction = `" action=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -96,7 +96,7 @@ class form scalar form::setAction(| string scalar methodarg) {
 class form scalar form::setAutocomplete(| string scalar methodarg) { 
 
     // Set the attribute autocomplete for this class 
-    this.htmlautocomplete = `"autocomplete = ""' + methodarg + `"" "'
+    this.htmlautocomplete = `" autocomplete=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -110,7 +110,7 @@ class form scalar form::setEnctype(| string scalar methodarg) {
     if (methodarg == "application/x-www-form-urlencoded" | methodarg == "multipart/form-data" | methodarg == "text/plain") { 
 
         // Set the attribute value 
-        this.htmlenctype = `"enctype = ""' + methodarg + `"" "'
+        this.htmlenctype = `" enctype=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -126,7 +126,7 @@ class form scalar form::setMethod(| string scalar methodarg) {
     if (methodarg == "get" | methodarg == "post") { 
 
         // Set the attribute value 
-        this.htmlmethod = `"method = ""' + methodarg + `"" "'
+        this.htmlmethod = `" method=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -139,7 +139,7 @@ class form scalar form::setMethod(| string scalar methodarg) {
 class form scalar form::setName(| string scalar methodarg) { 
 
     // Set the attribute name for this class 
-    this.htmlname = `"name = ""' + methodarg + `"" "'
+    this.htmlname = `" name=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -150,7 +150,7 @@ class form scalar form::setName(| string scalar methodarg) {
 class form scalar form::setNovalidate(| string scalar methodarg) { 
 
     // Set the attribute novalidate for this class 
-    this.htmlnovalidate = `"novalidate = ""' + methodarg + `"" "'
+    this.htmlnovalidate = `" novalidate=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -164,7 +164,7 @@ class form scalar form::setTarget(| string scalar methodarg) {
     if (methodarg == "_blank" | methodarg == "_self" | methodarg == "_parent" | methodarg == "_top") { 
 
         // Set the attribute value 
-        this.htmltarget = `"target = ""' + methodarg + `"" "'
+        this.htmltarget = `" target=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -177,7 +177,7 @@ class form scalar form::setTarget(| string scalar methodarg) {
 string scalar form::getOpens() { 
 
     // Returns the opening bracket/tag w/o > character to allow attributes 
-    return(this.opens + " ") 
+    return(this.opens) 
 
 } // End of getter method for opens member of class form
 
@@ -185,7 +185,7 @@ string scalar form::getOpens() {
 string scalar form::getOpene() { 
 
     // Returns the closing character for the opening bracket 
-    return(this.opene + " ") 
+    return(this.opene) 
 
 } // End of getter method for opene member of class form
 
@@ -193,7 +193,7 @@ string scalar form::getOpene() {
 string scalar form::getClose() { 
 
     // Returns the closing bracket/tag
-    return(this.close + " ") 
+    return(this.close) 
 
 } // End of getter method for close member of class form
 
@@ -293,7 +293,7 @@ string scalar form::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
+    return(char((10)) + subinstr(open, " >", ">") + args + close + char((10))) 
 
 } // End of print method for class form 
 

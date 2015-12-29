@@ -63,7 +63,7 @@ class th scalar th::setClassArgs(| string scalar classarguments) {
 class th scalar th::setAbbr(| string scalar methodarg) { 
 
     // Set the attribute abbr for this class 
-    this.htmlabbr = `"abbr = ""' + methodarg + `"" "'
+    this.htmlabbr = `" abbr=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -77,7 +77,7 @@ class th scalar th::setAlign(| string scalar methodarg) {
     if (methodarg == "left" | methodarg == "right" | methodarg == "center" | methodarg == "justify" | methodarg == "char") { 
 
         // Set the attribute value 
-        this.htmlalign = `"align = ""' + methodarg + `"" "'
+        this.htmlalign = `" align=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -90,7 +90,7 @@ class th scalar th::setAlign(| string scalar methodarg) {
 class th scalar th::setAxis(| string scalar methodarg) { 
 
     // Set the attribute axis for this class 
-    this.htmlaxis = `"axis = ""' + methodarg + `"" "'
+    this.htmlaxis = `" axis=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -104,7 +104,7 @@ class th scalar th::setBgcolor(| string scalar methodarg) {
     if (methodarg == "rgb(x,x,x)" | methodarg == "#xxxxxx" | methodarg == "colorname") { 
 
         // Set the attribute value 
-        this.htmlbgcolor = `"bgcolor = ""' + methodarg + `"" "'
+        this.htmlbgcolor = `" bgcolor=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -117,7 +117,7 @@ class th scalar th::setBgcolor(| string scalar methodarg) {
 class th scalar th::setChar(| string scalar methodarg) { 
 
     // Set the attribute char for this class 
-    this.htmlchar = `"char = ""' + methodarg + `"" "'
+    this.htmlchar = `" char=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -128,7 +128,7 @@ class th scalar th::setChar(| string scalar methodarg) {
 class th scalar th::setCharoff(| string scalar methodarg) { 
 
     // Set the attribute charoff for this class 
-    this.htmlcharoff = `"charoff = ""' + methodarg + `"" "'
+    this.htmlcharoff = `" charoff=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -139,7 +139,7 @@ class th scalar th::setCharoff(| string scalar methodarg) {
 class th scalar th::setColspan(| string scalar methodarg) { 
 
     // Set the attribute colspan for this class 
-    this.htmlcolspan = `"colspan = ""' + methodarg + `"" "'
+    this.htmlcolspan = `" colspan=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -150,7 +150,7 @@ class th scalar th::setColspan(| string scalar methodarg) {
 class th scalar th::setHeaders(| string scalar methodarg) { 
 
     // Set the attribute headers for this class 
-    this.htmlheaders = `"headers = ""' + methodarg + `"" "'
+    this.htmlheaders = `" headers=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -164,7 +164,7 @@ class th scalar th::setHeight(| string scalar methodarg) {
     if (methodarg == "pixels" | methodarg == "%") { 
 
         // Set the attribute value 
-        this.htmlheight = `"height = ""' + methodarg + `"" "'
+        this.htmlheight = `" height=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -177,7 +177,7 @@ class th scalar th::setHeight(| string scalar methodarg) {
 class th scalar th::setNowrap(| string scalar methodarg) { 
 
     // Set the attribute nowrap for this class 
-    this.htmlnowrap = `"nowrap = ""' + methodarg + `"" "'
+    this.htmlnowrap = `" nowrap=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -188,7 +188,7 @@ class th scalar th::setNowrap(| string scalar methodarg) {
 class th scalar th::setRowspan(| string scalar methodarg) { 
 
     // Set the attribute rowspan for this class 
-    this.htmlrowspan = `"rowspan = ""' + methodarg + `"" "'
+    this.htmlrowspan = `" rowspan=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -202,7 +202,7 @@ class th scalar th::setScope(| string scalar methodarg) {
     if (methodarg == "col" | methodarg == "colgroup" | methodarg == "row" | methodarg == "rowgroup") { 
 
         // Set the attribute value 
-        this.htmlscope = `"scope = ""' + methodarg + `"" "'
+        this.htmlscope = `" scope=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -218,7 +218,7 @@ class th scalar th::setSorted(| string scalar methodarg) {
     if (methodarg == "reversednumberreversed" | methodarg == "numbernumber" | methodarg == "reversed") { 
 
         // Set the attribute value 
-        this.htmlsorted = `"sorted = ""' + methodarg + `"" "'
+        this.htmlsorted = `" sorted=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -234,7 +234,7 @@ class th scalar th::setValign(| string scalar methodarg) {
     if (methodarg == "top" | methodarg == "middle" | methodarg == "bottom" | methodarg == "baseline") { 
 
         // Set the attribute value 
-        this.htmlvalign = `"valign = ""' + methodarg + `"" "'
+        this.htmlvalign = `" valign=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -250,7 +250,7 @@ class th scalar th::setWidth(| string scalar methodarg) {
     if (methodarg == "pixels" | methodarg == "%") { 
 
         // Set the attribute value 
-        this.htmlwidth = `"width = ""' + methodarg + `"" "'
+        this.htmlwidth = `" width=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -263,7 +263,7 @@ class th scalar th::setWidth(| string scalar methodarg) {
 string scalar th::getOpens() { 
 
     // Returns the opening bracket/tag w/o > character to allow attributes 
-    return(this.opens + " ") 
+    return(this.opens) 
 
 } // End of getter method for opens member of class th
 
@@ -271,7 +271,7 @@ string scalar th::getOpens() {
 string scalar th::getOpene() { 
 
     // Returns the closing character for the opening bracket 
-    return(this.opene + " ") 
+    return(this.opene) 
 
 } // End of getter method for opene member of class th
 
@@ -279,7 +279,7 @@ string scalar th::getOpene() {
 string scalar th::getClose() { 
 
     // Returns the closing bracket/tag
-    return(this.close + " ") 
+    return(this.close) 
 
 } // End of getter method for close member of class th
 
@@ -427,7 +427,7 @@ string scalar th::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
+    return(char((10)) + subinstr(open, " >", ">") + args + close + char((10))) 
 
 } // End of print method for class th 
 

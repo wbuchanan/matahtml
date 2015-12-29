@@ -63,7 +63,7 @@ class output scalar output::setClassArgs(| string scalar classarguments) {
 class output scalar output::setFor(| string scalar methodarg) { 
 
     // Set the attribute for for this class 
-    this.htmlfor = `"for = ""' + methodarg + `"" "'
+    this.htmlfor = `" for=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -74,7 +74,7 @@ class output scalar output::setFor(| string scalar methodarg) {
 class output scalar output::setForm(| string scalar methodarg) { 
 
     // Set the attribute form for this class 
-    this.htmlform = `"form = ""' + methodarg + `"" "'
+    this.htmlform = `" form=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -85,7 +85,7 @@ class output scalar output::setForm(| string scalar methodarg) {
 class output scalar output::setName(| string scalar methodarg) { 
 
     // Set the attribute name for this class 
-    this.htmlname = `"name = ""' + methodarg + `"" "'
+    this.htmlname = `" name=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -96,7 +96,7 @@ class output scalar output::setName(| string scalar methodarg) {
 string scalar output::getOpens() { 
 
     // Returns the opening bracket/tag w/o > character to allow attributes 
-    return(this.opens + " ") 
+    return(this.opens) 
 
 } // End of getter method for opens member of class output
 
@@ -104,7 +104,7 @@ string scalar output::getOpens() {
 string scalar output::getOpene() { 
 
     // Returns the closing character for the opening bracket 
-    return(this.opene + " ") 
+    return(this.opene) 
 
 } // End of getter method for opene member of class output
 
@@ -112,7 +112,7 @@ string scalar output::getOpene() {
 string scalar output::getClose() { 
 
     // Returns the closing bracket/tag
-    return(this.close + " ") 
+    return(this.close) 
 
 } // End of getter method for close member of class output
 
@@ -164,7 +164,7 @@ string scalar output::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
+    return(char((10)) + subinstr(open, " >", ">") + args + close + char((10))) 
 
 } // End of print method for class output 
 

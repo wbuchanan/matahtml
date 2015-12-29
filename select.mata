@@ -63,7 +63,7 @@ class stselect scalar stselect::setClassArgs(| string scalar classarguments) {
 class stselect scalar stselect::setAutofocus(| string scalar methodarg) { 
 
     // Set the attribute autofocus for this class 
-    this.htmlautofocus = `"autofocus = ""' + methodarg + `"" "'
+    this.htmlautofocus = `" autofocus=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -74,7 +74,7 @@ class stselect scalar stselect::setAutofocus(| string scalar methodarg) {
 class stselect scalar stselect::setDisabled(| string scalar methodarg) { 
 
     // Set the attribute disabled for this class 
-    this.htmldisabled = `"disabled = ""' + methodarg + `"" "'
+    this.htmldisabled = `" disabled=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -85,7 +85,7 @@ class stselect scalar stselect::setDisabled(| string scalar methodarg) {
 class stselect scalar stselect::setForm(| string scalar methodarg) { 
 
     // Set the attribute form for this class 
-    this.htmlform = `"form = ""' + methodarg + `"" "'
+    this.htmlform = `" form=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -96,7 +96,7 @@ class stselect scalar stselect::setForm(| string scalar methodarg) {
 class stselect scalar stselect::setMultiple(| string scalar methodarg) { 
 
     // Set the attribute multiple for this class 
-    this.htmlmultiple = `"multiple = ""' + methodarg + `"" "'
+    this.htmlmultiple = `" multiple=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -107,7 +107,7 @@ class stselect scalar stselect::setMultiple(| string scalar methodarg) {
 class stselect scalar stselect::setName(| string scalar methodarg) { 
 
     // Set the attribute name for this class 
-    this.htmlname = `"name = ""' + methodarg + `"" "'
+    this.htmlname = `" name=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -118,7 +118,7 @@ class stselect scalar stselect::setName(| string scalar methodarg) {
 class stselect scalar stselect::setRequired(| string scalar methodarg) { 
 
     // Set the attribute required for this class 
-    this.htmlrequired = `"required = ""' + methodarg + `"" "'
+    this.htmlrequired = `" required=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -129,7 +129,7 @@ class stselect scalar stselect::setRequired(| string scalar methodarg) {
 class stselect scalar stselect::setSize(| string scalar methodarg) { 
 
     // Set the attribute size for this class 
-    this.htmlsize = `"size = ""' + methodarg + `"" "'
+    this.htmlsize = `" size=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -140,7 +140,7 @@ class stselect scalar stselect::setSize(| string scalar methodarg) {
 string scalar stselect::getOpens() { 
 
     // Returns the opening bracket/tag w/o > character to allow attributes 
-    return(this.opens + " ") 
+    return(this.opens) 
 
 } // End of getter method for opens member of class stselect
 
@@ -148,7 +148,7 @@ string scalar stselect::getOpens() {
 string scalar stselect::getOpene() { 
 
     // Returns the closing character for the opening bracket 
-    return(this.opene + " ") 
+    return(this.opene) 
 
 } // End of getter method for opene member of class stselect
 
@@ -156,7 +156,7 @@ string scalar stselect::getOpene() {
 string scalar stselect::getClose() { 
 
     // Returns the closing bracket/tag
-    return(this.close + " ") 
+    return(this.close) 
 
 } // End of getter method for close member of class stselect
 
@@ -240,7 +240,7 @@ string scalar stselect::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
+    return(char((10)) + subinstr(open, " >", ">") + args + close + char((10))) 
 
 } // End of print method for class stselect 
 

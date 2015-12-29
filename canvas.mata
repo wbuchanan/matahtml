@@ -63,7 +63,7 @@ class canvas scalar canvas::setClassArgs(| string scalar classarguments) {
 class canvas scalar canvas::setHeight(| string scalar methodarg) { 
 
     // Set the attribute height for this class 
-    this.htmlheight = `"height = ""' + methodarg + `"" "'
+    this.htmlheight = `" height=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -74,7 +74,7 @@ class canvas scalar canvas::setHeight(| string scalar methodarg) {
 class canvas scalar canvas::setWidth(| string scalar methodarg) { 
 
     // Set the attribute width for this class 
-    this.htmlwidth = `"width = ""' + methodarg + `"" "'
+    this.htmlwidth = `" width=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -85,7 +85,7 @@ class canvas scalar canvas::setWidth(| string scalar methodarg) {
 string scalar canvas::getOpens() { 
 
     // Returns the opening bracket/tag w/o > character to allow attributes 
-    return(this.opens + " ") 
+    return(this.opens) 
 
 } // End of getter method for opens member of class canvas
 
@@ -93,7 +93,7 @@ string scalar canvas::getOpens() {
 string scalar canvas::getOpene() { 
 
     // Returns the closing character for the opening bracket 
-    return(this.opene + " ") 
+    return(this.opene) 
 
 } // End of getter method for opene member of class canvas
 
@@ -101,7 +101,7 @@ string scalar canvas::getOpene() {
 string scalar canvas::getClose() { 
 
     // Returns the closing bracket/tag
-    return(this.close + " ") 
+    return(this.close) 
 
 } // End of getter method for close member of class canvas
 
@@ -145,7 +145,7 @@ string scalar canvas::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
+    return(char((10)) + subinstr(open, " >", ">") + args + close + char((10))) 
 
 } // End of print method for class canvas 
 

@@ -63,7 +63,7 @@ class button scalar button::setClassArgs(| string scalar classarguments) {
 class button scalar button::setAutofocus(| string scalar methodarg) { 
 
     // Set the attribute autofocus for this class 
-    this.htmlautofocus = `"autofocus = ""' + methodarg + `"" "'
+    this.htmlautofocus = `" autofocus=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -74,7 +74,7 @@ class button scalar button::setAutofocus(| string scalar methodarg) {
 class button scalar button::setDisabled(| string scalar methodarg) { 
 
     // Set the attribute disabled for this class 
-    this.htmldisabled = `"disabled = ""' + methodarg + `"" "'
+    this.htmldisabled = `" disabled=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -85,7 +85,7 @@ class button scalar button::setDisabled(| string scalar methodarg) {
 class button scalar button::setForm(| string scalar methodarg) { 
 
     // Set the attribute form for this class 
-    this.htmlform = `"form = ""' + methodarg + `"" "'
+    this.htmlform = `" form=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -96,7 +96,7 @@ class button scalar button::setForm(| string scalar methodarg) {
 class button scalar button::setFormaction(| string scalar methodarg) { 
 
     // Set the attribute formaction for this class 
-    this.htmlformaction = `"formaction = ""' + methodarg + `"" "'
+    this.htmlformaction = `" formaction=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -110,7 +110,7 @@ class button scalar button::setFormenctype(| string scalar methodarg) {
     if (methodarg == "application/x-www-form-urlencoded" | methodarg == "multipart/form-data" | methodarg == "text/plain") { 
 
         // Set the attribute value 
-        this.htmlformenctype = `"formenctype = ""' + methodarg + `"" "'
+        this.htmlformenctype = `" formenctype=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -123,7 +123,7 @@ class button scalar button::setFormenctype(| string scalar methodarg) {
 class button scalar button::setFormmethod(| string scalar methodarg) { 
 
     // Set the attribute formmethod for this class 
-    this.htmlformmethod = `"formmethod = ""' + methodarg + `"" "'
+    this.htmlformmethod = `" formmethod=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -134,7 +134,7 @@ class button scalar button::setFormmethod(| string scalar methodarg) {
 class button scalar button::setFormnovalidate(| string scalar methodarg) { 
 
     // Set the attribute formnovalidate for this class 
-    this.htmlformnovalidate = `"formnovalidate = ""' + methodarg + `"" "'
+    this.htmlformnovalidate = `" formnovalidate=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -148,7 +148,7 @@ class button scalar button::setFormtarget(| string scalar methodarg) {
     if (methodarg == "_blank" | methodarg == "_self" | methodarg == "_parent" | methodarg == "_top" | methodarg == "framename") { 
 
         // Set the attribute value 
-        this.htmlformtarget = `"formtarget = ""' + methodarg + `"" "'
+        this.htmlformtarget = `" formtarget=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -161,7 +161,7 @@ class button scalar button::setFormtarget(| string scalar methodarg) {
 class button scalar button::setName(| string scalar methodarg) { 
 
     // Set the attribute name for this class 
-    this.htmlname = `"name = ""' + methodarg + `"" "'
+    this.htmlname = `" name=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -175,7 +175,7 @@ class button scalar button::setType(| string scalar methodarg) {
     if (methodarg == "button" | methodarg == "reset" | methodarg == "submit") { 
 
         // Set the attribute value 
-        this.htmltype = `"type = ""' + methodarg + `"" "'
+        this.htmltype = `" type=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -188,7 +188,7 @@ class button scalar button::setType(| string scalar methodarg) {
 class button scalar button::setValue(| string scalar methodarg) { 
 
     // Set the attribute value for this class 
-    this.htmlvalue = `"value = ""' + methodarg + `"" "'
+    this.htmlvalue = `" value=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -199,7 +199,7 @@ class button scalar button::setValue(| string scalar methodarg) {
 string scalar button::getOpens() { 
 
     // Returns the opening bracket/tag w/o > character to allow attributes 
-    return(this.opens + " ") 
+    return(this.opens) 
 
 } // End of getter method for opens member of class button
 
@@ -207,7 +207,7 @@ string scalar button::getOpens() {
 string scalar button::getOpene() { 
 
     // Returns the closing character for the opening bracket 
-    return(this.opene + " ") 
+    return(this.opene) 
 
 } // End of getter method for opene member of class button
 
@@ -215,7 +215,7 @@ string scalar button::getOpene() {
 string scalar button::getClose() { 
 
     // Returns the closing bracket/tag
-    return(this.close + " ") 
+    return(this.close) 
 
 } // End of getter method for close member of class button
 
@@ -331,7 +331,7 @@ string scalar button::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
+    return(char((10)) + subinstr(open, " >", ">") + args + close + char((10))) 
 
 } // End of print method for class button 
 

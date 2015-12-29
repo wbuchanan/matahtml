@@ -66,7 +66,7 @@ class tr scalar tr::setAlign(| string scalar methodarg) {
     if (methodarg == "right" | methodarg == "left" | methodarg == "center" | methodarg == "justify" | methodarg == "char") { 
 
         // Set the attribute value 
-        this.htmlalign = `"align = ""' + methodarg + `"" "'
+        this.htmlalign = `" align=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -82,7 +82,7 @@ class tr scalar tr::setBgcolor(| string scalar methodarg) {
     if (methodarg == "rgb(x,x,x)" | methodarg == "#xxxxxx" | methodarg == "colorname") { 
 
         // Set the attribute value 
-        this.htmlbgcolor = `"bgcolor = ""' + methodarg + `"" "'
+        this.htmlbgcolor = `" bgcolor=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -95,7 +95,7 @@ class tr scalar tr::setBgcolor(| string scalar methodarg) {
 class tr scalar tr::setChar(| string scalar methodarg) { 
 
     // Set the attribute char for this class 
-    this.htmlchar = `"char = ""' + methodarg + `"" "'
+    this.htmlchar = `" char=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -106,7 +106,7 @@ class tr scalar tr::setChar(| string scalar methodarg) {
 class tr scalar tr::setCharoff(| string scalar methodarg) { 
 
     // Set the attribute charoff for this class 
-    this.htmlcharoff = `"charoff = ""' + methodarg + `"" "'
+    this.htmlcharoff = `" charoff=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -120,7 +120,7 @@ class tr scalar tr::setValign(| string scalar methodarg) {
     if (methodarg == "top" | methodarg == "middle" | methodarg == "bottom" | methodarg == "baseline") { 
 
         // Set the attribute value 
-        this.htmlvalign = `"valign = ""' + methodarg + `"" "'
+        this.htmlvalign = `" valign=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -133,7 +133,7 @@ class tr scalar tr::setValign(| string scalar methodarg) {
 string scalar tr::getOpens() { 
 
     // Returns the opening bracket/tag w/o > character to allow attributes 
-    return(this.opens + " ") 
+    return(this.opens) 
 
 } // End of getter method for opens member of class tr
 
@@ -141,7 +141,7 @@ string scalar tr::getOpens() {
 string scalar tr::getOpene() { 
 
     // Returns the closing character for the opening bracket 
-    return(this.opene + " ") 
+    return(this.opene) 
 
 } // End of getter method for opene member of class tr
 
@@ -149,7 +149,7 @@ string scalar tr::getOpene() {
 string scalar tr::getClose() { 
 
     // Returns the closing bracket/tag
-    return(this.close + " ") 
+    return(this.close) 
 
 } // End of getter method for close member of class tr
 
@@ -217,7 +217,7 @@ string scalar tr::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
+    return(char((10)) + subinstr(open, " >", ">") + args + close + char((10))) 
 
 } // End of print method for class tr 
 

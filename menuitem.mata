@@ -63,7 +63,7 @@ class menuitem scalar menuitem::setClassArgs(| string scalar classarguments) {
 class menuitem scalar menuitem::setChecked(| string scalar methodarg) { 
 
     // Set the attribute checked for this class 
-    this.htmlchecked = `"checked = ""' + methodarg + `"" "'
+    this.htmlchecked = `" checked=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -74,7 +74,7 @@ class menuitem scalar menuitem::setChecked(| string scalar methodarg) {
 class menuitem scalar menuitem::setCommand(| string scalar methodarg) { 
 
     // Set the attribute command for this class 
-    this.htmlcommand = `"command = ""' + methodarg + `"" "'
+    this.htmlcommand = `" command=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -85,7 +85,7 @@ class menuitem scalar menuitem::setCommand(| string scalar methodarg) {
 class menuitem scalar menuitem::setDefault(| string scalar methodarg) { 
 
     // Set the attribute default for this class 
-    this.htmldefault = `"default = ""' + methodarg + `"" "'
+    this.htmldefault = `" default=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -96,7 +96,7 @@ class menuitem scalar menuitem::setDefault(| string scalar methodarg) {
 class menuitem scalar menuitem::setDisabled(| string scalar methodarg) { 
 
     // Set the attribute disabled for this class 
-    this.htmldisabled = `"disabled = ""' + methodarg + `"" "'
+    this.htmldisabled = `" disabled=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -107,7 +107,7 @@ class menuitem scalar menuitem::setDisabled(| string scalar methodarg) {
 class menuitem scalar menuitem::setIcon(| string scalar methodarg) { 
 
     // Set the attribute icon for this class 
-    this.htmlicon = `"icon = ""' + methodarg + `"" "'
+    this.htmlicon = `" icon=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -118,7 +118,7 @@ class menuitem scalar menuitem::setIcon(| string scalar methodarg) {
 class menuitem scalar menuitem::setLabel(| string scalar methodarg) { 
 
     // Set the attribute label for this class 
-    this.htmllabel = `"label = ""' + methodarg + `"" "'
+    this.htmllabel = `" label=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -129,7 +129,7 @@ class menuitem scalar menuitem::setLabel(| string scalar methodarg) {
 class menuitem scalar menuitem::setRadiogroup(| string scalar methodarg) { 
 
     // Set the attribute radiogroup for this class 
-    this.htmlradiogroup = `"radiogroup = ""' + methodarg + `"" "'
+    this.htmlradiogroup = `" radiogroup=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -143,7 +143,7 @@ class menuitem scalar menuitem::setType(| string scalar methodarg) {
     if (methodarg == "checkbox" | methodarg == "command" | methodarg == "radio") { 
 
         // Set the attribute value 
-        this.htmltype = `"type = ""' + methodarg + `"" "'
+        this.htmltype = `" type=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -156,7 +156,7 @@ class menuitem scalar menuitem::setType(| string scalar methodarg) {
 string scalar menuitem::getOpens() { 
 
     // Returns the opening bracket/tag w/o > character to allow attributes 
-    return(this.opens + " ") 
+    return(this.opens) 
 
 } // End of getter method for opens member of class menuitem
 
@@ -164,7 +164,7 @@ string scalar menuitem::getOpens() {
 string scalar menuitem::getOpene() { 
 
     // Returns the closing character for the opening bracket 
-    return(this.opene + " ") 
+    return(this.opene) 
 
 } // End of getter method for opene member of class menuitem
 
@@ -172,7 +172,7 @@ string scalar menuitem::getOpene() {
 string scalar menuitem::getClose() { 
 
     // Returns the closing bracket/tag
-    return(this.close + " ") 
+    return(this.close) 
 
 } // End of getter method for close member of class menuitem
 
@@ -264,7 +264,7 @@ string scalar menuitem::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
+    return(char((10)) + subinstr(open, " >", ">") + args + close + char((10))) 
 
 } // End of print method for class menuitem 
 

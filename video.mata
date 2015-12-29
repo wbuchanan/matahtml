@@ -63,7 +63,7 @@ class video scalar video::setClassArgs(| string scalar classarguments) {
 class video scalar video::setAutoplay(| string scalar methodarg) { 
 
     // Set the attribute autoplay for this class 
-    this.htmlautoplay = `"autoplay = ""' + methodarg + `"" "'
+    this.htmlautoplay = `" autoplay=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -74,7 +74,7 @@ class video scalar video::setAutoplay(| string scalar methodarg) {
 class video scalar video::setControls(| string scalar methodarg) { 
 
     // Set the attribute controls for this class 
-    this.htmlcontrols = `"controls = ""' + methodarg + `"" "'
+    this.htmlcontrols = `" controls=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -85,7 +85,7 @@ class video scalar video::setControls(| string scalar methodarg) {
 class video scalar video::setHeight(| string scalar methodarg) { 
 
     // Set the attribute height for this class 
-    this.htmlheight = `"height = ""' + methodarg + `"" "'
+    this.htmlheight = `" height=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -96,7 +96,7 @@ class video scalar video::setHeight(| string scalar methodarg) {
 class video scalar video::setLoop(| string scalar methodarg) { 
 
     // Set the attribute loop for this class 
-    this.htmlloop = `"loop = ""' + methodarg + `"" "'
+    this.htmlloop = `" loop=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -107,7 +107,7 @@ class video scalar video::setLoop(| string scalar methodarg) {
 class video scalar video::setMuted(| string scalar methodarg) { 
 
     // Set the attribute muted for this class 
-    this.htmlmuted = `"muted = ""' + methodarg + `"" "'
+    this.htmlmuted = `" muted=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -118,7 +118,7 @@ class video scalar video::setMuted(| string scalar methodarg) {
 class video scalar video::setPoster(| string scalar methodarg) { 
 
     // Set the attribute poster for this class 
-    this.htmlposter = `"poster = ""' + methodarg + `"" "'
+    this.htmlposter = `" poster=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -132,7 +132,7 @@ class video scalar video::setPreload(| string scalar methodarg) {
     if (methodarg == "auto" | methodarg == "metadata" | methodarg == "none") { 
 
         // Set the attribute value 
-        this.htmlpreload = `"preload = ""' + methodarg + `"" "'
+        this.htmlpreload = `" preload=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -145,7 +145,7 @@ class video scalar video::setPreload(| string scalar methodarg) {
 class video scalar video::setSrc(| string scalar methodarg) { 
 
     // Set the attribute src for this class 
-    this.htmlsrc = `"src = ""' + methodarg + `"" "'
+    this.htmlsrc = `" src=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -156,7 +156,7 @@ class video scalar video::setSrc(| string scalar methodarg) {
 class video scalar video::setWidth(| string scalar methodarg) { 
 
     // Set the attribute width for this class 
-    this.htmlwidth = `"width = ""' + methodarg + `"" "'
+    this.htmlwidth = `" width=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -167,7 +167,7 @@ class video scalar video::setWidth(| string scalar methodarg) {
 string scalar video::getOpens() { 
 
     // Returns the opening bracket/tag w/o > character to allow attributes 
-    return(this.opens + " ") 
+    return(this.opens) 
 
 } // End of getter method for opens member of class video
 
@@ -175,7 +175,7 @@ string scalar video::getOpens() {
 string scalar video::getOpene() { 
 
     // Returns the closing character for the opening bracket 
-    return(this.opene + " ") 
+    return(this.opene) 
 
 } // End of getter method for opene member of class video
 
@@ -183,7 +183,7 @@ string scalar video::getOpene() {
 string scalar video::getClose() { 
 
     // Returns the closing bracket/tag
-    return(this.close + " ") 
+    return(this.close) 
 
 } // End of getter method for close member of class video
 
@@ -283,7 +283,7 @@ string scalar video::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
+    return(char((10)) + subinstr(open, " >", ">") + args + close + char((10))) 
 
 } // End of print method for class video 
 

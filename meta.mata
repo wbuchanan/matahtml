@@ -63,7 +63,7 @@ class meta scalar meta::setClassArgs(| string scalar classarguments) {
 class meta scalar meta::setCharset(| string scalar methodarg) { 
 
     // Set the attribute charset for this class 
-    this.htmlcharset = `"charset = ""' + methodarg + `"" "'
+    this.htmlcharset = `" charset=""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -74,7 +74,7 @@ class meta scalar meta::setCharset(| string scalar methodarg) {
 class meta scalar meta::setContent(| string scalar methodarg) { 
 
     // Set the attribute content for this class 
-    this.htmlcontent = `"content = ""' + methodarg + `"" "'
+    this.htmlcontent = `" content=""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -88,7 +88,7 @@ class meta scalar meta::setHttp_Equiv(| string scalar methodarg) {
     if (methodarg == "content-type" | methodarg == "default-style" | methodarg == "refresh") { 
 
         // Set the attribute value 
-        this.htmlhttp_equiv = `"http-equiv = ""' + methodarg + `"" "'
+        this.htmlhttp_equiv = `" http-equiv=""' + methodarg + `"" "'
 
     } // End IF Block for validated argument value 
 
@@ -100,13 +100,8 @@ class meta scalar meta::setHttp_Equiv(| string scalar methodarg) {
 // Specifies a name for the metadata 
 class meta scalar meta::setName(| string scalar methodarg) { 
 
-    // Validate argument
-    if (methodarg == "application-name" | methodarg == "author" | methodarg == "description" | methodarg == "generator" | methodarg == "keywords") { 
-
-        // Set the attribute value 
-        this.htmlname = `"name = ""' + methodarg + `"" "'
-
-    } // End IF Block for validated argument value 
+	// Set the attribute value 
+	this.htmlname = `" name=""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -117,7 +112,7 @@ class meta scalar meta::setName(| string scalar methodarg) {
 class meta scalar meta::setScheme(| string scalar methodarg) { 
 
     // Set the attribute scheme for this class 
-    this.htmlscheme = `"scheme = ""' + methodarg + `"" "'
+    this.htmlscheme = `" scheme=""' + methodarg + `"" "'
 
     // Return a copy of the object 
     return(this)
@@ -128,7 +123,7 @@ class meta scalar meta::setScheme(| string scalar methodarg) {
 string scalar meta::getOpens() { 
 
     // Returns the opening bracket/tag w/o > character to allow attributes 
-    return(this.opens + " ") 
+    return(this.opens) 
 
 } // End of getter method for opens member of class meta
 
@@ -136,7 +131,7 @@ string scalar meta::getOpens() {
 string scalar meta::getOpene() { 
 
     // Returns the closing character for the opening bracket 
-    return(this.opene + " ") 
+    return(this.opene) 
 
 } // End of getter method for opene member of class meta
 
@@ -144,7 +139,7 @@ string scalar meta::getOpene() {
 string scalar meta::getClose() { 
 
     // Returns the closing bracket/tag
-    return(this.close + " ") 
+    return(this.close) 
 
 } // End of getter method for close member of class meta
 
@@ -200,19 +195,13 @@ string scalar meta::getScheme() {
 string scalar meta::print() { 
 
     // Create local variables to piece together return string 
-    string scalar open, args, close 
+    string scalar open 
 
     // Create opening string 
     open = getOpens() + getCharset() + getContent() + getHttp_Equiv() + getName() + getScheme() + globalAttrs() + getOpene()
 
-    // Get class arguments 
-    args = getClassArgs() 
-
-    // Get closing tag 
-    close = getClose() 
-
     // Return the complete HTML string 
-    return(char((13)) + open + char((13))) 
+    return(char((10)) + subinstr(open, " >", ">") + char((10))) 
 
 } // End of print method for class meta 
 

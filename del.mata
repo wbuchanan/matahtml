@@ -63,7 +63,7 @@ class del scalar del::setClassArgs(| string scalar classarguments) {
 class del scalar del::setCite(| string scalar methodarg) { 
 
     // Set the attribute cite for this class 
-    this.htmlcite = `"cite = ""' + methodarg + `"" "'
+    this.htmlcite = `" cite=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -74,7 +74,7 @@ class del scalar del::setCite(| string scalar methodarg) {
 class del scalar del::setDatetime(| string scalar methodarg) { 
 
     // Set the attribute datetime for this class 
-    this.htmldatetime = `"datetime = ""' + methodarg + `"" "'
+    this.htmldatetime = `" datetime=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -85,7 +85,7 @@ class del scalar del::setDatetime(| string scalar methodarg) {
 string scalar del::getOpens() { 
 
     // Returns the opening bracket/tag w/o > character to allow attributes 
-    return(this.opens + " ") 
+    return(this.opens) 
 
 } // End of getter method for opens member of class del
 
@@ -93,7 +93,7 @@ string scalar del::getOpens() {
 string scalar del::getOpene() { 
 
     // Returns the closing character for the opening bracket 
-    return(this.opene + " ") 
+    return(this.opene) 
 
 } // End of getter method for opene member of class del
 
@@ -101,7 +101,7 @@ string scalar del::getOpene() {
 string scalar del::getClose() { 
 
     // Returns the closing bracket/tag
-    return(this.close + " ") 
+    return(this.close) 
 
 } // End of getter method for close member of class del
 
@@ -145,7 +145,7 @@ string scalar del::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
+    return(char((10)) + subinstr(open, " >", ">") + args + close + char((10))) 
 
 } // End of print method for class del 
 

@@ -63,7 +63,7 @@ class time scalar time::setClassArgs(| string scalar classarguments) {
 class time scalar time::setDatetime(| string scalar methodarg) { 
 
     // Set the attribute datetime for this class 
-    this.htmldatetime = `"datetime = ""' + methodarg + `"" "'
+    this.htmldatetime = `" datetime=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -74,7 +74,7 @@ class time scalar time::setDatetime(| string scalar methodarg) {
 string scalar time::getOpens() { 
 
     // Returns the opening bracket/tag w/o > character to allow attributes 
-    return(this.opens + " ") 
+    return(this.opens) 
 
 } // End of getter method for opens member of class time
 
@@ -82,7 +82,7 @@ string scalar time::getOpens() {
 string scalar time::getOpene() { 
 
     // Returns the closing character for the opening bracket 
-    return(this.opene + " ") 
+    return(this.opene) 
 
 } // End of getter method for opene member of class time
 
@@ -90,7 +90,7 @@ string scalar time::getOpene() {
 string scalar time::getClose() { 
 
     // Returns the closing bracket/tag
-    return(this.close + " ") 
+    return(this.close) 
 
 } // End of getter method for close member of class time
 
@@ -126,7 +126,7 @@ string scalar time::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
+    return(char((10)) + subinstr(open, " >", ">") + args + close + char((10))) 
 
 } // End of print method for class time 
 

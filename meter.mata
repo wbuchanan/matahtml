@@ -63,7 +63,7 @@ class meter scalar meter::setClassArgs(| string scalar classarguments) {
 class meter scalar meter::setForm(| string scalar methodarg) { 
 
     // Set the attribute form for this class 
-    this.htmlform = `"form = ""' + methodarg + `"" "'
+    this.htmlform = `" form=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -74,7 +74,7 @@ class meter scalar meter::setForm(| string scalar methodarg) {
 class meter scalar meter::setHigh(| string scalar methodarg) { 
 
     // Set the attribute high for this class 
-    this.htmlhigh = `"high = ""' + methodarg + `"" "'
+    this.htmlhigh = `" high=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -85,7 +85,7 @@ class meter scalar meter::setHigh(| string scalar methodarg) {
 class meter scalar meter::setLow(| string scalar methodarg) { 
 
     // Set the attribute low for this class 
-    this.htmllow = `"low = ""' + methodarg + `"" "'
+    this.htmllow = `" low=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -96,7 +96,7 @@ class meter scalar meter::setLow(| string scalar methodarg) {
 class meter scalar meter::setMax(| string scalar methodarg) { 
 
     // Set the attribute max for this class 
-    this.htmlmax = `"max = ""' + methodarg + `"" "'
+    this.htmlmax = `" max=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -107,7 +107,7 @@ class meter scalar meter::setMax(| string scalar methodarg) {
 class meter scalar meter::setMin(| string scalar methodarg) { 
 
     // Set the attribute min for this class 
-    this.htmlmin = `"min = ""' + methodarg + `"" "'
+    this.htmlmin = `" min=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -118,7 +118,7 @@ class meter scalar meter::setMin(| string scalar methodarg) {
 class meter scalar meter::setOptimum(| string scalar methodarg) { 
 
     // Set the attribute optimum for this class 
-    this.htmloptimum = `"optimum = ""' + methodarg + `"" "'
+    this.htmloptimum = `" optimum=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -129,7 +129,7 @@ class meter scalar meter::setOptimum(| string scalar methodarg) {
 class meter scalar meter::setValue(| string scalar methodarg) { 
 
     // Set the attribute value for this class 
-    this.htmlvalue = `"value = ""' + methodarg + `"" "'
+    this.htmlvalue = `" value=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -140,7 +140,7 @@ class meter scalar meter::setValue(| string scalar methodarg) {
 string scalar meter::getOpens() { 
 
     // Returns the opening bracket/tag w/o > character to allow attributes 
-    return(this.opens + " ") 
+    return(this.opens) 
 
 } // End of getter method for opens member of class meter
 
@@ -148,7 +148,7 @@ string scalar meter::getOpens() {
 string scalar meter::getOpene() { 
 
     // Returns the closing character for the opening bracket 
-    return(this.opene + " ") 
+    return(this.opene) 
 
 } // End of getter method for opene member of class meter
 
@@ -156,7 +156,7 @@ string scalar meter::getOpene() {
 string scalar meter::getClose() { 
 
     // Returns the closing bracket/tag
-    return(this.close + " ") 
+    return(this.close) 
 
 } // End of getter method for close member of class meter
 
@@ -240,7 +240,7 @@ string scalar meter::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
+    return(char((10)) + subinstr(open, " >", ">") + args + close + char((10))) 
 
 } // End of print method for class meter 
 

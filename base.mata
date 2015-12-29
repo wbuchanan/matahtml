@@ -63,7 +63,7 @@ class base scalar base::setClassArgs(| string scalar classarguments) {
 class base scalar base::setHref(| string scalar methodarg) { 
 
     // Set the attribute href for this class 
-    this.htmlhref = `"href = ""' + methodarg + `"" "'
+    this.htmlhref = `" href=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -77,7 +77,7 @@ class base scalar base::setTarget(| string scalar methodarg) {
     if (methodarg == "_blank" | methodarg == "_parent" | methodarg == "_self" | methodarg == "_top" | methodarg == "framename") { 
 
         // Set the attribute value 
-        this.htmltarget = `"target = ""' + methodarg + `"" "'
+        this.htmltarget = `" target=""' + methodarg + `"""'
 
     } // End IF Block for validated argument value 
 
@@ -90,7 +90,7 @@ class base scalar base::setTarget(| string scalar methodarg) {
 string scalar base::getOpens() { 
 
     // Returns the opening bracket/tag w/o > character to allow attributes 
-    return(this.opens + " ") 
+    return(this.opens) 
 
 } // End of getter method for opens member of class base
 
@@ -98,7 +98,7 @@ string scalar base::getOpens() {
 string scalar base::getOpene() { 
 
     // Returns the closing character for the opening bracket 
-    return(this.opene + " ") 
+    return(this.opene) 
 
 } // End of getter method for opene member of class base
 
@@ -106,7 +106,7 @@ string scalar base::getOpene() {
 string scalar base::getClose() { 
 
     // Returns the closing bracket/tag
-    return(this.close + " ") 
+    return(this.close) 
 
 } // End of getter method for close member of class base
 
@@ -150,7 +150,7 @@ string scalar base::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(char((13)) + open + char((13, 9)) + args + char((13)) + close + char((13))) 
+    return(char((10)) + subinstr(open, " >", ">") + args + close + char((10))) 
 
 } // End of print method for class base 
 
