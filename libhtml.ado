@@ -8,7 +8,7 @@ prog def libhtml
 	version 13.1 
 	
 	// Syntax definition for the program
-	syntax [, REPlace LIBrary MOSave dir(passthru) size(passthru) complete ]
+	syntax [, REPlace LIBrary MOSave dir(passthru) size(passthru) complete noPATH ]
 
 	// Mata object names in the library
 	loc mataobs htmlglobal() a() abbr() address() area() article() aside() 	 ///   
@@ -27,6 +27,8 @@ prog def libhtml
 
 	// If no size argument is passed, specify a higher memory default
 	if `"`size'"' == "" loc size size(2048) 
+	
+	if `"`path'"' != "nopath" loc location `c(sysdir_plus)'h/
 	
 	// If replace option is specified drop the objects/methods from memory
 	if `"`replace'"' != "" { 
@@ -56,8 +58,16 @@ prog def libhtml
 		
 		} // End IF Block for classes with modified names
 		
+		// Check for class that includes html in the name
+		else if inlist(`"`v'"', "htmlglobal()", "htmlstatic()", "html()") == 1 {
+		
+			// Remove html from the file name reference
+			loc v `: subinstr loc v "html" ""'
+			
+		} // End ELSE IF Block for classes that include html in the file/class name	
+		
 		// Run the do file that defines the mata class
-		qui: run `: subinstr loc v `"()"' "", all'.mata
+		qui: run `"`location'html`: subinstr loc v `"()"' "", all'.mata"'
 		
 	} // End Loop over mata classes/objects
 	
