@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>libhtml</title>
+    <description></description>
+    <link>https://wbuchanan.github.io/matahtml/</link>
+    <atom:link href="https://wbuchanan.github.io/matahtml/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Thu, 31 Dec 2015 07:27:10 -0600</pubDate>
+    <lastBuildDate>Thu, 31 Dec 2015 07:27:10 -0600</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+    
+      <item>
+        <title>LIBHTML</title>
+        <description>&lt;p&gt;The &lt;em&gt;libhtml&lt;/em&gt; package for Stata now has its own dedicated project page.  This will also be the location where you can download/install the latest version of the package using:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;net inst libhtml, from(&quot;http://wbuchanan.github.io/matahtml&quot;) replace
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Thu, 31 Dec 2015 01:20:00 -0600</pubDate>
+        <link>https://wbuchanan.github.io/matahtml/news/2015/12/31/libhtml.html</link>
+        <guid isPermaLink="true">https://wbuchanan.github.io/matahtml/news/2015/12/31/libhtml.html</guid>
+        
+        
+        <category>news</category>
+        
+      </item>
+    
+  </channel>
+</rss>

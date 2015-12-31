@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "LIBHTML"
+date:   2015-12-31 07:20:00
+categories: news
+---
+
+The *libhtml* package for Stata now has its own dedicated project page.  This will also be the location where you can download/install the latest version of the package using:
+
+```   
+net inst libhtml, from("http://wbuchanan.github.io/matahtml") replace
+```   
+
