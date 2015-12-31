@@ -1,14 +1,33 @@
+********************************************************************************
+* Description of the Program -												   *
+* Program to automate compilation of libhtml Mata classes.					   *
+*                                                                              *
+* System Requirements -														   *
+*     none                                                                     *
+*                                                                              *
+* Lines -                                                                      *
+*     136                                                                      *
+*                                                                              *
+********************************************************************************
+
+*! libhtml
+*! v 0.0.1
+*! 31dec2015
+
 // Program used to compile mata library 
 cap prog drop libhtml 
 
 // Define the program to build the Mata library
-prog def libhtml 
+prog def libhtml, rclass
 
 	// Set the version underwhich to interpret the code
-	version 13.1 
+	version 12 
 	
 	// Syntax definition for the program
-	syntax [, REPlace LIBrary MOSave dir(passthru) size(passthru) complete noPATH ]
+	syntax [, REPlace LIBrary MOSave dir(passthru) size(passthru) Complete noPATH ]
+	
+	// Clear previously returned values
+	ret clear
 
 	// Mata object names in the library
 	loc mataobs htmlglobal() a() abbr() address() area() article() aside() 	 ///   
@@ -28,6 +47,8 @@ prog def libhtml
 	// If no size argument is passed, specify a higher memory default
 	if `"`size'"' == "" loc size size(2048) 
 	
+	// Creates a local macro with installation location of Mata classes for non-
+	// development work/testing/usage
 	if `"`path'"' != "nopath" loc location `c(sysdir_plus)'h/
 	
 	// If replace option is specified drop the objects/methods from memory
@@ -78,7 +99,7 @@ prog def libhtml
 		foreach v of loc mataobs {
 
 			// Save compiled object/method definitions in .mo files
-			mata: mata mosave `v', `dir' `complete' `replace'
+			qui: mata: mata mosave `v', `dir' `complete' `replace'
 			
 		} // End Loop over objects to save
 		
@@ -88,13 +109,13 @@ prog def libhtml
 	if `"`library'"' != "" {
 	
 		// Create the mata library
-		mata: mata mlib create libhtml, `replace' `dir' `size'    
+		qui: mata: mata mlib create libhtml, `replace' `dir' `size'    
 
 		// Loop over objects
 		foreach v of loc mataobs {
 		
 			// Add the classes/objects to the mata library
-			mata: mata mlib add libhtml `v', `dir' `complete'  
+			qui: mata: mata mlib add libhtml `v', `dir' `complete'  
 	
 		} // End Loop to construct Mata library file
 		
@@ -102,9 +123,15 @@ prog def libhtml
 		qui: mata: mata mlib index
 	
 	} // End IF Block to create Mata library
-
+	
+	// Return object data
+	foreach v of loc mataobs {
+	
+		// Return the class name
+		ret loc `: subinstr loc v `"()"' "", all'constructor `"`v'"'
+		
+	} // End of Loop to return constructors 
+	
 // End of Stata program definition	
 end 
-
-
 
