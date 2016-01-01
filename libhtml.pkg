@@ -13,7 +13,7 @@ d KW: data visualization
 d
 d Requires: Stata version 12
 d
-d Distribution-Date: 20151231
+d Distribution-Date: 20160101
 d
 d Author: Billy Buchanan
 d	  Data Scientist
@@ -22,122 +22,6 @@ d	  Minneapolis Public Schools
 d
 d Support: email William [dot] Buchanan {at} mpls [dot] k12 [dot] mn [dot] us
 d
-f html.mata
-f htmla.mata
-f htmlabbr.mata
-f htmladdress.mata
-f htmlarea.mata
-f htmlarticle.mata
-f htmlaside.mata
-f htmlaudio.mata
-f htmlb.mata
-f htmlbase.mata
-f htmlbdi.mata
-f htmlbdo.mata
-f htmlblockquote.mata
-f htmlbody.mata
-f htmlbr.mata
-f htmlbutton.mata
-f htmlcanvas.mata
-f htmlcaption.mata
-f htmlcite.mata
-f htmlcode.mata
-f htmlcol.mata
-f htmlcolgroup.mata
-f htmlcolors.mata
-f htmlcomment.mata
-f htmlcountry.mata
-f htmldatalist.mata
-f htmldd.mata
-f htmldel.mata
-f htmldetails.mata
-f htmldfn.mata
-f htmldialog.mata
-f htmldiv.mata
-f htmldl.mata
-f htmldoctype.mata
-f htmldt.mata
-f htmlem.mata
-f htmlembed.mata
-f htmlfieldset.mata
-f htmlfigcaption.mata
-f htmlfigure.mata
-f htmlfooter.mata
-f htmlform.mata
-f htmlglobal.mata
-f htmlh1.mata
-f htmlh2.mata
-f htmlh3.mata
-f htmlh4.mata
-f htmlh5.mata
-f htmlh6.mata
-f htmlhead.mata
-f htmlheader.mata
-f htmlhr.mata
-f htmli.mata
-f htmliframe.mata
-f htmlimg.mata
-f htmlinput.mata
-f htmlins.mata
-f htmlkbd.mata
-f htmlkeygen.mata
-f htmllabel.mata
-f htmllanguage.mata
-f htmllegend.mata
-f htmlli.mata
-f htmllink.mata
-f htmlmain.mata
-f htmlmap.mata
-f htmlmark.mata
-f htmlmenu.mata
-f htmlmenuitem.mata
-f htmlmeta.mata
-f htmlmeter.mata
-f htmlnav.mata
-f htmlnoscript.mata
-f htmlobject.mata
-f htmlol.mata
-f htmloptgroup.mata
-f htmloption.mata
-f htmloutput.mata
-f htmlp.mata
-f htmlparam.mata
-f htmlpre.mata
-f htmlprogress.mata
-f htmlq.mata
-f htmlrp.mata
-f htmlrt.mata
-f htmlruby.mata
-f htmls.mata
-f htmlsamp.mata
-f htmlscript.mata
-f htmlsection.mata
-f htmlselect.mata
-f htmlsmall.mata
-f htmlsource.mata
-f htmlspan.mata
-f htmlstatic.mata
-f htmlstrong.mata
-f htmlstyle.mata
-f htmlsub.mata
-f htmlsummary.mata
-f htmlsup.mata
-f htmltable.mata
-f htmltbody.mata
-f htmltd.mata
-f htmltextarea.mata
-f htmltfoot.mata
-f htmlth.mata
-f htmlthead.mata
-f htmltime.mata
-f htmltitle.mata
-f htmltr.mata
-f htmltrack.mata
-f htmlu.mata
-f htmlul.mata
-f htmlvar.mata
-f htmlvideo.mata
-f htmlwbr.mata
 f libhtml.ado
 f libhtml.sthlp
 
