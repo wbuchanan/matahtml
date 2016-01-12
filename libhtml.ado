@@ -6,13 +6,13 @@
 *     none                                                                     *
 *                                                                              *
 * Lines -                                                                      *
-*     146                                                                      *
+*     158                                                                      *
 *                                                                              *
 ********************************************************************************
 
 *! libhtml
-*! v 0.0.2
-*! 01jan2016
+*! v 0.0.3
+*! 12JAN2016
 
 // Program used to compile mata library 
 cap prog drop libhtml 
@@ -25,7 +25,7 @@ prog def libhtml, rclass
 	
 	// Syntax definition for the program
 	syntax [, src(string asis) REPlace LIBrary MOSave dir(passthru) 		 ///   
-	size(passthru) Complete noPATH ]
+	size(passthru) Complete noPATH noDL ]
 	
 	// Clear previously returned values
 	ret clear
@@ -51,26 +51,21 @@ prog def libhtml, rclass
 	// Creates a local macro with installation location of Mata classes for non-
 	// development work/testing/usage
 	if `"`path'"' != "nopath" loc location `src'
+	else loc location `c(pwd)'/
 	
 	// If replace option is specified drop the objects/methods from memory
 	if `"`replace'"' != "" { 
 	
 		// Loop over the classes in the local above
-		foreach v of loc mataobs {
+		forv v = 2/`: word count `mataobs'' {
 		
 			// Drop the object/class from memory
-			cap: mata: mata drop `v'
-			
-			// Drop if the class/function exists
-			if _rc == 0 mata:mata drop `v'
-			
-			// Erase the file if it exists
-			cap: findfile `v'.mata, path(`"`src'"')
-
-			// If file exists erase it first
-			if _rc == 0 qui: erase `"`src'html`v'.mata"'
+			cap: mata: mata drop `: word `v' of `mataobs''()
 			
 		} // End Loop over the objects/classes
+
+		// Drops htmlglobal last since all other classes inherit from it
+		cap: mata: mata drop htmlglobal()
 		
 	} // End IF Block for replace option
 	
@@ -94,9 +89,25 @@ prog def libhtml, rclass
 			
 		} // End ELSE IF Block for classes that include html in the file/class name	
 		
-		// Download source files to user named directory
-		qui: copy `"http://wbuchanan.github.io/matahtml/html`v'.mata"' ///   
-		`"`src'html`v'.mata"'
+		// Test no download option
+		if `"`dl'"' != "nodl" {
+
+			// Check replace option to erase the file prior to downloading
+			if `"`replace'"' != "" {
+			
+				// Erase the file if it exists
+				cap: findfile `v'.mata, path(`"`src'"')
+
+				// If file exists erase it first
+				if _rc == 0 qui: erase `"`src'html`v'.mata"'
+			
+			} // End IF Block to replace the source files 
+				
+			// Download source files to user named directory
+			qui: copy `"http://wbuchanan.github.io/matahtml/html`v'.mata"'	 ///   
+			`"`src'html`v'.mata"'
+
+		} // End IF Block for no download option
 		
 		// Run the do file that defines the mata class
 		qui: run `"`location'html`v'.mata"'
