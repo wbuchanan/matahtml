@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>LIBHTML</title>
+    <title>Critical Updates</title>
     <meta name="description" content="">
 
     <link rel="stylesheet" href="/matahtml/css/main.css">
-    <link rel="canonical" href="https://wbuchanan.github.io/matahtml/news/2015/12/31/libhtml.html">
+    <link rel="canonical" href="https://wbuchanan.github.io/matahtml/news/2016/05/15/important-update.html">
 </head>
 
 
@@ -56,12 +56,12 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">LIBHTML</h1>
-    <p class="post-meta">Dec 31, 2015</p>
+    <h1 class="post-title">Critical Updates</h1>
+    <p class="post-meta">May 15, 2016</p>
   </header>
 
   <article class="post-content">
-    <p>The <em>libhtml</em> package for Stata now has its own dedicated project page.  This will also be the location where you can download/install the latest version of the package using:</p>
+    <p>I recently found a nasty bug in the <code>htmlglobal</code> class from which all other classes in libhtml inherit.  The bug caused arguments passed to methods from <code>htmlglobal</code> to be handled inconsistently with the rest of the library (e.g., no space before an attribute name, incorrect handling of arguments passed to the attributes with regards to quotation marks, etc…).  The issue seems to be resolved now and would not necessarily have affected users unless they were calling methods defined in <code>htmlglobal</code>.  An update for the SSC archives will be prepped soon, but until then you can download/install an updated copy using the code below:</p>
 
 <pre><code>net inst libhtml, from("http://wbuchanan.github.io/matahtml") replace
 </code></pre>

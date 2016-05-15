@@ -30,7 +30,7 @@ class style extends htmlglobal {
     class        style     scalar  setClassArgs(), setMedia(), setScoped(), setType()
 
     // Getter methods 
-    string               scalar          getOpens(), getOpene(), getClose(), print(), getClassArgs(), getMedia(), getScoped(), getType()
+    string               scalar getOpens(), getOpene(), getClose(), print(), getClassArgs(), getMedia(), getScoped(), getType()
 
 } // End of class declaration
 
@@ -51,11 +51,45 @@ void style::new() {
 // Setter method for class arguments (appear between HTML tags) 
 class style scalar style::setClassArgs(| string scalar classarguments) { 
 
-    // Defines arguments that appear between HTML tags 
-    this.classargs = classarguments 
+	// Declar member variable 
+	real scalar fh
+	
+	// Declare members to store the overall CSS and individual lines
+	string scalar css, line
+	
+	// Check whether a file exists with the value passed to the function
+	if (fileexists(classarguments) == 1) {
+	
+		// Create a file handle and open the file for reading
+		fh = fopen(classarguments, "r")
+		
+		// Read lines from the file w/o removing new line characters as long 
+		// as the reading does not return an error code
+		while((line = fgetnl(fh)) != J(0, 0, "")) {
+		
+			// Append each line to the string scalar css  
+			css = css + line
+			
+		} // End While loop for reading a CSS file from disk
+		
+		// Close the file connection
+		fclose(fh)
+		
+		// Set the classargs member of the object
+		this.classargs = css
+		
+	} // End IF Block for argument as file
 
-    // Return a copy of the object 
-    return(this)
+	// If the argument is not a file
+	else {
+	
+		// Defines arguments that appear between HTML tags 
+		this.classargs = classarguments 
+
+	} // End ELSE Block for string argument
+	
+	// Return a copy of the object 
+	return(this)
 
 } // End of setter method for class arguments
 
@@ -164,7 +198,7 @@ string scalar style::print() {
     close = getClose() 
 
     // Return the complete HTML string 
-    return(char((10)) + subinstr(open, " >", ">") + args + close + char((10))) 
+    return(subinstr(open, " >", ">") + char((10)) + args + char((10)) + close) 
 
 } // End of print method for class style 
 

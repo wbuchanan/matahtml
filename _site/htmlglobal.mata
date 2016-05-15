@@ -107,7 +107,7 @@ class htmlglobal {
 class htmlglobal scalar htmlglobal::setAccesskey(| string scalar methodarg) { 
 
     // Set the attribute accesskey for this class 
-    this.htmlaccesskey = `"accesskey = ""' + methodarg + "" 
+    this.htmlaccesskey = `" accesskey=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -118,7 +118,7 @@ class htmlglobal scalar htmlglobal::setAccesskey(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setClass(| string scalar methodarg) { 
 
     // Set the attribute class for this class 
-    this.htmlclass = `"class = ""' + methodarg + "" 
+    this.htmlclass = `" class=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -132,7 +132,7 @@ class htmlglobal scalar htmlglobal::setContenteditable(| string scalar methodarg
     if (methodarg == "true" | methodarg == "false") { 
 
         // Set the attribute value 
-        this.htmlcontenteditable = `"contenteditable = ""' + methodarg + "" 
+        this.htmlcontenteditable = `" contenteditable=""' + methodarg + `"""' 
 
     } // End IF Block for validated argument value 
 
@@ -145,7 +145,7 @@ class htmlglobal scalar htmlglobal::setContenteditable(| string scalar methodarg
 class htmlglobal scalar htmlglobal::setContextmenu(| string scalar methodarg) { 
 
     // Set the attribute contextmenu for this class 
-    this.htmlcontextmenu = `"contextmenu = ""' + methodarg + "" 
+    this.htmlcontextmenu = `" contextmenu=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -156,7 +156,7 @@ class htmlglobal scalar htmlglobal::setContextmenu(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setData(| string scalar methodarg) { 
 
     // Set the attribute data for this class 
-    this.htmldata = `"data = ""' + methodarg + "" 
+    this.htmldata = `" data=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -170,7 +170,7 @@ class htmlglobal scalar htmlglobal::setDir(| string scalar methodarg) {
     if (methodarg == "ltr" | methodarg == "rtl" | methodarg == "auto") { 
 
         // Set the attribute value 
-        this.htmldir = `"dir = ""' + methodarg + "" 
+        this.htmldir = `" dir=""' + methodarg + `"""' 
 
     } // End IF Block for validated argument value 
 
@@ -186,7 +186,7 @@ class htmlglobal scalar htmlglobal::setDraggable(| string scalar methodarg) {
     if (methodarg == "true" | methodarg == "false" | methodarg == "auto") { 
 
         // Set the attribute value 
-        this.htmldraggable = `"draggable = ""' + methodarg + "" 
+        this.htmldraggable = `" draggable=""' + methodarg + `"""' 
 
     } // End IF Block for validated argument value 
 
@@ -202,7 +202,7 @@ class htmlglobal scalar htmlglobal::setDropzone(| string scalar methodarg) {
     if (methodarg == "copy" | methodarg == "move" | methodarg == "link") { 
 
         // Set the attribute value 
-        this.htmldropzone = `"dropzone = ""' + methodarg + "" 
+        this.htmldropzone = `" dropzone=""' + methodarg + `"""' 
 
     } // End IF Block for validated argument value 
 
@@ -215,7 +215,7 @@ class htmlglobal scalar htmlglobal::setDropzone(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setHidden(| string scalar methodarg) { 
 
     // Set the attribute hidden for this class 
-    this.htmlhidden = `"hidden = ""' + methodarg + "" 
+    this.htmlhidden = `" hidden=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -226,7 +226,7 @@ class htmlglobal scalar htmlglobal::setHidden(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setId(| string scalar methodarg) { 
 
     // Set the attribute id for this class 
-    this.htmlid = `"id = ""' + methodarg + "" 
+    this.htmlid = `" id=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -237,7 +237,7 @@ class htmlglobal scalar htmlglobal::setId(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setLang(| string scalar methodarg) { 
 
     // Set the attribute lang for this class 
-    this.htmllang = `"lang = ""' + methodarg + "" 
+    this.htmllang = `" lang=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -248,7 +248,7 @@ class htmlglobal scalar htmlglobal::setLang(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnabort(| string scalar methodarg) { 
 
     // Set the attribute onabort for this class 
-    this.htmlonabort = `"onabort = ""' + methodarg + "" 
+    this.htmlonabort = `" onabort=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -259,7 +259,7 @@ class htmlglobal scalar htmlglobal::setOnabort(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnafterprint(| string scalar methodarg) { 
 
     // Set the attribute onafterprint for this class 
-    this.htmlonafterprint = `"onafterprint = ""' + methodarg + "" 
+    this.htmlonafterprint = `" onafterprint=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -270,7 +270,7 @@ class htmlglobal scalar htmlglobal::setOnafterprint(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnbeforeprint(| string scalar methodarg) { 
 
     // Set the attribute onbeforeprint for this class 
-    this.htmlonbeforeprint = `"onbeforeprint = ""' + methodarg + "" 
+    this.htmlonbeforeprint = `" onbeforeprint=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -281,7 +281,7 @@ class htmlglobal scalar htmlglobal::setOnbeforeprint(| string scalar methodarg) 
 class htmlglobal scalar htmlglobal::setOnbeforeunload(| string scalar methodarg) { 
 
     // Set the attribute onbeforeunload for this class 
-    this.htmlonbeforeunload = `"onbeforeunload = ""' + methodarg + "" 
+    this.htmlonbeforeunload = `" onbeforeunload=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -292,7 +292,7 @@ class htmlglobal scalar htmlglobal::setOnbeforeunload(| string scalar methodarg)
 class htmlglobal scalar htmlglobal::setOnblur(| string scalar methodarg) { 
 
     // Set the attribute onblur for this class 
-    this.htmlonblur = `"onblur = ""' + methodarg + "" 
+    this.htmlonblur = `" onblur=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -303,7 +303,7 @@ class htmlglobal scalar htmlglobal::setOnblur(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOncanplay(| string scalar methodarg) { 
 
     // Set the attribute oncanplay for this class 
-    this.htmloncanplay = `"oncanplay = ""' + methodarg + "" 
+    this.htmloncanplay = `" oncanplay=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -314,7 +314,7 @@ class htmlglobal scalar htmlglobal::setOncanplay(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOncanplaythrough(| string scalar methodarg) { 
 
     // Set the attribute oncanplaythrough for this class 
-    this.htmloncanplaythrough = `"oncanplaythrough = ""' + methodarg + "" 
+    this.htmloncanplaythrough = `" oncanplaythrough=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -325,7 +325,7 @@ class htmlglobal scalar htmlglobal::setOncanplaythrough(| string scalar methodar
 class htmlglobal scalar htmlglobal::setOnchange(| string scalar methodarg) { 
 
     // Set the attribute onchange for this class 
-    this.htmlonchange = `"onchange = ""' + methodarg + "" 
+    this.htmlonchange = `" onchange=""' + methodarg + `"""'
 
     // Return a copy of the object 
     return(this)
@@ -336,7 +336,7 @@ class htmlglobal scalar htmlglobal::setOnchange(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnclick(| string scalar methodarg) { 
 
     // Set the attribute onclick for this class 
-    this.htmlonclick = `"onclick = ""' + methodarg + "" 
+    this.htmlonclick = `" onclick=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -347,7 +347,7 @@ class htmlglobal scalar htmlglobal::setOnclick(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOncontextmenu(| string scalar methodarg) { 
 
     // Set the attribute oncontextmenu for this class 
-    this.htmloncontextmenu = `"oncontextmenu = ""' + methodarg + "" 
+    this.htmloncontextmenu = `" oncontextmenu=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -358,7 +358,7 @@ class htmlglobal scalar htmlglobal::setOncontextmenu(| string scalar methodarg) 
 class htmlglobal scalar htmlglobal::setOncopy(| string scalar methodarg) { 
 
     // Set the attribute oncopy for this class 
-    this.htmloncopy = `"oncopy = ""' + methodarg + "" 
+    this.htmloncopy = `" oncopy=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -369,7 +369,7 @@ class htmlglobal scalar htmlglobal::setOncopy(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOncuechange(| string scalar methodarg) { 
 
     // Set the attribute oncuechange for this class 
-    this.htmloncuechange = `"oncuechange = ""' + methodarg + "" 
+    this.htmloncuechange = `" oncuechange=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -380,7 +380,7 @@ class htmlglobal scalar htmlglobal::setOncuechange(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOncut(| string scalar methodarg) { 
 
     // Set the attribute oncut for this class 
-    this.htmloncut = `"oncut = ""' + methodarg + "" 
+    this.htmloncut = `" oncut=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -391,7 +391,7 @@ class htmlglobal scalar htmlglobal::setOncut(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOndblclick(| string scalar methodarg) { 
 
     // Set the attribute ondblclick for this class 
-    this.htmlondblclick = `"ondblclick = ""' + methodarg + "" 
+    this.htmlondblclick = `" ondblclick=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -402,7 +402,7 @@ class htmlglobal scalar htmlglobal::setOndblclick(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOndrag(| string scalar methodarg) { 
 
     // Set the attribute ondrag for this class 
-    this.htmlondrag = `"ondrag = ""' + methodarg + "" 
+    this.htmlondrag = `" ondrag=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -413,7 +413,7 @@ class htmlglobal scalar htmlglobal::setOndrag(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOndragend(| string scalar methodarg) { 
 
     // Set the attribute ondragend for this class 
-    this.htmlondragend = `"ondragend = ""' + methodarg + "" 
+    this.htmlondragend = `" ondragend=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -424,7 +424,7 @@ class htmlglobal scalar htmlglobal::setOndragend(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOndragenter(| string scalar methodarg) { 
 
     // Set the attribute ondragenter for this class 
-    this.htmlondragenter = `"ondragenter = ""' + methodarg + "" 
+    this.htmlondragenter = `" ondragenter=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -435,7 +435,7 @@ class htmlglobal scalar htmlglobal::setOndragenter(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOndragleave(| string scalar methodarg) { 
 
     // Set the attribute ondragleave for this class 
-    this.htmlondragleave = `"ondragleave = ""' + methodarg + "" 
+    this.htmlondragleave = `" ondragleave=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -446,7 +446,7 @@ class htmlglobal scalar htmlglobal::setOndragleave(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOndragover(| string scalar methodarg) { 
 
     // Set the attribute ondragover for this class 
-    this.htmlondragover = `"ondragover = ""' + methodarg + "" 
+    this.htmlondragover = `" ondragover=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -457,7 +457,7 @@ class htmlglobal scalar htmlglobal::setOndragover(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOndragstart(| string scalar methodarg) { 
 
     // Set the attribute ondragstart for this class 
-    this.htmlondragstart = `"ondragstart = ""' + methodarg + "" 
+    this.htmlondragstart = `" ondragstart=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -468,7 +468,7 @@ class htmlglobal scalar htmlglobal::setOndragstart(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOndrop(| string scalar methodarg) { 
 
     // Set the attribute ondrop for this class 
-    this.htmlondrop = `"ondrop = ""' + methodarg + "" 
+    this.htmlondrop = `" ondrop=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -479,7 +479,7 @@ class htmlglobal scalar htmlglobal::setOndrop(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOndurationchange(| string scalar methodarg) { 
 
     // Set the attribute ondurationchange for this class 
-    this.htmlondurationchange = `"ondurationchange = ""' + methodarg + "" 
+    this.htmlondurationchange = `" ondurationchange=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -490,7 +490,7 @@ class htmlglobal scalar htmlglobal::setOndurationchange(| string scalar methodar
 class htmlglobal scalar htmlglobal::setOnemptied(| string scalar methodarg) { 
 
     // Set the attribute onemptied for this class 
-    this.htmlonemptied = `"onemptied = ""' + methodarg + "" 
+    this.htmlonemptied = `" onemptied=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -501,7 +501,7 @@ class htmlglobal scalar htmlglobal::setOnemptied(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnended(| string scalar methodarg) { 
 
     // Set the attribute onended for this class 
-    this.htmlonended = `"onended = ""' + methodarg + "" 
+    this.htmlonended = `" onended=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -512,7 +512,7 @@ class htmlglobal scalar htmlglobal::setOnended(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnerror(| string scalar methodarg) { 
 
     // Set the attribute onerror for this class 
-    this.htmlonerror = `"onerror = ""' + methodarg + "" 
+    this.htmlonerror = `" onerror=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -523,7 +523,7 @@ class htmlglobal scalar htmlglobal::setOnerror(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnfocus(| string scalar methodarg) { 
 
     // Set the attribute onfocus for this class 
-    this.htmlonfocus = `"onfocus = ""' + methodarg + "" 
+    this.htmlonfocus = `" onfocus=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -534,7 +534,7 @@ class htmlglobal scalar htmlglobal::setOnfocus(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnhashchange(| string scalar methodarg) { 
 
     // Set the attribute onhashchange for this class 
-    this.htmlonhashchange = `"onhashchange = ""' + methodarg + "" 
+    this.htmlonhashchange = `" onhashchange=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -545,7 +545,7 @@ class htmlglobal scalar htmlglobal::setOnhashchange(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOninput(| string scalar methodarg) { 
 
     // Set the attribute oninput for this class 
-    this.htmloninput = `"oninput = ""' + methodarg + "" 
+    this.htmloninput = `" oninput=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -556,7 +556,7 @@ class htmlglobal scalar htmlglobal::setOninput(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOninvalid(| string scalar methodarg) { 
 
     // Set the attribute oninvalid for this class 
-    this.htmloninvalid = `"oninvalid = ""' + methodarg + "" 
+    this.htmloninvalid = `" oninvalid=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -567,7 +567,7 @@ class htmlglobal scalar htmlglobal::setOninvalid(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnkeydown(| string scalar methodarg) { 
 
     // Set the attribute onkeydown for this class 
-    this.htmlonkeydown = `"onkeydown = ""' + methodarg + "" 
+    this.htmlonkeydown = `" onkeydown=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -578,7 +578,7 @@ class htmlglobal scalar htmlglobal::setOnkeydown(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnkeypress(| string scalar methodarg) { 
 
     // Set the attribute onkeypress for this class 
-    this.htmlonkeypress = `"onkeypress = ""' + methodarg + "" 
+    this.htmlonkeypress = `" onkeypress=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -589,7 +589,7 @@ class htmlglobal scalar htmlglobal::setOnkeypress(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnkeyup(| string scalar methodarg) { 
 
     // Set the attribute onkeyup for this class 
-    this.htmlonkeyup = `"onkeyup = ""' + methodarg + "" 
+    this.htmlonkeyup = `" onkeyup=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -600,7 +600,7 @@ class htmlglobal scalar htmlglobal::setOnkeyup(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnload(| string scalar methodarg) { 
 
     // Set the attribute onload for this class 
-    this.htmlonload = `"onload = ""' + methodarg + "" 
+    this.htmlonload = `" onload=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -611,7 +611,7 @@ class htmlglobal scalar htmlglobal::setOnload(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnloadeddata(| string scalar methodarg) { 
 
     // Set the attribute onloadeddata for this class 
-    this.htmlonloadeddata = `"onloadeddata = ""' + methodarg + "" 
+    this.htmlonloadeddata = `" onloadeddata=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -622,7 +622,7 @@ class htmlglobal scalar htmlglobal::setOnloadeddata(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnloadedmetadata(| string scalar methodarg) { 
 
     // Set the attribute onloadedmetadata for this class 
-    this.htmlonloadedmetadata = `"onloadedmetadata = ""' + methodarg + "" 
+    this.htmlonloadedmetadata = `" onloadedmetadata=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -633,7 +633,7 @@ class htmlglobal scalar htmlglobal::setOnloadedmetadata(| string scalar methodar
 class htmlglobal scalar htmlglobal::setOnloadstart(| string scalar methodarg) { 
 
     // Set the attribute onloadstart for this class 
-    this.htmlonloadstart = `"onloadstart = ""' + methodarg + "" 
+    this.htmlonloadstart = `" onloadstart=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -644,7 +644,7 @@ class htmlglobal scalar htmlglobal::setOnloadstart(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnmessage(| string scalar methodarg) { 
 
     // Set the attribute onmessage for this class 
-    this.htmlonmessage = `"onmessage = ""' + methodarg + "" 
+    this.htmlonmessage = `" onmessage=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -655,7 +655,7 @@ class htmlglobal scalar htmlglobal::setOnmessage(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnmousedown(| string scalar methodarg) { 
 
     // Set the attribute onmousedown for this class 
-    this.htmlonmousedown = `"onmousedown = ""' + methodarg + "" 
+    this.htmlonmousedown = `" onmousedown=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -666,7 +666,7 @@ class htmlglobal scalar htmlglobal::setOnmousedown(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnmousemove(| string scalar methodarg) { 
 
     // Set the attribute onmousemove for this class 
-    this.htmlonmousemove = `"onmousemove = ""' + methodarg + "" 
+    this.htmlonmousemove = `" onmousemove=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -677,7 +677,7 @@ class htmlglobal scalar htmlglobal::setOnmousemove(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnmouseout(| string scalar methodarg) { 
 
     // Set the attribute onmouseout for this class 
-    this.htmlonmouseout = `"onmouseout = ""' + methodarg + "" 
+    this.htmlonmouseout = `" onmouseout=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -688,7 +688,7 @@ class htmlglobal scalar htmlglobal::setOnmouseout(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnmouseover(| string scalar methodarg) { 
 
     // Set the attribute onmouseover for this class 
-    this.htmlonmouseover = `"onmouseover = ""' + methodarg + "" 
+    this.htmlonmouseover = `" onmouseover=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -699,7 +699,7 @@ class htmlglobal scalar htmlglobal::setOnmouseover(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnmouseup(| string scalar methodarg) { 
 
     // Set the attribute onmouseup for this class 
-    this.htmlonmouseup = `"onmouseup = ""' + methodarg + "" 
+    this.htmlonmouseup = `" onmouseup=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -710,7 +710,7 @@ class htmlglobal scalar htmlglobal::setOnmouseup(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnmousewheel(| string scalar methodarg) { 
 
     // Set the attribute onmousewheel for this class 
-    this.htmlonmousewheel = `"onmousewheel = ""' + methodarg + "" 
+    this.htmlonmousewheel = `" onmousewheel=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -721,7 +721,7 @@ class htmlglobal scalar htmlglobal::setOnmousewheel(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnoffline(| string scalar methodarg) { 
 
     // Set the attribute onoffline for this class 
-    this.htmlonoffline = `"onoffline = ""' + methodarg + "" 
+    this.htmlonoffline = `" onoffline=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -732,7 +732,7 @@ class htmlglobal scalar htmlglobal::setOnoffline(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnonline(| string scalar methodarg) { 
 
     // Set the attribute ononline for this class 
-    this.htmlononline = `"ononline = ""' + methodarg + "" 
+    this.htmlononline = `" ononline=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -743,7 +743,7 @@ class htmlglobal scalar htmlglobal::setOnonline(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnpagehide(| string scalar methodarg) { 
 
     // Set the attribute onpagehide for this class 
-    this.htmlonpagehide = `"onpagehide = ""' + methodarg + "" 
+    this.htmlonpagehide = `" onpagehide=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -754,7 +754,7 @@ class htmlglobal scalar htmlglobal::setOnpagehide(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnpageshow(| string scalar methodarg) { 
 
     // Set the attribute onpageshow for this class 
-    this.htmlonpageshow = `"onpageshow = ""' + methodarg + "" 
+    this.htmlonpageshow = `" onpageshow=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -765,7 +765,7 @@ class htmlglobal scalar htmlglobal::setOnpageshow(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnpaste(| string scalar methodarg) { 
 
     // Set the attribute onpaste for this class 
-    this.htmlonpaste = `"onpaste = ""' + methodarg + "" 
+    this.htmlonpaste = `" onpaste=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -776,7 +776,7 @@ class htmlglobal scalar htmlglobal::setOnpaste(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnpause(| string scalar methodarg) { 
 
     // Set the attribute onpause for this class 
-    this.htmlonpause = `"onpause = ""' + methodarg + "" 
+    this.htmlonpause = `" onpause=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -787,7 +787,7 @@ class htmlglobal scalar htmlglobal::setOnpause(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnplay(| string scalar methodarg) { 
 
     // Set the attribute onplay for this class 
-    this.htmlonplay = `"onplay = ""' + methodarg + "" 
+    this.htmlonplay = `" onplay=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -798,7 +798,7 @@ class htmlglobal scalar htmlglobal::setOnplay(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnplaying(| string scalar methodarg) { 
 
     // Set the attribute onplaying for this class 
-    this.htmlonplaying = `"onplaying = ""' + methodarg + "" 
+    this.htmlonplaying = `" onplaying=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -809,7 +809,7 @@ class htmlglobal scalar htmlglobal::setOnplaying(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnpopstate(| string scalar methodarg) { 
 
     // Set the attribute onpopstate for this class 
-    this.htmlonpopstate = `"onpopstate = ""' + methodarg + "" 
+    this.htmlonpopstate = `" onpopstate=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -820,7 +820,7 @@ class htmlglobal scalar htmlglobal::setOnpopstate(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnprogress(| string scalar methodarg) { 
 
     // Set the attribute onprogress for this class 
-    this.htmlonprogress = `"onprogress = ""' + methodarg + "" 
+    this.htmlonprogress = `" onprogress=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -831,7 +831,7 @@ class htmlglobal scalar htmlglobal::setOnprogress(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnratechange(| string scalar methodarg) { 
 
     // Set the attribute onratechange for this class 
-    this.htmlonratechange = `"onratechange = ""' + methodarg + "" 
+    this.htmlonratechange = `" onratechange=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -842,7 +842,7 @@ class htmlglobal scalar htmlglobal::setOnratechange(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnreset(| string scalar methodarg) { 
 
     // Set the attribute onreset for this class 
-    this.htmlonreset = `"onreset = ""' + methodarg + "" 
+    this.htmlonreset = `" onreset=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -853,7 +853,7 @@ class htmlglobal scalar htmlglobal::setOnreset(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnresize(| string scalar methodarg) { 
 
     // Set the attribute onresize for this class 
-    this.htmlonresize = `"onresize = ""' + methodarg + "" 
+    this.htmlonresize = `" onresize=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -864,7 +864,7 @@ class htmlglobal scalar htmlglobal::setOnresize(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnscroll(| string scalar methodarg) { 
 
     // Set the attribute onscroll for this class 
-    this.htmlonscroll = `"onscroll = ""' + methodarg + "" 
+    this.htmlonscroll = `" onscroll=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -875,7 +875,7 @@ class htmlglobal scalar htmlglobal::setOnscroll(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnsearch(| string scalar methodarg) { 
 
     // Set the attribute onsearch for this class 
-    this.htmlonsearch = `"onsearch = ""' + methodarg + "" 
+    this.htmlonsearch = `" onsearch=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -886,7 +886,7 @@ class htmlglobal scalar htmlglobal::setOnsearch(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnseeked(| string scalar methodarg) { 
 
     // Set the attribute onseeked for this class 
-    this.htmlonseeked = `"onseeked = ""' + methodarg + "" 
+    this.htmlonseeked = `" onseeked=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -897,7 +897,7 @@ class htmlglobal scalar htmlglobal::setOnseeked(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnseeking(| string scalar methodarg) { 
 
     // Set the attribute onseeking for this class 
-    this.htmlonseeking = `"onseeking = ""' + methodarg + "" 
+    this.htmlonseeking = `" onseeking=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -908,7 +908,7 @@ class htmlglobal scalar htmlglobal::setOnseeking(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnselect(| string scalar methodarg) { 
 
     // Set the attribute onselect for this class 
-    this.htmlonselect = `"onselect = ""' + methodarg + "" 
+    this.htmlonselect = `" onselect=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -919,7 +919,7 @@ class htmlglobal scalar htmlglobal::setOnselect(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnshow(| string scalar methodarg) { 
 
     // Set the attribute onshow for this class 
-    this.htmlonshow = `"onshow = ""' + methodarg + "" 
+    this.htmlonshow = `" onshow=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -930,7 +930,7 @@ class htmlglobal scalar htmlglobal::setOnshow(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnstalled(| string scalar methodarg) { 
 
     // Set the attribute onstalled for this class 
-    this.htmlonstalled = `"onstalled = ""' + methodarg + "" 
+    this.htmlonstalled = `" onstalled=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -941,7 +941,7 @@ class htmlglobal scalar htmlglobal::setOnstalled(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnstorage(| string scalar methodarg) { 
 
     // Set the attribute onstorage for this class 
-    this.htmlonstorage = `"onstorage = ""' + methodarg + "" 
+    this.htmlonstorage = `" onstorage=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -952,7 +952,7 @@ class htmlglobal scalar htmlglobal::setOnstorage(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnsubmit(| string scalar methodarg) { 
 
     // Set the attribute onsubmit for this class 
-    this.htmlonsubmit = `"onsubmit = ""' + methodarg + "" 
+    this.htmlonsubmit = `" onsubmit=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -963,7 +963,7 @@ class htmlglobal scalar htmlglobal::setOnsubmit(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnsuspend(| string scalar methodarg) { 
 
     // Set the attribute onsuspend for this class 
-    this.htmlonsuspend = `"onsuspend = ""' + methodarg + "" 
+    this.htmlonsuspend = `" onsuspend=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -974,7 +974,7 @@ class htmlglobal scalar htmlglobal::setOnsuspend(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOntimeupdate(| string scalar methodarg) { 
 
     // Set the attribute ontimeupdate for this class 
-    this.htmlontimeupdate = `"ontimeupdate = ""' + methodarg + "" 
+    this.htmlontimeupdate = `" ontimeupdate=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -985,7 +985,7 @@ class htmlglobal scalar htmlglobal::setOntimeupdate(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOntoggle(| string scalar methodarg) { 
 
     // Set the attribute ontoggle for this class 
-    this.htmlontoggle = `"ontoggle = ""' + methodarg + "" 
+    this.htmlontoggle = `" ontoggle=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -996,7 +996,7 @@ class htmlglobal scalar htmlglobal::setOntoggle(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnunload(| string scalar methodarg) { 
 
     // Set the attribute onunload for this class 
-    this.htmlonunload = `"onunload = ""' + methodarg + "" 
+    this.htmlonunload = `" onunload=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -1007,7 +1007,7 @@ class htmlglobal scalar htmlglobal::setOnunload(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnvolumechange(| string scalar methodarg) { 
 
     // Set the attribute onvolumechange for this class 
-    this.htmlonvolumechange = `"onvolumechange = ""' + methodarg + "" 
+    this.htmlonvolumechange = `" onvolumechange=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -1018,7 +1018,7 @@ class htmlglobal scalar htmlglobal::setOnvolumechange(| string scalar methodarg)
 class htmlglobal scalar htmlglobal::setOnwaiting(| string scalar methodarg) { 
 
     // Set the attribute onwaiting for this class 
-    this.htmlonwaiting = `"onwaiting = ""' + methodarg + "" 
+    this.htmlonwaiting = `" onwaiting=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -1029,7 +1029,7 @@ class htmlglobal scalar htmlglobal::setOnwaiting(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setOnwheel(| string scalar methodarg) { 
 
     // Set the attribute onwheel for this class 
-    this.htmlonwheel = `"onwheel = ""' + methodarg + "" 
+    this.htmlonwheel = `" onwheel=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -1043,7 +1043,7 @@ class htmlglobal scalar htmlglobal::setSpellcheck(| string scalar methodarg) {
     if (methodarg == "true" | methodarg == "false") { 
 
         // Set the attribute value 
-        this.htmlspellcheck = `"spellcheck = ""' + methodarg + "" 
+        this.htmlspellcheck = `" spellcheck=""' + methodarg + `"""' 
 
     } // End IF Block for validated argument value 
 
@@ -1056,7 +1056,7 @@ class htmlglobal scalar htmlglobal::setSpellcheck(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setStyle(| string scalar methodarg) { 
 
     // Set the attribute style for this class 
-    this.htmlstyle = `"style = ""' + methodarg + "" 
+    this.htmlstyle = `" style=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -1067,7 +1067,7 @@ class htmlglobal scalar htmlglobal::setStyle(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setTabindex(| string scalar methodarg) { 
 
     // Set the attribute tabindex for this class 
-    this.htmltabindex = `"tabindex = ""' + methodarg + "" 
+    this.htmltabindex = `" tabindex=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -1078,7 +1078,7 @@ class htmlglobal scalar htmlglobal::setTabindex(| string scalar methodarg) {
 class htmlglobal scalar htmlglobal::setTitle(| string scalar methodarg) { 
 
     // Set the attribute title for this class 
-    this.htmltitle = `"title = ""' + methodarg + "" 
+    this.htmltitle = `" title=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -1092,7 +1092,7 @@ class htmlglobal scalar htmlglobal::setTranslate(| string scalar methodarg) {
     if (methodarg == "yes" | methodarg == "no") { 
 
         // Set the attribute value 
-        this.htmltranslate = `"translate = ""' + methodarg + "" 
+        this.htmltranslate = `" translate=""' + methodarg + `"""' 
 
     } // End IF Block for validated argument value 
 

@@ -5,17 +5,33 @@
     <description></description>
     <link>https://wbuchanan.github.io/matahtml/</link>
     <atom:link href="https://wbuchanan.github.io/matahtml/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 31 Dec 2015 07:27:10 -0600</pubDate>
-    <lastBuildDate>Thu, 31 Dec 2015 07:27:10 -0600</lastBuildDate>
-    <generator>Jekyll v3.0.1</generator>
+    <pubDate>Sun, 15 May 2016 05:59:12 -0500</pubDate>
+    <lastBuildDate>Sun, 15 May 2016 05:59:12 -0500</lastBuildDate>
+    <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>Critical Updates</title>
+        <description>&lt;p&gt;I recently found a nasty bug in the &lt;code&gt;htmlglobal&lt;/code&gt; class from which all other classes in libhtml inherit.  The bug caused arguments passed to methods from &lt;code&gt;htmlglobal&lt;/code&gt; to be handled inconsistently with the rest of the library (e.g., no space before an attribute name, incorrect handling of arguments passed to the attributes with regards to quotation marks, etc…).  The issue seems to be resolved now and would not necessarily have affected users unless they were calling methods defined in &lt;code&gt;htmlglobal&lt;/code&gt;.  An update for the SSC archives will be prepped soon, but until then you can download/install an updated copy using the code below:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;net inst libhtml, from(&quot;http://wbuchanan.github.io/matahtml&quot;) replace
+&lt;/code&gt;&lt;/pre&gt;
+
+</description>
+        <pubDate>Sun, 15 May 2016 00:56:00 -0500</pubDate>
+        <link>https://wbuchanan.github.io/matahtml/news/2016/05/15/important-update.html</link>
+        <guid isPermaLink="true">https://wbuchanan.github.io/matahtml/news/2016/05/15/important-update.html</guid>
+        
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>LIBHTML</title>
         <description>&lt;p&gt;The &lt;em&gt;libhtml&lt;/em&gt; package for Stata now has its own dedicated project page.  This will also be the location where you can download/install the latest version of the package using:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;net inst libhtml, from(&quot;http://wbuchanan.github.io/matahtml&quot;) replace
+&lt;pre&gt;&lt;code&gt;net inst libhtml, from(&quot;http://wbuchanan.github.io/matahtml&quot;) replace
 &lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
 
 </description>
         <pubDate>Thu, 31 Dec 2015 01:20:00 -0600</pubDate>
