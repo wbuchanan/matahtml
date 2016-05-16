@@ -67,7 +67,7 @@ class htmlglobal {
 					setOntimeupdate(), setOntoggle(), setOnunload(), 
 					setOnvolumechange(), setOnwaiting(), setOnwheel(), 
 					setSpellcheck(), setStyle(), setTabindex(), setTitle(), 
-					setTranslate()
+					setTranslate(), setName()
 
     // Getter methods 
     string	scalar	getAccesskey(), getClass(), getContenteditable(), 
@@ -119,6 +119,17 @@ class htmlglobal scalar htmlglobal::setClass(| string scalar methodarg) {
 
     // Set the attribute class for this class 
     this.htmlclass = `" class=""' + methodarg + `"""' 
+
+    // Return a copy of the object 
+    return(this)
+
+} // End of Method class declaration for class htmlglobal
+
+// Specifies one or more classnames for an element (refers to a class in a style sheet) 
+class htmlglobal scalar htmlglobal::setName(| string scalar methodarg) { 
+
+    // Set the attribute class for this class 
+    this.htmlclass = `" name=""' + methodarg + `"""' 
 
     // Return a copy of the object 
     return(this)
@@ -1812,7 +1823,7 @@ string scalar htmlglobal::globalAttrs() {
     string scalar globalAttributes 
 
     // Store the collection of attributes in the string globalAttributes 
-    globalAttributes = 	getAccesskey() + getClass() + getContenteditable() + 
+    globalAttributes = 	" " + getAccesskey() + getClass() + getContenteditable() + 
 						getContextmenu() + getData() + getDir() + 
 						getDraggable() + getDropzone() + getHidden() + getId() + 
 						getLang() + getOnabort() + getOnafterprint() + 
